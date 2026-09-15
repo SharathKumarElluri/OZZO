@@ -1,68 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>OZZO | Fashion</title>
 
-    <!-- Bootstrap -->
+
+    <!-- =========================================================
+         BOOTSTRAP
+    ========================================================== -->
+
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         rel="stylesheet"
     >
 
-    <!-- Font Awesome -->
+
+    <!-- =========================================================
+         FONT AWESOME
+    ========================================================== -->
+
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     >
 
-    <!-- Google Font -->
+
+    <!-- =========================================================
+         GOOGLE FONT
+    ========================================================== -->
+
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap"
         rel="stylesheet"
     >
 
-    <link rel="stylesheet" href="Fashion.css">
+
+    <!-- =========================================================
+         FASHION CSS
+    ========================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="Fashion.css"
+    >
+
 </head>
+
 
 <body>
 
-<!-- =========================
+
+<!-- =========================================================
      TOP BAR
-========================= -->
+========================================================== -->
 
 <div class="top-bar">
+
     <div class="container-fluid top-bar-inner px-4">
 
         <div class="shipping-text">
-            <i class="fa-solid fa-truck"></i>
-            <span>Free shipping on orders above ₹999</span>
+
+            <i
+                class="fa-solid fa-truck"
+                aria-hidden="true"
+            ></i>
+
+            <span>
+                Free shipping on orders above ₹999
+            </span>
+
         </div>
 
+
         <div class="top-links">
-            <a href="#">Track Order</a>
-            <span>|</span>
-            <a href="#">Help</a>
+
+            <a href="#">
+                Track Order
+            </a>
+
             <span>|</span>
 
-            <a href="#"
-               class="login-link"
-               title="Login"
-               aria-label="Login">
-                <i class="fa-regular fa-user"></i>
-                Login
+            <a href="#">
+                Help
             </a>
+
+            <span>|</span>
+
+
+            <a
+                href="#"
+                class="login-link"
+                title="Login"
+                aria-label="Login"
+            >
+
+                <i
+                    class="fa-regular fa-user"
+                    aria-hidden="true"
+                ></i>
+
+                Login
+
+            </a>
+
         </div>
 
     </div>
+
 </div>
 
 
-<!-- =========================
+
+<!-- =========================================================
      HEADER
-========================= -->
+========================================================== -->
 
 <header class="main-header">
 
@@ -70,9 +128,18 @@
 
         <div class="container-fluid px-4">
 
-            <a class="navbar-brand ozzo-logo" href="index.html">
+
+            <!-- LOGO -->
+
+            <a
+                class="navbar-brand ozzo-logo"
+                href="../index.html"
+            >
                 OZZO
             </a>
+
+
+            <!-- MOBILE MENU -->
 
             <button
                 class="navbar-toggler"
@@ -84,48 +151,95 @@
                 aria-label="Toggle navigation"
                 title="Toggle navigation"
             >
-                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+
+                <i
+                    class="fa-solid fa-bars"
+                    aria-hidden="true"
+                ></i>
+
             </button>
 
 
-            <div class="collapse navbar-collapse" id="ozzoNavbar">
+
+            <!-- NAVIGATION -->
+
+            <div
+                class="collapse navbar-collapse"
+                id="ozzoNavbar"
+            >
 
                 <ul class="navbar-nav main-nav mx-auto">
 
+
                     <li class="nav-item">
-                        <a class="nav-link" href="/index.html">
+
+                        <a
+                            class="nav-link"
+                            href="../index.html"
+                        >
                             Home
                         </a>
+
                     </li>
 
+
                     <li class="nav-item">
-                        <a class="nav-link active" href="/Fashion/Fashion.html">
+
+                        <a
+                            class="nav-link active"
+                            href="Fashion.html"
+                        >
                             Fashion
                         </a>
+
                     </li>
 
+
                     <li class="nav-item">
-                        <a class="nav-link" href="/Books/Books.html">
+
+                        <a
+                            class="nav-link"
+                            href="../Books/Books.html"
+                        >
                             Books
                         </a>
+
                     </li>
 
+
                     <li class="nav-item">
-                        <a class="nav-link" href="/Stationary/Stationary.html">
+
+                        <a
+                            class="nav-link"
+                            href="../Stationary/Stationary.html"
+                        >
                             Stationery
                         </a>
+
                     </li>
 
+
                     <li class="nav-item">
-                        <a class="nav-link" href="/Pads/Pads.html">
+
+                        <a
+                            class="nav-link"
+                            href="../Pads/Pads.html"
+                        >
                             Pads
                         </a>
+
                     </li>
 
                 </ul>
 
 
+
+                <!-- HEADER ACTIONS -->
+
                 <div class="header-actions">
+
+
+                    <!-- SEARCH -->
 
                     <div class="search-box">
 
@@ -138,11 +252,14 @@
 
                         <i
                             class="fa-solid fa-magnifying-glass"
-                            aria-hidden="true">
-                        </i>
+                            aria-hidden="true"
+                        ></i>
 
                     </div>
 
+
+
+                    <!-- WISHLIST -->
 
                     <button
                         class="header-icon"
@@ -150,28 +267,35 @@
                         title="Wishlist"
                         aria-label="Wishlist"
                     >
+
                         <i
                             class="fa-regular fa-heart"
-                            aria-hidden="true">
-                        </i>
+                            aria-hidden="true"
+                        ></i>
+
                     </button>
 
 
+
+                    <!-- CART -->
+
                     <button
                         class="header-icon cart-button"
+                        id="headerCartButton"
                         type="button"
-                        title="Shopping Bag"
-                        aria-label="Shopping Bag"
+                        title="Shopping Cart"
+                        aria-label="Shopping Cart"
                     >
 
                         <i
                             class="fa-solid fa-bag-shopping"
-                            aria-hidden="true">
-                        </i>
+                            aria-hidden="true"
+                        ></i>
 
                         <span
                             class="cart-count"
-                            id="cartCount">
+                            id="cartCount"
+                        >
                             0
                         </span>
 
@@ -188,9 +312,10 @@
 </header>
 
 
-<!-- =========================
+
+<!-- =========================================================
      HERO
-========================= -->
+========================================================== -->
 
 <section class="fashion-hero">
 
@@ -198,46 +323,77 @@
 
         <div class="fashion-hero-content">
 
+
+            <!-- HERO TEXT -->
+
             <div class="fashion-hero-copy">
 
                 <span class="hero-label">
                     OZZO FASHION
                 </span>
 
+
                 <h1>
+
                     Style That<br>
-                    Speaks <span>For You</span>
+
+                    Speaks
+                    <span>
+                        For You
+                    </span>
+
                 </h1>
 
+
                 <p>
+
                     Discover curated fashion essentials,
                     everyday styles and statement pieces
                     designed for modern living.
+
                 </p>
 
-                <a href="#fashionProducts" class="shop-btn">
+
+                <a
+                    href="#fashionProducts"
+                    class="shop-btn"
+                >
+
                     Shop Collection
-                    <span>→</span>
+
+                    <span>
+                        →
+                    </span>
+
                 </a>
 
             </div>
 
 
+
+            <!-- HERO IMAGE -->
+
             <div class="fashion-hero-image">
 
-                <!-- HERO IMAGE -->
                 <img
-                    src="/fashion hero.png"
+                    src="../fashion hero.png"
                     alt="OZZO Fashion Collection"
                 >
 
+
                 <div class="hero-offer">
 
-                    <small>UP TO</small>
+                    <small>
+                        UP TO
+                    </small>
 
-                    <strong>40%</strong>
+                    <strong>
+                        40%
+                    </strong>
 
-                    <span>OFF</span>
+                    <span>
+                        OFF
+                    </span>
 
                 </div>
 
@@ -250,25 +406,32 @@
 </section>
 
 
-<!-- =========================
+
+<!-- =========================================================
      CATEGORIES
-========================= -->
+========================================================== -->
 
 <section class="fashion-categories">
 
     <div class="container-fluid px-4">
 
+
         <div class="section-title">
 
             <div>
 
-                <span>EXPLORE</span>
+                <span>
+                    EXPLORE
+                </span>
 
-                <h2>Fashion Categories</h2>
+                <h2>
+                    Fashion Categories
+                </h2>
 
             </div>
 
         </div>
+
 
 
         <div class="row g-3">
@@ -286,9 +449,13 @@
 
                     <div>
 
-                        <span>01</span>
+                        <span>
+                            01
+                        </span>
 
-                        <h3>Women</h3>
+                        <h3>
+                            Women
+                        </h3>
 
                         <p>
                             Explore collection →
@@ -299,6 +466,7 @@
                 </a>
 
             </div>
+
 
 
             <!-- MEN -->
@@ -313,9 +481,13 @@
 
                     <div>
 
-                        <span>02</span>
+                        <span>
+                            02
+                        </span>
 
-                        <h3>Men</h3>
+                        <h3>
+                            Men
+                        </h3>
 
                         <p>
                             Explore collection →
@@ -326,6 +498,7 @@
                 </a>
 
             </div>
+
 
 
             <!-- KIDS -->
@@ -340,9 +513,13 @@
 
                     <div>
 
-                        <span>03</span>
+                        <span>
+                            03
+                        </span>
 
-                        <h3>Kids</h3>
+                        <h3>
+                            Kids
+                        </h3>
 
                         <p>
                             Explore collection →
@@ -355,7 +532,37 @@
             </div>
 
 
-            
+
+            <!-- SAREES -->
+
+            <div class="col-6 col-md-3">
+
+                <a
+                    href="#fashionProducts"
+                    class="fashion-category category-sarees"
+                    data-filter="sarees"
+                >
+
+                    <div>
+
+                        <span>
+                            04
+                        </span>
+
+                        <h3>
+                            Sarees
+                        </h3>
+
+                        <p>
+                            Explore collection →
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
         </div>
 
     </div>
@@ -363,9 +570,10 @@
 </section>
 
 
-<!-- =========================
+
+<!-- =========================================================
      PRODUCTS
-========================= -->
+========================================================== -->
 
 <section
     class="fashion-products"
@@ -375,7 +583,10 @@
     <div class="container-fluid px-4">
 
 
+        <!-- PRODUCT HEADER -->
+
         <div class="products-heading">
+
 
             <div>
 
@@ -390,7 +601,11 @@
             </div>
 
 
+
+            <!-- FILTER BUTTONS -->
+
             <div class="product-filters">
+
 
                 <button
                     class="filter-btn active"
@@ -400,6 +615,7 @@
                     All
                 </button>
 
+
                 <button
                     class="filter-btn"
                     data-filter="women"
@@ -407,6 +623,7 @@
                 >
                     Women
                 </button>
+
 
                 <button
                     class="filter-btn"
@@ -416,6 +633,7 @@
                     Men
                 </button>
 
+
                 <button
                     class="filter-btn"
                     data-filter="kids"
@@ -424,10 +642,24 @@
                     Kids
                 </button>
 
+
+                <button
+                    class="filter-btn"
+                    data-filter="sarees"
+                    type="button"
+                >
+                    Sarees
+                </button>
+
             </div>
 
         </div>
 
+
+
+        <!-- =====================================================
+             PRODUCT GRID
+        ====================================================== -->
 
         <div
             class="row g-3"
@@ -435,26 +667,34 @@
         >
 
 
-            <!-- PRODUCT 1 -->
+
+            <!-- =================================================
+                 PRODUCT 1
+            ================================================== -->
 
             <div
                 class="col-6 col-md-4 col-lg-3 product-item"
                 data-category="women"
                 data-name="Classic Beige Dress"
+                data-product-id="fashion-001"
             >
 
                 <div class="fashion-product-card">
 
+
                     <div class="product-image">
+
 
                         <img
                             src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=700&q=85"
                             alt="Classic Beige Dress"
                         >
 
+
                         <span class="product-badge">
                             BESTSELLER
                         </span>
+
 
                         <button
                             class="wishlist"
@@ -462,19 +702,24 @@
                             title="Add to wishlist"
                             aria-label="Add Classic Beige Dress to wishlist"
                         >
+
                             <i
                                 class="fa-regular fa-heart"
-                                aria-hidden="true">
-                            </i>
+                                aria-hidden="true"
+                            ></i>
+
                         </button>
+
 
                         <button
                             class="quick-add add-cart"
                             type="button"
                             data-name="Classic Beige Dress"
                             data-price="1299"
+                            data-mrp="1799"
+                            data-category="women"
                         >
-                            Add to Bag
+                            Add to Cart
                         </button>
 
                     </div>
@@ -482,20 +727,36 @@
 
                     <div class="product-info">
 
-                        <span>WOMEN</span>
+                        <span>
+                            WOMEN
+                        </span>
 
                         <h3>
                             Classic Beige Dress
                         </h3>
 
+
                         <div class="rating">
-                            <span>★★★★★</span>
-                            <small>(24)</small>
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (24)
+                            </small>
+
                         </div>
 
+
                         <div class="price">
+
                             ₹1,299
-                            <del>₹1,799</del>
+
+                            <del>
+                                ₹1,799
+                            </del>
+
                         </div>
 
                     </div>
@@ -505,26 +766,34 @@
             </div>
 
 
-            <!-- PRODUCT 2 -->
+
+            <!-- =================================================
+                 PRODUCT 2
+            ================================================== -->
 
             <div
                 class="col-6 col-md-4 col-lg-3 product-item"
                 data-category="men"
                 data-name="Classic Casual Shirt"
+                data-product-id="fashion-002"
             >
 
                 <div class="fashion-product-card">
 
+
                     <div class="product-image">
+
 
                         <img
                             src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=700&q=85"
                             alt="Classic Casual Shirt"
                         >
 
+
                         <span class="product-badge">
                             NEW
                         </span>
+
 
                         <button
                             class="wishlist"
@@ -532,19 +801,24 @@
                             title="Add to wishlist"
                             aria-label="Add Classic Casual Shirt to wishlist"
                         >
+
                             <i
                                 class="fa-regular fa-heart"
-                                aria-hidden="true">
-                            </i>
+                                aria-hidden="true"
+                            ></i>
+
                         </button>
+
 
                         <button
                             class="quick-add add-cart"
                             type="button"
                             data-name="Classic Casual Shirt"
                             data-price="999"
+                            data-mrp="1399"
+                            data-category="men"
                         >
-                            Add to Bag
+                            Add to Cart
                         </button>
 
                     </div>
@@ -552,20 +826,36 @@
 
                     <div class="product-info">
 
-                        <span>MEN</span>
+                        <span>
+                            MEN
+                        </span>
 
                         <h3>
                             Classic Casual Shirt
                         </h3>
 
+
                         <div class="rating">
-                            <span>★★★★★</span>
-                            <small>(18)</small>
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (18)
+                            </small>
+
                         </div>
 
+
                         <div class="price">
+
                             ₹999
-                            <del>₹1,399</del>
+
+                            <del>
+                                ₹1,399
+                            </del>
+
                         </div>
 
                     </div>
@@ -575,22 +865,29 @@
             </div>
 
 
-            <!-- PRODUCT 3 -->
+
+            <!-- =================================================
+                 PRODUCT 3
+            ================================================== -->
 
             <div
                 class="col-6 col-md-4 col-lg-3 product-item"
                 data-category="women"
                 data-name="Oversized Cotton Top"
+                data-product-id="fashion-003"
             >
 
                 <div class="fashion-product-card">
 
+
                     <div class="product-image">
+
 
                         <img
                             src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=700&q=85"
                             alt="Oversized Cotton Top"
                         >
+
 
                         <button
                             class="wishlist"
@@ -598,19 +895,24 @@
                             title="Add to wishlist"
                             aria-label="Add Oversized Cotton Top to wishlist"
                         >
+
                             <i
                                 class="fa-regular fa-heart"
-                                aria-hidden="true">
-                            </i>
+                                aria-hidden="true"
+                            ></i>
+
                         </button>
+
 
                         <button
                             class="quick-add add-cart"
                             type="button"
                             data-name="Oversized Cotton Top"
                             data-price="799"
+                            data-mrp="1099"
+                            data-category="women"
                         >
-                            Add to Bag
+                            Add to Cart
                         </button>
 
                     </div>
@@ -618,20 +920,36 @@
 
                     <div class="product-info">
 
-                        <span>WOMEN</span>
+                        <span>
+                            WOMEN
+                        </span>
 
                         <h3>
                             Oversized Cotton Top
                         </h3>
 
+
                         <div class="rating">
-                            <span>★★★★★</span>
-                            <small>(32)</small>
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (32)
+                            </small>
+
                         </div>
 
+
                         <div class="price">
+
                             ₹799
-                            <del>₹1,099</del>
+
+                            <del>
+                                ₹1,099
+                            </del>
+
                         </div>
 
                     </div>
@@ -641,26 +959,34 @@
             </div>
 
 
-            <!-- PRODUCT 4 -->
+
+            <!-- =================================================
+                 PRODUCT 4
+            ================================================== -->
 
             <div
                 class="col-6 col-md-4 col-lg-3 product-item"
                 data-category="men"
                 data-name="Premium Polo T-Shirt"
+                data-product-id="fashion-004"
             >
 
                 <div class="fashion-product-card">
 
+
                     <div class="product-image">
 
+
                         <img
-                            src="/hoddie.jpg"
+                            src="../hoddie.jpg"
                             alt="Premium Polo T-Shirt"
                         >
+
 
                         <span class="product-badge">
                             TRENDING
                         </span>
+
 
                         <button
                             class="wishlist"
@@ -668,19 +994,24 @@
                             title="Add to wishlist"
                             aria-label="Add Premium Polo T-Shirt to wishlist"
                         >
+
                             <i
                                 class="fa-regular fa-heart"
-                                aria-hidden="true">
-                            </i>
+                                aria-hidden="true"
+                            ></i>
+
                         </button>
+
 
                         <button
                             class="quick-add add-cart"
                             type="button"
                             data-name="Premium Polo T-Shirt"
                             data-price="899"
+                            data-mrp="1299"
+                            data-category="men"
                         >
-                            Add to Bag
+                            Add to Cart
                         </button>
 
                     </div>
@@ -688,20 +1019,36 @@
 
                     <div class="product-info">
 
-                        <span>MEN</span>
+                        <span>
+                            MEN
+                        </span>
 
                         <h3>
                             Premium Polo T-Shirt
                         </h3>
 
+
                         <div class="rating">
-                            <span>★★★★★</span>
-                            <small>(41)</small>
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (41)
+                            </small>
+
                         </div>
 
+
                         <div class="price">
+
                             ₹899
-                            <del>₹1,299</del>
+
+                            <del>
+                                ₹1,299
+                            </del>
+
                         </div>
 
                     </div>
@@ -711,22 +1058,29 @@
             </div>
 
 
-            <!-- PRODUCT 5 -->
+
+            <!-- =================================================
+                 PRODUCT 5
+            ================================================== -->
 
             <div
                 class="col-6 col-md-4 col-lg-3 product-item"
                 data-category="kids"
                 data-name="Kids Summer Outfit"
+                data-product-id="fashion-005"
             >
 
                 <div class="fashion-product-card">
 
+
                     <div class="product-image">
+
 
                         <img
                             src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=700&q=85"
                             alt="Kids Summer Outfit"
                         >
+
 
                         <button
                             class="wishlist"
@@ -734,19 +1088,24 @@
                             title="Add to wishlist"
                             aria-label="Add Kids Summer Outfit to wishlist"
                         >
+
                             <i
                                 class="fa-regular fa-heart"
-                                aria-hidden="true">
-                            </i>
+                                aria-hidden="true"
+                            ></i>
+
                         </button>
+
 
                         <button
                             class="quick-add add-cart"
                             type="button"
                             data-name="Kids Summer Outfit"
                             data-price="699"
+                            data-mrp="999"
+                            data-category="kids"
                         >
-                            Add to Bag
+                            Add to Cart
                         </button>
 
                     </div>
@@ -754,20 +1113,36 @@
 
                     <div class="product-info">
 
-                        <span>KIDS</span>
+                        <span>
+                            KIDS
+                        </span>
 
                         <h3>
                             Kids Summer Outfit
                         </h3>
 
+
                         <div class="rating">
-                            <span>★★★★★</span>
-                            <small>(16)</small>
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (16)
+                            </small>
+
                         </div>
 
+
                         <div class="price">
+
                             ₹699
-                            <del>₹999</del>
+
+                            <del>
+                                ₹999
+                            </del>
+
                         </div>
 
                     </div>
@@ -777,112 +1152,55 @@
             </div>
 
 
-            <!-- PRODUCT 6 -->
 
-           <!--<div
-                class="col-6 col-md-4 col-lg-3 product-item"
-                data-category="accessories"
-                data-name="Minimal Leather Handbag"
-            >
-
-                <div class="fashion-product-card">
-
-                    <div class="product-image">
-
-                        <img
-                            src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=85"
-                            alt="Minimal Leather Handbag"
-                        >
-
-                        <span class="product-badge">
-                            LIMITED
-                        </span>
-
-                        <button
-                            class="wishlist"
-                            type="button"
-                            title="Add to wishlist"
-                            aria-label="Add Minimal Leather Handbag to wishlist"
-                        >
-                            <i
-                                class="fa-regular fa-heart"
-                                aria-hidden="true">
-                            </i>
-                        </button>
-
-                        <button
-                            class="quick-add add-cart"
-                            type="button"
-                            data-name="Minimal Leather Handbag"
-                            data-price="1499"
-                        >
-                            Add to Bag
-                        </button>
-
-                    </div>
-
-
-                    <div class="product-info">
-
-                        <span>ACCESSORIES</span>
-
-                        <h3>
-                            Minimal Leather Handbag
-                        </h3>
-
-                        <div class="rating">
-                            <span>★★★★★</span>
-                            <small>(29)</small>
-                        </div>
-
-                        <div class="price">
-                            ₹1,499
-                            <del>₹1,999</del>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>--> 
-
-
-            <!-- PRODUCT 7 -->
+            <!-- =================================================
+                 PRODUCT 6
+                 WIDE LEG / OLIVE GREEN
+            ================================================== -->
 
             <div
                 class="col-6 col-md-4 col-lg-3 product-item"
                 data-category="women"
-                data-name="Wide Leg Pants"
+                data-name="Olive Green Shirt"
+                data-product-id="fashion-006"
             >
 
                 <div class="fashion-product-card">
 
+
                     <div class="product-image">
 
+
                         <img
-                            src="/women shirt.jpg"
-                            alt="Wide Leg Pants"
+                            src="../women shirt.jpg"
+                            alt="Olive Green Shirt"
                         >
+
 
                         <button
                             class="wishlist"
                             type="button"
                             title="Add to wishlist"
-                            aria-label="Add Wide Leg Pants to wishlist"
+                            aria-label="Add Olive Green Shirt to wishlist"
                         >
+
                             <i
                                 class="fa-regular fa-heart"
-                                aria-hidden="true">
-                            </i>
+                                aria-hidden="true"
+                            ></i>
+
                         </button>
+
 
                         <button
                             class="quick-add add-cart"
                             type="button"
-                            data-name="Wide Leg Pants"
+                            data-name="Olive Green Shirt"
                             data-price="1099"
+                            data-mrp="1499"
+                            data-category="women"
                         >
-                            Add to Bag
+                            Add to Cart
                         </button>
 
                     </div>
@@ -890,20 +1208,36 @@
 
                     <div class="product-info">
 
-                        <span>WOMEN</span>
+                        <span>
+                            WOMEN
+                        </span>
 
                         <h3>
                             Olive Green Shirt
                         </h3>
 
+
                         <div class="rating">
-                            <span>★★★★★</span>
-                            <small>(21)</small>
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (21)
+                            </small>
+
                         </div>
 
+
                         <div class="price">
+
                             ₹1,099
-                            <del>₹1,499</del>
+
+                            <del>
+                                ₹1,499
+                            </del>
+
                         </div>
 
                     </div>
@@ -913,42 +1247,59 @@
             </div>
 
 
-            <!-- PRODUCT 8 -->
-            <!--
+
+            <!-- =================================================
+                 SAREE PRODUCT 1
+            ================================================== -->
+
             <div
                 class="col-6 col-md-4 col-lg-3 product-item"
-                data-category="accessories"
-                data-name="Classic Sunglasses"
+                data-category="sarees"
+                data-name="Elegant Rose Silk Saree"
+                data-product-id="fashion-007"
             >
 
                 <div class="fashion-product-card">
 
+
                     <div class="product-image">
 
+
                         <img
-                            src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=700&q=85"
-                            alt="Classic Sunglasses"
+                            src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=700&q=85"
+                            alt="Elegant Rose Silk Saree"
                         >
+
+
+                        <span class="product-badge">
+                            NEW
+                        </span>
+
 
                         <button
                             class="wishlist"
                             type="button"
                             title="Add to wishlist"
-                            aria-label="Add Classic Sunglasses to wishlist"
+                            aria-label="Add Elegant Rose Silk Saree to wishlist"
                         >
+
                             <i
                                 class="fa-regular fa-heart"
-                                aria-hidden="true">
-                            </i>
+                                aria-hidden="true"
+                            ></i>
+
                         </button>
+
 
                         <button
                             class="quick-add add-cart"
                             type="button"
-                            data-name="Classic Sunglasses"
-                            data-price="599"
+                            data-name="Elegant Rose Silk Saree"
+                            data-price="1499"
+                            data-mrp="1999"
+                            data-category="sarees"
                         >
-                            Add to Bag
+                            Add to Cart
                         </button>
 
                     </div>
@@ -956,20 +1307,36 @@
 
                     <div class="product-info">
 
-                        <span>ACCESSORIES</span>
+                        <span>
+                            SAREES
+                        </span>
 
                         <h3>
-                            Classic Sunglasses
+                            Elegant Rose Silk Saree
                         </h3>
 
+
                         <div class="rating">
-                            <span>★★★★★</span>
-                            <small>(37)</small>
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (28)
+                            </small>
+
                         </div>
 
+
                         <div class="price">
-                            ₹599
-                            <del>₹899</del>
+
+                            ₹1,499
+
+                            <del>
+                                ₹1,999
+                            </del>
+
                         </div>
 
                     </div>
@@ -978,8 +1345,304 @@
 
             </div>
 
+
+
+            <!-- =================================================
+                 SAREE PRODUCT 2
+            ================================================== -->
+
+            <div
+                class="col-6 col-md-4 col-lg-3 product-item"
+                data-category="sarees"
+                data-name="Classic Green Saree"
+                data-product-id="fashion-008"
+            >
+
+                <div class="fashion-product-card">
+
+
+                    <div class="product-image">
+
+
+                        <img
+                            src="../saree2.jpg"
+                            alt="Classic Green Saree"
+                        >
+
+
+                        <span class="product-badge">
+                            BESTSELLER
+                        </span>
+
+
+                        <button
+                            class="wishlist"
+                            type="button"
+                            title="Add to wishlist"
+                            aria-label="Add Classic Green Saree to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true"
+                            ></i>
+
+                        </button>
+
+
+                        <button
+                            class="quick-add add-cart"
+                            type="button"
+                            data-name="Classic Green Saree"
+                            data-price="1699"
+                            data-mrp="2199"
+                            data-category="sarees"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span>
+                            SAREES
+                        </span>
+
+                        <h3>
+                            Classic Green Saree
+                        </h3>
+
+
+                        <div class="rating">
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (35)
+                            </small>
+
+                        </div>
+
+
+                        <div class="price">
+
+                            ₹1,699
+
+                            <del>
+                                ₹2,199
+                            </del>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 SAREE PRODUCT 3
+            ================================================== -->
+
+            <div
+                class="col-6 col-md-4 col-lg-3 product-item"
+                data-category="sarees"
+                data-name="Pastel Organza Saree"
+                data-product-id="fashion-009"
+            >
+
+                <div class="fashion-product-card">
+
+
+                    <div class="product-image">
+
+
+                        <img
+                            src="../blue saree.jpg"
+                            alt="Pastel Organza Saree"
+                        >
+
+
+                        <button
+                            class="wishlist"
+                            type="button"
+                            title="Add to wishlist"
+                            aria-label="Add Pastel Organza Saree to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true"
+                            ></i>
+
+                        </button>
+
+
+                        <button
+                            class="quick-add add-cart"
+                            type="button"
+                            data-name="Pastel Organza Saree"
+                            data-price="1899"
+                            data-mrp="2499"
+                            data-category="sarees"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span>
+                            SAREES
+                        </span>
+
+                        <h3>
+                            Pastel Organza Saree
+                        </h3>
+
+
+                        <div class="rating">
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (19)
+                            </small>
+
+                        </div>
+
+
+                        <div class="price">
+
+                            ₹1,899
+
+                            <del>
+                                ₹2,499
+                            </del>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 SAREE PRODUCT 4
+            ================================================== -->
+
+            <div
+                class="col-6 col-md-4 col-lg-3 product-item"
+                data-category="sarees"
+                data-name="Royal Blue Saree"
+                data-product-id="fashion-010"
+            >
+
+                <div class="fashion-product-card">
+
+
+                    <div class="product-image">
+
+
+                        <img
+                            src="../saree2.jpg"
+                            alt="Royal Blue Saree"
+                        >
+
+
+                        <span class="product-badge">
+                            TRENDING
+                        </span>
+
+
+                        <button
+                            class="wishlist"
+                            type="button"
+                            title="Add to wishlist"
+                            aria-label="Add Royal Blue Saree to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true"
+                            ></i>
+
+                        </button>
+
+
+                        <button
+                            class="quick-add add-cart"
+                            type="button"
+                            data-name="Royal Blue Saree"
+                            data-price="1599"
+                            data-mrp="2099"
+                            data-category="sarees"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span>
+                            SAREES
+                        </span>
+
+                        <h3>
+                            Royal Blue Saree
+                        </h3>
+
+
+                        <div class="rating">
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (42)
+                            </small>
+
+                        </div>
+
+
+                        <div class="price">
+
+                            ₹1,599
+
+                            <del>
+                                ₹2,099
+                            </del>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
         </div>
-        --> 
+
+
+
+        <!-- NO PRODUCTS -->
 
         <div
             class="no-products"
@@ -993,9 +1656,10 @@
 </section>
 
 
-<!-- =========================
+
+<!-- =========================================================
      PROMOTION
-========================= -->
+========================================================== -->
 
 <section class="fashion-promo">
 
@@ -1003,21 +1667,29 @@
 
         <div class="fashion-promo-box">
 
+
             <div class="promo-copy">
 
                 <span>
                     OZZO MEMBER OFFER
                 </span>
 
+
                 <h2>
+
                     Your Style.<br>
                     Your Statement.
+
                 </h2>
 
+
                 <p>
+
                     Get exclusive offers and early access
                     to our newest fashion collections.
+
                 </p>
+
 
                 <a href="#">
                     Explore More →
@@ -1026,10 +1698,11 @@
             </div>
 
 
+
             <div class="promo-image">
 
                 <img
-                    src="/fashion hero.png"
+                    src="../fashion hero.png"
                     alt="Fashion collection"
                 >
 
@@ -1042,9 +1715,10 @@
 </section>
 
 
-<!-- =========================
-     FOOTER — SAME AS INDEX
-========================= -->
+
+<!-- =========================================================
+     FOOTER
+========================================================== -->
 
 <footer class="footer">
 
@@ -1052,95 +1726,143 @@
 
         <div class="footer-main">
 
+
             <!-- BRAND -->
+
             <div class="footer-brand">
 
                 <div class="footer-logo">
                     OZZO
                 </div>
 
+
                 <div class="footer-categories">
+
                     Fashion
-                    <span>•</span>
+
+                    <span>
+                        •
+                    </span>
+
                     Books
-                    <span>•</span>
+
+                    <span>
+                        •
+                    </span>
+
                     Stationery
+
+                    <span>
+                        •
+                    </span>
+
+                    Pads
+
                 </div>
 
             </div>
 
 
+
             <!-- QUICK LINKS -->
+
             <div class="footer-column">
 
-                <h4>Quick Links</h4>
+                <h4>
+                    Quick Links
+                </h4>
 
-                <a href="index.html">
+
+                <a href="../index.html">
                     Home
                 </a>
 
-                <a href="#">
+
+                <a href="../About Us/About.html">
                     About Us
                 </a>
 
-                <a href="#">
+
+                <a href="../Faq/Faq.html">
                     FAQs
                 </a>
 
-                <a href="#">
+
+                <a href="../Contact/Contact.html">
                     Contact
                 </a>
 
             </div>
 
 
+
             <!-- CATEGORIES -->
+
             <div class="footer-column">
 
-                <h4>Categories</h4>
+                <h4>
+                    Categories
+                </h4>
 
-                <a href="Fashion/Fashion.html">Fashion</a>
-        <a href="/Books/Books.html">Books</a>
-        <a href="/Stationary/Stationary.html">Stationery</a>
-        <a href="/Pads/Pads.html">Pads</a>
+
+                <a href="Fashion.html">
+                    Fashion
+                </a>
+
+
+                <a href="../Books/Books.html">
+                    Books
+                </a>
+
+
+                <a href="../Stationary/Stationary.html">
+                    Stationery
+                </a>
+
+
+                <a href="../Pads/Pads.html">
+                    Pads
+                </a>
 
             </div>
 
 
+
             <!-- CUSTOMER SERVICE -->
+
             <div class="footer-column">
 
-                <h4>Customer Service</h4>
+                <h4>
+                    Customer Service
+                </h4>
 
-                <a href="#">
-                    Shipping Policy
-                </a>
 
-                <a href="#">
-                    Return &amp; Refund
-                </a>
-
-                <a href="#">
+                <a href="../Privacy/Privacy.html">
                     Privacy Policy
                 </a>
 
-                <a href="#">
+
+                <a href="../Terms/Terms.html">
                     Terms &amp; Conditions
                 </a>
 
             </div>
 
 
+
             <!-- NEWSLETTER -->
+
             <div class="footer-newsletter">
 
                 <h4>
                     Join Our Newsletter
                 </h4>
 
+
                 <p>
                     Get updates on new arrivals and special offers.
                 </p>
+
 
                 <form id="newsletterForm">
 
@@ -1154,6 +1876,7 @@
                             required
                         >
 
+
                         <button
                             type="submit"
                             title="Subscribe"
@@ -1166,69 +1889,86 @@
 
                 </form>
 
+
                 <div
                     class="newsletter-message"
-                    id="newsletterMessage">
-                </div>
+                    id="newsletterMessage"
+                ></div>
 
 
-                <!-- SOCIAL ICONS -->
+
+                <!-- SOCIAL -->
 
                 <div class="social-icons">
+
 
                     <a
                         href="#"
                         title="Facebook"
                         aria-label="Facebook"
                     >
+
                         <i
                             class="fa-brands fa-facebook-f"
-                            aria-hidden="true">
-                        </i>
+                            aria-hidden="true"
+                        ></i>
+
                     </a>
+
 
                     <a
                         href="#"
                         title="Instagram"
                         aria-label="Instagram"
                     >
+
                         <i
                             class="fa-brands fa-instagram"
-                            aria-hidden="true">
-                        </i>
+                            aria-hidden="true"
+                        ></i>
+
                     </a>
+
 
                     <a
                         href="#"
                         title="YouTube"
                         aria-label="YouTube"
                     >
+
                         <i
                             class="fa-brands fa-youtube"
-                            aria-hidden="true">
-                        </i>
+                            aria-hidden="true"
+                        ></i>
+
                     </a>
+
 
                     <a
                         href="#"
                         title="LinkedIn"
                         aria-label="LinkedIn"
                     >
+
                         <i
                             class="fa-brands fa-linkedin-in"
-                            aria-hidden="true">
-                        </i>
+                            aria-hidden="true"
+                        ></i>
+
                     </a>
+
 
                     <a
                         href="#"
                         title="Twitter"
                         aria-label="Twitter"
                     >
+
                         <i
                             class="fa-brands fa-twitter"
-                            aria-hidden="true">
-                        </i>
+                            aria-hidden="true"
+                        ></i>
+
                     </a>
 
                 </div>
@@ -1240,7 +1980,10 @@
     </div>
 
 
-    <!-- FOOTER BOTTOM -->
+
+    <!-- =====================================================
+         FOOTER BOTTOM
+    ====================================================== -->
 
     <div class="footer-bottom">
 
@@ -1251,6 +1994,7 @@
                 <span>
                     © 2025 OZZO. All rights reserved.
                 </span>
+
 
                 <span>
                     Better Choices. A Brighter You.
@@ -1265,217 +2009,724 @@
 </footer>
 
 
-<script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-</script>
 
+<!-- =========================================================
+     BOOTSTRAP JS
+========================================================== -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+></script>
+
+
+
+<!-- =========================================================
+     FASHION PAGE JAVASCRIPT
+========================================================== -->
 
 <script>
 
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
 
-    const filterButtons =
-        document.querySelectorAll(".filter-btn");
 
-    const products =
-        document.querySelectorAll(".product-item");
+        /* =====================================================
+           ELEMENTS
+        ====================================================== */
 
-    const noProducts =
-        document.getElementById("noProducts");
+        const filterButtons =
+            document.querySelectorAll(".filter-btn");
 
-    const searchInput =
-        document.getElementById("searchInput");
 
-    const cartCount =
-        document.getElementById("cartCount");
+        const products =
+            document.querySelectorAll(".product-item");
 
-    let cart = 0;
 
+        const noProducts =
+            document.getElementById("noProducts");
 
-    /* FILTER */
 
-    filterButtons.forEach(button => {
+        const searchInput =
+            document.getElementById("searchInput");
 
-        button.addEventListener("click", function(){
 
-            filterButtons.forEach(btn =>
-                btn.classList.remove("active")
-            );
+        const cartCount =
+            document.getElementById("cartCount");
 
-            this.classList.add("active");
 
-            const filter =
-                this.dataset.filter;
+        const headerCartButton =
+            document.getElementById("headerCartButton");
 
-            let visible = 0;
 
-            products.forEach(product => {
+        const categoryLinks =
+            document.querySelectorAll(".fashion-category");
 
-                if(
-                    filter === "all" ||
-                    product.dataset.category === filter
-                ){
 
-                    product.style.display = "";
+        const wishlistButtons =
+            document.querySelectorAll(".wishlist");
 
-                    visible++;
 
-                }else{
+        const addCartButtons =
+            document.querySelectorAll(".add-cart");
 
-                    product.style.display = "none";
 
-                }
+        /* =====================================================
+           CURRENT FILTER
+        ====================================================== */
 
-            });
+        let currentFilter = "all";
 
-            noProducts.style.display =
-                visible === 0 ? "block" : "none";
 
-        });
+        /* =====================================================
+           CART
+        ====================================================== */
 
-    });
+        let cart =
+            JSON.parse(
+                localStorage.getItem("ozzoCart")
+            ) || [];
 
 
-    /* CATEGORY CLICK */
+        /* =====================================================
+           UPDATE CART COUNT
+        ====================================================== */
 
-    document
-        .querySelectorAll(".fashion-category")
-        .forEach(category => {
+        function updateCartCount() {
 
-            category.addEventListener("click", function(){
+            const totalItems =
+                cart.reduce(
+                    function (total, item) {
 
-                const filter =
-                    this.dataset.filter;
+                        return (
+                            total +
+                            Number(item.quantity || 0)
+                        );
 
-                const button =
-                    document.querySelector(
-                        `.filter-btn[data-filter="${filter}"]`
-                    );
+                    },
+                    0
+                );
 
-                if(button){
-                    button.click();
-                }
 
-            });
-
-        });
-
-
-    /* WISHLIST */
-
-    document
-        .querySelectorAll(".wishlist")
-        .forEach(button => {
-
-            button.addEventListener("click", function(){
-
-                this.classList.toggle("active");
-
-                const icon =
-                    this.querySelector("i");
-
-                if(
-                    this.classList.contains("active")
-                ){
-
-                    icon.classList.remove(
-                        "fa-regular"
-                    );
-
-                    icon.classList.add(
-                        "fa-solid"
-                    );
-
-                }else{
-
-                    icon.classList.remove(
-                        "fa-solid"
-                    );
-
-                    icon.classList.add(
-                        "fa-regular"
-                    );
-
-                }
-
-            });
-
-        });
-
-
-    /* CART */
-
-    document
-        .querySelectorAll(".add-cart")
-        .forEach(button => {
-
-            button.addEventListener("click", function(){
-
-                cart++;
-
-                cartCount.textContent = cart;
-
-                const original =
-                    this.textContent;
-
-                this.textContent =
-                    "Added ✓";
-
-                this.classList.add("added");
-
-                setTimeout(() => {
-
-                    this.textContent =
-                        original;
-
-                    this.classList.remove("added");
-
-                }, 1200);
-
-            });
-
-        });
-
-
-    /* SEARCH */
-
-    searchInput.addEventListener(
-        "input",
-        function(){
-
-            const value =
-                this.value.toLowerCase().trim();
-
-            let visible = 0;
-
-            products.forEach(product => {
-
-                const name =
-                    product.dataset.name.toLowerCase();
-
-                if(name.includes(value)){
-
-                    product.style.display = "";
-
-                    visible++;
-
-                }else{
-
-                    product.style.display = "none";
-
-                }
-
-            });
-
-            noProducts.style.display =
-                visible === 0 ? "block" : "none";
+            cartCount.textContent =
+                totalItems;
 
         }
-    );
 
-});
+
+        /* =====================================================
+           SAVE CART
+        ====================================================== */
+
+        function saveCart() {
+
+            localStorage.setItem(
+                "ozzoCart",
+                JSON.stringify(cart)
+            );
+
+            updateCartCount();
+
+        }
+
+
+        /* =====================================================
+           ADD PRODUCT TO CART
+        ====================================================== */
+
+        function addProductToCart(
+            product
+        ) {
+
+            const productId =
+                product.dataset.productId;
+
+
+            const productName =
+                product.dataset.name;
+
+
+            const addButton =
+                product.querySelector(".add-cart");
+
+
+            const productPrice =
+                Number(
+                    addButton.dataset.price
+                );
+
+
+            const productMrp =
+                Number(
+                    addButton.dataset.mrp ||
+                    productPrice
+                );
+
+
+            const productImage =
+                product.querySelector(
+                    ".product-image img"
+                )?.getAttribute("src") || "";
+
+
+            const productCategory =
+                product.dataset.category;
+
+
+            const existingProduct =
+                cart.find(
+                    function (item) {
+
+                        return item.id === productId;
+
+                    }
+                );
+
+
+            if (existingProduct) {
+
+                existingProduct.quantity =
+                    Number(
+                        existingProduct.quantity
+                    ) + 1;
+
+            } else {
+
+                cart.push({
+
+                    id: productId,
+
+                    name: productName,
+
+                    price: productPrice,
+
+                    mrp: productMrp,
+
+                    image: productImage,
+
+                    category: productCategory,
+
+                    quantity: 1
+
+                });
+
+            }
+
+
+            saveCart();
+
+        }
+
+
+        /* =====================================================
+           FILTER + SEARCH
+        ====================================================== */
+
+        function applyProductFilter() {
+
+            const searchValue =
+                searchInput.value
+                    .toLowerCase()
+                    .trim();
+
+
+            let visibleProducts = 0;
+
+
+            products.forEach(
+                function (product) {
+
+
+                    const categoryMatches =
+                        currentFilter === "all" ||
+                        product.dataset.category === currentFilter;
+
+
+                    const name =
+                        product.dataset.name
+                            .toLowerCase();
+
+
+                    const searchMatches =
+                        name.includes(searchValue);
+
+
+                    if (
+                        categoryMatches &&
+                        searchMatches
+                    ) {
+
+                        product.style.display =
+                            "";
+
+                        visibleProducts++;
+
+                    } else {
+
+                        product.style.display =
+                            "none";
+
+                    }
+
+                }
+            );
+
+
+            noProducts.style.display =
+                visibleProducts === 0
+                    ? "block"
+                    : "none";
+
+        }
+
+
+        /* =====================================================
+           FILTER BUTTONS
+        ====================================================== */
+
+        filterButtons.forEach(
+            function (button) {
+
+                button.addEventListener(
+                    "click",
+                    function () {
+
+
+                        filterButtons.forEach(
+                            function (btn) {
+
+                                btn.classList.remove(
+                                    "active"
+                                );
+
+                            }
+                        );
+
+
+                        this.classList.add(
+                            "active"
+                        );
+
+
+                        currentFilter =
+                            this.dataset.filter;
+
+
+                        applyProductFilter();
+
+                    }
+                );
+
+            }
+        );
+
+
+
+        /* =====================================================
+           CATEGORY CARDS
+        ====================================================== */
+
+        categoryLinks.forEach(
+            function (category) {
+
+                category.addEventListener(
+                    "click",
+                    function (event) {
+
+                        event.preventDefault();
+
+
+                        const filter =
+                            this.dataset.filter;
+
+
+                        currentFilter =
+                            filter;
+
+
+                        filterButtons.forEach(
+                            function (button) {
+
+                                if (
+                                    button.dataset.filter ===
+                                    filter
+                                ) {
+
+                                    button.classList.add(
+                                        "active"
+                                    );
+
+                                } else {
+
+                                    button.classList.remove(
+                                        "active"
+                                    );
+
+                                }
+
+                            }
+                        );
+
+
+                        applyProductFilter();
+
+
+                        document
+                            .getElementById(
+                                "fashionProducts"
+                            )
+                            .scrollIntoView({
+                                behavior: "smooth"
+                            });
+
+                    }
+                );
+
+            }
+        );
+
+
+
+        /* =====================================================
+           PRODUCT CARD CLICK
+           
+           IMPORTANT:
+           Clicking image/card opens ProductDetails.html
+        ====================================================== */
+
+        products.forEach(
+            function (product) {
+
+
+                const card =
+                    product.querySelector(
+                        ".fashion-product-card"
+                    );
+
+
+                if (!card) {
+                    return;
+                }
+
+
+                card.addEventListener(
+                    "click",
+                    function (event) {
+
+
+                        /* -------------------------------------
+                           DO NOT OPEN DETAILS FOR BUTTON CLICKS
+                        ------------------------------------- */
+
+                        if (
+                            event.target.closest(
+                                ".add-cart"
+                            )
+                        ) {
+
+                            return;
+
+                        }
+
+
+                        if (
+                            event.target.closest(
+                                ".wishlist"
+                            )
+                        ) {
+
+                            return;
+
+                        }
+
+
+                        /* -------------------------------------
+                           GET PRODUCT ID
+                        ------------------------------------- */
+
+                        const productId =
+                            product.dataset.productId;
+
+
+                        if (!productId) {
+                            return;
+                        }
+
+
+                        /* -------------------------------------
+                           OPEN PRODUCT DETAILS
+                        ------------------------------------- */
+
+                        window.location.href =
+                            `../ProductDetails.html?id=${encodeURIComponent(productId)}`;
+
+                    }
+                );
+
+
+                card.setAttribute(
+                    "role",
+                    "link"
+                );
+
+
+                card.setAttribute(
+                    "tabindex",
+                    "0"
+                );
+
+
+                card.addEventListener(
+                    "keydown",
+                    function (event) {
+
+                        if (
+                            event.key === "Enter" ||
+                            event.key === " "
+                        ) {
+
+                            event.preventDefault();
+
+
+                            const productId =
+                                product.dataset.productId;
+
+
+                            if (!productId) {
+                                return;
+                            }
+
+
+                            window.location.href =
+                                `../ProductDetails.html?id=${encodeURIComponent(productId)}`;
+
+                        }
+
+                    }
+                );
+
+            }
+        );
+
+
+
+        /* =====================================================
+           WISHLIST
+        ====================================================== */
+
+        wishlistButtons.forEach(
+            function (button) {
+
+                button.addEventListener(
+                    "click",
+                    function (event) {
+
+
+                        event.preventDefault();
+
+                        event.stopPropagation();
+
+
+                        this.classList.toggle(
+                            "active"
+                        );
+
+
+                        const icon =
+                            this.querySelector("i");
+
+
+                        if (
+                            this.classList.contains(
+                                "active"
+                            )
+                        ) {
+
+                            icon.classList.remove(
+                                "fa-regular"
+                            );
+
+                            icon.classList.add(
+                                "fa-solid"
+                            );
+
+                        } else {
+
+                            icon.classList.remove(
+                                "fa-solid"
+                            );
+
+                            icon.classList.add(
+                                "fa-regular"
+                            );
+
+                        }
+
+                    }
+                );
+
+            }
+        );
+
+
+
+        /* =====================================================
+           ADD TO CART
+        ====================================================== */
+
+        addCartButtons.forEach(
+            function (button) {
+
+                button.addEventListener(
+                    "click",
+                    function (event) {
+
+
+                        event.preventDefault();
+
+                        event.stopPropagation();
+
+
+                        const product =
+                            this.closest(
+                                ".product-item"
+                            );
+
+
+                        if (!product) {
+                            return;
+                        }
+
+
+                        addProductToCart(
+                            product
+                        );
+
+
+                        const originalText =
+                            this.textContent;
+
+
+                        this.textContent =
+                            "Added ✓";
+
+
+                        this.classList.add(
+                            "added"
+                        );
+
+
+                        setTimeout(
+                            function () {
+
+                                button.textContent =
+                                    originalText;
+
+                                button.classList.remove(
+                                    "added"
+                                );
+
+                            },
+                            1200
+                        );
+
+                    }
+                );
+
+            }
+        );
+
+
+
+        /* =====================================================
+           SEARCH
+        ====================================================== */
+
+        searchInput.addEventListener(
+            "input",
+            function () {
+
+                applyProductFilter();
+
+            }
+        );
+
+
+
+        /* =====================================================
+           HEADER CART BUTTON
+        ====================================================== */
+
+        headerCartButton.addEventListener(
+            "click",
+            function () {
+
+                window.location.href =
+                    "../Cart.html";
+
+            }
+        );
+
+
+
+        /* =====================================================
+           NEWSLETTER
+        ====================================================== */
+
+        const newsletterForm =
+            document.getElementById(
+                "newsletterForm"
+            );
+
+
+        const newsletterMessage =
+            document.getElementById(
+                "newsletterMessage"
+            );
+
+
+        if (newsletterForm) {
+
+            newsletterForm.addEventListener(
+                "submit",
+                function (event) {
+
+                    event.preventDefault();
+
+
+                    newsletterMessage.textContent =
+                        "Thank you for subscribing!";
+
+
+                    newsletterForm.reset();
+
+                }
+            );
+
+        }
+
+
+
+        /* =====================================================
+           INITIAL CART COUNT
+        ====================================================== */
+
+        updateCartCount();
+
+
+        /* =====================================================
+           INITIAL PRODUCTS
+        ====================================================== */
+
+        applyProductFilter();
+
+    }
+
+);
 
 </script>
 
+
 </body>
+
 </html>

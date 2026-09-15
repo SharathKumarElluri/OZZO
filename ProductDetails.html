@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Details | OZZO</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="ProductDetails.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     TOP BAR
+========================================================= -->
+
+<div class="top-bar">
+    <div class="container-fluid px-lg-5">
+        <span>Free shipping on orders above ₹999</span>
+        <span>Easy Returns • Secure Payments</span>
+    </div>
+</div>
+
+
+<!-- =========================================================
+     NAVBAR
+========================================================= -->
+
+<nav class="navbar navbar-expand-xl ozzo-navbar">
+
+    <div class="container-fluid px-lg-5">
+
+        <a class="navbar-brand" href="index.html">
+            <div class="ozzo-logo">OZZO</div>
+            <small>Better Choices. A Brighter You.</small>
+        </a>
+
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#ozzoNavbar"
+            aria-controls="ozzoNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            title="Toggle navigation"
+        >
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="ozzoNavbar">
+
+            <ul class="navbar-nav mx-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Fashion.html">
+                        Fashion
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Books.html">
+                        Books
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Stationery.html">
+                        Stationery
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Pads.html">
+                        Pads
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <div class="nav-actions">
+
+                <button
+                    class="nav-icon"
+                    type="button"
+                    title="Search"
+                    aria-label="Search"
+                >
+                    <i class="fa-solid fa-magnifying-glass"
+                       aria-hidden="true"></i>
+                </button>
+
+                <button
+                    class="nav-icon"
+                    type="button"
+                    title="Wishlist"
+                    aria-label="Wishlist"
+                >
+                    <i class="fa-regular fa-heart"
+                       aria-hidden="true"></i>
+                </button>
+
+                <a
+                    href="Cart.html"
+                    class="nav-cart"
+                    title="Shopping Cart"
+                    aria-label="Shopping Cart"
+                >
+                    <i class="fa-solid fa-bag-shopping"
+                       aria-hidden="true"></i>
+
+                    <span id="cartCount">0</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- =========================================================
+     BREADCRUMB
+========================================================= -->
+
+<section class="breadcrumb-area">
+
+    <div class="container-fluid px-lg-5">
+
+        <div class="breadcrumb-wrap">
+
+            <a href="index.html">Home</a>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+            <a href="#" id="breadcrumbCategory">
+                Fashion
+            </a>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+            <span id="breadcrumbProduct">
+                Product
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PRODUCT DETAILS
+========================================================= -->
+
+<main class="product-details-section">
+
+    <div class="container-fluid px-lg-5">
+
+        <div class="product-layout">
+
+
+            <!-- =================================================
+                 LEFT IMAGE GALLERY
+            ================================================== -->
+
+            <div class="product-gallery">
+
+                <div class="thumbnail-list" id="thumbnailList">
+                    <!-- JS -->
+                </div>
+
+
+                <div class="main-product-image">
+
+                    <button
+                        class="image-action"
+                        type="button"
+                        title="Add to wishlist"
+                        aria-label="Add to wishlist"
+                    >
+                        <i class="fa-regular fa-heart"
+                           aria-hidden="true"></i>
+                    </button>
+
+
+                    <img
+                        id="mainProductImage"
+                        src=""
+                        alt="Product"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 CENTER PRODUCT INFORMATION
+            ================================================== -->
+
+            <div class="product-information">
+
+                <div class="store-name" id="storeName">
+                    OZZO STORE
+                </div>
+
+
+                <h1 id="productName">
+                    Product Name
+                </h1>
+
+
+                <div class="rating-row">
+
+                    <span class="rating-box">
+                        <span id="productRating">4.5</span>
+                        <i class="fa-solid fa-star"
+                           aria-hidden="true"></i>
+                    </span>
+
+                    <a href="#reviews" id="reviewCount">
+                        0 ratings
+                    </a>
+
+                    <span class="rating-separator">|</span>
+
+                    <strong id="boughtCount">
+                        100+ bought
+                    </strong>
+
+                </div>
+
+
+                <div class="divider"></div>
+
+
+                <!-- PRICE -->
+
+                <div class="price-section">
+
+                    <span class="discount" id="discount">
+                        -40%
+                    </span>
+
+                    <span class="currency">
+                        ₹
+                    </span>
+
+                    <span
+                        class="product-price"
+                        id="productPrice"
+                    >
+                        999
+                    </span>
+
+                </div>
+
+
+                <div class="mrp-line">
+
+                    <span>
+                        M.R.P.:
+                    </span>
+
+                    <del id="productMrp">
+                        ₹1,599
+                    </del>
+
+                </div>
+
+
+                <p class="tax-note">
+                    Inclusive of all taxes
+                </p>
+
+
+                <!-- OFFERS -->
+
+                <div class="offers-section">
+
+                    <div class="section-title">
+
+                        <i
+                            class="fa-solid fa-percent"
+                            aria-hidden="true"
+                        ></i>
+
+                        <strong>
+                            Offers
+                        </strong>
+
+                    </div>
+
+
+                    <div class="offers-grid">
+
+                        <div class="offer-card">
+
+                            <strong>
+                                Cashback
+                            </strong>
+
+                            <p>
+                                Upto ₹100 cashback on selected orders.
+                            </p>
+
+                            <a href="#">
+                                1 offer →
+                            </a>
+
+                        </div>
+
+
+                        <div class="offer-card">
+
+                            <strong>
+                                Bank Offer
+                            </strong>
+
+                            <p>
+                                Get extra discount on select cards.
+                            </p>
+
+                            <a href="#">
+                                View offers →
+                            </a>
+
+                        </div>
+
+
+                        <div class="offer-card">
+
+                            <strong>
+                                Partner Offers
+                            </strong>
+
+                            <p>
+                                Special savings available at checkout.
+                            </p>
+
+                            <a href="#">
+                                1 offer →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FEATURES -->
+
+                <div class="service-icons">
+
+                    <div>
+                        <span>
+                            <i
+                                class="fa-solid fa-rotate-left"
+                                aria-hidden="true"
+                            ></i>
+                        </span>
+
+                        <small>
+                            Easy Returns
+                        </small>
+                    </div>
+
+
+                    <div>
+                        <span>
+                            <i
+                                class="fa-solid fa-truck"
+                                aria-hidden="true"
+                            ></i>
+                        </span>
+
+                        <small>
+                            Free Delivery
+                        </small>
+                    </div>
+
+
+                    <div>
+                        <span>
+                            <i
+                                class="fa-solid fa-shield-halved"
+                                aria-hidden="true"
+                            ></i>
+                        </span>
+
+                        <small>
+                            Secure Payment
+                        </small>
+                    </div>
+
+
+                    <div>
+                        <span>
+                            <i
+                                class="fa-solid fa-wallet"
+                                aria-hidden="true"
+                            ></i>
+                        </span>
+
+                        <small>
+                            Pay on Delivery
+                        </small>
+                    </div>
+
+                </div>
+
+
+                <!-- DESCRIPTION -->
+
+                <div class="description-section">
+
+                    <h3>
+                        About this item
+                    </h3>
+
+                    <ul id="productDescription">
+                        <!-- JS -->
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- =================================================
+                 RIGHT BUY BOX
+            ================================================== -->
+
+            <aside class="buy-box">
+
+                <div class="buy-price">
+
+                    <span>₹</span>
+
+                    <strong id="buyPrice">
+                        999
+                    </strong>
+
+                </div>
+
+
+                <p class="delivery">
+
+                    <strong>
+                        FREE delivery
+                    </strong>
+
+                    on selected orders.
+
+                </p>
+
+
+                <p class="fast-delivery">
+
+                    Or fastest delivery
+
+                    <strong>
+                        tomorrow.
+                    </strong>
+
+                </p>
+
+
+                <a href="#" class="delivery-link">
+                    View delivery details
+                </a>
+
+
+                <div class="location">
+
+                    <i
+                        class="fa-solid fa-location-dot"
+                        aria-hidden="true"
+                    ></i>
+
+                    <span>
+                        Delivering to your location
+                    </span>
+
+                </div>
+
+
+                <div class="stock">
+                    In stock
+                </div>
+
+
+                <label
+                    for="quantity"
+                    class="quantity-label"
+                >
+                    Quantity
+                </label>
+
+                <select
+                    id="quantity"
+                    class="quantity-select"
+                >
+                    <option value="1">Quantity: 1</option>
+                    <option value="2">Quantity: 2</option>
+                    <option value="3">Quantity: 3</option>
+                    <option value="4">Quantity: 4</option>
+                    <option value="5">Quantity: 5</option>
+                </select>
+
+
+                <button
+                    id="addToCartBtn"
+                    class="add-to-cart-main"
+                    type="button"
+                >
+                    Add to cart
+                </button>
+
+
+                <button
+                    id="buyNowBtn"
+                    class="buy-now-btn"
+                    type="button"
+                >
+                    Buy Now
+                </button>
+
+
+                <div class="seller-details">
+
+                    <div>
+                        <span>Ships from</span>
+                        <strong>OZZO</strong>
+                    </div>
+
+                    <div>
+                        <span>Sold by</span>
+                        <strong>OZZO Retail</strong>
+                    </div>
+
+                    <div>
+                        <span>Payment</span>
+                        <strong>Secure transaction</strong>
+                    </div>
+
+                    <div>
+                        <span>Gift options</span>
+                        <strong>Available at checkout</strong>
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<!-- =========================================================
+     RELATED PRODUCTS
+========================================================= -->
+
+<section class="related-products-section">
+
+    <div class="container-fluid px-lg-5">
+
+        <div class="section-heading">
+
+            <span>
+                YOU MAY ALSO LIKE
+            </span>
+
+            <h2>
+                Related Products
+            </h2>
+
+            <p>
+                More picks from OZZO that you may love.
+            </p>
+
+        </div>
+
+
+        <div
+            class="related-products-grid"
+            id="relatedProducts"
+        >
+            <!-- JS -->
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="footer">
+
+    <div class="container-fluid px-lg-5">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+                    OZZO
+                </div>
+
+                <div class="footer-categories">
+                    Fashion
+                    <span>•</span>
+                    Books
+                    <span>•</span>
+                    Stationery
+                    <span>•</span>
+                    Pads
+                </div>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Quick Links
+                </h4>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="#">
+                    About Us
+                </a>
+
+                <a href="FAQ.html">
+                    FAQs
+                </a>
+
+                <a href="Contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Categories
+                </h4>
+
+                <a href="Fashion.html">
+                    Fashion
+                </a>
+
+                <a href="Books.html">
+                    Books
+                </a>
+
+                <a href="Stationery.html">
+                    Stationery
+                </a>
+
+                <a href="Pads.html">
+                    Pads
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Customer Service
+                </h4>
+
+                <a href="#">
+                    Shipping Policy
+                </a>
+
+                <a href="#">
+                    Return & Refund
+                </a>
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+                <a href="#">
+                    Terms & Conditions
+                </a>
+
+            </div>
+
+
+            <div class="footer-newsletter">
+
+                <h4>
+                    Join Our Newsletter
+                </h4>
+
+                <p>
+                    Get updates on new arrivals and special offers.
+                </p>
+
+                <form id="newsletterForm">
+
+                    <div class="newsletter-input">
+
+                        <input
+                            type="email"
+                            id="newsletterEmail"
+                            placeholder="Enter your email address"
+                            aria-label="Enter your email address"
+                            required
+                        >
+
+                        <button
+                            type="submit"
+                            title="Subscribe"
+                            aria-label="Subscribe"
+                        >
+                            →
+                        </button>
+
+                    </div>
+
+                </form>
+
+                <div
+                    class="newsletter-message"
+                    id="newsletterMessage"
+                ></div>
+
+
+                <div class="social-icons">
+
+                    <a
+                        href="#"
+                        title="Facebook"
+                        aria-label="Facebook"
+                    >
+                        <i
+                            class="fa-brands fa-facebook-f"
+                            aria-hidden="true"
+                        ></i>
+                    </a>
+
+                    <a
+                        href="#"
+                        title="Instagram"
+                        aria-label="Instagram"
+                    >
+                        <i
+                            class="fa-brands fa-instagram"
+                            aria-hidden="true"
+                        ></i>
+                    </a>
+
+                    <a
+                        href="#"
+                        title="YouTube"
+                        aria-label="YouTube"
+                    >
+                        <i
+                            class="fa-brands fa-youtube"
+                            aria-hidden="true"
+                        ></i>
+                    </a>
+
+                    <a
+                        href="#"
+                        title="LinkedIn"
+                        aria-label="LinkedIn"
+                    >
+                        <i
+                            class="fa-brands fa-linkedin-in"
+                            aria-hidden="true"
+                        ></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container-fluid px-lg-5">
+
+            <div class="footer-bottom-inner">
+
+                <span>
+                    © 2025 OZZO. All rights reserved.
+                </span>
+
+                <span>
+                    Better Choices. A Brighter You.
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="ProductDetails.js"></script>
+
+</body>
+</html>

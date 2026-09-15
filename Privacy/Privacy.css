@@ -1,0 +1,1061 @@
+/* =========================================================
+   OZZO PRIVACY POLICY
+========================================================= */
+
+:root{
+    --navy:#132438;
+    --navy-dark:#0d1d2d;
+    --text:#16283b;
+    --muted:#657384;
+    --cream:#eeeae4;
+    --border:#e7ebef;
+    --surface:#f7f8fa;
+
+    --privacy-blue:#dce8ef;
+    --privacy-lilac:#ebe3ef;
+    --privacy-green:#dceee7;
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
+}
+
+body{
+    font-family:"DM Sans",sans-serif;
+    color:var(--text);
+    background:#fff;
+    overflow-x:hidden;
+    letter-spacing:.01em;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+button,
+input{
+    font-family:inherit;
+}
+
+
+/* =========================================================
+   TOP BAR
+========================================================= */
+
+.top-bar{
+    height:30px;
+    background:var(--navy-dark);
+    color:#fff;
+    font-size:10px;
+}
+
+.top-bar-inner{
+    height:30px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.shipping-text{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-weight:500;
+}
+
+.shipping-text i{
+    font-size:12px;
+}
+
+.top-links{
+    display:flex;
+    align-items:center;
+    gap:11px;
+}
+
+.top-links a{
+    color:#fff;
+}
+
+.login-link{
+    display:flex;
+    align-items:center;
+    gap:5px;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.main-header{
+    height:67px;
+    background:#fff;
+    border-bottom:1px solid #e9e9e9;
+    position:relative;
+    z-index:50;
+}
+
+.navbar{
+    height:67px;
+    padding-top:0;
+    padding-bottom:0;
+}
+
+.ozzo-logo{
+    color:var(--navy);
+    font-size:38px;
+    line-height:1;
+    font-weight:700;
+    letter-spacing:-2px;
+}
+
+.main-nav{
+    gap:13px;
+}
+
+.main-nav .nav-link{
+    position:relative;
+    color:#374455;
+    font-size:12px;
+    font-weight:500;
+    padding:25px 11px 23px;
+}
+
+.main-nav .nav-link:hover{
+    color:var(--navy);
+}
+
+.header-actions{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.search-box{
+    width:285px;
+    height:36px;
+    background:#f5f6f7;
+    border-radius:22px;
+    display:flex;
+    align-items:center;
+    padding:0 14px;
+}
+
+.search-box input{
+    flex:1;
+    min-width:0;
+    border:none;
+    outline:none;
+    background:transparent;
+    color:var(--text);
+    font-size:10px;
+}
+
+.search-box input::placeholder{
+    color:#7b8692;
+}
+
+.search-box i{
+    color:var(--navy);
+    font-size:13px;
+}
+
+.header-icon{
+    width:25px;
+    height:35px;
+    position:relative;
+    border:none;
+    background:transparent;
+    color:var(--navy);
+    font-size:18px;
+    cursor:pointer;
+}
+
+.cart-count{
+    position:absolute;
+    top:0;
+    right:-4px;
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    background:var(--navy);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:8px;
+}
+
+.navbar-toggler{
+    border:none;
+    box-shadow:none !important;
+    color:var(--navy);
+}
+
+
+/* =========================================================
+   PRIVACY HERO
+========================================================= */
+
+.privacy-hero{
+    width:100%;
+    background:var(--cream);
+    overflow:hidden;
+}
+
+.privacy-hero > .container-fluid{
+    width:100%;
+    max-width:100%;
+    margin:0;
+    padding-left:0 !important;
+    padding-right:0 !important;
+}
+
+.privacy-hero-content{
+    width:100%;
+    min-height:400px;
+    margin:0;
+    padding:0;
+    display:grid;
+    grid-template-columns:42% 58%;
+}
+
+.privacy-hero-copy{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:50px 40px 50px 8%;
+}
+
+.privacy-hero-copy > span{
+    margin-bottom:9px;
+    color:var(--navy);
+    font-size:10px;
+    font-weight:700;
+    letter-spacing:1.5px;
+}
+
+.privacy-hero-copy h1{
+    margin-bottom:14px;
+    color:var(--navy);
+    font-size:40px;
+    line-height:1.08;
+    font-weight:700;
+    letter-spacing:-1.4px;
+}
+
+.privacy-hero-copy h1 em{
+    font-style:italic;
+    font-weight:500;
+}
+
+.privacy-hero-copy p{
+    max-width:440px;
+    margin-bottom:15px;
+    color:#637282;
+    font-size:11px;
+    line-height:1.75;
+}
+
+.updated-date{
+    color:#7b8793;
+    font-size:8px;
+    letter-spacing:.5px;
+}
+
+.privacy-hero-image{
+    width:100%;
+    min-width:0;
+    min-height:400px;
+    overflow:hidden;
+}
+
+.privacy-hero-image img{
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit:cover;
+    object-position:center;
+}
+
+
+/* =========================================================
+   PRIVACY CONTENT
+========================================================= */
+
+.privacy-section{
+    padding:50px 0;
+}
+
+.privacy-layout{
+    width:100%;
+}
+
+.privacy-content{
+    width:100%;
+    max-width:1050px;
+    margin:0 auto;
+}
+
+.policy-intro{
+    padding-bottom:30px;
+    border-bottom:1px solid var(--border);
+}
+
+.policy-intro > span{
+    color:#7c8996;
+    font-size:9px;
+    letter-spacing:1.2px;
+    font-weight:600;
+}
+
+.policy-intro h2{
+    margin:5px 0 8px;
+    color:var(--navy);
+    font-size:28px;
+    font-weight:700;
+}
+
+.policy-intro p{
+    max-width:760px;
+    margin:0;
+    color:#6c7b89;
+    font-size:10px;
+    line-height:1.8;
+}
+
+.policy-block{
+    display:grid;
+    grid-template-columns:45px minmax(0,1fr);
+    gap:20px;
+    padding:30px 0;
+    border-bottom:1px solid var(--border);
+}
+
+.policy-number{
+    width:34px;
+    height:34px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:var(--privacy-blue);
+    color:var(--navy);
+    font-size:9px;
+    font-weight:700;
+}
+
+.policy-block:nth-of-type(2) .policy-number{
+    background:var(--privacy-lilac);
+}
+
+.policy-block:nth-of-type(3) .policy-number{
+    background:var(--privacy-green);
+}
+
+.policy-block:nth-of-type(4) .policy-number{
+    background:#f0e3dc;
+}
+
+.policy-block:nth-of-type(5) .policy-number{
+    background:var(--privacy-blue);
+}
+
+.policy-block:nth-of-type(6) .policy-number{
+    background:var(--privacy-lilac);
+}
+
+.policy-block:nth-of-type(7) .policy-number{
+    background:var(--privacy-green);
+}
+
+.policy-text{
+    min-width:0;
+}
+
+.policy-block h3{
+    margin-bottom:9px;
+    color:var(--navy);
+    font-size:17px;
+    line-height:1.25;
+    font-weight:700;
+}
+
+.policy-block p{
+    margin:0 0 10px;
+    color:#6d7b89;
+    font-size:10px;
+    line-height:1.8;
+}
+
+.policy-block p:last-child{
+    margin-bottom:0;
+}
+
+.privacy-contact{
+    display:flex;
+    flex-wrap:wrap;
+    gap:18px;
+    margin-top:14px;
+}
+
+.privacy-contact div{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:var(--navy);
+    font-size:9px;
+    font-weight:600;
+}
+
+.privacy-contact i{
+    color:#6f7d8b;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.privacy-cta{
+    padding:5px 0 45px;
+}
+
+.privacy-cta-box{
+    min-height:175px;
+    padding:35px 45px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:30px;
+    border-radius:7px;
+    background:#e8e0ef;
+}
+
+.privacy-cta-box > div:first-child > span{
+    color:#697787;
+    font-size:8px;
+    letter-spacing:1px;
+    font-weight:600;
+}
+
+.privacy-cta-box h2{
+    margin:5px 0 7px;
+    color:var(--navy);
+    font-size:27px;
+    line-height:1.15;
+}
+
+.privacy-cta-box p{
+    margin:0;
+    color:#6f7d8b;
+    font-size:9px;
+}
+
+.cta-actions{
+    display:flex;
+    gap:10px;
+    flex:0 0 auto;
+}
+
+.cta-actions a{
+    width:105px;
+    height:34px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:7px;
+    border-radius:18px;
+    background:var(--navy);
+    color:#fff;
+    font-size:8px;
+    font-weight:600;
+    transition:.25s ease;
+}
+
+.cta-actions a:hover{
+    background:#20364d;
+    color:#fff;
+    transform:translateY(-2px);
+}
+
+.cta-actions .outline-btn{
+    background:transparent;
+    color:var(--navy);
+    border:1px solid var(--navy);
+}
+
+.cta-actions .outline-btn:hover{
+    background:var(--navy);
+    color:#fff;
+}
+
+.cta-actions span{
+    font-size:13px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer{
+    background:var(--navy-dark);
+    color:#fff;
+}
+
+.footer-main{
+    min-height:180px;
+    display:grid;
+    grid-template-columns:
+        1.35fr
+        .8fr
+        .8fr
+        1.1fr
+        1.55fr;
+    gap:34px;
+    padding:35px 0 30px;
+}
+
+.footer-logo{
+    margin-bottom:5px;
+    font-size:27px;
+    font-weight:700;
+    letter-spacing:-1px;
+}
+
+.footer-categories{
+    display:flex;
+    gap:7px;
+    color:#d7dee6;
+    font-size:12px;
+}
+
+.footer-categories span{
+    opacity:.6;
+}
+
+.footer-column{
+    display:flex;
+    flex-direction:column;
+}
+
+.footer-column h4,
+.footer-newsletter h4{
+    margin-bottom:14px;
+    font-size:16px;
+    font-weight:700;
+}
+
+.footer-column a{
+    margin-bottom:8px;
+    color:#ccd4dc;
+    font-size:12px;
+    transition:color .2s ease;
+}
+
+.footer-column a:hover,
+.footer-column a.footer-active{
+    color:#fff;
+}
+
+.footer-newsletter p{
+    margin-bottom:6px;
+    color:#c4ccd5;
+    font-size:8px;
+}
+
+.newsletter-input{
+    width:100%;
+    height:48px;
+    display:flex;
+    overflow:hidden;
+    border:1px solid #8593a0;
+    border-radius:6px;
+}
+
+.newsletter-input input{
+    flex:1;
+    min-width:0;
+    padding:0 16px;
+    border:none;
+    outline:none;
+    background:#fff;
+    color:var(--text);
+    font-size:12px;
+}
+
+.newsletter-input button{
+    width:65px;
+    border:none;
+    background:transparent;
+    color:#fff;
+    font-size:26px;
+    cursor:pointer;
+}
+
+.newsletter-input button:hover{
+    background:rgba(255,255,255,.08);
+}
+
+.newsletter-message{
+    min-height:9px;
+    margin-top:4px;
+    color:#b7ebc3;
+    font-size:7px;
+}
+
+.social-icons{
+    display:flex;
+    gap:16px;
+    margin-top:8px;
+}
+
+.social-icons a{
+    color:#fff;
+    font-size:10px;
+    transition:.2s ease;
+}
+
+.social-icons a:hover{
+    opacity:.75;
+    transform:translateY(-2px);
+}
+
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,.14);
+}
+
+.footer-bottom-inner{
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    color:#bdc7d1;
+    font-size:12px;
+}
+
+
+/* =========================================================
+   LARGE TABLETS / SMALL LAPTOPS
+========================================================= */
+
+@media (max-width:1199px){
+
+    .main-nav{
+        gap:2px;
+    }
+
+    .main-nav .nav-link{
+        padding-left:7px;
+        padding-right:7px;
+    }
+
+    .search-box{
+        width:220px;
+    }
+
+    .container-fluid.px-4,
+    .container-fluid.px-lg-5{
+        padding-left:24px !important;
+        padding-right:24px !important;
+    }
+
+    .privacy-hero > .container-fluid{
+        padding-right:0 !important;
+        padding-left:0 !important;
+    }
+
+    .privacy-hero-content{
+        grid-template-columns:44% 56%;
+        min-height:380px;
+    }
+
+    .privacy-hero-copy{
+        padding:42px 28px 42px 7%;
+    }
+
+    .privacy-hero-copy h1{
+        font-size:36px;
+    }
+
+    .privacy-hero-image{
+        min-height:380px;
+    }
+
+    .privacy-content{
+        max-width:950px;
+    }
+
+    .footer-main{
+        grid-template-columns:1fr 1fr;
+        gap:26px;
+    }
+}
+
+
+/* =========================================================
+   TABLETS
+========================================================= */
+
+@media (max-width:991px){
+
+    .top-links{
+        display:none;
+    }
+
+    .top-bar-inner{
+        justify-content:center;
+        padding-left:16px !important;
+        padding-right:16px !important;
+    }
+
+    .main-header{
+        height:auto;
+    }
+
+    .navbar{
+        min-height:67px;
+        height:auto;
+    }
+
+    .navbar > .container-fluid{
+        align-items:center;
+    }
+
+    .ozzo-logo{
+        font-size:33px;
+    }
+
+    .navbar-collapse{
+        width:100%;
+    }
+
+    .main-nav{
+        width:100%;
+        margin:8px 0 4px;
+        gap:0;
+    }
+
+    .main-nav .nav-item{
+        width:100%;
+    }
+
+    .main-nav .nav-link{
+        width:100%;
+        padding:10px 8px;
+        text-align:left;
+    }
+
+    .header-actions{
+        width:100%;
+        padding:8px 0 15px;
+        gap:14px;
+        flex-wrap:wrap;
+    }
+
+    .search-box{
+        width:100%;
+        order:3;
+    }
+
+    .privacy-hero > .container-fluid{
+        padding-left:0 !important;
+        padding-right:0 !important;
+    }
+
+    .privacy-hero-content{
+        grid-template-columns:1fr;
+        min-height:0;
+    }
+
+    .privacy-hero-copy{
+        min-height:255px;
+        padding:38px 8%;
+    }
+
+    .privacy-hero-image{
+        height:min(56vw,410px);
+        min-height:0;
+    }
+
+    .privacy-section{
+        padding:40px 0;
+    }
+
+    .privacy-content{
+        max-width:100%;
+    }
+
+    .privacy-cta-box{
+        padding:32px 7%;
+    }
+
+    .footer-main{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+    }
+}
+
+
+/* =========================================================
+   PHONES
+========================================================= */
+
+@media (max-width:767px){
+
+    .top-bar{
+        height:28px;
+    }
+
+    .top-bar-inner{
+        height:28px;
+        font-size:9px;
+    }
+
+    .shipping-text{
+        gap:6px;
+        text-align:center;
+    }
+
+    .shipping-text span{
+        font-size:8px;
+    }
+
+    .navbar{
+        padding-top:4px;
+        padding-bottom:4px;
+    }
+
+    .navbar > .container-fluid{
+        padding-left:15px !important;
+        padding-right:15px !important;
+    }
+
+    .ozzo-logo{
+        font-size:30px;
+    }
+
+    .header-actions{
+        gap:12px;
+    }
+
+    .search-box{
+        height:38px;
+    }
+
+    .privacy-hero-copy{
+        min-height:0;
+        padding:34px 24px;
+    }
+
+    .privacy-hero-copy h1{
+        font-size:clamp(29px,8vw,35px);
+    }
+
+    .privacy-hero-copy p{
+        max-width:100%;
+        font-size:10px;
+        line-height:1.65;
+    }
+
+    .privacy-hero-image{
+        height:58vw;
+        max-height:340px;
+    }
+
+    .privacy-section{
+        padding:32px 0 38px;
+    }
+
+    .policy-intro h2{
+        font-size:23px;
+    }
+
+    .policy-intro p{
+        font-size:9px;
+    }
+
+    .policy-block{
+        grid-template-columns:38px minmax(0,1fr);
+        gap:13px;
+        padding:23px 0;
+    }
+
+    .policy-number{
+        width:31px;
+        height:31px;
+        font-size:8px;
+    }
+
+    .policy-block h3{
+        font-size:14px;
+    }
+
+    .policy-block p{
+        font-size:9px;
+        line-height:1.7;
+    }
+
+    .privacy-contact{
+        flex-direction:column;
+        gap:8px;
+    }
+
+    .privacy-cta{
+        padding-bottom:30px;
+    }
+
+    .privacy-cta-box{
+        padding:28px 24px;
+        flex-direction:column;
+        align-items:flex-start;
+        gap:20px;
+    }
+
+    .privacy-cta-box h2{
+        font-size:24px;
+    }
+
+    .cta-actions{
+        width:100%;
+    }
+
+    .cta-actions a{
+        flex:1;
+    }
+
+    .footer-main{
+        grid-template-columns:1fr 1fr;
+        gap:24px;
+    }
+
+    .footer-brand{
+        grid-column:1/-1;
+    }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width:575px){
+
+    .container-fluid.px-4,
+    .container-fluid.px-lg-5{
+        padding-left:15px !important;
+        padding-right:15px !important;
+    }
+
+    .privacy-hero > .container-fluid{
+        padding-left:0 !important;
+        padding-right:0 !important;
+    }
+
+    .ozzo-logo{
+        font-size:29px;
+    }
+
+    .privacy-hero-copy{
+        padding:30px 18px;
+    }
+
+    .privacy-hero-copy h1{
+        font-size:27px;
+    }
+
+    .privacy-hero-image{
+        height:57vw;
+        min-height:190px;
+    }
+
+    .policy-intro h2{
+        font-size:21px;
+    }
+
+    .policy-block{
+        grid-template-columns:32px minmax(0,1fr);
+        gap:10px;
+    }
+
+    .policy-number{
+        width:28px;
+        height:28px;
+    }
+
+    .privacy-cta-box{
+        padding:25px 18px;
+    }
+
+    .privacy-cta-box h2{
+        font-size:22px;
+    }
+
+    .cta-actions{
+        flex-direction:column;
+    }
+
+    .cta-actions a{
+        width:100%;
+    }
+
+    .footer-main{
+        grid-template-columns:1fr;
+    }
+
+    .footer-brand{
+        grid-column:auto;
+    }
+
+    .footer-bottom-inner{
+        height:auto;
+        min-height:50px;
+        padding:10px 0;
+        flex-direction:column;
+        gap:5px;
+        text-align:center;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width:380px){
+
+    .privacy-hero-copy h1{
+        font-size:25px;
+    }
+
+    .privacy-hero-image{
+        height:58vw;
+        min-height:185px;
+    }
+
+    .policy-block{
+        grid-template-columns:30px minmax(0,1fr);
+        gap:9px;
+    }
+
+    .policy-number{
+        width:27px;
+        height:27px;
+    }
+}

@@ -1,0 +1,1108 @@
+/* =========================================================
+   OZZO FAQ PAGE
+========================================================= */
+
+:root{
+    --navy:#132438;
+    --navy-dark:#0d1d2d;
+    --text:#16283b;
+    --muted:#657384;
+    --cream:#eeeae4;
+    --border:#e7ebef;
+    --surface:#f7f8fa;
+
+    --faq-blue:#dce8ef;
+    --faq-lilac:#ebe3ef;
+    --faq-green:#dceee7;
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
+}
+
+body{
+    font-family:"DM Sans",sans-serif;
+    color:var(--text);
+    background:#fff;
+    overflow-x:hidden;
+    letter-spacing:.01em;
+}
+
+img{
+    display:block;
+    width:100%;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+button,
+input{
+    font-family:inherit;
+}
+
+
+/* =========================================================
+   TOP BAR
+========================================================= */
+
+.top-bar{
+    height:30px;
+    background:var(--navy-dark);
+    color:#fff;
+    font-size:10px;
+}
+
+.top-bar-inner{
+    height:30px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.shipping-text{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-weight:500;
+}
+
+.shipping-text i{
+    font-size:12px;
+}
+
+.top-links{
+    display:flex;
+    align-items:center;
+    gap:11px;
+}
+
+.top-links a{
+    color:#fff;
+}
+
+.login-link{
+    display:flex;
+    align-items:center;
+    gap:5px;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.main-header{
+    height:67px;
+    background:#fff;
+    border-bottom:1px solid #e9e9e9;
+    position:relative;
+    z-index:50;
+}
+
+.navbar{
+    height:67px;
+    padding-top:0;
+    padding-bottom:0;
+}
+
+.ozzo-logo{
+    color:var(--navy);
+    font-size:38px;
+    line-height:1;
+    font-weight:700;
+    letter-spacing:-2px;
+}
+
+.main-nav{
+    gap:13px;
+}
+
+.main-nav .nav-link{
+    position:relative;
+    color:#374455;
+    font-size:12px;
+    font-weight:500;
+    padding:25px 11px 23px;
+}
+
+.main-nav .nav-link:hover,
+.main-nav .nav-link.active{
+    color:var(--navy);
+}
+
+.main-nav .nav-link.active::after{
+    content:"";
+    position:absolute;
+    left:11px;
+    right:11px;
+    bottom:15px;
+    height:2px;
+    background:var(--navy);
+}
+
+.header-actions{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.search-box{
+    width:285px;
+    height:36px;
+    background:#f5f6f7;
+    border-radius:22px;
+    display:flex;
+    align-items:center;
+    padding:0 14px;
+}
+
+.search-box input{
+    flex:1;
+    border:none;
+    outline:none;
+    background:transparent;
+    color:var(--text);
+    font-size:10px;
+}
+
+.search-box input::placeholder{
+    color:#7b8692;
+}
+
+.search-box i{
+    color:var(--navy);
+    font-size:13px;
+}
+
+.header-icon{
+    width:25px;
+    height:35px;
+    position:relative;
+    border:none;
+    background:transparent;
+    color:var(--navy);
+    font-size:18px;
+    cursor:pointer;
+}
+
+.cart-count{
+    position:absolute;
+    top:0;
+    right:-4px;
+    width:15px;
+    height:15px;
+    background:var(--navy);
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:8px;
+}
+
+.navbar-toggler{
+    border:none;
+    box-shadow:none !important;
+    color:var(--navy);
+}
+
+
+/* =========================================================
+   FAQ HERO
+========================================================= */
+
+.faq-hero{
+    width:100%;
+    overflow:hidden;
+    background:var(--cream);
+}
+
+.faq-hero > .container-fluid{
+    padding-right:0 !important;
+}
+
+.faq-hero-content{
+    width:100%;
+    min-height:440px;
+    display:grid;
+    grid-template-columns:42% 58%;
+}
+
+.faq-hero-copy{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:55px 40px 55px 8%;
+}
+
+.hero-label{
+    color:var(--navy);
+    font-size:10px;
+    font-weight:700;
+    letter-spacing:1.6px;
+    margin-bottom:10px;
+}
+
+.faq-hero-copy h1{
+    color:var(--navy);
+    font-size:42px;
+    line-height:1.08;
+    font-weight:700;
+    letter-spacing:-1.5px;
+    margin-bottom:15px;
+}
+
+.faq-hero-copy h1 span{
+    font-style:italic;
+}
+
+.faq-hero-copy p{
+    max-width:420px;
+    color:#607083;
+    font-size:11px;
+    line-height:1.75;
+    margin-bottom:23px;
+}
+
+.hero-btn{
+    width:145px;
+    height:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    border-radius:24px;
+    background:var(--navy);
+    color:#fff;
+    font-size:10px;
+    font-weight:600;
+    transition:.25s ease;
+}
+
+.hero-btn:hover{
+    color:#fff;
+    background:#20364d;
+    transform:translateY(-2px);
+}
+
+.hero-btn span{
+    font-size:15px;
+}
+
+.faq-hero-image{
+    width:100%;
+    min-width:0;
+    min-height:440px;
+    position:relative;
+    overflow:hidden;
+}
+
+.faq-hero-image img{
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit:cover;
+    object-position:center;
+}
+
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.section-title{
+    display:flex;
+    justify-content:space-between;
+    align-items:end;
+    margin-bottom:16px;
+}
+
+.section-title > div > span{
+    color:#7c8996;
+    font-size:9px;
+    letter-spacing:1.2px;
+    font-weight:600;
+}
+
+.section-title h2{
+    color:var(--navy);
+    font-size:24px;
+    font-weight:700;
+    margin-top:4px;
+}
+
+
+/* =========================================================
+   HELP CARDS
+========================================================= */
+
+.faq-categories{
+    padding:38px 0 34px;
+}
+
+.help-card{
+    min-height:145px;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    border:1px solid var(--border);
+    border-radius:7px;
+    background:#eeeae4;
+    transition:.25s ease;
+}
+
+.help-card:hover{
+    border-color:#ccd5de;
+    transform:translateY(-4px);
+    box-shadow:0 12px 28px rgba(19,36,56,.08);
+}
+
+.help-icon{
+    width:38px;
+    height:38px;
+    margin-bottom:13px;
+    border-radius:50%;
+    background:var(--faq-blue);
+    color:var(--navy);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:14px;
+}
+
+.help-card:nth-child(2) .help-icon{
+    background:var(--faq-lilac);
+}
+
+.help-card:nth-child(3) .help-icon{
+    background:var(--faq-green);
+}
+
+.help-card:nth-child(4) .help-icon{
+    background:#f0e5dc;
+}
+
+.help-card h3{
+    color:var(--navy);
+    font-size:16px;
+    font-weight:700;
+    margin-bottom:5px;
+}
+
+.help-card p{
+    color:#748190;
+    font-size:9px;
+    margin:0;
+}
+
+
+/* =========================================================
+   FAQ SECTION
+========================================================= */
+
+.faq-section{
+    padding:15px 0 45px;
+}
+
+.faq-heading{
+    margin-bottom:22px;
+}
+
+.faq-heading > span{
+    color:#7c8996;
+    font-size:9px;
+    letter-spacing:1.3px;
+    font-weight:600;
+}
+
+.faq-heading h2{
+    margin:4px 0 7px;
+    color:var(--navy);
+    font-size:28px;
+    font-weight:700;
+}
+
+.faq-heading p{
+    margin:0;
+    color:#71808f;
+    font-size:10px;
+}
+
+.faq-accordion{
+    max-width:1050px;
+    margin:0 auto;
+}
+
+.faq-accordion .accordion-item{
+    border:1px solid var(--border);
+    margin-bottom:9px;
+    border-radius:6px !important;
+    overflow:hidden;
+}
+
+.faq-accordion .accordion-button{
+    min-height:58px;
+    padding:15px 20px;
+    color:var(--navy);
+    background:#fff;
+    box-shadow:none;
+    font-size:12px;
+    font-weight:600;
+}
+
+.faq-accordion .accordion-button:hover{
+    background:#eeeae4;
+}
+
+.faq-accordion .accordion-button:not(.collapsed){
+    color:var(--navy);
+    background:#f5f7f8;
+}
+
+.faq-accordion .accordion-button:focus{
+    box-shadow:none;
+}
+
+.faq-accordion .accordion-body{
+    padding:0 20px 18px;
+    color:#667688;
+    background:#f5f7f8;
+    font-size:10px;
+    line-height:1.7;
+}
+
+
+/* =========================================================
+   CONTACT CTA
+========================================================= */
+
+.faq-contact{
+    padding:10px 0 45px;
+}
+
+.faq-contact-box{
+    min-height:185px;
+    padding:35px 45px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:30px;
+    background:#e7e0ef;
+    border-radius:7px;
+}
+
+.faq-contact-box > div > span{
+    color:#6c7986;
+    font-size:8px;
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+.faq-contact-box h2{
+    margin:5px 0 7px;
+    color:var(--navy);
+    font-size:27px;
+    line-height:1.1;
+    font-weight:700;
+}
+
+.faq-contact-box p{
+    margin:0;
+    color:#6d7b89;
+    font-size:9px;
+}
+
+.faq-contact-box > a{
+    flex:0 0 auto;
+    width:120px;
+    height:35px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    background:var(--navy);
+    color:#fff;
+    border-radius:20px;
+    font-size:9px;
+    font-weight:600;
+    transition:.25s ease;
+}
+
+.faq-contact-box > a:hover{
+    background:#20364d;
+    color:#fff;
+    transform:translateY(-2px);
+}
+
+.faq-contact-box > a span{
+    font-size:14px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer{
+    background:var(--navy-dark);
+    color:#fff;
+}
+
+.footer-main{
+    min-height:180px;
+    display:grid;
+    grid-template-columns:
+        1.35fr
+        .8fr
+        .8fr
+        1.1fr
+        1.55fr;
+    gap:34px;
+    padding:35px 0 30px;
+}
+
+.footer-logo{
+    font-size:27px;
+    font-weight:700;
+    letter-spacing:-1px;
+    margin-bottom:5px;
+}
+
+.footer-categories{
+    display:flex;
+    gap:7px;
+    color:#d7dee6;
+    font-size:12px;
+}
+
+.footer-categories span{
+    opacity:.6;
+}
+
+.footer-column{
+    display:flex;
+    flex-direction:column;
+}
+
+.footer-column h4,
+.footer-newsletter h4{
+    margin-bottom:14px;
+    font-size:16px;
+    font-weight:700;
+}
+
+.footer-column a{
+    margin-bottom:8px;
+    color:#ccd4dc;
+    font-size:12px;
+    transition:color .2s ease;
+}
+
+.footer-column a:hover{
+    color:#fff;
+}
+
+.footer-newsletter p{
+    margin-bottom:6px;
+    color:#c4ccd5;
+    font-size:8px;
+}
+
+.newsletter-input{
+    width:100%;
+    height:48px;
+    display:flex;
+    overflow:hidden;
+    border:1px solid #8593a0;
+    border-radius:6px;
+}
+
+.newsletter-input input{
+    flex:1;
+    min-width:0;
+    padding:0 16px;
+    border:none;
+    outline:none;
+    background:#fff;
+    color:var(--text);
+    font-size:12px;
+}
+
+.newsletter-input button{
+    width:65px;
+    border:none;
+    background:transparent;
+    color:#fff;
+    font-size:26px;
+    cursor:pointer;
+    transition:.2s ease;
+}
+
+.newsletter-input button:hover{
+    background:rgba(255,255,255,.08);
+}
+
+.newsletter-message{
+    min-height:9px;
+    margin-top:4px;
+    color:#b7ebc3;
+    font-size:7px;
+}
+
+.social-icons{
+    display:flex;
+    gap:16px;
+    margin-top:8px;
+}
+
+.social-icons a{
+    color:#fff;
+    font-size:10px;
+    transition:.2s ease;
+}
+
+.social-icons a:hover{
+    opacity:.75;
+    transform:translateY(-2px);
+}
+
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,.14);
+}
+
+.footer-bottom-inner{
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    color:#bdc7d1;
+    font-size:12px;
+}
+
+
+/* =========================================================
+   LARGE TABLETS
+========================================================= */
+
+@media (max-width:1199px){
+
+    .main-nav{
+        gap:2px;
+    }
+
+    .main-nav .nav-link{
+        padding-left:7px;
+        padding-right:7px;
+    }
+
+    .search-box{
+        width:220px;
+    }
+
+    .container-fluid.px-4,
+    .container-fluid.px-lg-5{
+        padding-left:24px !important;
+        padding-right:24px !important;
+    }
+
+    .faq-hero > .container-fluid{
+        padding-right:0 !important;
+    }
+
+    .faq-hero-content{
+        grid-template-columns:44% 56%;
+        min-height:400px;
+    }
+
+    .faq-hero-copy{
+        padding-left:7%;
+    }
+
+    .faq-hero-copy h1{
+        font-size:36px;
+    }
+
+    .faq-hero-image{
+        min-height:400px;
+    }
+
+    .footer-main{
+        grid-template-columns:1fr 1fr;
+        gap:26px;
+    }
+}
+
+
+/* =========================================================
+   TABLETS
+========================================================= */
+
+@media (max-width:991px){
+
+    .top-links{
+        display:none;
+    }
+
+    .top-bar-inner{
+        justify-content:center;
+        padding-left:16px !important;
+        padding-right:16px !important;
+    }
+
+    .main-header{
+        height:auto;
+    }
+
+    .navbar{
+        min-height:67px;
+        height:auto;
+    }
+
+    .navbar > .container-fluid{
+        align-items:center;
+    }
+
+    .ozzo-logo{
+        font-size:33px;
+    }
+
+    .navbar-collapse{
+        width:100%;
+    }
+
+    .main-nav{
+        width:100%;
+        margin:8px 0 4px;
+        gap:0;
+    }
+
+    .main-nav .nav-item{
+        width:100%;
+    }
+
+    .main-nav .nav-link{
+        width:100%;
+        padding:10px 8px;
+        text-align:left;
+    }
+
+    .main-nav .nav-link.active::after{
+        left:8px;
+        right:auto;
+        width:45px;
+        bottom:4px;
+    }
+
+    .header-actions{
+        width:100%;
+        padding:8px 0 15px;
+        gap:14px;
+        flex-wrap:wrap;
+    }
+
+    .search-box{
+        width:100%;
+        order:3;
+    }
+
+    .faq-hero > .container-fluid{
+        padding-right:0 !important;
+    }
+
+    .faq-hero-content{
+        grid-template-columns:1fr;
+        min-height:0;
+    }
+
+    .faq-hero-copy{
+        min-height:270px;
+        padding:42px 8%;
+    }
+
+    .faq-hero-image{
+        height:min(55vw,390px);
+        min-height:0;
+    }
+
+    .faq-categories{
+        padding-top:30px;
+    }
+
+    .faq-contact-box{
+        padding:32px 7%;
+    }
+
+    .footer-main{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+    }
+}
+
+
+/* =========================================================
+   PHONES
+========================================================= */
+
+@media (max-width:767px){
+
+    .top-bar{
+        height:28px;
+    }
+
+    .top-bar-inner{
+        height:28px;
+        font-size:9px;
+    }
+
+    .shipping-text{
+        gap:6px;
+        text-align:center;
+    }
+
+    .shipping-text span{
+        font-size:8px;
+    }
+
+    .navbar{
+        padding-top:4px;
+        padding-bottom:4px;
+    }
+
+    .navbar > .container-fluid{
+        padding-left:15px !important;
+        padding-right:15px !important;
+    }
+
+    .ozzo-logo{
+        font-size:30px;
+    }
+
+    .header-actions{
+        gap:12px;
+    }
+
+    .search-box{
+        height:38px;
+    }
+
+    .faq-hero-copy{
+        padding:34px 24px;
+    }
+
+    .faq-hero-copy h1{
+        font-size:clamp(28px,8vw,35px);
+    }
+
+    .faq-hero-copy p{
+        max-width:100%;
+        font-size:10px;
+        line-height:1.65;
+    }
+
+    .faq-hero-image{
+        height:58vw;
+        max-height:330px;
+    }
+
+    .faq-categories{
+        padding:24px 0 25px;
+    }
+
+    .section-title h2{
+        font-size:20px;
+    }
+
+    .help-card{
+        min-height:125px;
+        padding:15px;
+    }
+
+    .help-icon{
+        width:34px;
+        height:34px;
+        margin-bottom:10px;
+    }
+
+    .help-card h3{
+        font-size:14px;
+    }
+
+    .help-card p{
+        font-size:8px;
+    }
+
+    .faq-section{
+        padding-bottom:35px;
+    }
+
+    .faq-heading h2{
+        font-size:24px;
+    }
+
+    .faq-heading p{
+        font-size:9px;
+    }
+
+    .faq-accordion .accordion-button{
+        min-height:54px;
+        padding:14px 15px;
+        font-size:10px;
+    }
+
+    .faq-accordion .accordion-body{
+        padding:0 15px 16px;
+        font-size:9px;
+    }
+
+    .faq-contact{
+        padding:5px 0 30px;
+    }
+
+    .faq-contact-box{
+        padding:28px 24px;
+        flex-direction:column;
+        align-items:flex-start;
+        gap:20px;
+    }
+
+    .faq-contact-box h2{
+        font-size:24px;
+    }
+
+    .faq-contact-box p{
+        font-size:9px;
+    }
+
+    .footer-main{
+        grid-template-columns:1fr 1fr;
+        gap:24px;
+    }
+
+    .footer-brand{
+        grid-column:1/-1;
+    }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width:575px){
+
+    .container-fluid.px-4,
+    .container-fluid.px-lg-5{
+        padding-left:15px !important;
+        padding-right:15px !important;
+    }
+
+    .faq-hero > .container-fluid{
+        padding-right:0 !important;
+    }
+
+    .ozzo-logo{
+        font-size:29px;
+    }
+
+    .faq-hero-copy{
+        padding:30px 18px;
+    }
+
+    .faq-hero-copy h1{
+        font-size:27px;
+    }
+
+    .faq-hero-image{
+        height:57vw;
+        min-height:190px;
+    }
+
+    .help-card{
+        min-height:115px;
+        padding:13px;
+    }
+
+    .help-icon{
+        width:31px;
+        height:31px;
+        font-size:12px;
+    }
+
+    .help-card h3{
+        font-size:13px;
+    }
+
+    .help-card p{
+        font-size:7px;
+    }
+
+    .faq-heading h2{
+        font-size:22px;
+    }
+
+    .faq-contact-box{
+        padding:25px 18px;
+    }
+
+    .faq-contact-box h2{
+        font-size:22px;
+    }
+
+    .footer-main{
+        grid-template-columns:1fr;
+    }
+
+    .footer-brand{
+        grid-column:auto;
+    }
+
+    .footer-bottom-inner{
+        height:auto;
+        min-height:50px;
+        padding:10px 0;
+        flex-direction:column;
+        gap:5px;
+        text-align:center;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width:380px){
+
+    .faq-hero-copy h1{
+        font-size:25px;
+    }
+
+    .faq-hero-image{
+        height:56vw;
+        min-height:175px;
+    }
+
+    .help-card{
+        min-height:108px;
+    }
+
+    .faq-accordion .accordion-button{
+        font-size:9px;
+    }
+
+    .faq-accordion .accordion-body{
+        font-size:8px;
+    }
+}
