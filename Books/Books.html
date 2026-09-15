@@ -1,0 +1,1939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>OZZO | Books</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="Books.css">
+
+</head>
+
+<body>
+
+
+<!-- =========================================================
+     TOP BAR
+========================================================= -->
+
+<div class="top-bar">
+
+    <div class="container-fluid top-bar-inner px-4">
+
+        <div class="shipping-text">
+
+            <i
+                class="fa-solid fa-truck"
+                aria-hidden="true">
+            </i>
+
+            <span>
+                Free shipping on orders above ₹999
+            </span>
+
+        </div>
+
+
+        <div class="top-links">
+
+            <a href="#">
+                Track Order
+            </a>
+
+            <span>|</span>
+
+            <a href="#">
+                Help
+            </a>
+
+            <span>|</span>
+
+            <a
+                href="#"
+                class="login-link"
+                title="Login"
+                aria-label="Login"
+            >
+
+                <i
+                    class="fa-regular fa-user"
+                    aria-hidden="true">
+                </i>
+
+                Login
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="main-header">
+
+    <nav class="navbar navbar-expand-xl">
+
+        <div class="container-fluid px-4">
+
+
+            <!-- LOGO -->
+
+            <a
+                class="navbar-brand ozzo-logo"
+                href="index.html"
+            >
+                OZZO
+            </a>
+
+
+            <!-- MOBILE MENU -->
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#ozzoNavbar"
+                aria-controls="ozzoNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                title="Toggle navigation"
+            >
+
+                <i
+                    class="fa-solid fa-bars"
+                    aria-hidden="true">
+                </i>
+
+            </button>
+
+
+            <!-- NAVIGATION -->
+
+            <div
+                class="collapse navbar-collapse"
+                id="ozzoNavbar"
+            >
+
+                <ul class="navbar-nav main-nav mx-auto">
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="/index.html"
+                        >
+                            Home
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="/Fashion/Fashion.html"
+                        >
+                            Fashion
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link active"
+                            href="/Books/Books.html"
+                        >
+                            Books
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="/Stationary/Stationary.html"
+                        >
+                            Stationery
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="/Pads/Pads.html"
+                        >
+                            Pads
+                        </a>
+
+                    </li>
+
+                </ul>
+
+
+                <!-- HEADER ACTIONS -->
+
+                <div class="header-actions">
+
+
+                    <div class="search-box">
+
+                        <input
+                            type="text"
+                            id="searchInput"
+                            placeholder="Search books..."
+                            aria-label="Search books"
+                        >
+
+                        <i
+                            class="fa-solid fa-magnifying-glass"
+                            aria-hidden="true">
+                        </i>
+
+                    </div>
+
+
+                    <button
+                        class="header-icon"
+                        type="button"
+                        title="Wishlist"
+                        aria-label="Wishlist"
+                    >
+
+                        <i
+                            class="fa-regular fa-heart"
+                            aria-hidden="true">
+                        </i>
+
+                    </button>
+
+
+                    <button
+                        class="header-icon cart-button"
+                        type="button"
+                        title="Shopping Bag"
+                        aria-label="Shopping Bag"
+                    >
+
+                        <i
+                            class="fa-solid fa-bag-shopping"
+                            aria-hidden="true">
+                        </i>
+
+                        <span
+                            class="cart-count"
+                            id="cartCount"
+                        >
+                            0
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- =========================================================
+     BOOKS HERO
+========================================================= -->
+
+<section class="books-hero">
+
+    <div class="container-fluid px-4">
+
+        <div class="books-hero-content">
+
+
+            <!-- HERO TEXT -->
+
+            <div class="books-hero-copy">
+
+                <span class="hero-label">
+                    OZZO BOOKS
+                </span>
+
+
+                <h1>
+                    Stories That<br>
+                    <span>Stay With You</span>
+                </h1>
+
+
+                <p>
+                    Discover inspiring stories, timeless classics,
+                    bestselling titles and books that make
+                    every reading moment memorable.
+                </p>
+
+
+                <a
+                    href="#booksProducts"
+                    class="shop-btn"
+                >
+
+                    Explore Books
+
+                    <span>→</span>
+
+                </a>
+
+            </div>
+
+
+            <!-- HERO IMAGE -->
+
+            <div class="books-hero-image">
+
+                <img
+                    src="/Books hero.png"
+                    alt="Books collection"
+                >
+
+
+                <div class="books-offer">
+
+                    <small>
+                        BOOKS
+                    </small>
+
+                    <strong>
+                        2+1
+                    </strong>
+
+                    <span>
+                        FREE
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     BOOK CATEGORIES
+========================================================= -->
+
+<section class="book-categories">
+
+    <div class="container-fluid px-4">
+
+
+        <div class="section-title">
+
+            <div>
+
+                <span>
+                    EXPLORE
+                </span>
+
+                <h2>
+                    Book Categories
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="row g-3">
+
+
+            <!-- FICTION -->
+
+            <div class="col-6 col-md-4">
+
+                <a
+                    href="#booksProducts"
+                    class="book-category category-fiction"
+                    data-filter="fiction"
+                >
+
+                    <img
+                        src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=900&q=85"
+                        alt="Fiction books"
+                    >
+
+                    <div class="category-overlay"></div>
+
+                    <div class="category-content">
+
+                        <span>
+                            01
+                        </span>
+
+                        <h3>
+                            Fiction
+                        </h3>
+
+                        <p>
+                            Explore collection →
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- SELF HELP -->
+
+            <div class="col-6 col-md-4">
+
+                <a
+                    href="#booksProducts"
+                    class="book-category category-selfhelp"
+                    data-filter="selfhelp"
+                >
+
+                    <img
+                        src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=900&q=85"
+                        alt="Self help books"
+                    >
+
+                    <div class="category-overlay"></div>
+
+                    <div class="category-content">
+
+                        <span>
+                            02
+                        </span>
+
+                        <h3>
+                            Self Help
+                        </h3>
+
+                        <p>
+                            Explore collection →
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- ACADEMIC -->
+
+            <div class="col-6 col-md-4">
+
+                <a
+                    href="#booksProducts"
+                    class="book-category category-academic"
+                    data-filter="academic"
+                >
+
+                    <img
+                        src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=900&q=85"
+                        alt="Academic books"
+                    >
+
+                    <div class="category-overlay"></div>
+
+                    <div class="category-content">
+
+                        <span>
+                            03
+                        </span>
+
+                        <h3>
+                            Academic
+                        </h3>
+
+                        <p>
+                            Explore collection →
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     BOOK PRODUCTS
+========================================================= -->
+
+<section
+    class="books-products"
+    id="booksProducts"
+>
+
+    <div class="container-fluid px-4">
+
+
+        <div class="products-heading">
+
+
+            <div>
+
+                <span class="section-label">
+                    OZZO COLLECTION
+                </span>
+
+                <h2>
+                    Popular Books
+                </h2>
+
+            </div>
+
+
+            <!-- FILTERS -->
+
+            <div class="product-filters">
+
+                <button
+                    class="filter-btn active"
+                    type="button"
+                    data-filter="all"
+                >
+                    All
+                </button>
+
+
+                <button
+                    class="filter-btn"
+                    type="button"
+                    data-filter="fiction"
+                >
+                    Fiction
+                </button>
+
+
+                <button
+                    class="filter-btn"
+                    type="button"
+                    data-filter="selfhelp"
+                >
+                    Self Help
+                </button>
+
+
+                <button
+                    class="filter-btn"
+                    type="button"
+                    data-filter="academic"
+                >
+                    Academic
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT GRID -->
+
+        <div
+            class="row g-3"
+            id="productGrid"
+        >
+
+
+            <!-- BOOK 1 -->
+
+            <div
+                class="col-6 col-md-4 col-lg-3 product-item"
+                data-category="selfhelp"
+                data-name="Atomic Habits"
+            >
+
+                <div class="book-product-card">
+
+
+                    <div class="book-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=700&q=85"
+                            alt="Atomic Habits book"
+                        >
+
+
+                        <span class="product-badge">
+                            BESTSELLER
+                        </span>
+
+
+                        <button
+                            class="wishlist"
+                            type="button"
+                            title="Add Atomic Habits to wishlist"
+                            aria-label="Add Atomic Habits to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true">
+                            </i>
+
+                        </button>
+
+
+                        <button
+                            class="quick-add add-cart"
+                            type="button"
+                            data-name="Atomic Habits"
+                            data-price="499"
+                        >
+                            Add to Bag
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span>
+                            SELF HELP
+                        </span>
+
+                        <h3>
+                            Atomic Habits
+                        </h3>
+
+                        <div class="rating">
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (203)
+                            </small>
+
+                        </div>
+
+
+                        <div class="price">
+
+                            ₹499
+
+                            <del>
+                                ₹699
+                            </del>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BOOK 2 -->
+
+            <div
+                class="col-6 col-md-4 col-lg-3 product-item"
+                data-category="fiction"
+                data-name="The Alchemist"
+            >
+
+                <div class="book-product-card">
+
+
+                    <div class="book-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?auto=format&fit=crop&w=700&q=85"
+                            alt="The Alchemist book"
+                        >
+
+
+                        <span class="product-badge">
+                            CLASSIC
+                        </span>
+
+
+                        <button
+                            class="wishlist"
+                            type="button"
+                            title="Add The Alchemist to wishlist"
+                            aria-label="Add The Alchemist to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true">
+                            </i>
+
+                        </button>
+
+
+                        <button
+                            class="quick-add add-cart"
+                            type="button"
+                            data-name="The Alchemist"
+                            data-price="399"
+                        >
+                            Add to Bag
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span>
+                            FICTION
+                        </span>
+
+                        <h3>
+                            The Alchemist
+                        </h3>
+
+                        <div class="rating">
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (167)
+                            </small>
+
+                        </div>
+
+
+                        <div class="price">
+
+                            ₹399
+
+                            <del>
+                                ₹599
+                            </del>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BOOK 3 -->
+
+            <div
+                class="col-6 col-md-4 col-lg-3 product-item"
+                data-category="selfhelp"
+                data-name="Think Like a Monk"
+            >
+
+                <div class="book-product-card">
+
+
+                    <div class="book-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=700&q=85"
+                            alt="Think Like a Monk book"
+                        >
+
+
+                        <button
+                            class="wishlist"
+                            type="button"
+                            title="Add Think Like a Monk to wishlist"
+                            aria-label="Add Think Like a Monk to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true">
+                            </i>
+
+                        </button>
+
+
+                        <button
+                            class="quick-add add-cart"
+                            type="button"
+                            data-name="Think Like a Monk"
+                            data-price="449"
+                        >
+                            Add to Bag
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span>
+                            SELF HELP
+                        </span>
+
+                        <h3>
+                            Think Like a Monk
+                        </h3>
+
+                        <div class="rating">
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (118)
+                            </small>
+
+                        </div>
+
+
+                        <div class="price">
+
+                            ₹449
+
+                            <del>
+                                ₹650
+                            </del>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BOOK 4 -->
+
+            <div
+                class="col-6 col-md-4 col-lg-3 product-item"
+                data-category="fiction"
+                data-name="The Great Gatsby"
+            >
+
+                <div class="book-product-card">
+
+
+                    <div class="book-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1531901599143-df5010ab9438?auto=format&fit=crop&w=700&q=85"
+                            alt="The Great Gatsby book"
+                        >
+
+
+                        <span class="product-badge">
+                            TOP PICK
+                        </span>
+
+
+                        <button
+                            class="wishlist"
+                            type="button"
+                            title="Add The Great Gatsby to wishlist"
+                            aria-label="Add The Great Gatsby to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true">
+                            </i>
+
+                        </button>
+
+
+                        <button
+                            class="quick-add add-cart"
+                            type="button"
+                            data-name="The Great Gatsby"
+                            data-price="349"
+                        >
+                            Add to Bag
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span>
+                            FICTION
+                        </span>
+
+                        <h3>
+                            The Great Gatsby
+                        </h3>
+
+                        <div class="rating">
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (94)
+                            </small>
+
+                        </div>
+
+
+                        <div class="price">
+
+                            ₹349
+
+                            <del>
+                                ₹499
+                            </del>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BOOK 5 -->
+
+            <div
+                class="col-6 col-md-4 col-lg-3 product-item"
+                data-category="academic"
+                data-name="Fundamentals of Mathematics"
+            >
+
+                <div class="book-product-card">
+
+
+                    <div class="book-image">
+
+                        <img
+                            src="/book.jpg"
+                            alt="Fundamentals of Mathematics"
+                        >
+
+
+                        <button
+                            class="wishlist"
+                            type="button"
+                            title="Add Fundamentals of Mathematics to wishlist"
+                            aria-label="Add Fundamentals of Mathematics to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true">
+                            </i>
+
+                        </button>
+
+
+                        <button
+                            class="quick-add add-cart"
+                            type="button"
+                            data-name="Fundamentals of Mathematics"
+                            data-price="599"
+                        >
+                            Add to Bag
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span>
+                            ACADEMIC
+                        </span>
+
+                        <h3>
+                            Fundamentals of Mathematics
+                        </h3>
+
+                        <div class="rating">
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (72)
+                            </small>
+
+                        </div>
+
+
+                        <div class="price">
+
+                            ₹599
+
+                            <del>
+                                ₹799
+                            </del>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BOOK 6 -->
+
+            <div
+                class="col-6 col-md-4 col-lg-3 product-item"
+                data-category="fiction"
+                data-name="Pride and Prejudice"
+            >
+
+                <div class="book-product-card">
+
+
+                    <div class="book-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1495640388908-05fa85288e61?auto=format&fit=crop&w=700&q=85"
+                            alt="Pride and Prejudice"
+                        >
+
+
+                        <button
+                            class="wishlist"
+                            type="button"
+                            title="Add Pride and Prejudice to wishlist"
+                            aria-label="Add Pride and Prejudice to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true">
+                            </i>
+
+                        </button>
+
+
+                        <button
+                            class="quick-add add-cart"
+                            type="button"
+                            data-name="Pride and Prejudice"
+                            data-price="379"
+                        >
+                            Add to Bag
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span>
+                            FICTION
+                        </span>
+
+                        <h3>
+                            Pride and Prejudice
+                        </h3>
+
+                        <div class="rating">
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (86)
+                            </small>
+
+                        </div>
+
+
+                        <div class="price">
+
+                            ₹379
+
+                            <del>
+                                ₹549
+                            </del>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BOOK 7 -->
+
+            <div
+                class="col-6 col-md-4 col-lg-3 product-item"
+                data-category="academic"
+                data-name="Computer Science Essentials"
+            >
+
+                <div class="book-product-card">
+
+
+                    <div class="book-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=700&q=85"
+                            alt="Computer Science Essentials"
+                        >
+
+
+                        <span class="product-badge">
+                            NEW
+                        </span>
+
+
+                        <button
+                            class="wishlist"
+                            type="button"
+                            title="Add Computer Science Essentials to wishlist"
+                            aria-label="Add Computer Science Essentials to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true">
+                            </i>
+
+                        </button>
+
+
+                        <button
+                            class="quick-add add-cart"
+                            type="button"
+                            data-name="Computer Science Essentials"
+                            data-price="699"
+                        >
+                            Add to Bag
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span>
+                            ACADEMIC
+                        </span>
+
+                        <h3>
+                            Computer Science Essentials
+                        </h3>
+
+                        <div class="rating">
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (51)
+                            </small>
+
+                        </div>
+
+
+                        <div class="price">
+
+                            ₹699
+
+                            <del>
+                                ₹899
+                            </del>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BOOK 8 -->
+
+            <div
+                class="col-6 col-md-4 col-lg-3 product-item"
+                data-category="selfhelp"
+                data-name="The Power of Now"
+            >
+
+                <div class="book-product-card">
+
+
+                    <div class="book-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1511108690759-009324a90311?auto=format&fit=crop&w=700&q=85"
+                            alt="The Power of Now"
+                        >
+
+
+                        <button
+                            class="wishlist"
+                            type="button"
+                            title="Add The Power of Now to wishlist"
+                            aria-label="Add The Power of Now to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true">
+                            </i>
+
+                        </button>
+
+
+                        <button
+                            class="quick-add add-cart"
+                            type="button"
+                            data-name="The Power of Now"
+                            data-price="425"
+                        >
+                            Add to Bag
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span>
+                            SELF HELP
+                        </span>
+
+                        <h3>
+                            The Power of Now
+                        </h3>
+
+                        <div class="rating">
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (105)
+                            </small>
+
+                        </div>
+
+
+                        <div class="price">
+
+                            ₹425
+
+                            <del>
+                                ₹599
+                            </del>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="no-products"
+            id="noProducts"
+        >
+            No books found.
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PROMOTION
+========================================================= -->
+
+<section class="books-promo">
+
+    <div class="container-fluid px-4">
+
+        <div class="books-promo-box">
+
+
+            <div class="promo-copy">
+
+                <span>
+                    OZZO BOOK OFFER
+                </span>
+
+                <h2>
+                    Buy More.<br>
+                    Read More.
+                </h2>
+
+                <p>
+                    Pick your next favourite book and
+                    save more on your reading list.
+                </p>
+
+                <a href="#booksProducts">
+                    Shop Books →
+                </a>
+
+            </div>
+
+
+            <div class="promo-image">
+
+                <img
+                    src="/Books hero.png"
+                    alt="Books promotion"
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER — SAME AS INDEX
+========================================================= -->
+
+<footer class="footer">
+
+    <div class="container-fluid px-lg-5">
+
+        <div class="footer-main">
+
+
+            <!-- BRAND -->
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+                    OZZO
+                </div>
+
+                <div class="footer-categories">
+
+                    Fashion
+
+                    <span>•</span>
+
+                    Books
+
+                    <span>•</span>
+
+                    Stationery
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="footer-column">
+
+                <h4>
+                    Quick Links
+                </h4>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="#">
+                    About Us
+                </a>
+
+                <a href="#">
+                    FAQs
+                </a>
+
+                <a href="#">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- CATEGORIES -->
+
+            <div class="footer-column">
+
+                <h4>
+                    Categories
+                </h4>
+
+                <a href="Fashion/Fashion.html">Fashion</a>
+        <a href="/Books/Books.html">Books</a>
+        <a href="/Stationary/Stationary.html">Stationery</a>
+        <a href="/Pads/Pads.html">Pads</a>
+            </div>
+
+
+            <!-- CUSTOMER SERVICE -->
+
+            <div class="footer-column">
+
+                <h4>
+                    Customer Service
+                </h4>
+
+                <a href="#">
+                    Shipping Policy
+                </a>
+
+                <a href="#">
+                    Return &amp; Refund
+                </a>
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+                <a href="#">
+                    Terms &amp; Conditions
+                </a>
+
+            </div>
+
+
+            <!-- NEWSLETTER -->
+
+            <div class="footer-newsletter">
+
+                <h4>
+                    Join Our Newsletter
+                </h4>
+
+                <p>
+                    Get updates on new arrivals and special offers.
+                </p>
+
+
+                <form id="newsletterForm">
+
+                    <div class="newsletter-input">
+
+                        <input
+                            type="email"
+                            id="newsletterEmail"
+                            placeholder="Enter your email address"
+                            aria-label="Enter your email address"
+                            required
+                        >
+
+                        <button
+                            type="submit"
+                            title="Subscribe"
+                            aria-label="Subscribe"
+                        >
+                            →
+                        </button>
+
+                    </div>
+
+                </form>
+
+
+                <div
+                    class="newsletter-message"
+                    id="newsletterMessage">
+                </div>
+
+
+                <!-- SOCIAL -->
+
+                <div class="social-icons">
+
+                    <a
+                        href="#"
+                        title="Facebook"
+                        aria-label="Facebook"
+                    >
+                        <i
+                            class="fa-brands fa-facebook-f"
+                            aria-hidden="true">
+                        </i>
+                    </a>
+
+
+                    <a
+                        href="#"
+                        title="Instagram"
+                        aria-label="Instagram"
+                    >
+                        <i
+                            class="fa-brands fa-instagram"
+                            aria-hidden="true">
+                        </i>
+                    </a>
+
+
+                    <a
+                        href="#"
+                        title="YouTube"
+                        aria-label="YouTube"
+                    >
+                        <i
+                            class="fa-brands fa-youtube"
+                            aria-hidden="true">
+                        </i>
+                    </a>
+
+
+                    <a
+                        href="#"
+                        title="LinkedIn"
+                        aria-label="LinkedIn"
+                    >
+                        <i
+                            class="fa-brands fa-linkedin-in"
+                            aria-hidden="true">
+                        </i>
+                    </a>
+
+
+                    <a
+                        href="#"
+                        title="Twitter"
+                        aria-label="Twitter"
+                    >
+                        <i
+                            class="fa-brands fa-twitter"
+                            aria-hidden="true">
+                        </i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER BOTTOM -->
+
+    <div class="footer-bottom">
+
+        <div class="container-fluid px-lg-5">
+
+            <div class="footer-bottom-inner">
+
+                <span>
+                    © 2025 OZZO. All rights reserved.
+                </span>
+
+                <span>
+                    Better Choices. A Brighter You.
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap JS -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+<script>
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function(){
+
+        const filterButtons =
+            document.querySelectorAll(".filter-btn");
+
+        const products =
+            document.querySelectorAll(".product-item");
+
+        const searchInput =
+            document.getElementById("searchInput");
+
+        const noProducts =
+            document.getElementById("noProducts");
+
+        const cartCount =
+            document.getElementById("cartCount");
+
+        const newsletterForm =
+            document.getElementById("newsletterForm");
+
+        const newsletterMessage =
+            document.getElementById("newsletterMessage");
+
+
+        let cart = 0;
+
+
+        /* =====================================================
+           FILTER
+        ===================================================== */
+
+        filterButtons.forEach(button => {
+
+            button.addEventListener(
+                "click",
+                function(){
+
+                    filterButtons.forEach(btn => {
+
+                        btn.classList.remove(
+                            "active"
+                        );
+
+                    });
+
+
+                    this.classList.add(
+                        "active"
+                    );
+
+
+                    const filter =
+                        this.dataset.filter;
+
+                    let visible = 0;
+
+
+                    products.forEach(product => {
+
+                        if(
+                            filter === "all" ||
+                            product.dataset.category === filter
+                        ){
+
+                            product.style.display = "";
+
+                            visible++;
+
+                        }
+                        else{
+
+                            product.style.display = "none";
+
+                        }
+
+                    });
+
+
+                    noProducts.style.display =
+                        visible === 0
+                            ? "block"
+                            : "none";
+
+                }
+            );
+
+        });
+
+
+        /* =====================================================
+           CATEGORY CARDS
+        ===================================================== */
+
+        document
+            .querySelectorAll(".book-category")
+            .forEach(category => {
+
+                category.addEventListener(
+                    "click",
+                    function(){
+
+                        const filter =
+                            this.dataset.filter;
+
+                        const button =
+                            document.querySelector(
+                                `.filter-btn[data-filter="${filter}"]`
+                            );
+
+
+                        if(button){
+
+                            button.click();
+
+                        }
+
+                    }
+                );
+
+            });
+
+
+        /* =====================================================
+           WISHLIST
+        ===================================================== */
+
+        document
+            .querySelectorAll(".wishlist")
+            .forEach(button => {
+
+                button.addEventListener(
+                    "click",
+                    function(){
+
+                        this.classList.toggle(
+                            "active"
+                        );
+
+
+                        const icon =
+                            this.querySelector("i");
+
+
+                        if(
+                            this.classList.contains("active")
+                        ){
+
+                            icon.classList.remove(
+                                "fa-regular"
+                            );
+
+                            icon.classList.add(
+                                "fa-solid"
+                            );
+
+                        }
+                        else{
+
+                            icon.classList.remove(
+                                "fa-solid"
+                            );
+
+                            icon.classList.add(
+                                "fa-regular"
+                            );
+
+                        }
+
+                    }
+                );
+
+            });
+
+
+        /* =====================================================
+           ADD TO CART
+        ===================================================== */
+
+        document
+            .querySelectorAll(".add-cart")
+            .forEach(button => {
+
+                button.addEventListener(
+                    "click",
+                    function(){
+
+                        cart++;
+
+                        cartCount.textContent =
+                            cart;
+
+
+                        cartCount.style.transform =
+                            "scale(1.35)";
+
+
+                        setTimeout(
+                            () => {
+
+                                cartCount.style.transform =
+                                    "scale(1)";
+
+                            },
+                            180
+                        );
+
+
+                        const originalText =
+                            this.textContent;
+
+
+                        this.textContent =
+                            "Added ✓";
+
+
+                        this.classList.add(
+                            "added"
+                        );
+
+
+                        setTimeout(
+                            () => {
+
+                                this.textContent =
+                                    originalText;
+
+                                this.classList.remove(
+                                    "added"
+                                );
+
+                            },
+                            1200
+                        );
+
+                    }
+                );
+
+            });
+
+
+        /* =====================================================
+           SEARCH
+        ===================================================== */
+
+        searchInput.addEventListener(
+            "input",
+            function(){
+
+                const searchValue =
+                    this.value
+                        .toLowerCase()
+                        .trim();
+
+
+                let visible = 0;
+
+
+                products.forEach(product => {
+
+                    const productName =
+                        product.dataset.name
+                            .toLowerCase();
+
+
+                    if(
+                        productName.includes(
+                            searchValue
+                        )
+                    ){
+
+                        product.style.display =
+                            "";
+
+                        visible++;
+
+                    }
+                    else{
+
+                        product.style.display =
+                            "none";
+
+                    }
+
+                });
+
+
+                noProducts.style.display =
+                    visible === 0
+                        ? "block"
+                        : "none";
+
+            }
+        );
+
+
+        /* =====================================================
+           NEWSLETTER
+        ===================================================== */
+
+        newsletterForm.addEventListener(
+            "submit",
+            function(event){
+
+                event.preventDefault();
+
+                newsletterMessage.textContent =
+                    "Thanks for subscribing!";
+
+                newsletterForm.reset();
+
+            }
+        );
+
+    }
+);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>OZZO | Pads</title>
+
+
+    <!-- =====================================================
+         BOOTSTRAP
+    ====================================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- =====================================================
+         GOOGLE FONT
+    ====================================================== -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         PADS CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="Pads.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     TOP BAR
+========================================================= -->
+
+<div class="top-bar">
+
+    <div class="container-fluid top-bar-inner px-4">
+
+        <div class="shipping-text">
+
+            <i
+                class="fa-solid fa-truck"
+                aria-hidden="true">
+            </i>
+
+            <span>
+                Free shipping on orders above ₹999
+            </span>
+
+        </div>
+
+
+        <div class="top-links">
+
+            <a href="#">
+                Track Order
+            </a>
+
+            <span>|</span>
+
+            <a href="#">
+                Help
+            </a>
+
+            <span>|</span>
+
+            <a
+                href="#"
+                class="login-link"
+                title="Login"
+                aria-label="Login"
+            >
+
+                <i
+                    class="fa-regular fa-user"
+                    aria-hidden="true">
+                </i>
+
+                Login
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="main-header">
+
+    <nav class="navbar navbar-expand-xl">
+
+        <div class="container-fluid px-4">
+
+
+            <!-- LOGO -->
+
+            <a
+                class="navbar-brand ozzo-logo"
+                href="index.html"
+            >
+                OZZO
+            </a>
+
+
+            <!-- MOBILE BUTTON -->
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#ozzoNavbar"
+                aria-controls="ozzoNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                title="Toggle navigation"
+            >
+
+                <i
+                    class="fa-solid fa-bars"
+                    aria-hidden="true">
+                </i>
+
+            </button>
+
+
+            <!-- NAV -->
+
+            <div
+                class="collapse navbar-collapse"
+                id="ozzoNavbar"
+            >
+
+                <ul class="navbar-nav main-nav mx-auto">
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="/index.html"
+                        >
+                            Home
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="/Fashion/Fashion.html"
+                        >
+                            Fashion
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="/Books/Books.html"
+                        >
+                            Books
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="/Stationary/Stationary.html"
+                        >
+                            Stationery
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link active"
+                            href="/Pads/Pads.html"
+                        >
+                            Pads
+                        </a>
+
+                    </li>
+
+                </ul>
+
+
+                <!-- HEADER ACTIONS -->
+
+                <div class="header-actions">
+
+
+                    <!-- SEARCH -->
+
+                    <div class="search-box">
+
+                        <input
+                            type="text"
+                            id="searchInput"
+                            placeholder="Search pads..."
+                            aria-label="Search pads"
+                        >
+
+                        <i
+                            class="fa-solid fa-magnifying-glass"
+                            aria-hidden="true">
+                        </i>
+
+                    </div>
+
+
+                    <!-- WISHLIST -->
+
+                    <button
+                        class="header-icon"
+                        type="button"
+                        title="Wishlist"
+                        aria-label="Wishlist"
+                    >
+
+                        <i
+                            class="fa-regular fa-heart"
+                            aria-hidden="true">
+                        </i>
+
+                    </button>
+
+
+                    <!-- CART -->
+
+                    <button
+                        class="header-icon cart-button"
+                        type="button"
+                        title="Shopping Bag"
+                        aria-label="Shopping Bag"
+                    >
+
+                        <i
+                            class="fa-solid fa-bag-shopping"
+                            aria-hidden="true">
+                        </i>
+
+                        <span
+                            class="cart-count"
+                            id="cartCount"
+                        >
+                            0
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="pads-hero">
+
+    <div class="container-fluid px-4">
+
+        <div class="pads-hero-content">
+
+
+            <!-- HERO COPY -->
+
+            <div class="pads-hero-copy">
+
+                <span class="hero-label">
+                    OZZO PADS
+                </span>
+
+
+                <h1>
+                    Comfort That<br>
+                    <span>Moves With You</span>
+                </h1>
+
+
+                <p>
+                    Explore trusted sanitary pad brands,
+                    everyday protection and comfortable
+                    choices for every routine.
+                </p>
+
+
+                <a
+                    href="#padsProducts"
+                    class="shop-btn"
+                >
+
+                    Shop Pads
+
+                    <span>→</span>
+
+                </a>
+
+            </div>
+
+
+            <!-- HERO IMAGE -->
+
+            <div class="pads-hero-image">
+
+                <img
+                    src="/Pads hero.png"
+                    alt="Personal care products"
+                >
+
+
+                <div class="pads-offer">
+
+                    <small>
+                        SPECIAL
+                    </small>
+
+                    <strong>
+                        25%
+                    </strong>
+
+                    <span>
+                        OFF
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CATEGORIES
+========================================================= -->
+
+<section class="pads-categories">
+
+    <div class="container-fluid px-4">
+
+
+        <div class="section-title">
+
+            <div>
+
+                <span>
+                    EXPLORE
+                </span>
+
+                <h2>
+                    Choose Your Comfort
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="row g-3">
+
+
+            <!-- REGULAR -->
+
+            <div class="col-6 col-md-4">
+
+                <a
+                    href="#padsProducts"
+                    class="pads-category"
+                    data-filter="regular"
+                >
+
+                    <img
+                        src="https://onemg.gumlet.io/l_watermark_346%2Cw_480%2Ch_480/a_ignore%2Cw_480%2Ch_480%2Cc_fit%2Cq_auto%2Cf_auto/ae319e35fe74418abfebb74c144146fb.jpg?dpr=3&format=auto&h=320&w=412"
+                        alt="Whisper sanitary pads"
+                    >
+
+                    <div class="category-overlay"></div>
+
+                    <div class="category-content">
+
+                        <span>
+                            01
+                        </span>
+
+                        <h3>
+                            Regular
+                        </h3>
+
+                        <p>
+                            Everyday protection →
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- XL -->
+
+            <div class="col-6 col-md-4">
+
+                <a
+                    href="#padsProducts"
+                    class="pads-category"
+                    data-filter="xl"
+                >
+
+                    <img
+                        src="https://onemg.gumlet.io/l_watermark_346%2Cw_480%2Ch_480/a_ignore%2Cw_480%2Ch_480%2Cc_fit%2Cq_auto%2Cf_auto/49a1d73915ad48a8a23bbed40a8c90c5.jpg?dpr=3&format=auto&h=320&w=412"
+                        alt="Stayfree sanitary pads"
+                    >
+
+                    <div class="category-overlay"></div>
+
+                    <div class="category-content">
+
+                        <span>
+                            02
+                        </span>
+
+                        <h3>
+                            XL Protection
+                        </h3>
+
+                        <p>
+                            Extra coverage →
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- NIGHT -->
+
+            <div class="col-6 col-md-4">
+
+                <a
+                    href="#padsProducts"
+                    class="pads-category"
+                    data-filter="night"
+                >
+
+                    <img
+                        src="https://images.unsplash.com/photo-1603398938378-e54eab446dde?auto=format&fit=crop&w=900&q=85"
+                        alt="Night care products"
+                    >
+
+                    <div class="category-overlay"></div>
+
+                    <div class="category-content">
+
+                        <span>
+                            03
+                        </span>
+
+                        <h3>
+                            Night Care
+                        </h3>
+
+                        <p>
+                            Extra night comfort →
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PRODUCTS
+========================================================= -->
+
+<section
+    class="pads-products"
+    id="padsProducts"
+>
+
+    <div class="container-fluid px-4">
+
+
+        <div class="products-heading">
+
+
+            <div>
+
+                <span class="section-label">
+                    OZZO COLLECTION
+                </span>
+
+                <h2>
+                    Popular Pads
+                </h2>
+
+            </div>
+
+
+            <div class="product-filters">
+
+                <button
+                    class="filter-btn active"
+                    type="button"
+                    data-filter="all"
+                >
+                    All
+                </button>
+
+
+                <button
+                    class="filter-btn"
+                    type="button"
+                    data-filter="regular"
+                >
+                    Regular
+                </button>
+
+
+                <button
+                    class="filter-btn"
+                    type="button"
+                    data-filter="xl"
+                >
+                    XL
+                </button>
+
+
+                <button
+                    class="filter-btn"
+                    type="button"
+                    data-filter="night"
+                >
+                    Night
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="row g-3"
+            id="productGrid"
+        >
+
+
+            <!-- =================================================
+                 WHISPER
+            ================================================== -->
+
+            <div
+                class="col-6 col-md-4 col-lg-3 product-item"
+                data-category="xl"
+                data-name="Whisper Ultra No Gap No Leaks XL"
+            >
+
+                <div class="pads-product-card">
+
+                    <div class="pads-image">
+
+                        <img
+                            src="https://onemg.gumlet.io/l_watermark_346%2Cw_480%2Ch_480/a_ignore%2Cw_480%2Ch_480%2Cc_fit%2Cq_auto%2Cf_auto/ae319e35fe74418abfebb74c144146fb.jpg?dpr=3&format=auto&h=320&w=412"
+                            alt="Whisper Ultra No Gap No Leaks XL"
+                        >
+
+                        <span class="product-badge">
+                            WHISPER
+                        </span>
+
+                        <button
+                            class="wishlist"
+                            type="button"
+                            title="Add Whisper Ultra to wishlist"
+                            aria-label="Add Whisper Ultra to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true">
+                            </i>
+
+                        </button>
+
+                        <button
+                            class="quick-add add-cart"
+                            type="button"
+                            data-name="Whisper Ultra No Gap No Leaks XL"
+                            data-price="215"
+                        >
+                            Add to Bag
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span>
+                            WHISPER · XL
+                        </span>
+
+                        <h3>
+                            Whisper Ultra No Gap No Leaks XL
+                        </h3>
+
+                        <div class="rating">
+                            <span>★★★★★</span>
+                            <small>(748)</small>
+                        </div>
+
+                        <div class="price">
+                            ₹215
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 STAYFREE
+            ================================================== -->
+
+            <div
+                class="col-6 col-md-4 col-lg-3 product-item"
+                data-category="xl"
+                data-name="Stayfree Secure Cottony Soft XL"
+            >
+
+                <div class="pads-product-card">
+
+                    <div class="pads-image">
+
+                        <img
+                            src="https://onemg.gumlet.io/l_watermark_346%2Cw_480%2Ch_480/a_ignore%2Cw_480%2Ch_480%2Cc_fit%2Cq_auto%2Cf_auto/49a1d73915ad48a8a23bbed40a8c90c5.jpg?dpr=3&format=auto&h=320&w=412"
+                            alt="Stayfree Secure Cottony Soft XL"
+                        >
+
+                        <span class="product-badge">
+                            STAYFREE
+                        </span>
+
+                        <button
+                            class="wishlist"
+                            type="button"
+                            title="Add Stayfree Secure XL to wishlist"
+                            aria-label="Add Stayfree Secure XL to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true">
+                            </i>
+
+                        </button>
+
+                        <button
+                            class="quick-add add-cart"
+                            type="button"
+                            data-name="Stayfree Secure Cottony Soft XL"
+                            data-price="259"
+                        >
+                            Add to Bag
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span>
+                            STAYFREE · XL
+                        </span>
+
+                        <h3>
+                            Stayfree Secure Cottony Soft XL
+                        </h3>
+
+                        <div class="rating">
+                            <span>★★★★★</span>
+                            <small>(1126)</small>
+                        </div>
+
+                        <div class="price">
+                            ₹259
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 SOFY
+            ================================================== -->
+
+            <div
+                class="col-6 col-md-4 col-lg-3 product-item"
+                data-category="xl"
+                data-name="SOFY Anti Bacteria XL"
+            >
+
+                <div class="pads-product-card">
+
+                    <div class="pads-image">
+
+                        <img
+                            src="https://onemg.gumlet.io/l_watermark_346%2Cw_480%2Ch_480/a_ignore%2Cw_480%2Ch_480%2Cc_fit%2Cq_auto%2Cf_auto/b85915f0384943298689c6bcf8b58cc4.jpg?dpr=3&format=auto&h=320&w=412"
+                            alt="SOFY Anti Bacteria XL"
+                        >
+
+                        <span class="product-badge">
+                            SOFY
+                        </span>
+
+                        <button
+                            class="wishlist"
+                            type="button"
+                            title="Add SOFY Anti Bacteria XL to wishlist"
+                            aria-label="Add SOFY Anti Bacteria XL to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true">
+                            </i>
+
+                        </button>
+
+                        <button
+                            class="quick-add add-cart"
+                            type="button"
+                            data-name="SOFY Anti Bacteria XL"
+                            data-price="140"
+                        >
+                            Add to Bag
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span>
+                            SOFY · XL
+                        </span>
+
+                        <h3>
+                            SOFY Anti Bacteria XL
+                        </h3>
+
+                        <div class="rating">
+                            <span>★★★★★</span>
+                            <small>(1116)</small>
+                        </div>
+
+                        <div class="price">
+                            ₹140
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 KOTEX
+            ================================================== -->
+
+            <div
+                class="col-6 col-md-4 col-lg-3 product-item"
+                data-category="regular"
+                data-name="Kotex Prohealth Plus"
+            >
+
+                <div class="pads-product-card">
+
+                    <div class="pads-image">
+
+                        <img
+                            src="https://cdn.grofers.com/da/cms-assets/cms/product/9f97ae97-2a06-4002-a64e-316bae968921.jpg"
+                            alt="Kotex Prohealth Plus sanitary pads"
+                        >
+
+                        <span class="product-badge">
+                            KOTEX
+                        </span>
+
+                        <button
+                            class="wishlist"
+                            type="button"
+                            title="Add Kotex Prohealth Plus to wishlist"
+                            aria-label="Add Kotex Prohealth Plus to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true">
+                            </i>
+
+                        </button>
+
+                        <button
+                            class="quick-add add-cart"
+                            type="button"
+                            data-name="Kotex Prohealth Plus"
+                            data-price="198"
+                        >
+                            Add to Bag
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span>
+                            KOTEX · REGULAR
+                        </span>
+
+                        <h3>
+                            Kotex Prohealth Plus
+                        </h3>
+
+                        <div class="rating">
+                            <span>★★★★★</span>
+                            <small>(214)</small>
+                        </div>
+
+                        <div class="price">
+                            ₹198
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 WHISPER NIGHT
+            ================================================== -->
+
+            <div
+                class="col-6 col-md-4 col-lg-3 product-item"
+                data-category="night"
+                data-name="Whisper Bindazzz Nights"
+            >
+
+                <div class="pads-product-card">
+
+                    <div class="pads-image">
+
+                        <img
+                            src="https://onemg.gumlet.io/l_watermark_346%2Cw_480%2Ch_480/a_ignore%2Cw_480%2Ch_480%2Cc_fit%2Cq_auto%2Cf_auto/ae319e35fe74418abfebb74c144146fb.jpg?dpr=3&format=auto&h=320&w=412"
+                            alt="Whisper Bindazzz Nights"
+                        >
+
+                        <span class="product-badge">
+                            NIGHT CARE
+                        </span>
+
+                        <button
+                            class="wishlist"
+                            type="button"
+                            title="Add Whisper Bindazzz Nights to wishlist"
+                            aria-label="Add Whisper Bindazzz Nights to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true">
+                            </i>
+
+                        </button>
+
+                        <button
+                            class="quick-add add-cart"
+                            type="button"
+                            data-name="Whisper Bindazzz Nights"
+                            data-price="143"
+                        >
+                            Add to Bag
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span>
+                            WHISPER · NIGHT
+                        </span>
+
+                        <h3>
+                            Whisper Bindazzz Nights
+                        </h3>
+
+                        <div class="rating">
+                            <span>★★★★★</span>
+                            <small>(766)</small>
+                        </div>
+
+                        <div class="price">
+                            ₹143
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 STAYFREE NIGHT
+            ================================================== -->
+
+            <div
+                class="col-6 col-md-4 col-lg-3 product-item"
+                data-category="night"
+                data-name="Stayfree Secure Nights"
+            >
+
+                <div class="pads-product-card">
+
+                    <div class="pads-image">
+
+                        <img
+                            src="https://onemg.gumlet.io/l_watermark_346%2Cw_480%2Ch_480/a_ignore%2Cw_480%2Ch_480%2Cc_fit%2Cq_auto%2Cf_auto/49a1d73915ad48a8a23bbed40a8c90c5.jpg?dpr=3&format=auto&h=320&w=412"
+                            alt="Stayfree Secure Nights"
+                        >
+
+                        <span class="product-badge">
+                            STAYFREE
+                        </span>
+
+                        <button
+                            class="wishlist"
+                            type="button"
+                            title="Add Stayfree Secure Nights to wishlist"
+                            aria-label="Add Stayfree Secure Nights to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true">
+                            </i>
+
+                        </button>
+
+                        <button
+                            class="quick-add add-cart"
+                            type="button"
+                            data-name="Stayfree Secure Nights"
+                            data-price="127"
+                        >
+                            Add to Bag
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span>
+                            STAYFREE · NIGHT
+                        </span>
+
+                        <h3>
+                            Stayfree Secure Nights
+                        </h3>
+
+                        <div class="rating">
+                            <span>★★★★★</span>
+                            <small>(16)</small>
+                        </div>
+
+                        <div class="price">
+                            ₹127
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 SOFY REGULAR
+            ================================================== -->
+
+            <div
+                class="col-6 col-md-4 col-lg-3 product-item"
+                data-category="regular"
+                data-name="SOFY Bodyfit Regular"
+            >
+
+                <div class="pads-product-card">
+
+                    <div class="pads-image">
+
+                        <img
+                            src="https://onemg.gumlet.io/l_watermark_346%2Cw_480%2Ch_480/a_ignore%2Cw_480%2Ch_480%2Cc_fit%2Cq_auto%2Cf_auto/b85915f0384943298689c6bcf8b58cc4.jpg?dpr=3&format=auto&h=320&w=412"
+                            alt="SOFY Bodyfit Regular"
+                        >
+
+                        <span class="product-badge">
+                            SOFY
+                        </span>
+
+                        <button
+                            class="wishlist"
+                            type="button"
+                            title="Add SOFY Bodyfit Regular to wishlist"
+                            aria-label="Add SOFY Bodyfit Regular to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true">
+                            </i>
+
+                        </button>
+
+                        <button
+                            class="quick-add add-cart"
+                            type="button"
+                            data-name="SOFY Bodyfit Regular"
+                            data-price="129"
+                        >
+                            Add to Bag
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span>
+                            SOFY · REGULAR
+                        </span>
+
+                        <h3>
+                            SOFY Bodyfit Regular
+                        </h3>
+
+                        <div class="rating">
+                            <span>★★★★★</span>
+                            <small>(624)</small>
+                        </div>
+
+                        <div class="price">
+                            ₹129
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 KOTEX NIGHT
+            ================================================== -->
+
+            <div
+                class="col-6 col-md-4 col-lg-3 product-item"
+                data-category="night"
+                data-name="Kotex Super Overnight"
+            >
+
+                <div class="pads-product-card">
+
+                    <div class="pads-image">
+
+                        <img
+                            src="https://cdn.grofers.com/da/cms-assets/cms/product/9f97ae97-2a06-4002-a64e-316bae968921.jpg"
+                            alt="Kotex Super Overnight sanitary pads"
+                        >
+
+                        <span class="product-badge">
+                            KOTEX
+                        </span>
+
+                        <button
+                            class="wishlist"
+                            type="button"
+                            title="Add Kotex Super Overnight to wishlist"
+                            aria-label="Add Kotex Super Overnight to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true">
+                            </i>
+
+                        </button>
+
+                        <button
+                            class="quick-add add-cart"
+                            type="button"
+                            data-name="Kotex Super Overnight"
+                            data-price="176"
+                        >
+                            Add to Bag
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span>
+                            KOTEX · NIGHT
+                        </span>
+
+                        <h3>
+                            Kotex Super Overnight
+                        </h3>
+
+                        <div class="rating">
+                            <span>★★★★★</span>
+                            <small>(1200)</small>
+                        </div>
+
+                        <div class="price">
+                            ₹176
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="no-products"
+            id="noProducts"
+        >
+            No pads found.
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PROMOTION
+========================================================= -->
+
+<section class="pads-promo">
+
+    <div class="container-fluid px-4">
+
+        <div class="pads-promo-box">
+
+
+            <div class="promo-copy">
+
+                <span>
+                    OZZO COMFORT OFFER
+                </span>
+
+
+                <h2>
+                    Comfort Every<br>
+                    Day.
+                </h2>
+
+
+                <p>
+                    Explore trusted pad brands and find
+                    the protection that fits your routine.
+                </p>
+
+
+                <a href="#padsProducts">
+                    Shop Now →
+                </a>
+
+            </div>
+
+
+            <div class="promo-image">
+
+                <img
+                    src="/Pads hero.png"
+                    alt="Personal care products"
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER — SAME AS INDEX
+========================================================= -->
+
+<footer class="footer">
+
+    <div class="container-fluid px-lg-5">
+
+        <div class="footer-main">
+
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+                    OZZO
+                </div>
+
+                <div class="footer-categories">
+
+                    Fashion
+
+                    <span>•</span>
+
+                    Books
+
+                    <span>•</span>
+
+                    Stationery
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Quick Links
+                </h4>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="#">
+                    About Us
+                </a>
+
+                <a href="#">
+                    FAQs
+                </a>
+
+                <a href="#">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Categories
+                </h4>
+
+                <a href="Fashion/Fashion.html">Fashion</a>
+        <a href="/Books/Books.html">Books</a>
+        <a href="/Stationary/Stationary.html">Stationery</a>
+        <a href="/Pads/Pads.html">Pads</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Customer Service
+                </h4>
+
+                <a href="#">
+                    Shipping Policy
+                </a>
+
+                <a href="#">
+                    Return &amp; Refund
+                </a>
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+                <a href="#">
+                    Terms &amp; Conditions
+                </a>
+
+            </div>
+
+
+            <div class="footer-newsletter">
+
+                <h4>
+                    Join Our Newsletter
+                </h4>
+
+                <p>
+                    Get updates on new arrivals and special offers.
+                </p>
+
+
+                <form id="newsletterForm">
+
+                    <div class="newsletter-input">
+
+                        <input
+                            type="email"
+                            id="newsletterEmail"
+                            placeholder="Enter your email address"
+                            aria-label="Enter your email address"
+                            required
+                        >
+
+
+                        <button
+                            type="submit"
+                            title="Subscribe"
+                            aria-label="Subscribe"
+                        >
+                            →
+                        </button>
+
+                    </div>
+
+                </form>
+
+
+                <div
+                    class="newsletter-message"
+                    id="newsletterMessage">
+                </div>
+
+
+                <div class="social-icons">
+
+
+                    <a
+                        href="#"
+                        title="Facebook"
+                        aria-label="Facebook"
+                    >
+                        <i
+                            class="fa-brands fa-facebook-f"
+                            aria-hidden="true">
+                        </i>
+                    </a>
+
+
+                    <a
+                        href="#"
+                        title="Instagram"
+                        aria-label="Instagram"
+                    >
+                        <i
+                            class="fa-brands fa-instagram"
+                            aria-hidden="true">
+                        </i>
+                    </a>
+
+
+                    <a
+                        href="#"
+                        title="YouTube"
+                        aria-label="YouTube"
+                    >
+                        <i
+                            class="fa-brands fa-youtube"
+                            aria-hidden="true">
+                        </i>
+                    </a>
+
+
+                    <a
+                        href="#"
+                        title="LinkedIn"
+                        aria-label="LinkedIn"
+                    >
+                        <i
+                            class="fa-brands fa-linkedin-in"
+                            aria-hidden="true">
+                        </i>
+                    </a>
+
+
+                    <a
+                        href="#"
+                        title="Twitter"
+                        aria-label="Twitter"
+                    >
+                        <i
+                            class="fa-brands fa-twitter"
+                            aria-hidden="true">
+                        </i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container-fluid px-lg-5">
+
+            <div class="footer-bottom-inner">
+
+                <span>
+                    © 2025 OZZO. All rights reserved.
+                </span>
+
+                <span>
+                    Better Choices. A Brighter You.
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     BOOTSTRAP JS
+========================================================= -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function(){
+
+        const filterButtons =
+            document.querySelectorAll(
+                ".filter-btn"
+            );
+
+
+        const products =
+            document.querySelectorAll(
+                ".product-item"
+            );
+
+
+        const searchInput =
+            document.getElementById(
+                "searchInput"
+            );
+
+
+        const noProducts =
+            document.getElementById(
+                "noProducts"
+            );
+
+
+        const cartCount =
+            document.getElementById(
+                "cartCount"
+            );
+
+
+        const newsletterForm =
+            document.getElementById(
+                "newsletterForm"
+            );
+
+
+        const newsletterMessage =
+            document.getElementById(
+                "newsletterMessage"
+            );
+
+
+        let cart = 0;
+
+
+        /* =====================================================
+           FILTER
+        ===================================================== */
+
+        filterButtons.forEach(
+            function(button){
+
+                button.addEventListener(
+                    "click",
+                    function(){
+
+                        filterButtons.forEach(
+                            function(btn){
+
+                                btn.classList.remove(
+                                    "active"
+                                );
+
+                            }
+                        );
+
+
+                        this.classList.add(
+                            "active"
+                        );
+
+
+                        const filter =
+                            this.dataset.filter;
+
+
+                        let visible = 0;
+
+
+                        products.forEach(
+                            function(product){
+
+                                if(
+                                    filter === "all" ||
+                                    product.dataset.category === filter
+                                ){
+
+                                    product.style.display =
+                                        "";
+
+                                    visible++;
+
+                                }
+                                else{
+
+                                    product.style.display =
+                                        "none";
+
+                                }
+
+                            }
+                        );
+
+
+                        noProducts.style.display =
+                            visible === 0
+                                ? "block"
+                                : "none";
+
+                    }
+                );
+
+            }
+        );
+
+
+        /* =====================================================
+           CATEGORY CARDS
+        ===================================================== */
+
+        document
+            .querySelectorAll(
+                ".pads-category"
+            )
+            .forEach(
+                function(category){
+
+                    category.addEventListener(
+                        "click",
+                        function(){
+
+                            const filter =
+                                this.dataset.filter;
+
+
+                            const button =
+                                document.querySelector(
+                                    '.filter-btn[data-filter="' +
+                                    filter +
+                                    '"]'
+                                );
+
+
+                            if(button){
+
+                                button.click();
+
+                            }
+
+                        }
+                    );
+
+                }
+            );
+
+
+        /* =====================================================
+           WISHLIST
+        ===================================================== */
+
+        document
+            .querySelectorAll(
+                ".wishlist"
+            )
+            .forEach(
+                function(button){
+
+                    button.addEventListener(
+                        "click",
+                        function(){
+
+                            this.classList.toggle(
+                                "active"
+                            );
+
+
+                            const icon =
+                                this.querySelector(
+                                    "i"
+                                );
+
+
+                            if(
+                                this.classList.contains(
+                                    "active"
+                                )
+                            ){
+
+                                icon.classList.remove(
+                                    "fa-regular"
+                                );
+
+                                icon.classList.add(
+                                    "fa-solid"
+                                );
+
+                            }
+                            else{
+
+                                icon.classList.remove(
+                                    "fa-solid"
+                                );
+
+                                icon.classList.add(
+                                    "fa-regular"
+                                );
+
+                            }
+
+                        }
+                    );
+
+                }
+            );
+
+
+        /* =====================================================
+           CART
+        ===================================================== */
+
+        document
+            .querySelectorAll(
+                ".add-cart"
+            )
+            .forEach(
+                function(button){
+
+                    button.addEventListener(
+                        "click",
+                        function(){
+
+                            cart++;
+
+
+                            cartCount.textContent =
+                                cart;
+
+
+                            cartCount.style.transform =
+                                "scale(1.35)";
+
+
+                            setTimeout(
+                                function(){
+
+                                    cartCount.style.transform =
+                                        "scale(1)";
+
+                                },
+                                180
+                            );
+
+
+                            const originalText =
+                                this.textContent;
+
+
+                            this.textContent =
+                                "Added ✓";
+
+
+                            this.classList.add(
+                                "added"
+                            );
+
+
+                            setTimeout(
+                                function(){
+
+                                    button.textContent =
+                                        originalText;
+
+                                    button.classList.remove(
+                                        "added"
+                                    );
+
+                                },
+                                1200
+                            );
+
+                        }
+                    );
+
+                }
+            );
+
+
+        /* =====================================================
+           SEARCH
+        ===================================================== */
+
+        searchInput.addEventListener(
+            "input",
+            function(){
+
+                const value =
+                    this.value
+                        .toLowerCase()
+                        .trim();
+
+
+                let visible = 0;
+
+
+                products.forEach(
+                    function(product){
+
+                        const name =
+                            product.dataset.name
+                                .toLowerCase();
+
+
+                        if(
+                            name.includes(value)
+                        ){
+
+                            product.style.display =
+                                "";
+
+                            visible++;
+
+                        }
+                        else{
+
+                            product.style.display =
+                                "none";
+
+                        }
+
+                    }
+                );
+
+
+                noProducts.style.display =
+                    visible === 0
+                        ? "block"
+                        : "none";
+
+            }
+        );
+
+
+        /* =====================================================
+           NEWSLETTER
+        ===================================================== */
+
+        newsletterForm.addEventListener(
+            "submit",
+            function(event){
+
+                event.preventDefault();
+
+
+                newsletterMessage.textContent =
+                    "Thanks for subscribing!";
+
+
+                newsletterForm.reset();
+
+            }
+        );
+
+    }
+);
+
+</script>
+
+
+</body>
+
+</html>

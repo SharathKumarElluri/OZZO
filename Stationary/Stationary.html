@@ -1,0 +1,1958 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>OZZO | Stationery</title>
+
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <link rel="stylesheet" href="Stationary.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     TOP BAR
+========================================================= -->
+
+<div class="top-bar">
+
+    <div class="container-fluid top-bar-inner px-4">
+
+        <div class="shipping-text">
+
+            <i
+                class="fa-solid fa-truck"
+                aria-hidden="true">
+            </i>
+
+            <span>
+                Free shipping on orders above ₹999
+            </span>
+
+        </div>
+
+
+        <div class="top-links">
+
+            <a href="#">
+                Track Order
+            </a>
+
+            <span>|</span>
+
+            <a href="#">
+                Help
+            </a>
+
+            <span>|</span>
+
+            <a
+                href="#"
+                class="login-link"
+                title="Login"
+                aria-label="Login"
+            >
+
+                <i
+                    class="fa-regular fa-user"
+                    aria-hidden="true">
+                </i>
+
+                Login
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="main-header">
+
+    <nav class="navbar navbar-expand-xl">
+
+        <div class="container-fluid px-4">
+
+
+            <!-- LOGO -->
+
+            <a
+                class="navbar-brand ozzo-logo"
+                href="#"
+            >
+                OZZO
+            </a>
+
+
+            <!-- MOBILE MENU -->
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#ozzoNavbar"
+                aria-controls="ozzoNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                title="Toggle navigation"
+            >
+
+                <i
+                    class="fa-solid fa-bars"
+                    aria-hidden="true">
+                </i>
+
+            </button>
+
+
+            <div
+                class="collapse navbar-collapse"
+                id="ozzoNavbar"
+            >
+
+
+                <!-- NAVIGATION -->
+
+                <ul class="navbar-nav main-nav mx-auto">
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="/index.html"
+                        >
+                            Home
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="/Fashion/Fashion.html"
+                        >
+                            Fashion
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="/Books/Books.html"
+                        >
+                            Books
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link active"
+                            href="/Stationary/Stationary.html"
+                        >
+                            Stationery
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="/Pads/Pads.html"
+                        >
+                            Pads
+                        </a>
+
+                    </li>
+
+                </ul>
+
+
+                <!-- HEADER ACTIONS -->
+
+                <div class="header-actions">
+
+
+                    <div class="search-box">
+
+                        <input
+                            type="text"
+                            id="searchInput"
+                            placeholder="Search stationery..."
+                            aria-label="Search stationery"
+                        >
+
+                        <i
+                            class="fa-solid fa-magnifying-glass"
+                            aria-hidden="true">
+                        </i>
+
+                    </div>
+
+
+                    <button
+                        class="header-icon"
+                        type="button"
+                        title="Wishlist"
+                        aria-label="Wishlist"
+                    >
+
+                        <i
+                            class="fa-regular fa-heart"
+                            aria-hidden="true">
+                        </i>
+
+                    </button>
+
+
+                    <button
+                        class="header-icon cart-button"
+                        type="button"
+                        title="Shopping Bag"
+                        aria-label="Shopping Bag"
+                    >
+
+                        <i
+                            class="fa-solid fa-bag-shopping"
+                            aria-hidden="true">
+                        </i>
+
+                        <span
+                            class="cart-count"
+                            id="cartCount"
+                        >
+                            0
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- =========================================================
+     STATIONERY HERO
+========================================================= -->
+
+<section class="stationery-hero">
+
+    <div class="container-fluid px-4">
+
+        <div class="stationery-hero-content">
+
+
+            <!-- HERO COPY -->
+
+            <div class="stationery-hero-copy">
+
+                <span class="hero-label">
+                    OZZO STATIONERY
+                </span>
+
+
+                <h1>
+                    Make Space<br>
+                    <span>For Ideas</span>
+                </h1>
+
+
+                <p>
+                    Beautiful notebooks, writing essentials,
+                    creative tools and everyday stationery
+                    for work, study and everything in between.
+                </p>
+
+
+                <a
+                    href="#stationeryProducts"
+                    class="shop-btn"
+                >
+
+                    Shop Stationery
+
+                    <span>→</span>
+
+                </a>
+
+            </div>
+
+
+            <!-- HERO IMAGE -->
+
+            <div class="stationery-hero-image">
+
+                <img
+                    src="/stationary hero.png"
+                    alt="Stationery collection"
+                >
+
+
+                <div class="stationery-offer">
+
+                    <small>
+                        UP TO
+                    </small>
+
+                    <strong>
+                        30%
+                    </strong>
+
+                    <span>
+                        OFF
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     STATIONERY CATEGORIES
+========================================================= -->
+
+<section class="stationery-categories">
+
+    <div class="container-fluid px-4">
+
+
+        <div class="section-title">
+
+            <div>
+
+                <span>
+                    EXPLORE
+                </span>
+
+                <h2>
+                    Stationery Categories
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="row g-3">
+
+
+            <!-- WRITING -->
+
+            <div class="col-6 col-md-4">
+
+                <a
+                    href="#stationeryProducts"
+                    class="stationery-category"
+                    data-filter="writing"
+                >
+
+                    <img
+                        src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=700&q=85"
+                        alt="Writing stationery"
+                    >
+
+                    <div class="category-overlay"></div>
+
+                    <div class="category-content">
+
+                        <span>
+                            01
+                        </span>
+
+                        <h3>
+                            Writing
+                        </h3>
+
+                        <p>
+                            Explore collection →
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- NOTEBOOKS -->
+
+            <div class="col-6 col-md-4">
+
+                <a
+                    href="#stationeryProducts"
+                    class="stationery-category"
+                    data-filter="notebooks"
+                >
+
+                    <img
+                        src="https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=900&q=85"
+                        alt="Notebooks"
+                    >
+
+                    <div class="category-overlay"></div>
+
+                    <div class="category-content">
+
+                        <span>
+                            02
+                        </span>
+
+                        <h3>
+                            Notebooks
+                        </h3>
+
+                        <p>
+                            Explore collection →
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- ART & CRAFT -->
+
+            <div class="col-6 col-md-4">
+
+                <a
+                    href="#stationeryProducts"
+                    class="stationery-category"
+                    data-filter="art"
+                >
+
+                    <img
+                        src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=900&q=85"
+                        alt="Art and craft supplies"
+                    >
+
+                    <div class="category-overlay"></div>
+
+                    <div class="category-content">
+
+                        <span>
+                            03
+                        </span>
+
+                        <h3>
+                            Art &amp; Craft
+                        </h3>
+
+                        <p>
+                            Explore collection →
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PRODUCTS
+========================================================= -->
+
+<section
+    class="stationery-products"
+    id="stationeryProducts"
+>
+
+    <div class="container-fluid px-4">
+
+
+        <div class="products-heading">
+
+
+            <div>
+
+                <span class="section-label">
+                    OZZO COLLECTION
+                </span>
+
+                <h2>
+                    Everyday Essentials
+                </h2>
+
+            </div>
+
+
+            <!-- FILTERS -->
+
+            <div class="product-filters">
+
+
+                <button
+                    class="filter-btn active"
+                    type="button"
+                    data-filter="all"
+                >
+                    All
+                </button>
+
+
+                <button
+                    class="filter-btn"
+                    type="button"
+                    data-filter="writing"
+                >
+                    Writing
+                </button>
+
+
+                <button
+                    class="filter-btn"
+                    type="button"
+                    data-filter="notebooks"
+                >
+                    Notebooks
+                </button>
+
+
+                <button
+                    class="filter-btn"
+                    type="button"
+                    data-filter="art"
+                >
+                    Art &amp; Craft
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="row g-3"
+            id="productGrid"
+        >
+
+
+            <!-- PRODUCT 1 -->
+
+            <div
+                class="col-6 col-md-4 col-lg-3 product-item"
+                data-category="writing"
+                data-name="Premium Gel Pen Set"
+            >
+
+                <div class="stationery-product-card">
+
+
+                    <div class="stationery-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?auto=format&fit=crop&w=700&q=85"
+                            alt="Premium Gel Pen Set"
+                        >
+
+
+                        <span class="product-badge">
+                            BESTSELLER
+                        </span>
+
+
+                        <button
+                            class="wishlist"
+                            type="button"
+                            title="Add Premium Gel Pen Set to wishlist"
+                            aria-label="Add Premium Gel Pen Set to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true">
+                            </i>
+
+                        </button>
+
+
+                        <button
+                            class="quick-add add-cart"
+                            type="button"
+                            data-name="Premium Gel Pen Set"
+                            data-price="149"
+                        >
+                            Add to Bag
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span>
+                            WRITING
+                        </span>
+
+                        <h3>
+                            Premium Gel Pen Set
+                        </h3>
+
+                        <div class="rating">
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (64)
+                            </small>
+
+                        </div>
+
+                        <div class="price">
+
+                            ₹149
+
+                            <del>
+                                ₹199
+                            </del>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 2 -->
+
+            <div
+                class="col-6 col-md-4 col-lg-3 product-item"
+                data-category="notebooks"
+                data-name="Minimal Hardcover Notebook"
+            >
+
+                <div class="stationery-product-card">
+
+
+                    <div class="stationery-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=700&q=85"
+                            alt="Minimal Hardcover Notebook"
+                        >
+
+
+                        <span class="product-badge">
+                            NEW
+                        </span>
+
+
+                        <button
+                            class="wishlist"
+                            type="button"
+                            title="Add Minimal Hardcover Notebook to wishlist"
+                            aria-label="Add Minimal Hardcover Notebook to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true">
+                            </i>
+
+                        </button>
+
+
+                        <button
+                            class="quick-add add-cart"
+                            type="button"
+                            data-name="Minimal Hardcover Notebook"
+                            data-price="299"
+                        >
+                            Add to Bag
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span>
+                            NOTEBOOKS
+                        </span>
+
+                        <h3>
+                            Minimal Hardcover Notebook
+                        </h3>
+
+                        <div class="rating">
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (87)
+                            </small>
+
+                        </div>
+
+                        <div class="price">
+
+                            ₹299
+
+                            <del>
+                                ₹399
+                            </del>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 3 -->
+
+            <div
+                class="col-6 col-md-4 col-lg-3 product-item"
+                data-category="writing"
+                data-name="Classic Ball Pen Pack"
+            >
+
+                <div class="stationery-product-card">
+
+
+                    <div class="stationery-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?auto=format&fit=crop&w=700&q=85"
+                            alt="Classic Ball Pen Pack"
+                        >
+
+
+                        <button
+                            class="wishlist"
+                            type="button"
+                            title="Add Classic Ball Pen Pack to wishlist"
+                            aria-label="Add Classic Ball Pen Pack to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true">
+                            </i>
+
+                        </button>
+
+
+                        <button
+                            class="quick-add add-cart"
+                            type="button"
+                            data-name="Classic Ball Pen Pack"
+                            data-price="99"
+                        >
+                            Add to Bag
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span>
+                            WRITING
+                        </span>
+
+                        <h3>
+                            Classic Ball Pen Pack
+                        </h3>
+
+                        <div class="rating">
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (48)
+                            </small>
+
+                        </div>
+
+                        <div class="price">
+
+                            ₹99
+
+                            <del>
+                                ₹129
+                            </del>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 4 -->
+
+            <div
+                class="col-6 col-md-4 col-lg-3 product-item"
+                data-category="notebooks"
+                data-name="Daily Planner"
+            >
+
+                <div class="stationery-product-card">
+
+
+                    <div class="stationery-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1531346878377-a5be20888e57?auto=format&fit=crop&w=700&q=85"
+                            alt="Daily Planner"
+                        >
+
+
+                        <span class="product-badge">
+                            TRENDING
+                        </span>
+
+
+                        <button
+                            class="wishlist"
+                            type="button"
+                            title="Add Daily Planner to wishlist"
+                            aria-label="Add Daily Planner to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true">
+                            </i>
+
+                        </button>
+
+
+                        <button
+                            class="quick-add add-cart"
+                            type="button"
+                            data-name="Daily Planner"
+                            data-price="249"
+                        >
+                            Add to Bag
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span>
+                            NOTEBOOKS
+                        </span>
+
+                        <h3>
+                            Daily Planner
+                        </h3>
+
+                        <div class="rating">
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (73)
+                            </small>
+
+                        </div>
+
+                        <div class="price">
+
+                            ₹249
+
+                            <del>
+                                ₹349
+                            </del>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 5 -->
+
+            <div
+                class="col-6 col-md-4 col-lg-3 product-item"
+                data-category="art"
+                data-name="Watercolor Paint Set"
+            >
+
+                <div class="stationery-product-card">
+
+
+                    <div class="stationery-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=700&q=85"
+                            alt="Watercolor Paint Set"
+                        >
+
+
+                        <span class="product-badge">
+                            CREATIVE
+                        </span>
+
+
+                        <button
+                            class="wishlist"
+                            type="button"
+                            title="Add Watercolor Paint Set to wishlist"
+                            aria-label="Add Watercolor Paint Set to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true">
+                            </i>
+
+                        </button>
+
+
+                        <button
+                            class="quick-add add-cart"
+                            type="button"
+                            data-name="Watercolor Paint Set"
+                            data-price="349"
+                        >
+                            Add to Bag
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span>
+                            ART &amp; CRAFT
+                        </span>
+
+                        <h3>
+                            Watercolor Paint Set
+                        </h3>
+
+                        <div class="rating">
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (45)
+                            </small>
+
+                        </div>
+
+                        <div class="price">
+
+                            ₹349
+
+                            <del>
+                                ₹499
+                            </del>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 6 -->
+
+            <div
+                class="col-6 col-md-4 col-lg-3 product-item"
+                data-category="art"
+                data-name="Artist Brush Set"
+            >
+
+                <div class="stationery-product-card">
+
+
+                    <div class="stationery-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=700&q=85"
+                            alt="Artist Brush Set"
+                        >
+
+
+                        <button
+                            class="wishlist"
+                            type="button"
+                            title="Add Artist Brush Set to wishlist"
+                            aria-label="Add Artist Brush Set to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true">
+                            </i>
+
+                        </button>
+
+
+                        <button
+                            class="quick-add add-cart"
+                            type="button"
+                            data-name="Artist Brush Set"
+                            data-price="279"
+                        >
+                            Add to Bag
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span>
+                            ART &amp; CRAFT
+                        </span>
+
+                        <h3>
+                            Artist Brush Set
+                        </h3>
+
+                        <div class="rating">
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (39)
+                            </small>
+
+                        </div>
+
+                        <div class="price">
+
+                            ₹279
+
+                            <del>
+                                ₹379
+                            </del>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 7 -->
+
+            <div
+                class="col-6 col-md-4 col-lg-3 product-item"
+                data-category="notebooks"
+                data-name="Study Notebook Set"
+            >
+
+                <div class="stationery-product-card">
+
+
+                    <div class="stationery-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=700&q=85"
+                            alt="Study Notebook Set"
+                        >
+
+
+                        <button
+                            class="wishlist"
+                            type="button"
+                            title="Add Study Notebook Set to wishlist"
+                            aria-label="Add Study Notebook Set to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true">
+                            </i>
+
+                        </button>
+
+
+                        <button
+                            class="quick-add add-cart"
+                            type="button"
+                            data-name="Study Notebook Set"
+                            data-price="399"
+                        >
+                            Add to Bag
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span>
+                            NOTEBOOKS
+                        </span>
+
+                        <h3>
+                            Study Notebook Set
+                        </h3>
+
+                        <div class="rating">
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (61)
+                            </small>
+
+                        </div>
+
+                        <div class="price">
+
+                            ₹399
+
+                            <del>
+                                ₹499
+                            </del>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 8 -->
+
+            <div
+                class="col-6 col-md-4 col-lg-3 product-item"
+                data-category="writing"
+                data-name="Highlighter Set"
+            >
+
+                <div class="stationery-product-card">
+
+
+                    <div class="stationery-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=700&q=85"
+                            alt="Highlighter Set"
+                        >
+
+
+                        <button
+                            class="wishlist"
+                            type="button"
+                            title="Add Highlighter Set to wishlist"
+                            aria-label="Add Highlighter Set to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true">
+                            </i>
+
+                        </button>
+
+
+                        <button
+                            class="quick-add add-cart"
+                            type="button"
+                            data-name="Highlighter Set"
+                            data-price="129"
+                        >
+                            Add to Bag
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span>
+                            WRITING
+                        </span>
+
+                        <h3>
+                            Highlighter Set
+                        </h3>
+
+                        <div class="rating">
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (56)
+                            </small>
+
+                        </div>
+
+                        <div class="price">
+
+                            ₹129
+
+                            <del>
+                                ₹179
+                            </del>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="no-products"
+            id="noProducts"
+        >
+            No stationery products found.
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PROMOTION
+========================================================= -->
+
+<section class="stationery-promo">
+
+    <div class="container-fluid px-4">
+
+        <div class="stationery-promo-box">
+
+
+            <div class="promo-copy">
+
+                <span>
+                    OZZO STATIONERY OFFER
+                </span>
+
+
+                <h2>
+                    Write More.<br>
+                    Create More.
+                </h2>
+
+
+                <p>
+                    Refresh your desk with useful,
+                    beautiful and creative stationery.
+                </p>
+
+
+                <a href="#stationeryProducts">
+                    Shop Now →
+                </a>
+
+            </div>
+
+
+            <div class="promo-image">
+
+                <img
+                    src="/stationary hero.png"
+                    alt="Stationery promotion"
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER — SAME AS INDEX
+========================================================= -->
+
+<footer class="footer">
+
+    <div class="container-fluid px-lg-5">
+
+        <div class="footer-main">
+
+
+            <!-- BRAND -->
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+                    OZZO
+                </div>
+
+                <div class="footer-categories">
+
+                    Fashion
+
+                    <span>•</span>
+
+                    Books
+
+                    <span>•</span>
+
+                    Stationery
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="footer-column">
+
+                <h4>
+                    Quick Links
+                </h4>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="#">
+                    About Us
+                </a>
+
+                <a href="#">
+                    FAQs
+                </a>
+
+                <a href="#">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- CATEGORIES -->
+
+            <div class="footer-column">
+
+                <h4>
+                    Categories
+                </h4>
+
+                <a href="Fashion/Fashion.html">Fashion</a>
+        <a href="/Books/Books.html">Books</a>
+        <a href="/Stationary/Stationary.html">Stationery</a>
+        <a href="/Pads/Pads.html">Pads</a>
+
+            </div>
+
+
+            <!-- CUSTOMER SERVICE -->
+
+            <div class="footer-column">
+
+                <h4>
+                    Customer Service
+                </h4>
+
+                <a href="#">
+                    Shipping Policy
+                </a>
+
+                <a href="#">
+                    Return &amp; Refund
+                </a>
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+                <a href="#">
+                    Terms &amp; Conditions
+                </a>
+
+            </div>
+
+
+            <!-- NEWSLETTER -->
+
+            <div class="footer-newsletter">
+
+                <h4>
+                    Join Our Newsletter
+                </h4>
+
+                <p>
+                    Get updates on new arrivals and special offers.
+                </p>
+
+
+                <form id="newsletterForm">
+
+                    <div class="newsletter-input">
+
+                        <input
+                            type="email"
+                            id="newsletterEmail"
+                            placeholder="Enter your email address"
+                            aria-label="Enter your email address"
+                            required
+                        >
+
+
+                        <button
+                            type="submit"
+                            title="Subscribe"
+                            aria-label="Subscribe"
+                        >
+                            →
+                        </button>
+
+                    </div>
+
+                </form>
+
+
+                <div
+                    class="newsletter-message"
+                    id="newsletterMessage">
+                </div>
+
+
+                <div class="social-icons">
+
+
+                    <a
+                        href="#"
+                        title="Facebook"
+                        aria-label="Facebook"
+                    >
+
+                        <i
+                            class="fa-brands fa-facebook-f"
+                            aria-hidden="true">
+                        </i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        title="Instagram"
+                        aria-label="Instagram"
+                    >
+
+                        <i
+                            class="fa-brands fa-instagram"
+                            aria-hidden="true">
+                        </i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        title="YouTube"
+                        aria-label="YouTube"
+                    >
+
+                        <i
+                            class="fa-brands fa-youtube"
+                            aria-hidden="true">
+                        </i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        title="LinkedIn"
+                        aria-label="LinkedIn"
+                    >
+
+                        <i
+                            class="fa-brands fa-linkedin-in"
+                            aria-hidden="true">
+                        </i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        title="Twitter"
+                        aria-label="Twitter"
+                    >
+
+                        <i
+                            class="fa-brands fa-twitter"
+                            aria-hidden="true">
+                        </i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER BOTTOM -->
+
+    <div class="footer-bottom">
+
+        <div class="container-fluid px-lg-5">
+
+            <div class="footer-bottom-inner">
+
+                <span>
+                    © 2025 OZZO. All rights reserved.
+                </span>
+
+                <span>
+                    Better Choices. A Brighter You.
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap JS -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+<script>
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function(){
+
+        const filterButtons =
+            document.querySelectorAll(".filter-btn");
+
+        const products =
+            document.querySelectorAll(".product-item");
+
+        const searchInput =
+            document.getElementById("searchInput");
+
+        const noProducts =
+            document.getElementById("noProducts");
+
+        const cartCount =
+            document.getElementById("cartCount");
+
+        const newsletterForm =
+            document.getElementById("newsletterForm");
+
+        const newsletterMessage =
+            document.getElementById("newsletterMessage");
+
+
+        let cart = 0;
+
+
+        /* =====================================================
+           FILTER
+        ===================================================== */
+
+        filterButtons.forEach(button => {
+
+            button.addEventListener(
+                "click",
+                function(){
+
+                    filterButtons.forEach(btn => {
+
+                        btn.classList.remove(
+                            "active"
+                        );
+
+                    });
+
+
+                    this.classList.add(
+                        "active"
+                    );
+
+
+                    const filter =
+                        this.dataset.filter;
+
+
+                    let visible = 0;
+
+
+                    products.forEach(product => {
+
+                        if(
+                            filter === "all" ||
+                            product.dataset.category === filter
+                        ){
+
+                            product.style.display =
+                                "";
+
+                            visible++;
+
+                        }
+                        else{
+
+                            product.style.display =
+                                "none";
+
+                        }
+
+                    });
+
+
+                    noProducts.style.display =
+                        visible === 0
+                            ? "block"
+                            : "none";
+
+                }
+            );
+
+        });
+
+
+        /* =====================================================
+           CATEGORY CARDS
+        ===================================================== */
+
+        document
+            .querySelectorAll(".stationery-category")
+            .forEach(category => {
+
+                category.addEventListener(
+                    "click",
+                    function(){
+
+                        const filter =
+                            this.dataset.filter;
+
+
+                        const button =
+                            document.querySelector(
+                                `.filter-btn[data-filter="${filter}"]`
+                            );
+
+
+                        if(button){
+
+                            button.click();
+
+                        }
+
+                    }
+                );
+
+            });
+
+
+        /* =====================================================
+           WISHLIST
+        ===================================================== */
+
+        document
+            .querySelectorAll(".wishlist")
+            .forEach(button => {
+
+                button.addEventListener(
+                    "click",
+                    function(){
+
+                        this.classList.toggle(
+                            "active"
+                        );
+
+
+                        const icon =
+                            this.querySelector("i");
+
+
+                        if(
+                            this.classList.contains("active")
+                        ){
+
+                            icon.classList.remove(
+                                "fa-regular"
+                            );
+
+                            icon.classList.add(
+                                "fa-solid"
+                            );
+
+                        }
+                        else{
+
+                            icon.classList.remove(
+                                "fa-solid"
+                            );
+
+                            icon.classList.add(
+                                "fa-regular"
+                            );
+
+                        }
+
+                    }
+                );
+
+            });
+
+
+        /* =====================================================
+           CART
+        ===================================================== */
+
+        document
+            .querySelectorAll(".add-cart")
+            .forEach(button => {
+
+                button.addEventListener(
+                    "click",
+                    function(){
+
+                        cart++;
+
+
+                        cartCount.textContent =
+                            cart;
+
+
+                        cartCount.style.transform =
+                            "scale(1.35)";
+
+
+                        setTimeout(
+                            () => {
+
+                                cartCount.style.transform =
+                                    "scale(1)";
+
+                            },
+                            180
+                        );
+
+
+                        const original =
+                            this.textContent;
+
+
+                        this.textContent =
+                            "Added ✓";
+
+
+                        this.classList.add(
+                            "added"
+                        );
+
+
+                        setTimeout(
+                            () => {
+
+                                this.textContent =
+                                    original;
+
+                                this.classList.remove(
+                                    "added"
+                                );
+
+                            },
+                            1200
+                        );
+
+                    }
+                );
+
+            });
+
+
+        /* =====================================================
+           SEARCH
+        ===================================================== */
+
+        searchInput.addEventListener(
+            "input",
+            function(){
+
+                const value =
+                    this.value
+                        .toLowerCase()
+                        .trim();
+
+
+                let visible = 0;
+
+
+                products.forEach(product => {
+
+                    const name =
+                        product.dataset.name
+                            .toLowerCase();
+
+
+                    if(
+                        name.includes(value)
+                    ){
+
+                        product.style.display =
+                            "";
+
+                        visible++;
+
+                    }
+                    else{
+
+                        product.style.display =
+                            "none";
+
+                    }
+
+                });
+
+
+                noProducts.style.display =
+                    visible === 0
+                        ? "block"
+                        : "none";
+
+            }
+        );
+
+
+        /* =====================================================
+           NEWSLETTER
+        ===================================================== */
+
+        newsletterForm.addEventListener(
+            "submit",
+            function(event){
+
+                event.preventDefault();
+
+
+                newsletterMessage.textContent =
+                    "Thanks for subscribing!";
+
+
+                newsletterForm.reset();
+
+            }
+        );
+
+    }
+);
+
+</script>
+
+</body>
+
+</html>
