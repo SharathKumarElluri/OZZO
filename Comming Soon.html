@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Coming Soon | OZZO</title>
+
+    <!-- =========================================================
+         FAVICON
+    ========================================================== -->
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="OZZO logo.jpg"
+    >
+
+
+    <!-- =========================================================
+         BOOTSTRAP
+    ========================================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+
+    <!-- =========================================================
+         FONT AWESOME
+    ========================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- =========================================================
+         GOOGLE FONTS
+    ========================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =========================================================
+         COMING SOON CSS
+    ========================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="comming soon.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================== -->
+
+<header class="coming-header">
+
+    <div class="container-fluid">
+
+        <!-- OZZO LOGO -->
+
+        <a
+            href="index.html"
+            class="ozzo-logo"
+            aria-label="OZZO Home"
+        >
+
+            <span class="logo-box">
+                O
+            </span>
+
+            <span class="logo-text">
+                OZZO
+            </span>
+
+        </a>
+
+
+        <!-- BACK TO HOME -->
+
+        <a
+            href="index.html"
+            class="back-home"
+        >
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+            <span>
+                Back to Home
+            </span>
+
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     MAIN COMING SOON SECTION
+========================================================== -->
+
+<main class="coming-main">
+
+
+    <!-- DECORATIVE CIRCLES -->
+
+    <div
+        class="coming-decoration decoration-one"
+        aria-hidden="true"
+    ></div>
+
+    <div
+        class="coming-decoration decoration-two"
+        aria-hidden="true"
+    ></div>
+
+
+    <!-- CONTENT -->
+
+    <div class="container">
+
+        <div class="coming-content">
+
+
+            <!-- ICON -->
+
+            <div
+                class="coming-icon"
+                aria-hidden="true"
+            >
+
+                <i class="fa-solid fa-rocket"></i>
+
+            </div>
+
+
+            <!-- SMALL LABEL -->
+
+            <span class="coming-label">
+                OZZO SERVICES
+            </span>
+
+
+            <!-- MAIN HEADING -->
+
+            <h1>
+
+                <span id="serviceName">
+                    New Service
+                </span>
+
+                <br>
+
+                <strong>
+                    Coming Soon
+                </strong>
+
+            </h1>
+
+
+            <!-- DESCRIPTION -->
+
+            <p class="coming-description">
+
+                We're working behind the scenes to bring you
+                a seamless and reliable experience.
+                This service will be available on OZZO very soon.
+
+            </p>
+
+
+            <!-- =================================================
+                 COUNTDOWN
+            ================================================== -->
+
+            <div class="countdown">
+
+
+                <!-- DAYS -->
+
+                <div class="time-box">
+
+                    <span id="days">
+                        00
+                    </span>
+
+                    <small>
+                        Days
+                    </small>
+
+                </div>
+
+
+                <!-- HOURS -->
+
+                <div class="time-box">
+
+                    <span id="hours">
+                        00
+                    </span>
+
+                    <small>
+                        Hours
+                    </small>
+
+                </div>
+
+
+                <!-- MINUTES -->
+
+                <div class="time-box">
+
+                    <span id="minutes">
+                        00
+                    </span>
+
+                    <small>
+                        Minutes
+                    </small>
+
+                </div>
+
+
+                <!-- SECONDS -->
+
+                <div class="time-box">
+
+                    <span id="seconds">
+                        00
+                    </span>
+
+                    <small>
+                        Seconds
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 NOTIFICATION BOX
+            ================================================== -->
+
+            <div class="notify-box">
+
+
+                <h3>
+                    Be the first to know
+                </h3>
+
+
+                <p>
+                    Enter your email and we'll notify you when
+                    this service goes live.
+                </p>
+
+
+                <form id="notifyForm">
+
+
+                    <!-- EMAIL -->
+
+                    <div class="email-input">
+
+                        <i
+                            class="fa-regular fa-envelope"
+                            aria-hidden="true"
+                        ></i>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email address"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- BUTTON -->
+
+                    <button
+                        type="submit"
+                    >
+
+                        Notify Me
+
+                        <i
+                            class="fa-solid fa-arrow-right"
+                            aria-hidden="true"
+                        ></i>
+
+                    </button>
+
+                </form>
+
+
+                <!-- SUCCESS MESSAGE -->
+
+                <div
+                    class="success-message"
+                    id="successMessage"
+                    role="status"
+                    aria-live="polite"
+                >
+
+                    <i
+                        class="fa-solid fa-circle-check"
+                        aria-hidden="true"
+                    ></i>
+
+                    Thank you! We'll keep you updated.
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 FEATURES
+            ================================================== -->
+
+            <div class="coming-features">
+
+
+                <!-- TRUSTED -->
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+
+                        <i
+                            class="fa-solid fa-shield-halved"
+                            aria-hidden="true"
+                        ></i>
+
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Trusted
+                        </strong>
+
+                        <span>
+                            Reliable services
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SIMPLE -->
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+
+                        <i
+                            class="fa-solid fa-bolt"
+                            aria-hidden="true"
+                        ></i>
+
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Simple
+                        </strong>
+
+                        <span>
+                            Easy to use
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SUPPORT -->
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+
+                        <i
+                            class="fa-solid fa-headset"
+                            aria-hidden="true"
+                        ></i>
+
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Support
+                        </strong>
+
+                        <span>
+                            We're here to help
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================== -->
+
+<footer class="coming-footer">
+
+    <div class="container">
+
+        <p>
+            © 2026 OZZO. All rights reserved.
+        </p>
+
+
+        <div class="footer-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <span>
+                •
+            </span>
+
+            <a href="Contact/Contact.html">
+                Contact
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     BOOTSTRAP JS
+========================================================== -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+></script>
+
+
+<!-- =========================================================
+     COMING SOON JS
+========================================================== -->
+
+<script src="ComingSoon.js"></script>
+
+
+<!-- =========================================================
+     FALLBACK INLINE SCRIPT
+     Gets service name from URL
+========================================================== -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const params = new URLSearchParams(
+        window.location.search
+    );
+
+    const service =
+        params.get("service");
+
+    const serviceName =
+        document.getElementById("serviceName");
+
+
+    if (
+        service &&
+        service.trim() !== ""
+    ) {
+
+        serviceName.textContent =
+            service;
+
+    } else {
+
+        serviceName.textContent =
+            "New Service";
+
+    }
+
+});
+
+</script>
+
+
+</body>
+
+</html>

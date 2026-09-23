@@ -1,0 +1,783 @@
+/* =========================================================
+   OZZO COMING SOON
+   PREMIUM CORPORATE DESIGN
+========================================================= */
+
+:root {
+    --navy: #132438;
+    --navy-dark: #0d1d2d;
+    --navy-deep: #091522;
+
+    --text: #16283b;
+    --muted: #657384;
+
+    --cream: #eeeae4;
+    --white: #ffffff;
+
+    --gold: #c99a45;
+    --gold-light: #e8c982;
+
+    --border: #e5e9ed;
+
+    --shadow:
+        0 25px 70px rgba(13, 29, 45, 0.16);
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    color: var(--text);
+    background: var(--cream);
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.coming-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+
+    padding: 28px 4%;
+}
+
+.coming-header .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Logo */
+
+.ozzo-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    color: white;
+
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.logo-box {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 10px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 23px;
+}
+
+.logo-text {
+    color: white;
+}
+
+
+/* Back */
+
+.back-home {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    color: rgba(255,255,255,0.9);
+
+    font-size: 14px;
+    font-weight: 600;
+
+    padding: 11px 18px;
+
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 30px;
+
+    transition: 0.3s ease;
+}
+
+.back-home:hover {
+    background: white;
+    color: var(--navy);
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.coming-main {
+    position: relative;
+
+    min-height: calc(100vh - 76px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 120px 20px 80px;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(201,154,69,0.12),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 85% 80%,
+            rgba(201,154,69,0.09),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            var(--navy-deep),
+            var(--navy)
+        );
+}
+
+
+/* =========================================================
+   DECORATIONS
+========================================================= */
+
+.coming-decoration {
+    position: absolute;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+.decoration-one {
+    width: 430px;
+    height: 430px;
+
+    right: -170px;
+    top: 80px;
+
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.decoration-two {
+    width: 600px;
+    height: 600px;
+
+    left: -350px;
+    bottom: -350px;
+
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.coming-content {
+    position: relative;
+    z-index: 5;
+
+    width: 100%;
+    max-width: 900px;
+
+    margin: auto;
+
+    text-align: center;
+
+    color: white;
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.coming-icon {
+    width: 72px;
+    height: 72px;
+
+    margin: 0 auto 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 22px;
+
+    background: rgba(201,154,69,0.12);
+
+    border: 1px solid rgba(201,154,69,0.35);
+
+    color: var(--gold-light);
+
+    font-size: 27px;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.2);
+}
+
+
+/* Label */
+
+.coming-label {
+    display: inline-block;
+
+    margin-bottom: 17px;
+
+    color: var(--gold-light);
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+
+/* Heading */
+
+.coming-content h1 {
+    margin-bottom: 24px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(48px, 7vw, 82px);
+
+    line-height: 1.02;
+
+    font-weight: 500;
+
+    letter-spacing: -2px;
+}
+
+.coming-content h1 strong {
+    color: var(--gold-light);
+    font-weight: 600;
+}
+
+
+/* Description */
+
+.coming-description {
+    max-width: 620px;
+
+    margin: 0 auto 38px;
+
+    color: rgba(255,255,255,0.68);
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   COUNTDOWN
+========================================================= */
+
+.countdown {
+    display: flex;
+    justify-content: center;
+
+    gap: 14px;
+
+    margin-bottom: 45px;
+}
+
+.time-box {
+    min-width: 105px;
+
+    padding: 17px 15px;
+
+    border-radius: 14px;
+
+    background: rgba(255,255,255,0.07);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    backdrop-filter: blur(10px);
+}
+
+.time-box span {
+    display: block;
+
+    color: white;
+
+    font-size: 29px;
+    font-weight: 700;
+
+    line-height: 1.1;
+}
+
+.time-box small {
+    display: block;
+
+    margin-top: 7px;
+
+    color: rgba(255,255,255,0.5);
+
+    font-size: 10px;
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   NOTIFY BOX
+========================================================= */
+
+.notify-box {
+    width: 100%;
+    max-width: 680px;
+
+    margin: auto;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    background: rgba(255,255,255,0.06);
+
+    border: 1px solid rgba(255,255,255,0.11);
+
+    backdrop-filter: blur(15px);
+}
+
+.notify-box h3 {
+    margin-bottom: 7px;
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.notify-box p {
+    margin-bottom: 20px;
+
+    color: rgba(255,255,255,0.55);
+
+    font-size: 13px;
+}
+
+
+/* Form */
+
+.notify-box form {
+    display: flex;
+    gap: 10px;
+}
+
+.email-input {
+    flex: 1;
+
+    position: relative;
+}
+
+.email-input i {
+    position: absolute;
+
+    left: 18px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #84909d;
+}
+
+.email-input input {
+    width: 100%;
+
+    height: 52px;
+
+    padding: 0 18px 0 46px;
+
+    border: 1px solid rgba(255,255,255,0.13);
+
+    border-radius: 10px;
+
+    outline: none;
+
+    color: white;
+
+    background: rgba(255,255,255,0.08);
+
+    font-family: inherit;
+}
+
+.email-input input::placeholder {
+    color: rgba(255,255,255,0.4);
+}
+
+.email-input input:focus {
+    border-color: var(--gold);
+}
+
+
+/* Button */
+
+.notify-box button {
+    height: 52px;
+
+    padding: 0 23px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: var(--gold);
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.notify-box button i {
+    margin-left: 8px;
+}
+
+.notify-box button:hover {
+    background: var(--gold-light);
+
+    color: var(--navy-dark);
+
+    transform: translateY(-2px);
+}
+
+
+/* Success */
+
+.success-message {
+    display: none;
+
+    margin-top: 16px;
+
+    color: #b9e8c7;
+
+    font-size: 13px;
+}
+
+.success-message.show {
+    display: block;
+}
+
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.coming-features {
+    display: flex;
+    justify-content: center;
+
+    gap: 50px;
+
+    margin-top: 48px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    text-align: left;
+}
+
+.feature-icon {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    color: var(--gold-light);
+
+    background: rgba(201,154,69,0.1);
+}
+
+.feature strong,
+.feature span {
+    display: block;
+}
+
+.feature strong {
+    color: white;
+
+    font-size: 12px;
+}
+
+.feature span {
+    margin-top: 2px;
+
+    color: rgba(255,255,255,0.42);
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.coming-footer {
+    padding: 22px 20px;
+
+    background: #07111c;
+
+    color: rgba(255,255,255,0.45);
+
+    font-size: 12px;
+}
+
+.coming-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coming-footer p {
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.footer-links a {
+    color: rgba(255,255,255,0.55);
+
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .coming-header {
+        padding: 20px;
+    }
+
+    .logo-text {
+        font-size: 20px;
+    }
+
+    .logo-box {
+        width: 38px;
+        height: 38px;
+    }
+
+    .back-home {
+        padding: 9px 14px;
+        font-size: 12px;
+    }
+
+    .coming-main {
+        padding: 110px 18px 60px;
+    }
+
+    .coming-content h1 {
+        font-size: 54px;
+    }
+
+    .coming-description {
+        font-size: 14px;
+    }
+
+    .countdown {
+        gap: 8px;
+    }
+
+    .time-box {
+        min-width: 78px;
+        padding: 14px 8px;
+    }
+
+    .time-box span {
+        font-size: 23px;
+    }
+
+    .notify-box {
+        padding: 23px 18px;
+    }
+
+    .coming-features {
+        gap: 25px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 576px) {
+
+    .coming-header {
+        position: absolute;
+
+        padding: 17px 15px;
+    }
+
+    .logo-text {
+        display: none;
+    }
+
+    .logo-box {
+        width: 38px;
+        height: 38px;
+    }
+
+    .back-home {
+        font-size: 11px;
+        padding: 8px 12px;
+    }
+
+    .coming-main {
+        min-height: calc(100vh - 65px);
+
+        padding:
+            105px 15px
+            55px;
+    }
+
+    .coming-icon {
+        width: 60px;
+        height: 60px;
+
+        border-radius: 18px;
+
+        font-size: 23px;
+    }
+
+    .coming-label {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .coming-content h1 {
+        font-size: 43px;
+
+        letter-spacing: -1px;
+    }
+
+    .coming-description {
+        font-size: 13px;
+        line-height: 1.7;
+
+        margin-bottom: 30px;
+    }
+
+    .countdown {
+        gap: 5px;
+
+        margin-bottom: 30px;
+    }
+
+    .time-box {
+        min-width: 66px;
+
+        padding: 12px 5px;
+
+        border-radius: 10px;
+    }
+
+    .time-box span {
+        font-size: 20px;
+    }
+
+    .time-box small {
+        font-size: 8px;
+        letter-spacing: 0.8px;
+    }
+
+    .notify-box {
+        padding: 22px 15px;
+
+        border-radius: 16px;
+    }
+
+    .notify-box h3 {
+        font-size: 17px;
+    }
+
+    .notify-box form {
+        flex-direction: column;
+    }
+
+    .email-input input,
+    .notify-box button {
+        height: 50px;
+    }
+
+    .coming-features {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 17px;
+
+        margin-top: 35px;
+    }
+
+    .feature {
+        width: 190px;
+    }
+
+    .coming-footer .container {
+        flex-direction: column;
+
+        gap: 10px;
+
+        text-align: center;
+    }
+}
