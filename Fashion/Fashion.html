@@ -11,8 +11,9 @@
     >
 
     <title>OZZO | Fashion</title>
-    
-  <link rel="icon" type="image/png" href="/OZZO logo.jpg">
+
+    <link rel="icon" type="image/png" href="/OZZO logo.jpg">
+
     <!-- BOOTSTRAP -->
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -144,52 +145,62 @@
                 <ul class="navbar-nav main-nav mx-auto">
 
                     <li class="nav-item">
+
                         <a
                             class="nav-link"
                             href="../index.html"
                         >
                             Home
                         </a>
+
                     </li>
 
 
                     <li class="nav-item">
+
                         <a
                             class="nav-link active"
                             href="Fashion.html"
                         >
                             Fashion
                         </a>
+
                     </li>
 
 
                     <li class="nav-item">
+
                         <a
                             class="nav-link"
                             href="../Books/Books.html"
                         >
                             Books
                         </a>
+
                     </li>
 
 
                     <li class="nav-item">
+
                         <a
                             class="nav-link"
                             href="../Stationary/Stationary.html"
                         >
                             Stationery
                         </a>
+
                     </li>
 
 
                     <li class="nav-item">
+
                         <a
                             class="nav-link"
                             href="../Pads/Pads.html"
                         >
                             Pads
                         </a>
+
                     </li>
 
                 </ul>
@@ -214,33 +225,38 @@
                     </div>
 
 
-                   <a class="header-icon wishlist-button"
-   href="../Wishlist/Wishlist.html"
-   title="Wishlist"
-   aria-label="Wishlist">
-    <i class="fa-regular fa-heart"></i>
-</a>
+                    <a
+                        class="header-icon wishlist-button"
+                        href="../Wishlist/Wishlist.html"
+                        title="Wishlist"
+                        aria-label="Wishlist"
+                    >
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </a>
 
 
+                    <a
+                        href="../Cart/Cart.html"
+                        class="header-icon cart-button"
+                        title="Shopping Cart"
+                        aria-label="Shopping Cart"
+                    >
 
-                                      <a
-    href="../Cart/Cart.html"
-    class="header-icon cart-button"
-    title="Shopping Cart"
-    aria-label="Shopping Cart"
->
-    <i
-        class="fa-solid fa-bag-shopping"
-        aria-hidden="true"
-    ></i>
+                        <i
+                            class="fa-solid fa-bag-shopping"
+                            aria-hidden="true"
+                        ></i>
 
-    <span
-        class="cart-count"
-        id="cartCount"
-    >
-        0
-    </span>
-</a>
+                        <span
+                            class="cart-count"
+                            id="cartCount"
+                        >
+                            0
+                        </span>
+
+                    </a>
 
                 </div>
 
@@ -628,20 +644,20 @@
                 <a href="../index.html">
                     Home
                 </a>
-                
-                 <a href="Careers/Careers.html">
+
+                <a href="../Careers/Careers.html">
                     Careers
                 </a>
 
-                <a href="/About Us/About.html">
+                <a href="../About Us/About.html">
                     About Us
                 </a>
 
-                <a href="/Faq/Faq.html">
+                <a href="../Faq/Faq.html">
                     FAQs
                 </a>
 
-                <a href="/Contact/Contact.html">
+                <a href="../Contact/Contact.html">
                     Contact
                 </a>
 
@@ -679,11 +695,11 @@
                     Customer Service
                 </h4>
 
-                <a href="/Privacy/Privacy.html">
+                <a href="../Privacy/Privacy.html">
                     Privacy Policy
                 </a>
 
-                <a href="/Terms/Terms.html">
+                <a href="../Terms/Terms.html">
                     Terms &amp; Conditions
                 </a>
 
@@ -837,11 +853,19 @@ document.addEventListener(
         const cartCount =
             document.getElementById("cartCount");
 
+
+        /*
+         * FIX:
+         * Your HTML uses .cart-button and .wishlist-button.
+         * The old JavaScript was looking for IDs that did not exist.
+         */
+
         const headerCartButton =
-            document.getElementById("headerCartButton");
+            document.querySelector(".cart-button");
 
         const wishlistBtn =
-            document.getElementById("wishlistBtn");
+            document.querySelector(".wishlist-button");
+
 
         const newsletterForm =
             document.getElementById("newsletterForm");
@@ -864,9 +888,6 @@ document.addEventListener(
 
         /* =====================================================
            REAL PRODUCT IMAGES
-           
-           These are direct image URLs found in Google image
-           results from real product/retail listings.
         ====================================================== */
 
         const productImages = [
@@ -982,14 +1003,6 @@ document.addEventListener(
                 ) || 1;
 
 
-            /*
-             * First 29 products use separate real photos.
-             *
-             * Later products continue using a deterministic
-             * product-photo rotation so they do not fall back
-             * to one category image.
-             */
-
             const imageIndex =
                 (number - 1) %
                 productImages.length;
@@ -1014,40 +1027,30 @@ document.addEventListener(
 
             products.push({
 
-                id:
+                id: id,
+
+                category: category,
+
+                subcategory: subcategory,
+
+                name: name,
+
+                brand: brand,
+
+                price: Number(price),
+
+                mrp: Number(mrp),
+
+                rating: Number(rating),
+
+                reviews: Number(reviews),
+
+                image: getProductImage(
                     id,
-
-                category:
                     category,
-
-                subcategory:
                     subcategory,
-
-                name:
-                    name,
-
-                brand:
-                    brand,
-
-                price:
-                    Number(price),
-
-                mrp:
-                    Number(mrp),
-
-                rating:
-                    Number(rating),
-
-                reviews:
-                    Number(reviews),
-
-                image:
-                    getProductImage(
-                        id,
-                        category,
-                        subcategory,
-                        name
-                    )
+                    name
+                )
 
             });
 
@@ -1322,10 +1325,7 @@ document.addEventListener(
 
                 const price =
                     1299 +
-                    (
-                        index % 10
-                    ) *
-                    100;
+                    (index % 10) * 100;
 
 
                 addProduct(
@@ -1340,9 +1340,7 @@ document.addEventListener(
 
                     "women",
 
-                    sareeGroups[
-                        index
-                    ],
+                    sareeGroups[index],
 
                     name,
 
@@ -1353,10 +1351,7 @@ document.addEventListener(
                     price + 500,
 
                     4.4 +
-                    (
-                        (index % 4) *
-                        0.1
-                    ),
+                    ((index % 4) * 0.1),
 
                     20 + index
 
@@ -1420,10 +1415,7 @@ document.addEventListener(
                     price + 300,
 
                     4.3 +
-                    (
-                        (index % 4) *
-                        0.1
-                    ),
+                    ((index % 4) * 0.1),
 
                     20 + index
 
@@ -1487,10 +1479,7 @@ document.addEventListener(
                     price + 450,
 
                     4.4 +
-                    (
-                        (index % 4) *
-                        0.1
-                    ),
+                    ((index % 4) * 0.1),
 
                     23 + index
 
@@ -1657,16 +1646,14 @@ document.addEventListener(
 
         Object.keys(
             menGroups
-        )
-        .forEach(
+        ).forEach(
             function (
                 subcategory
             ) {
 
                 menGroups[
                     subcategory
-                ]
-                .forEach(
+                ].forEach(
                     function (
                         name,
                         index
@@ -1702,10 +1689,7 @@ document.addEventListener(
                             price + 350,
 
                             4.3 +
-                            (
-                                (index % 4) *
-                                0.1
-                            ),
+                            ((index % 4) * 0.1),
 
                             22 + index
 
@@ -1930,16 +1914,14 @@ document.addEventListener(
 
         Object.keys(
             innerGroups
-        )
-        .forEach(
+        ).forEach(
             function (
                 subcategory
             ) {
 
                 innerGroups[
                     subcategory
-                ]
-                .forEach(
+                ].forEach(
                     function (
                         name,
                         index
@@ -1975,10 +1957,7 @@ document.addEventListener(
                             price + 200,
 
                             4.2 +
-                            (
-                                (index % 5) *
-                                0.1
-                            ),
+                            ((index % 5) * 0.1),
 
                             15 + index
 
@@ -2064,10 +2043,7 @@ document.addEventListener(
                     price + 300,
 
                     4.4 +
-                    (
-                        (index % 3) *
-                        0.1
-                    ),
+                    ((index % 3) * 0.1),
 
                     16 + index
 
@@ -2111,10 +2087,7 @@ document.addEventListener(
                     price + 300,
 
                     4.4 +
-                    (
-                        (index % 3) *
-                        0.1
-                    ),
+                    ((index % 3) * 0.1),
 
                     18 + index
 
@@ -2142,9 +2115,7 @@ document.addEventListener(
 
 
             if (
-                !Array.isArray(
-                    cart
-                )
+                !Array.isArray(cart)
             ) {
 
                 cart = [];
@@ -2226,8 +2197,7 @@ document.addEventListener(
                         return (
                             sum +
                             Number(
-                                item.quantity ||
-                                0
+                                item.quantity || 0
                             )
                         );
 
@@ -2236,9 +2206,7 @@ document.addEventListener(
                 );
 
 
-            if (
-                cartCount
-            ) {
+            if (cartCount) {
 
                 cartCount.textContent =
                     total;
@@ -2305,14 +2273,11 @@ document.addEventListener(
                 );
 
 
-            if (
-                existing
-            ) {
+            if (existing) {
 
                 existing.quantity =
                     Number(
-                        existing.quantity ||
-                        0
+                        existing.quantity || 0
                     ) +
                     Number(
                         quantity
@@ -2384,17 +2349,14 @@ document.addEventListener(
 
         function renderProducts() {
 
-            if (
-                !productGrid
-            ) {
+            if (!productGrid) {
 
                 return;
 
             }
 
 
-            productGrid.innerHTML =
-                "";
+            productGrid.innerHTML = "";
 
 
             products.forEach(
@@ -2402,7 +2364,6 @@ document.addEventListener(
                     product,
                     index
                 ) {
-
 
                     const discount =
                         product.mrp >
@@ -2424,40 +2385,32 @@ document.addEventListener(
 
                     const categoryLabel =
 
-                        product.category ===
-                        "women"
+                        product.category === "women"
 
                             ? "WOMEN"
 
-                            : product.category ===
-                            "men"
+                            : product.category === "men"
 
                                 ? "MEN"
 
-                                : product.category ===
-                                "innerwear"
+                                : product.category === "innerwear"
 
                                     ? "INNER WEAR"
 
                                     : "KIDS";
 
 
-                    let badge =
-                        "";
+                    let badge = "";
 
 
-                    if (
-                        index === 0
-                    ) {
+                    if (index === 0) {
 
                         badge =
                             "BESTSELLER";
 
                     }
 
-                    else if (
-                        index === 1
-                    ) {
+                    else if (index === 1) {
 
                         badge =
                             "NEW";
@@ -2644,9 +2597,7 @@ document.addEventListener(
                         );
 
 
-                    if (
-                        image
-                    ) {
+                    if (image) {
 
                         image.addEventListener(
                             "error",
@@ -2737,25 +2688,23 @@ document.addEventListener(
 
             const categoryCounter = {
 
-                women:
-                    0,
+                women: 0,
 
-                men:
-                    0,
+                men: 0,
 
-                innerwear:
-                    0,
+                innerwear: 0,
 
-                kids:
-                    0
+                kids: 0
 
             };
 
 
             const items =
-                productGrid.querySelectorAll(
-                    ".product-item"
-                );
+                productGrid
+                    ? productGrid.querySelectorAll(
+                        ".product-item"
+                    )
+                    : [];
 
 
             items.forEach(
@@ -2786,13 +2735,12 @@ document.addEventListener(
 
                     const categoryMatch =
 
-                        currentFilter ===
-                        "all"
+                        currentFilter === "all"
 
                             ? true
 
                             : category ===
-                            currentFilter;
+                              currentFilter;
 
 
                     const searchMatch =
@@ -2846,9 +2794,7 @@ document.addEventListener(
                     }
 
 
-                    if (
-                        show
-                    ) {
+                    if (show) {
 
                         item.style.display =
                             "";
@@ -2876,16 +2822,11 @@ document.addEventListener(
             );
 
 
-            if (
-                noProducts
-            ) {
+            if (noProducts) {
 
                 noProducts.style.display =
-
                     visibleProducts === 0
-
                         ? "block"
-
                         : "none";
 
             }
@@ -2903,9 +2844,7 @@ document.addEventListener(
                 "all";
 
 
-            if (
-                searchInput
-            ) {
+            if (searchInput) {
 
                 searchInput.value =
                     "";
@@ -2919,12 +2858,9 @@ document.addEventListener(
                 ) {
 
                     button.classList.toggle(
-
                         "active",
-
                         button.dataset.filter ===
                         "all"
-
                     );
 
                 }
@@ -3000,12 +2936,11 @@ document.addEventListener(
 
 
                         currentFilter =
-                            category.dataset.filter;
+                            category.dataset.filter ||
+                            "all";
 
 
-                        if (
-                            searchInput
-                        ) {
+                        if (searchInput) {
 
                             searchInput.value =
                                 "";
@@ -3019,12 +2954,9 @@ document.addEventListener(
                             ) {
 
                                 button.classList.toggle(
-
                                     "active",
-
                                     button.dataset.filter ===
                                     currentFilter
-
                                 );
 
                             }
@@ -3040,9 +2972,7 @@ document.addEventListener(
                             );
 
 
-                        if (
-                            productSection
-                        ) {
+                        if (productSection) {
 
                             productSection.scrollIntoView({
 
@@ -3067,9 +2997,7 @@ document.addEventListener(
            HERO
         ====================================================== */
 
-        if (
-            heroShopButton
-        ) {
+        if (heroShopButton) {
 
             heroShopButton.addEventListener(
                 "click",
@@ -3087,9 +3015,7 @@ document.addEventListener(
            PROMOTION
         ====================================================== */
 
-        if (
-            promoExploreButton
-        ) {
+        if (promoExploreButton) {
 
             promoExploreButton.addEventListener(
                 "click",
@@ -3107,9 +3033,7 @@ document.addEventListener(
            PRODUCT EVENTS
         ====================================================== */
 
-        if (
-            productGrid
-        ) {
+        if (productGrid) {
 
             productGrid.addEventListener(
                 "click",
@@ -3128,9 +3052,7 @@ document.addEventListener(
                         );
 
 
-                    if (
-                        wishlist
-                    ) {
+                    if (wishlist) {
 
                         event.preventDefault();
 
@@ -3154,15 +3076,12 @@ document.addEventListener(
                             );
 
 
-                        if (
-                            icon
-                        ) {
+                        if (icon) {
 
                             icon.classList.toggle(
                                 "fa-solid",
                                 active
                             );
-
 
                             icon.classList.toggle(
                                 "fa-regular",
@@ -3187,9 +3106,7 @@ document.addEventListener(
                         );
 
 
-                    if (
-                        addCart
-                    ) {
+                    if (addCart) {
 
                         event.preventDefault();
 
@@ -3211,9 +3128,7 @@ document.addEventListener(
                             );
 
 
-                        if (
-                            !product
-                        ) {
+                        if (!product) {
 
                             return;
 
@@ -3245,7 +3160,6 @@ document.addEventListener(
                                 addCart.textContent =
                                     originalText;
 
-
                                 addCart.classList.remove(
                                     "added"
                                 );
@@ -3270,16 +3184,10 @@ document.addEventListener(
                         );
 
 
-                    if (
-                        card
-                    ) {
+                    if (card) {
 
                         const productId =
                             card.dataset.productId;
-
-
-                        const productName =
-                            card.dataset.productName;
 
 
                         const product =
@@ -3297,27 +3205,147 @@ document.addEventListener(
                             );
 
 
-                        if (
-                            !product
-                        ) {
+                        if (!product) {
 
                             return;
 
                         }
 
 
-                        window.location.href =
+                        /* =================================================
+                           GET EXACT IMAGE CURRENTLY SHOWN ON CARD
+                        ================================================= */
 
+                        const cardImage =
+                            card.querySelector(
+                                ".product-image img"
+                            );
+
+
+                        let clickedImage =
+                            product.image;
+
+
+                        if (cardImage) {
+
+                            clickedImage =
+                                cardImage.currentSrc ||
+                                cardImage.src ||
+                                product.image;
+
+                        }
+
+
+                        /* =================================================
+                           CONVERT IMAGE TO ABSOLUTE URL
+                        ================================================= */
+
+                        try {
+
+                            clickedImage =
+                                new URL(
+                                    clickedImage,
+                                    window.location.href
+                                ).href;
+
+                        }
+                        catch (
+                            error
+                        ) {
+
+                            console.warn(
+                                "Image URL conversion failed:",
+                                error
+                            );
+
+                        }
+
+
+                        /* =================================================
+                           SAVE EXACT SELECTED PRODUCT
+                           FOR PRODUCT DETAILS PAGE
+                        ================================================= */
+
+                        const selectedProduct = {
+
+                            id:
+                                product.id,
+
+                            category:
+                                product.category,
+
+                            subcategory:
+                                product.subcategory,
+
+                            name:
+                                product.name,
+
+                            brand:
+                                product.brand,
+
+                            price:
+                                Number(
+                                    product.price
+                                ),
+
+                            mrp:
+                                Number(
+                                    product.mrp
+                                ),
+
+                            rating:
+                                Number(
+                                    product.rating
+                                ),
+
+                            reviews:
+                                Number(
+                                    product.reviews
+                                ),
+
+                            image:
+                                clickedImage
+
+                        };
+
+
+                        try {
+
+                            sessionStorage.setItem(
+                                "ozzoSelectedProduct",
+                                JSON.stringify(
+                                    selectedProduct
+                                )
+                            );
+
+                        }
+                        catch (
+                            error
+                        ) {
+
+                            console.error(
+                                "Could not save selected product:",
+                                error
+                            );
+
+                        }
+
+
+                        /* =================================================
+                           OPEN PRODUCT DETAILS
+                        ================================================= */
+
+                        window.location.href =
                             "../ProductDetails.html" +
 
-                            "?name=" +
+                            "?id=" +
                             encodeURIComponent(
-                                productName
+                                product.id
                             ) +
 
-                            "&id=" +
+                            "&name=" +
                             encodeURIComponent(
-                                productId
+                                product.name
                             ) +
 
                             "&price=" +
@@ -3328,6 +3356,11 @@ document.addEventListener(
                             "&mrp=" +
                             encodeURIComponent(
                                 product.mrp
+                            ) +
+
+                            "&image=" +
+                            encodeURIComponent(
+                                clickedImage
                             );
 
                     }
@@ -3342,9 +3375,7 @@ document.addEventListener(
            SEARCH
         ====================================================== */
 
-        if (
-            searchInput
-        ) {
+        if (searchInput) {
 
             searchInput.addEventListener(
                 "input",
@@ -3362,13 +3393,13 @@ document.addEventListener(
            CART
         ====================================================== */
 
-        if (
-            headerCartButton
-        ) {
+        if (headerCartButton) {
 
             headerCartButton.addEventListener(
                 "click",
-                function () {
+                function (event) {
+
+                    event.preventDefault();
 
                     window.location.href =
                         "../Cart/Cart.html";
@@ -3383,13 +3414,16 @@ document.addEventListener(
            HEADER WISHLIST
         ====================================================== */
 
-        if (
-            wishlistBtn
-        ) {
+        if (wishlistBtn) {
 
             wishlistBtn.addEventListener(
                 "click",
-                function () {
+                function (event) {
+
+                    /*
+                     * Do not block normal navigation to Wishlist page.
+                     * Only toggle the visual state.
+                     */
 
                     this.classList.toggle(
                         "active"
@@ -3408,15 +3442,12 @@ document.addEventListener(
                         );
 
 
-                    if (
-                        icon
-                    ) {
+                    if (icon) {
 
                         icon.classList.toggle(
                             "fa-solid",
                             active
                         );
-
 
                         icon.classList.toggle(
                             "fa-regular",
@@ -3435,9 +3466,7 @@ document.addEventListener(
            NEWSLETTER
         ====================================================== */
 
-        if (
-            newsletterForm
-        ) {
+        if (newsletterForm) {
 
             newsletterForm.addEventListener(
                 "submit",
@@ -3448,9 +3477,7 @@ document.addEventListener(
                     event.preventDefault();
 
 
-                    if (
-                        newsletterMessage
-                    ) {
+                    if (newsletterMessage) {
 
                         newsletterMessage.textContent =
                             "Thank you for subscribing!";
@@ -3483,7 +3510,6 @@ document.addEventListener(
         );
 
     }
-
 );
 
 </script>

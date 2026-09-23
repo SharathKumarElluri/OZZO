@@ -13,14 +13,12 @@ document.addEventListener("DOMContentLoaded", function () {
        250–259  BOYS DRESSES
        260–269  GIRLS DRESSES
 
-       FEATURES:
-       - Exact product name lookup
-       - Exact product ID fallback
-       - Exact Fashion page price sync
-       - Quantity based total price
-       - S / M / L / XL sizes for apparel
-       - Size stored in cart
-       - Different sizes stay as separate cart items
+       IMPORTANT:
+       - Fashion.html is the SOURCE OF TRUTH for clicked image
+       - Exact clicked image is read from sessionStorage
+       - URL image is used as secondary fallback
+       - Database image is final fallback
+       - Same exact image is used in Product Details + Cart
     ========================================================== */
 
 
@@ -72,7 +70,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
             bought: bought,
 
-            images: [image],
+            /*
+             * Keep the database image as fallback.
+             * It will be replaced by the exact image
+             * sent from Fashion.html when available.
+             */
+            images: [
+                image
+            ],
 
             description: description
 
@@ -481,13 +486,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const sareeGroups = [
 
-        ...Array(10).fill("Pattu Sarees"),
+        ...Array(10).fill(
+            "Pattu Sarees"
+        ),
 
-        ...Array(10).fill("Fancy Sarees"),
+        ...Array(10).fill(
+            "Fancy Sarees"
+        ),
 
-        ...Array(10).fill("Daily Wear Sarees"),
+        ...Array(10).fill(
+            "Daily Wear Sarees"
+        ),
 
-        ...Array(10).fill("Cotton Sarees")
+        ...Array(10).fill(
+            "Cotton Sarees"
+        )
 
     ];
 
@@ -516,27 +529,18 @@ document.addEventListener("DOMContentLoaded", function () {
                 );
 
 
-            const mrp =
-                price +
-                500;
+            const image =
+                (
+                    sareeGroups[index] ===
+                    "Fancy Sarees" ||
 
+                    sareeGroups[index] ===
+                    "Cotton Sarees"
+                )
 
-            let image =
-                womenSareeImage;
+                    ? womenSareeImage2
 
-
-            if (
-                sareeGroups[index] ===
-                "Fancy Sarees" ||
-
-                sareeGroups[index] ===
-                "Cotton Sarees"
-            ) {
-
-                image =
-                    womenSareeImage2;
-
-            }
+                    : womenSareeImage;
 
 
             addProduct(
@@ -546,7 +550,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 name,
                 "OZZO Sarees",
                 price,
-                mrp,
+                price + 500,
                 4.4 +
                 (
                     (index % 4) *
@@ -759,6 +763,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         ],
 
+
         "Pants": [
 
             "Classic Black Cotton Pants",
@@ -773,6 +778,7 @@ document.addEventListener("DOMContentLoaded", function () {
             "Midnight Blue Pants"
 
         ],
+
 
         "Readymade Shirts": [
 
@@ -789,6 +795,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         ],
 
+
         "Readymade Pants": [
 
             "ReadyFit Black Trousers",
@@ -803,6 +810,7 @@ document.addEventListener("DOMContentLoaded", function () {
             "ReadyFit Stone Cotton Pants"
 
         ],
+
 
         "T-Shirts": [
 
@@ -819,6 +827,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         ],
 
+
         "Shorts": [
 
             "Classic Black Casual Shorts",
@@ -833,6 +842,7 @@ document.addEventListener("DOMContentLoaded", function () {
             "Stone Cotton Shorts"
 
         ],
+
 
         "Track Pants": [
 
@@ -859,19 +869,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const menBasePrices = {
 
-        "Shirts": 999,
+        "Shirts":
+            999,
 
-        "Pants": 1099,
+        "Pants":
+            1099,
 
-        "Readymade Shirts": 899,
+        "Readymade Shirts":
+            899,
 
-        "Readymade Pants": 999,
+        "Readymade Pants":
+            999,
 
-        "T-Shirts": 699,
+        "T-Shirts":
+            699,
 
-        "Shorts": 699,
+        "Shorts":
+            699,
 
-        "Track Pants": 899
+        "Track Pants":
+            899
 
     };
 
@@ -888,90 +905,92 @@ document.addEventListener("DOMContentLoaded", function () {
             subcategory
         ) {
 
-            menGroups[subcategory]
-                .forEach(
-                    function (
-                        name,
-                        index
-                    ) {
+            menGroups[
+                subcategory
+            ]
+            .forEach(
+                function (
+                    name,
+                    index
+                ) {
 
-                        const price =
-                            menBasePrices[
-                                subcategory
-                            ] +
-                            (
-                                index *
-                                35
-                            );
-
-
-                        const image =
-                            subcategory ===
-                            "T-Shirts"
-
-                                ? "hoddie.jpg"
-
-                                : menImage;
-
-
-                        addProduct(
-                            "fashion-" +
-                            String(
-                                menId
-                            ).padStart(
-                                3,
-                                "0"
-                            ),
-
-                            "Men's Wear",
-
-                            subcategory,
-
-                            name,
-
-                            "OZZO Fashion",
-
-                            price,
-
-                            price + 350,
-
-                            4.3 +
-                            (
-                                (index % 4) *
-                                0.1
-                            ),
-
-                            22 + index,
-
-                            (
-                                70 +
-                                (
-                                    (index % 6) *
-                                    20
-                                )
-                            ) +
-                            "+ bought in past month",
-
-                            image,
-
-                            [
-                                name +
-                                    " designed for modern men's styling.",
-
-                                "Comfortable fabric for regular everyday wear.",
-
-                                "Clean silhouette with practical construction.",
-
-                                "Suitable for casual, workwear and smart-casual occasions."
-                            ]
-
+                    const price =
+                        menBasePrices[
+                            subcategory
+                        ] +
+                        (
+                            index *
+                            35
                         );
 
 
-                        menId++;
+                    const image =
+                        subcategory ===
+                        "T-Shirts"
 
-                    }
-                );
+                            ? "hoddie.jpg"
+
+                            : menImage;
+
+
+                    addProduct(
+                        "fashion-" +
+                        String(
+                            menId
+                        ).padStart(
+                            3,
+                            "0"
+                        ),
+
+                        "Men's Wear",
+
+                        subcategory,
+
+                        name,
+
+                        "OZZO Fashion",
+
+                        price,
+
+                        price + 350,
+
+                        4.3 +
+                        (
+                            (index % 4) *
+                            0.1
+                        ),
+
+                        22 + index,
+
+                        (
+                            70 +
+                            (
+                                (index % 6) *
+                                20
+                            )
+                        ) +
+                        "+ bought in past month",
+
+                        image,
+
+                        [
+                            name +
+                                " designed for modern men's styling.",
+
+                            "Comfortable fabric for regular everyday wear.",
+
+                            "Clean silhouette with practical construction.",
+
+                            "Suitable for casual, workwear and smart-casual occasions."
+                        ]
+
+                    );
+
+
+                    menId++;
+
+                }
+            );
 
         }
     );
@@ -998,6 +1017,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         ],
 
+
         "Women's Panties": [
 
             "Soft Cotton Panty",
@@ -1012,6 +1032,7 @@ document.addEventListener("DOMContentLoaded", function () {
             "Breathable Daily Panty"
 
         ],
+
 
         "Women's Camisoles / Slips": [
 
@@ -1028,6 +1049,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         ],
 
+
         "Women's Shapewear": [
 
             "Everyday Waist Shaper",
@@ -1042,6 +1064,7 @@ document.addEventListener("DOMContentLoaded", function () {
             "Everyday Full Body Shaper"
 
         ],
+
 
         "Women's Saree Petticoats": [
 
@@ -1058,6 +1081,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         ],
 
+
         "Men's Briefs": [
 
             "Classic Cotton Briefs",
@@ -1072,6 +1096,7 @@ document.addEventListener("DOMContentLoaded", function () {
             "Daily Wear Briefs"
 
         ],
+
 
         "Men's Trunks": [
 
@@ -1088,6 +1113,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         ],
 
+
         "Men's Vests": [
 
             "Classic White Vest",
@@ -1103,6 +1129,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         ],
 
+
         "Men's Inner T-Shirts": [
 
             "Classic White Inner T-Shirt",
@@ -1117,6 +1144,7 @@ document.addEventListener("DOMContentLoaded", function () {
             "Essential Daily Inner Tee"
 
         ],
+
 
         "Men's Boxers": [
 
@@ -1138,25 +1166,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const innerBasePrices = {
 
-        "Women's Bras": 549,
+        "Women's Bras":
+            549,
 
-        "Women's Panties": 349,
+        "Women's Panties":
+            349,
 
-        "Women's Camisoles / Slips": 399,
+        "Women's Camisoles / Slips":
+            399,
 
-        "Women's Shapewear": 699,
+        "Women's Shapewear":
+            699,
 
-        "Women's Saree Petticoats": 449,
+        "Women's Saree Petticoats":
+            449,
 
-        "Men's Briefs": 399,
+        "Men's Briefs":
+            399,
 
-        "Men's Trunks": 449,
+        "Men's Trunks":
+            449,
 
-        "Men's Vests": 349,
+        "Men's Vests":
+            349,
 
-        "Men's Inner T-Shirts": 499,
+        "Men's Inner T-Shirts":
+            499,
 
-        "Men's Boxers": 449
+        "Men's Boxers":
+            449
 
     };
 
@@ -1173,91 +1211,93 @@ document.addEventListener("DOMContentLoaded", function () {
             subcategory
         ) {
 
-            innerGroups[subcategory]
-                .forEach(
-                    function (
-                        name,
-                        index
-                    ) {
+            innerGroups[
+                subcategory
+            ]
+            .forEach(
+                function (
+                    name,
+                    index
+                ) {
 
-                        const price =
-                            innerBasePrices[
-                                subcategory
-                            ] +
-                            (
-                                index *
-                                20
-                            );
-
-
-                        const image =
-                            subcategory.startsWith(
-                                "Women's"
-                            )
-
-                                ? innerWomenImage
-
-                                : innerMenImage;
-
-
-                        addProduct(
-                            "fashion-" +
-                            String(
-                                innerId
-                            ).padStart(
-                                3,
-                                "0"
-                            ),
-
-                            "Inner Wears",
-
-                            subcategory,
-
-                            name,
-
-                            "OZZO Essentials",
-
-                            price,
-
-                            price + 200,
-
-                            4.2 +
-                            (
-                                (index % 5) *
-                                0.1
-                            ),
-
-                            15 + index,
-
-                            (
-                                50 +
-                                (
-                                    (index % 6) *
-                                    15
-                                )
-                            ) +
-                            "+ bought in past month",
-
-                            image,
-
-                            [
-                                name +
-                                    " designed for everyday comfort.",
-
-                                "Soft and comfortable fabric for regular wear.",
-
-                                "Practical construction with an easy fit.",
-
-                                "Suitable for daily use."
-                            ]
-
+                    const price =
+                        innerBasePrices[
+                            subcategory
+                        ] +
+                        (
+                            index *
+                            20
                         );
 
 
-                        innerId++;
+                    const image =
+                        subcategory.startsWith(
+                            "Women's"
+                        )
 
-                    }
-                );
+                            ? innerWomenImage
+
+                            : innerMenImage;
+
+
+                    addProduct(
+                        "fashion-" +
+                        String(
+                            innerId
+                        ).padStart(
+                            3,
+                            "0"
+                        ),
+
+                        "Inner Wears",
+
+                        subcategory,
+
+                        name,
+
+                        "OZZO Essentials",
+
+                        price,
+
+                        price + 200,
+
+                        4.2 +
+                        (
+                            (index % 5) *
+                            0.1
+                        ),
+
+                        15 + index,
+
+                        (
+                            50 +
+                            (
+                                (index % 6) *
+                                15
+                            )
+                        ) +
+                        "+ bought in past month",
+
+                        image,
+
+                        [
+                            name +
+                                " designed for everyday comfort.",
+
+                            "Soft and comfortable fabric for regular wear.",
+
+                            "Practical construction with an easy fit.",
+
+                            "Suitable for daily use."
+                        ]
+
+                    );
+
+
+                    innerId++;
+
+                }
+            );
 
         }
     );
@@ -1478,22 +1518,6 @@ document.addEventListener("DOMContentLoaded", function () {
         .toLowerCase();
 
 
-    /*
-       Fashion.html sends the exact displayed
-       price and MRP.
-
-       Example:
-
-       Product card:
-       ₹999
-
-       URL:
-       ?price=999&mrp=1399
-
-       This prevents a different amount
-       appearing on the details page.
-    */
-
     const urlPrice =
         urlParams.get(
             "price"
@@ -1506,15 +1530,160 @@ document.addEventListener("DOMContentLoaded", function () {
         );
 
 
+    /*
+     * OPTIONAL BACKUP IMAGE FROM URL
+     *
+     * Fashion.html can send:
+     *
+     * &image=https://...
+     */
+
+    const urlImage =
+        urlParams.get(
+            "image"
+        );
+
+
     let product =
         null;
 
 
     /* =========================================================
-       FIND BY EXACT NAME FIRST
+       1. READ EXACT PRODUCT FROM FASHION PAGE
+    ========================================================== */
+
+    try {
+
+        const storedProduct =
+            sessionStorage.getItem(
+                "ozzoSelectedProduct"
+            );
+
+
+        if (
+            storedProduct
+        ) {
+
+            const parsedProduct =
+                JSON.parse(
+                    storedProduct
+                );
+
+
+            if (
+                parsedProduct &&
+                parsedProduct.id
+            ) {
+
+                /*
+                 * Only accept the session product
+                 * when it belongs to the requested
+                 * product ID.
+                 */
+
+                if (
+                    !productId ||
+                    parsedProduct.id ===
+                    productId
+                ) {
+
+                    product = {
+
+                        id:
+                            parsedProduct.id,
+
+                        category:
+                            parsedProduct.category ||
+                            "",
+
+                        subcategory:
+                            parsedProduct.subcategory ||
+                            "",
+
+                        name:
+                            parsedProduct.name ||
+                            "",
+
+                        brand:
+                            parsedProduct.brand ||
+                            "OZZO",
+
+                        price:
+                            Number(
+                                parsedProduct.price ||
+                                0
+                            ),
+
+                        mrp:
+                            Number(
+                                parsedProduct.mrp ||
+                                0
+                            ),
+
+                        rating:
+                            Number(
+                                parsedProduct.rating ||
+                                0
+                            ),
+
+                        reviews:
+                            Number(
+                                parsedProduct.reviews ||
+                                0
+                            ),
+
+                        bought:
+                            parsedProduct.bought ||
+                            "Popular on OZZO",
+
+                        images: [
+
+                            parsedProduct.image ||
+                            ""
+
+                        ],
+
+                        description:
+                            parsedProduct.description ||
+                            [
+
+                                `${parsedProduct.name || "Product"} designed for everyday use.`,
+
+                                "Comfortable construction for regular use.",
+
+                                "Designed with a practical and modern OZZO style.",
+
+                                "Suitable for everyday shopping needs."
+
+                            ]
+
+                    };
+
+                }
+
+            }
+
+        }
+
+    }
+    catch (
+        error
+    ) {
+
+        console.warn(
+            "Unable to read selected product:",
+            error
+        );
+
+    }
+
+
+    /* =========================================================
+       2. FIND PRODUCT BY NAME
     ========================================================== */
 
     if (
+        !product &&
         requestedName
     ) {
 
@@ -1541,7 +1710,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     /* =========================================================
-       FALLBACK TO ID
+       3. FIND PRODUCT BY ID
     ========================================================== */
 
     if (
@@ -1577,7 +1746,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
             detailsSection.innerHTML = `
 
-                <div class="container py-5 text-center">
+                <div
+                    class="container py-5 text-center"
+                >
 
                     <h2>
                         Product not found
@@ -1614,7 +1785,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (
         urlPrice !== null &&
         urlPrice !== "" &&
-        !isNaN(
+        Number.isFinite(
             Number(
                 urlPrice
             )
@@ -1632,7 +1803,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (
         urlMrp !== null &&
         urlMrp !== "" &&
-        !isNaN(
+        Number.isFinite(
             Number(
                 urlMrp
             )
@@ -1645,6 +1816,150 @@ document.addEventListener("DOMContentLoaded", function () {
             );
 
     }
+
+
+    /* =========================================================
+       EXACT IMAGE SYNC
+    ========================================================== */
+
+    /*
+     * Priority:
+     *
+     * 1. Image saved from Fashion.html
+     * 2. Image sent by URL
+     * 3. Database image
+     */
+
+    const hasSessionImage =
+        product.images &&
+        product.images[0] &&
+        product.images[0].trim() !== "";
+
+
+    if (
+        hasSessionImage
+    ) {
+
+        /*
+         * Keep exact sessionStorage image.
+         */
+
+        try {
+
+            product.images = [
+
+                new URL(
+                    product.images[0],
+                    window.location.href
+                ).href
+
+            ];
+
+        }
+        catch (
+            error
+        ) {
+
+            /* Keep original */
+
+        }
+
+    }
+    else if (
+        urlImage &&
+        urlImage.trim() !== ""
+    ) {
+
+        try {
+
+            product.images = [
+
+                new URL(
+                    urlImage,
+                    window.location.href
+                ).href
+
+            ];
+
+        }
+        catch (
+            error
+        ) {
+
+            product.images = [
+                urlImage
+            ];
+
+        }
+
+    }
+
+
+    /* =========================================================
+       FALLBACK IMAGE
+    ========================================================== */
+
+    function getSafeImage(
+        image
+    ) {
+
+        if (
+            image &&
+            image.trim() !== ""
+        ) {
+
+            return image;
+
+        }
+
+
+        return (
+            "https://placehold.co/900x900/eeeae4/132438" +
+            "?text=" +
+            encodeURIComponent(
+                product.name
+            )
+        );
+
+    }
+
+
+    product.images[0] =
+        getSafeImage(
+            product.images[0]
+        );
+
+
+    /* =========================================================
+       DEBUG
+    ========================================================== */
+
+    console.log(
+        "======================================"
+    );
+
+    console.log(
+        "OZZO PRODUCT DETAILS"
+    );
+
+    console.log(
+        "Product ID:",
+        product.id
+    );
+
+    console.log(
+        "Product Name:",
+        product.name
+    );
+
+    console.log(
+        "Product Image:",
+        product.images[0]
+    );
+
+    console.log(
+        "======================================"
+    );
 
 
     /* =========================================================
@@ -1718,7 +2033,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     function setupImageFallback(
-        image
+        image,
+        fallback
     ) {
 
         if (
@@ -1734,21 +2050,32 @@ document.addEventListener("DOMContentLoaded", function () {
             "error",
             function () {
 
-                this.style.display =
-                    "none";
+                if (
+                    this.dataset.failed ===
+                    "true"
+                ) {
+
+                    return;
+
+                }
 
 
-                const parent =
-                    this.parentElement;
+                this.dataset.failed =
+                    "true";
 
 
                 if (
-                    parent
+                    fallback
                 ) {
 
-                    parent.classList.add(
-                        "image-unavailable"
-                    );
+                    this.src =
+                        fallback;
+
+                }
+                else {
+
+                    this.style.display =
+                        "none";
 
                 }
 
@@ -1767,7 +2094,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     /* =========================================================
-       BASIC PRODUCT DETAILS
+       PRODUCT BASIC DETAILS
     ========================================================== */
 
     setText(
@@ -1801,7 +2128,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     /* =========================================================
-       UNIT PRICE
+       PRICE
     ========================================================== */
 
     setText(
@@ -1817,6 +2144,14 @@ document.addEventListener("DOMContentLoaded", function () {
         `₹${formatPrice(
             product.mrp
         )}`
+    );
+
+
+    setText(
+        "buyPrice",
+        formatPrice(
+            product.price
+        )
     );
 
 
@@ -1883,34 +2218,37 @@ document.addEventListener("DOMContentLoaded", function () {
             "";
 
 
-        product.description
-            .forEach(
-                function (
-                    text
-                ) {
+        (
+            product.description ||
+            []
+        )
+        .forEach(
+            function (
+                text
+            ) {
 
-                    const li =
-                        document.createElement(
-                            "li"
-                        );
-
-
-                    li.textContent =
-                        text;
-
-
-                    description.appendChild(
-                        li
+                const li =
+                    document.createElement(
+                        "li"
                     );
 
-                }
-            );
+
+                li.textContent =
+                    text;
+
+
+                description.appendChild(
+                    li
+                );
+
+            }
+        );
 
     }
 
 
     /* =========================================================
-       MAIN IMAGE
+       MAIN PRODUCT IMAGE
     ========================================================== */
 
     const mainImage =
@@ -2034,7 +2372,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         }
 
 
-                        document
+                        thumbnailList
                             .querySelectorAll(
                                 ".thumbnail"
                             )
@@ -2183,187 +2521,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     /* =========================================================
-       CREATE SIZE SELECTOR
-    ========================================================== */
-
-    if (
-        productRequiresSize(
-            product
-        )
-    ) {
-
-        const quantitySelect =
-            document.getElementById(
-                "quantity"
-            );
-
-
-        const quantityLabel =
-            document.querySelector(
-                ".quantity-label"
-            );
-
-
-        if (
-            quantitySelect
-        ) {
-
-            let sizeWrapper =
-                document.getElementById(
-                    "productSizeWrapper"
-                );
-
-
-            if (
-                !sizeWrapper
-            ) {
-
-                sizeWrapper =
-                    document.createElement(
-                        "div"
-                    );
-
-
-                sizeWrapper.id =
-                    "productSizeWrapper";
-
-
-                sizeWrapper.className =
-                    "product-size-wrapper";
-
-
-                sizeWrapper.innerHTML = `
-
-                    <label
-                        class="size-label"
-                    >
-                        Select Size
-                    </label>
-
-
-                    <div class="size-options">
-
-
-                        <label class="size-option">
-
-                            <input
-                                type="radio"
-                                name="productSize"
-                                value="S"
-                            >
-
-                            <span>
-                                S
-                            </span>
-
-                        </label>
-
-
-                        <label class="size-option">
-
-                            <input
-                                type="radio"
-                                name="productSize"
-                                value="M"
-                            >
-
-                            <span>
-                                M
-                            </span>
-
-                        </label>
-
-
-                        <label class="size-option">
-
-                            <input
-                                type="radio"
-                                name="productSize"
-                                value="L"
-                            >
-
-                            <span>
-                                L
-                            </span>
-
-                        </label>
-
-
-                        <label class="size-option">
-
-                            <input
-                                type="radio"
-                                name="productSize"
-                                value="XL"
-                            >
-
-                            <span>
-                                XL
-                            </span>
-
-                        </label>
-
-
-                    </div>
-
-                `;
-
-
-                /*
-                 * Put size selector
-                 * before Quantity.
-                 */
-
-                if (
-                    quantityLabel
-                ) {
-
-                    quantityLabel.parentNode.insertBefore(
-                        sizeWrapper,
-                        quantityLabel
-                    );
-
-                }
-                else {
-
-                    quantitySelect.parentNode.insertBefore(
-                        sizeWrapper,
-                        quantitySelect
-                    );
-
-                }
-
-            }
-
-
-            document
-                .querySelectorAll(
-                    'input[name="productSize"]'
-                )
-                .forEach(
-                    function (
-                        radio
-                    ) {
-
-                        radio.addEventListener(
-                            "change",
-                            function () {
-
-                                selectedSize =
-                                    this.value;
-
-                            }
-                        );
-
-                    }
-                );
-
-        }
-
-    }
-
-
-    /* =========================================================
        QUANTITY
     ========================================================== */
 
@@ -2372,6 +2529,183 @@ document.addEventListener("DOMContentLoaded", function () {
             "quantity"
         );
 
+
+    /* =========================================================
+       CREATE SIZE SELECTOR
+    ========================================================== */
+
+    if (
+        productRequiresSize(
+            product
+        ) &&
+        quantitySelect
+    ) {
+
+        let sizeWrapper =
+            document.getElementById(
+                "productSizeWrapper"
+            );
+
+
+        if (
+            !sizeWrapper
+        ) {
+
+            sizeWrapper =
+                document.createElement(
+                    "div"
+                );
+
+
+            sizeWrapper.id =
+                "productSizeWrapper";
+
+
+            sizeWrapper.className =
+                "product-size-wrapper";
+
+
+            sizeWrapper.innerHTML = `
+
+                <label
+                    class="size-label"
+                >
+                    Select Size
+                </label>
+
+
+                <div
+                    class="size-options"
+                >
+
+                    <label
+                        class="size-option"
+                    >
+
+                        <input
+                            type="radio"
+                            name="productSize"
+                            value="S"
+                        >
+
+                        <span>
+                            S
+                        </span>
+
+                    </label>
+
+
+                    <label
+                        class="size-option"
+                    >
+
+                        <input
+                            type="radio"
+                            name="productSize"
+                            value="M"
+                        >
+
+                        <span>
+                            M
+                        </span>
+
+                    </label>
+
+
+                    <label
+                        class="size-option"
+                    >
+
+                        <input
+                            type="radio"
+                            name="productSize"
+                            value="L"
+                        >
+
+                        <span>
+                            L
+                        </span>
+
+                    </label>
+
+
+                    <label
+                        class="size-option"
+                    >
+
+                        <input
+                            type="radio"
+                            name="productSize"
+                            value="XL"
+                        >
+
+                        <span>
+                            XL
+                        </span>
+
+                    </label>
+
+                </div>
+
+            `;
+
+
+            const quantityLabel =
+                document.querySelector(
+                    ".quantity-label"
+                );
+
+
+            if (
+                quantityLabel
+            ) {
+
+                quantityLabel.parentNode.insertBefore(
+                    sizeWrapper,
+                    quantityLabel
+                );
+
+            }
+            else {
+
+                quantitySelect.parentNode.insertBefore(
+                    sizeWrapper,
+                    quantitySelect
+                );
+
+            }
+
+        }
+
+
+        document
+            .querySelectorAll(
+                'input[name="productSize"]'
+            )
+            .forEach(
+                function (
+                    radio
+                ) {
+
+                    radio.addEventListener(
+                        "change",
+                        function () {
+
+                            selectedSize =
+                                this.value;
+
+                        }
+                    );
+
+                }
+            );
+
+    }
+
+
+    /* =========================================================
+       QUANTITY PRICE
+    ========================================================== */
 
     const buyPriceElement =
         document.getElementById(
@@ -2390,12 +2724,6 @@ document.addEventListener("DOMContentLoaded", function () {
             "quantityTotal"
         );
 
-
-    /*
-     * Create a small quantity total
-     * message when it doesn't already
-     * exist in HTML.
-     */
 
     if (
         quantitySelect &&
@@ -2462,11 +2790,6 @@ document.addEventListener("DOMContentLoaded", function () {
             quantity;
 
 
-        /*
-         * Main product area stays as
-         * unit price.
-         */
-
         if (
             productPriceElement
         ) {
@@ -2479,10 +2802,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
 
-        /*
-         * Buy box changes with quantity.
-         */
-
         if (
             buyPriceElement
         ) {
@@ -2494,10 +2813,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         }
 
-
-        /*
-         * Extra total information.
-         */
 
         if (
             quantityTotalElement
@@ -2513,7 +2828,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 quantityTotalElement.innerHTML = `
 
-                    ${quantity} items ×
+                    ${quantity}
+                    items ×
                     ₹${formatPrice(
                         product.price
                     )}
@@ -2708,14 +3024,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 : "";
 
 
-        /*
-         * Same product + same size
-         * becomes one cart item.
-         *
-         * Same product + different size
-         * becomes another cart item.
-         */
-
         const existing =
             cart.find(
                 function (
@@ -2723,6 +3031,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 ) {
 
                     return (
+
                         item.id ===
                         product.id &&
 
@@ -2731,6 +3040,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             ""
                         ) ===
                         finalSize
+
                     );
 
                 }
@@ -2800,6 +3110,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     Number(
                         product.mrp
                     ),
+
+                /*
+                 * VERY IMPORTANT:
+                 * Cart receives the SAME image shown
+                 * on Product Details.
+                 */
 
                 image:
                     product.images[0],
@@ -2903,10 +3219,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     getCurrentQuantity();
 
 
-                /*
-                 * Require size for apparel.
-                 */
-
                 if (
                     productRequiresSize(
                         product
@@ -2986,10 +3298,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     getCurrentQuantity();
 
 
-                /*
-                 * Require size for apparel.
-                 */
-
                 if (
                     productRequiresSize(
                         product
@@ -3051,11 +3359,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 ) {
 
                     return (
+
                         item.id !==
                         product.id &&
 
                         item.category ===
                         product.category
+
                     );
 
                 }
@@ -3136,45 +3446,40 @@ document.addEventListener("DOMContentLoaded", function () {
                 card.innerHTML = `
 
                     <a
-                        href="
-                            ProductDetails.html
-                            ?id=${encodeURIComponent(
-                                item.id
-                            )}
-                            &name=${encodeURIComponent(
-                                item.name
-                            )}
-                            &price=${encodeURIComponent(
-                                item.price
-                            )}
-                            &mrp=${encodeURIComponent(
-                                item.mrp
-                            )}
-                        "
+                        href="#"
+                        class="related-product-link"
                     >
 
-                        <div class="related-image">
+                        <div
+                            class="related-image"
+                        >
 
                             <img
                                 src="${item.images[0]}"
                                 alt="${item.name}"
                             >
 
-                            <span class="related-category">
+                            <span
+                                class="related-category"
+                            >
                                 ${item.category}
                             </span>
 
                         </div>
 
 
-                        <div class="related-content">
+                        <div
+                            class="related-content"
+                        >
 
                             <h3>
                                 ${item.name}
                             </h3>
 
 
-                            <div class="related-rating">
+                            <div
+                                class="related-rating"
+                            >
 
                                 ${item.rating}
 
@@ -3190,7 +3495,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
                             <div>
 
-                                <span class="related-price">
+                                <span
+                                    class="related-price"
+                                >
 
                                     ₹${formatPrice(
                                         item.price
@@ -3199,7 +3506,9 @@ document.addEventListener("DOMContentLoaded", function () {
                                 </span>
 
 
-                                <del class="related-old-price">
+                                <del
+                                    class="related-old-price"
+                                >
 
                                     ₹${formatPrice(
                                         item.mrp
@@ -3223,15 +3532,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 );
 
 
-                /*
-                 * Replace newlines/spaces from
-                 * template URL so browser gets
-                 * a valid URL.
-                 */
-
                 const relatedLink =
                     card.querySelector(
-                        "a"
+                        ".related-product-link"
                     );
 
 
@@ -3239,24 +3542,141 @@ document.addEventListener("DOMContentLoaded", function () {
                     relatedLink
                 ) {
 
-                    relatedLink.href =
-                        "ProductDetails.html" +
-                        "?id=" +
-                        encodeURIComponent(
-                            item.id
-                        ) +
-                        "&name=" +
-                        encodeURIComponent(
-                            item.name
-                        ) +
-                        "&price=" +
-                        encodeURIComponent(
-                            item.price
-                        ) +
-                        "&mrp=" +
-                        encodeURIComponent(
-                            item.mrp
-                        );
+                    relatedLink.addEventListener(
+                        "click",
+                        function (
+                            event
+                        ) {
+
+                            event.preventDefault();
+
+
+                            /*
+                             * Save the exact related product
+                             * before opening its details page.
+                             */
+
+                            const relatedData = {
+
+                                id:
+                                    item.id,
+
+                                category:
+                                    item.category,
+
+                                subcategory:
+                                    item.subcategory,
+
+                                name:
+                                    item.name,
+
+                                brand:
+                                    item.brand,
+
+                                price:
+                                    Number(
+                                        item.price
+                                    ),
+
+                                mrp:
+                                    Number(
+                                        item.mrp
+                                    ),
+
+                                rating:
+                                    Number(
+                                        item.rating
+                                    ),
+
+                                reviews:
+                                    Number(
+                                        item.reviews
+                                    ),
+
+                                bought:
+                                    item.bought,
+
+                                image:
+                                    item.images[0],
+
+                                description:
+                                    item.description
+
+                            };
+
+
+                            try {
+
+                                sessionStorage.setItem(
+                                    "ozzoSelectedProduct",
+                                    JSON.stringify(
+                                        relatedData
+                                    )
+                                );
+
+                            }
+                            catch (
+                                error
+                            ) {
+
+                                console.warn(
+                                    "Unable to save related product:",
+                                    error
+                                );
+
+                            }
+
+
+                            let relatedImageUrl =
+                                item.images[0];
+
+
+                            try {
+
+                                relatedImageUrl =
+                                    new URL(
+                                        item.images[0],
+                                        window.location.href
+                                    ).href;
+
+                            }
+                            catch (
+                                error
+                            ) {
+                                /* Keep original */
+                            }
+
+
+                            window.location.href =
+                                "ProductDetails.html" +
+
+                                "?id=" +
+                                encodeURIComponent(
+                                    item.id
+                                ) +
+
+                                "&name=" +
+                                encodeURIComponent(
+                                    item.name
+                                ) +
+
+                                "&price=" +
+                                encodeURIComponent(
+                                    item.price
+                                ) +
+
+                                "&mrp=" +
+                                encodeURIComponent(
+                                    item.mrp
+                                ) +
+
+                                "&image=" +
+                                encodeURIComponent(
+                                    relatedImageUrl
+                                );
+
+                        }
+                    );
 
                 }
 
@@ -3326,31 +3746,41 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     /* =========================================================
-       DEBUG
+       FINAL DEBUG
     ========================================================== */
 
     console.log(
-        "OZZO Product:",
+        "OZZO PRODUCT:",
         product.name
     );
 
+
     console.log(
-        "Product ID:",
+        "OZZO PRODUCT ID:",
         product.id
     );
 
+
     console.log(
-        "Unit Price:",
+        "OZZO EXACT IMAGE:",
+        product.images[0]
+    );
+
+
+    console.log(
+        "OZZO PRICE:",
         product.price
     );
 
+
     console.log(
-        "MRP:",
+        "OZZO MRP:",
         product.mrp
     );
 
+
     console.log(
-        "Supports Size:",
+        "OZZO SIZE REQUIRED:",
         productRequiresSize(
             product
         )
