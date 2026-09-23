@@ -1,1274 +1,1862 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>OZZO | Lifestyle, Books, Stationery & Personal Care</title>
+    <meta charset="UTF-8">
 
-<link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
->
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
->
+    <title>OZZO | Lifestyle, Books, Stationery & Personal Care</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/png" href="OZZO logo.jpg">
+    <!-- =========================================================
+         BOOTSTRAP
+    ========================================================== -->
 
-<link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
-    rel="stylesheet"
->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
 
-<link rel="stylesheet" href="index.css">
+
+    <!-- =========================================================
+         FONT AWESOME
+    ========================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- =========================================================
+         GOOGLE FONTS
+    ========================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =========================================================
+         INDEX CSS
+    ========================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="index.css"
+    >
+  
 
 </head>
 
 
 <body>
 
-<!-- TOP BAR -->
+
+<!-- =========================================================
+     TOP BAR
+========================================================== -->
+
 <div class="top-bar">
-    <div class="container-fluid px-lg-5">
-        <div class="top-bar-inner">
 
-            <div class="shipping-text">
-                <i class="fa-solid fa-truck"></i>
-                <span>Free Shipping on orders above $50</span>
-            </div>
+    <div class="container-fluid top-bar-inner px-4">
 
-            <div class="top-links">
-                <a href="#">Track Order</a>
-                <span>|</span>
+        <div class="shipping-text">
 
-                <a href="#">Help</a>
-                <span>|</span>
+            <i
+                class="fa-solid fa-truck"
+                aria-hidden="true"
+            ></i>
 
-                <a href="#" class="login-link">
-                    <i class="fa-regular fa-user"></i>
-                    Login / Register
-                </a>
-            </div>
+            <span>
+                Free shipping on orders above ₹999
+            </span>
 
         </div>
+
+
+        <div class="top-links">
+
+            <a href="#">
+                Track Order
+            </a>
+
+            <span>|</span>
+
+            <a href="#">
+                Help
+            </a>
+
+            <span>|</span>
+
+            <a
+                href="#"
+                class="login-link"
+                title="Login"
+                aria-label="Login"
+            >
+
+                <i
+                    class="fa-regular fa-user"
+                    aria-hidden="true"
+                ></i>
+
+                Login
+
+            </a>
+
+        </div>
+
     </div>
+
 </div>
 
 
-<!-- HEADER -->
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
 <header class="main-header">
 
-<nav class="navbar navbar-expand-xl navbar-light">
+    <nav class="navbar navbar-expand-xl">
 
-<div class="container-fluid px-lg-5">
-
-    <a href="#" class="navbar-brand ozzo-logo">
-        OZZO
-    </a>
-
-    <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#ozzoNavbar"
-    >
-        <span class="navbar-toggler-icon"></span>
-    </button>
+        <div class="container-fluid px-4">
 
 
-    <div class="collapse navbar-collapse" id="ozzoNavbar">
+            <!-- LOGO -->
 
-        <ul class="navbar-nav main-nav mx-xl-auto">
-
-            <li class="nav-item">
-                <a href="index.html" class="nav-link active">Home</a>
-            </li>
-
-            <li class="nav-item">
-                <a href="/Fashion/Fashion.html" class="nav-link">Fashion</a>
-            </li>
-
-            <li class="nav-item">
-                <a href="/Books/Books.html" class="nav-link">Books</a>
-            </li>
-
-            <li class="nav-item">
-                <a href="/Stationary/Stationary.html" class="nav-link">Stationery</a>
-            </li>
-
-            <li class="nav-item">
-                <a href="/Pads/Pads.html" class="nav-link">Pads</a>
-            </li>
-
-            <!--<li class="nav-item">
-                <ahref="#" class="nav-link">Deals</a>
-            </li>-->
-
-        </ul>
+            <a
+                class="navbar-brand ozzo-logo"
+                href="index.html"
+            >
+                OZZO
+            </a>
 
 
-        <div class="header-actions">
+            <!-- MOBILE MENU -->
 
-            <div class="search-box">
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#ozzoNavbar"
+                aria-controls="ozzoNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                title="Toggle navigation"
+            >
 
-                <input
-                    type="text"
-                    id="searchInput"
-                    placeholder="Search for products, brands and more..."
-                >
+                <i
+                    class="fa-solid fa-bars"
+                    aria-hidden="true"
+                ></i>
 
-                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+
+            <!-- NAVIGATION -->
+
+            <div
+                class="collapse navbar-collapse"
+                id="ozzoNavbar"
+            >
+
+                <ul class="navbar-nav main-nav mx-auto">
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link active"
+                            href="index.html"
+                        >
+                            Home
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="Fashion/Fashion.html"
+                        >
+                            Fashion
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="Books/Books.html"
+                        >
+                            Books
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="Stationary/Stationary.html"
+                        >
+                            Stationery
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="Pads/Pads.html"
+                        >
+                            Pads
+                        </a>
+
+                    </li>
+
+                </ul>
+
+
+                <!-- HEADER ACTIONS -->
+
+                <div class="header-actions">
+
+
+                    <!-- SEARCH -->
+
+                    <div class="search-box">
+
+                        <input
+                            type="text"
+                            id="searchInput"
+                            placeholder="Search fashion products..."
+                            aria-label="Search fashion products"
+                        >
+
+                        <i
+                            class="fa-solid fa-magnifying-glass"
+                            aria-hidden="true"
+                        ></i>
+
+                    </div>
+
+
+                    <!-- WISHLIST -->
+
+<a
+    href="Wishlist/Wishlist.html"
+    class="header-icon wishlist-button"
+    title="Wishlist"
+    aria-label="Wishlist"
+>
+    <i class="fa-regular fa-heart"></i>
+</a>
+
+
+                    <!-- CART -->
+
+                    <button
+                        class="header-icon cart-button"
+                        id="headerCartButton"
+                        type="button"
+                        title="Shopping Cart"
+                        aria-label="Shopping Cart"
+                    >
+
+                        <i
+                            class="fa-solid fa-bag-shopping"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span
+                            class="cart-count"
+                            id="cartCount"
+                        >
+                            0
+                        </span>
+
+                    </button>
+
+                </div>
 
             </div>
 
-
-            <button class="header-icon" id="wishlistBtn">
-                <i class="fa-regular fa-heart"></i>
-            </button>
-
-
-            <button class="header-icon" id="cartBtn">
-
-                <i class="fa-solid fa-cart-shopping"></i>
-
-                <span id="cartCount" class="cart-count">
-                    0
-                </span>
-
-            </button>
-
         </div>
 
-    </div>
-
-</div>
-
-</nav>
+    </nav>
 
 </header>
 
 
-<!-- HERO -->
-<!-- HERO -->
+<!-- =========================================================
+     HERO
+========================================================= -->
+
 <section class="hero-section">
 
-<div class="container-fluid">
+    <div class="container-fluid">
 
-<div class="hero-content">
+        <div class="hero-content">
 
-    <div class="hero-copy">
 
-        <div class="hero-small-title">
-            WELCOME TO OZZO
+            <div class="hero-copy">
+
+                <div class="hero-small-title">
+                    WELCOME TO OZZO
+                </div>
+
+
+                <h1>
+                    Your One-Stop<br>
+                    Shop for Everything<br>
+                    You Love
+                </h1>
+
+
+                <div class="hero-categories">
+
+                    <span>
+                        Fashion
+                    </span>
+
+                    <b>
+                        •
+                    </b>
+
+                    <span>
+                        Books
+                    </span>
+
+                    <b>
+                        •
+                    </b>
+
+                    <span>
+                        Stationery
+                    </span>
+
+                    <b>
+                        •
+                    </b>
+
+                    <span>
+                        Pads
+                    </span>
+
+                </div>
+
+
+                <a
+                    href="#products"
+                    class="primary-btn"
+                >
+                    Shop Now
+
+                    <span>
+                        →
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div class="hero-image-area">
+
+                <div class="hero-dots">
+
+                    <span class="dot active"></span>
+
+                    <span class="dot"></span>
+
+                    <span class="dot"></span>
+
+                </div>
+
+            </div>
+
         </div>
-
-        <h1>
-            Your One-Stop<br>
-            Shop for Everything<br>
-            You Love
-        </h1>
-
-        <div class="hero-categories">
-            <span>Fashion</span>
-            <b>•</b>
-            <span>Books</span>
-            <b>•</b>
-            <span>Stationery</span>
-            <b>•</b>
-            <span>Pads</span>
-        </div>
-
-        <a href="#products" class="primary-btn">
-            Shop Now
-            <span>→</span>
-        </a>
 
     </div>
-
-
-    <div class="hero-image-area">
-
-        <div class="hero-dots">
-
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-
-        </div>
-
-    </div>
-
-</div>
-
-</div>
 
 </section>
 
-<!-- CATEGORIES -->
+
+<!-- =========================================================
+     CATEGORIES
+========================================================= -->
+
 <section class="category-section">
 
-<div class="container-fluid px-lg-5">
+    <div class="container-fluid px-lg-5">
 
-<div class="row g-3">
+        <div class="row g-3">
 
-    <!-- Fashion -->
-    <div class="col-lg-4 col-md-6">
 
-        <a href="Fashion/Fashion.html" class="category-card fashion-card">
+            <!-- FASHION -->
 
-            <div class="category-image">
+            <div class="col-lg-4 col-md-6">
 
-                <img
-                    src="fashion.jpg"
-                    alt="Fashion"
+                <a
+                    href="Fashion/Fashion.html"
+                    class="category-card fashion-card"
                 >
 
+                    <div class="category-image">
+
+                        <img
+                            src="fashion.jpg"
+                            alt="Fashion"
+                        >
+
+                    </div>
+
+
+                    <div class="category-info">
+
+                        <h3>
+                            Fashion
+                        </h3>
+
+                        <p>
+                            Trendy Styles for You
+                        </p>
+
+                        <span class="arrow">
+                            →
+                        </span>
+
+                    </div>
+
+                </a>
+
             </div>
 
-            <div class="category-info">
 
-                <h3>Fashion</h3>
+            <!-- BOOKS -->
 
-                <p>
-                    Trendy Styles for You
-                </p>
+            <div class="col-lg-4 col-md-6">
 
-                <span class="arrow">
-                    →
-                </span>
-
-            </div>
-
-        </a>
-
-    </div>
-
-
-    <!-- Books -->
-    <div class="col-lg-4 col-md-6">
-
-        <a href="#" class="category-card books-card">
-
-            <div class="category-image">
-
-                <img
-                    src="Books.jpg"
-                    alt="Books"
+                <a
+                    href="Books/Books.html"
+                    class="category-card books-card"
                 >
 
+                    <div class="category-image">
+
+                        <img
+                            src="Books.jpg"
+                            alt="Books"
+                        >
+
+                    </div>
+
+
+                    <div class="category-info">
+
+                        <h3>
+                            Books
+                        </h3>
+
+                        <p>
+                            Explore New Worlds
+                        </p>
+
+                        <span class="arrow">
+                            →
+                        </span>
+
+                    </div>
+
+                </a>
+
             </div>
 
-            <div class="category-info">
 
-                <h3>Books</h3>
+            <!-- STATIONERY -->
 
-                <p>
-                    Explore New Worlds
-                </p>
+            <div class="col-lg-4 col-md-6">
 
-                <span class="arrow">
-                    →
-                </span>
-
-            </div>
-
-        </a>
-
-    </div>
-
-
-    <!-- Stationery -->
-    <div class="col-lg-4 col-md-6">
-
-        <a href="#" class="category-card stationery-card">
-
-            <div class="category-image">
-
-                <img
-                    src="Stationary.jpg"
-                    alt="Stationery"
+                <a
+                    href="Stationary/Stationary.html"
+                    class="category-card stationery-card"
                 >
 
+                    <div class="category-image">
+
+                        <img
+                            src="Stationary.jpg"
+                            alt="Stationery"
+                        >
+
+                    </div>
+
+
+                    <div class="category-info">
+
+                        <h3>
+                            Stationery
+                        </h3>
+
+                        <p>
+                            Make Ideas Happen
+                        </p>
+
+                        <span class="arrow">
+                            →
+                        </span>
+
+                    </div>
+
+                </a>
+
             </div>
 
-            <div class="category-info">
-
-                <h3>Stationery</h3>
-
-                <p>
-                    Make Ideas Happen
-                </p>
-
-                <span class="arrow">
-                    →
-                </span>
-
-            </div>
-
-        </a>
+        </div>
 
     </div>
-
-</div>
-
-</div>
 
 </section>
 
 
-<!-- FEATURED PRODUCTS -->
-<section class="featured-section" id="products">
+<!-- =========================================================
+     FEATURED PRODUCTS
+========================================================= -->
 
-<div class="container-fluid px-lg-5">
+<section
+    class="featured-section"
+    id="products"
+>
 
-    <div class="featured-heading">
-
-        <div>
-
-            <h2>
-                Featured Products
-            </h2>
+    <div class="container-fluid px-lg-5">
 
 
-            <div class="product-tabs">
+        <div class="featured-heading">
 
-                <button
-                    class="tab-btn active"
-                    data-category="all"
-                >
-                    All
-                </button>
+            <div>
 
-
-                <button
-                    class="tab-btn"
-                    data-category="fashion"
-                >
-                    Fashion
-                </button>
+                <h2>
+                    Featured Products
+                </h2>
 
 
-                <button
-                    class="tab-btn"
-                    data-category="books"
-                >
-                    Books
-                </button>
+                <div class="product-tabs">
 
-
-                <button
-                    class="tab-btn"
-                    data-category="stationery"
-                >
-                    Stationery
-                </button>
-
-
-                <button
-                    class="tab-btn"
-                    data-category="pads"
-                >
-                    Pads
-                </button>
-
-            </div>
-
-        </div>
-
-
-        <a href="#" class="view-all">
-            View All
-            <span>→</span>
-        </a>
-
-    </div>
-
-
-    <div class="row g-3 product-grid" id="productGrid">
-
-
-        <!-- PRODUCT 1 -->
-        <div
-            class="col-xl-2 col-lg-3 col-md-4 col-sm-6 product-column"
-            data-category="fashion"
-        >
-
-            <div class="product-card">
-
-                <div class="product-image">
-
-                    <button class="heart-button">
-                        <i class="fa-regular fa-heart"></i>
+                    <button
+                        class="tab-btn active"
+                        data-category="all"
+                        type="button"
+                    >
+                        All
                     </button>
 
-                    <img
-                        src="women shirt.jpg"
-                        alt="Classic Oversized Shirt"
+
+                    <button
+                        class="tab-btn"
+                        data-category="fashion"
+                        type="button"
                     >
-
-                </div>
-
-
-                <div class="product-details">
-
-                    <h3>
-                        Classic Oversized Shirt
-                    </h3>
-
-                    <p class="product-category">
-                        Women's Fashion
-                    </p>
-
-                    <div class="product-price">
-                        $29.99
-                    </div>
-
-                    <div class="rating">
-
-                        <span>
-                            ★★★★★
-                        </span>
-
-                        <small>
-                            (124)
-                        </small>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- PRODUCT 2 -->
-        <div
-            class="col-xl-2 col-lg-3 col-md-4 col-sm-6 product-column"
-            data-category="fashion"
-        >
-
-            <div class="product-card">
-
-                <div class="product-image">
-
-                    <button class="heart-button">
-                        <i class="fa-regular fa-heart"></i>
+                        Fashion
                     </button>
 
-                    <img
-                        src="hoddie.jpg"
-                        alt="Urban Hoodie"
+
+                    <button
+                        class="tab-btn"
+                        data-category="books"
+                        type="button"
                     >
-
-                </div>
-
-
-                <div class="product-details">
-
-                    <h3>
-                        Urban Hoodie
-                    </h3>
-
-                    <p class="product-category">
-                        Men's Fashion
-                    </p>
-
-                    <div class="product-price">
-                        $39.99
-                    </div>
-
-                    <div class="rating">
-
-                        <span>
-                            ★★★★★
-                        </span>
-
-                        <small>
-                            (98)
-                        </small>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- PRODUCT 3 -->
-        <!--<div
-            class="col-xl-2 col-lg-3 col-md-4 col-sm-6 product-column"
-            data-category="fashion"
-        >
-
-            <div class="product-card">
-
-                <div class="product-image">
-
-                    <button class="heart-button">
-                        <i class="fa-regular fa-heart"></i>
-                    </button>
-
-                    <img
-                        src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80"
-                        alt="Comfort Sneakers"
-                    >
-
-                </div>
-
-
-                <div class="product-details">
-
-                    <h3>
-                        Comfort Sneakers
-                    </h3>
-
-                    <p class="product-category">
-                        Footwear
-                    </p>
-
-                    <div class="product-price">
-                        $49.99
-                    </div>
-
-                    <div class="rating">
-
-                        <span>
-                            ★★★★★
-                        </span>
-
-                        <small>
-                            (76)
-                        </small>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>-->
-
-
-        <!-- PRODUCT 4 -->
-        <div
-            class="col-xl-2 col-lg-3 col-md-4 col-sm-6 product-column"
-            data-category="books"
-        >
-
-            <div class="product-card">
-
-                <div class="product-image">
-
-                    <button class="heart-button">
-                        <i class="fa-regular fa-heart"></i>
-                    </button>
-
-                    <img
-                        src="book.jpg"
-                        alt="Atomic Habits"
-                    >
-
-                </div>
-
-
-                <div class="product-details">
-
-                    <h3>
-                        Atomic Habits
-                    </h3>
-
-                    <p class="product-category">
                         Books
-                    </p>
-
-                    <div class="product-price">
-                        $16.99
-                    </div>
-
-                    <div class="rating">
-
-                        <span>
-                            ★★★★★
-                        </span>
-
-                        <small>
-                            (203)
-                        </small>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- PRODUCT 5 -->
-        <div
-            class="col-xl-2 col-lg-3 col-md-4 col-sm-6 product-column"
-            data-category="stationery"
-        >
-
-            <div class="product-card">
-
-                <div class="product-image">
-
-                    <button class="heart-button">
-                        <i class="fa-regular fa-heart"></i>
                     </button>
 
-                    <img
-                        src="books set.jpg"
-                        alt="Notebook Set"
+
+                    <button
+                        class="tab-btn"
+                        data-category="stationery"
+                        type="button"
                     >
-
-                </div>
-
-
-                <div class="product-details">
-
-                    <h3>
-                        Notebook Set
-                    </h3>
-
-                    <p class="product-category">
                         Stationery
-                    </p>
-
-                    <div class="product-price">
-                        $12.99
-                    </div>
-
-                    <div class="rating">
-
-                        <span>
-                            ★★★★★
-                        </span>
-
-                        <small>
-                            (87)
-                        </small>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-       
-        <!-- PRODUCT 6 -->
-        <div
-            class="col-xl-2 col-lg-3 col-md-4 col-sm-6 product-column"
-            data-category="stationery"
-        >
-
-            <div class="product-card">
-
-                <div class="product-image">
-
-                    <button class="heart-button">
-                        <i class="fa-regular fa-heart"></i>
                     </button>
 
-                    <img
-                        src="pens.jpg"
-                        alt="Gel Pen Set"
+
+                    <button
+                        class="tab-btn"
+                        data-category="pads"
+                        type="button"
                     >
-
-                </div>
-
-
-                <div class="product-details">
-
-                    <h3>
-                        Gel Pen Set (Pack of 6)
-                    </h3>
-
-                    <p class="product-category">
-                        Stationery
-                    </p>
-
-                    <div class="product-price">
-                        $8.99
-                    </div>
-
-                    <div class="rating">
-
-                        <span>
-                            ★★★★★
-                        </span>
-
-                        <small>
-                            (64)
-                        </small>
-
-                    </div>
+                        Pads
+                    </button>
 
                 </div>
 
             </div>
+
+
+            <a
+                href="#"
+                class="view-all"
+            >
+                View All
+                <span>
+                    →
+                </span>
+            </a>
 
         </div>
 
 
-        <!-- PAD PRODUCT 1 -->
+        <!-- =====================================================
+             PRODUCT GRID
+        ====================================================== -->
+
         <div
-            class="col-xl-2 col-lg-3 col-md-4 col-sm-6 product-column"
-            data-category="pads"
+            class="row g-3 product-grid"
+            id="productGrid"
         >
 
-            <div class="product-card">
 
-                <div class="product-image">
+            <!-- =================================================
+                 PRODUCT 1
+            ================================================== -->
 
-                    <span class="product-badge">
-                        BEST SELLER
-                    </span>
+            <div
+                class="col-xl-2 col-lg-3 col-md-4 col-sm-6 product-column"
+                data-category="fashion"
+            >
 
-                    <button class="heart-button">
-                        <i class="fa-regular fa-heart"></i>
-                    </button>
+                <div class="product-card">
 
-                    <img
-                        src="pads.jpg"
-                        alt="Ultra Thin Sanitary Pads"
-                    >
+                    <div class="product-image">
 
-                </div>
+                        <button
+                            class="heart-button"
+                            type="button"
+                            title="Add to wishlist"
+                            aria-label="Add Classic Oversized Shirt to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true"
+                            ></i>
+
+                        </button>
 
 
-                <div class="product-details">
+                        <img
+                            src="women shirt.jpg"
+                            alt="Classic Oversized Shirt"
+                        >
 
-                    <h3>
-                        Ultra Thin Day Pads
-                    </h3>
-
-                    <p class="product-category">
-                        Pads & Personal Care
-                    </p>
-
-                    <div class="product-price">
-                        $7.99
                     </div>
 
-                    <div class="rating">
 
-                        <span>
-                            ★★★★★
-                        </span>
+                    <div class="product-details">
 
-                        <small>
-                            (186)
-                        </small>
+                        <h3>
+                            Classic Oversized Shirt
+                        </h3>
+
+
+                        <p class="product-category">
+                            Women's Fashion
+                        </p>
+
+
+                        <div class="product-price">
+                            ₹2,879
+                        </div>
+
+
+                        <div class="rating">
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (124)
+                            </small>
+
+                        </div>
 
                     </div>
 
                 </div>
 
             </div>
+
+
+            <!-- =================================================
+                 PRODUCT 2
+            ================================================== -->
+
+            <div
+                class="col-xl-2 col-lg-3 col-md-4 col-sm-6 product-column"
+                data-category="fashion"
+            >
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <button
+                            class="heart-button"
+                            type="button"
+                            title="Add to wishlist"
+                            aria-label="Add Urban Hoodie to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true"
+                            ></i>
+
+                        </button>
+
+
+                        <img
+                            src="hoddie.jpg"
+                            alt="Urban Hoodie"
+                        >
+
+                    </div>
+
+
+                    <div class="product-details">
+
+                        <h3>
+                            Urban Hoodie
+                        </h3>
+
+
+                        <p class="product-category">
+                            Men's Fashion
+                        </p>
+
+
+                        <div class="product-price">
+                            ₹3,839
+                        </div>
+
+
+                        <div class="rating">
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (98)
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 PRODUCT 3
+            ================================================== -->
+
+            <!--
+            <div
+                class="col-xl-2 col-lg-3 col-md-4 col-sm-6 product-column"
+                data-category="fashion"
+            >
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <button
+                            class="heart-button"
+                            type="button"
+                            title="Add to wishlist"
+                            aria-label="Add Comfort Sneakers to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true"
+                            ></i>
+
+                        </button>
+
+
+                        <img
+                            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80"
+                            alt="Comfort Sneakers"
+                        >
+
+                    </div>
+
+
+                    <div class="product-details">
+
+                        <h3>
+                            Comfort Sneakers
+                        </h3>
+
+
+                        <p class="product-category">
+                            Footwear
+                        </p>
+
+
+                        <div class="product-price">
+                            ₹4,799
+                        </div>
+
+
+                        <div class="rating">
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (76)
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            -->
+
+
+            <!-- =================================================
+                 PRODUCT 4
+            ================================================== -->
+
+            <div
+                class="col-xl-2 col-lg-3 col-md-4 col-sm-6 product-column"
+                data-category="books"
+            >
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <button
+                            class="heart-button"
+                            type="button"
+                            title="Add to wishlist"
+                            aria-label="Add Atomic Habits to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true"
+                            ></i>
+
+                        </button>
+
+
+                        <img
+                            src="book.jpg"
+                            alt="Atomic Habits"
+                        >
+
+                    </div>
+
+
+                    <div class="product-details">
+
+                        <h3>
+                            Atomic Habits
+                        </h3>
+
+
+                        <p class="product-category">
+                            Books
+                        </p>
+
+
+                        <div class="product-price">
+                            ₹1,631
+                        </div>
+
+
+                        <div class="rating">
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (203)
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 PRODUCT 5
+            ================================================== -->
+
+            <div
+                class="col-xl-2 col-lg-3 col-md-4 col-sm-6 product-column"
+                data-category="stationery"
+            >
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <button
+                            class="heart-button"
+                            type="button"
+                            title="Add to wishlist"
+                            aria-label="Add Notebook Set to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true"
+                            ></i>
+
+                        </button>
+
+
+                        <img
+                            src="books set.jpg"
+                            alt="Notebook Set"
+                        >
+
+                    </div>
+
+
+                    <div class="product-details">
+
+                        <h3>
+                            Notebook Set
+                        </h3>
+
+
+                        <p class="product-category">
+                            Stationery
+                        </p>
+
+
+                        <div class="product-price">
+                            ₹1,247
+                        </div>
+
+
+                        <div class="rating">
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (87)
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 PRODUCT 6
+            ================================================== -->
+
+            <div
+                class="col-xl-2 col-lg-3 col-md-4 col-sm-6 product-column"
+                data-category="stationery"
+            >
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <button
+                            class="heart-button"
+                            type="button"
+                            title="Add to wishlist"
+                            aria-label="Add Gel Pen Set to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true"
+                            ></i>
+
+                        </button>
+
+
+                        <img
+                            src="pens.jpg"
+                            alt="Gel Pen Set"
+                        >
+
+                    </div>
+
+
+                    <div class="product-details">
+
+                        <h3>
+                            Gel Pen Set (Pack of 6)
+                        </h3>
+
+
+                        <p class="product-category">
+                            Stationery
+                        </p>
+
+
+                        <div class="product-price">
+                            ₹863
+                        </div>
+
+
+                        <div class="rating">
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (64)
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 PAD PRODUCT 1
+            ================================================== -->
+
+            <div
+                class="col-xl-2 col-lg-3 col-md-4 col-sm-6 product-column"
+                data-category="pads"
+            >
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <span class="product-badge">
+                            BEST SELLER
+                        </span>
+
+
+                        <button
+                            class="heart-button"
+                            type="button"
+                            title="Add to wishlist"
+                            aria-label="Add Ultra Thin Day Pads to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true"
+                            ></i>
+
+                        </button>
+
+
+                        <img
+                            src="pads.jpg"
+                            alt="Ultra Thin Sanitary Pads"
+                        >
+
+                    </div>
+
+
+                    <div class="product-details">
+
+                        <h3>
+                            Ultra Thin Day Pads
+                        </h3>
+
+
+                        <p class="product-category">
+                            Pads &amp; Personal Care
+                        </p>
+
+
+                        <div class="product-price">
+                            ₹767
+                        </div>
+
+
+                        <div class="rating">
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (186)
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 PAD PRODUCT 2
+            ================================================== -->
+
+            <!--
+            <div
+                class="col-xl-2 col-lg-3 col-md-4 col-sm-6 product-column"
+                data-category="pads"
+            >
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <button
+                            class="heart-button"
+                            type="button"
+                            title="Add to wishlist"
+                            aria-label="Add Overnight Comfort Pads to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true"
+                            ></i>
+
+                        </button>
+
+
+                        <img
+                            src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=500&q=80"
+                            alt="Overnight Pads"
+                        >
+
+                    </div>
+
+
+                    <div class="product-details">
+
+                        <h3>
+                            Overnight Comfort Pads
+                        </h3>
+
+
+                        <p class="product-category">
+                            Pads &amp; Personal Care
+                        </p>
+
+
+                        <div class="product-price">
+                            ₹911
+                        </div>
+
+
+                        <div class="rating">
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (142)
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            -->
+
+
+            <!-- =================================================
+                 PAD PRODUCT 3
+            ================================================== -->
+
+            <!--
+            <div
+                class="col-xl-2 col-lg-3 col-md-4 col-sm-6 product-column"
+                data-category="pads"
+            >
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <button
+                            class="heart-button"
+                            type="button"
+                            title="Add to wishlist"
+                            aria-label="Add Cotton Soft Pads to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true"
+                            ></i>
+
+                        </button>
+
+
+                        <img
+                            src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=500&q=80"
+                            alt="Cotton Soft Pads"
+                        >
+
+                    </div>
+
+
+                    <div class="product-details">
+
+                        <h3>
+                            Cotton Soft Pads
+                        </h3>
+
+
+                        <p class="product-category">
+                            Sensitive Care
+                        </p>
+
+
+                        <div class="product-price">
+                            ₹815
+                        </div>
+
+
+                        <div class="rating">
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (118)
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            -->
+
+
+            <!-- =================================================
+                 PAD PRODUCT 4
+            ================================================== -->
+
+            <!--
+            <div
+                class="col-xl-2 col-lg-3 col-md-4 col-sm-6 product-column"
+                data-category="pads"
+            >
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <span class="product-badge">
+                            NEW
+                        </span>
+
+
+                        <button
+                            class="heart-button"
+                            type="button"
+                            title="Add to wishlist"
+                            aria-label="Add Daily Care Panty Liners to wishlist"
+                        >
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true"
+                            ></i>
+
+                        </button>
+
+
+                        <img
+                            src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=500&q=80"
+                            alt="Panty Liners"
+                        >
+
+                    </div>
+
+
+                    <div class="product-details">
+
+                        <h3>
+                            Daily Care Panty Liners
+                        </h3>
+
+
+                        <p class="product-category">
+                            Daily Care
+                        </p>
+
+
+                        <div class="product-price">
+                            ₹623
+                        </div>
+
+
+                        <div class="rating">
+
+                            <span>
+                                ★★★★★
+                            </span>
+
+                            <small>
+                                (95)
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            -->
 
         </div>
-
-        <!-- PAD PRODUCT 2 -->
-         <!--
-        <div
-            class="col-xl-2 col-lg-3 col-md-4 col-sm-6 product-column"
-            data-category="pads"
-        >
-
-            <div class="product-card">
-
-                <div class="product-image">
-
-                    <button class="heart-button">
-                        <i class="fa-regular fa-heart"></i>
-                    </button>
-
-                    <img
-                        src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=500&q=80"
-                        alt="Overnight Pads"
-                    >
-
-                </div>
-
-
-                <div class="product-details">
-
-                    <h3>
-                        Overnight Comfort Pads
-                    </h3>
-
-                    <p class="product-category">
-                        Pads & Personal Care
-                    </p>
-
-                    <div class="product-price">
-                        $9.49
-                    </div>
-
-                    <div class="rating">
-
-                        <span>
-                            ★★★★★
-                        </span>
-
-                        <small>
-                            (142)
-                        </small>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>-->
-
-
-        <!-- PAD PRODUCT 3 -->
-         <!--
-        <div
-            class="col-xl-2 col-lg-3 col-md-4 col-sm-6 product-column"
-            data-category="pads"
-        >
-
-            <div class="product-card">
-
-                <div class="product-image">
-
-                    <button class="heart-button">
-                        <i class="fa-regular fa-heart"></i>
-                    </button>
-
-                    <img
-                        src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=500&q=80"
-                        alt="Cotton Soft Pads"
-                    >
-
-                </div>
-
-
-                <div class="product-details">
-
-                    <h3>
-                        Cotton Soft Pads
-                    </h3>
-
-                    <p class="product-category">
-                        Sensitive Care
-                    </p>
-
-                    <div class="product-price">
-                        $8.49
-                    </div>
-
-                    <div class="rating">
-
-                        <span>
-                            ★★★★★
-                        </span>
-
-                        <small>
-                            (118)
-                        </small>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>-->
-
-
-        <!-- PAD PRODUCT 4 -->
-        <!--<div
-            class="col-xl-2 col-lg-3 col-md-4 col-sm-6 product-column"
-            data-category="pads"
-        >
-
-            <div class="product-card">
-
-                <div class="product-image">
-
-                    <span class="product-badge">
-                        NEW
-                    </span>
-
-                    <button class="heart-button">
-                        <i class="fa-regular fa-heart"></i>
-                    </button>
-
-                    <img
-                        src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=500&q=80"
-                        alt="Panty Liners"
-                    >
-
-                </div>
-
-
-                <div class="product-details">
-
-                    <h3>
-                        Daily Care Panty Liners
-                    </h3>
-
-                    <p class="product-category">
-                        Daily Care
-                    </p>
-
-                    <div class="product-price">
-                        $6.49
-                    </div>
-
-                    <div class="rating">
-
-                        <span>
-                            ★★★★★
-                        </span>
-
-                        <small>
-                            (95)
-                        </small>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>-->
 
     </div>
-
-</div>
 
 </section>
 
 
-<!-- PROMOTIONS -->
+<!-- =========================================================
+     PROMOTIONS
+========================================================= -->
+
 <section class="promotion-section">
 
-<div class="container-fluid px-lg-5">
+    <div class="container-fluid px-lg-5">
 
-<div class="row g-3">
+        <div class="row g-3">
 
 
-    <!-- Fashion promotion -->
-    <div class="col-lg-4">
+            <!-- FASHION PROMOTION -->
 
-        <div class="promo-card promo-fashion">
+            <div class="col-lg-4">
 
-            <div class="promo-person">
+                <div class="promo-card promo-fashion">
 
-                <img
-                    src="women shirt.jpg"
-                    alt="Fashion"
-                >
+                    <div class="promo-person">
+
+                        <img
+                            src="women shirt.jpg"
+                            alt="Fashion"
+                        >
+
+                    </div>
+
+
+                    <div class="promo-content">
+
+                        <span>
+                            Fashion
+                        </span>
+
+
+                        <h3>
+                            Up to 50% Off
+                        </h3>
+
+
+                        <p>
+                            Look Good. Feel Good.
+                        </p>
+
+
+                        <a
+                            href="Fashion/Fashion.html"
+                        >
+                            Shop Now
+                            <span>
+                                →
+                            </span>
+                        </a>
+
+                    </div>
+
+                </div>
 
             </div>
 
 
-            <div class="promo-content">
+            <!-- BOOK PROMOTION -->
 
-                <span>
-                    Fashion
-                </span>
+            <div class="col-lg-4">
 
-                <h3>
-                    Up to 50% Off
-                </h3>
+                <div class="promo-card promo-books">
 
-                <p>
-                    Look Good. Feel Good.
-                </p>
+                    <div class="promo-content">
 
-                <a href="Fashion/Fashion.html">
-                    Shop Now
-                    <span>→</span>
-                </a>
+                        <span>
+                            Books &amp; Stationary
+                        </span>
+
+
+                        <h3>
+                            Buy 2 Get 1 Free
+                        </h3>
+
+
+                        <p>
+                            More Books. More Stories.
+                        </p>
+
+
+                        <a
+                            href="Books/Books.html"
+                        >
+                            Shop Now
+
+                            <span>
+                                →
+                            </span>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="promo-books-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=500&q=80"
+                            alt="Books"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PADS PROMOTION -->
+
+            <div class="col-lg-4">
+
+                <div class="promo-card promo-stationery">
+
+                    <div class="promo-content">
+
+                        <span>
+                            Pads
+                        </span>
+
+
+                        <h3>
+                            Flat 30% Off
+                        </h3>
+
+
+                        <p>
+                            Be Productive. Be You.
+                        </p>
+
+
+                        <a
+                            href="Pads/Pads.html"
+                        >
+                            Shop Now
+
+                            <span>
+                                →
+                            </span>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="promo-stationery-image">
+
+                        <img
+                            src="pads.jpg"
+                            alt="Pads"
+                        >
+
+                    </div>
+
+                </div>
 
             </div>
 
         </div>
 
     </div>
-
-
-    <!-- Book promotion -->
-    <div class="col-lg-4">
-
-        <div class="promo-card promo-books">
-
-            <div class="promo-content">
-
-                <span>
-                    Books & Stationary
-                </span>
-
-                <h3>
-                    Buy 2 Get 1 Free
-                </h3>
-
-                <p>
-                    More Books. More Stories.
-                </p>
-
-                <a href="/Books/Books.html">
-                    Shop Now
-                    <span>→</span>
-                </a>
-
-            </div>
-
-
-            <div class="promo-books-image">
-
-                <img
-                    src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=500&q=80"
-                    alt="Books"
-                >
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <!-- Stationery promotion -->
-    <div class="col-lg-4">
-
-        <div class="promo-card promo-stationery">
-
-            <div class="promo-content">
-
-                <span>
-                    Pads
-                </span>
-
-                <h3>
-                    Flat 30% Off
-                </h3>
-
-                <p>
-                    Be Productive. Be You.
-                </p>
-
-                <a href="/Pads/Pads.html">
-                    Shop Now
-                    <span>→</span>
-                </a>
-
-            </div>
-
-
-            <div class="promo-stationery-image">
-
-                <img
-                    src="pads.jpg"
-                    alt="Stationery"
-                >
-
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
-</div>
 
 </section>
 
 
-<!-- FOOTER -->
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
 <footer class="footer">
 
-<div class="container-fluid px-lg-5">
+    <div class="container-fluid px-lg-5">
 
-<div class="footer-main">
-
-
-    <div class="footer-brand">
-
-        <div class="footer-logo">
-            OZZO
-        </div>
-
-        <div class="footer-categories">
-
-            Fashion
-
-            <span>•</span>
-
-            Books
-
-            <span>•</span>
-
-            Stationery
-
-            <span>•</span>
-
-            Pads
-
-        </div>
-
-    </div>
+        <div class="footer-main">
 
 
-    <div class="footer-column">
+            <!-- BRAND -->
 
-        <h4>
-            Quick Links
-        </h4>
+            <div class="footer-brand">
 
-        <a href="index.html">Home</a>
-        <a href="/About Us/About.html">About Us</a>
-        <a href="/Faq/Faq.html">FAQs</a>
-        <a href="/Contact/Contact.html">Contact</a>
-
-    </div>
+                <div class="footer-logo">
+                    OZZO
+                </div>
 
 
-    <div class="footer-column">
+                <div class="footer-categories">
 
-        <h4>
-            Categories
-        </h4>
+                    Fashion
 
-        <a href="Fashion/Fashion.html">Fashion</a>
-        <a href="/Books/Books.html">Books</a>
-        <a href="/Stationary/Stationary.html">Stationery</a>
-        <a href="/Pads/Pads.html">Pads</a>
+                    <span>
+                        •
+                    </span>
 
-    </div>
+                    Books
 
+                    <span>
+                        •
+                    </span>
 
-    <div class="footer-column">
+                    Stationery
 
-        <h4>
-            Customer Service
-        </h4>
+                    <span>
+                        •
+                    </span>
 
-        <!--<a href="#">
-                    Shipping Policy
-                </a>
+                    Pads
 
-                <a href="#">
-                    Return &amp; Refund
-                </a>-->
-        <a href="/Privacy/Privacy.html">Privacy Policy</a>
-        <a href="/Terms/Terms.html">Terms & Conditions</a>
-
-    </div>
-
-
-    <div class="footer-newsletter">
-
-        <h4>
-            Join Our Newsletter
-        </h4>
-
-        <p>
-            Get updates on new arrivals and special offers.
-        </p>
-
-
-        <form id="newsletterForm">
-
-            <div class="newsletter-input">
-
-                <input
-                    type="email"
-                    id="newsletterEmail"
-                    placeholder="Enter your email address"
-                    required
-                >
-
-                <button type="submit">
-                    →
-                </button>
+                </div>
 
             </div>
 
-        </form>
+
+            <!-- QUICK LINKS -->
+
+            <div class="footer-column">
+
+                <h4>
+                    Quick Links
+                </h4>
 
 
-        <div
-            class="newsletter-message"
-            id="newsletterMessage"
-        ></div>
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="Careers/Careers.html">
+                    Careers
+                </a>
+
+                <a href="About Us/About.html">
+                    About Us
+                </a>
 
 
-        <div class="social-icons">
+                <a href="Faq/Faq.html">
+                    FAQs
+                </a>
 
-            <a href="#">
-                <i class="fa-brands fa-facebook-f"></i>
-            </a>
 
-            <a href="#">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
+                <a href="Contact/Contact.html">
+                    Contact
+                </a>
 
-            <a href="#">
-                <i class="fa-brands fa-youtube"></i>
-            </a>
+            </div>
 
-            <a href="#">
-                <i class="fa-brands fa-linkedin-in"></i>
-            </a>
 
-            <a href="#">
-                <i class="fa-brands fa-twitter"></i>
-            </a>
+            <!-- CATEGORIES -->
+
+            <div class="footer-column">
+
+                <h4>
+                    Categories
+                </h4>
+
+
+                <a href="Fashion/Fashion.html">
+                    Fashion
+                </a>
+
+
+                <a href="Books/Books.html">
+                    Books
+                </a>
+
+
+                <a href="Stationary/Stationary.html">
+                    Stationery
+                </a>
+
+
+                <a href="Pads/Pads.html">
+                    Pads
+                </a>
+
+            </div>
+
+
+            <!-- CUSTOMER SERVICE -->
+
+            <div class="footer-column">
+
+                <h4>
+                    Customer Service
+                </h4>
+
+
+                <a href="Privacy/Privacy.html">
+                    Privacy Policy
+                </a>
+
+
+                <a href="Terms/Terms.html">
+                    Terms &amp; Conditions
+                </a>
+
+            </div>
+
+
+            <!-- NEWSLETTER -->
+
+            <div class="footer-newsletter">
+
+                <h4>
+                    Join Our Newsletter
+                </h4>
+
+
+                <p>
+                    Get updates on new arrivals and special offers.
+                </p>
+
+
+                <form id="newsletterForm">
+
+                    <div class="newsletter-input">
+
+                        <input
+                            type="email"
+                            id="newsletterEmail"
+                            placeholder="Enter your email address"
+                            required
+                        >
+
+
+                        <button
+                            type="submit"
+                            title="Subscribe"
+                            aria-label="Subscribe"
+                        >
+                            →
+                        </button>
+
+                    </div>
+
+                </form>
+
+
+                <div
+                    class="newsletter-message"
+                    id="newsletterMessage"
+                ></div>
+
+
+                <div class="social-icons">
+
+
+                    <a
+                        href="#"
+                        title="Facebook"
+                        aria-label="Facebook"
+                    >
+
+                        <i
+                            class="fa-brands fa-facebook-f"
+                            aria-hidden="true"
+                        ></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        title="Instagram"
+                        aria-label="Instagram"
+                    >
+
+                        <i
+                            class="fa-brands fa-instagram"
+                            aria-hidden="true"
+                        ></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        title="YouTube"
+                        aria-label="YouTube"
+                    >
+
+                        <i
+                            class="fa-brands fa-youtube"
+                            aria-hidden="true"
+                        ></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        title="LinkedIn"
+                        aria-label="LinkedIn"
+                    >
+
+                        <i
+                            class="fa-brands fa-linkedin-in"
+                            aria-hidden="true"
+                        ></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        title="Twitter"
+                        aria-label="Twitter"
+                    >
+
+                        <i
+                            class="fa-brands fa-twitter"
+                            aria-hidden="true"
+                        ></i>
+
+                    </a>
+
+                </div>
+
+            </div>
 
         </div>
 
     </div>
 
-</div>
 
-</div>
+    <!-- =====================================================
+         FOOTER BOTTOM
+    ====================================================== -->
+
+    <div class="footer-bottom">
+
+        <div class="container-fluid px-lg-5">
+
+            <div class="footer-bottom-inner">
+
+                <span>
+                    © 2025 OZZO. All rights reserved.
+                </span>
 
 
-<div class="footer-bottom">
+                <span>
+                    Better Choices. A Brighter You.
+                </span>
 
-<div class="container-fluid px-lg-5">
+            </div>
 
-<div class="footer-bottom-inner">
+        </div>
 
-    <span>
-        © 2025 OZZO. All rights reserved.
-    </span>
-
-    <span>
-        Better Choices. A Brighter You.
-    </span>
-
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </footer>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- =========================================================
+     BOOTSTRAP JS
+========================================================= -->
 
-<script src="index.js"></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+></script>
+
+
+<!-- =========================================================
+     INDEX JS
+========================================================= -->
+
+<script
+    src="index.js"
+></script>
+
 
 </body>
+
 </html>

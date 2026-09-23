@@ -18,6 +18,11 @@
     --career-peach:#f0e3dc;
 }
 
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
 *{
     box-sizing:border-box;
     margin:0;
@@ -32,6 +37,8 @@ html{
 }
 
 body{
+    width:100%;
+    min-height:100%;
     font-family:"DM Sans",sans-serif;
     color:var(--text);
     background:#fff;
@@ -41,7 +48,7 @@ body{
 
 img{
     display:block;
-    width:100%;
+    max-width:100%;
 }
 
 a{
@@ -62,6 +69,7 @@ select{
 ========================================================= */
 
 .top-bar{
+    width:100%;
     height:30px;
     background:var(--navy-dark);
     color:#fff;
@@ -69,6 +77,7 @@ select{
 }
 
 .top-bar-inner{
+    width:100%;
     height:30px;
     display:flex;
     align-items:center;
@@ -86,6 +95,10 @@ select{
     font-size:12px;
 }
 
+.shipping-text span{
+    white-space:nowrap;
+}
+
 .top-links{
     display:flex;
     align-items:center;
@@ -94,6 +107,11 @@ select{
 
 .top-links a{
     color:#fff;
+    transition:.2s ease;
+}
+
+.top-links a:hover{
+    opacity:.75;
 }
 
 .login-link{
@@ -108,6 +126,7 @@ select{
 ========================================================= */
 
 .main-header{
+    width:100%;
     height:67px;
     background:#fff;
     border-bottom:1px solid #e9e9e9;
@@ -116,17 +135,31 @@ select{
 }
 
 .navbar{
+    width:100%;
     height:67px;
     padding-top:0;
     padding-bottom:0;
 }
 
+.navbar > .container-fluid{
+    height:100%;
+    align-items:center;
+}
+
 .ozzo-logo{
+    display:inline-flex;
+    align-items:center;
     font-size:38px;
     line-height:1;
     font-weight:700;
     letter-spacing:-2px;
     color:var(--navy);
+    transition:.2s ease;
+}
+
+.ozzo-logo:hover{
+    color:var(--navy);
+    opacity:.85;
 }
 
 .main-nav{
@@ -139,6 +172,7 @@ select{
     font-size:12px;
     font-weight:500;
     padding:25px 11px 23px;
+    transition:color .2s ease;
 }
 
 .main-nav .nav-link:hover,
@@ -156,6 +190,11 @@ select{
     background:var(--navy);
 }
 
+
+/* =========================================================
+   HEADER ACTIONS
+========================================================= */
+
 .header-actions{
     display:flex;
     align-items:center;
@@ -167,19 +206,25 @@ select{
     height:36px;
     background:#f5f6f7;
     border-radius:22px;
+
     display:flex;
     align-items:center;
+
     padding:0 14px;
 }
 
 .search-box input{
     flex:1;
     min-width:0;
+    width:100%;
+
     border:none;
     outline:none;
+
     background:transparent;
-    font-size:10px;
     color:var(--text);
+
+    font-size:10px;
 }
 
 .search-box input::placeholder{
@@ -187,138 +232,347 @@ select{
 }
 
 .search-box i{
+    flex:0 0 auto;
     font-size:13px;
     color:var(--navy);
 }
 
+
+/* =========================================================
+   HEADER ICONS
+========================================================= */
+
 .header-icon{
     width:25px;
     height:35px;
+
     position:relative;
+
     border:none;
     background:transparent;
+
     color:var(--navy);
+
     font-size:18px;
+
     cursor:pointer;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:0;
+    margin:0;
+
+    text-decoration:none;
+
+    transition:.2s ease;
+}
+
+.header-icon:hover{
+    color:#20364d;
+    transform:scale(1.08);
+}
+
+.wishlist-button,
+.cart-button{
+    text-decoration:none;
+    color:var(--navy);
+}
+
+.wishlist-button:hover,
+.cart-button:hover{
+    color:#20364d;
 }
 
 .cart-count{
     position:absolute;
+
     top:0;
     right:-4px;
+
     width:15px;
     height:15px;
+
     background:var(--navy);
     color:#fff;
+
     border-radius:50%;
+
     display:flex;
     align-items:center;
     justify-content:center;
+
     font-size:8px;
+    line-height:1;
+
+    pointer-events:none;
 }
 
 .navbar-toggler{
     border:none;
     box-shadow:none !important;
     color:var(--navy);
+    padding:7px 9px;
+}
+
+.navbar-toggler:focus{
+    box-shadow:none !important;
 }
 
 
 /* =========================================================
    CAREERS HERO
+   FULL WIDTH BACKGROUND
 ========================================================= */
 
 .careers-hero{
     width:100%;
-    background:var(--cream);
+
+    min-height:430px;
+    height:430px;
+
+    position:relative;
     overflow:hidden;
+
+    padding:0;
+
+    background:
+        url("../Careers hero.png")
+        center center
+        / cover
+        no-repeat;
+
+    isolation:isolate;
 }
 
-.careers-hero > .container-fluid{
-    padding-right:0 !important;
+
+/* =========================================================
+   HERO OVERLAY
+========================================================= */
+
+.careers-hero::before{
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    z-index:1;
+
+    pointer-events:none;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(13,29,45,.90) 0%,
+            rgba(13,29,45,.78) 25%,
+            rgba(13,29,45,.51) 50%,
+            rgba(13,29,45,.20) 75%,
+            rgba(13,29,45,.05) 100%
+        );
 }
+
+
+/* =========================================================
+   HERO CONTAINER
+========================================================= */
+
+.careers-hero > .container-fluid{
+    width:100%;
+    height:100%;
+
+    padding-left:0 !important;
+    padding-right:0 !important;
+
+    position:relative;
+
+    z-index:2;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
 
 .careers-hero-content{
     width:100%;
+    height:430px;
     min-height:430px;
-    display:grid;
-    grid-template-columns:42% 58%;
+
+    display:flex;
+    align-items:center;
+
+    position:relative;
+
+    z-index:3;
+
+    overflow:hidden;
 }
 
+
+/* =========================================================
+   HERO COPY
+========================================================= */
+
 .careers-hero-copy{
+    width:55%;
+    max-width:650px;
+
+    min-height:430px;
+
+    padding:42px 30px 40px 8%;
+
     display:flex;
     flex-direction:column;
+
     justify-content:center;
-    padding:55px 40px 55px 8%;
+    align-items:flex-start;
+
+    position:relative;
+
+    z-index:5;
+
 }
 
 .hero-label{
     margin-bottom:10px;
-    color:var(--navy);
+
+    color:#fff;
+
     font-size:10px;
+    line-height:1.2;
+
     font-weight:700;
+
     letter-spacing:1.6px;
+
+    text-transform:uppercase;
 }
 
 .careers-hero-copy h1{
-    margin-bottom:15px;
-    color:var(--navy);
+    margin:0 0 15px;
+
+    color:#fff;
+
     font-size:42px;
+
     line-height:1.08;
+
     font-weight:700;
+
     letter-spacing:-1.5px;
 }
 
 .careers-hero-copy h1 span{
     font-style:italic;
+    font-weight:600;
 }
 
 .careers-hero-copy p{
-    max-width:410px;
-    margin-bottom:23px;
-    color:#607083;
+    max-width:430px;
+
+    margin:0 0 23px;
+
+    color:rgba(255,255,255,.88);
+
     font-size:11px;
+
     line-height:1.75;
 }
+
+
+/* =========================================================
+   HERO BUTTON
+   SAME PULSE ANIMATION AS FASHION
+========================================================= */
 
 .hero-btn{
     width:145px;
     height:40px;
+
     display:flex;
     align-items:center;
     justify-content:center;
+
     gap:10px;
+
+    border:none;
     border-radius:24px;
-    background:var(--navy);
-    color:#fff;
+
+    background:#fff;
+    color:var(--navy);
+
     font-size:10px;
     font-weight:600;
+
+    text-decoration:none;
+
     transition:.25s ease;
+
+    animation:btnPulse 2s ease-in-out infinite;
 }
 
+
+/* =========================================================
+   HERO BUTTON HOVER
+========================================================= */
+
 .hero-btn:hover{
-    color:#fff;
-    background:#20364d;
-    transform:translateY(-2px);
+    background:#fff;
+    color:var(--navy);
+
+    transform:scale(1.08);
+
+    animation-play-state:paused;
 }
 
 .hero-btn span{
     font-size:15px;
+    line-height:1;
 }
+
+
+/* =========================================================
+   BUTTON PULSE
+========================================================= */
+
+@keyframes btnPulse{
+
+    0%,
+    100%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.08);
+    }
+}
+
+
+/* =========================================================
+   HERO COPY ENTRANCE
+========================================================= */
+
+@keyframes careerHeroCopyIn{
+
+    0%{
+        opacity:0;
+        transform:translateX(-30px);
+    }
+
+    100%{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+
+/* =========================================================
+   HIDE OLD HERO IMAGE
+========================================================= */
 
 .careers-hero-image{
-    width:100%;
-    min-width:0;
-    min-height:430px;
-    overflow:hidden;
-}
-
-.careers-hero-image img{
-    width:100%;
-    height:100%;
-    display:block;
-    object-fit:cover;
-    object-position:center;
+    display:none !important;
 }
 
 
@@ -327,35 +581,54 @@ select{
 ========================================================= */
 
 .careers-intro{
+    width:100%;
+
     padding:42px 0 34px;
+
+    background:#fff;
 }
 
 .intro-content{
     display:grid;
+
     grid-template-columns:1fr 1fr;
+
     gap:60px;
+
     align-items:end;
 }
 
 .intro-content > div > span{
     color:#7c8996;
+
     font-size:9px;
+
     font-weight:600;
+
     letter-spacing:1.2px;
 }
 
 .intro-content h2{
     margin-top:5px;
+
     color:var(--navy);
+
     font-size:28px;
+
+    line-height:1.15;
+
     font-weight:700;
 }
 
 .intro-content > p{
     max-width:520px;
+
     margin:0;
+
     color:#6e7d8b;
+
     font-size:10px;
+
     line-height:1.8;
 }
 
@@ -370,21 +643,31 @@ select{
 
 .section-heading > span{
     color:#7c8996;
+
     font-size:9px;
+
     letter-spacing:1.2px;
+
     font-weight:600;
 }
 
 .section-heading h2{
     margin-top:4px;
+
     color:var(--navy);
+
     font-size:25px;
+
+    line-height:1.15;
+
     font-weight:700;
 }
 
 .section-heading p{
     margin-top:6px;
+
     color:#71808e;
+
     font-size:10px;
 }
 
@@ -394,34 +677,52 @@ select{
 ========================================================= */
 
 .career-benefits{
+    width:100%;
+
     padding:15px 0 35px;
+
+    background:#fff;
 }
 
 .benefit-card{
     min-height:165px;
+
     padding:20px;
+
     border:1px solid var(--border);
+
     border-radius:7px;
+
     background:#e8e0ef;
+
     transition:.25s ease;
 }
 
 .benefit-card:hover{
     transform:translateY(-4px);
+
     border-color:#ccd6de;
-    box-shadow:0 12px 28px rgba(19,36,56,.08);
+
+    box-shadow:
+        0 12px 28px rgba(19,36,56,.08);
 }
 
 .benefit-icon{
     width:38px;
     height:38px;
+
     margin-bottom:14px;
+
     display:flex;
     align-items:center;
     justify-content:center;
+
     border-radius:50%;
+
     background:var(--career-blue);
+
     color:var(--navy);
+
     font-size:14px;
 }
 
@@ -439,15 +740,23 @@ select{
 
 .benefit-card h3{
     margin-bottom:6px;
+
     color:var(--navy);
+
     font-size:15px;
+
+    line-height:1.25;
+
     font-weight:700;
 }
 
 .benefit-card p{
     margin:0;
+
     color:#748290;
+
     font-size:9px;
+
     line-height:1.6;
 }
 
@@ -457,79 +766,126 @@ select{
 ========================================================= */
 
 .open-roles{
+    width:100%;
+
     padding:20px 0 45px;
+
+    background:#fff;
 }
 
 .jobs-list{
     display:flex;
+
     flex-direction:column;
+
     gap:10px;
 }
 
 .job-card{
     min-height:125px;
+
     padding:23px 25px;
+
     display:flex;
+
     align-items:center;
+
     justify-content:space-between;
+
     gap:30px;
+
     border:1px solid var(--border);
+
     border-radius:7px;
+
     background:#eeeae4;
+
     transition:.25s ease;
 }
 
 .job-card:hover{
     border-color:#ccd5dd;
-    box-shadow:0 10px 24px rgba(19,36,56,.06);
+
+    box-shadow:
+        0 10px 24px rgba(19,36,56,.06);
+
     transform:translateY(-2px);
+}
+
+.job-main{
+    min-width:0;
 }
 
 .job-type{
     color:#8995a0;
+
     font-size:7px;
+
     letter-spacing:1px;
+
     font-weight:600;
 }
 
 .job-main h3{
     margin:5px 0 6px;
+
     color:var(--navy);
+
     font-size:17px;
+
+    line-height:1.25;
+
     font-weight:700;
 }
 
 .job-main p{
     max-width:650px;
+
     margin:0;
+
     color:#6f7d8b;
+
     font-size:9px;
+
     line-height:1.6;
 }
 
 .job-btn{
     width:82px;
     height:31px;
+
     flex:0 0 auto;
+
     display:flex;
+
     align-items:center;
     justify-content:center;
+
     gap:8px;
+
     border-radius:17px;
+
     background:var(--navy);
+
     color:#fff;
+
     font-size:8px;
+
     font-weight:600;
+
     transition:.25s ease;
 }
 
 .job-btn:hover{
     color:#fff;
+
     background:#20364d;
 }
 
 .job-btn span{
     font-size:13px;
+
+    line-height:1;
 }
 
 
@@ -538,70 +894,106 @@ select{
 ========================================================= */
 
 .career-culture{
+    width:100%;
+
     padding:5px 0 42px;
+
+    background:#fff;
 }
 
 .culture-box{
     min-height:205px;
+
     padding:36px 45px;
+
     display:grid;
+
     grid-template-columns:1.4fr 1fr;
+
     gap:45px;
+
     align-items:center;
+
     border-radius:7px;
+
     background:var(--navy);
+
     color:#fff;
 }
 
 .culture-copy > span{
     color:#cbd5de;
+
     font-size:8px;
+
     letter-spacing:1.1px;
+
     font-weight:600;
 }
 
 .culture-copy h2{
     margin:7px 0 10px;
+
     font-size:29px;
+
     line-height:1.1;
+
     font-weight:700;
 }
 
 .culture-copy h2 em{
     font-weight:500;
+
     font-style:italic;
 }
 
 .culture-copy p{
     max-width:460px;
+
     margin:0;
+
     color:#d1d9e0;
+
     font-size:9px;
+
     line-height:1.7;
 }
 
 .culture-points{
     display:grid;
+
     grid-template-columns:1fr 1fr;
+
     gap:14px 20px;
 }
 
 .culture-points div{
     display:flex;
+
     align-items:center;
+
     gap:10px;
+
     color:#edf1f4;
+
     font-size:9px;
 }
 
 .culture-points i{
     width:21px;
     height:21px;
+
+    flex:0 0 auto;
+
     border-radius:50%;
+
     background:rgba(255,255,255,.12);
+
     display:flex;
+
     align-items:center;
     justify-content:center;
+
     font-size:8px;
 }
 
@@ -611,56 +1003,80 @@ select{
 ========================================================= */
 
 .application-section{
+    width:100%;
+
     padding:0 0 45px;
+
+    background:#fff;
 }
 
 .application-layout{
     display:grid;
+
     grid-template-columns:40% 60%;
+
     border-radius:7px;
+
     overflow:hidden;
 }
 
 .application-intro{
     padding:45px;
+
     background:var(--cream);
 }
 
 .application-intro > span{
     color:#778491;
+
     font-size:8px;
+
     letter-spacing:1.2px;
+
     font-weight:600;
 }
 
 .application-intro h2{
     margin:8px 0 12px;
+
     color:var(--navy);
+
     font-size:30px;
+
     line-height:1.1;
+
     font-weight:700;
 }
 
 .application-intro h2 em{
     font-style:italic;
+
     font-weight:500;
 }
 
 .application-intro p{
     max-width:330px;
+
+    margin:0;
+
     color:#687786;
+
     font-size:10px;
+
     line-height:1.7;
 }
 
 .application-form-card{
     padding:38px 42px;
+
     background:#f7f8fa;
 }
 
 .form-row{
     display:grid;
+
     grid-template-columns:1fr 1fr;
+
     gap:16px;
 }
 
@@ -670,9 +1086,13 @@ select{
 
 .form-field label{
     display:block;
+
     margin-bottom:6px;
+
     color:var(--navy);
+
     font-size:9px;
+
     font-weight:600;
 }
 
@@ -680,24 +1100,34 @@ select{
 .form-field select,
 .form-field textarea{
     width:100%;
+
     border:1px solid #dce2e7;
+
     border-radius:5px;
+
     outline:none;
+
     background:#fff;
+
     color:var(--text);
+
     font-size:10px;
+
     transition:.2s ease;
 }
 
 .form-field input,
 .form-field select{
     height:40px;
+
     padding:0 13px;
 }
 
 .form-field textarea{
     min-height:120px;
+
     padding:12px 13px;
+
     resize:vertical;
 }
 
@@ -710,28 +1140,42 @@ select{
 .form-field select:focus,
 .form-field textarea:focus{
     border-color:#8594a2;
-    box-shadow:0 0 0 3px rgba(19,36,56,.05);
+
+    box-shadow:
+        0 0 0 3px rgba(19,36,56,.05);
 }
 
 .submit-btn{
     width:160px;
     height:40px;
+
     border:none;
+
     border-radius:21px;
+
     display:flex;
+
     align-items:center;
     justify-content:center;
+
     gap:9px;
+
     background:var(--navy);
+
     color:#fff;
+
     font-size:9px;
+
     font-weight:600;
+
     cursor:pointer;
+
     transition:.25s ease;
 }
 
 .submit-btn:hover{
     background:#20364d;
+
     transform:translateY(-2px);
 }
 
@@ -741,8 +1185,11 @@ select{
 
 .form-message{
     min-height:15px;
+
     margin-top:8px;
+
     color:#39714f;
+
     font-size:8px;
 }
 
@@ -752,34 +1199,55 @@ select{
 ========================================================= */
 
 .footer{
+    width:100%;
+
     background:var(--navy-dark);
+
     color:#fff;
 }
 
 .footer-main{
     min-height:180px;
+
     display:grid;
+
     grid-template-columns:
         1.35fr
         .8fr
         .8fr
         1.1fr
         1.55fr;
+
     gap:34px;
+
     padding:35px 0 30px;
+}
+
+.footer-brand{
+    min-width:0;
 }
 
 .footer-logo{
     margin-bottom:5px;
+
     font-size:27px;
+
+    line-height:1;
+
     font-weight:700;
+
     letter-spacing:-1px;
 }
 
 .footer-categories{
     display:flex;
+
+    align-items:center;
+
     gap:7px;
+
     color:#d7dee6;
+
     font-size:12px;
 }
 
@@ -789,20 +1257,28 @@ select{
 
 .footer-column{
     display:flex;
+
     flex-direction:column;
 }
 
 .footer-column h4,
 .footer-newsletter h4{
     margin-bottom:14px;
+
     font-size:16px;
+
+    line-height:1.2;
+
     font-weight:700;
 }
 
 .footer-column a{
     margin-bottom:8px;
+
     color:#ccd4dc;
+
     font-size:12px;
+
     transition:color .2s ease;
 }
 
@@ -810,38 +1286,62 @@ select{
     color:#fff;
 }
 
+.footer-newsletter{
+    min-width:0;
+}
+
 .footer-newsletter p{
-    margin-bottom:6px;
+    margin:0 0 6px;
+
     color:#c4ccd5;
+
     font-size:8px;
+
+    line-height:1.5;
 }
 
 .newsletter-input{
     width:100%;
     height:48px;
+
     display:flex;
+
     overflow:hidden;
+
     border:1px solid #8593a0;
+
     border-radius:6px;
 }
 
 .newsletter-input input{
     flex:1;
+
     min-width:0;
+
     padding:0 16px;
+
     border:none;
+
     outline:none;
+
     background:#fff;
+
     color:var(--text);
+
     font-size:12px;
 }
 
 .newsletter-input button{
     width:65px;
+
     border:none;
+
     background:transparent;
+
     color:#fff;
+
     font-size:26px;
+
     cursor:pointer;
 }
 
@@ -851,38 +1351,53 @@ select{
 
 .newsletter-message{
     min-height:9px;
+
     margin-top:4px;
+
     color:#b7ebc3;
+
     font-size:7px;
 }
 
 .social-icons{
     display:flex;
+
     gap:16px;
+
     margin-top:8px;
 }
 
 .social-icons a{
     color:#fff;
+
     font-size:10px;
+
     transition:.2s ease;
 }
 
 .social-icons a:hover{
     opacity:.75;
+
     transform:translateY(-2px);
 }
 
 .footer-bottom{
+    width:100%;
+
     border-top:1px solid rgba(255,255,255,.14);
 }
 
 .footer-bottom-inner{
-    height:50px;
+    min-height:50px;
+
     display:flex;
+
     align-items:center;
+
     justify-content:space-between;
+
     color:#bdc7d1;
+
     font-size:12px;
 }
 
@@ -912,26 +1427,40 @@ select{
         padding-right:24px !important;
     }
 
-    .careers-hero > .container-fluid{
-        padding-right:0 !important;
+
+    /* HERO */
+
+    .careers-hero{
+        min-height:410px;
+        height:410px;
+
+        background-position:center center;
     }
 
     .careers-hero-content{
-        grid-template-columns:44% 56%;
-        min-height:400px;
+        height:410px;
+        min-height:410px;
     }
 
     .careers-hero-copy{
+        width:58%;
+
+        min-height:410px;
+
         padding-left:7%;
+        padding-right:25px;
     }
 
     .careers-hero-copy h1{
-        font-size:36px;
+        font-size:38px;
     }
 
-    .careers-hero-image{
-        min-height:400px;
+    .careers-hero-copy p{
+        max-width:390px;
     }
+
+
+    /* APPLICATION */
 
     .application-intro{
         padding:35px;
@@ -941,13 +1470,21 @@ select{
         padding:32px;
     }
 
+
+    /* CULTURE */
+
     .culture-box{
         padding:32px;
+
         gap:30px;
     }
 
+
+    /* FOOTER */
+
     .footer-main{
         grid-template-columns:1fr 1fr;
+
         gap:26px;
     }
 }
@@ -959,15 +1496,21 @@ select{
 
 @media (max-width:991px){
 
+    /* TOP BAR */
+
     .top-links{
         display:none;
     }
 
     .top-bar-inner{
         justify-content:center;
+
         padding-left:16px !important;
         padding-right:16px !important;
     }
+
+
+    /* HEADER */
 
     .main-header{
         height:auto;
@@ -975,10 +1518,13 @@ select{
 
     .navbar{
         min-height:67px;
+
         height:auto;
     }
 
     .navbar > .container-fluid{
+        height:auto;
+
         align-items:center;
     }
 
@@ -992,7 +1538,9 @@ select{
 
     .main-nav{
         width:100%;
+
         margin:8px 0 4px;
+
         gap:0;
     }
 
@@ -1002,55 +1550,99 @@ select{
 
     .main-nav .nav-link{
         width:100%;
+
         padding:10px 8px;
+
         text-align:left;
     }
 
     .main-nav .nav-link.active::after{
         left:8px;
         right:auto;
+
         width:45px;
+
         bottom:4px;
     }
 
     .header-actions{
         width:100%;
+
         padding:8px 0 15px;
+
         gap:14px;
+
         flex-wrap:wrap;
     }
 
     .search-box{
         width:100%;
+
         order:3;
     }
 
-    .careers-hero > .container-fluid{
-        padding-right:0 !important;
+
+    /* HERO */
+
+    .careers-hero{
+        min-height:390px;
+        height:390px;
+
+        background-position:center center;
     }
 
     .careers-hero-content{
-        min-height:0;
-        grid-template-columns:1fr;
+        height:390px;
+        min-height:390px;
+
+        display:flex;
+
+        align-items:center;
     }
 
     .careers-hero-copy{
-        min-height:260px;
-        padding:38px 8%;
+        width:67%;
+
+        min-height:auto;
+
+        padding:0 0 0 8%;
     }
 
-    .careers-hero-image{
-        height:min(56vw,390px);
-        min-height:0;
+    .careers-hero-copy h1{
+        font-size:36px;
     }
+
+    .careers-hero-copy p{
+        max-width:420px;
+
+        font-size:10px;
+
+        line-height:1.7;
+    }
+
+    .careers-hero::before{
+        background:
+            linear-gradient(
+                90deg,
+                rgba(13,29,45,.91) 0%,
+                rgba(13,29,45,.76) 34%,
+                rgba(13,29,45,.45) 63%,
+                rgba(13,29,45,.13) 100%
+            );
+    }
+
+
+    /* OTHER SECTIONS */
 
     .intro-content{
         grid-template-columns:1fr;
+
         gap:15px;
     }
 
     .culture-box{
         grid-template-columns:1fr;
+
         gap:25px;
     }
 
@@ -1074,23 +1666,30 @@ select{
 
 @media (max-width:767px){
 
+    /* TOP BAR */
+
     .top-bar{
         height:28px;
     }
 
     .top-bar-inner{
         height:28px;
+
         font-size:9px;
     }
 
     .shipping-text{
         gap:6px;
+
         text-align:center;
     }
 
     .shipping-text span{
         font-size:8px;
     }
+
+
+    /* HEADER */
 
     .navbar{
         padding-top:4px;
@@ -1114,25 +1713,73 @@ select{
         height:38px;
     }
 
+
+    /* HERO */
+
+    .careers-hero{
+        min-height:390px;
+        height:390px;
+
+        background-position:center center;
+    }
+
+    .careers-hero-content{
+        height:390px;
+        min-height:390px;
+    }
+
     .careers-hero-copy{
-        min-height:0;
-        padding:34px 24px;
+        width:74%;
+
+        padding:0 0 0 25px;
+    }
+
+    .hero-label{
+        font-size:9px;
+
+        letter-spacing:1.4px;
+
+        margin-bottom:9px;
     }
 
     .careers-hero-copy h1{
-        font-size:clamp(29px,8vw,35px);
+        font-size:34px;
+
+        line-height:1.06;
+
+        letter-spacing:-1.3px;
     }
 
     .careers-hero-copy p{
         max-width:100%;
+
+        margin-bottom:20px;
+
         font-size:10px;
+
         line-height:1.65;
     }
 
-    .careers-hero-image{
-        height:58vw;
-        max-height:330px;
+    .hero-btn{
+        width:142px;
+        height:39px;
+
+        font-size:9px;
     }
+
+    .careers-hero::before{
+        background:
+            linear-gradient(
+                90deg,
+                rgba(13,29,45,.93) 0%,
+                rgba(13,29,45,.79) 38%,
+                rgba(13,29,45,.47) 70%,
+                rgba(13,29,45,.15) 100%
+            );
+    }
+
+
+    /* INTRO */
 
     .careers-intro{
         padding:30px 0;
@@ -1146,18 +1793,24 @@ select{
         font-size:9px;
     }
 
+
+    /* BENEFITS */
+
     .career-benefits{
         padding-bottom:30px;
     }
 
     .benefit-card{
         min-height:145px;
+
         padding:15px;
     }
 
     .benefit-icon{
         width:34px;
         height:34px;
+
+        margin-bottom:12px;
     }
 
     .benefit-card h3{
@@ -1168,13 +1821,18 @@ select{
         font-size:8px;
     }
 
+
+    /* OPEN ROLES */
+
     .open-roles{
         padding-bottom:35px;
     }
 
     .job-card{
         padding:18px;
+
         align-items:flex-start;
+
         gap:15px;
     }
 
@@ -1189,8 +1847,12 @@ select{
     .job-btn{
         width:70px;
         height:29px;
+
         margin-top:5px;
     }
+
+
+    /* CULTURE */
 
     .culture-box{
         padding:28px 24px;
@@ -1208,6 +1870,9 @@ select{
         font-size:8px;
     }
 
+
+    /* APPLICATION */
+
     .application-intro{
         padding:30px 24px;
     }
@@ -1222,11 +1887,16 @@ select{
 
     .form-row{
         grid-template-columns:1fr;
+
         gap:0;
     }
 
+
+    /* FOOTER */
+
     .footer-main{
         grid-template-columns:1fr 1fr;
+
         gap:24px;
     }
 
@@ -1248,35 +1918,85 @@ select{
         padding-right:15px !important;
     }
 
-    .careers-hero > .container-fluid{
-        padding-right:0 !important;
-    }
-
     .ozzo-logo{
         font-size:29px;
     }
 
+
+    /* HERO */
+
+    .careers-hero{
+        min-height:360px;
+        height:360px;
+
+        background-position:center center;
+    }
+
+    .careers-hero-content{
+        height:360px;
+        min-height:360px;
+    }
+
     .careers-hero-copy{
-        padding:30px 18px;
+        width:78%;
+
+        padding-left:18px;
+    }
+
+    .hero-label{
+        font-size:8px;
+
+        letter-spacing:1.2px;
+
+        margin-bottom:8px;
     }
 
     .careers-hero-copy h1{
-        font-size:27px;
+        font-size:29px;
     }
 
-    .careers-hero-image{
-        height:57vw;
-        min-height:190px;
+    .careers-hero-copy p{
+        font-size:9px;
+
+        line-height:1.65;
     }
+
+    .hero-btn{
+        width:138px;
+        height:38px;
+
+        font-size:9px;
+    }
+
+    .careers-hero::before{
+        background:
+            linear-gradient(
+                90deg,
+                rgba(13,29,45,.94) 0%,
+                rgba(13,29,45,.82) 42%,
+                rgba(13,29,45,.51) 72%,
+                rgba(13,29,45,.16) 100%
+            );
+    }
+
+
+    /* INTRO */
 
     .intro-content h2{
         font-size:22px;
     }
 
+
+    /* BENEFITS */
+
     .benefit-card{
         min-height:132px;
+
         padding:13px;
     }
+
+
+    /* JOBS */
 
     .job-card{
         flex-direction:column;
@@ -1285,6 +2005,9 @@ select{
     .job-btn{
         margin-top:0;
     }
+
+
+    /* CULTURE */
 
     .culture-box{
         padding:25px 18px;
@@ -1298,6 +2021,9 @@ select{
         grid-template-columns:1fr;
     }
 
+
+    /* APPLICATION */
+
     .application-intro{
         padding:26px 18px;
     }
@@ -1305,6 +2031,9 @@ select{
     .application-form-card{
         padding:24px 18px;
     }
+
+
+    /* FOOTER */
 
     .footer-main{
         grid-template-columns:1fr;
@@ -1316,10 +2045,15 @@ select{
 
     .footer-bottom-inner{
         height:auto;
+
         min-height:50px;
+
         padding:10px 0;
+
         flex-direction:column;
+
         gap:5px;
+
         text-align:center;
     }
 }
@@ -1331,13 +2065,37 @@ select{
 
 @media (max-width:380px){
 
-    .careers-hero-copy h1{
-        font-size:25px;
+    .ozzo-logo{
+        font-size:27px;
     }
 
-    .careers-hero-image{
-        height:56vw;
-        min-height:175px;
+    .careers-hero{
+        min-height:340px;
+        height:340px;
+    }
+
+    .careers-hero-content{
+        height:340px;
+        min-height:340px;
+    }
+
+    .careers-hero-copy{
+        width:81%;
+
+        padding-left:16px;
+    }
+
+    .careers-hero-copy h1{
+        font-size:26px;
+    }
+
+    .careers-hero-copy p{
+        font-size:8.5px;
+    }
+
+    .hero-btn{
+        width:132px;
+        height:37px;
     }
 
     .benefit-card{
@@ -1350,5 +2108,38 @@ select{
 
     .culture-copy h2{
         font-size:22px;
+    }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible{
+    outline:2px solid #6d8194;
+    outline-offset:3px;
+}
+
+
+/* =========================================================
+   REDUCE MOTION
+========================================================= */
+
+@media (prefers-reduced-motion:reduce){
+
+    html{
+        scroll-behavior:auto;
+    }
+
+    *,
+    *::before,
+    *::after{
+        animation:none !important;
+        transition:none !important;
     }
 }

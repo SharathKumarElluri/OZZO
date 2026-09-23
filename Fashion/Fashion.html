@@ -4,48 +4,34 @@
 <head>
 
     <meta charset="UTF-8">
+
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0"
     >
 
     <title>OZZO | Fashion</title>
-
-
-    <!-- =========================================================
-         BOOTSTRAP
-    ========================================================== -->
-
+    
+  <link rel="icon" type="image/png" href="/OZZO logo.jpg">
+    <!-- BOOTSTRAP -->
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         rel="stylesheet"
     >
 
-
-    <!-- =========================================================
-         FONT AWESOME
-    ========================================================== -->
-
+    <!-- FONT AWESOME -->
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     >
 
-
-    <!-- =========================================================
-         GOOGLE FONT
-    ========================================================== -->
-
+    <!-- GOOGLE FONTS -->
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
         rel="stylesheet"
     >
 
-
-    <!-- =========================================================
-         FASHION CSS
-    ========================================================== -->
-
+    <!-- FASHION CSS -->
     <link
         rel="stylesheet"
         href="Fashion.css"
@@ -59,7 +45,7 @@
 
 <!-- =========================================================
      TOP BAR
-========================================================== -->
+========================================================= -->
 
 <div class="top-bar">
 
@@ -93,12 +79,9 @@
 
             <span>|</span>
 
-
             <a
                 href="#"
                 class="login-link"
-                title="Login"
-                aria-label="Login"
             >
 
                 <i
@@ -117,19 +100,15 @@
 </div>
 
 
-
 <!-- =========================================================
      HEADER
-========================================================== -->
+========================================================= -->
 
 <header class="main-header">
 
     <nav class="navbar navbar-expand-xl">
 
         <div class="container-fluid px-4">
-
-
-            <!-- LOGO -->
 
             <a
                 class="navbar-brand ozzo-logo"
@@ -139,8 +118,6 @@
             </a>
 
 
-            <!-- MOBILE MENU -->
-
             <button
                 class="navbar-toggler"
                 type="button"
@@ -149,7 +126,6 @@
                 aria-controls="ozzoNavbar"
                 aria-expanded="false"
                 aria-label="Toggle navigation"
-                title="Toggle navigation"
             >
 
                 <i
@@ -160,9 +136,6 @@
             </button>
 
 
-
-            <!-- NAVIGATION -->
-
             <div
                 class="collapse navbar-collapse"
                 id="ozzoNavbar"
@@ -170,76 +143,59 @@
 
                 <ul class="navbar-nav main-nav mx-auto">
 
-
                     <li class="nav-item">
-
                         <a
                             class="nav-link"
                             href="../index.html"
                         >
                             Home
                         </a>
-
                     </li>
 
 
                     <li class="nav-item">
-
                         <a
                             class="nav-link active"
                             href="Fashion.html"
                         >
                             Fashion
                         </a>
-
                     </li>
 
 
                     <li class="nav-item">
-
                         <a
                             class="nav-link"
                             href="../Books/Books.html"
                         >
                             Books
                         </a>
-
                     </li>
 
 
                     <li class="nav-item">
-
                         <a
                             class="nav-link"
                             href="../Stationary/Stationary.html"
                         >
                             Stationery
                         </a>
-
                     </li>
 
 
                     <li class="nav-item">
-
                         <a
                             class="nav-link"
                             href="../Pads/Pads.html"
                         >
                             Pads
                         </a>
-
                     </li>
 
                 </ul>
 
 
-
-                <!-- HEADER ACTIONS -->
-
                 <div class="header-actions">
-
-
-                    <!-- SEARCH -->
 
                     <div class="search-box">
 
@@ -258,48 +214,33 @@
                     </div>
 
 
-
-                    <!-- WISHLIST -->
-
-                    <button
-                        class="header-icon"
-                        type="button"
-                        title="Wishlist"
-                        aria-label="Wishlist"
-                    >
-
-                        <i
-                            class="fa-regular fa-heart"
-                            aria-hidden="true"
-                        ></i>
-
-                    </button>
+                   <a class="header-icon wishlist-button"
+   href="../Wishlist/Wishlist.html"
+   title="Wishlist"
+   aria-label="Wishlist">
+    <i class="fa-regular fa-heart"></i>
+</a>
 
 
 
-                    <!-- CART -->
+                                      <a
+    href="../Cart/Cart.html"
+    class="header-icon cart-button"
+    title="Shopping Cart"
+    aria-label="Shopping Cart"
+>
+    <i
+        class="fa-solid fa-bag-shopping"
+        aria-hidden="true"
+    ></i>
 
-                    <button
-                        class="header-icon cart-button"
-                        id="headerCartButton"
-                        type="button"
-                        title="Shopping Cart"
-                        aria-label="Shopping Cart"
-                    >
-
-                        <i
-                            class="fa-solid fa-bag-shopping"
-                            aria-hidden="true"
-                        ></i>
-
-                        <span
-                            class="cart-count"
-                            id="cartCount"
-                        >
-                            0
-                        </span>
-
-                    </button>
+    <span
+        class="cart-count"
+        id="cartCount"
+    >
+        0
+    </span>
+</a>
 
                 </div>
 
@@ -312,19 +253,15 @@
 </header>
 
 
-
 <!-- =========================================================
      HERO
-========================================================== -->
+========================================================= -->
 
 <section class="fashion-hero">
 
-    <div class="container-fluid px-4">
+    <div class="container-fluid p-0">
 
         <div class="fashion-hero-content">
-
-
-            <!-- HERO TEXT -->
 
             <div class="fashion-hero-copy">
 
@@ -334,44 +271,29 @@
 
 
                 <h1>
-
                     Style That<br>
-
-                    Speaks
-                    <span>
-                        For You
-                    </span>
-
+                    Speaks <span>For You</span>
                 </h1>
 
 
                 <p>
-
                     Discover curated fashion essentials,
                     everyday styles and statement pieces
                     designed for modern living.
-
                 </p>
 
 
                 <a
                     href="#fashionProducts"
                     class="shop-btn"
+                    id="heroShopButton"
                 >
-
                     Shop Collection
-
-                    <span>
-                        →
-                    </span>
-
+                    <span>→</span>
                 </a>
 
             </div>
 
-
-
-            <!-- HERO IMAGE -->
 
             <div class="fashion-hero-image">
 
@@ -406,15 +328,13 @@
 </section>
 
 
-
 <!-- =========================================================
      CATEGORIES
-========================================================== -->
+========================================================= -->
 
 <section class="fashion-categories">
 
     <div class="container-fluid px-4">
-
 
         <div class="section-title">
 
@@ -433,131 +353,78 @@
         </div>
 
 
-
         <div class="row g-3">
 
-
-            <!-- WOMEN -->
-
-            <div class="col-6 col-md-3">
+            <div class="col-12 col-sm-6 col-lg-3">
 
                 <a
                     href="#fashionProducts"
-                    class="fashion-category category-women"
+                    class="fashion-category"
                     data-filter="women"
                 >
 
-                    <div>
-
-                        <span>
-                            01
-                        </span>
-
-                        <h3>
-                            Women
-                        </h3>
-
-                        <p>
-                            Explore collection →
-                        </p>
-
-                    </div>
+                    <img
+                        src="../womens main img.png"
+                        alt="Women's Wear"
+                        class="category-photo"
+                    >
 
                 </a>
 
             </div>
 
 
-
-            <!-- MEN -->
-
-            <div class="col-6 col-md-3">
+            <div class="col-12 col-sm-6 col-lg-3">
 
                 <a
                     href="#fashionProducts"
-                    class="fashion-category category-men"
+                    class="fashion-category"
                     data-filter="men"
                 >
 
-                    <div>
-
-                        <span>
-                            02
-                        </span>
-
-                        <h3>
-                            Men
-                        </h3>
-
-                        <p>
-                            Explore collection →
-                        </p>
-
-                    </div>
+                    <img
+                        src="../mens main img.png"
+                        alt="Men's Wear"
+                        class="category-photo"
+                    >
 
                 </a>
 
             </div>
 
 
-
-            <!-- KIDS -->
-
-            <div class="col-6 col-md-3">
+            <div class="col-12 col-sm-6 col-lg-3">
 
                 <a
                     href="#fashionProducts"
-                    class="fashion-category category-kids"
+                    class="fashion-category"
+                    data-filter="innerwear"
+                >
+
+                    <img
+                        src="../Inner main img.png"
+                        alt="Inner Wears"
+                        class="category-photo"
+                    >
+
+                </a>
+
+            </div>
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+
+                <a
+                    href="#fashionProducts"
+                    class="fashion-category"
                     data-filter="kids"
                 >
 
-                    <div>
-
-                        <span>
-                            03
-                        </span>
-
-                        <h3>
-                            Kids
-                        </h3>
-
-                        <p>
-                            Explore collection →
-                        </p>
-
-                    </div>
-
-                </a>
-
-            </div>
-
-
-
-            <!-- SAREES -->
-
-            <div class="col-6 col-md-3">
-
-                <a
-                    href="#fashionProducts"
-                    class="fashion-category category-sarees"
-                    data-filter="sarees"
-                >
-
-                    <div>
-
-                        <span>
-                            04
-                        </span>
-
-                        <h3>
-                            Sarees
-                        </h3>
-
-                        <p>
-                            Explore collection →
-                        </p>
-
-                    </div>
+                    <img
+                        src="../kids main img.png"
+                        alt="Kids Wear"
+                        class="category-photo"
+                    >
 
                 </a>
 
@@ -570,10 +437,9 @@
 </section>
 
 
-
 <!-- =========================================================
      PRODUCTS
-========================================================== -->
+========================================================= -->
 
 <section
     class="fashion-products"
@@ -582,11 +448,7 @@
 
     <div class="container-fluid px-4">
 
-
-        <!-- PRODUCT HEADER -->
-
         <div class="products-heading">
-
 
             <div>
 
@@ -601,11 +463,7 @@
             </div>
 
 
-
-            <!-- FILTER BUTTONS -->
-
             <div class="product-filters">
-
 
                 <button
                     class="filter-btn active"
@@ -621,7 +479,7 @@
                     data-filter="women"
                     type="button"
                 >
-                    Women
+                    Women's Wear
                 </button>
 
 
@@ -630,7 +488,16 @@
                     data-filter="men"
                     type="button"
                 >
-                    Men
+                    Men's Wear
+                </button>
+
+
+                <button
+                    class="filter-btn"
+                    data-filter="innerwear"
+                    type="button"
+                >
+                    Inner Wears
                 </button>
 
 
@@ -639,16 +506,7 @@
                     data-filter="kids"
                     type="button"
                 >
-                    Kids
-                </button>
-
-
-                <button
-                    class="filter-btn"
-                    data-filter="sarees"
-                    type="button"
-                >
-                    Sarees
+                    Kids Wear
                 </button>
 
             </div>
@@ -656,998 +514,10 @@
         </div>
 
 
+        <div id="productGrid"></div>
 
-        <!-- =====================================================
-             PRODUCT GRID
-        ====================================================== -->
 
-        <div
-            class="row g-3"
-            id="productGrid"
-        >
-
-
-
-            <!-- =================================================
-                 PRODUCT 1
-            ================================================== -->
-
-            <div
-                class="col-6 col-md-4 col-lg-3 product-item"
-                data-category="women"
-                data-name="Classic Beige Dress"
-                data-product-id="fashion-001"
-            >
-
-                <div class="fashion-product-card">
-
-
-                    <div class="product-image">
-
-
-                        <img
-                            src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=700&q=85"
-                            alt="Classic Beige Dress"
-                        >
-
-
-                        <span class="product-badge">
-                            BESTSELLER
-                        </span>
-
-
-                        <button
-                            class="wishlist"
-                            type="button"
-                            title="Add to wishlist"
-                            aria-label="Add Classic Beige Dress to wishlist"
-                        >
-
-                            <i
-                                class="fa-regular fa-heart"
-                                aria-hidden="true"
-                            ></i>
-
-                        </button>
-
-
-                        <button
-                            class="quick-add add-cart"
-                            type="button"
-                            data-name="Classic Beige Dress"
-                            data-price="1299"
-                            data-mrp="1799"
-                            data-category="women"
-                        >
-                            Add to Cart
-                        </button>
-
-                    </div>
-
-
-                    <div class="product-info">
-
-                        <span>
-                            WOMEN
-                        </span>
-
-                        <h3>
-                            Classic Beige Dress
-                        </h3>
-
-
-                        <div class="rating">
-
-                            <span>
-                                ★★★★★
-                            </span>
-
-                            <small>
-                                (24)
-                            </small>
-
-                        </div>
-
-
-                        <div class="price">
-
-                            ₹1,299
-
-                            <del>
-                                ₹1,799
-                            </del>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- =================================================
-                 PRODUCT 2
-            ================================================== -->
-
-            <div
-                class="col-6 col-md-4 col-lg-3 product-item"
-                data-category="men"
-                data-name="Classic Casual Shirt"
-                data-product-id="fashion-002"
-            >
-
-                <div class="fashion-product-card">
-
-
-                    <div class="product-image">
-
-
-                        <img
-                            src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=700&q=85"
-                            alt="Classic Casual Shirt"
-                        >
-
-
-                        <span class="product-badge">
-                            NEW
-                        </span>
-
-
-                        <button
-                            class="wishlist"
-                            type="button"
-                            title="Add to wishlist"
-                            aria-label="Add Classic Casual Shirt to wishlist"
-                        >
-
-                            <i
-                                class="fa-regular fa-heart"
-                                aria-hidden="true"
-                            ></i>
-
-                        </button>
-
-
-                        <button
-                            class="quick-add add-cart"
-                            type="button"
-                            data-name="Classic Casual Shirt"
-                            data-price="999"
-                            data-mrp="1399"
-                            data-category="men"
-                        >
-                            Add to Cart
-                        </button>
-
-                    </div>
-
-
-                    <div class="product-info">
-
-                        <span>
-                            MEN
-                        </span>
-
-                        <h3>
-                            Classic Casual Shirt
-                        </h3>
-
-
-                        <div class="rating">
-
-                            <span>
-                                ★★★★★
-                            </span>
-
-                            <small>
-                                (18)
-                            </small>
-
-                        </div>
-
-
-                        <div class="price">
-
-                            ₹999
-
-                            <del>
-                                ₹1,399
-                            </del>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- =================================================
-                 PRODUCT 3
-            ================================================== -->
-
-            <div
-                class="col-6 col-md-4 col-lg-3 product-item"
-                data-category="women"
-                data-name="Oversized Cotton Top"
-                data-product-id="fashion-003"
-            >
-
-                <div class="fashion-product-card">
-
-
-                    <div class="product-image">
-
-
-                        <img
-                            src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=700&q=85"
-                            alt="Oversized Cotton Top"
-                        >
-
-
-                        <button
-                            class="wishlist"
-                            type="button"
-                            title="Add to wishlist"
-                            aria-label="Add Oversized Cotton Top to wishlist"
-                        >
-
-                            <i
-                                class="fa-regular fa-heart"
-                                aria-hidden="true"
-                            ></i>
-
-                        </button>
-
-
-                        <button
-                            class="quick-add add-cart"
-                            type="button"
-                            data-name="Oversized Cotton Top"
-                            data-price="799"
-                            data-mrp="1099"
-                            data-category="women"
-                        >
-                            Add to Cart
-                        </button>
-
-                    </div>
-
-
-                    <div class="product-info">
-
-                        <span>
-                            WOMEN
-                        </span>
-
-                        <h3>
-                            Oversized Cotton Top
-                        </h3>
-
-
-                        <div class="rating">
-
-                            <span>
-                                ★★★★★
-                            </span>
-
-                            <small>
-                                (32)
-                            </small>
-
-                        </div>
-
-
-                        <div class="price">
-
-                            ₹799
-
-                            <del>
-                                ₹1,099
-                            </del>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- =================================================
-                 PRODUCT 4
-            ================================================== -->
-
-            <div
-                class="col-6 col-md-4 col-lg-3 product-item"
-                data-category="men"
-                data-name="Premium Polo T-Shirt"
-                data-product-id="fashion-004"
-            >
-
-                <div class="fashion-product-card">
-
-
-                    <div class="product-image">
-
-
-                        <img
-                            src="../hoddie.jpg"
-                            alt="Premium Polo T-Shirt"
-                        >
-
-
-                        <span class="product-badge">
-                            TRENDING
-                        </span>
-
-
-                        <button
-                            class="wishlist"
-                            type="button"
-                            title="Add to wishlist"
-                            aria-label="Add Premium Polo T-Shirt to wishlist"
-                        >
-
-                            <i
-                                class="fa-regular fa-heart"
-                                aria-hidden="true"
-                            ></i>
-
-                        </button>
-
-
-                        <button
-                            class="quick-add add-cart"
-                            type="button"
-                            data-name="Premium Polo T-Shirt"
-                            data-price="899"
-                            data-mrp="1299"
-                            data-category="men"
-                        >
-                            Add to Cart
-                        </button>
-
-                    </div>
-
-
-                    <div class="product-info">
-
-                        <span>
-                            MEN
-                        </span>
-
-                        <h3>
-                            Premium Polo T-Shirt
-                        </h3>
-
-
-                        <div class="rating">
-
-                            <span>
-                                ★★★★★
-                            </span>
-
-                            <small>
-                                (41)
-                            </small>
-
-                        </div>
-
-
-                        <div class="price">
-
-                            ₹899
-
-                            <del>
-                                ₹1,299
-                            </del>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- =================================================
-                 PRODUCT 5
-            ================================================== -->
-
-            <div
-                class="col-6 col-md-4 col-lg-3 product-item"
-                data-category="kids"
-                data-name="Kids Summer Outfit"
-                data-product-id="fashion-005"
-            >
-
-                <div class="fashion-product-card">
-
-
-                    <div class="product-image">
-
-
-                        <img
-                            src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=700&q=85"
-                            alt="Kids Summer Outfit"
-                        >
-
-
-                        <button
-                            class="wishlist"
-                            type="button"
-                            title="Add to wishlist"
-                            aria-label="Add Kids Summer Outfit to wishlist"
-                        >
-
-                            <i
-                                class="fa-regular fa-heart"
-                                aria-hidden="true"
-                            ></i>
-
-                        </button>
-
-
-                        <button
-                            class="quick-add add-cart"
-                            type="button"
-                            data-name="Kids Summer Outfit"
-                            data-price="699"
-                            data-mrp="999"
-                            data-category="kids"
-                        >
-                            Add to Cart
-                        </button>
-
-                    </div>
-
-
-                    <div class="product-info">
-
-                        <span>
-                            KIDS
-                        </span>
-
-                        <h3>
-                            Kids Summer Outfit
-                        </h3>
-
-
-                        <div class="rating">
-
-                            <span>
-                                ★★★★★
-                            </span>
-
-                            <small>
-                                (16)
-                            </small>
-
-                        </div>
-
-
-                        <div class="price">
-
-                            ₹699
-
-                            <del>
-                                ₹999
-                            </del>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- =================================================
-                 PRODUCT 6
-                 WIDE LEG / OLIVE GREEN
-            ================================================== -->
-
-            <div
-                class="col-6 col-md-4 col-lg-3 product-item"
-                data-category="women"
-                data-name="Olive Green Shirt"
-                data-product-id="fashion-006"
-            >
-
-                <div class="fashion-product-card">
-
-
-                    <div class="product-image">
-
-
-                        <img
-                            src="../women shirt.jpg"
-                            alt="Olive Green Shirt"
-                        >
-
-
-                        <button
-                            class="wishlist"
-                            type="button"
-                            title="Add to wishlist"
-                            aria-label="Add Olive Green Shirt to wishlist"
-                        >
-
-                            <i
-                                class="fa-regular fa-heart"
-                                aria-hidden="true"
-                            ></i>
-
-                        </button>
-
-
-                        <button
-                            class="quick-add add-cart"
-                            type="button"
-                            data-name="Olive Green Shirt"
-                            data-price="1099"
-                            data-mrp="1499"
-                            data-category="women"
-                        >
-                            Add to Cart
-                        </button>
-
-                    </div>
-
-
-                    <div class="product-info">
-
-                        <span>
-                            WOMEN
-                        </span>
-
-                        <h3>
-                            Olive Green Shirt
-                        </h3>
-
-
-                        <div class="rating">
-
-                            <span>
-                                ★★★★★
-                            </span>
-
-                            <small>
-                                (21)
-                            </small>
-
-                        </div>
-
-
-                        <div class="price">
-
-                            ₹1,099
-
-                            <del>
-                                ₹1,499
-                            </del>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- =================================================
-                 SAREE PRODUCT 1
-            ================================================== -->
-
-            <div
-                class="col-6 col-md-4 col-lg-3 product-item"
-                data-category="sarees"
-                data-name="Elegant Rose Silk Saree"
-                data-product-id="fashion-007"
-            >
-
-                <div class="fashion-product-card">
-
-
-                    <div class="product-image">
-
-
-                        <img
-                            src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=700&q=85"
-                            alt="Elegant Rose Silk Saree"
-                        >
-
-
-                        <span class="product-badge">
-                            NEW
-                        </span>
-
-
-                        <button
-                            class="wishlist"
-                            type="button"
-                            title="Add to wishlist"
-                            aria-label="Add Elegant Rose Silk Saree to wishlist"
-                        >
-
-                            <i
-                                class="fa-regular fa-heart"
-                                aria-hidden="true"
-                            ></i>
-
-                        </button>
-
-
-                        <button
-                            class="quick-add add-cart"
-                            type="button"
-                            data-name="Elegant Rose Silk Saree"
-                            data-price="1499"
-                            data-mrp="1999"
-                            data-category="sarees"
-                        >
-                            Add to Cart
-                        </button>
-
-                    </div>
-
-
-                    <div class="product-info">
-
-                        <span>
-                            SAREES
-                        </span>
-
-                        <h3>
-                            Elegant Rose Silk Saree
-                        </h3>
-
-
-                        <div class="rating">
-
-                            <span>
-                                ★★★★★
-                            </span>
-
-                            <small>
-                                (28)
-                            </small>
-
-                        </div>
-
-
-                        <div class="price">
-
-                            ₹1,499
-
-                            <del>
-                                ₹1,999
-                            </del>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- =================================================
-                 SAREE PRODUCT 2
-            ================================================== -->
-
-            <div
-                class="col-6 col-md-4 col-lg-3 product-item"
-                data-category="sarees"
-                data-name="Classic Green Saree"
-                data-product-id="fashion-008"
-            >
-
-                <div class="fashion-product-card">
-
-
-                    <div class="product-image">
-
-
-                        <img
-                            src="../saree2.jpg"
-                            alt="Classic Green Saree"
-                        >
-
-
-                        <span class="product-badge">
-                            BESTSELLER
-                        </span>
-
-
-                        <button
-                            class="wishlist"
-                            type="button"
-                            title="Add to wishlist"
-                            aria-label="Add Classic Green Saree to wishlist"
-                        >
-
-                            <i
-                                class="fa-regular fa-heart"
-                                aria-hidden="true"
-                            ></i>
-
-                        </button>
-
-
-                        <button
-                            class="quick-add add-cart"
-                            type="button"
-                            data-name="Classic Green Saree"
-                            data-price="1699"
-                            data-mrp="2199"
-                            data-category="sarees"
-                        >
-                            Add to Cart
-                        </button>
-
-                    </div>
-
-
-                    <div class="product-info">
-
-                        <span>
-                            SAREES
-                        </span>
-
-                        <h3>
-                            Classic Green Saree
-                        </h3>
-
-
-                        <div class="rating">
-
-                            <span>
-                                ★★★★★
-                            </span>
-
-                            <small>
-                                (35)
-                            </small>
-
-                        </div>
-
-
-                        <div class="price">
-
-                            ₹1,699
-
-                            <del>
-                                ₹2,199
-                            </del>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- =================================================
-                 SAREE PRODUCT 3
-            ================================================== -->
-
-            <div
-                class="col-6 col-md-4 col-lg-3 product-item"
-                data-category="sarees"
-                data-name="Pastel Organza Saree"
-                data-product-id="fashion-009"
-            >
-
-                <div class="fashion-product-card">
-
-
-                    <div class="product-image">
-
-
-                        <img
-                            src="../blue saree.jpg"
-                            alt="Pastel Organza Saree"
-                        >
-
-
-                        <button
-                            class="wishlist"
-                            type="button"
-                            title="Add to wishlist"
-                            aria-label="Add Pastel Organza Saree to wishlist"
-                        >
-
-                            <i
-                                class="fa-regular fa-heart"
-                                aria-hidden="true"
-                            ></i>
-
-                        </button>
-
-
-                        <button
-                            class="quick-add add-cart"
-                            type="button"
-                            data-name="Pastel Organza Saree"
-                            data-price="1899"
-                            data-mrp="2499"
-                            data-category="sarees"
-                        >
-                            Add to Cart
-                        </button>
-
-                    </div>
-
-
-                    <div class="product-info">
-
-                        <span>
-                            SAREES
-                        </span>
-
-                        <h3>
-                            Pastel Organza Saree
-                        </h3>
-
-
-                        <div class="rating">
-
-                            <span>
-                                ★★★★★
-                            </span>
-
-                            <small>
-                                (19)
-                            </small>
-
-                        </div>
-
-
-                        <div class="price">
-
-                            ₹1,899
-
-                            <del>
-                                ₹2,499
-                            </del>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- =================================================
-                 SAREE PRODUCT 4
-            ================================================== -->
-
-            <div
-                class="col-6 col-md-4 col-lg-3 product-item"
-                data-category="sarees"
-                data-name="Royal Blue Saree"
-                data-product-id="fashion-010"
-            >
-
-                <div class="fashion-product-card">
-
-
-                    <div class="product-image">
-
-
-                        <img
-                            src="../saree2.jpg"
-                            alt="Royal Blue Saree"
-                        >
-
-
-                        <span class="product-badge">
-                            TRENDING
-                        </span>
-
-
-                        <button
-                            class="wishlist"
-                            type="button"
-                            title="Add to wishlist"
-                            aria-label="Add Royal Blue Saree to wishlist"
-                        >
-
-                            <i
-                                class="fa-regular fa-heart"
-                                aria-hidden="true"
-                            ></i>
-
-                        </button>
-
-
-                        <button
-                            class="quick-add add-cart"
-                            type="button"
-                            data-name="Royal Blue Saree"
-                            data-price="1599"
-                            data-mrp="2099"
-                            data-category="sarees"
-                        >
-                            Add to Cart
-                        </button>
-
-                    </div>
-
-
-                    <div class="product-info">
-
-                        <span>
-                            SAREES
-                        </span>
-
-                        <h3>
-                            Royal Blue Saree
-                        </h3>
-
-
-                        <div class="rating">
-
-                            <span>
-                                ★★★★★
-                            </span>
-
-                            <small>
-                                (42)
-                            </small>
-
-                        </div>
-
-
-                        <div class="price">
-
-                            ₹1,599
-
-                            <del>
-                                ₹2,099
-                            </del>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-
-
-        <!-- NO PRODUCTS -->
-
-        <div
-            class="no-products"
-            id="noProducts"
-        >
+        <div id="noProducts">
             No products found.
         </div>
 
@@ -1656,17 +526,15 @@
 </section>
 
 
-
 <!-- =========================================================
      PROMOTION
-========================================================== -->
+========================================================= -->
 
 <section class="fashion-promo">
 
-    <div class="container-fluid px-4">
+    <div class="container-fluid p-0">
 
         <div class="fashion-promo-box">
-
 
             <div class="promo-copy">
 
@@ -1676,34 +544,32 @@
 
 
                 <h2>
-
                     Your Style.<br>
                     Your Statement.
-
                 </h2>
 
 
                 <p>
-
                     Get exclusive offers and early access
                     to our newest fashion collections.
-
                 </p>
 
 
-                <a href="#">
+                <a
+                    href="#fashionProducts"
+                    id="promoExploreButton"
+                >
                     Explore More →
                 </a>
 
             </div>
 
 
-
             <div class="promo-image">
 
                 <img
                     src="../fashion hero.png"
-                    alt="Fashion collection"
+                    alt="Fashion Collection"
                 >
 
             </div>
@@ -1715,19 +581,15 @@
 </section>
 
 
-
 <!-- =========================================================
      FOOTER
-========================================================== -->
+========================================================= -->
 
 <footer class="footer">
 
     <div class="container-fluid px-lg-5">
 
         <div class="footer-main">
-
-
-            <!-- BRAND -->
 
             <div class="footer-brand">
 
@@ -1740,21 +602,15 @@
 
                     Fashion
 
-                    <span>
-                        •
-                    </span>
+                    <span>•</span>
 
                     Books
 
-                    <span>
-                        •
-                    </span>
+                    <span>•</span>
 
                     Stationery
 
-                    <span>
-                        •
-                    </span>
+                    <span>•</span>
 
                     Pads
 
@@ -1763,40 +619,34 @@
             </div>
 
 
-
-            <!-- QUICK LINKS -->
-
             <div class="footer-column">
 
                 <h4>
                     Quick Links
                 </h4>
 
-
                 <a href="../index.html">
                     Home
                 </a>
+                
+                 <a href="Careers/Careers.html">
+                    Careers
+                </a>
 
-
-                <a href="../About Us/About.html">
+                <a href="/About Us/About.html">
                     About Us
                 </a>
 
-
-                <a href="../Faq/Faq.html">
+                <a href="/Faq/Faq.html">
                     FAQs
                 </a>
 
-
-                <a href="../Contact/Contact.html">
+                <a href="/Contact/Contact.html">
                     Contact
                 </a>
 
             </div>
 
-
-
-            <!-- CATEGORIES -->
 
             <div class="footer-column">
 
@@ -1804,21 +654,17 @@
                     Categories
                 </h4>
 
-
                 <a href="Fashion.html">
                     Fashion
                 </a>
-
 
                 <a href="../Books/Books.html">
                     Books
                 </a>
 
-
                 <a href="../Stationary/Stationary.html">
                     Stationery
                 </a>
-
 
                 <a href="../Pads/Pads.html">
                     Pads
@@ -1827,37 +673,28 @@
             </div>
 
 
-
-            <!-- CUSTOMER SERVICE -->
-
             <div class="footer-column">
 
                 <h4>
                     Customer Service
                 </h4>
 
-
-                <a href="../Privacy/Privacy.html">
+                <a href="/Privacy/Privacy.html">
                     Privacy Policy
                 </a>
 
-
-                <a href="../Terms/Terms.html">
+                <a href="/Terms/Terms.html">
                     Terms &amp; Conditions
                 </a>
 
             </div>
 
 
-
-            <!-- NEWSLETTER -->
-
             <div class="footer-newsletter">
 
                 <h4>
                     Join Our Newsletter
                 </h4>
-
 
                 <p>
                     Get updates on new arrivals and special offers.
@@ -1879,7 +716,6 @@
 
                         <button
                             type="submit"
-                            title="Subscribe"
                             aria-label="Subscribe"
                         >
                             →
@@ -1896,79 +732,45 @@
                 ></div>
 
 
-
-                <!-- SOCIAL -->
-
                 <div class="social-icons">
 
-
                     <a
                         href="#"
-                        title="Facebook"
                         aria-label="Facebook"
                     >
-
-                        <i
-                            class="fa-brands fa-facebook-f"
-                            aria-hidden="true"
-                        ></i>
-
+                        <i class="fa-brands fa-facebook-f"></i>
                     </a>
 
 
                     <a
                         href="#"
-                        title="Instagram"
                         aria-label="Instagram"
                     >
-
-                        <i
-                            class="fa-brands fa-instagram"
-                            aria-hidden="true"
-                        ></i>
-
+                        <i class="fa-brands fa-instagram"></i>
                     </a>
 
 
                     <a
                         href="#"
-                        title="YouTube"
                         aria-label="YouTube"
                     >
-
-                        <i
-                            class="fa-brands fa-youtube"
-                            aria-hidden="true"
-                        ></i>
-
+                        <i class="fa-brands fa-youtube"></i>
                     </a>
 
 
                     <a
                         href="#"
-                        title="LinkedIn"
                         aria-label="LinkedIn"
                     >
-
-                        <i
-                            class="fa-brands fa-linkedin-in"
-                            aria-hidden="true"
-                        ></i>
-
+                        <i class="fa-brands fa-linkedin-in"></i>
                     </a>
 
 
                     <a
                         href="#"
-                        title="Twitter"
                         aria-label="Twitter"
                     >
-
-                        <i
-                            class="fa-brands fa-twitter"
-                            aria-hidden="true"
-                        ></i>
-
+                        <i class="fa-brands fa-twitter"></i>
                     </a>
 
                 </div>
@@ -1980,11 +782,6 @@
     </div>
 
 
-
-    <!-- =====================================================
-         FOOTER BOTTOM
-    ====================================================== -->
-
     <div class="footer-bottom">
 
         <div class="container-fluid px-lg-5">
@@ -1994,7 +791,6 @@
                 <span>
                     © 2025 OZZO. All rights reserved.
                 </span>
-
 
                 <span>
                     Better Choices. A Brighter You.
@@ -2009,20 +805,14 @@
 </footer>
 
 
-
 <!-- =========================================================
      BOOTSTRAP JS
-========================================================== -->
+========================================================= -->
 
 <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 ></script>
 
-
-
-<!-- =========================================================
-     FASHION PAGE JAVASCRIPT
-========================================================== -->
 
 <script>
 
@@ -2035,72 +825,1410 @@ document.addEventListener(
            ELEMENTS
         ====================================================== */
 
-        const filterButtons =
-            document.querySelectorAll(".filter-btn");
-
-
-        const products =
-            document.querySelectorAll(".product-item");
-
+        const productGrid =
+            document.getElementById("productGrid");
 
         const noProducts =
             document.getElementById("noProducts");
 
-
         const searchInput =
             document.getElementById("searchInput");
-
 
         const cartCount =
             document.getElementById("cartCount");
 
-
         const headerCartButton =
             document.getElementById("headerCartButton");
 
+        const wishlistBtn =
+            document.getElementById("wishlistBtn");
+
+        const newsletterForm =
+            document.getElementById("newsletterForm");
+
+        const newsletterMessage =
+            document.getElementById("newsletterMessage");
+
+        const heroShopButton =
+            document.getElementById("heroShopButton");
+
+        const promoExploreButton =
+            document.getElementById("promoExploreButton");
+
+        const filterButtons =
+            document.querySelectorAll(".filter-btn");
 
         const categoryLinks =
             document.querySelectorAll(".fashion-category");
 
 
-        const wishlistButtons =
-            document.querySelectorAll(".wishlist");
+        /* =====================================================
+           REAL PRODUCT IMAGES
+           
+           These are direct image URLs found in Google image
+           results from real product/retail listings.
+        ====================================================== */
 
+        const productImages = [
 
-        const addCartButtons =
-            document.querySelectorAll(".add-cart");
+            /* 001 */
+            "https://assets.myntassets.com/w_412%2Cq_50%2C%2Cdpr_3%2Cfl_progressive%2Cf_webp/assets/images/2024/SEPTEMBER/20/UGXnrRmX_fd2fada1edfc4bbe84ba309b06112725.jpg",
+
+            /* 002 */
+            "https://www.ralphlauren.com/on/demandware.static/-/Library-Sites-RalphLauren_NA_Library/en_US/v1773741447946/img/202502/20250225-men-clothing-button-down-shirts-plp/0225_m_main_aisle_casual_shirts_c02b_img.jpg",
+
+            /* 003 */
+            "https://cdn.media.amplience.net/i/mrpricegroup/01_103552091_SI_00",
+
+            /* 004 */
+            "https://cdn.vuahanghieu.com/unsafe/0x0/left/top/smart/filters%3Aquality%2890%29/https%3A/admin.vuahanghieu.com/upload/news/content/2025/03/ao-polo-nam-hugo-boss-men-s-stretch-cotton-slim-fit-buttoned-polo-collar-t-shirt-50506193-401-mau-xanh-navy-1-png-1741836648-13032025103048.png",
+
+            /* 005 */
+            "https://www.bloomup.in/cdn/shop/files/OBS-3996A-BEIGE_2.png?v=1783529534&width=1086",
+
+            /* 006 */
+            "https://assets.ajio.com/medias/sys_master/root1/20251017/vbvv/68f22ab9d3b48604f8355114/-473Wx593H-702405822-olive-MODEL.jpg",
+
+            /* 007 */
+            "https://img.tatacliq.com/images/i15/1348Wx2000H/MP000000020449076_1348Wx2000H_202312140600241.jpeg",
+
+            /* 008 */
+            "https://vrindavanfashion.com/cdn/shop/files/Rich_Green_Silk_Saree.webp?v=1781511177",
+
+            /* 009 */
+            "https://etheniqaura.com/cdn/shop/files/pearl-mist-organza-saree-3.webp?v=1782372487",
+
+            /* 010 */
+            "https://i.pinimg.com/originals/01/81/8a/01818a04e78d75a83e662651bf46f0e9.jpg",
+
+            /* 011 */
+            "https://www.2segypt.com/cdn/shop/products/Resize_0036_Levels-47_2.jpg?v=1668500294",
+
+            /* 012 */
+            "https://images.giordano.com/productphoto/01175114001/09_1_2_5_0620_0620.jpg",
+
+            /* 013 */
+            "https://cdn.fcglcdn.com/brainbees/images/products/438x531/21620682a.webp",
+
+            /* 014 */
+            "https://xcdn.next.co.uk/common/items/default/default/itemimages/3_4Ratio/product/lge/H97819s.jpg?im=Resize%2Cwidth%3D750",
+
+            /* 015 */
+            "https://mo-online.com/dw/image/v2/BCQK_PRD/on/demandware.static/-/Sites-master-catalog/default/dwf004f998/images/hires/f3f645a0-f895-4a77-8200-7142997dbe65.jpg?q=80&sh=1250&sm=fit&sw=1250",
+
+            /* 016 */
+            "https://img.tatacliq.com/images/i24/437Wx649H/MP000000026577846_437Wx649H_202505142033291.jpeg",
+
+            /* 017 */
+            "https://cdn.hemden.de/media/image/b4/04/2e/051652-5938320-56_1_1600_1200x1200.jpg",
+
+            /* 018 */
+            "https://www.ottostore.com/cdn/shop/files/1_20_7d3abe80-19de-4cd9-ab3f-004d794ddbd2.png?v=1749816190",
+
+            /* 019 */
+            "https://www.costco.com.mx/medias/sys_master/products/hc1/hfc/149923999088670.jpg",
+
+            /* 020 */
+            "https://www.perfectjeans.dk/cdn/shop/files/Ecom-Mand-Shorts-Middle-Regular-Oceans-1_400x.jpg?v=1773669405",
+
+            /* 021 */
+            "https://riseandfall.co/cdn/shop/files/Rise_Fall_Essential_Cotton_Chino_Shorts_in_Stone_02_3ecbbc6c-184c-43ab-9635-8f105c803b60.jpg?v=1756818212&width=1946",
+
+            /* 022 */
+            "https://www.jiomart.com/images/product/500x630/441607468_grey/elasticated-drawstring-waist-track-pants-model-441607468_grey-0-202306061926.jpg",
+
+            /* 023 */
+            "https://assets.adidas.com/images/w_600%2Cf_auto%2Cq_auto/7501ec3f4d0b4023803202774f6844b1_9366/AEROREADY_Training_Track_Pants_Green_JD4385_22_model.jpg",
+
+            /* 024 */
+            "https://i5.walmartimages.com/seo/Men-s-adidas-3-Stripe-Open-Hem-Track-Pants-Color-Team-Royal-Blue-Size-XL_4fa0db38-c1f4-46a5-b167-accf4478a835.b5f799b68a2f70ab6ad2f9d1dc6cde8e.jpeg",
+
+            /* 025 */
+            "https://apisap.fabindia.com/medias/20208281-01.jpg?aio=w-400&context=bWFzdGVyfGltYWdlc3w5MzgxMnxpbWFnZS9qcGVnfGFEWTFMMmhrTUM4NE1ESXpOVFkyTmpjek5URXpOQzh5TURJd09ESTRNVjh3TVM1cWNHY3xkYTdkN2U2NGEzMDhlNDA2ODIxZTBmNWIzM2M4ZDg4ZGEyZmFmYTkyMGY5Y2NmZjgwMDIyZGI0MTg1OGJmZmQ2",
+
+            /* 026 */
+            "https://i5.walmartimages.com/asr/3206dbd1-bdce-458d-898c-327cb26d115e.5823af601af4068609d8a1996b0f2ba6.jpeg?odnBg=FFFFFF&odnHeight=612&odnWidth=612",
+
+            /* 027 */
+            "https://d3lazpv835634a.cloudfront.net/product-media/44BQ/1000/1000/AW-LUCIE-SHORT-SLEEVE-blue-1.jpg",
+
+            /* 028 */
+            "https://secretgirlstuff.com.au/cdn/shop/files/HL25003-1_PauseTank_Black_1_jpg.webp?crop=center&height=1200&v=1743572824&width=1200",
+
+            /* 029 */
+            "https://i5.walmartimages.com/seo/Time-and-Tru-Women-s-Side-Ruched-Tee-with-Short-Sleeves-Sizes-XS-3XL_98c8164d-70d4-4402-8f0f-399e6e4804d0.9db1e9fb436a3e17ac217d5daaa40d10.jpeg?odnBg=FFFFFF&odnHeight=640&odnWidth=640"
+
+        ];
 
 
         /* =====================================================
-           CURRENT FILTER
+           PRODUCTS ARRAY
         ====================================================== */
 
-        let currentFilter = "all";
+        const products = [];
+
+
+        function getProductImage(
+            id,
+            category,
+            subcategory,
+            name
+        ) {
+
+            const number =
+                parseInt(
+                    String(id).replace(/\D/g, ""),
+                    10
+                ) || 1;
+
+
+            /*
+             * First 29 products use separate real photos.
+             *
+             * Later products continue using a deterministic
+             * product-photo rotation so they do not fall back
+             * to one category image.
+             */
+
+            const imageIndex =
+                (number - 1) %
+                productImages.length;
+
+
+            return productImages[imageIndex];
+
+        }
+
+
+        function addProduct(
+            id,
+            category,
+            subcategory,
+            name,
+            brand,
+            price,
+            mrp,
+            rating,
+            reviews
+        ) {
+
+            products.push({
+
+                id:
+                    id,
+
+                category:
+                    category,
+
+                subcategory:
+                    subcategory,
+
+                name:
+                    name,
+
+                brand:
+                    brand,
+
+                price:
+                    Number(price),
+
+                mrp:
+                    Number(mrp),
+
+                rating:
+                    Number(rating),
+
+                reviews:
+                    Number(reviews),
+
+                image:
+                    getProductImage(
+                        id,
+                        category,
+                        subcategory,
+                        name
+                    )
+
+            });
+
+        }
+
+
+        /* =====================================================
+           001–014
+        ====================================================== */
+
+        addProduct(
+            "fashion-001",
+            "women",
+            "Dresses",
+            "Classic Beige Dress",
+            "OZZO Fashion",
+            1299,
+            1799,
+            4.4,
+            86
+        );
+
+
+        addProduct(
+            "fashion-002",
+            "men",
+            "Shirts",
+            "Classic Casual Shirt",
+            "OZZO Fashion",
+            999,
+            1399,
+            4.5,
+            72
+        );
+
+
+        addProduct(
+            "fashion-003",
+            "women",
+            "Tops",
+            "Oversized Cotton Top",
+            "OZZO Fashion",
+            799,
+            1099,
+            4.3,
+            64
+        );
+
+
+        addProduct(
+            "fashion-004",
+            "men",
+            "T-Shirts",
+            "Premium Polo T-Shirt",
+            "OZZO Fashion",
+            899,
+            1299,
+            4.6,
+            91
+        );
+
+
+        addProduct(
+            "fashion-005",
+            "kids",
+            "Kids Wear",
+            "Kids Summer Outfit",
+            "OZZO Kids",
+            699,
+            999,
+            4.5,
+            16
+        );
+
+
+        addProduct(
+            "fashion-006",
+            "women",
+            "Shirts",
+            "Olive Green Shirt",
+            "OZZO Fashion",
+            1099,
+            1499,
+            4.4,
+            21
+        );
+
+
+        addProduct(
+            "fashion-007",
+            "women",
+            "Sarees",
+            "Elegant Rose Silk Saree",
+            "OZZO Sarees",
+            1499,
+            1999,
+            4.6,
+            58
+        );
+
+
+        addProduct(
+            "fashion-008",
+            "women",
+            "Sarees",
+            "Classic Green Saree",
+            "OZZO Sarees",
+            1699,
+            2199,
+            4.5,
+            47
+        );
+
+
+        addProduct(
+            "fashion-009",
+            "women",
+            "Sarees",
+            "Pastel Organza Saree",
+            "OZZO Sarees",
+            1899,
+            2499,
+            4.5,
+            19
+        );
+
+
+        addProduct(
+            "fashion-010",
+            "women",
+            "Sarees",
+            "Royal Blue Saree",
+            "OZZO Sarees",
+            1599,
+            2099,
+            4.6,
+            42
+        );
+
+
+        addProduct(
+            "fashion-011",
+            "innerwear",
+            "Bra",
+            "Comfort Cotton Bra",
+            "OZZO Essentials",
+            599,
+            799,
+            4.4,
+            27
+        );
+
+
+        addProduct(
+            "fashion-012",
+            "innerwear",
+            "Briefs",
+            "Men Cotton Briefs",
+            "OZZO Essentials",
+            499,
+            699,
+            4.3,
+            23
+        );
+
+
+        addProduct(
+            "fashion-013",
+            "kids",
+            "Girls Dresses",
+            "Baby Girl Party Dress",
+            "OZZO Kids",
+            899,
+            1199,
+            4.5,
+            14
+        );
+
+
+        addProduct(
+            "fashion-014",
+            "kids",
+            "Boys Dresses",
+            "Boys Casual Outfit",
+            "OZZO Kids",
+            749,
+            999,
+            4.4,
+            17
+        );
+
+
+        /* =====================================================
+           WOMEN'S SAREES 015–054
+        ====================================================== */
+
+        const womenSarees = [
+
+            "Royal Red Pattu Saree",
+            "Emerald Green Pattu Saree",
+            "Peacock Blue Pattu Saree",
+            "Rani Pink Pattu Saree",
+            "Mustard Gold Pattu Saree",
+            "Wine Maroon Pattu Saree",
+            "Purple Zari Pattu Saree",
+            "Teal Green Pattu Saree",
+            "Rose Gold Pattu Saree",
+            "Royal Violet Pattu Saree",
+
+            "Pearl White Fancy Saree",
+            "Dusty Pink Fancy Saree",
+            "Lavender Fancy Saree",
+            "Sky Blue Fancy Saree",
+            "Wine Fancy Saree",
+            "Black Designer Fancy Saree",
+            "Peach Party Fancy Saree",
+            "Mint Green Fancy Saree",
+            "Royal Blue Fancy Saree",
+            "Rose Designer Fancy Saree",
+
+            "Maroon Daily Wear Saree",
+            "Green Printed Daily Wear Saree",
+            "Blue Daily Wear Saree",
+            "Yellow Daily Wear Saree",
+            "Pink Daily Wear Saree",
+            "Purple Daily Wear Saree",
+            "Brown Daily Wear Saree",
+            "Beige Daily Wear Saree",
+            "Teal Daily Wear Saree",
+            "Grey Daily Wear Saree",
+
+            "White Handloom Cotton Saree",
+            "Indigo Cotton Saree",
+            "Green Cotton Saree",
+            "Maroon Cotton Saree",
+            "Mustard Cotton Saree",
+            "Blue Handloom Cotton Saree",
+            "Pink Soft Cotton Saree",
+            "Beige Cotton Saree",
+            "Red Traditional Cotton Saree",
+            "Grey Cotton Saree"
+
+        ];
+
+
+        const sareeGroups = [
+
+            ...Array(10).fill(
+                "Pattu Sarees"
+            ),
+
+            ...Array(10).fill(
+                "Fancy Sarees"
+            ),
+
+            ...Array(10).fill(
+                "Daily Wear Sarees"
+            ),
+
+            ...Array(10).fill(
+                "Cotton Sarees"
+            )
+
+        ];
+
+
+        womenSarees.forEach(
+            function (
+                name,
+                index
+            ) {
+
+                const price =
+                    1299 +
+                    (
+                        index % 10
+                    ) *
+                    100;
+
+
+                addProduct(
+
+                    "fashion-" +
+                    String(
+                        15 + index
+                    ).padStart(
+                        3,
+                        "0"
+                    ),
+
+                    "women",
+
+                    sareeGroups[
+                        index
+                    ],
+
+                    name,
+
+                    "OZZO Sarees",
+
+                    price,
+
+                    price + 500,
+
+                    4.4 +
+                    (
+                        (index % 4) *
+                        0.1
+                    ),
+
+                    20 + index
+
+                );
+
+            }
+        );
+
+
+        /* =====================================================
+           WOMEN'S TOPS 055–064
+        ====================================================== */
+
+        const womenTops = [
+
+            "Classic White Cotton Top",
+            "Dusty Rose Peplum Top",
+            "Sky Blue Linen Top",
+            "Black Ribbed Sleeveless Top",
+            "Olive Green Relaxed Top",
+            "Ivory Embroidered Top",
+            "Lavender Puff Sleeve Top",
+            "Terracotta V-Neck Top",
+            "Soft Beige Wrap Top",
+            "Sky Blue Printed Top"
+
+        ];
+
+
+        womenTops.forEach(
+            function (
+                name,
+                index
+            ) {
+
+                const price =
+                    699 +
+                    index * 25;
+
+
+                addProduct(
+
+                    "fashion-" +
+                    String(
+                        55 + index
+                    ).padStart(
+                        3,
+                        "0"
+                    ),
+
+                    "women",
+
+                    "Tops",
+
+                    name,
+
+                    "OZZO Fashion",
+
+                    price,
+
+                    price + 300,
+
+                    4.3 +
+                    (
+                        (index % 4) *
+                        0.1
+                    ),
+
+                    20 + index
+
+                );
+
+            }
+        );
+
+
+        /* =====================================================
+           WOMEN'S DRESSES 065–074
+        ====================================================== */
+
+        const womenDresses = [
+
+            "Floral Midi Dress",
+            "Classic Black Bodycon Dress",
+            "Pastel Pink Maxi Dress",
+            "Sage Green Shirt Dress",
+            "Royal Blue Evening Dress",
+            "Beige Linen Summer Dress",
+            "Wine Wrap Midi Dress",
+            "Lavender Pleated Dress",
+            "Coral Printed Summer Dress",
+            "Emerald Green Party Dress"
+
+        ];
+
+
+        womenDresses.forEach(
+            function (
+                name,
+                index
+            ) {
+
+                const price =
+                    1099 +
+                    index * 55;
+
+
+                addProduct(
+
+                    "fashion-" +
+                    String(
+                        65 + index
+                    ).padStart(
+                        3,
+                        "0"
+                    ),
+
+                    "women",
+
+                    "Dresses",
+
+                    name,
+
+                    "OZZO Fashion",
+
+                    price,
+
+                    price + 450,
+
+                    4.4 +
+                    (
+                        (index % 4) *
+                        0.1
+                    ),
+
+                    23 + index
+
+                );
+
+            }
+        );
+
+
+        /* =====================================================
+           MEN'S WEAR 075–149
+        ====================================================== */
+
+        const menGroups = {
+
+            "Shirts": [
+
+                "Premium White Oxford Shirt",
+                "Sky Blue Formal Shirt",
+                "Classic Navy Cotton Shirt",
+                "Olive Casual Shirt",
+                "Charcoal Slim Fit Shirt",
+                "Beige Linen Shirt",
+                "Maroon Textured Shirt",
+                "Light Grey Checked Shirt",
+                "Black Executive Shirt",
+                "Royal Blue Full Sleeve Shirt"
+
+            ],
+
+
+            "Pants": [
+
+                "Classic Black Cotton Pants",
+                "Navy Regular Fit Pants",
+                "Beige Chino Pants",
+                "Grey Formal Pants",
+                "Olive Casual Pants",
+                "Stone Slim Fit Pants",
+                "Charcoal Tapered Pants",
+                "Cream Cotton Pants",
+                "Dark Brown Formal Pants",
+                "Midnight Blue Pants"
+
+            ],
+
+
+            "Readymade Shirts": [
+
+                "ReadyFit White Shirt",
+                "ReadyFit Blue Check Shirt",
+                "ReadyFit Black Shirt",
+                "ReadyFit Maroon Shirt",
+                "ReadyFit Green Casual Shirt",
+                "ReadyFit Grey Shirt",
+                "ReadyFit Beige Shirt",
+                "ReadyFit Navy Stripe Shirt",
+                "ReadyFit Printed Casual Shirt",
+                "ReadyFit Premium Cotton Shirt"
+
+            ],
+
+
+            "Readymade Pants": [
+
+                "ReadyFit Black Trousers",
+                "ReadyFit Navy Pants",
+                "ReadyFit Grey Trousers",
+                "ReadyFit Beige Chinos",
+                "ReadyFit Olive Pants",
+                "ReadyFit Khaki Pants",
+                "ReadyFit Charcoal Trousers",
+                "ReadyFit Brown Pants",
+                "ReadyFit Blue Formal Pants",
+                "ReadyFit Stone Cotton Pants"
+
+            ],
+
+
+            "T-Shirts": [
+
+                "Classic Black Crew Neck T-Shirt",
+                "White Premium Cotton T-Shirt",
+                "Navy Graphic T-Shirt",
+                "Olive Round Neck T-Shirt",
+                "Grey Essential T-Shirt",
+                "Maroon Casual T-Shirt",
+                "Sky Blue Comfort T-Shirt",
+                "Beige Minimal T-Shirt",
+                "Bottle Green T-Shirt",
+                "Charcoal Oversized T-Shirt"
+
+            ],
+
+
+            "Shorts": [
+
+                "Classic Black Casual Shorts",
+                "Navy Cotton Shorts",
+                "Beige Everyday Shorts",
+                "Olive Utility Shorts",
+                "Grey Sports Shorts",
+                "Khaki Weekend Shorts",
+                "Charcoal Relaxed Shorts",
+                "Blue Denim Shorts",
+                "Brown Casual Shorts",
+                "Stone Cotton Shorts"
+
+            ],
+
+
+            "Track Pants": [
+
+                "Essential Black Track Pants",
+                "Navy Performance Track Pants",
+                "Grey Active Track Pants",
+                "Charcoal Slim Track Pants",
+                "Olive Training Track Pants",
+                "Royal Blue Sports Track Pants",
+                "Black Tapered Track Pants",
+                "Dark Grey Jogger Track Pants",
+                "Navy Comfort Track Pants",
+                "Black Everyday Track Pants",
+                "Steel Grey Track Pants",
+                "Bottle Green Track Pants",
+                "Maroon Active Track Pants",
+                "Midnight Blue Track Pants",
+                "Graphite Performance Track Pants"
+
+            ]
+
+        };
+
+
+        const menBasePrices = {
+
+            "Shirts":
+                999,
+
+            "Pants":
+                1099,
+
+            "Readymade Shirts":
+                899,
+
+            "Readymade Pants":
+                999,
+
+            "T-Shirts":
+                699,
+
+            "Shorts":
+                699,
+
+            "Track Pants":
+                899
+
+        };
+
+
+        let menId =
+            75;
+
+
+        Object.keys(
+            menGroups
+        )
+        .forEach(
+            function (
+                subcategory
+            ) {
+
+                menGroups[
+                    subcategory
+                ]
+                .forEach(
+                    function (
+                        name,
+                        index
+                    ) {
+
+                        const price =
+                            menBasePrices[
+                                subcategory
+                            ] +
+                            index * 35;
+
+
+                        addProduct(
+
+                            "fashion-" +
+                            String(
+                                menId
+                            ).padStart(
+                                3,
+                                "0"
+                            ),
+
+                            "men",
+
+                            subcategory,
+
+                            name,
+
+                            "OZZO Fashion",
+
+                            price,
+
+                            price + 350,
+
+                            4.3 +
+                            (
+                                (index % 4) *
+                                0.1
+                            ),
+
+                            22 + index
+
+                        );
+
+
+                        menId++;
+
+                    }
+                );
+
+            }
+        );
+
+
+        /* =====================================================
+           INNER WEARS 150–249
+        ====================================================== */
+
+        const innerGroups = {
+
+            "Women's Bras": [
+
+                "Everyday Comfort Bra",
+                "Seamless Support Bra",
+                "Soft Cotton Full Coverage Bra",
+                "Lightly Padded Daily Bra",
+                "Wirefree Comfort Bra",
+                "T-Shirt Bra",
+                "Double Layer Cotton Bra",
+                "Smooth Finish Bra",
+                "Classic Support Bra",
+                "Everyday Fit Bra"
+
+            ],
+
+
+            "Women's Panties": [
+
+                "Soft Cotton Panty",
+                "Seamless Everyday Panty",
+                "Comfort Fit Brief Panty",
+                "High Rise Cotton Panty",
+                "Mid Rise Everyday Panty",
+                "Printed Comfort Panty",
+                "Stretch Cotton Panty",
+                "Classic Full Brief Panty",
+                "Smooth Waistband Panty",
+                "Breathable Daily Panty"
+
+            ],
+
+
+            "Women's Camisoles / Slips": [
+
+                "Classic Cotton Camisole",
+                "Seamless Daily Camisole",
+                "Soft Strap Camisole",
+                "Comfort Inner Slip",
+                "Adjustable Strap Slip",
+                "Everyday Cotton Slip",
+                "Long Camisole",
+                "Soft Layering Camisole",
+                "Stretch Comfort Slip",
+                "Classic Inner Camisole"
+
+            ],
+
+
+            "Women's Shapewear": [
+
+                "Everyday Waist Shaper",
+                "High Waist Shaping Brief",
+                "Smooth Fit Shapewear",
+                "Comfort Tummy Shaper",
+                "Seamless Body Shaper",
+                "Light Control Shaper",
+                "Firm Fit Waist Shaper",
+                "Sculpting Comfort Brief",
+                "Smoothing Shorts Shapewear",
+                "Everyday Full Body Shaper"
+
+            ],
+
+
+            "Women's Saree Petticoats": [
+
+                "Classic Cotton Petticoat",
+                "Adjustable Waist Petticoat",
+                "Satin Finish Petticoat",
+                "Premium Silk Petticoat",
+                "Comfort Fit Saree Petticoat",
+                "Everyday Saree Petticoat",
+                "Soft Cotton Saree Skirt",
+                "Drawstring Petticoat",
+                "Flared Saree Petticoat",
+                "Classic Ethnic Petticoat"
+
+            ],
+
+
+            "Men's Briefs": [
+
+                "Classic Cotton Briefs",
+                "Soft Stretch Briefs",
+                "Premium Comfort Briefs",
+                "Everyday Support Briefs",
+                "Breathable Cotton Briefs",
+                "Elastic Waist Briefs",
+                "Classic White Briefs",
+                "Comfort Fit Briefs",
+                "Premium Cotton Briefs",
+                "Daily Wear Briefs"
+
+            ],
+
+
+            "Men's Trunks": [
+
+                "Classic Cotton Trunks",
+                "Stretch Comfort Trunks",
+                "Premium Fit Trunks",
+                "Everyday Active Trunks",
+                "Breathable Daily Trunks",
+                "Soft Waistband Trunks",
+                "Modern Cotton Trunks",
+                "Comfort Flex Trunks",
+                "Performance Trunks",
+                "Essential Everyday Trunks"
+
+            ],
+
+
+            "Men's Vests": [
+
+                "Classic White Vest",
+                "Premium Cotton Vest",
+                "Slim Fit Inner Vest",
+                "Comfort Ribbed Vest",
+                "Breathable Everyday Vest",
+                "Soft Cotton Vest",
+                "Classic Round Neck Vest",
+                "Lightweight Comfort Vest",
+                "Stretch Cotton Vest",
+                "Essential Daily Vest"
+
+            ],
+
+
+            "Men's Inner T-Shirts": [
+
+                "Classic White Inner T-Shirt",
+                "Black Everyday Inner T-Shirt",
+                "Soft Cotton Inner Tee",
+                "Slim Fit Inner Tee",
+                "Round Neck Inner T-Shirt",
+                "Comfort Layer Inner Tee",
+                "Breathable Cotton Inner Tee",
+                "Premium Stretch Inner Tee",
+                "Lightweight Inner T-Shirt",
+                "Essential Daily Inner Tee"
+
+            ],
+
+
+            "Men's Boxers": [
+
+                "Classic Cotton Boxers",
+                "Soft Stretch Boxers",
+                "Comfort Fit Boxers",
+                "Premium Everyday Boxers",
+                "Breathable Cotton Boxers",
+                "Loose Fit Daily Boxers",
+                "Printed Comfort Boxers",
+                "Stretch Waist Boxers",
+                "Lightweight Lounge Boxers",
+                "Essential Everyday Boxers"
+
+            ]
+
+        };
+
+
+        const innerBasePrices = {
+
+            "Women's Bras":
+                549,
+
+            "Women's Panties":
+                349,
+
+            "Women's Camisoles / Slips":
+                399,
+
+            "Women's Shapewear":
+                699,
+
+            "Women's Saree Petticoats":
+                449,
+
+            "Men's Briefs":
+                399,
+
+            "Men's Trunks":
+                449,
+
+            "Men's Vests":
+                349,
+
+            "Men's Inner T-Shirts":
+                499,
+
+            "Men's Boxers":
+                449
+
+        };
+
+
+        let innerId =
+            150;
+
+
+        Object.keys(
+            innerGroups
+        )
+        .forEach(
+            function (
+                subcategory
+            ) {
+
+                innerGroups[
+                    subcategory
+                ]
+                .forEach(
+                    function (
+                        name,
+                        index
+                    ) {
+
+                        const price =
+                            innerBasePrices[
+                                subcategory
+                            ] +
+                            index * 20;
+
+
+                        addProduct(
+
+                            "fashion-" +
+                            String(
+                                innerId
+                            ).padStart(
+                                3,
+                                "0"
+                            ),
+
+                            "innerwear",
+
+                            subcategory,
+
+                            name,
+
+                            "OZZO Essentials",
+
+                            price,
+
+                            price + 200,
+
+                            4.2 +
+                            (
+                                (index % 5) *
+                                0.1
+                            ),
+
+                            15 + index
+
+                        );
+
+
+                        innerId++;
+
+                    }
+                );
+
+            }
+        );
+
+
+        /* =====================================================
+           KIDS 250–269
+        ====================================================== */
+
+        const boysDresses = [
+
+            "Boys Classic Party Dress",
+            "Boys Blue Festive Kurta Set",
+            "Boys Smart Casual Outfit",
+            "Boys Traditional Festive Set",
+            "Boys Cotton Occasion Dress",
+            "Boys Printed Casual Outfit",
+            "Boys Premium Ethnic Dress",
+            "Boys Summer Celebration Outfit",
+            "Boys Royal Blue Party Set",
+            "Boys Comfortable Festive Wear"
+
+        ];
+
+
+        const girlsDresses = [
+
+            "Girls Floral Party Dress",
+            "Girls Pink Princess Dress",
+            "Girls Lavender Festive Dress",
+            "Girls Peach Celebration Dress",
+            "Girls Blue Cotton Party Dress",
+            "Girls Rose Pink Occasion Dress",
+            "Girls Classic Ethnic Dress",
+            "Girls Mint Green Party Dress",
+            "Girls Premium Floral Dress",
+            "Girls Rainbow Celebration Dress"
+
+        ];
+
+
+        boysDresses.forEach(
+            function (
+                name,
+                index
+            ) {
+
+                const price =
+                    749 +
+                    index * 50;
+
+
+                addProduct(
+
+                    "fashion-" +
+                    String(
+                        250 + index
+                    ).padStart(
+                        3,
+                        "0"
+                    ),
+
+                    "kids",
+
+                    "Boys Dresses",
+
+                    name,
+
+                    "OZZO Kids",
+
+                    price,
+
+                    price + 300,
+
+                    4.4 +
+                    (
+                        (index % 3) *
+                        0.1
+                    ),
+
+                    16 + index
+
+                );
+
+            }
+        );
+
+
+        girlsDresses.forEach(
+            function (
+                name,
+                index
+            ) {
+
+                const price =
+                    849 +
+                    index * 50;
+
+
+                addProduct(
+
+                    "fashion-" +
+                    String(
+                        260 + index
+                    ).padStart(
+                        3,
+                        "0"
+                    ),
+
+                    "kids",
+
+                    "Girls Dresses",
+
+                    name,
+
+                    "OZZO Kids",
+
+                    price,
+
+                    price + 300,
+
+                    4.4 +
+                    (
+                        (index % 3) *
+                        0.1
+                    ),
+
+                    18 + index
+
+                );
+
+            }
+        );
 
 
         /* =====================================================
            CART
         ====================================================== */
 
-        let cart =
-            JSON.parse(
-                localStorage.getItem("ozzoCart")
-            ) || [];
+        let cart = [];
+
+
+        try {
+
+            cart =
+                JSON.parse(
+                    localStorage.getItem(
+                        "ozzoCart"
+                    )
+                ) || [];
+
+
+            if (
+                !Array.isArray(
+                    cart
+                )
+            ) {
+
+                cart = [];
+
+            }
+
+        }
+        catch (
+            error
+        ) {
+
+            cart = [];
+
+        }
 
 
         /* =====================================================
-           UPDATE CART COUNT
+           HELPERS
+        ====================================================== */
+
+        function formatPrice(
+            value
+        ) {
+
+            return Number(
+                value || 0
+            )
+            .toLocaleString(
+                "en-IN"
+            );
+
+        }
+
+
+        function escapeHTML(
+            value
+        ) {
+
+            return String(
+                value
+            )
+            .replace(
+                /&/g,
+                "&amp;"
+            )
+            .replace(
+                /</g,
+                "&lt;"
+            )
+            .replace(
+                />/g,
+                "&gt;"
+            )
+            .replace(
+                /"/g,
+                "&quot;"
+            )
+            .replace(
+                /'/g,
+                "&#039;"
+            );
+
+        }
+
+
+        /* =====================================================
+           CART COUNT
         ====================================================== */
 
         function updateCartCount() {
 
-            const totalItems =
+            const total =
                 cart.reduce(
-                    function (total, item) {
+                    function (
+                        sum,
+                        item
+                    ) {
 
                         return (
-                            total +
-                            Number(item.quantity || 0)
+                            sum +
+                            Number(
+                                item.quantity ||
+                                0
+                            )
                         );
 
                     },
@@ -2108,8 +2236,14 @@ document.addEventListener(
                 );
 
 
-            cartCount.textContent =
-                totalItems;
+            if (
+                cartCount
+            ) {
+
+                cartCount.textContent =
+                    total;
+
+            }
 
         }
 
@@ -2120,10 +2254,27 @@ document.addEventListener(
 
         function saveCart() {
 
-            localStorage.setItem(
-                "ozzoCart",
-                JSON.stringify(cart)
-            );
+            try {
+
+                localStorage.setItem(
+                    "ozzoCart",
+                    JSON.stringify(
+                        cart
+                    )
+                );
+
+            }
+            catch (
+                error
+            ) {
+
+                console.error(
+                    "Unable to save cart:",
+                    error
+                );
+
+            }
+
 
             updateCartCount();
 
@@ -2131,82 +2282,91 @@ document.addEventListener(
 
 
         /* =====================================================
-           ADD PRODUCT TO CART
+           ADD TO CART
         ====================================================== */
 
         function addProductToCart(
-            product
+            product,
+            quantity
         ) {
 
-            const productId =
-                product.dataset.productId;
-
-
-            const productName =
-                product.dataset.name;
-
-
-            const addButton =
-                product.querySelector(".add-cart");
-
-
-            const productPrice =
-                Number(
-                    addButton.dataset.price
-                );
-
-
-            const productMrp =
-                Number(
-                    addButton.dataset.mrp ||
-                    productPrice
-                );
-
-
-            const productImage =
-                product.querySelector(
-                    ".product-image img"
-                )?.getAttribute("src") || "";
-
-
-            const productCategory =
-                product.dataset.category;
-
-
-            const existingProduct =
+            const existing =
                 cart.find(
-                    function (item) {
+                    function (
+                        item
+                    ) {
 
-                        return item.id === productId;
+                        return (
+                            item.id ===
+                            product.id
+                        );
 
                     }
                 );
 
 
-            if (existingProduct) {
+            if (
+                existing
+            ) {
 
-                existingProduct.quantity =
+                existing.quantity =
                     Number(
-                        existingProduct.quantity
-                    ) + 1;
+                        existing.quantity ||
+                        0
+                    ) +
+                    Number(
+                        quantity
+                    );
 
-            } else {
+
+                existing.price =
+                    product.price;
+
+                existing.mrp =
+                    product.mrp;
+
+                existing.image =
+                    product.image;
+
+                existing.name =
+                    product.name;
+
+                existing.category =
+                    product.category;
+
+                existing.subcategory =
+                    product.subcategory;
+
+            }
+            else {
 
                 cart.push({
 
-                    id: productId,
+                    id:
+                        product.id,
 
-                    name: productName,
+                    name:
+                        product.name,
 
-                    price: productPrice,
+                    price:
+                        product.price,
 
-                    mrp: productMrp,
+                    mrp:
+                        product.mrp,
 
-                    image: productImage,
+                    image:
+                        product.image,
 
-                    category: productCategory,
+                    category:
+                        product.category,
 
-                    quantity: 1
+                    subcategory:
+                        product.subcategory,
+
+                    quantity:
+                        Number(
+                            quantity
+                        )
 
                 });
 
@@ -2219,52 +2379,496 @@ document.addEventListener(
 
 
         /* =====================================================
-           FILTER + SEARCH
+           RENDER PRODUCTS
         ====================================================== */
 
-        function applyProductFilter() {
+        function renderProducts() {
 
-            const searchValue =
-                searchInput.value
-                    .toLowerCase()
-                    .trim();
+            if (
+                !productGrid
+            ) {
+
+                return;
+
+            }
 
 
-            let visibleProducts = 0;
+            productGrid.innerHTML =
+                "";
 
 
             products.forEach(
-                function (product) {
+                function (
+                    product,
+                    index
+                ) {
 
 
-                    const categoryMatches =
-                        currentFilter === "all" ||
-                        product.dataset.category === currentFilter;
+                    const discount =
+                        product.mrp >
+                        product.price
+
+                            ? Math.round(
+                                (
+                                    (
+                                        product.mrp -
+                                        product.price
+                                    ) /
+                                    product.mrp
+                                ) *
+                                100
+                            )
+
+                            : 0;
 
 
-                    const name =
-                        product.dataset.name
-                            .toLowerCase();
+                    const categoryLabel =
+
+                        product.category ===
+                        "women"
+
+                            ? "WOMEN"
+
+                            : product.category ===
+                            "men"
+
+                                ? "MEN"
+
+                                : product.category ===
+                                "innerwear"
+
+                                    ? "INNER WEAR"
+
+                                    : "KIDS";
 
 
-                    const searchMatches =
-                        name.includes(searchValue);
+                    let badge =
+                        "";
 
 
                     if (
-                        categoryMatches &&
-                        searchMatches
+                        index === 0
                     ) {
 
-                        product.style.display =
+                        badge =
+                            "BESTSELLER";
+
+                    }
+
+                    else if (
+                        index === 1
+                    ) {
+
+                        badge =
+                            "NEW";
+
+                    }
+
+                    else if (
+                        product.name ===
+                        "Teal Green Pattu Saree"
+                    ) {
+
+                        badge =
+                            "TRENDING";
+
+                    }
+
+
+                    const item =
+                        document.createElement(
+                            "div"
+                        );
+
+
+                    item.className =
+                        "product-item";
+
+
+                    item.dataset.category =
+                        product.category;
+
+
+                    item.dataset.name =
+                        product.name;
+
+
+                    item.dataset.productId =
+                        product.id;
+
+
+                    item.innerHTML = `
+
+                        <div
+                            class="fashion-product-card"
+                            data-product-id="${escapeHTML(
+                                product.id
+                            )}"
+                            data-product-name="${escapeHTML(
+                                product.name
+                            )}"
+                        >
+
+                            <div class="product-image">
+
+                                <img
+                                    src="${escapeHTML(
+                                        product.image
+                                    )}"
+                                    alt="${escapeHTML(
+                                        product.name
+                                    )}"
+                                    loading="lazy"
+                                >
+
+
+                                ${
+                                    badge
+                                        ? `
+                                            <span class="product-badge">
+                                                ${badge}
+                                            </span>
+                                        `
+                                        : ""
+                                }
+
+
+                                <button
+                                    class="wishlist"
+                                    type="button"
+                                    title="Add to wishlist"
+                                    aria-label="Add ${escapeHTML(
+                                        product.name
+                                    )} to wishlist"
+                                >
+
+                                    <i
+                                        class="fa-regular fa-heart"
+                                        aria-hidden="true"
+                                    ></i>
+
+                                </button>
+
+                            </div>
+
+
+                            <div class="product-info">
+
+                                <div class="product-main-row">
+
+                                    <div class="product-title-area">
+
+                                        <span>
+                                            ${categoryLabel}
+                                            •
+                                            ${escapeHTML(
+                                                product.subcategory
+                                            )}
+                                        </span>
+
+
+                                        <h3>
+                                            ${escapeHTML(
+                                                product.name
+                                            )}
+                                        </h3>
+
+                                    </div>
+
+
+                                    <button
+                                        class="add-cart"
+                                        type="button"
+                                        data-product-id="${escapeHTML(
+                                            product.id
+                                        )}"
+                                    >
+                                        Add to Cart
+                                    </button>
+
+                                </div>
+
+
+                                <div class="rating">
+
+                                    <span>
+                                        ★★★★★
+                                    </span>
+
+                                    <small>
+                                        (${product.reviews})
+                                    </small>
+
+                                </div>
+
+
+                                <div class="price">
+
+                                    ₹${formatPrice(
+                                        product.price
+                                    )}
+
+                                    <del>
+                                        ₹${formatPrice(
+                                            product.mrp
+                                        )}
+                                    </del>
+
+                                    <small
+                                        class="product-discount"
+                                    >
+                                        ${discount}% OFF
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    `;
+
+
+                    productGrid.appendChild(
+                        item
+                    );
+
+
+                    /* =================================================
+                       IMAGE FALLBACK
+                    ================================================== */
+
+                    const image =
+                        item.querySelector(
+                            ".product-image img"
+                        );
+
+
+                    if (
+                        image
+                    ) {
+
+                        image.addEventListener(
+                            "error",
+                            function () {
+
+                                if (
+                                    this.dataset.failed
+                                ) {
+
+                                    return;
+
+                                }
+
+
+                                this.dataset.failed =
+                                    "true";
+
+
+                                if (
+                                    product.category ===
+                                    "women"
+                                ) {
+
+                                    this.src =
+                                        "../womens main img.png";
+
+                                }
+
+                                else if (
+                                    product.category ===
+                                    "men"
+                                ) {
+
+                                    this.src =
+                                        "../mens main img.png";
+
+                                }
+
+                                else if (
+                                    product.category ===
+                                    "innerwear"
+                                ) {
+
+                                    this.src =
+                                        "../Inner main img.png";
+
+                                }
+
+                                else {
+
+                                    this.src =
+                                        "../kids main img.png";
+
+                                }
+
+                            }
+                        );
+
+                    }
+
+                }
+            );
+
+        }
+
+
+        /* =====================================================
+           FILTER
+        ====================================================== */
+
+        let currentFilter =
+            "all";
+
+
+        function applyFilter() {
+
+            const searchValue =
+                searchInput
+                    ? searchInput.value
+                        .trim()
+                        .toLowerCase()
+                    : "";
+
+
+            let visibleProducts =
+                0;
+
+
+            const categoryCounter = {
+
+                women:
+                    0,
+
+                men:
+                    0,
+
+                innerwear:
+                    0,
+
+                kids:
+                    0
+
+            };
+
+
+            const items =
+                productGrid.querySelectorAll(
+                    ".product-item"
+                );
+
+
+            items.forEach(
+                function (
+                    item
+                ) {
+
+                    const category =
+                        (
+                            item.dataset.category ||
+                            ""
+                        )
+                        .toLowerCase();
+
+
+                    const name =
+                        (
+                            item.dataset.name ||
+                            ""
+                        )
+                        .toLowerCase();
+
+
+                    const text =
+                        item.textContent
+                            .toLowerCase();
+
+
+                    const categoryMatch =
+
+                        currentFilter ===
+                        "all"
+
+                            ? true
+
+                            : category ===
+                            currentFilter;
+
+
+                    const searchMatch =
+
+                        !searchValue ||
+
+                        name.includes(
+                            searchValue
+                        ) ||
+
+                        text.includes(
+                            searchValue
+                        );
+
+
+                    let show =
+                        false;
+
+
+                    if (
+                        currentFilter ===
+                        "all"
+                    ) {
+
+                        if (
+                            categoryMatch &&
+                            searchMatch &&
+                            categoryCounter[
+                                category
+                            ] < 2
+                        ) {
+
+                            show =
+                                true;
+
+
+                            categoryCounter[
+                                category
+                            ]++;
+
+                        }
+
+                    }
+
+                    else {
+
+                        show =
+                            categoryMatch &&
+                            searchMatch;
+
+                    }
+
+
+                    if (
+                        show
+                    ) {
+
+                        item.style.display =
                             "";
+
+                        item.classList.remove(
+                            "category-hidden"
+                        );
 
                         visibleProducts++;
 
-                    } else {
+                    }
 
-                        product.style.display =
+                    else {
+
+                        item.style.display =
                             "none";
+
+                        item.classList.add(
+                            "category-hidden"
+                        );
 
                     }
 
@@ -2272,10 +2876,62 @@ document.addEventListener(
             );
 
 
-            noProducts.style.display =
-                visibleProducts === 0
-                    ? "block"
-                    : "none";
+            if (
+                noProducts
+            ) {
+
+                noProducts.style.display =
+
+                    visibleProducts === 0
+
+                        ? "block"
+
+                        : "none";
+
+            }
+
+        }
+
+
+        /* =====================================================
+           SHOW ALL
+        ====================================================== */
+
+        function showAllProducts() {
+
+            currentFilter =
+                "all";
+
+
+            if (
+                searchInput
+            ) {
+
+                searchInput.value =
+                    "";
+
+            }
+
+
+            filterButtons.forEach(
+                function (
+                    button
+                ) {
+
+                    button.classList.toggle(
+
+                        "active",
+
+                        button.dataset.filter ===
+                        "all"
+
+                    );
+
+                }
+            );
+
+
+            applyFilter();
 
         }
 
@@ -2285,17 +2941,20 @@ document.addEventListener(
         ====================================================== */
 
         filterButtons.forEach(
-            function (button) {
+            function (
+                button
+            ) {
 
                 button.addEventListener(
                     "click",
                     function () {
 
-
                         filterButtons.forEach(
-                            function (btn) {
+                            function (
+                                item
+                            ) {
 
-                                btn.classList.remove(
+                                item.classList.remove(
                                     "active"
                                 );
 
@@ -2303,16 +2962,17 @@ document.addEventListener(
                         );
 
 
-                        this.classList.add(
+                        button.classList.add(
                             "active"
                         );
 
 
                         currentFilter =
-                            this.dataset.filter;
+                            button.dataset.filter ||
+                            "all";
 
 
-                        applyProductFilter();
+                        applyFilter();
 
                     }
                 );
@@ -2321,64 +2981,81 @@ document.addEventListener(
         );
 
 
-
         /* =====================================================
-           CATEGORY CARDS
+           CATEGORY IMAGES
         ====================================================== */
 
         categoryLinks.forEach(
-            function (category) {
+            function (
+                category
+            ) {
 
                 category.addEventListener(
                     "click",
-                    function (event) {
+                    function (
+                        event
+                    ) {
 
                         event.preventDefault();
 
 
-                        const filter =
-                            this.dataset.filter;
-
-
                         currentFilter =
-                            filter;
+                            category.dataset.filter;
+
+
+                        if (
+                            searchInput
+                        ) {
+
+                            searchInput.value =
+                                "";
+
+                        }
 
 
                         filterButtons.forEach(
-                            function (button) {
+                            function (
+                                button
+                            ) {
 
-                                if (
+                                button.classList.toggle(
+
+                                    "active",
+
                                     button.dataset.filter ===
-                                    filter
-                                ) {
+                                    currentFilter
 
-                                    button.classList.add(
-                                        "active"
-                                    );
-
-                                } else {
-
-                                    button.classList.remove(
-                                        "active"
-                                    );
-
-                                }
+                                );
 
                             }
                         );
 
 
-                        applyProductFilter();
+                        applyFilter();
 
 
-                        document
-                            .getElementById(
+                        const productSection =
+                            document.getElementById(
                                 "fashionProducts"
-                            )
-                            .scrollIntoView({
-                                behavior: "smooth"
+                            );
+
+
+                        if (
+                            productSection
+                        ) {
+
+                            productSection.scrollIntoView({
+
+                                behavior:
+                                    "smooth",
+
+                                block:
+                                    "start"
+
                             });
 
+                        }
+
                     }
                 );
 
@@ -2386,201 +3063,133 @@ document.addEventListener(
         );
 
 
-
         /* =====================================================
-           PRODUCT CARD CLICK
-           
-           IMPORTANT:
-           Clicking image/card opens ProductDetails.html
+           HERO
         ====================================================== */
 
-        products.forEach(
-            function (product) {
+        if (
+            heroShopButton
+        ) {
 
+            heroShopButton.addEventListener(
+                "click",
+                function () {
 
-                const card =
-                    product.querySelector(
-                        ".fashion-product-card"
-                    );
+                    showAllProducts();
 
-
-                if (!card) {
-                    return;
                 }
+            );
 
-
-                card.addEventListener(
-                    "click",
-                    function (event) {
-
-
-                        /* -------------------------------------
-                           DO NOT OPEN DETAILS FOR BUTTON CLICKS
-                        ------------------------------------- */
-
-                        if (
-                            event.target.closest(
-                                ".add-cart"
-                            )
-                        ) {
-
-                            return;
-
-                        }
-
-
-                        if (
-                            event.target.closest(
-                                ".wishlist"
-                            )
-                        ) {
-
-                            return;
-
-                        }
-
-
-                        /* -------------------------------------
-                           GET PRODUCT ID
-                        ------------------------------------- */
-
-                        const productId =
-                            product.dataset.productId;
-
-
-                        if (!productId) {
-                            return;
-                        }
-
-
-                        /* -------------------------------------
-                           OPEN PRODUCT DETAILS
-                        ------------------------------------- */
-
-                        window.location.href =
-                            `../ProductDetails.html?id=${encodeURIComponent(productId)}`;
-
-                    }
-                );
-
-
-                card.setAttribute(
-                    "role",
-                    "link"
-                );
-
-
-                card.setAttribute(
-                    "tabindex",
-                    "0"
-                );
-
-
-                card.addEventListener(
-                    "keydown",
-                    function (event) {
-
-                        if (
-                            event.key === "Enter" ||
-                            event.key === " "
-                        ) {
-
-                            event.preventDefault();
-
-
-                            const productId =
-                                product.dataset.productId;
-
-
-                            if (!productId) {
-                                return;
-                            }
-
-
-                            window.location.href =
-                                `../ProductDetails.html?id=${encodeURIComponent(productId)}`;
-
-                        }
-
-                    }
-                );
-
-            }
-        );
-
+        }
 
 
         /* =====================================================
-           WISHLIST
+           PROMOTION
         ====================================================== */
 
-        wishlistButtons.forEach(
-            function (button) {
+        if (
+            promoExploreButton
+        ) {
 
-                button.addEventListener(
-                    "click",
-                    function (event) {
+            promoExploreButton.addEventListener(
+                "click",
+                function () {
 
+                    showAllProducts();
+
+                }
+            );
+
+        }
+
+
+        /* =====================================================
+           PRODUCT EVENTS
+        ====================================================== */
+
+        if (
+            productGrid
+        ) {
+
+            productGrid.addEventListener(
+                "click",
+                function (
+                    event
+                ) {
+
+
+                    /* =========================================
+                       WISHLIST
+                    ========================================== */
+
+                    const wishlist =
+                        event.target.closest(
+                            ".wishlist"
+                        );
+
+
+                    if (
+                        wishlist
+                    ) {
 
                         event.preventDefault();
 
                         event.stopPropagation();
 
 
-                        this.classList.toggle(
+                        wishlist.classList.toggle(
                             "active"
                         );
 
 
                         const icon =
-                            this.querySelector("i");
+                            wishlist.querySelector(
+                                "i"
+                            );
+
+
+                        const active =
+                            wishlist.classList.contains(
+                                "active"
+                            );
 
 
                         if (
-                            this.classList.contains(
-                                "active"
-                            )
+                            icon
                         ) {
 
-                            icon.classList.remove(
-                                "fa-regular"
+                            icon.classList.toggle(
+                                "fa-solid",
+                                active
                             );
 
-                            icon.classList.add(
-                                "fa-solid"
-                            );
 
-                        } else {
-
-                            icon.classList.remove(
-                                "fa-solid"
-                            );
-
-                            icon.classList.add(
-                                "fa-regular"
+                            icon.classList.toggle(
+                                "fa-regular",
+                                !active
                             );
 
                         }
 
+
+                        return;
+
                     }
-                );
-
-            }
-        );
 
 
+                    /* =========================================
+                       ADD TO CART
+                    ========================================== */
 
-        /* =====================================================
-           ADD TO CART
-        ====================================================== */
+                    const addCart =
+                        event.target.closest(
+                            ".add-cart"
+                        );
 
-        addCartButtons.forEach(
-            function (button) {
 
-                button.addEventListener(
-                    "click",
-                    function (event) {
-
+                    if (
+                        addCart
+                    ) {
 
                         event.preventDefault();
 
@@ -2588,30 +3197,44 @@ document.addEventListener(
 
 
                         const product =
-                            this.closest(
-                                ".product-item"
+                            products.find(
+                                function (
+                                    item
+                                ) {
+
+                                    return (
+                                        item.id ===
+                                        addCart.dataset.productId
+                                    );
+
+                                }
                             );
 
 
-                        if (!product) {
+                        if (
+                            !product
+                        ) {
+
                             return;
+
                         }
 
 
                         addProductToCart(
-                            product
+                            product,
+                            1
                         );
 
 
                         const originalText =
-                            this.textContent;
+                            addCart.textContent;
 
 
-                        this.textContent =
+                        addCart.textContent =
                             "Added ✓";
 
 
-                        this.classList.add(
+                        addCart.classList.add(
                             "added"
                         );
 
@@ -2619,10 +3242,11 @@ document.addEventListener(
                         setTimeout(
                             function () {
 
-                                button.textContent =
+                                addCart.textContent =
                                     originalText;
 
-                                button.classList.remove(
+
+                                addCart.classList.remove(
                                     "added"
                                 );
 
@@ -2630,72 +3254,208 @@ document.addEventListener(
                             1200
                         );
 
+
+                        return;
+
                     }
-                );
 
-            }
-        );
 
+                    /* =========================================
+                       PRODUCT DETAILS
+                    ========================================== */
+
+                    const card =
+                        event.target.closest(
+                            ".fashion-product-card"
+                        );
+
+
+                    if (
+                        card
+                    ) {
+
+                        const productId =
+                            card.dataset.productId;
+
+
+                        const productName =
+                            card.dataset.productName;
+
+
+                        const product =
+                            products.find(
+                                function (
+                                    item
+                                ) {
+
+                                    return (
+                                        item.id ===
+                                        productId
+                                    );
+
+                                }
+                            );
+
+
+                        if (
+                            !product
+                        ) {
+
+                            return;
+
+                        }
+
+
+                        window.location.href =
+
+                            "../ProductDetails.html" +
+
+                            "?name=" +
+                            encodeURIComponent(
+                                productName
+                            ) +
+
+                            "&id=" +
+                            encodeURIComponent(
+                                productId
+                            ) +
+
+                            "&price=" +
+                            encodeURIComponent(
+                                product.price
+                            ) +
+
+                            "&mrp=" +
+                            encodeURIComponent(
+                                product.mrp
+                            );
+
+                    }
+
+                }
+            );
+
+        }
 
 
         /* =====================================================
            SEARCH
         ====================================================== */
 
-        searchInput.addEventListener(
-            "input",
-            function () {
+        if (
+            searchInput
+        ) {
 
-                applyProductFilter();
+            searchInput.addEventListener(
+                "input",
+                function () {
 
-            }
-        );
+                    applyFilter();
 
+                }
+            );
+
+        }
 
 
         /* =====================================================
-           HEADER CART BUTTON
+           CART
         ====================================================== */
 
-        headerCartButton.addEventListener(
-            "click",
-            function () {
+        if (
+            headerCartButton
+        ) {
 
-                window.location.href =
-                    "../Cart.html";
+            headerCartButton.addEventListener(
+                "click",
+                function () {
 
-            }
-        );
+                    window.location.href =
+                        "../Cart/Cart.html";
 
+                }
+            );
+
+        }
+
+
+        /* =====================================================
+           HEADER WISHLIST
+        ====================================================== */
+
+        if (
+            wishlistBtn
+        ) {
+
+            wishlistBtn.addEventListener(
+                "click",
+                function () {
+
+                    this.classList.toggle(
+                        "active"
+                    );
+
+
+                    const icon =
+                        this.querySelector(
+                            "i"
+                        );
+
+
+                    const active =
+                        this.classList.contains(
+                            "active"
+                        );
+
+
+                    if (
+                        icon
+                    ) {
+
+                        icon.classList.toggle(
+                            "fa-solid",
+                            active
+                        );
+
+
+                        icon.classList.toggle(
+                            "fa-regular",
+                            !active
+                        );
+
+                    }
+
+                }
+            );
+
+        }
 
 
         /* =====================================================
            NEWSLETTER
         ====================================================== */
 
-        const newsletterForm =
-            document.getElementById(
-                "newsletterForm"
-            );
-
-
-        const newsletterMessage =
-            document.getElementById(
-                "newsletterMessage"
-            );
-
-
-        if (newsletterForm) {
+        if (
+            newsletterForm
+        ) {
 
             newsletterForm.addEventListener(
                 "submit",
-                function (event) {
+                function (
+                    event
+                ) {
 
                     event.preventDefault();
 
 
-                    newsletterMessage.textContent =
-                        "Thank you for subscribing!";
+                    if (
+                        newsletterMessage
+                    ) {
+
+                        newsletterMessage.textContent =
+                            "Thank you for subscribing!";
+
+                    }
 
 
                     newsletterForm.reset();
@@ -2706,19 +3466,21 @@ document.addEventListener(
         }
 
 
-
         /* =====================================================
-           INITIAL CART COUNT
+           INITIALIZE
         ====================================================== */
+
+        renderProducts();
 
         updateCartCount();
 
+        applyFilter();
 
-        /* =====================================================
-           INITIAL PRODUCTS
-        ====================================================== */
 
-        applyProductFilter();
+        console.log(
+            "Total Fashion Products:",
+            products.length
+        );
 
     }
 

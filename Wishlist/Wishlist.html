@@ -1,0 +1,2017 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>OZZO | Wishlist</title>
+
+      <link rel="icon" type="image/png" href="/OZZO logo.jpg">
+    <!-- =====================================================
+         BOOTSTRAP
+    ====================================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- =====================================================
+         GOOGLE FONT
+    ====================================================== -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         WISHLIST CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="Wishlist.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     TOP BAR
+========================================================= -->
+
+<div class="top-bar">
+
+    <div class="container-fluid top-bar-inner px-4">
+
+        <div class="shipping-text">
+
+            <i
+                class="fa-solid fa-truck"
+                aria-hidden="true">
+            </i>
+
+            <span>
+                Free shipping on orders above ₹999
+            </span>
+
+        </div>
+
+
+        <div class="top-links">
+
+            <a href="#">
+                Track Order
+            </a>
+
+            <span>|</span>
+
+            <a href="/Faq/Faq.html">
+                Help
+            </a>
+
+            <span>|</span>
+
+            <a
+                href="#"
+                class="login-link"
+                title="Login"
+                aria-label="Login"
+            >
+
+                <i
+                    class="fa-regular fa-user"
+                    aria-hidden="true">
+                </i>
+
+                Login
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="main-header">
+
+    <nav class="navbar navbar-expand-xl">
+
+        <div class="container-fluid px-4">
+
+
+            <!-- LOGO -->
+
+            <a
+                class="navbar-brand ozzo-logo"
+                href="/index.html"
+            >
+                OZZO
+            </a>
+
+
+            <!-- MOBILE BUTTON -->
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#ozzoNavbar"
+                aria-controls="ozzoNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                title="Toggle navigation"
+            >
+
+                <i
+                    class="fa-solid fa-bars"
+                    aria-hidden="true">
+                </i>
+
+            </button>
+
+
+            <!-- NAVIGATION -->
+
+            <div
+                class="collapse navbar-collapse"
+                id="ozzoNavbar"
+            >
+
+                <ul class="navbar-nav main-nav mx-auto">
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="/index.html"
+                        >
+                            Home
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="/Fashion/Fashion.html"
+                        >
+                            Fashion
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="/Books/Books.html"
+                        >
+                            Books
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="/Stationary/Stationary.html"
+                        >
+                            Stationery
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="/Pads/Pads.html"
+                        >
+                            Pads
+                        </a>
+
+                    </li>
+
+                </ul>
+
+
+                <!-- HEADER ACTIONS -->
+
+                <div class="header-actions">
+
+
+                    <!-- SEARCH -->
+
+                    <div class="search-box">
+
+                        <input
+                            type="text"
+                            id="searchInput"
+                            placeholder="Search OZZO..."
+                            aria-label="Search OZZO"
+                        >
+
+                        <i
+                            class="fa-solid fa-magnifying-glass"
+                            aria-hidden="true">
+                        </i>
+
+                    </div>
+
+
+                    <!-- WISHLIST -->
+
+                               <a class="header-icon wishlist-button"
+   href="../Wishlist/Wishlist.html"
+   title="Wishlist"
+   aria-label="Wishlist">
+    <i class="fa-regular fa-heart"></i>
+</a>
+
+
+                    <!-- CART -->
+
+                    <a
+    href="../Cart/Cart.html"
+    class="header-icon cart-button"
+    title="Shopping Cart"
+    aria-label="Shopping Cart"
+>
+    <i
+        class="fa-solid fa-bag-shopping"
+        aria-hidden="true"
+    ></i>
+
+    <span
+        class="cart-count"
+        id="cartCount"
+    >
+        0
+    </span>
+</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- =========================================================
+     BREADCRUMB
+========================================================= -->
+
+<section class="wishlist-breadcrumb">
+
+    <div class="container-fluid px-4">
+
+        <div class="breadcrumb-inner">
+
+            <a href="/index.html">
+                Home
+            </a>
+
+            <span>
+                /
+            </span>
+
+            <strong>
+                Wishlist
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     WISHLIST HEADER
+========================================================= -->
+
+<section class="wishlist-header-section">
+
+    <div class="container-fluid px-4">
+
+        <div class="wishlist-title-row">
+
+
+            <div class="wishlist-title">
+
+                <span>
+                    YOUR SAVED ITEMS
+                </span>
+
+                <h1>
+                    My Wishlist
+                </h1>
+
+                <p>
+                    Keep the products you love close and
+                    come back to them whenever you're ready.
+                </p>
+
+            </div>
+
+
+            <div class="wishlist-actions">
+
+                <button
+                    type="button"
+                    class="share-btn"
+                    id="shareWishlistBtn"
+                >
+
+                    <i
+                        class="fa-solid fa-share-nodes"
+                        aria-hidden="true">
+                    </i>
+
+                    Share Wishlist
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- LIST INFORMATION -->
+
+        <div class="wishlist-info-bar">
+
+            <div class="wishlist-info-left">
+
+                <i
+                    class="fa-regular fa-heart"
+                    aria-hidden="true">
+                </i>
+
+                <strong id="wishlistItemCount">
+                    0 items
+                </strong>
+
+                <span>
+                    in your wishlist
+                </span>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="remove-all-btn"
+                id="removeAllBtn"
+            >
+                Remove All
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     WISHLIST CONTENT
+========================================================= -->
+
+<section class="wishlist-section">
+
+    <div class="container-fluid px-4">
+
+        <div class="wishlist-layout">
+
+
+            <!-- =================================================
+                 SIDEBAR
+            ================================================== -->
+
+            <aside class="wishlist-sidebar">
+
+                <div class="sidebar-card">
+
+                    <span class="sidebar-label">
+                        MY LIST
+                    </span>
+
+                    <button
+                        class="list-option active"
+                        type="button"
+                        data-filter="all"
+                    >
+
+                        <span>
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true">
+                            </i>
+
+                            All Saved Items
+
+                        </span>
+
+                        <strong id="sidebarAllCount">
+                            0
+                        </strong>
+
+                    </button>
+
+
+                    <button
+                        class="list-option"
+                        type="button"
+                        data-filter="fashion"
+                    >
+
+                        <span>
+
+                            <i
+                                class="fa-solid fa-shirt"
+                                aria-hidden="true">
+                            </i>
+
+                            Fashion
+
+                        </span>
+
+                        <strong id="sidebarFashionCount">
+                            0
+                        </strong>
+
+                    </button>
+
+
+                    <button
+                        class="list-option"
+                        type="button"
+                        data-filter="books"
+                    >
+
+                        <span>
+
+                            <i
+                                class="fa-solid fa-book"
+                                aria-hidden="true">
+                            </i>
+
+                            Books
+
+                        </span>
+
+                        <strong id="sidebarBooksCount">
+                            0
+                        </strong>
+
+                    </button>
+
+
+                    <button
+                        class="list-option"
+                        type="button"
+                        data-filter="stationery"
+                    >
+
+                        <span>
+
+                            <i
+                                class="fa-solid fa-pen"
+                                aria-hidden="true">
+                            </i>
+
+                            Stationery
+
+                        </span>
+
+                        <strong id="sidebarStationeryCount">
+                            0
+                        </strong>
+
+                    </button>
+
+
+                    <button
+                        class="list-option"
+                        type="button"
+                        data-filter="pads"
+                    >
+
+                        <span>
+
+                            <i
+                                class="fa-solid fa-box"
+                                aria-hidden="true">
+                            </i>
+
+                            Pads
+
+                        </span>
+
+                        <strong id="sidebarPadsCount">
+                            0
+                        </strong>
+
+                    </button>
+
+                </div>
+
+
+                <!-- SHOPPING TIP -->
+
+                <div class="sidebar-tip">
+
+                    <div class="tip-icon">
+
+                        <i
+                            class="fa-regular fa-lightbulb"
+                            aria-hidden="true">
+                        </i>
+
+                    </div>
+
+                    <strong>
+                        Save now. Decide later.
+                    </strong>
+
+                    <p>
+                        Keep your favourites here until
+                        you're ready to add them to your bag.
+                    </p>
+
+                </div>
+
+            </aside>
+
+
+            <!-- =================================================
+                 MAIN WISHLIST
+            ================================================== -->
+
+            <main class="wishlist-main">
+
+
+                <!-- TOOLBAR -->
+
+                <div class="wishlist-toolbar">
+
+                    <div class="toolbar-left">
+
+                        <span>
+                            SHOWING
+                        </span>
+
+                        <strong id="toolbarCount">
+                            0 items
+                        </strong>
+
+                    </div>
+
+
+                    <div class="toolbar-right">
+
+                        <label for="sortWishlist">
+                            Sort by
+                        </label>
+
+                        <select id="sortWishlist">
+
+                            <option value="default">
+                                Recently Added
+                            </option>
+
+                            <option value="price-low">
+                                Price: Low to High
+                            </option>
+
+                            <option value="price-high">
+                                Price: High to Low
+                            </option>
+
+                            <option value="name">
+                                Name
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT GRID -->
+
+                <div
+                    class="wishlist-grid"
+                    id="wishlistGrid"
+                ></div>
+
+
+                <!-- EMPTY STATE -->
+
+                <div
+                    class="wishlist-empty"
+                    id="wishlistEmpty"
+                >
+
+                    <div class="empty-icon">
+
+                        <i
+                            class="fa-regular fa-heart"
+                            aria-hidden="true">
+                        </i>
+
+                    </div>
+
+                    <span>
+                        YOUR WISHLIST IS EMPTY
+                    </span>
+
+                    <h2>
+                        Nothing Saved Yet.
+                    </h2>
+
+                    <p>
+                        Explore OZZO and add products you
+                        love to your wishlist.
+                    </p>
+
+                    <a href="/index.html">
+                        Continue Shopping
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     WISHLIST CTA
+========================================================= -->
+
+<section class="wishlist-cta">
+
+    <div class="container-fluid px-4">
+
+        <div class="wishlist-cta-box">
+
+            <div>
+
+                <span>
+                    KEEP EXPLORING
+                </span>
+
+                <h2>
+                    More To Love.
+                </h2>
+
+                <p>
+                    Discover new arrivals across fashion,
+                    books, stationery and everyday essentials.
+                </p>
+
+            </div>
+
+
+            <a href="/index.html">
+
+                Explore OZZO
+
+                <span>
+                    →
+                </span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="footer">
+
+    <div class="container-fluid px-lg-5">
+
+        <div class="footer-main">
+
+
+            <!-- BRAND -->
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+                    OZZO
+                </div>
+
+                <div class="footer-categories">
+
+                    Fashion
+
+                    <span>•</span>
+
+                    Books
+
+                    <span>•</span>
+
+                    Stationery
+
+                    <span>•</span>
+
+                    Pads
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="footer-column">
+
+                <h4>
+                    Quick Links
+                </h4>
+
+                <a href="/index.html">
+                    Home
+                </a>
+
+                <a href="/About Us/About.html">
+                    About Us
+                </a>
+
+                <a href="/Faq/Faq.html">
+                    FAQs
+                </a>
+
+                <a href="/Contact/Contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- CATEGORIES -->
+
+            <div class="footer-column">
+
+                <h4>
+                    Categories
+                </h4>
+
+                <a href="/Fashion/Fashion.html">
+                    Fashion
+                </a>
+
+                <a href="/Books/Books.html">
+                    Books
+                </a>
+
+                <a href="/Stationary/Stationary.html">
+                    Stationery
+                </a>
+
+                <a href="/Pads/Pads.html">
+                    Pads
+                </a>
+
+            </div>
+
+
+            <!-- CUSTOMER SERVICE -->
+
+            <div class="footer-column">
+
+                <h4>
+                    Customer Service
+                </h4>
+
+                <a href="/Privacy/Privacy.html">
+                    Privacy Policy
+                </a>
+
+                <a href="/Terms/Terms.html">
+                    Terms &amp; Conditions
+                </a>
+
+                <a href="/Faq/Faq.html">
+                    Help Center
+                </a>
+
+            </div>
+
+
+            <!-- NEWSLETTER -->
+
+            <div class="footer-newsletter">
+
+                <h4>
+                    Join Our Newsletter
+                </h4>
+
+                <p>
+                    Get updates on new arrivals and special offers.
+                </p>
+
+
+                <form id="newsletterForm">
+
+                    <div class="newsletter-input">
+
+                        <input
+                            type="email"
+                            id="newsletterEmail"
+                            placeholder="Enter your email address"
+                            required
+                        >
+
+                        <button
+                            type="submit"
+                            title="Subscribe"
+                            aria-label="Subscribe"
+                        >
+                            →
+                        </button>
+
+                    </div>
+
+                </form>
+
+
+                <div
+                    class="newsletter-message"
+                    id="newsletterMessage"
+                ></div>
+
+
+                <div class="social-icons">
+
+                    <a href="#" title="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" title="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" title="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                    <a href="#" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="#" title="Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container-fluid px-lg-5">
+
+            <div class="footer-bottom-inner">
+
+                <span>
+                    © 2025 OZZO. All rights reserved.
+                </span>
+
+                <span>
+                    Better Choices. A Brighter You.
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     BOOTSTRAP JS
+========================================================= -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+<!-- =========================================================
+     WISHLIST JS
+========================================================= -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function(){
+
+
+    /* =====================================================
+       ELEMENTS
+    ===================================================== */
+
+    const wishlistGrid =
+        document.getElementById("wishlistGrid");
+
+    const wishlistEmpty =
+        document.getElementById("wishlistEmpty");
+
+    const wishlistItemCount =
+        document.getElementById("wishlistItemCount");
+
+    const toolbarCount =
+        document.getElementById("toolbarCount");
+
+    const headerWishlistCount =
+        document.getElementById("headerWishlistCount");
+
+    const cartCount =
+        document.getElementById("cartCount");
+
+    const sortWishlist =
+        document.getElementById("sortWishlist");
+
+    const removeAllBtn =
+        document.getElementById("removeAllBtn");
+
+    const shareWishlistBtn =
+        document.getElementById("shareWishlistBtn");
+
+    const searchInput =
+        document.getElementById("searchInput");
+
+
+    /* =====================================================
+       STORAGE
+    ===================================================== */
+
+    const WISHLIST_KEY = "ozzoWishlist";
+
+    const CART_KEY = "ozzoCart";
+
+
+    /* =====================================================
+       SAMPLE PRODUCTS
+       Used when no wishlist exists yet.
+    ===================================================== */
+
+    const sampleWishlist = [
+
+        {
+            id:"wish-fashion-01",
+            name:"Classic Oversized Shirt",
+            category:"fashion",
+            categoryLabel:"WOMEN'S FASHION",
+            price:29.99,
+            mrp:39.99,
+            rating:4.8,
+            reviews:124,
+            image:"../women shirt.jpg"
+        },
+
+        {
+            id:"wish-fashion-02",
+            name:"Urban Hoodie",
+            category:"fashion",
+            categoryLabel:"MEN'S FASHION",
+            price:39.99,
+            mrp:49.99,
+            rating:4.7,
+            reviews:98,
+            image:"../hoddie.jpg"
+        },
+
+        {
+            id:"wish-book-01",
+            name:"Atomic Habits",
+            category:"books",
+            categoryLabel:"BOOKS",
+            price:16.99,
+            mrp:21.99,
+            rating:4.9,
+            reviews:203,
+            image:"../book.jpg"
+        },
+
+        {
+            id:"wish-stationery-01",
+            name:"Premium Gel Pen Set",
+            category:"stationery",
+            categoryLabel:"WRITING",
+            price:149,
+            mrp:199,
+            rating:4.8,
+            reviews:149,
+            image:"../pens.jpg"
+        },
+
+        {
+            id:"wish-pads-01",
+            name:"Whisper Ultra No Gap No Leaks XL",
+            category:"pads",
+            categoryLabel:"WHISPER · XL",
+            price:215,
+            mrp:249,
+            rating:4.8,
+            reviews:748,
+            image:"../pads.jpg"
+        }
+
+    ];
+
+
+    /* =====================================================
+       GET WISHLIST
+    ===================================================== */
+
+    function getWishlist(){
+
+        try{
+
+            const saved =
+                JSON.parse(
+                    localStorage.getItem(WISHLIST_KEY)
+                );
+
+            if(
+                Array.isArray(saved) &&
+                saved.length
+            ){
+
+                return saved;
+
+            }
+
+        }
+        catch(error){
+
+            console.warn(
+                "Wishlist data could not be read.",
+                error
+            );
+
+        }
+
+        return sampleWishlist.map(function(item){
+            return {...item};
+        });
+
+    }
+
+
+    let wishlist = getWishlist();
+
+    let currentFilter = "all";
+
+
+    /* =====================================================
+       SAVE
+    ===================================================== */
+
+    function saveWishlist(){
+
+        localStorage.setItem(
+            WISHLIST_KEY,
+            JSON.stringify(wishlist)
+        );
+
+    }
+
+
+    /* =====================================================
+       CART
+    ===================================================== */
+
+    function getCart(){
+
+        try{
+
+            const saved =
+                JSON.parse(
+                    localStorage.getItem(CART_KEY)
+                );
+
+            if(Array.isArray(saved)){
+                return saved;
+            }
+
+        }
+        catch(error){
+
+            console.warn(
+                "Cart data could not be read.",
+                error
+            );
+
+        }
+
+        return [];
+
+    }
+
+
+    function saveCart(cart){
+
+        localStorage.setItem(
+            CART_KEY,
+            JSON.stringify(cart)
+        );
+
+    }
+
+
+    function getCartCount(){
+
+        const cart = getCart();
+
+        return cart.reduce(
+            function(total,item){
+
+                const quantity =
+                    Number(item.quantity) || 1;
+
+                return total + quantity;
+
+            },
+            0
+        );
+
+    }
+
+
+    function updateCartCount(){
+
+        cartCount.textContent =
+            getCartCount();
+
+    }
+
+
+    /* =====================================================
+       ADD TO CART
+    ===================================================== */
+
+    function addToCart(product){
+
+        const cart = getCart();
+
+        const existing =
+            cart.find(
+                function(item){
+                    return item.id === product.id;
+                }
+            );
+
+
+        if(existing){
+
+            existing.quantity =
+                (Number(existing.quantity) || 1) + 1;
+
+        }
+        else{
+
+            cart.push({
+
+                id:product.id,
+
+                name:product.name,
+
+                price:product.price,
+
+                mrp:product.mrp,
+
+                image:product.image,
+
+                category:product.category,
+
+                quantity:1
+
+            });
+
+        }
+
+
+        saveCart(cart);
+
+        updateCartCount();
+
+        showToast(
+            product.name + " added to bag"
+        );
+
+    }
+
+
+    /* =====================================================
+       REMOVE ITEM
+    ===================================================== */
+
+    function removeItem(id){
+
+        wishlist =
+            wishlist.filter(
+                function(item){
+                    return item.id !== id;
+                }
+            );
+
+        saveWishlist();
+
+        renderWishlist();
+
+        showToast(
+            "Item removed from wishlist"
+        );
+
+    }
+
+
+    /* =====================================================
+       REMOVE ALL
+    ===================================================== */
+
+    removeAllBtn.addEventListener(
+        "click",
+        function(){
+
+            if(!wishlist.length){
+                return;
+            }
+
+
+            const confirmed =
+                window.confirm(
+                    "Remove all items from your wishlist?"
+                );
+
+
+            if(!confirmed){
+                return;
+            }
+
+
+            wishlist = [];
+
+            saveWishlist();
+
+            renderWishlist();
+
+            showToast(
+                "Wishlist cleared"
+            );
+
+        }
+    );
+
+
+    /* =====================================================
+       FILTER
+    ===================================================== */
+
+    document
+        .querySelectorAll(".list-option")
+        .forEach(function(button){
+
+            button.addEventListener(
+                "click",
+                function(){
+
+                    document
+                        .querySelectorAll(
+                            ".list-option"
+                        )
+                        .forEach(function(btn){
+
+                            btn.classList.remove(
+                                "active"
+                            );
+
+                        });
+
+
+                    this.classList.add(
+                        "active"
+                    );
+
+
+                    currentFilter =
+                        this.dataset.filter;
+
+
+                    renderWishlist();
+
+                }
+            );
+
+        });
+
+
+    /* =====================================================
+       SORT
+    ===================================================== */
+
+    sortWishlist.addEventListener(
+        "change",
+        function(){
+
+            renderWishlist();
+
+        }
+    );
+
+
+    /* =====================================================
+       SEARCH
+    ===================================================== */
+
+    searchInput.addEventListener(
+        "input",
+        function(){
+
+            renderWishlist();
+
+        }
+    );
+
+
+    /* =====================================================
+       RENDER WISHLIST
+    ===================================================== */
+
+    function renderWishlist(){
+
+        wishlistGrid.innerHTML = "";
+
+
+        const searchValue =
+            searchInput.value
+                .toLowerCase()
+                .trim();
+
+
+        let filtered =
+            wishlist.filter(
+                function(item){
+
+                    const matchesCategory =
+                        currentFilter === "all" ||
+                        item.category === currentFilter;
+
+                    const matchesSearch =
+                        item.name
+                            .toLowerCase()
+                            .includes(searchValue);
+
+
+                    return (
+                        matchesCategory &&
+                        matchesSearch
+                    );
+
+                }
+            );
+
+
+        /* SORT */
+
+        const sort =
+            sortWishlist.value;
+
+
+        if(sort === "price-low"){
+
+            filtered.sort(
+                function(a,b){
+                    return a.price - b.price;
+                }
+            );
+
+        }
+
+        else if(sort === "price-high"){
+
+            filtered.sort(
+                function(a,b){
+                    return b.price - a.price;
+                }
+            );
+
+        }
+
+        else if(sort === "name"){
+
+            filtered.sort(
+                function(a,b){
+
+                    return a.name.localeCompare(
+                        b.name
+                    );
+
+                }
+            );
+
+        }
+
+
+        /* COUNTS */
+
+        const total =
+            wishlist.length;
+
+
+        wishlistItemCount.textContent =
+            total +
+            (
+                total === 1
+                    ? " item"
+                    : " items"
+            );
+
+
+        toolbarCount.textContent =
+            filtered.length +
+            (
+                filtered.length === 1
+                    ? " item"
+                    : " items"
+            );
+
+
+        headerWishlistCount.textContent =
+            total;
+
+
+        updateSidebarCounts();
+
+
+        /* EMPTY STATE */
+
+        if(filtered.length === 0){
+
+            wishlistGrid.style.display =
+                "none";
+
+            wishlistEmpty.style.display =
+                "flex";
+
+            return;
+
+        }
+
+
+        wishlistGrid.style.display =
+            "grid";
+
+        wishlistEmpty.style.display =
+            "none";
+
+
+        /* PRODUCTS */
+
+        filtered.forEach(
+            function(product){
+
+                wishlistGrid.appendChild(
+                    createWishlistCard(product)
+                );
+
+            }
+        );
+
+    }
+
+
+    /* =====================================================
+       CREATE PRODUCT CARD
+    ===================================================== */
+
+    function createWishlistCard(product){
+
+        const card =
+            document.createElement("article");
+
+
+        card.className =
+            "wishlist-product";
+
+
+        const discount =
+            product.mrp > product.price
+                ? Math.round(
+                    (
+                        (product.mrp - product.price) /
+                        product.mrp
+                    ) * 100
+                )
+                : 0;
+
+
+        card.innerHTML = `
+
+            <div class="wishlist-product-image">
+
+                <img
+                    src="${product.image}"
+                    alt="${product.name}"
+                    loading="lazy"
+                >
+
+                <span class="saved-label">
+                    SAVED
+                </span>
+
+                <button
+                    class="remove-wishlist"
+                    type="button"
+                    title="Remove from wishlist"
+                    aria-label="Remove ${product.name} from wishlist"
+                    data-id="${product.id}"
+                >
+
+                    <i
+                        class="fa-solid fa-xmark"
+                        aria-hidden="true">
+                    </i>
+
+                </button>
+
+            </div>
+
+
+            <div class="wishlist-product-details">
+
+                <span class="product-category">
+                    ${product.categoryLabel}
+                </span>
+
+                <h3>
+                    ${product.name}
+                </h3>
+
+
+                <div class="product-rating">
+
+                    <span>
+                        ${"★".repeat(Math.round(product.rating))}
+                    </span>
+
+                    <small>
+                        ${product.rating} (${product.reviews})
+                    </small>
+
+                </div>
+
+
+                <div class="product-price">
+
+                    ₹${product.price}
+
+                    ${
+                        discount > 0
+                            ? `
+                                <del>
+                                    ₹${product.mrp}
+                                </del>
+
+                                <em>
+                                    ${discount}% OFF
+                                </em>
+                              `
+                            : ""
+                    }
+
+                </div>
+
+
+                <button
+                    class="add-bag-btn"
+                    type="button"
+                    data-id="${product.id}"
+                >
+
+                    <i
+                        class="fa-solid fa-bag-shopping"
+                        aria-hidden="true">
+                    </i>
+
+                    Add to Bag
+
+                </button>
+
+
+                <button
+                    class="view-product-btn"
+                    type="button"
+                    data-name="${product.name}"
+                >
+
+                    View Product
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+            </div>
+
+        `;
+
+
+        /* REMOVE */
+
+        card
+            .querySelector(".remove-wishlist")
+            .addEventListener(
+                "click",
+                function(){
+
+                    removeItem(
+                        product.id
+                    );
+
+                }
+            );
+
+
+        /* ADD TO BAG */
+
+        card
+            .querySelector(".add-bag-btn")
+            .addEventListener(
+                "click",
+                function(){
+
+                    addToCart(
+                        product
+                    );
+
+                    this.innerHTML =
+                        '<i class="fa-solid fa-check"></i> Added';
+
+                    this.classList.add(
+                        "added"
+                    );
+
+
+                    const button =
+                        this;
+
+
+                    setTimeout(
+                        function(){
+
+                            button.innerHTML =
+                                '<i class="fa-solid fa-bag-shopping"></i> Add to Bag';
+
+                            button.classList.remove(
+                                "added"
+                            );
+
+                        },
+                        1200
+                    );
+
+                }
+            );
+
+
+        /* VIEW PRODUCT */
+
+        card
+            .querySelector(".view-product-btn")
+            .addEventListener(
+                "click",
+                function(){
+
+                    const productName =
+                        encodeURIComponent(
+                            product.name
+                        );
+
+
+                    window.location.href =
+                        "../ProductDetails.html?name=" +
+                        productName +
+                        "&price=" +
+                        product.price +
+                        "&mrp=" +
+                        product.mrp;
+
+                }
+            );
+
+
+        return card;
+
+    }
+
+
+    /* =====================================================
+       SIDEBAR COUNTS
+    ===================================================== */
+
+    function updateSidebarCounts(){
+
+        document.getElementById(
+            "sidebarAllCount"
+        ).textContent =
+            wishlist.length;
+
+
+        document.getElementById(
+            "sidebarFashionCount"
+        ).textContent =
+            countCategory("fashion");
+
+
+        document.getElementById(
+            "sidebarBooksCount"
+        ).textContent =
+            countCategory("books");
+
+
+        document.getElementById(
+            "sidebarStationeryCount"
+        ).textContent =
+            countCategory("stationery");
+
+
+        document.getElementById(
+            "sidebarPadsCount"
+        ).textContent =
+            countCategory("pads");
+
+    }
+
+
+    function countCategory(category){
+
+        return wishlist.filter(
+            function(item){
+                return item.category === category;
+            }
+        ).length;
+
+    }
+
+
+    /* =====================================================
+       SHARE
+    ===================================================== */
+
+    shareWishlistBtn.addEventListener(
+        "click",
+        async function(){
+
+            const shareText =
+                "My OZZO Wishlist";
+
+
+            if(
+                navigator.share
+            ){
+
+                try{
+
+                    await navigator.share({
+
+                        title:
+                            "OZZO Wishlist",
+
+                        text:
+                            shareText,
+
+                        url:
+                            window.location.href
+
+                    });
+
+                }
+                catch(error){
+
+                    /* User closed share dialog */
+
+                }
+
+            }
+            else{
+
+                try{
+
+                    await navigator.clipboard.writeText(
+                        window.location.href
+                    );
+
+                    showToast(
+                        "Wishlist link copied"
+                    );
+
+                }
+                catch(error){
+
+                    showToast(
+                        "Wishlist ready to share"
+                    );
+
+                }
+
+            }
+
+        }
+    );
+
+
+    /* =====================================================
+       TOAST
+    ===================================================== */
+
+    function showToast(message){
+
+        const existing =
+            document.querySelector(
+                ".wishlist-toast"
+            );
+
+
+        if(existing){
+            existing.remove();
+        }
+
+
+        const toast =
+            document.createElement("div");
+
+
+        toast.className =
+            "wishlist-toast";
+
+
+        toast.innerHTML = `
+
+            <i
+                class="fa-solid fa-circle-check"
+                aria-hidden="true">
+            </i>
+
+            <span>
+                ${message}
+            </span>
+
+        `;
+
+
+        document.body.appendChild(
+            toast
+        );
+
+
+        requestAnimationFrame(
+            function(){
+
+                toast.classList.add(
+                    "show"
+                );
+
+            }
+        );
+
+
+        setTimeout(
+            function(){
+
+                toast.classList.remove(
+                    "show"
+                );
+
+
+                setTimeout(
+                    function(){
+
+                        toast.remove();
+
+                    },
+                    250
+                );
+
+            },
+            1800
+        );
+
+    }
+
+
+    /* =====================================================
+       NEWSLETTER
+    ===================================================== */
+
+    const newsletterForm =
+        document.getElementById(
+            "newsletterForm"
+        );
+
+    const newsletterMessage =
+        document.getElementById(
+            "newsletterMessage"
+        );
+
+
+    newsletterForm.addEventListener(
+        "submit",
+        function(event){
+
+            event.preventDefault();
+
+
+            newsletterMessage.textContent =
+                "Thank you for subscribing!";
+
+
+            newsletterForm.reset();
+
+        }
+    );
+
+
+    /* =====================================================
+       INITIAL
+    ===================================================== */
+
+    updateCartCount();
+
+    renderWishlist();
+
+});
+
+</script>
+
+
+</body>
+
+</html>

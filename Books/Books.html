@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="UTF-8">
@@ -11,27 +12,48 @@
 
     <title>OZZO | Books</title>
 
-    <!-- Bootstrap -->
+    <link rel="icon" type="image/png" href="/OZZO logo.jpg">
+    <!-- =========================================================
+         BOOTSTRAP
+    ========================================================== -->
+
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         rel="stylesheet"
     >
 
-    <!-- Font Awesome -->
+
+    <!-- =========================================================
+         FONT AWESOME
+    ========================================================== -->
+
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     >
 
-    <!-- Google Font -->
+
+    <!-- =========================================================
+         GOOGLE FONTS
+    ========================================================== -->
+
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
         rel="stylesheet"
     >
 
-    <link rel="stylesheet" href="Books.css">
+
+    <!-- =========================================================
+         BOOKS CSS
+    ========================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="Books.css"
+    >
 
 </head>
+
 
 <body>
 
@@ -48,8 +70,8 @@
 
             <i
                 class="fa-solid fa-truck"
-                aria-hidden="true">
-            </i>
+                aria-hidden="true"
+            ></i>
 
             <span>
                 Free shipping on orders above ₹999
@@ -81,8 +103,8 @@
 
                 <i
                     class="fa-regular fa-user"
-                    aria-hidden="true">
-                </i>
+                    aria-hidden="true"
+                ></i>
 
                 Login
 
@@ -110,7 +132,7 @@
 
             <a
                 class="navbar-brand ozzo-logo"
-                href="/index.html"
+                href="../index.html"
             >
                 OZZO
             </a>
@@ -131,8 +153,8 @@
 
                 <i
                     class="fa-solid fa-bars"
-                    aria-hidden="true">
-                </i>
+                    aria-hidden="true"
+                ></i>
 
             </button>
 
@@ -146,11 +168,12 @@
 
                 <ul class="navbar-nav main-nav mx-auto">
 
+
                     <li class="nav-item">
 
                         <a
                             class="nav-link"
-                            href="/index.html"
+                            href="../index.html"
                         >
                             Home
                         </a>
@@ -162,7 +185,7 @@
 
                         <a
                             class="nav-link"
-                            href="/Fashion/Fashion.html"
+                            href="../Fashion/Fashion.html"
                         >
                             Fashion
                         </a>
@@ -174,7 +197,7 @@
 
                         <a
                             class="nav-link active"
-                            href="/Books/Books.html"
+                            href="Books.html"
                         >
                             Books
                         </a>
@@ -186,7 +209,7 @@
 
                         <a
                             class="nav-link"
-                            href="/Stationary/Stationary.html"
+                            href="../Stationary/Stationary.html"
                         >
                             Stationery
                         </a>
@@ -198,7 +221,7 @@
 
                         <a
                             class="nav-link"
-                            href="/Pads/Pads.html"
+                            href="../Pads/Pads.html"
                         >
                             Pads
                         </a>
@@ -213,6 +236,8 @@
                 <div class="header-actions">
 
 
+                    <!-- SEARCH -->
+
                     <div class="search-box">
 
                         <input
@@ -224,47 +249,42 @@
 
                         <i
                             class="fa-solid fa-magnifying-glass"
-                            aria-hidden="true">
-                        </i>
+                            aria-hidden="true"
+                        ></i>
 
                     </div>
 
 
-                    <button
-                        class="header-icon"
-                        type="button"
-                        title="Wishlist"
-                        aria-label="Wishlist"
-                    >
+                    <!-- WISHLIST -->
 
-                        <i
-                            class="fa-regular fa-heart"
-                            aria-hidden="true">
-                        </i>
-
-                    </button>
+                                 <a class="header-icon wishlist-button"
+   href="../Wishlist/Wishlist.html"
+   title="Wishlist"
+   aria-label="Wishlist">
+    <i class="fa-regular fa-heart"></i>
+</a>
 
 
-                    <button
-                        class="header-icon cart-button"
-                        type="button"
-                        title="Shopping Bag"
-                        aria-label="Shopping Bag"
-                    >
+                    <!-- CART -->
 
-                        <i
-                            class="fa-solid fa-bag-shopping"
-                            aria-hidden="true">
-                        </i>
+                                       <a
+    href="../Cart/Cart.html"
+    class="header-icon cart-button"
+    title="Shopping Cart"
+    aria-label="Shopping Cart"
+>
+    <i
+        class="fa-solid fa-bag-shopping"
+        aria-hidden="true"
+    ></i>
 
-                        <span
-                            class="cart-count"
-                            id="cartCount"
-                        >
-                            0
-                        </span>
-
-                    </button>
+    <span
+        class="cart-count"
+        id="cartCount"
+    >
+        0
+    </span>
+</a>
 
                 </div>
 
@@ -278,81 +298,84 @@
 
 
 <!-- =========================================================
+     HERO
+========================================================= -->
+
+<!-- =========================================================
      BOOKS HERO
+     SAME STRUCTURE / SIZE / ALIGNMENT AS HOME HERO
 ========================================================= -->
 
 <section class="books-hero">
 
-    <div class="container-fluid px-4">
+    <!-- FULL HERO IMAGE -->
+    <img
+        class="books-hero-bg"
+        src="../Books hero.png"
+        alt="OZZO Books"
+    >
+
+    <!-- DARK OVERLAY -->
+    <div class="books-hero-overlay"></div>
+
+
+    <div class="container-fluid p-0">
 
         <div class="books-hero-content">
 
-
-            <!-- HERO TEXT -->
-
             <div class="books-hero-copy">
 
-                <span class="hero-label">
+                <div class="hero-small-title">
                     OZZO BOOKS
-                </span>
+                </div>
 
 
                 <h1>
-                    Stories That<br>
-                    <span>Stay With You</span>
+                    Stories that stay<br>
+                    with you.
                 </h1>
 
 
                 <p>
-                    Discover inspiring stories, timeless classics,
-                    bestselling titles and books that make
-                    every reading moment memorable.
+                    Discover timeless stories, thoughtful self-help,
+                    academic essentials and books that make everyday
+                    moments more meaningful.
                 </p>
 
 
                 <a
                     href="#booksProducts"
-                    class="shop-btn"
+                    class="hero-btn"
                 >
 
                     Explore Books
 
-                    <span>→</span>
+                    <span>
+                        →
+                    </span>
 
                 </a>
 
             </div>
 
 
-            <!-- HERO IMAGE -->
-
-            <div class="books-hero-image">
-
-                <img
-                    src="/Books hero.png"
-                    alt="Books collection"
-                >
-
-
-                <div class="books-offer">
-
-                    <small>
-                        BOOKS
-                    </small>
-
-                    <strong>
-                        2+1
-                    </strong>
-
-                    <span>
-                        FREE
-                    </span>
-
-                </div>
-
-            </div>
+            <!-- EMPTY RIGHT SIDE:
+                 IMAGE IS ALREADY THE FULL HERO BACKGROUND -->
+            <div class="books-hero-image-area"></div>
 
         </div>
+
+    </div>
+
+
+    <!-- KEEP HERO DOTS / EXISTING ANIMATION -->
+    <div class="books-hero-dots">
+
+        <span class="dot active"></span>
+
+        <span class="dot"></span>
+
+        <span class="dot"></span>
 
     </div>
 
@@ -394,7 +417,7 @@
 
                 <a
                     href="#booksProducts"
-                    class="book-category category-fiction"
+                    class="book-category"
                     data-filter="fiction"
                 >
 
@@ -404,6 +427,7 @@
                     >
 
                     <div class="category-overlay"></div>
+
 
                     <div class="category-content">
 
@@ -432,7 +456,7 @@
 
                 <a
                     href="#booksProducts"
-                    class="book-category category-selfhelp"
+                    class="book-category"
                     data-filter="selfhelp"
                 >
 
@@ -442,6 +466,7 @@
                     >
 
                     <div class="category-overlay"></div>
+
 
                     <div class="category-content">
 
@@ -470,7 +495,7 @@
 
                 <a
                     href="#booksProducts"
-                    class="book-category category-academic"
+                    class="book-category"
                     data-filter="academic"
                 >
 
@@ -480,6 +505,7 @@
                     >
 
                     <div class="category-overlay"></div>
+
 
                     <div class="category-content">
 
@@ -509,7 +535,7 @@
 
 
 <!-- =========================================================
-     BOOK PRODUCTS
+     PRODUCTS
 ========================================================= -->
 
 <section
@@ -521,7 +547,6 @@
 
 
         <div class="products-heading">
-
 
             <div>
 
@@ -536,8 +561,6 @@
             </div>
 
 
-            <!-- FILTERS -->
-
             <div class="product-filters">
 
                 <button
@@ -548,7 +571,6 @@
                     All
                 </button>
 
-
                 <button
                     class="filter-btn"
                     type="button"
@@ -557,7 +579,6 @@
                     Fiction
                 </button>
 
-
                 <button
                     class="filter-btn"
                     type="button"
@@ -565,7 +586,6 @@
                 >
                     Self Help
                 </button>
-
 
                 <button
                     class="filter-btn"
@@ -580,20 +600,20 @@
         </div>
 
 
-        <!-- PRODUCT GRID -->
+        <!-- =====================================================
+             PRODUCT GRID
+        ====================================================== -->
 
-        <div
-            class="row g-3"
-            id="productGrid"
-        >
+        <div id="productGrid">
 
 
             <!-- BOOK 1 -->
 
             <div
-                class="col-6 col-md-4 col-lg-3 product-item"
+                class="product-item"
                 data-category="selfhelp"
                 data-name="Atomic Habits"
+                data-product-id="book-001"
             >
 
                 <div class="book-product-card">
@@ -605,7 +625,6 @@
                             src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=700&q=85"
                             alt="Atomic Habits book"
                         >
-
 
                         <span class="product-badge">
                             BESTSELLER
@@ -621,33 +640,45 @@
 
                             <i
                                 class="fa-regular fa-heart"
-                                aria-hidden="true">
-                            </i>
+                                aria-hidden="true"
+                            ></i>
 
-                        </button>
-
-
-                        <button
-                            class="quick-add add-cart"
-                            type="button"
-                            data-name="Atomic Habits"
-                            data-price="499"
-                        >
-                            Add to Bag
                         </button>
 
                     </div>
 
 
+                    <!-- PRODUCT DETAILS ROW -->
+
                     <div class="product-info">
 
-                        <span>
-                            SELF HELP
-                        </span>
+                        <div class="product-main-row">
 
-                        <h3>
-                            Atomic Habits
-                        </h3>
+                            <div class="product-title-area">
+
+                                <span>
+                                    SELF HELP
+                                </span>
+
+                                <h3>
+                                    Atomic Habits
+                                </h3>
+
+                            </div>
+
+
+                            <button
+                                class="add-cart"
+                                type="button"
+                                data-name="Atomic Habits"
+                                data-price="499"
+                                data-mrp="699"
+                            >
+                                Add to Cart
+                            </button>
+
+                        </div>
+
 
                         <div class="rating">
 
@@ -682,9 +713,10 @@
             <!-- BOOK 2 -->
 
             <div
-                class="col-6 col-md-4 col-lg-3 product-item"
+                class="product-item"
                 data-category="fiction"
                 data-name="The Alchemist"
+                data-product-id="book-002"
             >
 
                 <div class="book-product-card">
@@ -694,9 +726,8 @@
 
                         <img
                             src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?auto=format&fit=crop&w=700&q=85"
-                            alt="The Alchemist book"
+                            alt="The Alchemist"
                         >
-
 
                         <span class="product-badge">
                             CLASSIC
@@ -712,19 +743,9 @@
 
                             <i
                                 class="fa-regular fa-heart"
-                                aria-hidden="true">
-                            </i>
+                                aria-hidden="true"
+                            ></i>
 
-                        </button>
-
-
-                        <button
-                            class="quick-add add-cart"
-                            type="button"
-                            data-name="The Alchemist"
-                            data-price="399"
-                        >
-                            Add to Bag
                         </button>
 
                     </div>
@@ -732,13 +753,33 @@
 
                     <div class="product-info">
 
-                        <span>
-                            FICTION
-                        </span>
+                        <div class="product-main-row">
 
-                        <h3>
-                            The Alchemist
-                        </h3>
+                            <div class="product-title-area">
+
+                                <span>
+                                    FICTION
+                                </span>
+
+                                <h3>
+                                    The Alchemist
+                                </h3>
+
+                            </div>
+
+
+                            <button
+                                class="add-cart"
+                                type="button"
+                                data-name="The Alchemist"
+                                data-price="399"
+                                data-mrp="599"
+                            >
+                                Add to Cart
+                            </button>
+
+                        </div>
+
 
                         <div class="rating">
 
@@ -773,9 +814,10 @@
             <!-- BOOK 3 -->
 
             <div
-                class="col-6 col-md-4 col-lg-3 product-item"
+                class="product-item"
                 data-category="selfhelp"
                 data-name="Think Like a Monk"
+                data-product-id="book-003"
             >
 
                 <div class="book-product-card">
@@ -785,7 +827,7 @@
 
                         <img
                             src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=700&q=85"
-                            alt="Think Like a Monk book"
+                            alt="Think Like a Monk"
                         >
 
 
@@ -798,19 +840,9 @@
 
                             <i
                                 class="fa-regular fa-heart"
-                                aria-hidden="true">
-                            </i>
+                                aria-hidden="true"
+                            ></i>
 
-                        </button>
-
-
-                        <button
-                            class="quick-add add-cart"
-                            type="button"
-                            data-name="Think Like a Monk"
-                            data-price="449"
-                        >
-                            Add to Bag
                         </button>
 
                     </div>
@@ -818,13 +850,33 @@
 
                     <div class="product-info">
 
-                        <span>
-                            SELF HELP
-                        </span>
+                        <div class="product-main-row">
 
-                        <h3>
-                            Think Like a Monk
-                        </h3>
+                            <div class="product-title-area">
+
+                                <span>
+                                    SELF HELP
+                                </span>
+
+                                <h3>
+                                    Think Like a Monk
+                                </h3>
+
+                            </div>
+
+
+                            <button
+                                class="add-cart"
+                                type="button"
+                                data-name="Think Like a Monk"
+                                data-price="449"
+                                data-mrp="650"
+                            >
+                                Add to Cart
+                            </button>
+
+                        </div>
+
 
                         <div class="rating">
 
@@ -859,9 +911,10 @@
             <!-- BOOK 4 -->
 
             <div
-                class="col-6 col-md-4 col-lg-3 product-item"
+                class="product-item"
                 data-category="fiction"
                 data-name="The Great Gatsby"
+                data-product-id="book-004"
             >
 
                 <div class="book-product-card">
@@ -871,9 +924,8 @@
 
                         <img
                             src="https://images.unsplash.com/photo-1531901599143-df5010ab9438?auto=format&fit=crop&w=700&q=85"
-                            alt="The Great Gatsby book"
+                            alt="The Great Gatsby"
                         >
-
 
                         <span class="product-badge">
                             TOP PICK
@@ -889,19 +941,9 @@
 
                             <i
                                 class="fa-regular fa-heart"
-                                aria-hidden="true">
-                            </i>
+                                aria-hidden="true"
+                            ></i>
 
-                        </button>
-
-
-                        <button
-                            class="quick-add add-cart"
-                            type="button"
-                            data-name="The Great Gatsby"
-                            data-price="349"
-                        >
-                            Add to Bag
                         </button>
 
                     </div>
@@ -909,13 +951,33 @@
 
                     <div class="product-info">
 
-                        <span>
-                            FICTION
-                        </span>
+                        <div class="product-main-row">
 
-                        <h3>
-                            The Great Gatsby
-                        </h3>
+                            <div class="product-title-area">
+
+                                <span>
+                                    FICTION
+                                </span>
+
+                                <h3>
+                                    The Great Gatsby
+                                </h3>
+
+                            </div>
+
+
+                            <button
+                                class="add-cart"
+                                type="button"
+                                data-name="The Great Gatsby"
+                                data-price="349"
+                                data-mrp="499"
+                            >
+                                Add to Cart
+                            </button>
+
+                        </div>
+
 
                         <div class="rating">
 
@@ -950,9 +1012,10 @@
             <!-- BOOK 5 -->
 
             <div
-                class="col-6 col-md-4 col-lg-3 product-item"
+                class="product-item"
                 data-category="academic"
                 data-name="Fundamentals of Mathematics"
+                data-product-id="book-005"
             >
 
                 <div class="book-product-card">
@@ -961,7 +1024,7 @@
                     <div class="book-image">
 
                         <img
-                            src="/book.jpg"
+                            src="../book.jpg"
                             alt="Fundamentals of Mathematics"
                         >
 
@@ -975,19 +1038,9 @@
 
                             <i
                                 class="fa-regular fa-heart"
-                                aria-hidden="true">
-                            </i>
+                                aria-hidden="true"
+                            ></i>
 
-                        </button>
-
-
-                        <button
-                            class="quick-add add-cart"
-                            type="button"
-                            data-name="Fundamentals of Mathematics"
-                            data-price="599"
-                        >
-                            Add to Bag
                         </button>
 
                     </div>
@@ -995,13 +1048,33 @@
 
                     <div class="product-info">
 
-                        <span>
-                            ACADEMIC
-                        </span>
+                        <div class="product-main-row">
 
-                        <h3>
-                            Fundamentals of Mathematics
-                        </h3>
+                            <div class="product-title-area">
+
+                                <span>
+                                    ACADEMIC
+                                </span>
+
+                                <h3>
+                                    Fundamentals of Mathematics
+                                </h3>
+
+                            </div>
+
+
+                            <button
+                                class="add-cart"
+                                type="button"
+                                data-name="Fundamentals of Mathematics"
+                                data-price="599"
+                                data-mrp="799"
+                            >
+                                Add to Cart
+                            </button>
+
+                        </div>
+
 
                         <div class="rating">
 
@@ -1036,9 +1109,10 @@
             <!-- BOOK 6 -->
 
             <div
-                class="col-6 col-md-4 col-lg-3 product-item"
+                class="product-item"
                 data-category="fiction"
                 data-name="Pride and Prejudice"
+                data-product-id="book-006"
             >
 
                 <div class="book-product-card">
@@ -1061,19 +1135,9 @@
 
                             <i
                                 class="fa-regular fa-heart"
-                                aria-hidden="true">
-                            </i>
+                                aria-hidden="true"
+                            ></i>
 
-                        </button>
-
-
-                        <button
-                            class="quick-add add-cart"
-                            type="button"
-                            data-name="Pride and Prejudice"
-                            data-price="379"
-                        >
-                            Add to Bag
                         </button>
 
                     </div>
@@ -1081,13 +1145,33 @@
 
                     <div class="product-info">
 
-                        <span>
-                            FICTION
-                        </span>
+                        <div class="product-main-row">
 
-                        <h3>
-                            Pride and Prejudice
-                        </h3>
+                            <div class="product-title-area">
+
+                                <span>
+                                    FICTION
+                                </span>
+
+                                <h3>
+                                    Pride and Prejudice
+                                </h3>
+
+                            </div>
+
+
+                            <button
+                                class="add-cart"
+                                type="button"
+                                data-name="Pride and Prejudice"
+                                data-price="379"
+                                data-mrp="549"
+                            >
+                                Add to Cart
+                            </button>
+
+                        </div>
+
 
                         <div class="rating">
 
@@ -1122,9 +1206,10 @@
             <!-- BOOK 7 -->
 
             <div
-                class="col-6 col-md-4 col-lg-3 product-item"
+                class="product-item"
                 data-category="academic"
                 data-name="Computer Science Essentials"
+                data-product-id="book-007"
             >
 
                 <div class="book-product-card">
@@ -1136,7 +1221,6 @@
                             src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=700&q=85"
                             alt="Computer Science Essentials"
                         >
-
 
                         <span class="product-badge">
                             NEW
@@ -1152,19 +1236,9 @@
 
                             <i
                                 class="fa-regular fa-heart"
-                                aria-hidden="true">
-                            </i>
+                                aria-hidden="true"
+                            ></i>
 
-                        </button>
-
-
-                        <button
-                            class="quick-add add-cart"
-                            type="button"
-                            data-name="Computer Science Essentials"
-                            data-price="699"
-                        >
-                            Add to Bag
                         </button>
 
                     </div>
@@ -1172,13 +1246,33 @@
 
                     <div class="product-info">
 
-                        <span>
-                            ACADEMIC
-                        </span>
+                        <div class="product-main-row">
 
-                        <h3>
-                            Computer Science Essentials
-                        </h3>
+                            <div class="product-title-area">
+
+                                <span>
+                                    ACADEMIC
+                                </span>
+
+                                <h3>
+                                    Computer Science Essentials
+                                </h3>
+
+                            </div>
+
+
+                            <button
+                                class="add-cart"
+                                type="button"
+                                data-name="Computer Science Essentials"
+                                data-price="699"
+                                data-mrp="899"
+                            >
+                                Add to Cart
+                            </button>
+
+                        </div>
+
 
                         <div class="rating">
 
@@ -1213,9 +1307,10 @@
             <!-- BOOK 8 -->
 
             <div
-                class="col-6 col-md-4 col-lg-3 product-item"
+                class="product-item"
                 data-category="selfhelp"
                 data-name="The Power of Now"
+                data-product-id="book-008"
             >
 
                 <div class="book-product-card">
@@ -1238,19 +1333,9 @@
 
                             <i
                                 class="fa-regular fa-heart"
-                                aria-hidden="true">
-                            </i>
+                                aria-hidden="true"
+                            ></i>
 
-                        </button>
-
-
-                        <button
-                            class="quick-add add-cart"
-                            type="button"
-                            data-name="The Power of Now"
-                            data-price="425"
-                        >
-                            Add to Bag
                         </button>
 
                     </div>
@@ -1258,13 +1343,33 @@
 
                     <div class="product-info">
 
-                        <span>
-                            SELF HELP
-                        </span>
+                        <div class="product-main-row">
 
-                        <h3>
-                            The Power of Now
-                        </h3>
+                            <div class="product-title-area">
+
+                                <span>
+                                    SELF HELP
+                                </span>
+
+                                <h3>
+                                    The Power of Now
+                                </h3>
+
+                            </div>
+
+
+                            <button
+                                class="add-cart"
+                                type="button"
+                                data-name="The Power of Now"
+                                data-price="425"
+                                data-mrp="599"
+                            >
+                                Add to Cart
+                            </button>
+
+                        </div>
+
 
                         <div class="rating">
 
@@ -1295,6 +1400,7 @@
 
             </div>
 
+
         </div>
 
 
@@ -1316,7 +1422,7 @@
 
 <section class="books-promo">
 
-    <div class="container-fluid px-4">
+    <div class="container-fluid">
 
         <div class="books-promo-box">
 
@@ -1347,7 +1453,7 @@
             <div class="promo-image">
 
                 <img
-                    src="/Books hero.png"
+                    src="../Books hero.png"
                     alt="Books promotion"
                 >
 
@@ -1361,7 +1467,7 @@
 
 
 <!-- =========================================================
-     FOOTER — SAME AS INDEX
+     FOOTER
 ========================================================= -->
 
 <footer class="footer">
@@ -1370,8 +1476,6 @@
 
         <div class="footer-main">
 
-
-            <!-- BRAND -->
 
             <div class="footer-brand">
 
@@ -1382,21 +1486,17 @@
                 <div class="footer-categories">
 
                     Fashion
-
                     <span>•</span>
-
                     Books
-
                     <span>•</span>
-
                     Stationery
+                    <span>•</span>
+                    Pads
 
                 </div>
 
             </div>
 
-
-            <!-- QUICK LINKS -->
 
             <div class="footer-column">
 
@@ -1404,26 +1504,28 @@
                     Quick Links
                 </h4>
 
-                <a href="/index.html">
+                <a href="../index.html">
                     Home
                 </a>
+                 
+                 <a href="Careers/Careers.html">
+                    Careers
+                </a>
 
-                <a href="/About Us/About.html">
+                <a href="../About Us/About.html">
                     About Us
                 </a>
 
-                <a href="/Faq/Faq.html">
+                <a href="../Faq/Faq.html">
                     FAQs
                 </a>
 
-                <a href="/Contact/Contact.html">
+                <a href="../Contact/Contact.html">
                     Contact
                 </a>
 
             </div>
 
-
-            <!-- CATEGORIES -->
 
             <div class="footer-column">
 
@@ -1431,14 +1533,24 @@
                     Categories
                 </h4>
 
-                <a href="Fashion/Fashion.html">Fashion</a>
-        <a href="/Books/Books.html">Books</a>
-        <a href="/Stationary/Stationary.html">Stationery</a>
-        <a href="/Pads/Pads.html">Pads</a>
+                <a href="../Fashion/Fashion.html">
+                    Fashion
+                </a>
+
+                <a href="Books.html">
+                    Books
+                </a>
+
+                <a href="../Stationary/Stationary.html">
+                    Stationery
+                </a>
+
+                <a href="../Pads/Pads.html">
+                    Pads
+                </a>
+
             </div>
 
-
-            <!-- CUSTOMER SERVICE -->
 
             <div class="footer-column">
 
@@ -1446,26 +1558,16 @@
                     Customer Service
                 </h4>
 
-                <!--<a href="#">
-                    Shipping Policy
-                </a>
-
-                <a href="#">
-                    Return &amp; Refund
-                </a>-->
-
-                <a href="/Privacy/Privacy.html">
+                <a href="../Privacy/Privacy.html">
                     Privacy Policy
                 </a>
 
-                <a href="/Terms/Terms.html">
+                <a href="../Terms/Terms.html">
                     Terms &amp; Conditions
                 </a>
 
             </div>
 
-
-            <!-- NEWSLETTER -->
 
             <div class="footer-newsletter">
 
@@ -1505,11 +1607,9 @@
 
                 <div
                     class="newsletter-message"
-                    id="newsletterMessage">
-                </div>
+                    id="newsletterMessage"
+                ></div>
 
-
-                <!-- SOCIAL -->
 
                 <div class="social-icons">
 
@@ -1520,10 +1620,9 @@
                     >
                         <i
                             class="fa-brands fa-facebook-f"
-                            aria-hidden="true">
-                        </i>
+                            aria-hidden="true"
+                        ></i>
                     </a>
-
 
                     <a
                         href="#"
@@ -1532,10 +1631,9 @@
                     >
                         <i
                             class="fa-brands fa-instagram"
-                            aria-hidden="true">
-                        </i>
+                            aria-hidden="true"
+                        ></i>
                     </a>
-
 
                     <a
                         href="#"
@@ -1544,10 +1642,9 @@
                     >
                         <i
                             class="fa-brands fa-youtube"
-                            aria-hidden="true">
-                        </i>
+                            aria-hidden="true"
+                        ></i>
                     </a>
-
 
                     <a
                         href="#"
@@ -1556,10 +1653,9 @@
                     >
                         <i
                             class="fa-brands fa-linkedin-in"
-                            aria-hidden="true">
-                        </i>
+                            aria-hidden="true"
+                        ></i>
                     </a>
-
 
                     <a
                         href="#"
@@ -1568,8 +1664,8 @@
                     >
                         <i
                             class="fa-brands fa-twitter"
-                            aria-hidden="true">
-                        </i>
+                            aria-hidden="true"
+                        ></i>
                     </a>
 
                 </div>
@@ -1580,8 +1676,6 @@
 
     </div>
 
-
-    <!-- FOOTER BOTTOM -->
 
     <div class="footer-bottom">
 
@@ -1606,244 +1700,264 @@
 </footer>
 
 
-<!-- Bootstrap JS -->
+<!-- =========================================================
+     BOOTSTRAP JS
+========================================================= -->
 
 <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-</script>
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+></script>
 
+
+<!-- =========================================================
+     BOOKS JAVASCRIPT
+========================================================= -->
 
 <script>
 
-document.addEventListener(
-    "DOMContentLoaded",
-    function(){
-
-        const filterButtons =
-            document.querySelectorAll(".filter-btn");
-
-        const products =
-            document.querySelectorAll(".product-item");
-
-        const searchInput =
-            document.getElementById("searchInput");
-
-        const noProducts =
-            document.getElementById("noProducts");
-
-        const cartCount =
-            document.getElementById("cartCount");
-
-        const newsletterForm =
-            document.getElementById("newsletterForm");
-
-        const newsletterMessage =
-            document.getElementById("newsletterMessage");
+document.addEventListener("DOMContentLoaded", function () {
 
 
-        let cart = 0;
+    const products =
+        document.querySelectorAll(".product-item");
+
+    const filterButtons =
+        document.querySelectorAll(".filter-btn");
+
+    const searchInput =
+        document.getElementById("searchInput");
+
+    const noProducts =
+        document.getElementById("noProducts");
+
+    const cartButton =
+        document.getElementById("headerCartButton");
+
+    const cartCount =
+        document.getElementById("cartCount");
+
+    const newsletterForm =
+        document.getElementById("newsletterForm");
+
+    const newsletterMessage =
+        document.getElementById("newsletterMessage");
 
 
-        /* =====================================================
-           FILTER
-        ===================================================== */
+    /* =====================================================
+       CART
+    ====================================================== */
 
-        filterButtons.forEach(button => {
+    let cart = [];
 
-            button.addEventListener(
-                "click",
-                function(){
+    try {
 
-                    filterButtons.forEach(btn => {
+        cart =
+            JSON.parse(
+                localStorage.getItem("ozzoCart")
+            ) || [];
 
-                        btn.classList.remove(
-                            "active"
-                        );
+        if (!Array.isArray(cart)) {
+            cart = [];
+        }
 
-                    });
+    } catch (error) {
+
+        cart = [];
+
+    }
 
 
-                    this.classList.add(
-                        "active"
+    function updateCartCount() {
+
+        if (!cartCount) {
+            return;
+        }
+
+        const total =
+            cart.reduce(
+                function (sum, item) {
+
+                    return (
+                        sum +
+                        Number(item.quantity || 0)
                     );
 
-
-                    const filter =
-                        this.dataset.filter;
-
-                    let visible = 0;
-
-
-                    products.forEach(product => {
-
-                        if(
-                            filter === "all" ||
-                            product.dataset.category === filter
-                        ){
-
-                            product.style.display = "";
-
-                            visible++;
-
-                        }
-                        else{
-
-                            product.style.display = "none";
-
-                        }
-
-                    });
-
-
-                    noProducts.style.display =
-                        visible === 0
-                            ? "block"
-                            : "none";
-
-                }
+                },
+                0
             );
 
-        });
+        cartCount.textContent =
+            total;
+
+    }
 
 
-        /* =====================================================
-           CATEGORY CARDS
-        ===================================================== */
+    function saveCart() {
 
-        document
-            .querySelectorAll(".book-category")
-            .forEach(category => {
+        localStorage.setItem(
+            "ozzoCart",
+            JSON.stringify(cart)
+        );
 
-                category.addEventListener(
-                    "click",
-                    function(){
+        updateCartCount();
 
-                        const filter =
-                            this.dataset.filter;
-
-                        const button =
-                            document.querySelector(
-                                `.filter-btn[data-filter="${filter}"]`
-                            );
+    }
 
 
-                        if(button){
+    /* =====================================================
+       CART NAVIGATION
+    ====================================================== */
 
-                            button.click();
+    if (cartButton) {
 
-                        }
+        cartButton.addEventListener(
+            "click",
+            function () {
 
-                    }
-                );
+                window.location.href =
+                    "../Cart/Cart.html";
 
-            });
+            }
+        );
 
-
-        /* =====================================================
-           WISHLIST
-        ===================================================== */
-
-        document
-            .querySelectorAll(".wishlist")
-            .forEach(button => {
-
-                button.addEventListener(
-                    "click",
-                    function(){
-
-                        this.classList.toggle(
-                            "active"
-                        );
+    }
 
 
-                        const icon =
-                            this.querySelector("i");
+    /* =====================================================
+       ADD TO CART
+    ====================================================== */
 
-
-                        if(
-                            this.classList.contains("active")
-                        ){
-
-                            icon.classList.remove(
-                                "fa-regular"
-                            );
-
-                            icon.classList.add(
-                                "fa-solid"
-                            );
-
-                        }
-                        else{
-
-                            icon.classList.remove(
-                                "fa-solid"
-                            );
-
-                            icon.classList.add(
-                                "fa-regular"
-                            );
-
-                        }
-
-                    }
-                );
-
-            });
-
-
-        /* =====================================================
-           ADD TO CART
-        ===================================================== */
-
-        document
-            .querySelectorAll(".add-cart")
-            .forEach(button => {
+    document
+        .querySelectorAll(".add-cart")
+        .forEach(
+            function (button) {
 
                 button.addEventListener(
                     "click",
-                    function(){
+                    function (event) {
 
-                        cart++;
-
-                        cartCount.textContent =
-                            cart;
+                        event.preventDefault();
+                        event.stopPropagation();
 
 
-                        cartCount.style.transform =
-                            "scale(1.35)";
+                        const product =
+                            button.closest(
+                                ".product-item"
+                            );
 
 
-                        setTimeout(
-                            () => {
-
-                                cartCount.style.transform =
-                                    "scale(1)";
-
-                            },
-                            180
-                        );
+                        if (!product) {
+                            return;
+                        }
 
 
-                        const originalText =
-                            this.textContent;
+                        const productId =
+                            product.dataset.productId;
+
+                        const productName =
+                            product.dataset.name;
+
+                        const price =
+                            Number(
+                                button.dataset.price || 0
+                            );
+
+                        const mrp =
+                            Number(
+                                button.dataset.mrp ||
+                                price
+                            );
+
+                        const category =
+                            product.dataset.category ||
+                            "books";
 
 
-                        this.textContent =
+                        const imageElement =
+                            product.querySelector(
+                                ".book-image img"
+                            );
+
+
+                        const image =
+                            imageElement
+                                ? imageElement.getAttribute("src")
+                                : "";
+
+
+                        const existing =
+                            cart.find(
+                                function (item) {
+
+                                    return (
+                                        item.id ===
+                                        productId
+                                    );
+
+                                }
+                            );
+
+
+                        if (existing) {
+
+                            existing.quantity =
+                                Number(
+                                    existing.quantity || 1
+                                ) + 1;
+
+                        } else {
+
+                            cart.push({
+
+                                id:
+                                    productId,
+
+                                name:
+                                    productName,
+
+                                price:
+                                    price,
+
+                                mrp:
+                                    mrp,
+
+                                image:
+                                    image,
+
+                                category:
+                                    category,
+
+                                quantity:
+                                    1
+
+                            });
+
+                        }
+
+
+                        saveCart();
+
+
+                        const oldText =
+                            button.textContent;
+
+
+                        button.textContent =
                             "Added ✓";
 
 
-                        this.classList.add(
+                        button.classList.add(
                             "added"
                         );
 
 
                         setTimeout(
-                            () => {
+                            function () {
 
-                                this.textContent =
-                                    originalText;
+                                button.textContent =
+                                    oldText;
 
-                                this.classList.remove(
+                                button.classList.remove(
                                     "added"
                                 );
 
@@ -1854,76 +1968,362 @@ document.addEventListener(
                     }
                 );
 
-            });
+            }
+        );
 
 
-        /* =====================================================
-           SEARCH
-        ===================================================== */
+    /* =====================================================
+       PRODUCT DETAILS
+    ====================================================== */
 
-        searchInput.addEventListener(
-            "input",
-            function(){
+    products.forEach(
+        function (product) {
 
-                const searchValue =
-                    this.value
-                        .toLowerCase()
-                        .trim();
-
-
-                let visible = 0;
+            const card =
+                product.querySelector(
+                    ".book-product-card"
+                );
 
 
-                products.forEach(product => {
-
-                    const productName =
-                        product.dataset.name
-                            .toLowerCase();
+            if (!card) {
+                return;
+            }
 
 
-                    if(
-                        productName.includes(
-                            searchValue
-                        )
-                    ){
+            card.addEventListener(
+                "click",
+                function (event) {
 
-                        product.style.display =
-                            "";
-
-                        visible++;
-
-                    }
-                    else{
-
-                        product.style.display =
-                            "none";
-
+                    if (
+                        event.target.closest(".wishlist") ||
+                        event.target.closest(".add-cart")
+                    ) {
+                        return;
                     }
 
-                });
+
+                    const productId =
+                        product.dataset.productId;
 
 
-                noProducts.style.display =
-                    visible === 0
-                        ? "block"
-                        : "none";
+                    if (!productId) {
+                        return;
+                    }
+
+
+                    window.location.href =
+                        "../ProductDetails.html?id=" +
+                        encodeURIComponent(
+                            productId
+                        );
+
+                }
+            );
+
+        }
+    );
+
+
+    /* =====================================================
+       WISHLIST
+    ====================================================== */
+
+    document
+        .querySelectorAll(".wishlist")
+        .forEach(
+            function (button) {
+
+                button.addEventListener(
+                    "click",
+                    function (event) {
+
+                        event.preventDefault();
+                        event.stopPropagation();
+
+
+                        const icon =
+                            button.querySelector("i");
+
+
+                        button.classList.toggle(
+                            "active"
+                        );
+
+
+                        if (
+                            button.classList.contains(
+                                "active"
+                            )
+                        ) {
+
+                            icon.classList.remove(
+                                "fa-regular"
+                            );
+
+                            icon.classList.add(
+                                "fa-solid"
+                            );
+
+                        } else {
+
+                            icon.classList.remove(
+                                "fa-solid"
+                            );
+
+                            icon.classList.add(
+                                "fa-regular"
+                            );
+
+                        }
+
+                    }
+                );
 
             }
         );
 
 
-        /* =====================================================
-           NEWSLETTER
-        ===================================================== */
+    /* =====================================================
+       FILTERS
+    ====================================================== */
+
+    function applyFilter(filter) {
+
+        let visible = 0;
+
+
+        products.forEach(
+            function (product) {
+
+                const matches =
+                    filter === "all" ||
+                    product.dataset.category === filter;
+
+
+                if (matches) {
+
+                    product.style.display =
+                        "";
+
+                    visible++;
+
+                } else {
+
+                    product.style.display =
+                        "none";
+
+                }
+
+            }
+        );
+
+
+        if (noProducts) {
+
+            noProducts.style.display =
+                visible === 0
+                    ? "block"
+                    : "none";
+
+        }
+
+    }
+
+
+    filterButtons.forEach(
+        function (button) {
+
+            button.addEventListener(
+                "click",
+                function () {
+
+                    filterButtons.forEach(
+                        function (btn) {
+
+                            btn.classList.remove(
+                                "active"
+                            );
+
+                        }
+                    );
+
+
+                    button.classList.add(
+                        "active"
+                    );
+
+
+                    applyFilter(
+                        button.dataset.filter
+                    );
+
+                }
+            );
+
+        }
+    );
+
+
+    /* =====================================================
+       CATEGORY CARDS
+    ====================================================== */
+
+    document
+        .querySelectorAll(".book-category")
+        .forEach(
+            function (category) {
+
+                category.addEventListener(
+                    "click",
+                    function (event) {
+
+                        event.preventDefault();
+
+
+                        const filter =
+                            category.dataset.filter;
+
+
+                        const filterButton =
+                            document.querySelector(
+                                `.filter-btn[data-filter="${filter}"]`
+                            );
+
+
+                        if (filterButton) {
+
+                            filterButton.click();
+
+                        }
+
+
+                        const section =
+                            document.getElementById(
+                                "booksProducts"
+                            );
+
+
+                        if (section) {
+
+                            section.scrollIntoView({
+                                behavior:"smooth",
+                                block:"start"
+                            });
+
+                        }
+
+                    }
+                );
+
+            }
+        );
+
+
+    /* =====================================================
+       SEARCH
+    ====================================================== */
+
+    if (searchInput) {
+
+        searchInput.addEventListener(
+            "input",
+            function () {
+
+                const query =
+                    searchInput.value
+                        .trim()
+                        .toLowerCase();
+
+
+                let visible = 0;
+
+
+                products.forEach(
+                    function (product) {
+
+                        const name =
+                            (
+                                product.dataset.name ||
+                                ""
+                            ).toLowerCase();
+
+
+                        const category =
+                            (
+                                product.dataset.category ||
+                                ""
+                            ).toLowerCase();
+
+
+                        const info =
+                            product
+                                .querySelector(
+                                    ".product-info"
+                                )
+                                ?.textContent
+                                .toLowerCase() || "";
+
+
+                        const match =
+                            !query ||
+                            name.includes(query) ||
+                            category.includes(query) ||
+                            info.includes(query);
+
+
+                        if (match) {
+
+                            product.style.display =
+                                "";
+
+                            visible++;
+
+                        } else {
+
+                            product.style.display =
+                                "none";
+
+                        }
+
+                    }
+                );
+
+
+                if (noProducts) {
+
+                    noProducts.style.display =
+                        visible === 0
+                            ? "block"
+                            : "none";
+
+                }
+
+            }
+        );
+
+    }
+
+
+    /* =====================================================
+       NEWSLETTER
+    ====================================================== */
+
+    if (newsletterForm) {
 
         newsletterForm.addEventListener(
             "submit",
-            function(event){
+            function (event) {
 
                 event.preventDefault();
 
-                newsletterMessage.textContent =
-                    "Thanks for subscribing!";
+
+                if (newsletterMessage) {
+
+                    newsletterMessage.textContent =
+                        "Thanks for subscribing!";
+
+                }
+
 
                 newsletterForm.reset();
 
@@ -1931,9 +2331,21 @@ document.addEventListener(
         );
 
     }
-);
+
+
+    /* =====================================================
+       INITIAL CART COUNT
+    ====================================================== */
+
+    updateCartCount();
+
+    applyFilter("all");
+
+});
 
 </script>
 
+
 </body>
+
 </html>

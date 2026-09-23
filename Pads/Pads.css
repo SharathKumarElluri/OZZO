@@ -216,30 +216,64 @@ input{
 
 /* =========================================================
    HERO
+   SAME STYLE AS FASHION / BOOKS / STATIONERY
 ========================================================= */
 
 .pads-hero{
-    background:var(--cream);
+    width:100%;
+    min-height:440px;
+    position:relative;
+    overflow:hidden;
+    padding:0;
+
+    background:
+        url("../Pads hero.png")
+        center center / cover no-repeat;
+}
+
+.pads-hero > .container-fluid{
+    width:100%;
+    padding-left:0 !important;
+    padding-right:0 !important;
 }
 
 .pads-hero-content{
-    min-height:400px;
+    width:100%;
+    min-height:440px;
+    position:relative;
+    z-index:3;
+
     display:grid;
     grid-template-columns:42% 58%;
+
     overflow:hidden;
 }
 
+
+/* =========================================================
+   HERO COPY
+========================================================= */
+
 .pads-hero-copy{
-    padding:50px 40px 50px 8%;
+    width:100%;
+    min-width:0;
+    min-height:440px;
+
+    padding:42px 30px 40px 8%;
+
     display:flex;
-    justify-content:center;
     flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+
+    position:relative;
+    z-index:5;
 }
 
 .hero-label{
     font-size:10px;
     letter-spacing:1.5px;
-    color:var(--navy);
+    color:#fff;
     font-weight:700;
     margin-bottom:9px;
 }
@@ -247,7 +281,7 @@ input{
 .pads-hero-copy h1{
     font-size:40px;
     line-height:1.08;
-    color:var(--navy);
+    color:#fff;
     font-weight:700;
     letter-spacing:-1.4px;
     margin-bottom:13px;
@@ -259,7 +293,7 @@ input{
 
 .pads-hero-copy p{
     max-width:360px;
-    color:#596979;
+    color:rgba(255,255,255,.88);
     font-size:11px;
     line-height:1.7;
     margin-bottom:20px;
@@ -271,12 +305,15 @@ input{
     background:var(--navy);
     color:#fff;
     border-radius:24px;
+
     display:flex;
     align-items:center;
     justify-content:center;
     gap:10px;
+
     font-size:10px;
     font-weight:600;
+
     transition:.25s ease;
 }
 
@@ -290,40 +327,83 @@ input{
     font-size:15px;
 }
 
-.pads-hero-image {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-    margin: 0;
-    padding-right: 0;
-    line-height: 0;
+
+/* =========================================================
+   HERO IMAGE
+   IMAGE IS NOW THE HERO BACKGROUND
+========================================================= */
+
+.pads-hero-image{
+    width:100%;
+    min-width:0;
+    min-height:440px;
+    height:440px;
+
+    position:relative;
+
+    background:transparent;
+
+    z-index:4;
 }
 
-.pads-hero-image img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    object-position: center bottom;
-    margin: 0;
-    padding: 0;
+
+/* Hide the original HTML hero image */
+
+.pads-hero-image > img{
+    display:none !important;
 }
+
+
+/* =========================================================
+   HERO DARK OVERLAY
+   Keeps left-side text readable
+========================================================= */
+
+.pads-hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    z-index:1;
+    pointer-events:none;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(9,27,42,.82) 0%,
+            rgba(9,27,42,.66) 28%,
+            rgba(9,27,42,.32) 58%,
+            rgba(9,27,42,.08) 82%,
+            rgba(9,27,42,.02) 100%
+        );
+}
+
+
+/* =========================================================
+   OFFER CIRCLE
+========================================================= */
 
 .pads-offer{
     position:absolute;
     right:35px;
     bottom:30px;
+
     width:85px;
     height:85px;
+
     border-radius:50%;
+
     background:var(--navy);
     color:#fff;
+
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
+
     line-height:1;
+
+    z-index:6;
 }
 
 .pads-offer small{
@@ -382,9 +462,12 @@ input{
     border-radius:6px;
     position:relative;
     overflow:hidden;
+
     display:flex;
     align-items:flex-end;
+
     padding:17px;
+
     background:#e9ecef;
 
     transition:
@@ -395,10 +478,13 @@ input{
 .pads-category img{
     position:absolute;
     inset:0;
+
     width:100%;
     height:100%;
+
     object-fit:cover;
     object-position:center;
+
     transition:transform .5s ease;
 }
 
@@ -409,11 +495,13 @@ input{
 .category-overlay{
     position:absolute;
     inset:0;
-    background:linear-gradient(
-        to top,
-        rgba(19,36,56,.62),
-        rgba(19,36,56,.04) 72%
-    );
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(19,36,56,.62),
+            rgba(19,36,56,.04) 72%
+        );
 }
 
 .category-content{
@@ -469,8 +557,11 @@ input{
     border:none;
     background:transparent;
     color:#7a8793;
+
     font-size:10px;
+
     padding:0 0 7px;
+
     position:relative;
     cursor:pointer;
 }
@@ -482,10 +573,12 @@ input{
 
 .filter-btn.active::after{
     content:"";
+
     position:absolute;
     left:0;
     right:0;
     bottom:0;
+
     height:2px;
     background:var(--navy);
 }
@@ -507,15 +600,19 @@ input{
 .pads-image{
     height:310px;
     border-radius:5px;
+
     overflow:hidden;
     position:relative;
+
     background:#f2f2f2;
 }
 
 .pads-image img{
     width:100%;
     height:100%;
+
     object-fit:cover;
+
     transition:transform .5s ease;
 }
 
@@ -525,12 +622,17 @@ input{
 
 .product-badge{
     position:absolute;
+
     top:9px;
     left:9px;
+
     background:var(--navy);
     color:#fff;
+
     padding:5px 7px;
+
     border-radius:3px;
+
     font-size:7px;
     letter-spacing:.6px;
     font-weight:700;
@@ -539,18 +641,24 @@ input{
 .wishlist{
     width:29px;
     height:29px;
+
     position:absolute;
     top:8px;
     right:8px;
+
     border:none;
     border-radius:50%;
+
     background:rgba(255,255,255,.9);
     color:#667482;
+
     display:flex;
     align-items:center;
     justify-content:center;
+
     cursor:pointer;
     z-index:3;
+
     transition:.2s;
 }
 
@@ -567,15 +675,21 @@ input{
     left:0;
     right:0;
     bottom:0;
+
     width:100%;
     height:42px;
+
     border:none;
+
     background:rgba(19,36,56,.94);
     color:#fff;
+
     font-size:10px;
     font-weight:600;
+
     transform:translateY(100%);
     transition:.3s ease;
+
     cursor:pointer;
 }
 
@@ -601,7 +715,9 @@ input{
     color:#203146;
     font-size:11px;
     font-weight:700;
+
     margin:3px 0 5px;
+
     min-height:16px;
 }
 
@@ -651,23 +767,32 @@ input{
 
 .pads-promo{
     padding:10px 0 38px;
+    margin:0 !important;
 }
 
 .pads-promo-box{
     min-height:190px;
+
     background:#eadff1;
+
     border-radius:6px;
     overflow:hidden;
+
     display:grid;
     grid-template-columns:45% 55%;
+
     position:relative;
+
+    margin-bottom:0 !important;
 }
 
 .promo-copy{
     padding:30px 20px 30px 45px;
+
     display:flex;
     flex-direction:column;
     justify-content:center;
+
     position:relative;
     z-index:2;
 }
@@ -683,14 +808,18 @@ input{
     color:var(--navy);
     font-size:27px;
     line-height:1.08;
+
     margin:6px 0 8px;
+
     font-weight:700;
 }
 
 .promo-copy p{
     color:#667482;
+
     font-size:9px;
     line-height:1.5;
+
     max-width:320px;
     margin-bottom:12px;
 }
@@ -698,12 +827,16 @@ input{
 .promo-copy a{
     width:105px;
     height:29px;
+
     background:var(--navy);
     color:#fff;
+
     border-radius:17px;
+
     display:flex;
     align-items:center;
     justify-content:center;
+
     font-size:8px;
 }
 
@@ -715,18 +848,22 @@ input{
 .promo-image{
     height:200px;
     overflow:hidden;
+
+    margin-bottom:0 !important;
 }
 
 .promo-image img{
     width:100%;
     height:100%;
+
     object-fit:cover;
+
+    display:block;
 }
 
 
 /* =========================================================
    FOOTER
-   SAME AS INDEX
 ========================================================= */
 
 .footer{
@@ -736,27 +873,34 @@ input{
 
 .footer-main{
     min-height:180px;
+
     display:grid;
+
     grid-template-columns:
         1.35fr
         .8fr
         .8fr
         1.1fr
         1.55fr;
+
     gap:34px;
+
     padding:35px 0 30px;
 }
 
 .footer-logo{
     font-size:27px;
     font-weight:700;
+
     letter-spacing:-1px;
+
     margin-bottom:5px;
 }
 
 .footer-categories{
     font-size:12px;
     color:#d7dee6;
+
     display:flex;
     gap:7px;
 }
@@ -780,7 +924,9 @@ input{
 .footer-column a{
     font-size:12px;
     color:#ccd4dc;
+
     margin-bottom:8px;
+
     transition:color .2s ease;
 }
 
@@ -791,32 +937,43 @@ input{
 .footer-newsletter p{
     font-size:8px;
     color:#c4ccd5;
+
     margin-bottom:6px;
 }
 
 .newsletter-input{
     height:48px;
     width:100%;
+
     display:flex;
+
     border:1px solid #8593a0;
     border-radius:6px;
+
     overflow:hidden;
 }
 
 .newsletter-input input{
     flex:1;
+
     border:none;
     outline:none;
+
     padding:0 16px;
+
     font-size:12px;
 }
 
 .newsletter-input button{
     width:65px;
+
     border:none;
+
     background:transparent;
     color:#fff;
+
     font-size:26px;
+
     cursor:pointer;
 }
 
@@ -826,26 +983,32 @@ input{
 
 .newsletter-message{
     color:#b7ebc3;
+
     font-size:7px;
+
     margin-top:4px;
+
     min-height:9px;
 }
 
 .social-icons{
     display:flex;
     gap:16px;
+
     margin-top:8px;
 }
 
 .social-icons a{
     font-size:10px;
     color:#fff;
+
     transition:.2s ease;
 }
 
 .social-icons a:hover{
     color:#fff;
     opacity:.75;
+
     transform:translateY(-2px);
 }
 
@@ -855,9 +1018,11 @@ input{
 
 .footer-bottom-inner{
     height:50px;
+
     display:flex;
     align-items:center;
     justify-content:space-between;
+
     font-size:12px;
     color:#bdc7d1;
 }
@@ -882,17 +1047,36 @@ input{
         width:220px;
     }
 
+
+    /* HERO */
+
+    .pads-hero{
+        min-height:430px;
+
+        background:
+            url("../Pads hero.png")
+            center center / cover no-repeat;
+    }
+
     .pads-hero-content{
+        min-height:430px;
         grid-template-columns:45% 55%;
     }
 
     .pads-hero-copy{
+        min-height:430px;
         padding-left:7%;
     }
 
     .pads-hero-copy h1{
         font-size:34px;
     }
+
+    .pads-hero-image{
+        min-height:430px;
+        height:430px;
+    }
+
 
     .pads-image{
         height:280px;
@@ -919,6 +1103,9 @@ input{
     .top-bar-inner{
         justify-content:center;
     }
+
+
+    /* HEADER */
 
     .main-header{
         height:auto;
@@ -949,25 +1136,88 @@ input{
         justify-content:flex-start;
     }
 
+
+    /* HERO */
+
+    .pads-hero{
+        min-height:430px;
+
+        background:
+            url("../Pads hero.png")
+            center center / cover no-repeat;
+    }
+
     .pads-hero-content{
-        grid-template-columns:1fr;
+        width:100%;
+        min-height:430px;
+
+        display:flex;
+        align-items:center;
+        justify-content:flex-start;
+
+        overflow:hidden;
     }
 
     .pads-hero-copy{
-        min-height:260px;
-        padding:40px 8%;
+        width:48%;
+        max-width:520px;
+        min-height:auto;
+
+        padding:0 0 0 8%;
+
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:flex-start;
+
+        position:relative;
+        z-index:5;
+    }
+
+    .pads-hero-copy h1{
+        font-size:34px;
+    }
+
+    .pads-hero-copy p{
+        max-width:340px;
     }
 
     .pads-hero-image{
-        min-height:330px;
+        width:52%;
+        min-height:430px;
+        height:430px;
+
+        background:transparent;
     }
+
+    .pads-hero-image > img{
+        display:none !important;
+    }
+
+    .pads-offer{
+        right:25px;
+        bottom:25px;
+    }
+
+
+    /* PRODUCTS */
 
     .pads-image{
         height:260px;
     }
 
+
+    /* FOOTER */
+
     .footer-main{
         grid-template-columns:repeat(2,1fr);
+    }
+
+
+    /* PROMOTION */
+
+    .pads-promo{
+        padding-bottom:35px !important;
     }
 
 }
@@ -1001,21 +1251,61 @@ input{
         order:3;
     }
 
+
+    /* HERO */
+
+    .pads-hero{
+        min-height:420px;
+
+        background:
+            url("../Pads hero.png")
+            center center / cover no-repeat;
+    }
+
+    .pads-hero-content{
+        min-height:420px;
+
+        display:flex;
+        align-items:center;
+        justify-content:flex-start;
+    }
+
     .pads-hero-copy{
-        padding:35px 25px;
+        width:62%;
+        max-width:none;
+        min-height:auto;
+
+        padding:0 5px 0 25px;
+
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:flex-start;
     }
 
     .pads-hero-copy h1{
         font-size:31px;
     }
 
+    .pads-hero-copy p{
+        max-width:300px;
+        font-size:10px;
+    }
+
     .pads-hero-image{
-        min-height:260px;
+        width:38%;
+        min-height:420px;
+        height:420px;
+    }
+
+    .pads-hero-image > img{
+        display:none !important;
     }
 
     .pads-offer{
         right:20px;
         bottom:20px;
+
         width:70px;
         height:70px;
     }
@@ -1024,6 +1314,9 @@ input{
         font-size:20px;
     }
 
+
+    /* CATEGORIES */
+
     .pads-categories{
         padding:22px 0;
     }
@@ -1031,6 +1324,9 @@ input{
     .pads-category{
         height:115px;
     }
+
+
+    /* PRODUCTS */
 
     .products-heading{
         display:block;
@@ -1042,7 +1338,9 @@ input{
 
     .product-filters{
         gap:17px;
+
         overflow-x:auto;
+
         padding-bottom:4px;
     }
 
@@ -1058,9 +1356,15 @@ input{
         height:230px;
     }
 
+
+    /* KEEP ADD BUTTON VISIBLE ON MOBILE */
+
     .quick-add{
         transform:translateY(0);
     }
+
+
+    /* PROMOTION */
 
     .pads-promo{
         padding:8px 0 30px !important;
@@ -1078,6 +1382,9 @@ input{
     .promo-image{
         height:220px;
     }
+
+
+    /* FOOTER */
 
     .footer-main{
         grid-template-columns:1fr 1fr;
@@ -1102,21 +1409,76 @@ input{
         padding-right:15px !important;
     }
 
+
+    /* HERO */
+
+    .pads-hero{
+        min-height:400px;
+
+        background:
+            url("../Pads hero.png")
+            center center / cover no-repeat;
+    }
+
+    .pads-hero-content{
+        min-height:400px;
+
+        display:flex;
+        align-items:center;
+        justify-content:flex-start;
+    }
+
     .pads-hero-copy{
-        padding:32px 18px;
+        width:65%;
+        max-width:none;
+        min-height:auto;
+
+        padding:0 4px 0 18px;
     }
 
     .pads-hero-copy h1{
         font-size:27px;
+        letter-spacing:-1px;
     }
 
     .pads-hero-copy p{
+        max-width:250px;
         font-size:10px;
+        line-height:1.6;
     }
 
     .pads-hero-image{
-        min-height:210px;
+        width:35%;
+        min-height:400px;
+        height:400px;
     }
+
+    .pads-hero-image > img{
+        display:none !important;
+    }
+
+    .pads-offer{
+        width:64px;
+        height:64px;
+
+        right:14px;
+        bottom:15px;
+    }
+
+    .pads-offer small{
+        font-size:6px;
+    }
+
+    .pads-offer strong{
+        font-size:18px;
+    }
+
+    .pads-offer span{
+        font-size:6px;
+    }
+
+
+    /* CATEGORIES */
 
     .pads-category{
         height:105px;
@@ -1131,6 +1493,9 @@ input{
         font-size:7px;
     }
 
+
+    /* PRODUCTS */
+
     .products-heading h2{
         font-size:20px;
     }
@@ -1143,6 +1508,9 @@ input{
         font-size:10px;
     }
 
+
+    /* PROMOTION */
+
     .pads-promo{
         padding:8px 0 25px !important;
     }
@@ -1150,6 +1518,9 @@ input{
     .promo-copy h2{
         font-size:24px;
     }
+
+
+    /* FOOTER */
 
     .footer-main{
         grid-template-columns:1fr;
@@ -1162,8 +1533,10 @@ input{
     .footer-bottom-inner{
         height:auto;
         padding:10px 0;
+
         flex-direction:column;
         gap:5px;
+
         text-align:center;
     }
 
@@ -1175,6 +1548,38 @@ input{
 ========================================================= */
 
 @media(max-width:380px){
+
+    /* HERO */
+
+    .pads-hero{
+        min-height:390px;
+
+        background-position:center center;
+    }
+
+    .pads-hero-content{
+        min-height:390px;
+    }
+
+    .pads-hero-copy{
+        width:67%;
+        padding-left:16px;
+    }
+
+    .pads-hero-copy h1{
+        font-size:25px;
+    }
+
+    .pads-hero-copy p{
+        font-size:9px;
+        max-width:215px;
+    }
+
+    .pads-hero-image{
+        width:33%;
+        min-height:390px;
+        height:390px;
+    }
 
     .pads-image{
         height:165px;
@@ -1190,110 +1595,110 @@ input{
 
 }
 
+
 /* =========================================================
-   FINAL SPACING + COMPATIBILITY CLEANUP
+   FINAL HERO GAP CLEANUP
 ========================================================= */
 
-.pads-promo {
-    margin: 0 !important;
+.pads-hero{
+    width:100%;
+    margin:0 !important;
+    padding:0 !important;
+    overflow:hidden;
 }
 
-.pads-promo-box,
+.pads-hero > .container-fluid{
+    width:100%;
+    margin:0 !important;
+    padding-left:0 !important;
+    padding-right:0 !important;
+}
+
+.pads-hero-content{
+    width:100%;
+    margin:0 !important;
+}
+
+
+/* =========================================================
+   FINAL PROMOTION SPACING
+========================================================= */
+
+.pads-promo{
+    margin:0 !important;
+}
+
+.pads-promo-box{
+    margin-bottom:0 !important;
+}
+
 .promo-image,
-.promo-image img {
-    margin-bottom: 0 !important;
+.promo-image img{
+    margin-bottom:0 !important;
 }
 
-.promo-image img {
-    display: block;
+.promo-image img{
+    display:block;
 }
 
-@media (max-width: 991px) {
-    .pads-promo {
-        padding-bottom: 35px !important;
-    }
-}
 
-@media (max-width: 767px) {
-    .pads-promo {
-        padding-bottom: 30px !important;
-    }
-}
-
-@media (max-width: 575px) {
-    .pads-promo {
-        padding-bottom: 25px !important;
-    }
-}
 /* =========================================================
-   HERO — REMOVE RIGHT SIDE GAP
+   HERO IMAGE POSITIONING
 ========================================================= */
 
-.pads-hero {
-    width: 100%;
-    overflow: hidden;
-}
+@media(max-width:991px){
 
-.pads-hero > .container-fluid {
-    padding-right: 0 !important;
-}
-
-.pads-hero-content {
-    width: 100%;
-    margin-right: 0;
-}
-
-.pads-hero-image {
-    width: 100%;
-    height: 100%;
-    min-width: 0;
-    overflow: hidden;
-    position: relative;
-}
-
-.pads-hero-image img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    object-position: center;
-}
-@media (max-width: 991px) {
-    .pads-hero > .container-fluid {
-        padding-right: 0 !important;
+    .pads-hero{
+        background-position:center center;
     }
 
-    .pads-hero-content {
-        width: 100%;
+    .pads-hero-image{
+        width:52%;
+        background:transparent;
     }
 
-    .pads-hero-image {
-        width: 100%;
+    .pads-hero-image > img{
+        display:none !important;
     }
+
 }
 
-@media (max-width: 767px) {
-    .pads-hero > .container-fluid {
-        padding-right: 0 !important;
+@media(max-width:767px){
+
+    .pads-hero{
+        background-position:center center;
     }
 
-    .pads-hero-image {
-        width: 100%;
-        height: 58vw;
-        min-height: 0;
+    .pads-hero-image{
+        width:38%;
+        min-height:420px;
+        height:420px;
+        background:transparent;
     }
+
 }
 
-@media (max-width: 575px) {
-    .pads-hero > .container-fluid {
-        padding-right: 0 !important;
+@media(max-width:575px){
+
+    .pads-hero{
+        background-position:center center;
     }
 
-    .pads-hero-image {
-        height: 57vw;
+    .pads-hero-image{
+        width:35%;
+        min-height:400px;
+        height:400px;
+        background:transparent;
     }
+
 }
-.pads-hero > .container-fluid {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+
+@media(max-width:380px){
+
+    .pads-hero-image{
+        width:33%;
+        min-height:390px;
+        height:390px;
+    }
+
 }
