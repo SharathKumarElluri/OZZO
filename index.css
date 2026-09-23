@@ -76,7 +76,6 @@ button{
 
 .top-bar{
     width:100%;
-
     height:30px;
 
     background:var(--navy-dark);
@@ -88,13 +87,11 @@ button{
 
 .top-bar-inner{
     width:100%;
-
     height:30px;
 
     display:flex;
 
     align-items:center;
-
     justify-content:space-between;
 }
 
@@ -122,6 +119,10 @@ button{
 
 .top-links a{
     color:#fff;
+}
+
+.top-links a:hover{
+    color:#dce5ed;
 }
 
 .login-link{
@@ -171,6 +172,12 @@ button{
     letter-spacing:-2px;
 
     color:var(--navy);
+
+    transition:.2s ease;
+}
+
+.ozzo-logo:hover{
+    color:#203b55;
 }
 
 .main-nav{
@@ -187,6 +194,9 @@ button{
     font-weight:500;
 
     padding:25px 11px 23px;
+
+    transition:
+        color .2s ease;
 }
 
 .main-nav .nav-link:hover,
@@ -232,6 +242,17 @@ button{
     align-items:center;
 
     padding:0 14px;
+
+    transition:
+        box-shadow .2s ease,
+        background .2s ease;
+}
+
+.search-box:focus-within{
+    background:#fff;
+
+    box-shadow:
+        0 0 0 2px rgba(19,36,56,.08);
 }
 
 .search-box input{
@@ -269,12 +290,6 @@ button{
 
     position:relative;
 
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
     border:none;
 
     background:transparent;
@@ -284,6 +299,36 @@ button{
     font-size:18px;
 
     cursor:pointer;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:0;
+
+    transition:
+        color .2s ease,
+        transform .2s ease;
+}
+
+.header-icon:hover{
+    color:#20364d;
+
+    transform:scale(1.08);
+}
+
+.wishlist-button{
+    text-decoration:none;
+}
+
+.wishlist-button.active{
+    color:#da4251;
+}
+
+.cart-button{
+    text-decoration:none;
 }
 
 .cart-count{
@@ -320,6 +365,8 @@ button{
     box-shadow:none !important;
 
     color:var(--navy);
+
+    padding:6px 9px;
 }
 
 
@@ -400,6 +447,18 @@ button{
     margin-bottom:11px;
 }
 
+.hero-copy p{
+    max-width:470px;
+
+    color:#526477;
+
+    font-size:11px;
+
+    line-height:1.6;
+
+    margin-bottom:16px;
+}
+
 .hero-categories{
     display:flex;
 
@@ -443,7 +502,11 @@ button{
 
     transition:.25s;
 
-    animation:btnPulse 2s ease-in-out infinite;
+    animation:
+        btnPulse
+        2s
+        ease-in-out
+        infinite;
 }
 
 .primary-btn:hover{
@@ -509,12 +572,22 @@ button{
 
 /* =========================================================
    CATEGORIES
+   4 CARDS
 ========================================================= */
 
 .category-section{
     width:100%;
 
     padding:21px 0 22px;
+
+    background:#fff;
+}
+
+.category-section .row{
+    width:100%;
+
+    margin-left:0;
+    margin-right:0;
 }
 
 .category-card{
@@ -549,9 +622,7 @@ button{
 }
 
 .books-card{
-    --light-blue:oklch(89.731% 0.03564 246.979);
-
-    background:var(--light-blue);
+    background:#d9e8f2;
 }
 
 .stationery-card{
@@ -559,7 +630,7 @@ button{
 }
 
 .pads-card{
-    background:var(--pad);
+    background:#F5DCDD;
 }
 
 .category-image{
@@ -576,14 +647,29 @@ button{
     height:100%;
 
     object-fit:cover;
+
+    transition:
+        transform .45s ease;
+}
+
+.category-card:hover .category-image img{
+    transform:scale(1.05);
 }
 
 .category-info{
     width:45%;
 
+    height:100%;
+
     padding:20px 16px 20px 0;
 
     position:relative;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
 }
 
 .category-info h3{
@@ -601,7 +687,11 @@ button{
 
     font-size:10px;
 
+    line-height:1.4;
+
     margin-bottom:0;
+
+    padding-right:5px;
 }
 
 .category-info .arrow{
@@ -614,9 +704,495 @@ button{
     font-size:15px;
 
     color:var(--navy);
+
+    transition:
+        transform .25s ease;
+}
+
+.category-card:hover .category-info .arrow{
+    transform:translateX(4px);
+}
+
+/* =========================================================
+   COMING SOON
+========================================================= */
+
+.coming-soon-section{
+    width:100%;
+
+    padding:22px 0 28px;
+
+    background:#f8f9fb;
+}
+
+.coming-soon-heading{
+    text-align:center;
+
+    margin-bottom:20px;
+}
+
+.coming-soon-heading > span{
+    display:block;
+
+    color:#657384;
+
+    font-size:9px;
+
+    font-weight:600;
+
+    letter-spacing:1.2px;
+
+    margin-bottom:5px;
+}
+
+.coming-soon-heading h2{
+    color:var(--navy);
+
+    font-size:24px;
+
+    font-weight:700;
+
+    margin-bottom:5px;
+}
+
+.coming-soon-heading p{
+    color:var(--muted);
+
+    font-size:10px;
+
+    margin-bottom:0;
 }
 
 
+/* =========================================================
+   COMING SOON CARD
+========================================================= */
+
+.coming-soon-card{
+    width:100%;
+
+    height:150px;
+
+    background:#fff;
+
+    border-radius:6px;
+
+    overflow:hidden;
+
+    display:flex;
+
+    align-items:center;
+
+    position:relative;
+
+    border:1px solid #edf0f3;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+.coming-soon-card:hover{
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 12px 28px rgba(19,36,56,.10);
+}
+/* =========================================================
+   OZZO - 16 COMING SOON CARD COLORS
+========================================================= */
+
+.coming-soon-card:nth-child(1){
+    background:#F3E7E1;
+}
+
+.coming-soon-card:nth-child(2){
+    background:#E6EFF5;
+}
+
+.coming-soon-card:nth-child(3){
+    background:#E8F1E5;
+}
+
+.coming-soon-card:nth-child(4){
+    background:#EEE7F3;
+}
+
+.coming-soon-card:nth-child(5){
+    background:#F5EBDD;
+}
+
+.coming-soon-card:nth-child(6){
+    background:#E4EEF0;
+}
+
+.coming-soon-card:nth-child(7){
+    background:#F1E5E8;
+}
+
+.coming-soon-card:nth-child(8){
+    background:#E9E5F1;
+}
+
+.coming-soon-card:nth-child(9){
+    background:#F2E8D8;
+}
+
+.coming-soon-card:nth-child(10){
+    background:#E3ECE6;
+}
+
+.coming-soon-card:nth-child(11){
+    background:#EAE9DF;
+}
+
+.coming-soon-card:nth-child(12){
+    background:#E7EDF4;
+}
+
+.coming-soon-card:nth-child(13){
+    background:#F3E3DF;
+}
+
+.coming-soon-card:nth-child(14){
+    background:#E6E9F2;
+}
+
+.coming-soon-card:nth-child(15){
+    background:#E4EFE9;
+}
+
+.coming-soon-card:nth-child(16){
+    background:#F0E6EE;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.coming-soon-image{
+    width:56%;
+
+    height:100%;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:#edf0f3;
+}
+
+.coming-soon-image img{
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:
+        transform .45s ease,
+        filter .45s ease;
+}
+
+.coming-soon-card:hover
+.coming-soon-image img{
+    transform:scale(1.06);
+}
+
+
+/* =========================================================
+   DARK IMAGE OVERLAY
+========================================================= */
+
+.coming-soon-image::after{
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(13,29,45,.08),
+            rgba(13,29,45,.40)
+        );
+
+    pointer-events:none;
+}
+
+
+/* =========================================================
+   COMING SOON LABEL
+========================================================= */
+
+.coming-soon-overlay{
+    position:absolute;
+
+    left:9px;
+
+    top:9px;
+
+    z-index:3;
+
+    background:var(--navy);
+
+    color:#fff;
+
+    padding:5px 8px;
+
+    border-radius:3px;
+
+    font-size:7px;
+
+    font-weight:700;
+
+    letter-spacing:.6px;
+
+    text-transform:uppercase;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.coming-soon-info{
+    width:44%;
+
+    height:100%;
+
+    padding:
+        18px
+        14px
+        18px
+        15px;
+
+    position:relative;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+}
+
+.coming-soon-info h3{
+    color:var(--navy);
+
+    font-size:15px;
+
+    line-height:1.2;
+
+    font-weight:700;
+
+    margin-bottom:5px;
+}
+
+.coming-soon-info p{
+    color:#7a8794;
+
+    font-size:9px;
+
+    margin-bottom:0;
+}
+
+.coming-soon-info > span{
+    position:absolute;
+
+    right:12px;
+
+    bottom:14px;
+
+    color:var(--navy);
+
+    font-size:15px;
+
+    transition:
+        transform .25s ease;
+}
+
+.coming-soon-card:hover
+.coming-soon-info > span{
+    transform:translateX(4px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media(max-width:991px){
+
+    .coming-soon-section{
+        padding:
+            20px
+            0
+            25px;
+    }
+
+    .coming-soon-heading h2{
+        font-size:22px;
+    }
+
+    .coming-soon-card{
+        height:140px;
+    }
+
+    .coming-soon-info h3{
+        font-size:14px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:767px){
+
+    .coming-soon-section{
+        padding:
+            18px
+            0
+            22px;
+    }
+
+    .coming-soon-heading{
+        margin-bottom:16px;
+    }
+
+    .coming-soon-heading h2{
+        font-size:20px;
+    }
+
+    .coming-soon-heading p{
+        font-size:9px;
+    }
+
+    .coming-soon-card{
+        height:120px;
+    }
+
+    .coming-soon-image{
+        width:54%;
+    }
+
+    .coming-soon-info{
+        width:46%;
+
+        padding:
+            14px
+            9px
+            14px
+            12px;
+    }
+
+    .coming-soon-info h3{
+        font-size:12px;
+    }
+
+    .coming-soon-info p{
+        font-size:8px;
+    }
+
+    .coming-soon-info > span{
+        right:8px;
+
+        bottom:9px;
+
+        font-size:12px;
+    }
+
+    .coming-soon-overlay{
+        left:7px;
+
+        top:7px;
+
+        padding:
+            4px
+            6px;
+
+        font-size:6px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media(max-width:575px){
+
+    .coming-soon-card{
+        height:105px;
+    }
+
+    .coming-soon-image{
+        width:52%;
+    }
+
+    .coming-soon-info{
+        width:48%;
+
+        padding:
+            10px
+            7px
+            10px
+            10px;
+    }
+
+    .coming-soon-info h3{
+        font-size:11px;
+
+        margin-bottom:3px;
+    }
+
+    .coming-soon-info p{
+        font-size:7px;
+    }
+
+    .coming-soon-info > span{
+        right:6px;
+
+        bottom:7px;
+
+        font-size:11px;
+    }
+
+}
+
+
+/* =========================================================
+   EXTRA SMALL
+========================================================= */
+
+@media(max-width:380px){
+
+    .coming-soon-card{
+        height:98px;
+    }
+
+    .coming-soon-info h3{
+        font-size:10px;
+    }
+
+    .coming-soon-info p{
+        font-size:6px;
+    }
+
+    .coming-soon-overlay{
+        font-size:5px;
+
+        padding:
+            3px
+            5px;
+    }
+
+}
 /* =========================================================
    FEATURED PRODUCTS
 ========================================================= */
@@ -671,6 +1247,13 @@ button{
     cursor:pointer;
 
     position:relative;
+
+    transition:
+        color .2s ease;
+}
+
+.tab-btn:hover{
+    color:var(--navy);
 }
 
 .tab-btn.active{
@@ -701,6 +1284,13 @@ button{
     font-size:10px;
 
     color:#4c5c6c;
+
+    transition:
+        color .2s ease;
+}
+
+.view-all:hover{
+    color:var(--navy);
 }
 
 .view-all span{
@@ -805,10 +1395,17 @@ button{
     color:#617080;
 
     font-size:11px;
+
+    transition:
+        color .2s ease,
+        background .2s ease,
+        transform .2s ease;
 }
 
 .heart-button:hover{
     color:var(--navy);
+
+    transform:scale(1.08);
 }
 
 .heart-button.active{
@@ -934,7 +1531,7 @@ button{
 }
 
 .promo-pads{
-    background:#eee4f3;
+    background:#F5DCDD;
 }
 
 .promo-content{
@@ -949,7 +1546,8 @@ button{
 
 .promo-fashion .promo-content,
 .promo-books .promo-content,
-.promo-stationery .promo-content{
+.promo-stationery .promo-content,
+.promo-pads   .promo-content{
     padding-left:21px;
 
     width:58%;
@@ -1030,6 +1628,8 @@ button{
     background:#20364d;
 
     transform:scale(1.06);
+
+    animation-play-state:paused;
 }
 
 .promo-card:hover .promo-content a span{
@@ -1186,6 +1786,10 @@ button{
     padding:35px 0 30px;
 }
 
+.footer-brand{
+    min-width:0;
+}
+
 .footer-logo{
     font-size:27px;
 
@@ -1202,6 +1806,8 @@ button{
     color:#d7dee6;
 
     display:flex;
+
+    flex-wrap:wrap;
 
     gap:7px;
 }
@@ -1232,7 +1838,8 @@ button{
 
     margin-bottom:8px;
 
-    transition:color .2s ease;
+    transition:
+        color .2s ease;
 }
 
 .footer-column a:hover{
@@ -1318,10 +1925,16 @@ button{
     font-size:10px;
 
     color:#fff;
+
+    transition:
+        opacity .2s ease,
+        transform .2s ease;
 }
 
 .social-icons a:hover{
     opacity:.7;
+
+    transform:translateY(-2px);
 }
 
 .footer-bottom{
@@ -1388,9 +2001,8 @@ button{
 
 
 /* =========================================================
-   RESPONSIVE
+   TABLET
    <=991px
-   LEFT SIDE + VERTICAL CENTER
 ========================================================= */
 
 @media(max-width:991px){
@@ -1438,11 +2050,7 @@ button{
     }
 
 
-    /* -----------------------------------------------------
-       HERO
-       Do NOT stack image below content.
-       Keep image as complete background.
-    ------------------------------------------------------ */
+    /* HERO */
 
     .hero-section{
         min-height:430px;
@@ -1535,16 +2143,6 @@ button{
         margin-bottom:10px;
     }
 
-    .hero-categories{
-        color:#fff;
-
-        gap:9px;
-
-        font-size:10px;
-
-        margin-bottom:16px;
-    }
-
     .hero-copy p{
         color:#f2f4f6;
 
@@ -1553,6 +2151,18 @@ button{
         font-size:10px;
 
         line-height:1.6;
+
+        margin-bottom:14px;
+    }
+
+    .hero-categories{
+        color:#fff;
+
+        gap:9px;
+
+        font-size:10px;
+
+        margin-bottom:16px;
     }
 
     .primary-btn{
@@ -1581,13 +2191,38 @@ button{
         bottom:10px;
     }
 
+
+    /* CATEGORY CARDS */
+
     .category-card{
         height:128px;
     }
 
+    .category-info h3{
+        font-size:15px;
+    }
+
+    .category-info p{
+        font-size:9px;
+    }
+
+    .category-info .arrow{
+        right:11px;
+
+        bottom:16px;
+
+        font-size:14px;
+    }
+
+
+    /* PRODUCTS */
+
     .product-image{
         height:210px;
     }
+
+
+    /* FOOTER */
 
     .footer-main{
         grid-template-columns:
@@ -1598,9 +2233,8 @@ button{
 
 
 /* =========================================================
-   RESPONSIVE
+   MOBILE
    <=767px
-   LEFT SIDE + VERTICAL CENTER
 ========================================================= */
 
 @media(max-width:767px){
@@ -1715,7 +2349,7 @@ button{
     }
 
 
-    /* OTHER SECTIONS */
+    /* CATEGORY CARDS */
 
     .category-section{
         padding:15px 0;
@@ -1724,6 +2358,37 @@ button{
     .category-card{
         height:120px;
     }
+
+    .category-image{
+        width:55%;
+    }
+
+    .category-info{
+        width:45%;
+
+        padding-right:12px;
+    }
+
+    .category-info h3{
+        font-size:14px;
+
+        margin-bottom:5px;
+    }
+
+    .category-info p{
+        font-size:8px;
+    }
+
+    .category-info .arrow{
+        right:9px;
+
+        bottom:13px;
+
+        font-size:13px;
+    }
+
+
+    /* FEATURED */
 
     .featured-heading h2{
         font-size:20px;
@@ -1737,9 +2402,15 @@ button{
         height:200px;
     }
 
+
+    /* PROMOTIONS */
+
     .promo-card{
         height:145px;
     }
+
+
+    /* FOOTER */
 
     .footer-main{
         grid-template-columns:
@@ -1756,9 +2427,8 @@ button{
 
 
 /* =========================================================
-   RESPONSIVE
-   <=575px
    SMALL MOBILE
+   <=575px
 ========================================================= */
 
 @media(max-width:575px){
@@ -1855,7 +2525,7 @@ button{
     }
 
 
-    /* OTHER SECTIONS */
+    /* CATEGORY */
 
     .category-section{
         padding:15px 0;
@@ -1864,6 +2534,43 @@ button{
     .category-card{
         height:105px;
     }
+
+    .category-image{
+        width:53%;
+    }
+
+    .category-info{
+        width:47%;
+
+        padding:
+            15px
+            10px
+            15px
+            0;
+    }
+
+    .category-info h3{
+        font-size:13px;
+
+        margin-bottom:4px;
+    }
+
+    .category-info p{
+        font-size:7px;
+
+        line-height:1.4;
+    }
+
+    .category-info .arrow{
+        right:8px;
+
+        bottom:10px;
+
+        font-size:12px;
+    }
+
+
+    /* FEATURED */
 
     .featured-heading h2{
         font-size:18px;
@@ -1875,15 +2582,23 @@ button{
 
     .product-tabs{
         gap:17px;
+
+        flex-wrap:wrap;
     }
 
     .tab-btn{
         font-size:9px;
     }
 
+
+    /* PROMOTIONS */
+
     .promo-card{
         height:145px;
     }
+
+
+    /* FOOTER */
 
     .footer-main{
         grid-template-columns:1fr;
@@ -1909,7 +2624,7 @@ button{
 
 
 /* =========================================================
-   RESPONSIVE
+   EXTRA SMALL MOBILE
    <=380px
 ========================================================= */
 
@@ -1970,7 +2685,34 @@ button{
     }
 
 
-    /* OTHER SECTIONS */
+    /* CATEGORY */
+
+    .category-card{
+        height:100px;
+    }
+
+    .category-info{
+        padding-right:8px;
+    }
+
+    .category-info h3{
+        font-size:12px;
+    }
+
+    .category-info p{
+        font-size:7px;
+    }
+
+    .category-info .arrow{
+        right:6px;
+
+        bottom:8px;
+
+        font-size:11px;
+    }
+
+
+    /* PRODUCTS */
 
     .product-image{
         height:165px;
@@ -1981,7 +2723,6 @@ button{
 
 /* =========================================================
    PROMOTION ANIMATION
-   EXISTING ANIMATION RETAINED
 ========================================================= */
 
 @keyframes promoFadeUp{
@@ -2023,7 +2764,6 @@ button{
 
 /* =========================================================
    BUTTON PULSE
-   EXISTING ANIMATION RETAINED
 ========================================================= */
 
 @keyframes btnPulse{
@@ -2037,36 +2777,4 @@ button{
         transform:scale(1.08);
     }
 
-}
-.header-icon{
-    width:25px;
-    height:35px;
-
-    position:relative;
-
-    border:none;
-    background:transparent;
-
-    color:var(--navy);
-
-    font-size:18px;
-
-    cursor:pointer;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    padding:0;
-
-    transition:.2s ease;
-}
-
-.header-icon:hover{
-    color:#20364d;
-    transform:scale(1.08);
-}
-
-.wishlist-button{
-    text-decoration:none;
 }
