@@ -413,6 +413,8 @@ button{
     font-size:12px;
 
     margin-bottom:18px;
+
+    flex-wrap:wrap;
 }
 
 .hero-categories b{
@@ -561,11 +563,22 @@ button{
     background:#f5dcdd;
 }
 
+
+/* =========================================================
+   CATEGORY IMAGE
+========================================================= */
+
 .category-image{
-    width:55%;
+    width:65%;
     height:100%;
 
     overflow:hidden;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    flex-shrink:0;
 }
 
 .category-image img{
@@ -574,6 +587,8 @@ button{
 
     object-fit:cover;
 
+    object-position:center;
+
     transition:
         transform .45s ease;
 }
@@ -581,6 +596,11 @@ button{
 .category-card:hover .category-image img{
     transform:scale(1.05);
 }
+
+
+/* =========================================================
+   CATEGORY INFO
+========================================================= */
 
 .category-info{
     width:45%;
@@ -593,6 +613,8 @@ button{
     display:flex;
     flex-direction:column;
     justify-content:center;
+
+    min-width:0;
 }
 
 .category-info h3{
@@ -708,6 +730,12 @@ button{
     transition:
         transform .25s ease,
         box-shadow .25s ease;
+
+    color:inherit;
+
+    text-decoration:none;
+
+    cursor:pointer;
 }
 
 .coming-soon-card:hover{
@@ -805,6 +833,8 @@ button{
     overflow:hidden;
 
     background:#edf0f3;
+
+    flex-shrink:0;
 }
 
 .coming-soon-image img{
@@ -812,6 +842,8 @@ button{
     height:100%;
 
     object-fit:cover;
+
+    object-position:center;
 
     transition:
         transform .45s ease,
@@ -897,6 +929,8 @@ button{
     flex-direction:column;
 
     justify-content:center;
+
+    min-width:0;
 }
 
 .coming-soon-info h3{
@@ -1038,6 +1072,7 @@ button{
 
 .view-all span{
     font-size:14px;
+
     margin-left:4px;
 }
 
@@ -1572,6 +1607,10 @@ button{
         font-size:28px;
     }
 
+    .category-card{
+        height:150px;
+    }
+
     .footer-main{
         grid-template-columns:1fr 1fr;
 
@@ -1709,6 +1748,21 @@ button{
     }
 
 
+    /* CATEGORY */
+
+    .category-card{
+        height:145px;
+    }
+
+    .category-image{
+        width:56%;
+    }
+
+    .category-info{
+        width:44%;
+    }
+
+
     /* SERVICES */
 
     .coming-soon-card{
@@ -1816,22 +1870,85 @@ button{
     }
 
 
-    /* CATEGORY */
+    /* =====================================================
+       MOBILE CATEGORY CARDS
+       ENTIRE IMAGE VISIBLE
+    ===================================================== */
 
     .category-section{
         padding:15px 0;
     }
 
     .category-card{
-        height:120px;
+        height:125px;
+
+        align-items:stretch;
+    }
+
+    .category-image{
+        width:56%;
+
+        height:100%;
+
+        padding:5px;
+
+        display:flex;
+
+        align-items:center;
+        justify-content:center;
+
+        overflow:hidden;
+    }
+
+    .category-image img{
+        width:100%;
+        height:100%;
+
+        object-fit:contain;
+
+        object-position:center;
+
+        transform:none !important;
+    }
+
+    .category-info{
+        width:44%;
+
+        height:100%;
+
+        padding:
+            15px
+            13px
+            15px
+            2px;
+
+        justify-content:center;
+
+        min-width:0;
     }
 
     .category-info h3{
         font-size:14px;
+
+        line-height:1.1;
+
+        margin-bottom:5px;
     }
 
     .category-info p{
         font-size:8px;
+
+        line-height:1.35;
+
+        max-width:72px;
+    }
+
+    .category-info .arrow{
+        right:9px;
+
+        bottom:14px;
+
+        font-size:13px;
     }
 
 
@@ -1991,32 +2108,64 @@ button{
     }
 
 
-    /* CATEGORY */
+    /* =====================================================
+       CATEGORY CARDS
+       KEEP FULL IMAGES VISIBLE
+    ===================================================== */
 
     .category-card{
-        height:105px;
+        height:112px;
+
+        border-radius:6px;
     }
 
     .category-image{
-        width:53%;
+        width:56%;
+
+        height:100%;
+
+        padding:6px;
+    }
+
+    .category-image img{
+        width:100%;
+        height:100%;
+
+        object-fit:contain;
+
+        object-position:center;
     }
 
     .category-info{
-        width:47%;
+        width:44%;
 
         padding:
-            15px
-            10px
-            15px
+            12px
+            9px
+            12px
             0;
     }
 
     .category-info h3{
-        font-size:13px;
+        font-size:12px;
+
+        margin-bottom:4px;
     }
 
     .category-info p{
-        font-size:7px;
+        font-size:6.8px;
+
+        line-height:1.3;
+
+        max-width:68px;
+    }
+
+    .category-info .arrow{
+        right:7px;
+
+        bottom:10px;
+
+        font-size:12px;
     }
 
 
@@ -2120,6 +2269,8 @@ button{
 
 @media(max-width:380px){
 
+    /* HERO */
+
     .hero-section{
         min-height:390px;
     }
@@ -2157,6 +2308,55 @@ button{
         width:33%;
 
         min-height:390px;
+    }
+
+
+    /* =====================================================
+       VERY SMALL CATEGORY CARDS
+       FULL IMAGE + NO CROPPING
+    ===================================================== */
+
+    .category-card{
+        height:102px;
+    }
+
+    .category-image{
+        width:57%;
+
+        padding:6px;
+    }
+
+    .category-image img{
+        object-fit:contain;
+
+        object-position:center;
+    }
+
+    .category-info{
+        width:43%;
+
+        padding-left:0;
+        padding-right:7px;
+    }
+
+    .category-info h3{
+        font-size:11px;
+
+        margin-bottom:3px;
+    }
+
+    .category-info p{
+        font-size:6px;
+
+        max-width:62px;
+    }
+
+    .category-info .arrow{
+        right:5px;
+
+        bottom:8px;
+
+        font-size:11px;
     }
 
 
@@ -2227,6 +2427,12 @@ button{
     }
 
 }
+
+
+/* =========================================================
+   FINAL SERVICE CARD LINK
+========================================================= */
+
 .coming-soon-card{
     color:inherit;
     text-decoration:none;

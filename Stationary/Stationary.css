@@ -1,7 +1,7 @@
 /* =========================================================
    OZZO STATIONERY
    PREMIUM CORPORATE DESIGN
-   HERO MATCHED WITH FASHION / BOOKS
+   FASHION-LIKE PRODUCT CART LAYOUT
 ========================================================= */
 
 :root{
@@ -18,10 +18,6 @@
 
     --border:#e7ebef;
     --surface:#f7f8fa;
-
-    --pink:#edc8bb;
-    --blue:#d9e8f2;
-    --green:#d9edd6;
 }
 
 
@@ -82,17 +78,14 @@ button{
 .top-bar{
     width:100%;
     height:30px;
-
     background:var(--navy-dark);
     color:#fff;
-
     font-size:10px;
 }
 
 .top-bar-inner{
     width:100%;
     height:30px;
-
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -102,7 +95,6 @@ button{
     display:flex;
     align-items:center;
     gap:8px;
-
     font-weight:500;
 }
 
@@ -120,6 +112,10 @@ button{
     color:#fff;
 }
 
+.top-links a:hover{
+    color:#dce5ed;
+}
+
 .login-link{
     display:flex;
     align-items:center;
@@ -133,36 +129,27 @@ button{
 
 .main-header{
     width:100%;
-
     min-height:67px;
     height:67px;
-
     background:#fff;
-
     border-bottom:1px solid #e9e9e9;
-
     position:relative;
     z-index:100;
 }
 
 .navbar{
     width:100%;
-
     min-height:67px;
     height:67px;
-
     padding-top:0;
     padding-bottom:0;
 }
 
 .ozzo-logo{
     color:var(--navy);
-
     font-size:38px;
     line-height:1;
-
     font-weight:700;
-
     letter-spacing:-2px;
 }
 
@@ -172,14 +159,11 @@ button{
 
 .main-nav .nav-link{
     position:relative;
-
     padding:25px 11px 23px;
-
     color:#374455;
-
     font-size:12px;
-
     font-weight:500;
+    transition:color .2s ease;
 }
 
 .main-nav .nav-link:hover,
@@ -189,54 +173,38 @@ button{
 
 .main-nav .nav-link.active::after{
     content:"";
-
     position:absolute;
-
     left:11px;
     right:11px;
-
     bottom:15px;
-
     height:2px;
-
     background:var(--navy);
 }
 
 .header-actions{
     display:flex;
-
     align-items:center;
-
     gap:18px;
 }
 
 .search-box{
     width:285px;
     height:36px;
-
     display:flex;
     align-items:center;
-
     padding:0 14px;
-
     background:#f5f6f7;
-
     border-radius:22px;
 }
 
 .search-box input{
     flex:1;
-
     min-width:0;
     height:100%;
-
     border:none;
     outline:none;
-
     background:transparent;
-
     color:var(--text);
-
     font-size:10px;
 }
 
@@ -246,81 +214,60 @@ button{
 
 .search-box i{
     color:var(--navy);
-
     font-size:13px;
 }
 
 .header-icon{
     position:relative;
-
     width:25px;
     height:35px;
-
     display:flex;
-
     align-items:center;
     justify-content:center;
-
     border:none;
-
     background:transparent;
-
     color:var(--navy);
-
     font-size:18px;
+}
+
+.header-icon:hover{
+    color:#20364d;
 }
 
 .cart-count{
     position:absolute;
-
     top:0;
     right:-5px;
-
     width:15px;
     height:15px;
-
     display:flex;
-
     align-items:center;
     justify-content:center;
-
     background:var(--navy);
-
     color:#fff;
-
     border-radius:50%;
-
     font-size:8px;
-
     font-weight:700;
-
     transition:.2s ease;
 }
 
 .navbar-toggler{
     border:none !important;
     box-shadow:none !important;
-
     color:var(--navy);
 }
 
 
 /* =========================================================
    STATIONERY HERO
-   FULL BACKGROUND IMAGE
 ========================================================= */
 
 .stationery-hero{
     width:100%;
-
     min-height:440px;
-
     position:relative;
-
     overflow:hidden;
-
     padding:0;
-
     background:
         url("/stationary hero.png")
         center center
@@ -328,151 +275,83 @@ button{
         no-repeat;
 }
 
-
-/* =========================================================
-   HERO CONTAINER
-========================================================= */
-
 .stationery-hero > .container,
 .stationery-hero > .container-fluid{
     width:100%;
-
     max-width:none;
-
     margin:0;
-
     padding-left:0 !important;
     padding-right:0 !important;
 }
 
-
-/* =========================================================
-   HERO CONTENT
-========================================================= */
-
 .stationery-hero-content{
     width:100%;
-
     min-height:440px;
-
     position:relative;
-
     z-index:3;
-
     display:grid;
-
     grid-template-columns:42% 58%;
-
     overflow:hidden;
 }
 
-
-/* =========================================================
-   HERO LEFT CONTENT
-========================================================= */
-
 .stationery-hero-copy{
     width:100%;
-
     min-width:0;
-
     min-height:440px;
-
     padding:42px 30px 40px 8%;
-
     display:flex;
-
     flex-direction:column;
-
     justify-content:center;
-
     align-items:flex-start;
-
     position:relative;
-
     z-index:5;
 }
 
 .hero-label{
     margin-bottom:7px;
-
     color:#fff;
-
     font-size:11px;
-
     font-weight:600;
-
     letter-spacing:.8px;
-
     text-transform:uppercase;
 }
 
 .stationery-hero-copy h1{
     margin:0 0 11px;
-
     color:#fff;
-
     font-size:31px;
-
     line-height:1.18;
-
     font-weight:700;
-
     letter-spacing:-.8px;
 }
 
 .stationery-hero-copy h1 span{
     color:#fff;
-
     font-style:italic;
 }
 
 .stationery-hero-copy p{
     max-width:390px;
-
     margin:0 0 18px;
-
     color:#f0f3f5;
-
     font-size:11px;
-
     line-height:1.7;
-
-    font-weight:400;
 }
-
-
-/* =========================================================
-   HERO BUTTON
-========================================================= */
 
 .shop-btn{
     width:140px;
-
     height:39px;
-
     display:flex;
-
     align-items:center;
-
     justify-content:center;
-
     gap:10px;
-
     padding:0;
-
     border:none;
-
     border-radius:24px;
-
     background:#fff;
-
     color:var(--navy);
-
     font-size:10px;
-
     font-weight:600;
-
     transition:
         background .25s ease,
         transform .25s ease;
@@ -480,45 +359,24 @@ button{
 
 .shop-btn:hover{
     background:#edf1f4;
-
     color:var(--navy);
-
     transform:translateY(-2px);
 }
 
 .shop-btn span{
     font-size:15px;
-
     line-height:1;
 }
 
-
-/* =========================================================
-   HERO RIGHT TRANSPARENT AREA
-========================================================= */
-
 .stationery-hero-image{
     width:100%;
-
     min-width:0;
-
     height:440px;
-
     min-height:440px;
-
     position:relative;
-
     background:transparent;
-
     z-index:4;
 }
-
-
-/*
-   Background image is already applied to
-   .stationery-hero.
-   Hide the duplicate HTML image.
-*/
 
 .stationery-hero-image > img{
     display:none !important;
@@ -531,45 +389,31 @@ button{
 
 .stationery-offer{
     position:absolute;
-
     right:35px;
     bottom:30px;
-
     width:85px;
     height:85px;
-
     display:flex;
-
     flex-direction:column;
-
     align-items:center;
     justify-content:center;
-
     border-radius:50%;
-
     background:var(--navy);
-
     color:#fff;
-
     line-height:1;
-
     text-align:center;
-
     z-index:10;
-
     box-shadow:
         0 10px 25px rgba(0,0,0,.15);
 }
 
 .stationery-offer small{
     font-size:7px;
-
     letter-spacing:1px;
 }
 
 .stationery-offer strong{
     margin:3px 0;
-
     font-size:23px;
 }
 
@@ -580,20 +424,14 @@ button{
 
 /* =========================================================
    HERO OVERLAY
-   LEFT SIDE DARKER FOR TEXT
 ========================================================= */
 
 .stationery-hero::after{
     content:"";
-
     position:absolute;
-
     inset:0;
-
     z-index:1;
-
     pointer-events:none;
-
     background:
         linear-gradient(
             90deg,
@@ -612,33 +450,24 @@ button{
 
 .section-title{
     display:flex;
-
     justify-content:space-between;
-
     align-items:end;
-
     margin-bottom:13px;
 }
 
 .section-title span,
 .section-label{
     color:#7c8996;
-
     font-size:9px;
-
     font-weight:600;
-
     letter-spacing:1.2px;
 }
 
 .section-title h2,
 .products-heading h2{
     margin-top:3px;
-
     color:var(--navy);
-
     font-size:23px;
-
     font-weight:700;
 }
 
@@ -649,33 +478,21 @@ button{
 
 .stationery-categories{
     width:100%;
-
     padding:28px 0 25px;
-
     background:#fff;
 }
 
 .stationery-category{
     width:100%;
-
     height:150px;
-
     position:relative;
-
     display:flex;
-
     align-items:flex-end;
-
     padding:17px;
-
     overflow:hidden;
-
     border-radius:8px;
-
     background:#e9ecef;
-
     cursor:pointer;
-
     transition:
         transform .3s ease,
         box-shadow .3s ease;
@@ -683,23 +500,16 @@ button{
 
 .stationery-category img{
     position:absolute;
-
     inset:0;
-
     width:100%;
     height:100%;
-
     object-fit:cover;
-
     object-position:center;
-
-    transition:
-        transform .45s ease;
+    transition:transform .45s ease;
 }
 
 .stationery-category:hover{
     transform:translateY(-5px);
-
     box-shadow:
         0 14px 30px
         rgba(19,36,56,.14);
@@ -711,9 +521,7 @@ button{
 
 .category-overlay{
     position:absolute;
-
     inset:0;
-
     background:
         linear-gradient(
             to top,
@@ -724,29 +532,23 @@ button{
 
 .category-content{
     position:relative;
-
     z-index:2;
-
     color:#fff;
 }
 
 .category-content span{
     font-size:8px;
-
     opacity:.9;
 }
 
 .category-content h3{
     margin:3px 0;
-
     font-size:18px;
-
     font-weight:700;
 }
 
 .category-content p{
     margin:0;
-
     font-size:8px;
 }
 
@@ -757,64 +559,45 @@ button{
 
 .stationery-products{
     width:100%;
-
     padding:8px 0 30px;
-
     background:#fff;
 }
 
 .products-heading{
     display:flex;
-
     justify-content:space-between;
-
     align-items:end;
-
     margin-bottom:18px;
 }
 
 .product-filters{
     display:flex;
-
     align-items:center;
-
     gap:22px;
 }
 
 .filter-btn{
     position:relative;
-
     border:none;
-
     background:transparent;
-
     color:#7a8793;
-
     padding:0 0 7px;
-
     font-size:10px;
-
     font-weight:500;
 }
 
 .filter-btn.active{
     color:var(--navy);
-
     font-weight:700;
 }
 
 .filter-btn.active::after{
     content:"";
-
     position:absolute;
-
     left:0;
     right:0;
-
     bottom:0;
-
     height:2px;
-
     background:var(--navy);
 }
 
@@ -825,24 +608,26 @@ button{
 
 .stationery-product-card{
     width:100%;
-
     height:100%;
-
     background:#fff;
-
+    cursor:pointer;
+    outline:none;
     transition:
         transform .2s ease,
         box-shadow .2s ease;
-
-    cursor:pointer;
 }
 
 .stationery-product-card:hover{
     transform:translateY(-3px);
-
     box-shadow:
         0 8px 22px
         rgba(19,36,56,.08);
+}
+
+.stationery-product-card:focus-visible{
+    box-shadow:
+        0 0 0 2px var(--navy),
+        0 8px 22px rgba(19,36,56,.08);
 }
 
 
@@ -852,31 +637,20 @@ button{
 
 .stationery-image{
     width:100%;
-
     height:310px;
-
     position:relative;
-
     overflow:hidden;
-
     border-radius:5px;
-
     background:#f3f3f3;
 }
 
 .stationery-image img{
     width:100%;
-
     height:100%;
-
     display:block;
-
     object-fit:cover;
-
     object-position:center;
-
-    transition:
-        transform .45s ease;
+    transition:transform .45s ease;
 }
 
 .stationery-product-card:hover
@@ -886,29 +660,20 @@ button{
 
 
 /* =========================================================
-   BADGE
+   PRODUCT BADGE
 ========================================================= */
 
 .product-badge{
     position:absolute;
-
     top:9px;
     left:9px;
-
     z-index:5;
-
     padding:5px 7px;
-
     border-radius:3px;
-
     background:var(--navy);
-
     color:#fff;
-
     font-size:7px;
-
     font-weight:700;
-
     letter-spacing:.6px;
 }
 
@@ -920,29 +685,18 @@ button{
 .wishlist{
     width:32px;
     height:32px;
-
     position:absolute;
-
     top:8px;
     right:8px;
-
     z-index:10;
-
     display:flex;
-
     align-items:center;
     justify-content:center;
-
     border:none;
-
     border-radius:50%;
-
     background:rgba(255,255,255,.95);
-
     color:#667482;
-
     font-size:15px;
-
     transition:
         transform .2s ease,
         color .2s ease;
@@ -950,7 +704,6 @@ button{
 
 .wishlist:hover{
     color:var(--navy);
-
     transform:scale(1.06);
 }
 
@@ -960,86 +713,91 @@ button{
 
 
 /* =========================================================
-   QUICK ADD
-========================================================= */
-
-.quick-add{
-    position:absolute;
-
-    left:0;
-    right:0;
-    bottom:0;
-
-    width:100%;
-    height:42px;
-
-    border:none;
-
-    background:rgba(19,36,56,.95);
-
-    color:#fff;
-
-    font-size:10px;
-
-    font-weight:600;
-
-    transform:translateY(100%);
-
-    transition:
-        transform .3s ease;
-
-    cursor:pointer;
-
-    z-index:8;
-}
-
-.stationery-product-card:hover .quick-add{
-    transform:translateY(0);
-}
-
-.quick-add.added{
-    background:#355a4a;
-}
-
-
-/* =========================================================
    PRODUCT INFO
 ========================================================= */
 
 .product-info{
     width:100%;
-
     padding:10px 0 6px;
-
     background:#fff;
 }
 
-.product-info > span{
-    display:block;
 
-    color:#8a96a3;
+/* =========================================================
+   PRODUCT NAME + ADD TO CART
+========================================================= */
 
-    font-size:8px;
-
-    line-height:1;
-
-    letter-spacing:.6px;
-
-    margin-bottom:3px;
+.product-main-row{
+    width:100%;
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:10px;
 }
 
-.product-info h3{
-    margin:0 0 5px;
+.product-title-area{
+    min-width:0;
+    flex:1;
+}
 
+.product-title-area > span{
+    display:block;
+    margin-bottom:3px;
+    color:#8a96a3;
+    font-size:8px;
+    line-height:1;
+    letter-spacing:.6px;
+}
+
+.product-title-area h3{
+    margin:0;
     min-height:30px;
-
     color:#203146;
-
     font-size:11px;
-
     line-height:1.35;
-
     font-weight:700;
+}
+
+
+/* =========================================================
+   ADD TO CART
+========================================================= */
+
+.add-cart{
+    flex:0 0 auto;
+    width:96px;
+    height:34px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:11px 0 0;
+    padding:0 8px;
+    border:none;
+    border-radius:4px;
+    background:var(--navy);
+    color:#fff;
+    font-size:9px;
+    font-weight:600;
+    line-height:1;
+    white-space:nowrap;
+    cursor:pointer;
+    transition:
+        background .2s ease,
+        transform .2s ease;
+}
+
+.add-cart:hover{
+    background:var(--navy-dark);
+    color:#fff;
+    transform:translateY(-1px);
+}
+
+.add-cart:active{
+    transform:scale(.97);
+}
+
+.add-cart.added{
+    background:#198754;
 }
 
 
@@ -1049,25 +807,19 @@ button{
 
 .rating{
     display:flex;
-
     align-items:center;
-
     gap:5px;
-
     margin-top:4px;
 }
 
 .rating span{
     color:var(--star);
-
     font-size:9px;
-
     letter-spacing:1px;
 }
 
 .rating small{
     color:#98a2ad;
-
     font-size:8px;
 }
 
@@ -1078,21 +830,15 @@ button{
 
 .price{
     margin-top:5px;
-
     color:var(--navy);
-
     font-size:11px;
-
     font-weight:700;
 }
 
 .price del{
     margin-left:5px;
-
     color:#99a3ad;
-
     font-size:9px;
-
     font-weight:400;
 }
 
@@ -1103,15 +849,10 @@ button{
 
 .no-products{
     display:none;
-
     width:100%;
-
     padding:45px 20px;
-
     color:#7a8793;
-
     text-align:center;
-
     font-size:12px;
 }
 
@@ -1122,119 +863,79 @@ button{
 
 .stationery-promo{
     width:100%;
-
     margin:0;
-
     padding:10px 0 18px;
-
     background:#fff;
 }
 
+.stationery-promo > .container,
 .stationery-promo > .container-fluid{
     width:100%;
-
     max-width:none;
-
     margin:0;
-
     padding-left:0 !important;
     padding-right:0 !important;
 }
 
 .stationery-promo-box{
     width:100%;
-
     min-height:145px;
-
     margin:0;
     padding:0;
-
     display:grid;
-
     grid-template-columns:45% 55%;
-
     align-items:stretch;
-
     overflow:hidden;
-
     border-radius:6px;
-
     background:#dceee7;
 }
 
 .promo-copy{
     width:100%;
-
     min-width:0;
-
     padding:24px 25px 24px 45px;
-
     display:flex;
-
     flex-direction:column;
-
     justify-content:center;
-
     align-items:flex-start;
-
     position:relative;
-
     z-index:2;
 }
 
 .promo-copy > span{
     color:#667482;
-
     font-size:8px;
-
     font-weight:600;
-
     letter-spacing:1px;
 }
 
 .promo-copy h2{
     margin:5px 0 7px;
-
     color:var(--navy);
-
     font-size:25px;
-
     font-weight:700;
-
     line-height:1.06;
 }
 
 .promo-copy p{
     max-width:320px;
-
     margin:0 0 10px;
-
     color:#667482;
-
     font-size:9px;
-
     line-height:1.45;
 }
 
 .promo-copy a{
     width:105px;
     height:29px;
-
     display:flex;
-
     align-items:center;
     justify-content:center;
-
     border-radius:17px;
-
     background:var(--navy);
-
     color:#fff;
-
     font-size:8px;
-
     font-weight:600;
-
     transition:
         background .25s ease,
         transform .25s ease;
@@ -1242,45 +943,27 @@ button{
 
 .promo-copy a:hover{
     background:var(--navy-soft);
-
     color:#fff;
-
     transform:translateY(-2px);
 }
 
-
-/* =========================================================
-   PROMOTION IMAGE
-========================================================= */
-
 .promo-image{
     width:100%;
-
     height:100%;
-
     min-height:145px;
-
     margin:0;
     padding:0;
-
     overflow:hidden;
-
     display:flex;
 }
 
 .promo-image img{
     width:100%;
-
     height:100%;
-
     min-height:100%;
-
     max-width:none;
-
     display:block;
-
     object-fit:cover;
-
     object-position:center;
 }
 
@@ -1291,52 +974,38 @@ button{
 
 .footer{
     width:100%;
-
     margin:0;
-
     padding-top:0;
-
     background:var(--navy-dark);
-
     color:#fff;
 }
 
 .footer-main{
     min-height:180px;
-
     display:grid;
-
     grid-template-columns:
         1.35fr
         .8fr
         .8fr
         1.1fr
         1.55fr;
-
     gap:34px;
-
     padding:35px 0 30px;
 }
 
 .footer-logo{
     margin-bottom:5px;
-
     color:#fff;
-
     font-size:27px;
-
     font-weight:700;
-
     letter-spacing:-1px;
 }
 
 .footer-categories{
     display:flex;
-
+    flex-wrap:wrap;
     gap:7px;
-
     color:#d7dee6;
-
     font-size:12px;
 }
 
@@ -1346,28 +1015,21 @@ button{
 
 .footer-column{
     display:flex;
-
     flex-direction:column;
 }
 
 .footer-column h4,
 .footer-newsletter h4{
     margin-bottom:14px;
-
     color:#fff;
-
     font-size:16px;
-
     font-weight:700;
 }
 
 .footer-column a{
     margin-bottom:8px;
-
     color:#ccd4dc;
-
     font-size:12px;
-
     transition:color .2s ease;
 }
 
@@ -1377,59 +1039,38 @@ button{
 
 .footer-newsletter p{
     margin-bottom:6px;
-
     color:#c4ccd5;
-
     font-size:8px;
 }
 
 .newsletter-input{
     width:100%;
-
     height:48px;
-
     display:flex;
-
     overflow:hidden;
-
     border:1px solid #8593a0;
-
     border-radius:6px;
 }
 
 .newsletter-input input{
     flex:1;
-
     min-width:0;
-
     border:none;
-
     outline:none;
-
     padding:0 16px;
-
     background:#fff;
-
     color:var(--text);
-
     font-size:12px;
 }
 
 .newsletter-input button{
     width:65px;
-
     border:none;
-
     background:transparent;
-
     color:#fff;
-
     font-size:26px;
-
     cursor:pointer;
-
-    transition:
-        background .2s ease;
+    transition:background .2s ease;
 }
 
 .newsletter-input button:hover{
@@ -1438,35 +1079,26 @@ button{
 
 .newsletter-message{
     min-height:9px;
-
     margin-top:4px;
-
     color:#b7ebc3;
-
     font-size:7px;
 }
 
 .social-icons{
     display:flex;
-
     gap:16px;
-
     margin-top:8px;
 }
 
 .social-icons a{
     color:#fff;
-
     font-size:10px;
-
     transition:.2s ease;
 }
 
 .social-icons a:hover{
     color:#fff;
-
     opacity:.75;
-
     transform:translateY(-2px);
 }
 
@@ -1476,17 +1108,11 @@ button{
 
 .footer-bottom-inner{
     min-height:50px;
-
     display:flex;
-
     align-items:center;
-
     justify-content:space-between;
-
     gap:15px;
-
     color:#bdc7d1;
-
     font-size:12px;
 }
 
@@ -1515,20 +1141,16 @@ button{
 
     .stationery-hero{
         min-height:420px;
-
-        background-position:center center;
     }
 
     .stationery-hero-content{
         min-height:420px;
-
         grid-template-columns:
             45% 55%;
     }
 
     .stationery-hero-copy{
         min-height:420px;
-
         padding-left:7%;
     }
 
@@ -1538,15 +1160,20 @@ button{
 
     .stationery-hero-image{
         height:420px;
-
         min-height:420px;
     }
 
 
-    /* PRODUCT */
+    /* PRODUCTS */
 
     .stationery-image{
         height:280px;
+    }
+
+    .add-cart{
+        width:84px;
+        height:32px;
+        font-size:8px;
     }
 
 
@@ -1555,7 +1182,6 @@ button{
     .footer-main{
         grid-template-columns:
             1fr 1fr;
-
         gap:26px;
     }
 
@@ -1564,8 +1190,6 @@ button{
 
 /* =========================================================
    991px
-   FULL BACKGROUND HERO
-   LEFT + VERTICAL CENTER
 ========================================================= */
 
 @media(max-width:991px){
@@ -1584,13 +1208,11 @@ button{
 
     .navbar{
         min-height:67px;
-
         height:auto;
     }
 
     .main-nav{
         margin-top:10px;
-
         margin-bottom:10px;
     }
 
@@ -1600,28 +1222,21 @@ button{
 
     .main-nav .nav-link.active::after{
         left:8px;
-
         right:8px;
-
         bottom:4px;
     }
 
     .header-actions{
         padding:10px 0 15px;
-
         justify-content:flex-start;
     }
 
 
-    /* =====================================================
-       HERO
-    ====================================================== */
+    /* HERO */
 
     .stationery-hero{
         width:100%;
-
         min-height:430px;
-
         background:
             url("/stationary hero.png")
             center center
@@ -1642,79 +1257,49 @@ button{
 
     .stationery-hero-content{
         width:100%;
-
         min-height:430px;
-
         display:flex;
-
         align-items:center;
-
         justify-content:flex-start;
     }
 
     .stationery-hero-copy{
         width:48%;
-
         max-width:520px;
-
         min-height:auto;
-
         padding:0 0 0 8%;
-
         display:flex;
-
         flex-direction:column;
-
         justify-content:center;
-
         align-items:flex-start;
     }
 
     .hero-label{
         color:#fff;
-
         font-size:10px;
-
         margin-bottom:6px;
     }
 
     .stationery-hero-copy h1{
         color:#fff;
-
         font-size:29px;
-
         line-height:1.15;
-
         letter-spacing:-.5px;
-
         margin-bottom:10px;
-    }
-
-    .stationery-hero-copy h1 span{
-        color:#fff;
     }
 
     .stationery-hero-copy p{
         max-width:430px;
-
         color:#f0f3f5;
-
         font-size:10px;
-
         line-height:1.6;
-
         margin-bottom:17px;
     }
 
     .stationery-hero-image{
         width:52%;
-
         min-height:430px;
-
         height:430px;
-
-        position:relative;
-
         background:transparent;
     }
 
@@ -1724,11 +1309,8 @@ button{
 
     .stationery-offer{
         width:78px;
-
         height:78px;
-
         right:7%;
-
         bottom:10%;
     }
 
@@ -1737,27 +1319,32 @@ button{
     }
 
 
-    /* =====================================================
-       CATEGORIES
-    ====================================================== */
+    /* CATEGORIES */
 
     .stationery-category{
         height:145px;
     }
 
 
-    /* =====================================================
-       PRODUCTS
-    ====================================================== */
+    /* PRODUCTS */
 
     .stationery-image{
         height:270px;
     }
 
+    .product-main-row{
+        gap:8px;
+    }
 
-    /* =====================================================
-       PROMOTION
-    ====================================================== */
+    .add-cart{
+        width:82px;
+        height:31px;
+        margin-top:10px;
+        font-size:7.5px;
+    }
+
+
+    /* PROMOTION */
 
     .stationery-promo{
         padding:8px 0 18px;
@@ -1765,28 +1352,22 @@ button{
 
     .stationery-promo-box{
         grid-template-columns:1fr;
-
         min-height:0;
     }
 
     .promo-copy{
         min-height:125px;
-
         padding:22px 7%;
     }
 
     .promo-image{
         width:100%;
-
         height:220px;
-
         min-height:220px;
     }
 
 
-    /* =====================================================
-       FOOTER
-    ====================================================== */
+    /* FOOTER */
 
     .footer-main{
         grid-template-columns:
@@ -1798,7 +1379,6 @@ button{
 
 /* =========================================================
    767px
-   LEFT + VERTICAL CENTER
 ========================================================= */
 
 @media(max-width:767px){
@@ -1809,7 +1389,6 @@ button{
 
     .top-bar-inner{
         height:28px;
-
         font-size:9px;
     }
 
@@ -1823,94 +1402,68 @@ button{
 
     .search-box{
         width:100%;
-
         order:3;
     }
 
 
-    /* =====================================================
-       HERO
-    ====================================================== */
+    /* HERO */
 
     .stationery-hero{
         min-height:420px;
-
         background-position:center center;
     }
 
     .stationery-hero-content{
         min-height:420px;
-
         display:flex;
-
         align-items:center;
-
         justify-content:flex-start;
     }
 
     .stationery-hero-copy{
         width:62%;
-
         max-width:none;
-
         padding-left:25px;
-
         padding-right:5px;
-
         align-items:flex-start;
     }
 
     .hero-label{
         font-size:9px;
-
         letter-spacing:1px;
-
         margin-bottom:6px;
     }
 
     .stationery-hero-copy h1{
         font-size:28px;
-
         line-height:1.08;
-
         letter-spacing:-.5px;
-
         margin-bottom:10px;
     }
 
     .stationery-hero-copy p{
         max-width:100%;
-
         font-size:9px;
-
         line-height:1.55;
-
         margin-bottom:15px;
     }
 
     .shop-btn{
         width:123px;
-
         height:37px;
-
         font-size:10px;
     }
 
     .stationery-hero-image{
         width:38%;
-
         min-height:420px;
-
         height:420px;
     }
 
     .stationery-offer{
         width:70px;
-
         height:70px;
-
         right:4%;
-
         bottom:12%;
     }
 
@@ -1927,9 +1480,7 @@ button{
     }
 
 
-    /* =====================================================
-       CATEGORIES
-    ====================================================== */
+    /* CATEGORIES */
 
     .stationery-categories{
         padding:22px 0;
@@ -1937,14 +1488,11 @@ button{
 
     .stationery-category{
         height:120px;
-
         border-radius:7px;
     }
 
 
-    /* =====================================================
-       PRODUCTS
-    ====================================================== */
+    /* PRODUCTS */
 
     .products-heading{
         display:block;
@@ -1956,9 +1504,7 @@ button{
 
     .product-filters{
         gap:17px;
-
         overflow-x:auto;
-
         padding-bottom:4px;
     }
 
@@ -1971,34 +1517,49 @@ button{
     }
 
     .stationery-image{
-        height:230px;
+        height:220px;
+    }
+
+    .product-main-row{
+        gap:6px;
+    }
+
+    .product-title-area > span{
+        font-size:7px;
+    }
+
+    .product-title-area h3{
+        font-size:10px;
+        line-height:1.3;
+        min-height:27px;
+    }
+
+    .add-cart{
+        width:76px;
+        height:30px;
+        margin-top:9px;
+        padding:0 5px;
+        font-size:7px;
+    }
+
+    .rating{
+        margin-top:5px;
     }
 
 
-    /* QUICK ADD ALWAYS VISIBLE ON TOUCH */
-
-    .quick-add{
-        transform:translateY(0);
-    }
-
-
-    /* =====================================================
-       PROMOTION
-    ====================================================== */
+    /* PROMOTION */
 
     .stationery-promo{
-        padding:8px 0 16px !important;
+        padding:8px 0 16px;
     }
 
     .stationery-promo-box{
         grid-template-columns:1fr;
-
         min-height:0;
     }
 
     .promo-copy{
         min-height:105px;
-
         padding:20px 24px;
     }
 
@@ -2008,27 +1569,21 @@ button{
 
     .promo-copy p{
         font-size:8px;
-
         margin-bottom:7px;
     }
 
     .promo-image{
         width:100%;
-
         height:155px;
-
         min-height:155px;
     }
 
 
-    /* =====================================================
-       FOOTER
-    ====================================================== */
+    /* FOOTER */
 
     .footer-main{
         grid-template-columns:
             1fr 1fr;
-
         gap:26px;
     }
 
@@ -2041,7 +1596,6 @@ button{
 
 /* =========================================================
    575px
-   SMALL MOBILE
 ========================================================= */
 
 @media(max-width:575px){
@@ -2052,13 +1606,10 @@ button{
     }
 
 
-    /* =====================================================
-       HERO
-    ====================================================== */
+    /* HERO */
 
     .stationery-hero{
         min-height:400px;
-
         background-position:center center;
     }
 
@@ -2070,63 +1621,44 @@ button{
 
     .stationery-hero-content{
         width:100%;
-
         min-height:400px;
-
         margin:0 !important;
-
         padding:0 !important;
-
         display:flex;
-
         align-items:center;
-
         justify-content:flex-start;
     }
 
     .stationery-hero-copy{
         width:65%;
-
         min-height:auto;
-
         padding-left:18px;
-
         padding-right:4px;
     }
 
     .hero-label{
         font-size:8px;
-
         letter-spacing:.8px;
-
         margin-bottom:5px;
     }
 
     .stationery-hero-copy h1{
         font-size:24px;
-
         line-height:1.08;
-
         letter-spacing:-.5px;
-
         margin-bottom:9px;
     }
 
     .stationery-hero-copy p{
         max-width:100%;
-
         font-size:8px;
-
         line-height:1.55;
-
         margin-bottom:13px;
     }
 
     .shop-btn{
         width:116px;
-
         height:35px;
-
         font-size:9px;
     }
 
@@ -2136,19 +1668,14 @@ button{
 
     .stationery-hero-image{
         width:35%;
-
         min-height:400px;
-
         height:400px;
     }
 
     .stationery-offer{
         width:62px;
-
         height:62px;
-
         right:3%;
-
         bottom:14%;
     }
 
@@ -2162,15 +1689,11 @@ button{
     }
 
 
-    /* =====================================================
-       CATEGORIES
-    ====================================================== */
+    /* CATEGORIES */
 
     .stationery-category{
         height:105px;
-
         border-radius:6px;
-
         padding:13px;
     }
 
@@ -2183,61 +1706,73 @@ button{
     }
 
 
-    /* =====================================================
-       PRODUCTS
-    ====================================================== */
+    /* PRODUCTS */
 
     #productGrid{
-        row-gap:10px !important;
+        row-gap:12px !important;
     }
 
     .stationery-image{
-        height:190px;
+        height:185px;
     }
 
     .product-info{
         padding-top:8px;
     }
 
-    .product-info > span{
-        font-size:7px;
+    .product-main-row{
+        gap:4px;
     }
 
-    .product-info h3{
-        font-size:10px;
+    .product-title-area > span{
+        font-size:6px;
+        letter-spacing:.35px;
+    }
 
-        min-height:28px;
+    .product-title-area h3{
+        font-size:9px;
+        line-height:1.25;
+        min-height:25px;
+    }
+
+    .add-cart{
+        width:70px;
+        height:29px;
+        margin-top:8px;
+        padding:0 4px;
+        font-size:6.5px;
     }
 
     .rating{
-        margin-top:5px;
+        gap:4px;
+        margin-top:4px;
     }
 
     .rating span{
-        font-size:8px;
-    }
-
-    .rating small{
         font-size:7px;
     }
 
+    .rating small{
+        font-size:6.5px;
+    }
+
     .price{
-        font-size:10px;
+        font-size:9px;
+        margin-top:4px;
     }
 
     .price del{
-        font-size:8px;
+        font-size:7px;
     }
 
 
-    /* =====================================================
-       PROMOTION
-    ====================================================== */
+    /* PROMOTION */
 
     .stationery-promo{
         padding:6px 0 16px !important;
     }
 
+    .stationery-promo > .container,
     .stationery-promo > .container-fluid{
         padding-left:0 !important;
         padding-right:0 !important;
@@ -2245,60 +1780,46 @@ button{
 
     .stationery-promo-box{
         width:100%;
-
         grid-template-columns:1fr;
-
         min-height:0;
     }
 
     .promo-copy{
         min-height:95px;
-
         padding:17px 18px;
     }
 
     .promo-copy h2{
         font-size:20px;
-
         margin:3px 0 4px;
     }
 
     .promo-copy p{
         font-size:7px;
-
         line-height:1.35;
-
         margin-bottom:6px;
     }
 
     .promo-copy a{
         width:90px;
-
         height:24px;
-
         font-size:7px;
     }
 
     .promo-image{
         width:100%;
-
         height:135px;
-
         min-height:135px;
     }
 
     .promo-image img{
         width:100%;
-
         height:100%;
-
         object-fit:cover;
     }
 
 
-    /* =====================================================
-       FOOTER
-    ====================================================== */
+    /* FOOTER */
 
     .footer-main{
         grid-template-columns:1fr;
@@ -2310,13 +1831,9 @@ button{
 
     .footer-bottom-inner{
         height:auto;
-
         padding:10px 0;
-
         flex-direction:column;
-
         gap:5px;
-
         text-align:center;
     }
 
@@ -2325,14 +1842,9 @@ button{
 
 /* =========================================================
    380px
-   VERY SMALL MOBILE
 ========================================================= */
 
 @media(max-width:380px){
-
-    /* =====================================================
-       HERO
-    ====================================================== */
 
     .stationery-hero{
         min-height:390px;
@@ -2344,7 +1856,6 @@ button{
 
     .stationery-hero-copy{
         width:67%;
-
         padding-left:16px;
     }
 
@@ -2354,33 +1865,25 @@ button{
 
     .stationery-hero-copy h1{
         font-size:22px;
-
         margin-bottom:8px;
     }
 
     .stationery-hero-copy p{
         font-size:8px;
-
         line-height:1.5;
-
         margin-bottom:11px;
     }
 
     .stationery-hero-image{
         width:33%;
-
         min-height:390px;
-
         height:390px;
     }
 
     .stationery-offer{
         width:56px;
-
         height:56px;
-
         right:2px;
-
         bottom:12%;
     }
 
@@ -2394,67 +1897,68 @@ button{
     }
 
 
-    /* =====================================================
-       CATEGORIES
-    ====================================================== */
+    /* CATEGORIES */
 
     .stationery-category{
         height:95px;
-
         border-radius:5px;
     }
 
 
-    /* =====================================================
-       PRODUCTS
-    ====================================================== */
+    /* PRODUCTS */
 
     .stationery-image{
-        height:165px;
+        height:160px;
     }
 
-    .product-filters{
-        gap:14px;
+    .product-main-row{
+        gap:3px;
     }
 
-    .filter-btn{
+    .product-title-area > span{
+        font-size:5.5px;
+    }
+
+    .product-title-area h3{
         font-size:8px;
+        line-height:1.2;
+        min-height:23px;
     }
 
-    .product-info > span{
-        font-size:6px;
+    .add-cart{
+        width:64px;
+        height:27px;
+        margin-top:7px;
+        padding:0 3px;
+        font-size:5.8px;
     }
 
-    .product-info h3{
-        font-size:9px;
-
-        min-height:26px;
+    .rating{
+        gap:3px;
+        margin-top:3px;
     }
 
     .rating span{
-        font-size:7px;
-    }
-
-    .rating small{
         font-size:6px;
     }
 
+    .rating small{
+        font-size:5.5px;
+    }
+
     .price{
-        font-size:9px;
+        font-size:8px;
     }
 
     .price del{
-        font-size:7px;
+        font-size:6.5px;
     }
 
 
-    /* =====================================================
-       PROMOTION
-    ====================================================== */
+    /* PROMOTION */
 
     .promo-copy{
         min-height:88px;
-
         padding:15px 16px;
     }
 
@@ -2468,13 +1972,11 @@ button{
 
     .promo-image{
         height:125px;
-
         min-height:125px;
     }
 
     .promo-image img{
         width:100%;
-
         height:100%;
     }
 
@@ -2482,84 +1984,17 @@ button{
 
 
 /* =========================================================
-   FINAL EDGE / GAP FIX
+   FINAL GAP FIX
 ========================================================= */
 
 .stationery-promo,
 .stationery-promo-box,
-.stationery-promo-image,
-.stationery-promo-image img,
+.promo-image,
+.promo-image img,
 .footer{
     margin-bottom:0 !important;
 }
 
 .stationery-promo + .footer{
     margin-top:0 !important;
-}
-
-
-/* =========================================================
-   EXISTING PROMOTION ANIMATION
-   KEPT UNCHANGED
-========================================================= */
-
-@keyframes promoFadeUp{
-
-    0%{
-        opacity:0;
-
-        transform:translateY(30px);
-    }
-
-    100%{
-        opacity:1;
-
-        transform:translateY(0);
-    }
-
-}
-
-.promo-card{
-    animation:
-        promoFadeUp
-        .7s
-        ease
-        both;
-}
-
-.promotion-section
-.col-lg-4:nth-child(1)
-.promo-card{
-    animation-delay:.1s;
-}
-
-.promotion-section
-.col-lg-4:nth-child(2)
-.promo-card{
-    animation-delay:.25s;
-}
-
-.promotion-section
-.col-lg-4:nth-child(3)
-.promo-card{
-    animation-delay:.4s;
-}
-
-
-/* =========================================================
-   BUTTON PULSE
-   EXISTING ANIMATION RETAINED
-========================================================= */
-
-@keyframes btnPulse{
-
-    0%,
-    100%{
-        transform:scale(1);
-    }
-
-    50%{
-        transform:scale(1.08);
-    }
-
 }

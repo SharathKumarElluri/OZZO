@@ -1,1901 +1,520 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OZZO | Pads</title>
     <link rel="icon" type="image/png" href="/OZZO logo.jpg">
-
-    <!-- =====================================================
-         BOOTSTRAP
-    ====================================================== -->
-
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-    >
-
-
-    <!-- =====================================================
-         FONT AWESOME
-    ====================================================== -->
-
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    >
-
-
-    <!-- =====================================================
-         GOOGLE FONT
-    ====================================================== -->
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap"
-        rel="stylesheet"
-    >
-
-
-    <!-- =====================================================
-         PADS CSS
-    ====================================================== -->
-
-    <link
-        rel="stylesheet"
-        href="Pads.css"
-    >
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Pads.css">
 </head>
-
-
 <body>
 
-
-<!-- =========================================================
-     TOP BAR
-========================================================= -->
-
 <div class="top-bar">
-
     <div class="container-fluid top-bar-inner px-4">
-
-        <div class="shipping-text">
-
-            <i
-                class="fa-solid fa-truck"
-                aria-hidden="true">
-            </i>
-
-            <span>
-                Free shipping on orders above ₹999
-            </span>
-
-        </div>
-
-
+        <div class="shipping-text"><i class="fa-solid fa-truck" aria-hidden="true"></i><span>Free shipping on orders above ₹999</span></div>
         <div class="top-links">
-
-            <a href="#">
-                Track Order
-            </a>
-
-            <span>|</span>
-
-            <a href="#">
-                Help
-            </a>
-
-            <span>|</span>
-
-            <a
-                href="#"
-                class="login-link"
-                title="Login"
-                aria-label="Login"
-            >
-
-                <i
-                    class="fa-regular fa-user"
-                    aria-hidden="true">
-                </i>
-
-                Login
-
-            </a>
-
+            <a href="#">Track Order</a><span>|</span><a href="#">Help</a><span>|</span>
+            <a href="#" class="login-link" title="Login" aria-label="Login"><i class="fa-regular fa-user" aria-hidden="true"></i>Login</a>
         </div>
-
     </div>
-
 </div>
 
-
-<!-- =========================================================
-     HEADER
-========================================================= -->
-
 <header class="main-header">
-
     <nav class="navbar navbar-expand-xl">
-
         <div class="container-fluid px-4">
-
-
-            <!-- LOGO -->
-
-            <a
-                class="navbar-brand ozzo-logo"
-                href="index.html"
-            >
-                OZZO
-            </a>
-
-
-            <!-- MOBILE BUTTON -->
-
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#ozzoNavbar"
-                aria-controls="ozzoNavbar"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-                title="Toggle navigation"
-            >
-
-                <i
-                    class="fa-solid fa-bars"
-                    aria-hidden="true">
-                </i>
-
+            <a class="navbar-brand ozzo-logo" href="../index.html">OZZO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ozzoNavbar" aria-controls="ozzoNavbar" aria-expanded="false" aria-label="Toggle navigation" title="Toggle navigation">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
             </button>
-
-
-            <!-- NAV -->
-
-            <div
-                class="collapse navbar-collapse"
-                id="ozzoNavbar"
-            >
-
+            <div class="collapse navbar-collapse" id="ozzoNavbar">
                 <ul class="navbar-nav main-nav mx-auto">
-
-
-                    <li class="nav-item">
-
-                        <a
-                            class="nav-link"
-                            href="/index.html"
-                        >
-                            Home
-                        </a>
-
-                    </li>
-
-
-                    <li class="nav-item">
-
-                        <a
-                            class="nav-link"
-                            href="/Fashion/Fashion.html"
-                        >
-                            Fashion
-                        </a>
-
-                    </li>
-
-
-                    <li class="nav-item">
-
-                        <a
-                            class="nav-link"
-                            href="/Books/Books.html"
-                        >
-                            Books
-                        </a>
-
-                    </li>
-
-
-                    <li class="nav-item">
-
-                        <a
-                            class="nav-link"
-                            href="/Stationary/Stationary.html"
-                        >
-                            Stationery
-                        </a>
-
-                    </li>
-
-
-                    <li class="nav-item">
-
-                        <a
-                            class="nav-link active"
-                            href="/Pads/Pads.html"
-                        >
-                            Pads
-                        </a>
-
-                    </li>
-
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Fashion/Fashion.html">Fashion</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Books/Books.html">Books</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Stationary/Stationary.html">Stationery</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Pads.html">Pads</a></li>
                 </ul>
-
-
-                <!-- HEADER ACTIONS -->
-
                 <div class="header-actions">
-
-
-                    <!-- SEARCH -->
-
                     <div class="search-box">
-
-                        <input
-                            type="text"
-                            id="searchInput"
-                            placeholder="Search pads..."
-                            aria-label="Search pads"
-                        >
-
-                        <i
-                            class="fa-solid fa-magnifying-glass"
-                            aria-hidden="true">
-                        </i>
-
+                        <input type="text" id="searchInput" placeholder="Search pads..." aria-label="Search pads">
+                        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
                     </div>
-
-
-                    <!-- WISHLIST -->
-
-                                <a class="header-icon wishlist-button"
-   href="../Wishlist/Wishlist.html"
-   title="Wishlist"
-   aria-label="Wishlist">
-    <i class="fa-regular fa-heart"></i>
-</a>
-
-
-                    <!-- CART -->
-<a
-    href="../Cart/Cart.html"
-    class="header-icon cart-button"
-    title="Shopping Cart"
-    aria-label="Shopping Cart"
->
-    <i
-        class="fa-solid fa-bag-shopping"
-        aria-hidden="true"
-    ></i>
-
-    <span
-        class="cart-count"
-        id="cartCount"
-    >
-        0
-    </span>
-</a>
-
+                    <a class="header-icon wishlist-button" href="../Wishlist/Wishlist.html" title="Wishlist" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></a>
+                    <a href="../Cart/Cart.html" class="header-icon cart-button" title="Shopping Cart" aria-label="Shopping Cart">
+                        <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i><span class="cart-count" id="cartCount">0</span>
+                    </a>
                 </div>
-
             </div>
-
         </div>
-
     </nav>
-
 </header>
 
-
-<!-- =========================================================
-     HERO
-========================================================= -->
-
 <section class="pads-hero">
-
+    <div class="pads-hero-bg"><img src="/Pads hero.png" alt="OZZO Pads Collection" title="OZZO Pads Collection"></div>
+    <div class="pads-hero-overlay"></div>
     <div class="container-fluid px-4">
-
         <div class="pads-hero-content">
-
-
-            <!-- HERO COPY -->
-
             <div class="pads-hero-copy">
-
-                <span class="hero-label">
-                    OZZO PADS
-                </span>
-
-
-                <h1>
-                    Comfort That<br>
-                    <span>Moves With You</span>
-                </h1>
-
-
-                <p>
-                    Explore trusted sanitary pad brands,
-                    everyday protection and comfortable
-                    choices for every routine.
-                </p>
-
-
-                <a
-                    href="#padsProducts"
-                    class="shop-btn"
-                >
-
-                    Shop Pads
-
-                    <span>→</span>
-
-                </a>
-
+                <span class="hero-label">OZZO PADS</span>
+                <h1>Comfort That<br><span>Moves With You</span></h1>
+                <p>Explore trusted sanitary pad brands, everyday protection and comfortable choices for every routine.</p>
+                <a href="#padsProducts" class="shop-btn">Shop Pads <span>→</span></a>
             </div>
-
-
-            <!-- HERO IMAGE -->
-
-            <div class="pads-hero-image">
-
-                <img
-                    src="/Pads hero.png"
-                    alt="Personal care products"
-                >
-
-
-                <div class="pads-offer">
-
-                    <small>
-                        SPECIAL
-                    </small>
-
-                    <strong>
-                        25%
-                    </strong>
-
-                    <span>
-                        OFF
-                    </span>
-
-                </div>
-
-            </div>
-
+            <div class="pads-hero-image"><div class="pads-offer"><small>SPECIAL</small><strong>25%</strong><span>OFF</span></div></div>
         </div>
-
     </div>
-
 </section>
-
-
-<!-- =========================================================
-     CATEGORIES
-========================================================= -->
 
 <section class="pads-categories">
-
     <div class="container-fluid px-4">
-
-
-        <div class="section-title">
-
-            <div>
-
-                <span>
-                    EXPLORE
-                </span>
-
-                <h2>
-                    Choose Your Comfort
-                </h2>
-
-            </div>
-
-        </div>
-
-
+        <div class="section-title"><div><span>EXPLORE</span><h2>Choose Your Comfort</h2></div></div>
         <div class="row g-3">
-
-
-            <!-- REGULAR -->
-
-            <div class="col-6 col-md-4">
-
-                <a
-                    href="#padsProducts"
-                    class="pads-category"
-                    data-filter="regular"
-                >
-
-                    <img
-                        src="https://onemg.gumlet.io/l_watermark_346%2Cw_480%2Ch_480/a_ignore%2Cw_480%2Ch_480%2Cc_fit%2Cq_auto%2Cf_auto/ae319e35fe74418abfebb74c144146fb.jpg?dpr=3&format=auto&h=320&w=412"
-                        alt="Whisper sanitary pads"
-                    >
-
-                    <div class="category-overlay"></div>
-
-                    <div class="category-content">
-
-                        <span>
-                            01
-                        </span>
-
-                        <h3>
-                            Regular
-                        </h3>
-
-                        <p>
-                            Everyday protection →
-                        </p>
-
-                    </div>
-
-                </a>
-
-            </div>
-
-
-            <!-- XL -->
-
-            <div class="col-6 col-md-4">
-
-                <a
-                    href="#padsProducts"
-                    class="pads-category"
-                    data-filter="xl"
-                >
-
-                    <img
-                        src="https://onemg.gumlet.io/l_watermark_346%2Cw_480%2Ch_480/a_ignore%2Cw_480%2Ch_480%2Cc_fit%2Cq_auto%2Cf_auto/49a1d73915ad48a8a23bbed40a8c90c5.jpg?dpr=3&format=auto&h=320&w=412"
-                        alt="Stayfree sanitary pads"
-                    >
-
-                    <div class="category-overlay"></div>
-
-                    <div class="category-content">
-
-                        <span>
-                            02
-                        </span>
-
-                        <h3>
-                            XL Protection
-                        </h3>
-
-                        <p>
-                            Extra coverage →
-                        </p>
-
-                    </div>
-
-                </a>
-
-            </div>
-
-
-            <!-- NIGHT -->
-
-            <div class="col-6 col-md-4">
-
-                <a
-                    href="#padsProducts"
-                    class="pads-category"
-                    data-filter="night"
-                >
-
-                    <img
-                        src="https://images.unsplash.com/photo-1603398938378-e54eab446dde?auto=format&fit=crop&w=900&q=85"
-                        alt="Night care products"
-                    >
-
-                    <div class="category-overlay"></div>
-
-                    <div class="category-content">
-
-                        <span>
-                            03
-                        </span>
-
-                        <h3>
-                            Night Care
-                        </h3>
-
-                        <p>
-                            Extra night comfort →
-                        </p>
-
-                    </div>
-
-                </a>
-
-            </div>
-
+            <div class="col-6 col-md-4"><a href="#padsProducts" class="pads-category" data-filter="xxl"><img src="/Pads-XXL-109.jpeg" alt="XXL Pads" title="XXL Pads"><div class="category-overlay"></div><div class="category-content"><span>01</span><h3>XXL</h3><p>Everyday protection →</p></div></a></div>
+            <div class="col-6 col-md-4"><a href="#padsProducts" class="pads-category" data-filter="xxxl"><img src="/Pads-XXXL-189.jpeg" alt="XXXL Pads" title="XXXL Pads"><div class="category-overlay"></div><div class="category-content"><span>02</span><h3>XXXL</h3><p>Extra coverage →</p></div></a></div>
+            <div class="col-6 col-md-4"><a href="#padsProducts" class="pads-category" data-filter="night"><img src="/Pads-XXXL-279.jpeg" alt="Night Care Pads" title="Night Care Pads"><div class="category-overlay"></div><div class="category-content"><span>03</span><h3>Night Care</h3><p>Extra night comfort →</p></div></a></div>
         </div>
-
     </div>
-
 </section>
 
-
-<!-- =========================================================
-     PRODUCTS
-========================================================= -->
-
-<section
-    class="pads-products"
-    id="padsProducts"
->
-
+<section class="pads-products" id="padsProducts">
     <div class="container-fluid px-4">
-
-
         <div class="products-heading">
-
-
-            <div>
-
-                <span class="section-label">
-                    OZZO COLLECTION
-                </span>
-
-                <h2>
-                    Popular Pads
-                </h2>
-
-            </div>
-
-
+            <div><span class="section-label">OZZO COLLECTION</span><h2>Popular Pads</h2></div>
             <div class="product-filters">
-
-                <button
-                    class="filter-btn active"
-                    type="button"
-                    data-filter="all"
-                >
-                    All
-                </button>
-
-
-                <button
-                    class="filter-btn"
-                    type="button"
-                    data-filter="regular"
-                >
-                    Regular
-                </button>
-
-
-                <button
-                    class="filter-btn"
-                    type="button"
-                    data-filter="xl"
-                >
-                    XL
-                </button>
-
-
-                <button
-                    class="filter-btn"
-                    type="button"
-                    data-filter="night"
-                >
-                    Night
-                </button>
-
+                <button class="filter-btn active" type="button" data-filter="all">All</button>
+                <button class="filter-btn" type="button" data-filter="xxl">XXL</button>
+                <button class="filter-btn" type="button" data-filter="xxxl">XXXL</button>
+                <button class="filter-btn" type="button" data-filter="night">Night</button>
             </div>
-
         </div>
-
-
-        <div
-            class="row g-3"
-            id="productGrid"
-        >
-
-
-            <!-- =================================================
-                 WHISPER
-            ================================================== -->
-
-            <div
-                class="col-6 col-md-4 col-lg-3 product-item"
-                data-category="xl"
-                data-name="Whisper Ultra No Gap No Leaks XL"
-            >
-
-                <div class="pads-product-card">
-
+        <div class="row g-3" id="productGrid">
+            <div class="col-6 col-md-4 col-lg-3 product-item" data-id="pads-001" data-category="xxl" data-name="ELLE-V Organic Sanitary Pads with anion chip">
+                <div class="pads-product-card" role="button" tabindex="0" aria-label="View details for ELLE-V Organic Sanitary Pads with anion chip">
                     <div class="pads-image">
-
-                        <img
-                            src="https://onemg.gumlet.io/l_watermark_346%2Cw_480%2Ch_480/a_ignore%2Cw_480%2Ch_480%2Cc_fit%2Cq_auto%2Cf_auto/ae319e35fe74418abfebb74c144146fb.jpg?dpr=3&format=auto&h=320&w=412"
-                            alt="Whisper Ultra No Gap No Leaks XL"
-                        >
-
-                        <span class="product-badge">
-                            WHISPER
-                        </span>
-
-                        <button
-                            class="wishlist"
-                            type="button"
-                            title="Add Whisper Ultra to wishlist"
-                            aria-label="Add Whisper Ultra to wishlist"
-                        >
-
-                            <i
-                                class="fa-regular fa-heart"
-                                aria-hidden="true">
-                            </i>
-
+                        <img src="/Pads-XXL-109.jpeg" alt="ELLE-V Organic Sanitary Pads with anion chip" title="ELLE-V Organic Sanitary Pads with anion chip" loading="lazy">
+                        <span class="product-badge">ELLE-V</span>
+                        <button class="wishlist" type="button" title="Add to wishlist" aria-label="Add ELLE-V Organic Sanitary Pads with anion chip to wishlist">
+                            <i class="fa-regular fa-heart"></i>
                         </button>
-
-                        <button
-                            class="quick-add add-cart"
-                            type="button"
-                            data-name="Whisper Ultra No Gap No Leaks XL"
-                            data-price="215"
-                        >
-                            Add to Bag
-                        </button>
-
                     </div>
-
-
                     <div class="product-info">
-
-                        <span>
-                            WHISPER · XL
-                        </span>
-
-                        <h3>
-                            Whisper Ultra No Gap No Leaks XL
-                        </h3>
-
-                        <div class="rating">
-                            <span>★★★★★</span>
-                            <small>(748)</small>
+                        <div class="product-main-row">
+                            <div class="product-title-area">
+                                <span>ELLE-V · XXL</span>
+                                <h3>ELLE-V Organic Sanitary Pads with anion chip</h3>
+                            </div>
+                            <button class="add-cart" type="button" data-name="ELLE-V Organic Sanitary Pads with anion chip" data-price="109">Add to Cart</button>
                         </div>
-
-                        <div class="price">
-                            ₹215
-                        </div>
-
+                        <div class="rating"><span>★★★★★</span><small>(748)</small></div>
+                        <div class="price">₹109</div>
                     </div>
-
                 </div>
-
             </div>
-
-
-            <!-- =================================================
-                 STAYFREE
-            ================================================== -->
-
-            <div
-                class="col-6 col-md-4 col-lg-3 product-item"
-                data-category="xl"
-                data-name="Stayfree Secure Cottony Soft XL"
-            >
-
-                <div class="pads-product-card">
-
+            <div class="col-6 col-md-4 col-lg-3 product-item" data-id="pads-002" data-category="xxl" data-name="Pads XXL 185">
+                <div class="pads-product-card" role="button" tabindex="0" aria-label="View details for Pads XXL 185">
                     <div class="pads-image">
-
-                        <img
-                            src="https://onemg.gumlet.io/l_watermark_346%2Cw_480%2Ch_480/a_ignore%2Cw_480%2Ch_480%2Cc_fit%2Cq_auto%2Cf_auto/49a1d73915ad48a8a23bbed40a8c90c5.jpg?dpr=3&format=auto&h=320&w=412"
-                            alt="Stayfree Secure Cottony Soft XL"
-                        >
-
-                        <span class="product-badge">
-                            STAYFREE
-                        </span>
-
-                        <button
-                            class="wishlist"
-                            type="button"
-                            title="Add Stayfree Secure XL to wishlist"
-                            aria-label="Add Stayfree Secure XL to wishlist"
-                        >
-
-                            <i
-                                class="fa-regular fa-heart"
-                                aria-hidden="true">
-                            </i>
-
+                        <img src="/Pads-XXL-185.jpeg" alt="Pads XXL 185" title="Pads XXL 185" loading="lazy">
+                        <span class="product-badge">OZZO PADS</span>
+                        <button class="wishlist" type="button" title="Add to wishlist" aria-label="Add Pads XXL 185 to wishlist">
+                            <i class="fa-regular fa-heart"></i>
                         </button>
-
-                        <button
-                            class="quick-add add-cart"
-                            type="button"
-                            data-name="Stayfree Secure Cottony Soft XL"
-                            data-price="259"
-                        >
-                            Add to Bag
-                        </button>
-
                     </div>
-
-
                     <div class="product-info">
-
-                        <span>
-                            STAYFREE · XL
-                        </span>
-
-                        <h3>
-                            Stayfree Secure Cottony Soft XL
-                        </h3>
-
-                        <div class="rating">
-                            <span>★★★★★</span>
-                            <small>(1126)</small>
+                        <div class="product-main-row">
+                            <div class="product-title-area">
+                                <span>XXL · PADS-XXL-185</span>
+                                <h3>Pads XXL 185</h3>
+                            </div>
+                            <button class="add-cart" type="button" data-name="Pads XXL 185" data-price="185">Add to Cart</button>
                         </div>
-
-                        <div class="price">
-                            ₹259
-                        </div>
-
+                        <div class="rating"><span>★★★★★</span><small>(1126)</small></div>
+                        <div class="price">₹185</div>
                     </div>
-
                 </div>
-
             </div>
-
-
-            <!-- =================================================
-                 SOFY
-            ================================================== -->
-
-            <div
-                class="col-6 col-md-4 col-lg-3 product-item"
-                data-category="xl"
-                data-name="SOFY Anti Bacteria XL"
-            >
-
-                <div class="pads-product-card">
-
+            <div class="col-6 col-md-4 col-lg-3 product-item" data-id="pads-003" data-category="xxl" data-name="Pads XXL 269">
+                <div class="pads-product-card" role="button" tabindex="0" aria-label="View details for Pads XXL 269">
                     <div class="pads-image">
-
-                        <img
-                            src="https://onemg.gumlet.io/l_watermark_346%2Cw_480%2Ch_480/a_ignore%2Cw_480%2Ch_480%2Cc_fit%2Cq_auto%2Cf_auto/b85915f0384943298689c6bcf8b58cc4.jpg?dpr=3&format=auto&h=320&w=412"
-                            alt="SOFY Anti Bacteria XL"
-                        >
-
-                        <span class="product-badge">
-                            SOFY
-                        </span>
-
-                        <button
-                            class="wishlist"
-                            type="button"
-                            title="Add SOFY Anti Bacteria XL to wishlist"
-                            aria-label="Add SOFY Anti Bacteria XL to wishlist"
-                        >
-
-                            <i
-                                class="fa-regular fa-heart"
-                                aria-hidden="true">
-                            </i>
-
+                        <img src="/Pads-XXL-269.jpeg" alt="Pads XXL 269" title="Pads XXL 269" loading="lazy">
+                        <span class="product-badge">OZZO PADS</span>
+                        <button class="wishlist" type="button" title="Add to wishlist" aria-label="Add Pads XXL 269 to wishlist">
+                            <i class="fa-regular fa-heart"></i>
                         </button>
-
-                        <button
-                            class="quick-add add-cart"
-                            type="button"
-                            data-name="SOFY Anti Bacteria XL"
-                            data-price="140"
-                        >
-                            Add to Bag
-                        </button>
-
                     </div>
-
-
                     <div class="product-info">
-
-                        <span>
-                            SOFY · XL
-                        </span>
-
-                        <h3>
-                            SOFY Anti Bacteria XL
-                        </h3>
-
-                        <div class="rating">
-                            <span>★★★★★</span>
-                            <small>(1116)</small>
+                        <div class="product-main-row">
+                            <div class="product-title-area">
+                                <span>XXL · PADS-XXL-269</span>
+                                <h3>Pads XXL 269</h3>
+                            </div>
+                            <button class="add-cart" type="button" data-name="Pads XXL 269" data-price="269">Add to Cart</button>
                         </div>
-
-                        <div class="price">
-                            ₹140
-                        </div>
-
+                        <div class="rating"><span>★★★★★</span><small>(1116)</small></div>
+                        <div class="price">₹269</div>
                     </div>
-
                 </div>
-
             </div>
-
-
-            <!-- =================================================
-                 KOTEX
-            ================================================== -->
-
-            <div
-                class="col-6 col-md-4 col-lg-3 product-item"
-                data-category="regular"
-                data-name="Kotex Prohealth Plus"
-            >
-
-                <div class="pads-product-card">
-
+            <div class="col-6 col-md-4 col-lg-3 product-item" data-id="pads-004" data-category="xxxl" data-name="Pads XXXL 189">
+                <div class="pads-product-card" role="button" tabindex="0" aria-label="View details for Pads XXXL 189">
                     <div class="pads-image">
-
-                        <img
-                            src="https://cdn.grofers.com/da/cms-assets/cms/product/9f97ae97-2a06-4002-a64e-316bae968921.jpg"
-                            alt="Kotex Prohealth Plus sanitary pads"
-                        >
-
-                        <span class="product-badge">
-                            KOTEX
-                        </span>
-
-                        <button
-                            class="wishlist"
-                            type="button"
-                            title="Add Kotex Prohealth Plus to wishlist"
-                            aria-label="Add Kotex Prohealth Plus to wishlist"
-                        >
-
-                            <i
-                                class="fa-regular fa-heart"
-                                aria-hidden="true">
-                            </i>
-
+                        <img src="/Pads-XXXL-189.jpeg" alt="Pads XXXL 189" title="Pads XXXL 189" loading="lazy">
+                        <span class="product-badge">OZZO PADS</span>
+                        <button class="wishlist" type="button" title="Add to wishlist" aria-label="Add Pads XXXL 189 to wishlist">
+                            <i class="fa-regular fa-heart"></i>
                         </button>
-
-                        <button
-                            class="quick-add add-cart"
-                            type="button"
-                            data-name="Kotex Prohealth Plus"
-                            data-price="198"
-                        >
-                            Add to Bag
-                        </button>
-
                     </div>
-
-
                     <div class="product-info">
-
-                        <span>
-                            KOTEX · REGULAR
-                        </span>
-
-                        <h3>
-                            Kotex Prohealth Plus
-                        </h3>
-
-                        <div class="rating">
-                            <span>★★★★★</span>
-                            <small>(214)</small>
+                        <div class="product-main-row">
+                            <div class="product-title-area">
+                                <span>XXXL · PADS-XXXL-189</span>
+                                <h3>Pads XXXL 189</h3>
+                            </div>
+                            <button class="add-cart" type="button" data-name="Pads XXXL 189" data-price="189">Add to Cart</button>
                         </div>
-
-                        <div class="price">
-                            ₹198
-                        </div>
-
+                        <div class="rating"><span>★★★★★</span><small>(214)</small></div>
+                        <div class="price">₹189</div>
                     </div>
-
                 </div>
-
             </div>
-
-
-            <!-- =================================================
-                 WHISPER NIGHT
-            ================================================== -->
-
-            <div
-                class="col-6 col-md-4 col-lg-3 product-item"
-                data-category="night"
-                data-name="Whisper Bindazzz Nights"
-            >
-
-                <div class="pads-product-card">
-
+            <div class="col-6 col-md-4 col-lg-3 product-item" data-id="pads-005" data-category="night" data-name="Pads XXXL 279">
+                <div class="pads-product-card" role="button" tabindex="0" aria-label="View details for Pads XXXL 279">
                     <div class="pads-image">
-
-                        <img
-                            src="https://onemg.gumlet.io/l_watermark_346%2Cw_480%2Ch_480/a_ignore%2Cw_480%2Ch_480%2Cc_fit%2Cq_auto%2Cf_auto/ae319e35fe74418abfebb74c144146fb.jpg?dpr=3&format=auto&h=320&w=412"
-                            alt="Whisper Bindazzz Nights"
-                        >
-
-                        <span class="product-badge">
-                            NIGHT CARE
-                        </span>
-
-                        <button
-                            class="wishlist"
-                            type="button"
-                            title="Add Whisper Bindazzz Nights to wishlist"
-                            aria-label="Add Whisper Bindazzz Nights to wishlist"
-                        >
-
-                            <i
-                                class="fa-regular fa-heart"
-                                aria-hidden="true">
-                            </i>
-
+                        <img src="/Pads-XXXL-279.jpeg" alt="Pads XXXL 279" title="Pads XXXL 279" loading="lazy">
+                        <span class="product-badge">OZZO PADS</span>
+                        <button class="wishlist" type="button" title="Add to wishlist" aria-label="Add Pads XXXL 279 to wishlist">
+                            <i class="fa-regular fa-heart"></i>
                         </button>
-
-                        <button
-                            class="quick-add add-cart"
-                            type="button"
-                            data-name="Whisper Bindazzz Nights"
-                            data-price="143"
-                        >
-                            Add to Bag
-                        </button>
-
                     </div>
-
-
                     <div class="product-info">
-
-                        <span>
-                            WHISPER · NIGHT
-                        </span>
-
-                        <h3>
-                            Whisper Bindazzz Nights
-                        </h3>
-
-                        <div class="rating">
-                            <span>★★★★★</span>
-                            <small>(766)</small>
+                        <div class="product-main-row">
+                            <div class="product-title-area">
+                                <span>XXXL · PADS-XXXL-279</span>
+                                <h3>Pads XXXL 279</h3>
+                            </div>
+                            <button class="add-cart" type="button" data-name="Pads XXXL 279" data-price="279">Add to Cart</button>
                         </div>
-
-                        <div class="price">
-                            ₹143
-                        </div>
-
+                        <div class="rating"><span>★★★★★</span><small>(766)</small></div>
+                        <div class="price">₹279</div>
                     </div>
-
                 </div>
-
             </div>
-
-
-            <!-- =================================================
-                 STAYFREE NIGHT
-            ================================================== -->
-
-            <div
-                class="col-6 col-md-4 col-lg-3 product-item"
-                data-category="night"
-                data-name="Stayfree Secure Nights"
-            >
-
-                <div class="pads-product-card">
-
+            <div class="col-6 col-md-4 col-lg-3 product-item" data-id="pads-006" data-category="xxxl" data-name="Pads XXXL 189 Premium">
+                <div class="pads-product-card" role="button" tabindex="0" aria-label="View details for Pads XXXL 189 Premium">
                     <div class="pads-image">
-
-                        <img
-                            src="https://onemg.gumlet.io/l_watermark_346%2Cw_480%2Ch_480/a_ignore%2Cw_480%2Ch_480%2Cc_fit%2Cq_auto%2Cf_auto/49a1d73915ad48a8a23bbed40a8c90c5.jpg?dpr=3&format=auto&h=320&w=412"
-                            alt="Stayfree Secure Nights"
-                        >
-
-                        <span class="product-badge">
-                            STAYFREE
-                        </span>
-
-                        <button
-                            class="wishlist"
-                            type="button"
-                            title="Add Stayfree Secure Nights to wishlist"
-                            aria-label="Add Stayfree Secure Nights to wishlist"
-                        >
-
-                            <i
-                                class="fa-regular fa-heart"
-                                aria-hidden="true">
-                            </i>
-
+                        <img src="/Pads-XXXL-189.jpeg" alt="Pads XXXL 189 Premium" title="Pads XXXL 189 Premium" loading="lazy">
+                        <span class="product-badge">OZZO PADS</span>
+                        <button class="wishlist" type="button" title="Add to wishlist" aria-label="Add Pads XXXL 189 Premium to wishlist">
+                            <i class="fa-regular fa-heart"></i>
                         </button>
-
-                        <button
-                            class="quick-add add-cart"
-                            type="button"
-                            data-name="Stayfree Secure Nights"
-                            data-price="127"
-                        >
-                            Add to Bag
-                        </button>
-
                     </div>
-
-
                     <div class="product-info">
-
-                        <span>
-                            STAYFREE · NIGHT
-                        </span>
-
-                        <h3>
-                            Stayfree Secure Nights
-                        </h3>
-
-                        <div class="rating">
-                            <span>★★★★★</span>
-                            <small>(16)</small>
+                        <div class="product-main-row">
+                            <div class="product-title-area">
+                                <span>XXXL · PADS-XXXL-189</span>
+                                <h3>Pads XXXL 189 Premium</h3>
+                            </div>
+                            <button class="add-cart" type="button" data-name="Pads XXXL 189 Premium" data-price="189">Add to Cart</button>
                         </div>
-
-                        <div class="price">
-                            ₹127
-                        </div>
-
+                        <div class="rating"><span>★★★★★</span><small>(16)</small></div>
+                        <div class="price">₹189</div>
                     </div>
-
                 </div>
-
             </div>
-
-
-            <!-- =================================================
-                 SOFY REGULAR
-            ================================================== -->
-
-            <div
-                class="col-6 col-md-4 col-lg-3 product-item"
-                data-category="regular"
-                data-name="SOFY Bodyfit Regular"
-            >
-
-                <div class="pads-product-card">
-
+            <div class="col-6 col-md-4 col-lg-3 product-item" data-id="pads-007" data-category="night" data-name="Pads XXXL 279 Night">
+                <div class="pads-product-card" role="button" tabindex="0" aria-label="View details for Pads XXXL 279 Night">
                     <div class="pads-image">
-
-                        <img
-                            src="https://onemg.gumlet.io/l_watermark_346%2Cw_480%2Ch_480/a_ignore%2Cw_480%2Ch_480%2Cc_fit%2Cq_auto%2Cf_auto/b85915f0384943298689c6bcf8b58cc4.jpg?dpr=3&format=auto&h=320&w=412"
-                            alt="SOFY Bodyfit Regular"
-                        >
-
-                        <span class="product-badge">
-                            SOFY
-                        </span>
-
-                        <button
-                            class="wishlist"
-                            type="button"
-                            title="Add SOFY Bodyfit Regular to wishlist"
-                            aria-label="Add SOFY Bodyfit Regular to wishlist"
-                        >
-
-                            <i
-                                class="fa-regular fa-heart"
-                                aria-hidden="true">
-                            </i>
-
+                        <img src="/Pads-XXXL-279.jpeg" alt="Pads XXXL 279 Night" title="Pads XXXL 279 Night" loading="lazy">
+                        <span class="product-badge">OZZO PADS</span>
+                        <button class="wishlist" type="button" title="Add to wishlist" aria-label="Add Pads XXXL 279 Night to wishlist">
+                            <i class="fa-regular fa-heart"></i>
                         </button>
-
-                        <button
-                            class="quick-add add-cart"
-                            type="button"
-                            data-name="SOFY Bodyfit Regular"
-                            data-price="129"
-                        >
-                            Add to Bag
-                        </button>
-
                     </div>
-
-
                     <div class="product-info">
-
-                        <span>
-                            SOFY · REGULAR
-                        </span>
-
-                        <h3>
-                            SOFY Bodyfit Regular
-                        </h3>
-
-                        <div class="rating">
-                            <span>★★★★★</span>
-                            <small>(624)</small>
+                        <div class="product-main-row">
+                            <div class="product-title-area">
+                                <span>NIGHT · PADS-XXXL-279</span>
+                                <h3>Pads XXXL 279 Night</h3>
+                            </div>
+                            <button class="add-cart" type="button" data-name="Pads XXXL 279 Night" data-price="279">Add to Cart</button>
                         </div>
-
-                        <div class="price">
-                            ₹129
-                        </div>
-
+                        <div class="rating"><span>★★★★★</span><small>(624)</small></div>
+                        <div class="price">₹279</div>
                     </div>
-
                 </div>
-
             </div>
-
-
-            <!-- =================================================
-                 KOTEX NIGHT
-            ================================================== -->
-
-            <div
-                class="col-6 col-md-4 col-lg-3 product-item"
-                data-category="night"
-                data-name="Kotex Super Overnight"
-            >
-
-                <div class="pads-product-card">
-
+            <div class="col-6 col-md-4 col-lg-3 product-item" data-id="pads-008" data-category="night" data-name="Pads XXXL 189 Overnight">
+                <div class="pads-product-card" role="button" tabindex="0" aria-label="View details for Pads XXXL 189 Overnight">
                     <div class="pads-image">
-
-                        <img
-                            src="https://cdn.grofers.com/da/cms-assets/cms/product/9f97ae97-2a06-4002-a64e-316bae968921.jpg"
-                            alt="Kotex Super Overnight sanitary pads"
-                        >
-
-                        <span class="product-badge">
-                            KOTEX
-                        </span>
-
-                        <button
-                            class="wishlist"
-                            type="button"
-                            title="Add Kotex Super Overnight to wishlist"
-                            aria-label="Add Kotex Super Overnight to wishlist"
-                        >
-
-                            <i
-                                class="fa-regular fa-heart"
-                                aria-hidden="true">
-                            </i>
-
+                        <img src="/Pads-XXXL-189.jpeg" alt="Pads XXXL 189 Overnight" title="Pads XXXL 189 Overnight" loading="lazy">
+                        <span class="product-badge">OZZO PADS</span>
+                        <button class="wishlist" type="button" title="Add to wishlist" aria-label="Add Pads XXXL 189 Overnight to wishlist">
+                            <i class="fa-regular fa-heart"></i>
                         </button>
-
-                        <button
-                            class="quick-add add-cart"
-                            type="button"
-                            data-name="Kotex Super Overnight"
-                            data-price="176"
-                        >
-                            Add to Bag
-                        </button>
-
                     </div>
-
-
                     <div class="product-info">
-
-                        <span>
-                            KOTEX · NIGHT
-                        </span>
-
-                        <h3>
-                            Kotex Super Overnight
-                        </h3>
-
-                        <div class="rating">
-                            <span>★★★★★</span>
-                            <small>(1200)</small>
+                        <div class="product-main-row">
+                            <div class="product-title-area">
+                                <span>NIGHT · PADS-XXXL-189</span>
+                                <h3>Pads XXXL 189 Overnight</h3>
+                            </div>
+                            <button class="add-cart" type="button" data-name="Pads XXXL 189 Overnight" data-price="189">Add to Cart</button>
                         </div>
-
-                        <div class="price">
-                            ₹176
-                        </div>
-
+                        <div class="rating"><span>★★★★★</span><small>(1200)</small></div>
+                        <div class="price">₹189</div>
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
-
-        <div
-            class="no-products"
-            id="noProducts"
-        >
-            No pads found.
-        </div>
-
+        <div class="no-products" id="noProducts">No pads found.</div>
     </div>
-
 </section>
-
-
-<!-- =========================================================
-     PROMOTION
-========================================================= -->
 
 <section class="pads-promo">
-
     <div class="container-fluid px-4">
-
         <div class="pads-promo-box">
-
-
             <div class="promo-copy">
-
-                <span>
-                    OZZO COMFORT OFFER
-                </span>
-
-
-                <h2>
-                    Comfort Every<br>
-                    Day.
-                </h2>
-
-
-                <p>
-                    Explore trusted pad brands and find
-                    the protection that fits your routine.
-                </p>
-
-
-                <a href="#padsProducts">
-                    Shop Now →
-                </a>
-
+                <span>OZZO COMFORT OFFER</span>
+                <h2>Comfort Every<br>Day.</h2>
+                <p>Explore trusted pad products and find the protection that fits your routine.</p>
+                <a href="#padsProducts">Shop Now →</a>
             </div>
-
-
-            <div class="promo-image">
-
-                <img
-                    src="/Pads hero.png"
-                    alt="Personal care products"
-                >
-
-            </div>
-
+            <div class="promo-image"><img src="/Pads hero.png" alt="Pads Collection" title="Pads Collection"></div>
         </div>
-
     </div>
-
 </section>
 
-
-<!-- =========================================================
-     FOOTER — SAME AS INDEX
-========================================================= -->
-
 <footer class="footer">
-
     <div class="container-fluid px-lg-5">
-
         <div class="footer-main">
-
-
             <div class="footer-brand">
-
-                <div class="footer-logo">
-                    OZZO
-                </div>
-
-                <div class="footer-categories">
-
-                    Fashion
-
-                    <span>•</span>
-
-                    Books
-
-                    <span>•</span>
-
-                    Stationery
-
-                </div>
-
+                <div class="footer-logo">OZZO</div>
+                <div class="footer-categories">Fashion <span>•</span> Books <span>•</span> Stationery <span>•</span> Pads</div>
             </div>
-
-
             <div class="footer-column">
-
-                <h4>
-                    Quick Links
-                </h4>
-
-                <a href="/index.html">
-                    Home
-                </a>
-                 
-                 <a href="Careers/Careers.html">
-                    Careers
-                </a>
-                
-                <a href="/About Us/About.html">
-                    About Us
-                </a>
-
-                <a href="/Faq/Faq.html">
-                    FAQs
-                </a>
-
-                <a href="/Contact/Contact.html">
-                    Contact
-                </a>
-
+                <h4>Quick Links</h4>
+                <a href="../index.html">Home</a><a href="../Careers/Careers.html">Careers</a><a href="../About Us/About.html">About Us</a><a href="../Faq/Faq.html">FAQs</a><a href="../Contact/Contact.html">Contact</a>
             </div>
-
-
             <div class="footer-column">
-
-                <h4>
-                    Categories
-                </h4>
-
-                <a href="Fashion/Fashion.html">Fashion</a>
-        <a href="/Books/Books.html">Books</a>
-        <a href="/Stationary/Stationary.html">Stationery</a>
-        <a href="/Pads/Pads.html">Pads</a>
-
+                <h4>Categories</h4>
+                <a href="../Fashion/Fashion.html">Fashion</a><a href="../Books/Books.html">Books</a><a href="../Stationary/Stationary.html">Stationery</a><a href="Pads.html">Pads</a>
             </div>
-
-
             <div class="footer-column">
-
-                <h4>
-                    Customer Service
-                </h4>
-
-                <!--<a href="#">
-                    Shipping Policy
-                </a>
-
-                <a href="#">
-                    Return &amp; Refund
-                </a>-->
-
-                <a href="/Privacy/Privacy.html">
-                    Privacy Policy
-                </a>
-
-                <a href="/Terms/Terms.html">
-                    Terms &amp; Conditions
-                </a>
-
+                <h4>Customer Service</h4>
+                <a href="../Privacy/Privacy.html">Privacy Policy</a><a href="../Terms/Terms.html">Terms &amp; Conditions</a>
             </div>
-
-
             <div class="footer-newsletter">
-
-                <h4>
-                    Join Our Newsletter
-                </h4>
-
-                <p>
-                    Get updates on new arrivals and special offers.
-                </p>
-
-
-                <form id="newsletterForm">
-
-                    <div class="newsletter-input">
-
-                        <input
-                            type="email"
-                            id="newsletterEmail"
-                            placeholder="Enter your email address"
-                            aria-label="Enter your email address"
-                            required
-                        >
-
-
-                        <button
-                            type="submit"
-                            title="Subscribe"
-                            aria-label="Subscribe"
-                        >
-                            →
-                        </button>
-
-                    </div>
-
-                </form>
-
-
-                <div
-                    class="newsletter-message"
-                    id="newsletterMessage">
-                </div>
-
-
+                <h4>Join Our Newsletter</h4>
+                <p>Get updates on new arrivals and special offers.</p>
+                <form id="newsletterForm"><div class="newsletter-input"><input type="email" id="newsletterEmail" placeholder="Enter your email address" aria-label="Enter your email address" required><button type="submit" title="Subscribe" aria-label="Subscribe">→</button></div></form>
+                <div class="newsletter-message" id="newsletterMessage"></div>
                 <div class="social-icons">
-
-
-                    <a
-                        href="#"
-                        title="Facebook"
-                        aria-label="Facebook"
-                    >
-                        <i
-                            class="fa-brands fa-facebook-f"
-                            aria-hidden="true">
-                        </i>
-                    </a>
-
-
-                    <a
-                        href="#"
-                        title="Instagram"
-                        aria-label="Instagram"
-                    >
-                        <i
-                            class="fa-brands fa-instagram"
-                            aria-hidden="true">
-                        </i>
-                    </a>
-
-
-                    <a
-                        href="#"
-                        title="YouTube"
-                        aria-label="YouTube"
-                    >
-                        <i
-                            class="fa-brands fa-youtube"
-                            aria-hidden="true">
-                        </i>
-                    </a>
-
-
-                    <a
-                        href="#"
-                        title="LinkedIn"
-                        aria-label="LinkedIn"
-                    >
-                        <i
-                            class="fa-brands fa-linkedin-in"
-                            aria-hidden="true">
-                        </i>
-                    </a>
-
-
-                    <a
-                        href="#"
-                        title="Twitter"
-                        aria-label="Twitter"
-                    >
-                        <i
-                            class="fa-brands fa-twitter"
-                            aria-hidden="true">
-                        </i>
-                    </a>
-
+                    <a href="#" title="Facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" title="Instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" title="YouTube" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" title="LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" title="Twitter" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
-
     <div class="footer-bottom">
-
-        <div class="container-fluid px-lg-5">
-
-            <div class="footer-bottom-inner">
-
-                <span>
-                    © 2025 OZZO. All rights reserved.
-                </span>
-
-                <span>
-                    Better Choices. A Brighter You.
-                </span>
-
-            </div>
-
-        </div>
-
+        <div class="container-fluid px-lg-5"><div class="footer-bottom-inner"><span>© 2025 OZZO. All rights reserved.</span><span>Better Choices. A Brighter You.</span></div></div>
     </div>
-
 </footer>
 
-
-<!-- =========================================================
-     BOOTSTRAP JS
-========================================================= -->
-
-<script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-</script>
-
-
-<!-- =========================================================
-     JAVASCRIPT
-========================================================= -->
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-
-document.addEventListener(
-    "DOMContentLoaded",
-    function(){
-
-        const filterButtons =
-            document.querySelectorAll(
-                ".filter-btn"
-            );
-
-
-        const products =
-            document.querySelectorAll(
-                ".product-item"
-            );
-
-
-        const searchInput =
-            document.getElementById(
-                "searchInput"
-            );
-
-
-        const noProducts =
-            document.getElementById(
-                "noProducts"
-            );
-
-
-        const cartCount =
-            document.getElementById(
-                "cartCount"
-            );
-
-
-        const newsletterForm =
-            document.getElementById(
-                "newsletterForm"
-            );
-
-
-        const newsletterMessage =
-            document.getElementById(
-                "newsletterMessage"
-            );
-
-
-        let cart = 0;
-
-
-        /* =====================================================
-           FILTER
-        ===================================================== */
-
-        filterButtons.forEach(
-            function(button){
-
-                button.addEventListener(
-                    "click",
-                    function(){
-
-                        filterButtons.forEach(
-                            function(btn){
-
-                                btn.classList.remove(
-                                    "active"
-                                );
-
-                            }
-                        );
-
-
-                        this.classList.add(
-                            "active"
-                        );
-
-
-                        const filter =
-                            this.dataset.filter;
-
-
-                        let visible = 0;
-
-
-                        products.forEach(
-                            function(product){
-
-                                if(
-                                    filter === "all" ||
-                                    product.dataset.category === filter
-                                ){
-
-                                    product.style.display =
-                                        "";
-
-                                    visible++;
-
-                                }
-                                else{
-
-                                    product.style.display =
-                                        "none";
-
-                                }
-
-                            }
-                        );
-
-
-                        noProducts.style.display =
-                            visible === 0
-                                ? "block"
-                                : "none";
-
-                    }
-                );
-
-            }
-        );
-
-
-        /* =====================================================
-           CATEGORY CARDS
-        ===================================================== */
-
-        document
-            .querySelectorAll(
-                ".pads-category"
-            )
-            .forEach(
-                function(category){
-
-                    category.addEventListener(
-                        "click",
-                        function(){
-
-                            const filter =
-                                this.dataset.filter;
-
-
-                            const button =
-                                document.querySelector(
-                                    '.filter-btn[data-filter="' +
-                                    filter +
-                                    '"]'
-                                );
-
-
-                            if(button){
-
-                                button.click();
-
-                            }
-
-                        }
-                    );
-
-                }
-            );
-
-
-        /* =====================================================
-           WISHLIST
-        ===================================================== */
-
-        document
-            .querySelectorAll(
-                ".wishlist"
-            )
-            .forEach(
-                function(button){
-
-                    button.addEventListener(
-                        "click",
-                        function(){
-
-                            this.classList.toggle(
-                                "active"
-                            );
-
-
-                            const icon =
-                                this.querySelector(
-                                    "i"
-                                );
-
-
-                            if(
-                                this.classList.contains(
-                                    "active"
-                                )
-                            ){
-
-                                icon.classList.remove(
-                                    "fa-regular"
-                                );
-
-                                icon.classList.add(
-                                    "fa-solid"
-                                );
-
-                            }
-                            else{
-
-                                icon.classList.remove(
-                                    "fa-solid"
-                                );
-
-                                icon.classList.add(
-                                    "fa-regular"
-                                );
-
-                            }
-
-                        }
-                    );
-
-                }
-            );
-
-
-        /* =====================================================
-           CART
-        ===================================================== */
-
-        document
-            .querySelectorAll(
-                ".add-cart"
-            )
-            .forEach(
-                function(button){
-
-                    button.addEventListener(
-                        "click",
-                        function(){
-
-                            cart++;
-
-
-                            cartCount.textContent =
-                                cart;
-
-
-                            cartCount.style.transform =
-                                "scale(1.35)";
-
-
-                            setTimeout(
-                                function(){
-
-                                    cartCount.style.transform =
-                                        "scale(1)";
-
-                                },
-                                180
-                            );
-
-
-                            const originalText =
-                                this.textContent;
-
-
-                            this.textContent =
-                                "Added ✓";
-
-
-                            this.classList.add(
-                                "added"
-                            );
-
-
-                            setTimeout(
-                                function(){
-
-                                    button.textContent =
-                                        originalText;
-
-                                    button.classList.remove(
-                                        "added"
-                                    );
-
-                                },
-                                1200
-                            );
-
-                        }
-                    );
-
-                }
-            );
-
-
-        /* =====================================================
-           SEARCH
-        ===================================================== */
-
-        searchInput.addEventListener(
-            "input",
-            function(){
-
-                const value =
-                    this.value
-                        .toLowerCase()
-                        .trim();
-
-
-                let visible = 0;
-
-
-                products.forEach(
-                    function(product){
-
-                        const name =
-                            product.dataset.name
-                                .toLowerCase();
-
-
-                        if(
-                            name.includes(value)
-                        ){
-
-                            product.style.display =
-                                "";
-
-                            visible++;
-
-                        }
-                        else{
-
-                            product.style.display =
-                                "none";
-
-                        }
-
-                    }
-                );
-
-
-                noProducts.style.display =
-                    visible === 0
-                        ? "block"
-                        : "none";
-
-            }
-        );
-
-
-        /* =====================================================
-           NEWSLETTER
-        ===================================================== */
-
-        newsletterForm.addEventListener(
-            "submit",
-            function(event){
-
-                event.preventDefault();
-
-
-                newsletterMessage.textContent =
-                    "Thanks for subscribing!";
-
-
-                newsletterForm.reset();
-
-            }
-        );
-
+document.addEventListener("DOMContentLoaded", function () {
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const products = document.querySelectorAll(".product-item");
+    const categoryCards = document.querySelectorAll(".pads-category");
+    const searchInput = document.getElementById("searchInput");
+    const noProducts = document.getElementById("noProducts");
+    const cartCount = document.getElementById("cartCount");
+    const newsletterForm = document.getElementById("newsletterForm");
+    const newsletterMessage = document.getElementById("newsletterMessage");
+
+    let cart = [];
+    try {
+        cart = JSON.parse(localStorage.getItem("ozzoCart")) || [];
+        if (!Array.isArray(cart)) cart = [];
+    } catch (error) { cart = []; }
+
+    function updateCartCount() {
+        if (!cartCount) return;
+        cartCount.textContent = cart.reduce((total, item) => total + Number(item.quantity || 0), 0);
     }
-);
 
+    function saveCart() {
+        try { localStorage.setItem("ozzoCart", JSON.stringify(cart)); }
+        catch (error) { console.error("Unable to save OZZO cart:", error); }
+        updateCartCount();
+    }
+
+    function productFromCard(productItem) {
+        const id = productItem.dataset.id || "pads-001";
+        const name = productItem.dataset.name || "OZZO Pads";
+        const category = productItem.dataset.category || "xxl";
+        const imageElement = productItem.querySelector(".pads-image img");
+        const image = imageElement ? imageElement.getAttribute("src") : "";
+        const priceElement = productItem.querySelector(".price");
+        const price = Number((priceElement?.textContent || "0").replace(/[^0-9.]/g, "")) || 0;
+        const ratingText = productItem.querySelector(".rating span")?.textContent.trim() || "★★★★★";
+        const reviews = Number((productItem.querySelector(".rating small")?.textContent || "0").replace(/[^0-9]/g, "")) || 0;
+
+        const mrpMap = { "pads-001":149, "pads-002":249, "pads-003":349, "pads-004":249, "pads-005":349, "pads-006":249, "pads-007":349, "pads-008":249 };
+        const mrp = mrpMap[id] || price;
+
+        return {
+            id,
+            name,
+            price,
+            mrp,
+            image,
+            images:[image],
+            category:"Pads",
+            categoryKey:"pads",
+            subcategory:category.toUpperCase(),
+            brand:"OZZO Care",
+            rating:5,
+            reviews,
+            bought:`${Math.max(80, reviews * 2)}+ bought in past month`,
+            description:[
+                `${name} from the OZZO Pads collection.`,
+                "Designed for dependable everyday protection and comfortable use.",
+                `Suitable for ${category.toUpperCase()} requirements.`,
+                "Choose the protection that best fits your everyday routine."
+            ],
+            quantity:1
+        };
+    }
+
+    function openProductDetails(productItem) {
+        const product = productFromCard(productItem);
+        try { sessionStorage.setItem("ozzoSelectedProduct", JSON.stringify(product)); } catch (error) { console.error(error); }
+
+        const params = new URLSearchParams({
+            id: product.id,
+            name: product.name,
+            price: String(product.price),
+            mrp: String(product.mrp),
+            image: product.image,
+            category: product.category,
+            subcategory: product.subcategory,
+            rating: String(product.rating),
+            reviews: String(product.reviews)
+        });
+
+        window.location.href = `../ProductDetails.html?${params.toString()}`;
+    }
+
+    products.forEach(productItem => {
+        const card = productItem.querySelector(".pads-product-card");
+        if (!card) return;
+        card.style.cursor = "pointer";
+        card.addEventListener("click", event => {
+            if (event.target.closest(".add-cart") || event.target.closest(".wishlist")) return;
+            openProductDetails(productItem);
+        });
+        card.addEventListener("keydown", event => {
+            if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                openProductDetails(productItem);
+            }
+        });
+    });
+
+    function filterProducts(filter) {
+        let visible = 0;
+        products.forEach(product => {
+            const category = product.dataset.category || "";
+            const name = (product.dataset.name || "").toLowerCase();
+            const search = searchInput ? searchInput.value.trim().toLowerCase() : "";
+            const match = (filter === "all" || category === filter) && (!search || name.includes(search));
+            product.style.display = match ? "" : "none";
+            if (match) visible++;
+        });
+        if (noProducts) noProducts.style.display = visible === 0 ? "block" : "none";
+    }
+
+    filterButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            filterButtons.forEach(item => item.classList.remove("active"));
+            this.classList.add("active");
+            filterProducts(this.dataset.filter);
+        });
+    });
+
+    categoryCards.forEach(category => {
+        category.addEventListener("click", function (event) {
+            event.preventDefault();
+            const filter = this.dataset.filter;
+            const button = document.querySelector(`.filter-btn[data-filter="${filter}"]`);
+            filterButtons.forEach(item => item.classList.remove("active"));
+            if (button) button.classList.add("active");
+            filterProducts(filter);
+            document.getElementById("padsProducts")?.scrollIntoView({behavior:"smooth", block:"start"});
+        });
+    });
+
+    document.querySelectorAll(".wishlist").forEach(button => {
+        button.addEventListener("click", function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            this.classList.toggle("active");
+            const icon = this.querySelector("i");
+            const active = this.classList.contains("active");
+            if (icon) {
+                icon.classList.toggle("fa-solid", active);
+                icon.classList.toggle("fa-regular", !active);
+            }
+        });
+    });
+
+    document.querySelectorAll(".add-cart").forEach(button => {
+        button.addEventListener("click", function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            const productItem = this.closest(".product-item");
+            if (!productItem) return;
+            const product = productFromCard(productItem);
+            const existing = cart.find(item => item.id === product.id);
+            if (existing) existing.quantity = Number(existing.quantity || 0) + 1;
+            else cart.push(product);
+            saveCart();
+            const original = this.textContent;
+            this.textContent = "Added ✓";
+            this.classList.add("added");
+            setTimeout(() => { this.textContent = original; this.classList.remove("added"); }, 1200);
+            if (cartCount) {
+                cartCount.style.transform = "scale(1.35)";
+                setTimeout(() => cartCount.style.transform = "scale(1)", 180);
+            }
+        });
+    });
+
+    searchInput?.addEventListener("input", function () {
+        const active = document.querySelector(".filter-btn.active");
+        filterProducts(active ? active.dataset.filter : "all");
+    });
+
+    newsletterForm?.addEventListener("submit", function (event) {
+        event.preventDefault();
+        if (newsletterMessage) newsletterMessage.textContent = "Thank you for subscribing!";
+        newsletterForm.reset();
+    });
+
+    updateCartCount();
+    window.addEventListener("storage", function (event) {
+        if (event.key !== "ozzoCart") return;
+        try { cart = JSON.parse(event.newValue) || []; if (!Array.isArray(cart)) cart = []; }
+        catch (error) { cart = []; }
+        updateCartCount();
+    });
+});
 </script>
-
-
 </body>
-
 </html>
