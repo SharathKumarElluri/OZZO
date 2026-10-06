@@ -1952,3 +1952,450 @@ input{
         height:390px;
     }
 }
+/* =========================
+   BLACK FIXED HEADER
+========================= */
+
+.main-header{
+    height:67px;
+    background:#000 !important;
+    border-bottom:1px solid #222;
+    position:fixed;
+    top:30px;
+    left:0;
+    width:100%;
+    z-index:1000;
+}
+
+/* Logo / Brand */
+.brand,
+.brand span,
+.brand a{
+    color:#fff !important;
+}
+
+/* Navigation */
+.main-nav a{
+    color:#fff !important;
+}
+
+.main-nav a:hover,
+.main-nav a.active{
+    color:#ddd !important;
+}
+
+/* Search */
+.search-box{
+    background:#111;
+    border:1px solid #333;
+    color:#fff;
+}
+
+.search-box input{
+    background:transparent;
+    color:#fff;
+}
+
+.search-box input::placeholder{
+    color:#aaa;
+}
+
+/* Header icons */
+.header-actions button,
+.header-actions a,
+.header-actions i{
+    color:#fff !important;
+}
+
+/* Cart count */
+.cart-count{
+    background:#fff;
+    color:#000;
+}
+
+/* Top announcement bar */
+.top-bar{
+    background:#000;
+    color:#fff;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1001;
+}
+
+/* Space for fixed header */
+body{
+    padding-top:97px;
+}
+/* =========================================================
+   BLACK FIXED OZZO HEADER
+========================================================= */
+
+/* TOP SHIPPING BAR */
+.top-bar{
+    width:100%;
+    height:30px;
+
+    background:#000 !important;
+    color:#fff !important;
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    z-index:1100;
+}
+
+
+/* MAIN HEADER */
+.main-header{
+    width:100%;
+    height:67px;
+
+    background:#000 !important;
+
+    border-bottom:1px solid #222;
+
+    position:fixed;
+    top:30px;
+    left:0;
+
+    z-index:1000;
+}
+
+
+/* NAVBAR */
+.main-header .navbar{
+    width:100%;
+    height:67px;
+
+    padding-top:0;
+    padding-bottom:0;
+}
+
+
+/* =========================================================
+   OZZO LOGO
+========================================================= */
+
+.ozzo-header-logo-wrap{
+    width:220px;
+    height:67px;
+
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+
+    flex-shrink:0;
+    overflow:hidden;
+}
+
+.ozzo-header-logo-link{
+    width:220px;
+    height:67px;
+
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+
+    overflow:hidden;
+}
+
+.ozzo-header-logo{
+    width:210px !important;
+    max-width:210px !important;
+
+    height:58px !important;
+    max-height:58px !important;
+
+    object-fit:contain !important;
+    object-position:left center !important;
+
+    display:block;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.main-nav{
+    gap:8px;
+}
+
+.main-nav .nav-link{
+    color:#fff !important;
+
+    font-size:12px;
+    font-weight:500;
+
+    padding:25px 10px 23px;
+
+    transition:
+        color .2s ease,
+        background .2s ease;
+}
+
+.main-nav .nav-link:hover{
+    color:#d8d8d8 !important;
+}
+
+.main-nav .nav-link.active{
+    color:#fff !important;
+}
+
+.main-nav .nav-link.active::after{
+    background:#fff !important;
+
+    left:10px;
+    right:10px;
+    bottom:15px;
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.search-box{
+    width:240px;
+    height:36px;
+
+    background:#111 !important;
+
+    border:1px solid #333;
+
+    border-radius:22px;
+
+    display:flex;
+    align-items:center;
+
+    padding:0 14px;
+}
+
+.search-box input{
+    background:transparent !important;
+
+    color:#fff !important;
+
+    border:none;
+    outline:none;
+}
+
+.search-box input::placeholder{
+    color:#aaa !important;
+}
+
+.search-box i{
+    color:#fff !important;
+}
+
+
+/* =========================================================
+   WISHLIST + CART
+========================================================= */
+
+.header-icon{
+    color:#fff !important;
+
+    background:transparent !important;
+}
+
+.header-icon:hover{
+    color:#ddd !important;
+}
+
+.header-actions button,
+.header-actions a,
+.header-actions i{
+    color:#fff !important;
+}
+
+
+/* CART COUNT */
+.cart-count{
+    background:#fff !important;
+    color:#000 !important;
+}
+
+
+/* =========================================================
+   MOBILE MENU BUTTON
+========================================================= */
+
+.navbar-toggler{
+    color:#fff !important;
+
+    background:transparent !important;
+
+    border:1px solid #555 !important;
+
+    box-shadow:none !important;
+}
+
+.navbar-toggler i{
+    color:#fff !important;
+}
+
+
+/* =========================================================
+   BODY OFFSET FOR FIXED HEADER
+========================================================= */
+
+body{
+    padding-top:97px;
+}
+/* =========================================================
+   OZZO HEADER LOGO
+========================================================= */
+
+.ozzo-header-logo-wrap{
+    width:190px;
+    height:67px;
+
+    flex:0 0 190px;
+
+    display:flex;
+    align-items:center;
+
+    overflow:hidden;
+}
+
+
+/* =========================================================
+   DESKTOP LOGO
+========================================================= */
+
+.desktop-logo-link{
+    width:190px;
+    height:67px;
+
+    display:flex;
+    align-items:center;
+
+    overflow:hidden;
+
+    text-decoration:none;
+}
+
+.desktop-logo{
+    width:180px !important;
+    height:56px !important;
+
+    max-width:180px !important;
+    max-height:56px !important;
+
+    display:block;
+
+    object-fit:contain !important;
+    object-position:left center !important;
+}
+
+
+/* =========================================================
+   MOBILE LOGO
+========================================================= */
+
+.mobile-logo-link{
+    display:none;
+
+    width:140px;
+    height:67px;
+
+    align-items:center;
+
+    overflow:hidden;
+}
+
+.mobile-logo{
+    width:135px !important;
+    height:56px !important;
+
+    max-width:135px !important;
+    max-height:56px !important;
+
+    display:block;
+
+    object-fit:contain !important;
+    object-position:left center !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media(max-width:991px){
+
+    .ozzo-header-logo-wrap{
+        width:165px;
+        flex:0 0 165px;
+    }
+
+    .desktop-logo-link{
+        width:165px;
+    }
+
+    .desktop-logo{
+        width:155px !important;
+        max-width:155px !important;
+
+        height:52px !important;
+        max-height:52px !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:767px){
+
+    .ozzo-header-logo-wrap{
+        width:140px;
+        flex:0 0 140px;
+    }
+
+    .desktop-logo-link{
+        display:none;
+    }
+
+    .mobile-logo-link{
+        display:flex;
+    }
+
+    .mobile-logo{
+        width:125px !important;
+        max-width:125px !important;
+
+        height:52px !important;
+        max-height:52px !important;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media(max-width:575px){
+
+    .ozzo-header-logo-wrap{
+        width:135px;
+        flex-basis:135px;
+    }
+
+    .mobile-logo-link{
+        width:135px;
+    }
+
+    .mobile-logo{
+        width:120px !important;
+        max-width:120px !important;
+
+        height:50px !important;
+        max-height:50px !important;
+    }
+}

@@ -2731,3 +2731,212 @@ button{
     }
 
 }
+
+/* =========================================================
+   LOCAL PRODUCT IMAGE COMPATIBILITY
+
+   Product images are supplied by Fashion.html using direct
+   local paths such as ../image-name.jpg or ../image-name.png.
+========================================================= */
+
+#productGrid .product-image{
+    position:relative;
+    width:100%;
+    height:310px;
+    overflow:hidden;
+    background:#f3f3f3;
+}
+
+#productGrid .product-image img{
+    width:100% !important;
+    height:100% !important;
+    max-width:none !important;
+    display:block;
+    object-fit:cover;
+    object-position:center;
+}
+
+#productGrid .fashion-product-card:hover .product-image img{
+    transform:scale(1.03);
+}
+
+#productGrid .missing-product-image{
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+    background:#f3f3f3;
+    color:#7a8793;
+    text-align:center;
+    font-size:12px;
+}
+
+/* Keep the header black when Fashion.css is used by itself. */
+.top-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:30px;
+    background:#000 !important;
+    color:#fff !important;
+    z-index:1100;
+}
+
+.main-header{
+    position:fixed;
+    top:30px;
+    left:0;
+    width:100%;
+    min-height:67px;
+    height:67px;
+    background:#000 !important;
+    border-bottom:1px solid #222;
+    z-index:1000;
+}
+
+.main-header .navbar{
+    width:100%;
+    min-height:67px;
+    height:67px;
+}
+
+.main-header .main-nav .nav-link,
+.main-header .header-icon,
+.main-header .header-actions a,
+.main-header .header-actions button{
+    color:#fff !important;
+}
+
+.main-header .main-nav .nav-link.active::after{
+    background:#fff !important;
+}
+
+.main-header .search-box{
+    background:#111 !important;
+    border:1px solid #333 !important;
+}
+
+.main-header .search-box input{
+    color:#fff !important;
+}
+
+.main-header .search-box input::placeholder{
+    color:#aaa !important;
+}
+
+.main-header .search-box i{
+    color:#fff !important;
+}
+
+.main-header .cart-count{
+    background:#fff !important;
+    color:#000 !important;
+}
+
+@media(max-width:991px){
+    .main-header{
+        height:auto;
+        min-height:67px;
+    }
+
+    .main-header .navbar{
+        height:auto;
+        min-height:67px;
+    }
+
+    #productGrid .product-image{
+        height:270px;
+    }
+}
+
+@media(max-width:767px){
+    #productGrid .product-image{
+        height:230px;
+    }
+}
+
+@media(max-width:575px){
+    #productGrid .product-image{
+        height:190px;
+    }
+}
+
+@media(max-width:380px){
+    #productGrid .product-image{
+        height:165px;
+    }
+}
+
+
+/* =========================================================
+   OZZO LOGO
+   DESKTOP + MOBILE
+========================================================= */
+
+.ozzo-header-logo-wrap{
+    width:190px;
+    height:67px;
+
+    flex:0 0 190px;
+
+    display:flex;
+    align-items:center;
+
+    overflow:hidden;
+}
+
+
+/* DESKTOP LOGO */
+
+.desktop-logo-link{
+    width:190px;
+    height:67px;
+
+    display:flex;
+    align-items:center;
+
+    overflow:hidden;
+}
+
+.desktop-logo{
+    display:block;
+
+    width:180px !important;
+    max-width:180px !important;
+
+    height:56px !important;
+    max-height:56px !important;
+
+    object-fit:contain !important;
+    object-position:left center !important;
+}
+
+
+/* MOBILE LOGO */
+
+.mobile-logo-link{
+    width:125px;
+    height:67px;
+
+    display:none;
+
+    align-items:center;
+
+    overflow:hidden;
+}
+
+.mobile-logo{
+    display:block;
+
+    width:112px !important;
+    max-width:112px !important;
+
+    height:56px !important;
+    max-height:56px !important;
+
+    object-fit:contain !important;
+    object-position:center center !important;
+}

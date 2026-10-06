@@ -1,0 +1,677 @@
+
+/* =========================================================
+   OZZO LOGIN PAGE
+   AMAZON-STYLE SIMPLE SIGN-IN STRUCTURE
+========================================================= */
+
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root{
+    --navy:#132438;
+    --navy-dark:#0d1d2d;
+    --navy-deep:#091725;
+
+    --green:#0f5138;
+    --green-dark:#0b3d2b;
+    --green-light:#d9edd6;
+
+    --text:#16283b;
+    --muted:#657384;
+
+    --cream:#eeeae4;
+    --surface:#f7f8fa;
+    --white:#ffffff;
+
+    --border:#d5dce3;
+    --border-dark:#b9c3cc;
+
+    --danger:#c94a4a;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+html,
+body{
+    width:100%;
+    min-height:100%;
+}
+
+
+body{
+    font-family:"DM Sans", sans-serif;
+    background:#ffffff;
+    color:var(--text);
+    overflow-x:hidden;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.login-page{
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    padding:28px 20px 34px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #ffffff 72%,
+            #f7f8fa 100%
+        );
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo-wrap{
+    width:100%;
+    display:flex;
+    justify-content:center;
+
+    margin-bottom:22px;
+}
+
+
+.ozzo-logo{
+    text-decoration:none;
+
+    font-family:"Playfair Display", serif;
+    font-size:42px;
+    font-weight:700;
+
+    letter-spacing:-2px;
+
+    color:var(--navy);
+
+    line-height:1;
+}
+
+
+.ozzo-logo::after{
+    content:"";
+
+    display:block;
+
+    width:32px;
+    height:3px;
+
+    margin:7px auto 0;
+
+    background:var(--green);
+
+    border-radius:20px;
+}
+
+
+/* =========================================================
+   LOGIN CARD
+========================================================= */
+
+.login-card{
+    width:100%;
+    max-width:390px;
+
+    background:var(--white);
+
+    border:1px solid var(--border);
+
+    border-radius:7px;
+
+    padding:28px 26px 26px;
+
+    box-shadow:
+        0 2px 5px rgba(15,30,45,.05),
+        0 8px 22px rgba(15,30,45,.04);
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.login-card-header{
+    margin-bottom:22px;
+}
+
+
+.login-card-header h1{
+    margin:0 0 7px;
+
+    font-family:"DM Sans", sans-serif;
+    font-size:30px;
+    font-weight:500;
+
+    color:var(--text);
+
+    letter-spacing:-.6px;
+}
+
+
+.login-card-header p{
+    margin:0;
+
+    font-size:14px;
+    line-height:1.5;
+
+    color:var(--muted);
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.form-group{
+    margin-bottom:18px;
+}
+
+
+.form-group label{
+    display:block;
+
+    margin-bottom:8px;
+
+    font-size:14px;
+    font-weight:700;
+
+    color:var(--text);
+}
+
+
+.input-wrap{
+    position:relative;
+}
+
+
+.input-wrap input{
+    width:100%;
+    height:45px;
+
+    border:1px solid var(--border-dark);
+
+    border-radius:5px;
+
+    background:#ffffff;
+
+    padding:0 12px;
+
+    font-family:"DM Sans", sans-serif;
+    font-size:14px;
+
+    color:var(--text);
+
+    outline:none;
+
+    transition:
+        border-color .2s ease,
+        box-shadow .2s ease;
+}
+
+
+.input-wrap input::placeholder{
+    color:#8a96a2;
+}
+
+
+.input-wrap input:hover{
+    border-color:#8794a1;
+}
+
+
+.input-wrap input:focus{
+    border-color:var(--green);
+
+    box-shadow:
+        0 0 0 3px rgba(15,81,56,.13);
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.error-text{
+    display:block;
+
+    min-height:17px;
+
+    margin-top:6px;
+
+    font-size:12px;
+
+    color:var(--danger);
+}
+
+
+/* =========================================================
+   CONTINUE BUTTON
+========================================================= */
+
+.continue-btn{
+    width:100%;
+    height:45px;
+
+    border:1px solid var(--green-dark);
+
+    border-radius:5px;
+
+    background:var(--green);
+
+    color:#ffffff;
+
+    font-family:"DM Sans", sans-serif;
+    font-size:14px;
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:
+        background .2s ease,
+        transform .15s ease,
+        box-shadow .2s ease;
+}
+
+
+.continue-btn:hover{
+    background:var(--green-dark);
+}
+
+
+.continue-btn:active{
+    transform:translateY(1px);
+}
+
+
+.continue-btn:focus-visible{
+    outline:none;
+
+    box-shadow:
+        0 0 0 3px rgba(15,81,56,.16);
+}
+
+
+/* =========================================================
+   TERMS
+========================================================= */
+
+.terms-text{
+    margin:18px 0 0;
+
+    font-size:12px;
+    line-height:1.65;
+
+    color:var(--muted);
+}
+
+
+.terms-text a{
+    color:var(--green);
+    text-decoration:none;
+}
+
+
+.terms-text a:hover{
+    color:var(--green-dark);
+    text-decoration:underline;
+}
+
+
+/* =========================================================
+   HELP
+========================================================= */
+
+.help-area{
+    margin-top:19px;
+
+    border-top:1px solid #edf0f2;
+
+    padding-top:17px;
+}
+
+
+.help-button{
+    padding:0;
+
+    border:0;
+
+    background:none;
+
+    color:var(--green);
+
+    font-family:"DM Sans", sans-serif;
+    font-size:13px;
+
+    cursor:pointer;
+}
+
+
+.help-button i{
+    font-size:9px;
+
+    margin-right:5px;
+
+    transition:transform .2s ease;
+}
+
+
+.help-button:hover{
+    color:var(--green-dark);
+    text-decoration:underline;
+}
+
+
+.help-button:hover i{
+    transform:translateX(2px);
+}
+
+
+/* =========================================================
+   LOGIN MESSAGE
+========================================================= */
+
+.login-message{
+    min-height:20px;
+
+    margin-top:12px;
+
+    text-align:center;
+
+    font-size:13px;
+}
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.divider{
+    position:relative;
+
+    margin:28px 0 19px;
+
+    text-align:center;
+}
+
+
+.divider::before{
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    right:0;
+
+    top:50%;
+
+    height:1px;
+
+    background:#e4e8ec;
+}
+
+
+.divider span{
+    position:relative;
+
+    padding:0 12px;
+
+    background:#ffffff;
+
+    color:#7b8792;
+
+    font-size:12px;
+}
+
+
+/* =========================================================
+   CREATE ACCOUNT
+========================================================= */
+
+.create-account-btn{
+    width:100%;
+    height:44px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border:1px solid #adb8c2;
+
+    border-radius:5px;
+
+    background:#ffffff;
+
+    color:var(--text);
+
+    font-size:14px;
+    font-weight:600;
+
+    text-decoration:none;
+
+    transition:
+        background .2s ease,
+        border-color .2s ease,
+        box-shadow .2s ease;
+}
+
+
+.create-account-btn:hover{
+    background:#f8fafb;
+
+    border-color:#8d99a5;
+
+    box-shadow:
+        0 1px 3px rgba(0,0,0,.05);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.login-footer{
+    width:100%;
+    max-width:600px;
+
+    margin-top:34px;
+
+    text-align:center;
+}
+
+
+.footer-links{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+
+    gap:7px 25px;
+
+    margin-bottom:12px;
+}
+
+
+.footer-links a{
+    color:var(--green);
+
+    font-size:12px;
+
+    text-decoration:none;
+}
+
+
+.footer-links a:hover{
+    text-decoration:underline;
+}
+
+
+.login-footer p{
+    margin:0;
+
+    color:#7a858f;
+
+    font-size:11px;
+}
+
+
+/* =========================================================
+   SUBTLE OZZO BRAND ACCENT
+========================================================= */
+
+.login-page::before{
+    content:"";
+
+    position:fixed;
+
+    width:190px;
+    height:190px;
+
+    top:-110px;
+    right:-90px;
+
+    border-radius:50%;
+
+    background:rgba(217,237,214,.5);
+
+    pointer-events:none;
+}
+
+
+.login-page::after{
+    content:"";
+
+    position:fixed;
+
+    width:150px;
+    height:150px;
+
+    bottom:-90px;
+    left:-80px;
+
+    border-radius:50%;
+
+    background:rgba(217,232,242,.55);
+
+    pointer-events:none;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width:575.98px){
+
+    .login-page{
+        padding:
+            24px 16px
+            28px;
+    }
+
+
+    .logo-wrap{
+        margin-bottom:19px;
+    }
+
+
+    .ozzo-logo{
+        font-size:38px;
+    }
+
+
+    .login-card{
+        max-width:100%;
+
+        padding:
+            24px 21px
+            23px;
+    }
+
+
+    .login-card-header h1{
+        font-size:28px;
+    }
+
+
+    .input-wrap input{
+        height:46px;
+    }
+
+
+    .continue-btn{
+        height:46px;
+    }
+
+
+    .create-account-btn{
+        height:45px;
+    }
+
+
+    .login-footer{
+        margin-top:28px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL DEVICES
+========================================================= */
+
+@media (max-width:360px){
+
+    .login-page{
+        padding-left:12px;
+        padding-right:12px;
+    }
+
+
+    .login-card{
+        padding-left:18px;
+        padding-right:18px;
+    }
+
+
+    .footer-links{
+        gap:7px 17px;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion:reduce){
+
+    *,
+    *::before,
+    *::after{
+        transition:none !important;
+        animation:none !important;
+    }
+
+}

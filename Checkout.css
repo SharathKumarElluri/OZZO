@@ -101,7 +101,7 @@ textarea{
 
 .main-header{
     height:70px;
-    background:#fff;
+    background:black;
     border-bottom:1px solid #e7eaee;
     position:sticky;
     top:0;
@@ -896,4 +896,157 @@ textarea.form-control{
         flex-basis:52px;
     }
 
+}
+/* =========================================================
+   OZZO HEADER LOGO
+========================================================= */
+
+.ozzo-header-logo-wrap{
+    width:190px;
+    height:67px;
+
+    flex:0 0 190px;
+
+    display:flex;
+    align-items:center;
+
+    overflow:hidden;
+}
+
+
+/* =========================================================
+   DESKTOP LOGO
+========================================================= */
+
+.desktop-logo-link{
+    width:190px;
+    height:67px;
+
+    display:flex;
+    align-items:center;
+
+    overflow:hidden;
+
+    text-decoration:none;
+}
+
+.desktop-logo{
+    width:180px !important;
+    height:56px !important;
+
+    max-width:180px !important;
+    max-height:56px !important;
+
+    display:block;
+
+    object-fit:contain !important;
+    object-position:left center !important;
+}
+
+
+/* =========================================================
+   MOBILE LOGO
+========================================================= */
+
+.mobile-logo-link{
+    display:none;
+
+    width:140px;
+    height:67px;
+
+    align-items:center;
+
+    overflow:hidden;
+}
+
+.mobile-logo{
+    width:135px !important;
+    height:56px !important;
+
+    max-width:135px !important;
+    max-height:56px !important;
+
+    display:block;
+
+    object-fit:contain !important;
+    object-position:left center !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media(max-width:991px){
+
+    .ozzo-header-logo-wrap{
+        width:165px;
+        flex:0 0 165px;
+    }
+
+    .desktop-logo-link{
+        width:165px;
+    }
+
+    .desktop-logo{
+        width:155px !important;
+        max-width:155px !important;
+
+        height:52px !important;
+        max-height:52px !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:767px){
+
+    .ozzo-header-logo-wrap{
+        width:140px;
+        flex:0 0 140px;
+    }
+
+    .desktop-logo-link{
+        display:none;
+    }
+
+    .mobile-logo-link{
+        display:flex;
+    }
+
+    .mobile-logo{
+        width:125px !important;
+        max-width:125px !important;
+
+        height:52px !important;
+        max-height:52px !important;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media(max-width:575px){
+
+    .ozzo-header-logo-wrap{
+        width:135px;
+        flex-basis:135px;
+    }
+
+    .mobile-logo-link{
+        width:135px;
+    }
+
+    .mobile-logo{
+        width:120px !important;
+        max-width:120px !important;
+
+        height:50px !important;
+        max-height:50px !important;
+    }
 }
