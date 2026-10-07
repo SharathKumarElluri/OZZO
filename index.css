@@ -2773,3 +2773,11 @@ button{
     }
 
 }
+.desktop-logo{
+    object-fit:contain !important;
+    transform:scale(0.65);
+    transform-origin:center center;
+}
+.desktop-logo{
+    transform:scale(0.55);
+}
