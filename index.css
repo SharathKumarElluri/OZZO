@@ -2775,9 +2775,9 @@ button{
 }
 .desktop-logo{
     object-fit:contain !important;
-    transform:scale(0.65);
+    transform:scale(0.65) !important;
     transform-origin:center center;
 }
 .desktop-logo{
-    transform:scale(0.55);
+    transform:scale(0.55) !important;
 }
