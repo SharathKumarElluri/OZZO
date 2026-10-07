@@ -1,0 +1,27 @@
+{
+    "name": "OZZO | Lifestyle, Services, Books & Personal Care",
+    "short_name": "OZZO",
+    "description": "OZZO - Fashion, Books, Stationery, Pads and Everyday Services.",
+    "id": "/",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#000000",
+    "orientation": "portrait-primary",
+
+    "icons": [
+        {
+            "src": "/OZZO icon.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "any"
+        },
+        {
+            "src": "/OZZO icon.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any maskable"
+        }
+    ]
+}
