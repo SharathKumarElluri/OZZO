@@ -2452,3 +2452,70 @@ body{
     object-fit:contain !important;
     object-position:center center !important;
 }
+
+/* =========================================
+   FIX TOP SHIPPING BAR ON MOBILE AND TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+    /* Keep the shipping bar visible */
+    .top-bar {
+        display: block !important;
+        width: 100%;
+        height: 30px;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        background: #000 !important;
+        color: #fff !important;
+
+        z-index: 1101;
+    }
+
+    /* Align shipping text */
+    .top-bar .container-fluid,
+    .top-bar-inner {
+        height: 30px;
+
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .shipping-text {
+        display: flex !important;
+        align-items: center;
+        gap: 8px;
+
+        color: #fff !important;
+        font-size: 10px;
+        white-space: nowrap;
+    }
+
+    .shipping-text span {
+        display: inline-block !important;
+        color: #fff !important;
+    }
+
+    /* Hide extra links on narrow screens */
+    .top-links {
+        display: none;
+    }
+
+    /* Keep the header below the shipping bar */
+    .main-header {
+        position: fixed;
+        top: 30px;
+        left: 0;
+        width: 100%;
+        z-index: 1100;
+    }
+
+    /* Reserve space for both fixed bars */
+    body {
+        padding-top: 97px;
+    }
+}

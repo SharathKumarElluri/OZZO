@@ -2299,141 +2299,143 @@ body{
 
 
 /* =========================================================
-   DESKTOP LOGO
+   LOCAL PRODUCT IMAGE COMPATIBILITY
+
+   Product images are supplied by Fashion.html using direct
+   local paths such as ../image-name.jpg or ../image-name.png.
 ========================================================= */
 
-.desktop-logo-link{
-    width:190px;
-    height:67px;
+#productGrid .product-image{
+    position:relative;
+    width:100%;
+    height:310px;
+    overflow:hidden;
+    background:#f3f3f3;
+}
 
+#productGrid .product-image img{
+    width:100% !important;
+    height:100% !important;
+    max-width:none !important;
+    display:block;
+    object-fit:cover;
+    object-position:center;
+}
+
+#productGrid .fashion-product-card:hover .product-image img{
+    transform:scale(1.03);
+}
+
+#productGrid .missing-product-image{
+    width:100%;
+    height:100%;
     display:flex;
     align-items:center;
-
-    overflow:hidden;
-
-    text-decoration:none;
+    justify-content:center;
+    padding:20px;
+    background:#f3f3f3;
+    color:#7a8793;
+    text-align:center;
+    font-size:12px;
 }
 
-.desktop-logo{
-    width:180px !important;
-    height:56px !important;
-
-    max-width:180px !important;
-    max-height:56px !important;
-
-    display:block;
-
-    object-fit:contain !important;
-    object-position:left center !important;
+/* Keep the header black when Fashion.css is used by itself. */
+.top-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:30px;
+    background:#000 !important;
+    color:#fff !important;
+    z-index:1100;
 }
 
-
-/* =========================================================
-   MOBILE LOGO
-========================================================= */
-
-.mobile-logo-link{
-    display:none;
-
-    width:140px;
+.main-header{
+    position:fixed;
+    top:30px;
+    left:0;
+    width:100%;
+    min-height:67px;
     height:67px;
-
-    align-items:center;
-
-    overflow:hidden;
+    background:#000 !important;
+    border-bottom:1px solid #222;
+    z-index:1000;
 }
 
-.mobile-logo{
-    width:135px !important;
-    height:56px !important;
-
-    max-width:135px !important;
-    max-height:56px !important;
-
-    display:block;
-
-    object-fit:contain !important;
-    object-position:left center !important;
+.main-header .navbar{
+    width:100%;
+    min-height:67px;
+    height:67px;
 }
 
+.main-header .main-nav .nav-link,
+.main-header .header-icon,
+.main-header .header-actions a,
+.main-header .header-actions button{
+    color:#fff !important;
+}
 
-/* =========================================================
-   TABLET
-========================================================= */
+.main-header .main-nav .nav-link.active::after{
+    background:#fff !important;
+}
+
+.main-header .search-box{
+    background:#111 !important;
+    border:1px solid #333 !important;
+}
+
+.main-header .search-box input{
+    color:#fff !important;
+}
+
+.main-header .search-box input::placeholder{
+    color:#aaa !important;
+}
+
+.main-header .search-box i{
+    color:#fff !important;
+}
+
+.main-header .cart-count{
+    background:#fff !important;
+    color:#000 !important;
+}
 
 @media(max-width:991px){
-
-    .ozzo-header-logo-wrap{
-        width:165px;
-        flex:0 0 165px;
+    .main-header{
+        height:auto;
+        min-height:67px;
     }
 
-    .desktop-logo-link{
-        width:165px;
+    .main-header .navbar{
+        height:auto;
+        min-height:67px;
     }
 
-    .desktop-logo{
-        width:155px !important;
-        max-width:155px !important;
-
-        height:52px !important;
-        max-height:52px !important;
+    #productGrid .product-image{
+        height:270px;
     }
 }
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
 
 @media(max-width:767px){
-
-    .ozzo-header-logo-wrap{
-        width:140px;
-        flex:0 0 140px;
-    }
-
-    .desktop-logo-link{
-        display:none;
-    }
-
-    .mobile-logo-link{
-        display:flex;
-    }
-
-    .mobile-logo{
-        width:125px !important;
-        max-width:125px !important;
-
-        height:52px !important;
-        max-height:52px !important;
+    #productGrid .product-image{
+        height:230px;
     }
 }
-
-
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
 
 @media(max-width:575px){
-
-    .ozzo-header-logo-wrap{
-        width:135px;
-        flex-basis:135px;
-    }
-
-    .mobile-logo-link{
-        width:135px;
-    }
-
-    .mobile-logo{
-        width:120px !important;
-        max-width:120px !important;
-
-        height:50px !important;
-        max-height:50px !important;
+    #productGrid .product-image{
+        height:190px;
     }
 }
+
+@media(max-width:380px){
+    #productGrid .product-image{
+        height:165px;
+    }
+}
+
 
 /* =========================================================
    OZZO LOGO

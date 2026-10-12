@@ -75,9 +75,10 @@
 </div>
 
 
+
 <!-- =========================================================
-     MAIN HEADER
-========================================================== -->
+     HEADER
+========================================================= -->
 
 <header class="main-header">
 
@@ -85,33 +86,36 @@
 
         <div class="container-fluid px-4">
 
+ <!-- =========================================================
+     OZZO LOGO
+========================================================= -->
 
-            <!-- =================================================
-                 OZZO LOGO
-            ================================================== -->
+<div class="ozzo-header-logo-wrap">
 
-            <div class="ozzo-header-logo-wrap">
+    <a
+        href="../index.html"
+        class="desktop-logo-link"
+    >
+        <img
+            src="../OZZO logo1.jpeg"
+            alt="OZZO"
+            class="desktop-logo"
+        >
+    </a>
 
+    <a
+        href="../index.html"
+        class="mobile-logo-link"
+    >
+        <img
+            src="../OZZO logo.png"
+            alt="OZZO"
+            class="mobile-logo"
+        >
+    </a>
 
-                <!-- DESKTOP LOGO -->
-
-                <a
-                    href="index.html"
-                    class="desktop-logo-link"
-                >
-
-                    <img
-                        src="OZZO logo1.jpeg"
-                        alt="OZZO"
-                        class="desktop-logo"
-                    >
-
-                </a>
-
-
-
-            </div>
-
+</div>
+          
 
             <!-- =================================================
                  MOBILE MENU BUTTON
@@ -132,11 +136,7 @@
 
             </button>
 
-
-            <!-- =================================================
-                 NAVIGATION
-            ================================================== -->
-
+            <!-- NAVIGATION -->
             <div
                 class="collapse navbar-collapse"
                 id="ozzoNavbar"
@@ -144,131 +144,60 @@
 
                 <ul class="navbar-nav main-nav mx-auto">
 
-
                     <li class="nav-item">
-
-                        <a
-                            class="nav-link "
-                            href="index.html"
-                        >
-                            Home
-                        </a>
-
+                        <a class="nav-link" href="../index.html">Home</a>
                     </li>
 
-
                     <li class="nav-item">
-
-                        <a
-                            class="nav-link"
-                            href="Fashion/Fashion.html"
-                        >
-                            Fashion
-                        </a>
-
+                        <a class="nav-link " href="/Fashion/Fashion.html">Fashion</a>
                     </li>
 
-
                     <li class="nav-item">
-
-                        <a
-                            class="nav-link"
-                            href="Comming Soon.html"
-                        >
-                            Books
-                        </a>
-
+                        <a class="nav-link" href="/Comming Soon.html">Books</a>
                     </li>
 
-
                     <li class="nav-item">
-
-                        <a
-                            class="nav-link"
-                            href="Comming Soon.html"
-                        >
-                            Stationery
-                        </a>
-
+                        <a class="nav-link" href="/Comming Soon.html">Stationery</a>
                     </li>
 
-
                     <li class="nav-item">
-
-                        <a
-                            class="nav-link"
-                            href="Pads/Pads.html"
-                        >
-                            Pads
-                        </a>
-
+                        <a class="nav-link" href="../Pads/Pads.html">Pads</a>
                     </li>
-
 
                 </ul>
 
-
-                <!-- =================================================
-                     HEADER ACTIONS
-                ================================================== -->
-
                 <div class="header-actions">
 
-
-                    <!-- SEARCH -->
-
                     <div class="search-box">
-
                         <input
                             type="text"
                             id="searchInput"
-                            placeholder="Search products and services..."
-                            aria-label="Search products and services"
+                            placeholder="Search fashion products..."
+                            aria-label="Search fashion products"
                         >
-
-                        <i class="fa-solid fa-magnifying-glass"></i>
-
+                        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
                     </div>
 
-
-                    <!-- WISHLIST -->
-
                     <a
-                        href="Wishlist/Wishlist.html"
                         class="header-icon wishlist-button"
+                        href="../Wishlist/Wishlist.html"
                         title="Wishlist"
                         aria-label="Wishlist"
                     >
-
-                        <i class="fa-regular fa-heart"></i>
-
+                        <i class="fa-regular fa-heart" aria-hidden="true"></i>
                     </a>
 
-
-                    <!-- CART -->
-
-                    <button
+                    <a
+                        href="../Cart/Cart.html"
                         class="header-icon cart-button"
-                        id="headerCartButton"
-                        type="button"
                         title="Shopping Cart"
                         aria-label="Shopping Cart"
                     >
-
-                        <i class="fa-solid fa-bag-shopping"></i>
-
-                        <span
-                            class="cart-count"
-                            id="cartCount"
-                        >
-                            0
-                        </span>
-
-                    </button>
-
+                        <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a>
 
                 </div>
-
 
             </div>
 
@@ -277,9 +206,6 @@
     </nav>
 
 </header>
-
-
-
 
 
 
@@ -468,78 +394,254 @@
 
     </div>
 </section>
+<!-- =========================================================
+     FOOTER
+========================================================== -->
 
-<!-- FOOTER -->
 <footer class="footer">
+
     <div class="container-fluid px-lg-5">
 
         <div class="footer-main">
 
+
+            <!-- BRAND -->
+
             <div class="footer-brand">
-                <div class="footer-logo">OZZO</div>
-                <div class="footer-categories">
-                    Fashion <span>•</span>
-                    Books <span>•</span>
-                    Stationery <span>•</span>
-                    Pads
+
+                <div class="footer-logo">
+                    OZZO
                 </div>
+
+                <div class="footer-categories">
+
+                    Fashion
+
+                    <span>•</span>
+
+                    Books
+
+                    <span>•</span>
+
+                    Stationery
+
+                    <span>•</span>
+
+                    Pads
+
+
+                </div>
+
             </div>
 
-            <div class="footer-column">
-                <h4>Quick Links</h4>
-                <a href="index.html">Home</a>
-                <a href="About Us/About.html">About Us</a>
-                <a href="Faq/Faq.html">FAQs</a>
-                <a href="Contact/Contact.html">Contact</a>
-            </div>
+
+            <!-- QUICK LINKS -->
 
             <div class="footer-column">
-                <h4>Categories</h4>
-                <a href="Fashion/Fashion.html">Fashion</a>
-                <a href="Books/Books.html">Books</a>
-                <a href="Stationary/Stationary.html">Stationery</a>
-                <a href="Pads/Pads.html">Pads</a>
+
+                <h4>
+                    Quick Links
+                </h4>
+
+                <a href="/index.html">
+                    Home
+                </a>
+
+                <a href="/Careers/Careers.html">
+                    Careers
+                </a>
+
+                <a href="/About Us/About.html">
+                    About Us
+                </a>
+
+                <a href="/Faq/Faq.html">
+                    FAQs
+                </a>
+
+                <a href="/Contact/Contact.html">
+                    Contact
+                </a>
+
             </div>
 
+ <!-- CATEGORIES -->
+
             <div class="footer-column">
-                <h4>Customer Service</h4>
-                <a href="Privacy/Privacy.html">Privacy Policy</a>
-                <a href="Terms/Terms.html">Terms &amp; Conditions</a>
+
+                <h4>
+                    Categories
+                </h4>
+
+                <a href="/Fashion/Fashion.html">
+                    Fashion
+                </a>
+
+                <a href="/Comming Soon.html">
+                    Books
+                </a>
+
+                <a href="/Comming Soon.html">
+                    Stationery
+                </a>
+
+                <a href="/Pads/Pads.html">
+                    Pads
+                </a>
+
             </div>
+
+
+            <!-- SERVICES -->
+
+            <div class="footer-column">
+
+                <h4>
+                    Services
+                </h4>
+
+                <a href="/Comming Soon.html">
+                    Groceries
+                </a>
+
+                <a href="/Comming Soon.html">
+                    Home Cleaning
+                </a>
+
+                <a href="/Comming Soon.html">
+                    Car Rentals
+                </a>
+
+                <a href="/Comming Soon.html">
+                    Computer Services
+                </a>
+
+            </div>
+
+
+            <!-- NEWSLETTER -->
 
             <div class="footer-newsletter">
-                <h4>Join Our Newsletter</h4>
-                <p>Get updates on new arrivals and special offers.</p>
+
+                <h4>
+                    Join Our Newsletter
+                </h4>
+
+                <p>
+                    Get updates on new arrivals and special offers.
+                </p>
+
 
                 <form id="newsletterForm">
+
                     <div class="newsletter-input">
-                        <input type="email" id="newsletterEmail" placeholder="Enter your email address"
-                            aria-label="Enter your email address" required>
-                        <button type="submit" title="Subscribe" aria-label="Subscribe">→</button>
+
+                        <input
+                            type="email"
+                            id="newsletterEmail"
+                            placeholder="Enter your email address"
+                            required
+                        >
+
+                        <button
+                            type="submit"
+                            title="Subscribe"
+                            aria-label="Subscribe"
+                        >
+                            →
+                        </button>
+
                     </div>
+
                 </form>
 
-                <div class="newsletter-message" id="newsletterMessage"></div>
+
+                <div
+                    class="newsletter-message"
+                    id="newsletterMessage"
+                ></div>
+
 
                 <div class="social-icons">
-                    <a href="#" title="Facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
-                    <a href="#" title="Instagram" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
-                    <a href="#" title="YouTube" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
-                    <a href="#" title="LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+
+
+                    <a
+                        href="#"
+                        title="Facebook"
+                        aria-label="Facebook"
+                    >
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+
+                    <a
+                        href="#"
+                        title="Instagram"
+                        aria-label="Instagram"
+                    >
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+
+                    <a
+                        href="#"
+                        title="YouTube"
+                        aria-label="YouTube"
+                    >
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+
+                    <a
+                        href="#"
+                        title="LinkedIn"
+                        aria-label="LinkedIn"
+                    >
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+
+                    <a
+                        href="#"
+                        title="Twitter"
+                        aria-label="Twitter"
+                    >
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+
                 </div>
+
             </div>
 
+
         </div>
+
     </div>
+
+
+    <!-- FOOTER BOTTOM -->
 
     <div class="footer-bottom">
+
         <div class="container-fluid px-lg-5">
+
             <div class="footer-bottom-inner">
-                <span>© 2025 OZZO. All rights reserved.</span>
-                <span>Better Choices. A Brighter You.</span>
+
+                <span>
+                    © 2025 OZZO. All rights reserved.
+                </span>
+
+                <span>
+                    Better Choices. A Brighter You.
+                </span>
+
             </div>
+
         </div>
+
     </div>
+
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

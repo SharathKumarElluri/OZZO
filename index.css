@@ -2691,6 +2691,7 @@ button{
     }
 
 }
+
 /* =========================================================
    OZZO LOGO
    DESKTOP + MOBILE
@@ -2759,25 +2760,4 @@ button{
 
     object-fit:contain !important;
     object-position:center center !important;
-}
-/* Zoom out OZZO logo without changing the image */
-.desktop-logo{
-    object-fit:contain !important;
-    transform:scale(0.82);
-    transform-origin:center center;
-}
-@media(max-width:991px){
-
-    .desktop-logo{
-        transform:scale(0.70);
-    }
-
-}
-.desktop-logo{
-    object-fit:contain !important;
-    transform:scale(0.65) !important;
-    transform-origin:center center;
-}
-.desktop-logo{
-    transform:scale(0.55) !important;
 }

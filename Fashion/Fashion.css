@@ -293,12 +293,23 @@ button{
     font-weight:700;
 }
 
+
 .navbar-toggler{
-    border:none !important;
+    flex:0 0 auto;
+
+    padding:6px 9px;
+
+    border:1px solid #555 !important;
 
     box-shadow:none !important;
 
-    color:var(--navy);
+    background:transparent !important;
+
+    color:#fff !important;
+}
+
+.navbar-toggler i{
+    color:#fff !important;
 }
 
 
