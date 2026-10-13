@@ -2951,3 +2951,12 @@ button{
     object-fit:contain !important;
     object-position:center center !important;
 }
+/* CATEGORY NAVIGATION LINKS */
+
+.product-filters .filter-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+}
