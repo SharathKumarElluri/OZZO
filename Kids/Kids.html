@@ -1,0 +1,1437 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OZZO | Baby & Kids Dresses</title>
+
+    <link rel="icon" type="image/png" href="../OZZO logo.png">
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Existing CSS -->
+    <link rel="stylesheet" href="Kids.css">
+</head>
+
+<body class="ozzo-category-page page-kids">
+
+<!-- ==================== TOP SHIPPING BAR ==================== -->
+
+<div class="top-bar">
+    <div class="container-fluid top-bar-inner px-4">
+
+        <div class="shipping-text">
+            <i class="fa-solid fa-truck"></i>
+            <span>Free shipping on orders above ₹999</span>
+        </div>
+
+        <div class="top-links">
+            <a href="#">Track Order</a>
+            <span>|</span>
+            <a href="#">Help</a>
+            <span>|</span>
+
+            <a href="#" class="login-link">
+                <i class="fa-regular fa-user"></i>
+                Login
+            </a>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- ==================== HEADER ==================== -->
+
+<header class="main-header">
+
+    <nav class="navbar navbar-expand-xl">
+
+        <div class="container-fluid px-4">
+
+            <div class="ozzo-header-logo-wrap">
+
+                <a href="../index.html" class="desktop-logo-link">
+                    <img
+                        src="../OZZO logo1.jpeg"
+                        alt="OZZO"
+                        class="desktop-logo"
+                    >
+                </a>
+
+                <a href="../index.html" class="mobile-logo-link">
+                    <img
+                        src="../OZZO logo1.jpeg"
+                        alt="OZZO"
+                        class="mobile-logo"
+                    >
+                </a>
+
+            </div>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#ozzoNavbar"
+                aria-controls="ozzoNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="ozzoNavbar">
+
+                <ul class="navbar-nav main-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="../Fashion/Fashion.html">
+                            Fashion
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Comming Soon.html">
+                            Books
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Comming Soon.html">
+                            Stationery
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Pads/Pads.html">
+                            Pads
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="header-actions">
+
+                    <div class="search-box">
+
+                        <input
+                            type="text"
+                            id="searchInput"
+                            placeholder="Search baby and kids dresses..."
+                            aria-label="Search dresses"
+                        >
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                    </div>
+
+                    <a
+                        class="header-icon wishlist-button"
+                        href="../Wishlist/Wishlist.html"
+                        title="Wishlist"
+                        aria-label="Wishlist"
+                    >
+                        <i class="fa-regular fa-heart"></i>
+                    </a>
+
+                    <a
+                        href="../Cart/Cart.html"
+                        class="header-icon cart-button"
+                        title="Shopping Cart"
+                        aria-label="Shopping Cart"
+                    >
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- ==================== HERO SECTION ==================== -->
+
+<section class="fashion-hero">
+
+    <div class="container-fluid p-0">
+
+        <div class="fashion-hero-content">
+
+            <div class="fashion-hero-copy">
+
+                <span class="hero-label">
+                    OZZO BABY & KIDS COLLECTION
+                </span>
+
+                <h1>
+                    Little Styles.<br>
+                    <span>Big Smiles.</span>
+                </h1>
+
+                <p>
+                    Discover adorable baby outfits, stylish boys' clothes,
+                    and beautiful girls' dresses made for everyday moments
+                    and special occasions.
+                </p>
+
+                <a
+                    href="#fashionProducts"
+                    class="shop-btn"
+                    id="heroShopButton"
+                >
+                    Shop Kids Collection
+                    <span>→</span>
+                </a>
+
+            </div>
+
+            <div class="fashion-hero-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=1000&q=85"
+                    alt="Children's clothing collection"
+                    loading="eager"
+                    onerror="handleKidsImageError(this)"
+                >
+
+                <div class="hero-offer">
+
+                    <small>UP TO</small>
+                    <strong>40%</strong>
+                    <span>OFF</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================== PRODUCTS SECTION ==================== -->
+
+<main class="fashion-products" id="fashionProducts">
+
+    <div class="container-fluid px-4">
+
+        <div class="men-shop-layout">
+
+
+            <!-- ==================== LEFT SIDEBAR ==================== -->
+
+            <aside class="men-category-section" id="kidsCategories">
+
+                <div class="men-category-container">
+
+                    <div class="men-category-heading">
+
+                        <span class="men-category-eyebrow">
+                            OZZO KIDS
+                        </span>
+
+                        <h2>Shop Kids Dresses</h2>
+
+                        <p>
+                            Adorable outfits for babies, boys, and girls.
+                        </p>
+
+                    </div>
+
+
+                    <!-- ALL PRODUCTS -->
+
+                    <div class="men-category-options">
+
+                        <button
+                            type="button"
+                            class="men-category-btn active"
+                            data-kids-filter="all"
+                            aria-pressed="true"
+                        >
+                            All Kids Dresses
+                        </button>
+
+                    </div>
+
+
+                    <!-- BABIES -->
+
+                    <div class="men-category-group">
+
+                        <div class="men-category-group-heading">
+                            <span>01</span>
+                            <h3>Babies</h3>
+                        </div>
+
+                        <div class="men-category-options">
+
+                            <button
+                                type="button"
+                                class="men-category-btn"
+                                data-kids-filter="babies"
+                                aria-pressed="false"
+                            >
+                                Baby Dresses
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- BOYS -->
+
+                    <div class="men-category-group">
+
+                        <div class="men-category-group-heading">
+                            <span>02</span>
+                            <h3>Boys</h3>
+                        </div>
+
+                        <div class="men-category-options">
+
+                            <button
+                                type="button"
+                                class="men-category-btn"
+                                data-kids-filter="boys-dresses"
+                                aria-pressed="false"
+                            >
+                                Boys' Dresses
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- GIRLS -->
+
+                    <div class="men-category-group">
+
+                        <div class="men-category-group-heading">
+                            <span>03</span>
+                            <h3>Girls</h3>
+                        </div>
+
+                        <div class="men-category-options">
+
+                            <button
+                                type="button"
+                                class="men-category-btn"
+                                data-kids-filter="girls-dresses"
+                                aria-pressed="false"
+                            >
+                                Girls' Dresses
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="men-category-footer">
+
+                        <span id="kidsCategoryResult" aria-live="polite">
+                            Showing all kids dresses
+                        </span>
+
+                        <a href="#productGrid">
+                            View products
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </aside>
+
+
+            <!-- ==================== RIGHT PRODUCTS AREA ==================== -->
+
+            <section class="men-products-area">
+
+                <div class="products-heading">
+
+                    <div>
+
+                        <span class="section-label">
+                            OZZO KIDS COLLECTION
+                        </span>
+
+                        <h2>Adorable Everyday Styles</h2>
+
+                        <p>
+                            Cute outfits for every little occasion.
+                        </p>
+
+                    </div>
+
+                    <div class="product-filters">
+
+                        <span
+                            class="category-product-count"
+                            id="productCount"
+                        >
+                            Explore kids dresses
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT GRID -->
+
+                <div id="productGrid" class="product-grid"></div>
+
+
+                <!-- NO PRODUCTS MESSAGE -->
+
+                <div id="noProducts" class="no-products" hidden>
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <h3>No products found</h3>
+
+                    <p>
+                        Try another keyword or select a different category.
+                    </p>
+
+                    <button
+                        type="button"
+                        id="resetFilters"
+                        class="reset-filters"
+                    >
+                        Show All Dresses
+                    </button>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<!-- ==================== PROMO SECTION ==================== -->
+
+<section class="men-promo">
+
+    <div class="men-promo-inner">
+
+        <div>
+
+            <span class="promo-eyebrow">
+                THE OZZO LITTLE STYLE EDIT
+            </span>
+
+            <h2>
+                Little outfits.<br>
+                <span>Big personalities.</span>
+            </h2>
+
+            <p>
+                Find adorable baby outfits, smart boys' outfits,
+                and charming girls' dresses for every occasion.
+            </p>
+
+        </div>
+
+        <a href="#fashionProducts" class="promo-button">
+            Explore Kids Collection
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ==================== FOOTER ==================== -->
+
+<footer class="footer">
+
+    <div class="container-fluid px-lg-5">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">OZZO</div>
+
+                <div class="footer-categories">
+                    Fashion <span>•</span>
+                    Books <span>•</span>
+                    Stationery <span>•</span>
+                    Pads
+                </div>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Quick Links</h4>
+
+                <a href="../index.html">Home</a>
+                <a href="../Careers/Careers.html">Careers</a>
+                <a href="../About Us/About.html">About Us</a>
+                <a href="../Faq/Faq.html">FAQs</a>
+                <a href="../Contact/Contact.html">Contact</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Categories</h4>
+
+                <a href="../Fashion/Fashion.html">Fashion</a>
+                <a href="../Comming Soon.html">Books</a>
+                <a href="../Comming Soon.html">Stationery</a>
+                <a href="../Pads/Pads.html">Pads</a>
+
+            </div>
+
+
+            <!-- SERVICES -->
+
+            <div class="footer-column">
+
+                <h4>
+                    Services
+                </h4>
+
+                <a href="/Comming Soon.html">
+                    Groceries
+                </a>
+
+                <a href="/Comming Soon.html">
+                    Home Cleaning
+                </a>
+
+                <a href="/Comming Soon.html">
+                    Car Rentals
+                </a>
+
+                <a href="/Comming Soon.html">
+                    Computer Services
+                </a>
+
+            </div>
+
+
+            <div class="footer-newsletter">
+
+                <h4>Join Our Newsletter</h4>
+
+                <p>
+                    Get updates on new arrivals and special offers.
+                </p>
+
+                <form id="newsletterForm">
+
+                    <div class="newsletter-input">
+
+                        <input
+                            type="email"
+                            id="newsletterEmail"
+                            placeholder="Enter your email address"
+                            required
+                        >
+
+                        <button
+                            type="submit"
+                            title="Subscribe"
+                            aria-label="Subscribe"
+                        >
+                            →
+                        </button>
+
+                    </div>
+
+                </form>
+
+                <div
+                    class="newsletter-message"
+                    id="newsletterMessage"
+                ></div>
+
+
+                <div class="social-icons">
+
+                    <a href="#" title="Facebook" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" title="Instagram" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" title="YouTube" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                    <a href="#" title="LinkedIn" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="#" title="Twitter" aria-label="Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container-fluid px-lg-5">
+
+            <div class="footer-bottom-inner">
+
+                <span>© 2026 OZZO. All rights reserved.</span>
+
+                <span>Better Choices. A Brighter You.</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- ==================== BOOTSTRAP JAVASCRIPT ==================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- ==================== KIDS DRESSES JAVASCRIPT ==================== -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const productGrid = document.getElementById("productGrid");
+    const searchInput = document.getElementById("searchInput");
+    const noProducts = document.getElementById("noProducts");
+    const productCount = document.getElementById("productCount");
+    const cartCount = document.getElementById("cartCount");
+    const categoryResult = document.getElementById("kidsCategoryResult");
+
+    const categoryButtons = Array.from(
+        document.querySelectorAll("[data-kids-filter]")
+    );
+
+
+    /* ==================== IMAGE FALLBACK ==================== */
+
+    const fallbackImage =
+        "data:image/svg+xml;charset=UTF-8," +
+        encodeURIComponent(`
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="500"
+                 height="500"
+                 viewBox="0 0 500 500">
+
+                <rect width="500" height="500" fill="#f3f5f8"/>
+
+                <rect x="80" y="80"
+                      width="340" height="320"
+                      rx="20"
+                      fill="#ffffff"
+                      stroke="#dfe5ed"
+                      stroke-width="3"/>
+
+                <path d="M190 150 L160 180 L185 210
+                         L210 190 L210 300 L290 300
+                         L290 190 L315 210 L340 180
+                         L310 150 L280 140
+                         Q250 170 220 140 Z"
+                      fill="#dce6f1"/>
+
+                <text x="250" y="435"
+                      text-anchor="middle"
+                      font-family="Arial"
+                      font-size="24"
+                      font-weight="700"
+                      fill="#132438">OZZO KIDS</text>
+            </svg>
+        `);
+
+
+    window.handleKidsImageError = function (image) {
+
+        if (image.dataset.fallbackApplied === "true") {
+            return;
+        }
+
+        image.dataset.fallbackApplied = "true";
+        image.src = fallbackImage;
+        image.alt = "OZZO Kids product image";
+
+    };
+
+
+    /* ==================== PRODUCT LIST ====================
+
+       12 products
+       4 Baby products
+       4 Boys products
+       4 Girls products
+
+       Each product has its own image URL.
+    ======================================================== */
+
+    const products = [
+
+        /* ==================== BABIES ==================== */
+
+        [
+            "kids-001",
+            "Baby Floral Printed Romper",
+            "babies",
+            499,
+            699,
+            4.6,
+            48,
+            "https://cocobee.com.pk/cdn/shop/products/GWR2209.jpg?v=1675505040",
+            "BESTSELLER"
+        ],
+
+        [
+            "kids-002",
+            "Pink Baby Girl Summer Romper Set",
+            "babies",
+            399,
+            599,
+            4.5,
+            36,
+            "https://i5.walmartimages.com/seo/Infant-Baby-Girl-Outfit-Solid-Summer-Rompers-Aircraft-sleeve-Baby-Clothes-For-Girls-3-6-Months-Baby-Girl-Clothes-Cute-boys-and-girls-clothing_72b83f9c-d412-4a89-b1e8-c7ebda5a8c3d.46d678d5e26a975dfc7d6f2569e28f3b.jpeg",
+            "POPULAR"
+        ],
+
+        [
+            "kids-003",
+            "Caramel Cotton Baby Romper",
+            "babies",
+            699,
+            999,
+            4.7,
+            52,
+            "https://moosekids.com.br/cdn/shop/files/86_40b5c74f-13a7-447f-aaf1-423037e83cd5.webp?v=1772638085&width=1445",
+            "TRENDING"
+        ],
+
+        [
+            "kids-004",
+            "Baby Turtle Print Cotton Romper",
+            "babies",
+            449,
+            649,
+            4.4,
+            29,
+            "https://minibinis.com/cdn/shop/files/B17F696B-C336-4153-AA68-3343CF7796F6.jpg?v=1778406920",
+            ""
+        ],
+
+
+        /* ==================== BOYS ==================== */
+
+        [
+            "kids-005",
+            "Boys Blue Shirt and Denim Shorts Set",
+            "boys-dresses",
+            499,
+            699,
+            4.5,
+            42,
+            "https://cdn.awsli.com.br/2500x2500/2561/2561798/produto/400069575/80bb394d3445cb0e8787a57e5f8a4487-imsf2nfryd.png",
+            "NEW"
+        ],
+
+        [
+            "kids-006",
+            "Boys Floral Printed Shirt and Shorts",
+            "boys-dresses",
+            799,
+            1099,
+            4.6,
+            35,
+            "https://nimbu.sg/cdn/shop/files/NimbuValeriaBeigeKidsShirtinFlexCotton1.jpg?v=1766394780&width=1185",
+            "POPULAR"
+        ],
+
+        [
+            "kids-007",
+            "Boys Blue Plaid Casual Shirt",
+            "boys-dresses",
+            549,
+            799,
+            4.4,
+            31,
+            "https://us.hatley.com/cdn/shop/files/F25BBK1252_A.jpg?v=1753118274&width=1946",
+            ""
+        ],
+
+        [
+            "kids-008",
+            "Boys Junior Summer Outfit",
+            "boys-dresses",
+            899,
+            1299,
+            4.7,
+            44,
+            "https://mcprod.aarong.com/media/catalog/product/0/3/0320000107395.jpg?bg-color=255%2C255%2C255&fit=bounds&height=&optimize=high&width=",
+            "TRENDING"
+        ],
+
+
+        /* ==================== GIRLS ==================== */
+
+        [
+            "kids-009",
+            "Girls White Floral Summer Dress",
+            "girls-dresses",
+            699,
+            999,
+            4.7,
+            58,
+            "https://cdn.fcglcdn.com/brainbees/images/products/zoom/the-magic-wand-cotton-woven-sleeveless-floral-printed-shirt-style-dress-white-22881482zzsq.jpg",
+            "BESTSELLER"
+        ],
+
+        [
+            "kids-010",
+            "Girls Pink Floral Tulle Party Dress",
+            "girls-dresses",
+            899,
+            1299,
+            4.5,
+            47,
+            "https://www.childrensalonoutlet.com/media/catalog/product/cache/0/image/2000x2000/9df78eab33525d08d6e5fb8d27136e95/t/h/the-tiny-universe-girls-pink-floral-tulle-dress-580056-2dd8b569d31fd25a00f1bed45ec60a3d9a55e2a0.jpg",
+            "NEW"
+        ],
+
+        [
+            "kids-011",
+            "Girls Pink Floral Party Frock",
+            "girls-dresses",
+            899,
+            1299,
+            4.6,
+            39,
+            "https://ministitch.in/cdn/shop/files/FRRN766_PEACH_1200x1200.jpg?v=1757183565",
+            "TRENDING"
+        ],
+
+        [
+            "kids-012",
+            "Girls Yellow Daisy Bloom Dress",
+            "girls-dresses",
+            599,
+            849,
+            4.4,
+            33,
+            "https://urbanjipsy.com/cdn/shop/files/urban-jipsy-girls-daisy-bloom-fit-flare-dress-5467585.png?v=1780390990",
+            ""
+        ]
+
+    ];
+
+
+    let selectedFilter = "all";
+    let cart = [];
+
+
+    /* ==================== LOAD CART ==================== */
+
+    try {
+
+        cart = JSON.parse(localStorage.getItem("ozzoCart")) || [];
+
+        if (!Array.isArray(cart)) {
+            cart = [];
+        }
+
+    } catch (error) {
+
+        cart = [];
+
+    }
+
+
+    /* ==================== CATEGORY LABELS ==================== */
+
+    const categoryNames = {
+
+        "all": "all kids dresses",
+        "babies": "baby dresses",
+        "boys-dresses": "boys' dresses",
+        "girls-dresses": "girls' dresses"
+
+    };
+
+
+    /* ==================== ESCAPE HTML ==================== */
+
+    function escapeHTML(value) {
+
+        return String(value).replace(/[&<>"']/g, function (character) {
+
+            return {
+                "&": "&amp;",
+                "<": "&lt;",
+                ">": "&gt;",
+                '"': "&quot;",
+                "'": "&#39;"
+            }[character];
+
+        });
+
+    }
+
+
+    /* ==================== DISPLAY CATEGORY ==================== */
+
+    function getDisplayCategory(category) {
+
+        const displayNames = {
+
+            "babies": "Baby Dresses",
+            "boys-dresses": "Boys' Dresses",
+            "girls-dresses": "Girls' Dresses"
+
+        };
+
+        return displayNames[category] || "Kids Dresses";
+
+    }
+
+
+    /* ==================== RENDER PRODUCTS ==================== */
+
+    function renderProducts() {
+
+        productGrid.innerHTML = products.map(function (product) {
+
+            const id = product[0];
+            const name = product[1];
+            const category = product[2];
+            const price = product[3];
+            const mrp = product[4];
+            const rating = product[5];
+            const reviews = product[6];
+            const image = product[7];
+            const badge = product[8];
+
+            const discount = Math.round(
+                ((mrp - price) / mrp) * 100
+            );
+
+            return `
+                <article
+                    class="product-item"
+                    data-product-id="${escapeHTML(id)}"
+                    data-name="${escapeHTML(name)}"
+                    data-subcategory="${escapeHTML(category)}"
+                    data-price="${price}"
+                    data-mrp="${mrp}"
+                    data-rating="${rating}"
+                    data-reviews="${reviews}"
+                    data-brand="OZZO Kids"
+                >
+
+                    <div class="fashion-product-card">
+
+                        <div class="product-image">
+
+                            <img
+                                src="${escapeHTML(image)}"
+                                alt="${escapeHTML(name)}"
+                                loading="lazy"
+                                decoding="async"
+                                onerror="handleKidsImageError(this)"
+                            >
+
+                            ${
+                                badge
+                                ? `<span class="product-badge">${escapeHTML(badge)}</span>`
+                                : ""
+                            }
+
+                            <button
+                                class="wishlist"
+                                type="button"
+                                aria-label="Add ${escapeHTML(name)} to wishlist"
+                                title="Add to wishlist"
+                            >
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <div class="product-main-row">
+
+                                <div class="product-title-area">
+
+                                    <span>
+                                        KIDS • ${getDisplayCategory(category)}
+                                    </span>
+
+                                    <h3>${escapeHTML(name)}</h3>
+
+                                </div>
+
+                                <button class="add-cart" type="button">
+                                    Add to Cart
+                                </button>
+
+                            </div>
+
+
+                            <div class="rating">
+
+                                <span aria-label="${rating} out of 5 stars">
+                                    ★★★★★
+                                </span>
+
+                                <small>(${reviews})</small>
+
+                            </div>
+
+
+                            <div class="price">
+
+                                ₹${price.toLocaleString("en-IN")}
+
+                                <del>
+                                    ₹${mrp.toLocaleString("en-IN")}
+                                </del>
+
+                                <small class="product-discount">
+                                    ${discount}% OFF
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+            `;
+
+        }).join("");
+
+    }
+
+
+    /* ==================== CATEGORY FILTERING ==================== */
+
+    function matchesCategory(product, filter) {
+
+        const category = product[2];
+
+        if (filter === "all") {
+            return true;
+        }
+
+        return category === filter;
+
+    }
+
+
+    /* ==================== SEARCH AND FILTER ==================== */
+
+    function filterProducts() {
+
+        const query = searchInput.value.trim().toLowerCase();
+
+        let visible = 0;
+
+        const productCards = Array.from(
+            productGrid.querySelectorAll(".product-item")
+        );
+
+        productCards.forEach(function (card) {
+
+            const name = card.dataset.name.toLowerCase();
+            const category = card.dataset.subcategory.toLowerCase();
+
+            const product = products.find(function (item) {
+
+                return item[0] === card.dataset.productId;
+
+            });
+
+            const categoryMatch = product
+                ? matchesCategory(product, selectedFilter)
+                : false;
+
+            const searchMatch =
+                !query ||
+                name.includes(query) ||
+                category.includes(query) ||
+                getDisplayCategory(category).toLowerCase().includes(query);
+
+            const show = categoryMatch && searchMatch;
+
+            card.hidden = !show;
+
+            if (show) {
+                visible++;
+            }
+
+        });
+
+
+        productCount.textContent =
+            visible + (visible === 1 ? " product found" : " products found");
+
+
+        categoryResult.textContent =
+            "Showing " +
+            visible +
+            " product" +
+            (visible === 1 ? "" : "s") +
+            " in " +
+            (categoryNames[selectedFilter] || "this category") +
+            (query ? " matching '" + query + "'" : "") +
+            ".";
+
+
+        categoryButtons.forEach(function (button) {
+
+            const active =
+                button.dataset.kidsFilter === selectedFilter;
+
+            button.classList.toggle("active", active);
+
+            button.setAttribute(
+                "aria-pressed",
+                active ? "true" : "false"
+            );
+
+        });
+
+
+        noProducts.hidden = visible !== 0;
+
+    }
+
+
+    /* ==================== UPDATE CART COUNT ==================== */
+
+    function updateCartCount() {
+
+        const total = cart.reduce(function (sum, item) {
+
+            return sum + Number(item.quantity || 0);
+
+        }, 0);
+
+        cartCount.textContent = total;
+
+    }
+
+
+    /* ==================== SAVE CART ==================== */
+
+    function saveCart() {
+
+        try {
+
+            localStorage.setItem(
+                "ozzoCart",
+                JSON.stringify(cart)
+            );
+
+        } catch (error) {
+
+            console.warn("Cart could not be saved.");
+
+        }
+
+    }
+
+
+    /* ==================== CREATE PRODUCT OBJECT ==================== */
+
+    function makeProductObject(card) {
+
+        const product = products.find(function (item) {
+
+            return item[0] === card.dataset.productId;
+
+        });
+
+        if (!product) {
+            return null;
+        }
+
+        return {
+
+            id: product[0],
+            name: product[1],
+            subcategory: product[2],
+            category: "kids-dresses",
+            price: product[3],
+            mrp: product[4],
+            rating: product[5],
+            reviews: product[6],
+            image: product[7],
+            brand: "OZZO Kids",
+            quantity: 1
+
+        };
+
+    }
+
+
+    /* ==================== CATEGORY BUTTON EVENTS ==================== */
+
+    categoryButtons.forEach(function (button) {
+
+        button.addEventListener("click", function () {
+
+            selectedFilter = button.dataset.kidsFilter || "all";
+
+            filterProducts();
+
+            if (window.innerWidth < 600) {
+
+                document.getElementById("fashionProducts").scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+
+            }
+
+        });
+
+    });
+
+
+    /* ==================== SEARCH EVENTS ==================== */
+
+    searchInput.addEventListener("input", filterProducts);
+
+
+    /* ==================== WISHLIST AND CART EVENTS ==================== */
+
+    productGrid.addEventListener("click", function (event) {
+
+
+        /* WISHLIST */
+
+        const wishlistButton = event.target.closest(".wishlist");
+
+        if (wishlistButton) {
+
+            event.preventDefault();
+            event.stopPropagation();
+
+            wishlistButton.classList.toggle("active");
+
+            const icon = wishlistButton.querySelector("i");
+
+            const isActive =
+                wishlistButton.classList.contains("active");
+
+            icon.classList.toggle("fa-solid", isActive);
+            icon.classList.toggle("fa-regular", !isActive);
+
+            return;
+
+        }
+
+
+        /* ADD TO CART */
+
+        const addButton = event.target.closest(".add-cart");
+
+        if (addButton) {
+
+            event.preventDefault();
+            event.stopPropagation();
+
+            const card = addButton.closest(".product-item");
+            const product = makeProductObject(card);
+
+            if (!product) {
+                return;
+            }
+
+            const existing = cart.find(function (item) {
+
+                return item.id === product.id;
+
+            });
+
+            if (existing) {
+
+                existing.quantity =
+                    Number(existing.quantity || 0) + 1;
+
+            } else {
+
+                cart.push(product);
+
+            }
+
+            saveCart();
+            updateCartCount();
+
+            addButton.textContent = "Added ✓";
+            addButton.classList.add("added");
+
+            window.setTimeout(function () {
+
+                addButton.textContent = "Add to Cart";
+                addButton.classList.remove("added");
+
+            }, 1200);
+
+            return;
+
+        }
+
+
+        /* OPEN PRODUCT DETAILS */
+
+        const productCard = event.target.closest(".fashion-product-card");
+
+        if (productCard) {
+
+            const card = productCard.closest(".product-item");
+            const product = makeProductObject(card);
+
+            if (!product) {
+                return;
+            }
+
+            try {
+
+                sessionStorage.setItem(
+                    "ozzoSelectedProduct",
+                    JSON.stringify(product)
+                );
+
+            } catch (error) {
+
+                console.warn("Product details could not be saved.");
+
+            }
+
+            window.location.href =
+                "../ProductDetails.html?id=" +
+                encodeURIComponent(product.id) +
+                "&name=" +
+                encodeURIComponent(product.name) +
+                "&price=" +
+                encodeURIComponent(product.price) +
+                "&mrp=" +
+                encodeURIComponent(product.mrp) +
+                "&image=" +
+                encodeURIComponent(product.image);
+
+        }
+
+    });
+
+
+    /* ==================== RESET FILTERS ==================== */
+
+    document.getElementById("resetFilters").addEventListener(
+        "click",
+        function () {
+
+            selectedFilter = "all";
+            searchInput.value = "";
+
+            filterProducts();
+
+        }
+    );
+
+
+    /* ==================== NEWSLETTER ==================== */
+
+    document.getElementById("newsletterForm").addEventListener(
+        "submit",
+        function (event) {
+
+            event.preventDefault();
+
+            document.getElementById("newsletterMessage").textContent =
+                "Thank you for subscribing!";
+
+            this.reset();
+
+        }
+    );
+
+
+    /* ==================== INITIALIZE PAGE ==================== */
+
+    renderProducts();
+    filterProducts();
+    updateCartCount();
+
+});
+
+</script>
+
+</body>
+
+</html>

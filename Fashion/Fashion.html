@@ -311,41 +311,24 @@
 
 </section>
 
-
-<!-- =========================================================
-     CATEGORIES
-========================================================= -->
+<!-- FASHION CATEGORY CARDS -->
 
 <section class="fashion-categories">
 
     <div class="container-fluid px-4">
 
         <div class="section-title">
-
             <div>
-
-                <span>
-                    EXPLORE
-                </span>
-
-                <h2>
-                    Fashion Categories
-                </h2>
-
+                <span>EXPLORE</span>
+                <h2>Fashion Categories</h2>
             </div>
-
         </div>
-
 
         <div class="row g-3">
 
+            <!-- WOMEN -->
             <div class="col-12 col-sm-6 col-lg-3">
-
-                <a
-                    href="#fashionProducts"
-                    class="fashion-category"
-                    data-filter="women"
-                >
+                <a href="/Womens/Womens.html" class="fashion-category">
 
                     <img
                         src="/womens main img.jpg.png"
@@ -354,17 +337,11 @@
                     >
 
                 </a>
-
             </div>
 
-
+            <!-- MEN -->
             <div class="col-12 col-sm-6 col-lg-3">
-
-                <a
-                    href="#fashionProducts"
-                    class="fashion-category"
-                    data-filter="men"
-                >
+                <a href="/Mens/Mens.html" class="fashion-category">
 
                     <img
                         src="../mens main img.png"
@@ -373,36 +350,24 @@
                     >
 
                 </a>
-
             </div>
 
-
+            <!-- INNER WEAR -->
             <div class="col-12 col-sm-6 col-lg-3">
-
-                <a
-                    href="#fashionProducts"
-                    class="fashion-category"
-                    data-filter="innerwear"
-                >
+                <a href="/Inners/Inner.html" class="fashion-category">
 
                     <img
                         src="../Inner main img.png"
-                        alt="Inner Wears"
+                        alt="Inner Wear"
                         class="category-photo"
                     >
 
                 </a>
-
             </div>
 
-
+            <!-- KIDS -->
             <div class="col-12 col-sm-6 col-lg-3">
-
-                <a
-                    href="#fashionProducts"
-                    class="fashion-category"
-                    data-filter="kids"
-                >
+                <a href="/Kids/Kids.html" class="fashion-category">
 
                     <img
                         src="../kids main img.png"
@@ -411,7 +376,6 @@
                     >
 
                 </a>
-
             </div>
 
         </div>
@@ -448,11 +412,11 @@
 
             <div class="product-filters">
 
-                <button class="filter-btn active" data-filter="all" type="button">All</button>
-                <button class="filter-btn" data-filter="women" type="button">Women's Wear</button>
+                 <!--<button class="filter-btn active" data-filter="all" type="button">All</button>
+               <button class="filter-btn" data-filter="women" type="button">Women's Wear</button>
                 <button class="filter-btn" data-filter="men" type="button">Men's Wear</button>
                 <button class="filter-btn" data-filter="innerwear" type="button">Inner Wears</button>
-                <button class="filter-btn" data-filter="kids" type="button">Kids Wear</button>
+                <button class="filter-btn" data-filter="kids" type="button">Kids Wear</button>-->
 
             </div>
 
@@ -15161,19 +15125,19 @@
                     Services
                 </h4>
 
-                <a href="ComingSoon.html?service=Groceries">
+                <a href="/Comming Soon.html">
                     Groceries
                 </a>
 
-                <a href="ComingSoon.html?service=Home%20Cleaning">
+                <a href="/Comming Soon.html">
                     Home Cleaning
                 </a>
 
-                <a href="ComingSoon.html?service=Car%20Rentals">
+                <a href="/Comming Soon.html">
                     Car Rentals
                 </a>
 
-                <a href="ComingSoon.html?service=Computer%20%26%20Services">
+                <a href="/Comming Soon.html">
                     Computer Services
                 </a>
 
@@ -15412,17 +15376,6 @@ document.addEventListener("DOMContentLoaded", function(){
             currentFilter = button.dataset.filter || "all";
             filterButtons.forEach(btn=>btn.classList.toggle("active", btn===button));
             applyFilter();
-        });
-    });
-
-    categoryLinks.forEach(link=>{
-        link.addEventListener("click",event=>{
-            event.preventDefault();
-            currentFilter = link.dataset.filter || "all";
-            if(searchInput) searchInput.value = "";
-            filterButtons.forEach(btn=>btn.classList.toggle("active", btn.dataset.filter===currentFilter));
-            applyFilter();
-            document.getElementById("fashionProducts")?.scrollIntoView({behavior:"smooth",block:"start"});
         });
     });
 
