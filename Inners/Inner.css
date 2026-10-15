@@ -1375,6 +1375,7 @@ line-clamp: 2;
     border-color: #ffffff;
     padding:15px;
     border-radius: 25px;
+    font-weight: bold;
 
 }
 
@@ -2274,6 +2275,11 @@ line-clamp: 2;
         min-height: 39px;
         padding: 0 15px;
         font-size: 10px;
+        padding-top: 15px;
+        text-align: center;
+       width: 300px;
+       font-weight: bold;
+       font-size: 12px;
     }
 
     /* FOOTER */
@@ -2800,4 +2806,258 @@ input:focus-visible {
 
     object-fit:contain !important;
     object-position:center center !important;
+}
+
+/* ==========================================
+   OZZO INNERWEAR CATEGORY RESPONSIVE FIX
+   Sidebar LEFT, products RIGHT
+========================================== */
+
+/* TABLET */
+@media (min-width: 576px) and (max-width: 850px) {
+
+    .men-shop-layout {
+        display: grid !important;
+        grid-template-columns: 185px minmax(0, 1fr) !important;
+        gap: 14px !important;
+        align-items: start;
+    }
+
+    .men-category-section {
+        display: block !important;
+        width: 100%;
+        min-width: 0;
+        position: static !important;
+    }
+
+    .men-category-container {
+        width: 100%;
+        padding: 12px 8px !important;
+    }
+
+    .men-category-options {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 5px;
+    }
+
+    .men-category-btn {
+        width: 100%;
+        min-width: 0;
+        min-height: 34px;
+        padding: 7px 5px !important;
+        font-size: 10px;
+        line-height: 1.4;
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+
+    .men-products-area {
+        min-width: 0;
+        width: 100%;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 575px) {
+
+    .fashion-products > .container-fluid {
+        padding-left: 7px !important;
+        padding-right: 7px !important;
+    }
+
+    .men-shop-layout {
+        display: grid !important;
+        grid-template-columns: 115px minmax(0, 1fr) !important;
+        gap: 8px !important;
+        align-items: start;
+    }
+
+    .men-category-section {
+        display: block !important;
+        width: 100%;
+        min-width: 0;
+        position: static !important;
+    }
+
+    .men-category-container {
+        width: 100%;
+        padding: 9px 5px !important;
+        border-radius: 7px;
+    }
+
+    .men-category-heading {
+        padding-bottom: 10px;
+    }
+
+    .men-category-heading h2 {
+        font-size: 14px !important;
+        line-height: 1.35;
+        overflow-wrap: anywhere;
+    }
+
+    .men-category-heading p {
+        font-size: 9px !important;
+        line-height: 1.5;
+    }
+
+    .men-category-group {
+        padding: 10px 0 !important;
+    }
+
+    .men-category-group-heading {
+        align-items: flex-start;
+        gap: 5px;
+        margin-bottom: 7px;
+    }
+
+    .men-category-group-heading h3 {
+        min-width: 0;
+        font-size: 10px !important;
+        line-height: 1.4;
+        overflow-wrap: anywhere;
+    }
+
+    .men-category-options {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 4px;
+        width: 100%;
+    }
+
+    .men-category-btn {
+        width: 100%;
+        min-width: 0;
+        min-height: 31px;
+        padding: 5px 4px !important;
+        font-size: 9px !important;
+        line-height: 1.4;
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+
+    .men-category-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .men-category-footer span,
+    .men-category-footer a {
+        font-size: 8px;
+        line-height: 1.5;
+        overflow-wrap: anywhere;
+    }
+
+    .men-products-area {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .men-products-area .products-heading h2 {
+        font-size: 17px;
+        line-height: 1.4;
+        overflow-wrap: anywhere;
+    }
+}
+
+/* VERY SMALL PHONES */
+@media (max-width: 360px) {
+
+    .men-shop-layout {
+        grid-template-columns: 100px minmax(0, 1fr) !important;
+        gap: 6px !important;
+    }
+
+    .men-category-container {
+        padding: 7px 4px !important;
+    }
+
+    .men-category-heading h2 {
+        font-size: 12px !important;
+    }
+
+    .men-category-btn {
+        font-size: 8px !important;
+        padding: 5px 3px !important;
+    }
+
+}
+
+/* ==========================================
+   INNERWEAR — REMOVE EMPTY SPACE
+   BETWEEN SIDEBAR AND PRODUCTS
+========================================== */
+
+@media (max-width: 767px) {
+
+    .fashion-products > .container-fluid {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 6px !important;
+        padding-right: 6px !important;
+        margin: 0 !important;
+    }
+
+    .men-shop-layout {
+        display: grid !important;
+        grid-template-columns: 90px minmax(0, 1fr) !important;
+        column-gap: 8px !important;
+        row-gap: 12px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        align-items: start;
+    }
+
+    .men-category-section {
+        width: 100% !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        position: static !important;
+    }
+
+    .men-category-container {
+        width: 100% !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+    }
+
+    .men-products-area {
+        width: 100% !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .men-products-area .product-grid,
+    .men-products-area #productGrid {
+        width: 100% !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 8px !important;
+    }
+
+    .men-products-area .product-card {
+        width: 100% !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+    }
+}
+
+/* EXTRA SMALL PHONES */
+@media (max-width: 360px) {
+    .men-shop-layout {
+        grid-template-columns: 80px minmax(0, 1fr) !important;
+        column-gap: 6px !important;
+    }
+
+    .men-products-area .product-grid,
+    .men-products-area #productGrid {
+        gap: 5px !important;
+    }
 }

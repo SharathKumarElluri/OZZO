@@ -1,5 +1,5 @@
 /* =========================================================
-   OZZO MEN'S FASHION
+   OZZO women'S FASHION
    PREMIUM RESPONSIVE CORPORATE DESIGN
    HEADER & FOOTER MATCH OZZO FASHION
 ========================================================= */
@@ -1375,6 +1375,7 @@ line-clamp: 2;
     border-color: #ffffff;
     padding:15px;
     border-radius: 25px;
+    font-weight: bold;
 
 }
 
@@ -2270,10 +2271,16 @@ line-clamp: 2;
         font-size: 11px;
     }
 
+    
     .promo-button {
         min-height: 39px;
         padding: 0 15px;
         font-size: 10px;
+        padding-top: 15px;
+        text-align: center;
+       width: 300px;
+       font-weight: bold;
+       font-size: 12px;
     }
 
     /* FOOTER */
@@ -2800,4 +2807,301 @@ input:focus-visible {
 
     object-fit:contain !important;
     object-position:center center !important;
+}
+
+/* =========================================
+   OZZO women'S FASHION
+   LEFT SIDEBAR ON TABLET AND MOBILE
+========================================= */
+
+/* TABLETS AND SMALL LAPTOPS */
+@media (max-width: 850px) {
+
+    .women-shop-layout {
+        display: grid !important;
+        grid-template-columns: 190px minmax(0, 1fr) !important;
+        align-items: start;
+        gap: 16px !important;
+    }
+
+    .women-category-section {
+        display: block !important;
+        position: static !important;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .women-category-container {
+        width: 100%;
+        padding: 12px 10px !important;
+        overflow: hidden;
+    }
+
+    .women-category-heading h2 {
+        font-size: 17px;
+        line-height: 1.3;
+    }
+
+    .women-category-heading p {
+        font-size: 10px;
+    }
+
+    .women-category-options {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 5px;
+    }
+
+    .women-category-btn {
+        width: 100%;
+        min-width: 0;
+        min-height: 34px;
+        padding: 7px !important;
+        font-size: 10px;
+        line-height: 1.4;
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+
+    .women-category-group-heading h3 {
+        font-size: 11px;
+    }
+
+    .women-category-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 9px;
+    }
+
+    .women-products-area {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .products-heading {
+        display: block;
+    }
+
+    .products-heading h2 {
+        font-size: 22px;
+    }
+
+    .product-grid,
+    #productGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 12px;
+    }
+
+    .product-card {
+        min-width: 0;
+    }
+
+}
+
+/* MOBILE PHONES */
+@media (max-width: 575px) {
+
+    .fashion-products {
+        padding: 25px 0 40px;
+    }
+
+    .fashion-products > .container-fluid {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+
+    .women-shop-layout {
+        grid-template-columns: 125px minmax(0, 1fr) !important;
+        gap: 9px !important;
+    }
+
+    .women-category-container {
+        padding: 9px 6px !important;
+        border-radius: 6px;
+    }
+
+    .women-category-heading {
+        padding: 0 0 10px;
+    }
+
+    .women-category-eyebrow {
+        font-size: 7px;
+        letter-spacing: 0.5px;
+    }
+
+    .women-category-heading h2 {
+        margin: 6px 0;
+        font-size: 14px;
+        line-height: 1.3;
+    }
+
+    .women-category-heading p {
+        font-size: 9px;
+        line-height: 1.5;
+    }
+
+    .women-category-group {
+        padding: 10px 0;
+    }
+
+    .women-category-group-heading {
+        align-items: flex-start;
+        gap: 5px;
+        margin-bottom: 7px;
+    }
+
+    .women-category-group-heading > span {
+        width: 19px;
+        height: 19px;
+        font-size: 8px;
+    }
+
+    .women-category-group-heading h3 {
+        font-size: 10px;
+        line-height: 1.4;
+    }
+
+    .women-category-options {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 4px;
+    }
+
+    .women-category-btn {
+        min-height: 32px;
+        padding: 6px 5px !important;
+        font-size: 9px;
+        line-height: 1.35;
+        text-align: left;
+    }
+
+    .women-category-btn i {
+        width: 10px;
+        font-size: 8px;
+    }
+
+    .women-category-footer {
+        padding-top: 10px;
+        gap: 8px;
+    }
+
+    .women-category-footer > span,
+    .women-category-footer a {
+        font-size: 9px;
+    }
+
+    .products-heading {
+        margin-bottom: 12px;
+        padding-bottom: 10px;
+    }
+
+    .section-label {
+        font-size: 7px;
+        letter-spacing: 1px;
+    }
+
+    .products-heading h2 {
+        font-size: 17px;
+        line-height: 1.35;
+    }
+
+    .products-heading p {
+        font-size: 10px;
+    }
+
+    .category-product-count {
+        margin-top: 8px;
+        padding: 6px 7px;
+        font-size: 9px;
+    }
+
+    .product-grid,
+    #productGrid {
+        grid-template-columns: minmax(0, 1fr) !important;
+        gap: 10px;
+    }
+
+    .product-info {
+        padding: 8px;
+    }
+
+}
+
+
+
+/* ==========================================
+   INNERWEAR — REMOVE EMPTY SPACE
+   BETWEEN SIDEBAR AND PRODUCTS
+========================================== */
+
+@media (max-width: 767px) {
+
+    .fashion-products > .container-fluid {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 6px !important;
+        padding-right: 6px !important;
+        margin: 0 !important;
+    }
+
+    .women-shop-layout {
+        display: grid !important;
+        grid-template-columns: 90px minmax(0, 1fr) !important;
+        column-gap: 8px !important;
+        row-gap: 12px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        align-items: start;
+    }
+
+    .women-category-section {
+        width: 100% !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        position: static !important;
+    }
+
+    .women-category-container {
+        width: 100% !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+    }
+
+    .women-products-area {
+        width: 100% !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .women-products-area .product-grid,
+    .women-products-area #productGrid {
+        width: 100% !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 8px !important;
+    }
+
+    .women-products-area .product-card {
+        width: 100% !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+    }
+}
+
+/* EXTRA SMALL PHONES */
+@media (max-width: 360px) {
+    .women-shop-layout {
+        grid-template-columns: 80px minmax(0, 1fr) !important;
+        column-gap: 6px !important;
+    }
+
+    .women-products-area .product-grid,
+    .women-products-area #productGrid {
+        gap: 5px !important;
+    }
 }
