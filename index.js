@@ -888,3 +888,23 @@ document.addEventListener("DOMContentLoaded", () => {
     updateCartCount();
 
 });
+
+/* FEATURED PRODUCT CATEGORY NAVIGATION */
+
+document.querySelectorAll(
+    ".featured-section .product-tabs .tab-btn"
+).forEach(function (tab) {
+
+    tab.addEventListener("click", function () {
+
+        document.querySelectorAll(
+            ".featured-section .product-tabs .tab-btn"
+        ).forEach(function (button) {
+            button.classList.remove("active");
+        });
+
+        this.classList.add("active");
+
+    });
+
+});

@@ -3252,3 +3252,17 @@ body{
     object-fit:contain !important;
     object-position:center center !important;
 }
+/* =========================================
+   REMOVE BLUE TEXT-SELECTION HIGHLIGHT
+   ACROSS OZZO PAGES
+========================================= */
+
+::selection {
+    background: transparent !important;
+    color: inherit !important;
+}
+
+::-moz-selection {
+    background: transparent !important;
+    color: inherit !important;
+}

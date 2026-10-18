@@ -2960,3 +2960,17 @@ button{
     text-decoration: none;
     cursor: pointer;
 }
+/* =========================================
+   REMOVE BLUE TEXT-SELECTION HIGHLIGHT
+   ACROSS OZZO PAGES
+========================================= */
+
+::selection {
+    background: transparent !important;
+    color: inherit !important;
+}
+
+::-moz-selection {
+    background: transparent !important;
+    color: inherit !important;
+}

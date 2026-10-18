@@ -781,3 +781,17 @@ a {
         text-align: center;
     }
 }
+/* =========================================
+   REMOVE BLUE TEXT-SELECTION HIGHLIGHT
+   ACROSS OZZO PAGES
+========================================= */
+
+::selection {
+    background: transparent !important;
+    color: inherit !important;
+}
+
+::-moz-selection {
+    background: transparent !important;
+    color: inherit !important;
+}
