@@ -1486,6 +1486,121 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /* =========================================================
+   GAS PRODUCTS
+   IMPORTANT:
+   IDs exactly match Gas.html
+========================================================= */
+
+const gas = [
+
+    {
+        id: "gas-001",
+        category: "Gas",
+        subcategory: "Safety",
+        name: "Anvi Gas Safety Device",
+        brand: "OZZO Gas",
+        price: 499,
+        mrp: 599,
+        rating: 5,
+        reviews: 748,
+        image: "/Anvi Gas safety device.jpg"
+    },
+
+    {
+        id: "gas-002",
+        category: "Gas",
+        subcategory: "Safety",
+        name: "Anvi Deluxe Gas Safety Device",
+        brand: "OZZO Gas",
+        price: 699,
+        mrp: 849,
+        rating: 5,
+        reviews: 1126,
+        image: "/Anvi deluxe gas safety device"
+    },
+
+    {
+        id: "gas-003",
+        category: "Gas",
+        subcategory: "Regulator",
+        name: "LPG Pressure Regulator",
+        brand: "OZZO Gas",
+        price: 549,
+        mrp: 699,
+        rating: 5,
+        reviews: 986,
+        image: "/Lpg pressure regulator"
+    },
+
+    {
+        id: "gas-004",
+        category: "Gas",
+        subcategory: "Regulator",
+        name: "Premium LPG Gas Regulator",
+        brand: "OZZO Gas",
+        price: 749,
+        mrp: 899,
+        rating: 5,
+        reviews: 642,
+        image: "/Gas 1.jpeg"
+    },
+
+    {
+        id: "gas-005",
+        category: "Gas",
+        subcategory: "Accessories",
+        name: "LPG Gas Connection Accessory",
+        brand: "OZZO Gas",
+        price: 299,
+        mrp: 399,
+        rating: 5,
+        reviews: 534,
+        image: "/LPG Gas connection Accessory"
+    },
+
+    {
+        id: "gas-006",
+        category: "Gas",
+        subcategory: "Accessories",
+        name: "Gas Safety Connection Kit",
+        brand: "OZZO Gas",
+        price: 449,
+        mrp: 599,
+        rating: 5,
+        reviews: 816,
+        image: "/Gas safety connection kit"
+    },
+
+    {
+        id: "gas-007",
+        category: "Gas",
+        subcategory: "Safety",
+        name: "Double Safety Gas Device",
+        brand: "OZZO Gas",
+        price: 799,
+        mrp: 999,
+        rating: 5,
+        reviews: 624,
+        image: "/Gas Safety.jpeg"
+    },
+
+    {
+        id: "gas-008",
+        category: "Gas",
+        subcategory: "Regulator",
+        name: "Heavy Duty LPG Regulator",
+        brand: "OZZO Gas",
+        price: 649,
+        mrp: 799,
+        rating: 5,
+        reviews: 1200,
+        image: "/Heavy duty lpg regulator"
+    }
+
+];
+
+
+    /* =========================================================
        CATEGORY CATALOGS
     ========================================================== */
 
@@ -1495,7 +1610,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         stationery,
 
-        pads
+        pads,
+
+        gas
 
     };
 
@@ -1505,52 +1622,16 @@ document.addEventListener("DOMContentLoaded", () => {
     ========================================================== */
 
     function normalizeCategory(value) {
+    const v = String(value || "").toLowerCase();
 
-        const text =
-            String(value || "")
-                .trim()
-                .toLowerCase();
+    if (v.includes("gas")) return "gas";
+    if (v.includes("station")) return "stationery";
+    if (v.includes("book")) return "books";
+    if (v.includes("pad")) return "pads";
+    if (v.includes("fashion")) return "fashion";
 
-
-        if (
-            text.includes("stationer")
-        ) {
-
-            return "stationery";
-
-        }
-
-
-        if (
-            text.includes("book")
-        ) {
-
-            return "books";
-
-        }
-
-
-        if (
-            text.includes("pad")
-        ) {
-
-            return "pads";
-
-        }
-
-
-        if (
-            text.includes("fashion")
-        ) {
-
-            return "fashion";
-
-        }
-
-
-        return "";
-
-    }
+    return "";
+}
 
 
     /* =========================================================
@@ -1558,55 +1639,16 @@ document.addEventListener("DOMContentLoaded", () => {
     ========================================================== */
 
     function categoryFromId(value) {
+    const v = String(value || "").toLowerCase();
 
-        const id =
-            String(value || "")
-                .trim()
-                .toLowerCase();
+    if (v.includes("gas")) return "gas";
+    if (v.includes("book")) return "books";
+    if (v.includes("station")) return "stationery";
+    if (v.includes("pad")) return "pads";
+    if (v.includes("fashion")) return "fashion";
 
-
-        if (
-            id.startsWith("book-") ||
-            id.startsWith("books-")
-        ) {
-
-            return "books";
-
-        }
-
-
-        if (
-            id.startsWith("stationery-") ||
-            id.startsWith("stationary-")
-        ) {
-
-            return "stationery";
-
-        }
-
-
-        if (
-            id.startsWith("pad-") ||
-            id.startsWith("pads-")
-        ) {
-
-            return "pads";
-
-        }
-
-
-        if (
-            id.startsWith("fashion-")
-        ) {
-
-            return "fashion";
-
-        }
-
-
-        return "";
-
-    }
+    return "";
+}
 
 
     /* =========================================================
@@ -1840,47 +1882,49 @@ document.addEventListener("DOMContentLoaded", () => {
 
         }
 
-
-        let brand =
-            source.brand;
-
-
-        if (!brand) {
-
-            if (
-                categoryKey === "books"
-            ) {
-
-                brand = "OZZO Books";
+        else if (categoryKey === "gas") {
+ 
+          category = "Gas";
 
             }
 
-            else if (
-                categoryKey === "stationery"
-            ) {
 
-                brand = "OZZO Stationery";
+        let brand = source.brand;
 
+          if (!brand) {
+
+              if (categoryKey === "books") {
+
+                  brand = "OZZO Books";
+
+                }
+
+                else if (categoryKey === "stationery") {
+
+                     brand = "OZZO Stationery";
+
+                }
+
+                else if (categoryKey === "pads") {
+
+                  brand = "OZZO Care";
+
+                }
+
+                else if (categoryKey === "gas") {
+
+                    brand = "OZZO Gas";
+
+                }
+
+                else {
+
+                   brand = "OZZO Fashion";
+
+                }
             }
 
-            else if (
-                categoryKey === "pads"
-            ) {
-
-                brand = "OZZO Care";
-
-            }
-
-            else {
-
-                brand = "OZZO Fashion";
-
-            }
-
-        }
-
-
-        return {
+         return {
 
             id:
                 url.id ||
@@ -2400,7 +2444,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Pads/Pads.html";
 
         }
+         else if (product.categoryKey === "gas") {
 
+             $("breadcrumbCategory").href = "Gas/Gas.html";
+
+        }
         else {
 
             $("breadcrumbCategory").href =
@@ -3253,425 +3301,244 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    /* =========================================================
-       RELATED PRODUCTS
-       IMPORTANT:
-       SAME CATEGORY ONLY
-    ========================================================== */
+  /* =========================================================
+   RELATED PRODUCTS
+   Supports:
+   - Fashion
+   - Books
+   - Stationery
+   - Pads
+   - Gas
+========================================================= */
 
-    const relatedContainer =
-        $("relatedProducts");
+const relatedContainer = $("relatedProducts");
 
+if (relatedContainer) {
 
-    if (
-        relatedContainer
-    ) {
+    relatedContainer.innerHTML = "";
 
-        relatedContainer.innerHTML =
-            "";
+    const currentCategory =
+        product.categoryKey ||
+        normalizeCategory(product.category);
 
+    let relatedProducts = [];
 
-        const currentCategory =
-            product.categoryKey ||
-            normalizeCategory(
-                product.category
-            );
+    /* =====================================================
+       SELECT CATEGORY PRODUCTS
+    ===================================================== */
 
+    if (currentCategory === "fashion") {
 
-        let relatedProducts = [];
+        relatedProducts = Object.values(products)
+            .filter(item => item.id !== product.id)
+            .slice(0, 4);
 
+    }
 
-        /* -----------------------------------------------------
-           FASHION
-        ----------------------------------------------------- */
+    else if (catalogs[currentCategory]) {
 
-        if (
-            currentCategory ===
-            "fashion"
-        ) {
+        relatedProducts = catalogs[currentCategory]
+            .filter(item => item.id !== product.id)
+            .slice(0, 4);
 
-            relatedProducts =
-                Object.values(
-                    products
-                )
-                .filter(
-                    item =>
-                        item.id !==
-                        product.id
-                )
-                .slice(
-                    0,
-                    4
-                );
+    }
 
-        }
+    /* =====================================================
+       RENDER RELATED PRODUCTS
+    ===================================================== */
 
+    relatedProducts.forEach(item => {
 
-        /* -----------------------------------------------------
-           BOOKS
-        ----------------------------------------------------- */
+        const image =
+            item.image ||
+            item.images?.[0] ||
+            "https://placehold.co/800x800/f3f3f3/132438?text=OZZO";
 
-        else if (
-            currentCategory ===
-            "books"
-        ) {
+        const card = document.createElement("article");
 
-            relatedProducts =
-                books
-                .filter(
-                    item =>
-                        item.id !==
-                        product.id
-                )
-                .slice(
-                    0,
-                    4
-                );
+        card.className = "related-card";
 
-        }
+        card.innerHTML = `
 
+            <a href="#" class="related-product-link">
 
-        /* -----------------------------------------------------
-           STATIONERY
-        ----------------------------------------------------- */
+                <div class="related-image">
 
-        else if (
-            currentCategory ===
-            "stationery"
-        ) {
-
-            relatedProducts =
-                stationery
-                .filter(
-                    item =>
-                        item.id !==
-                        product.id
-                )
-                .slice(
-                    0,
-                    4
-                );
-
-        }
-
-
-        /* -----------------------------------------------------
-           PADS
-        ----------------------------------------------------- */
-
-        else if (
-            currentCategory ===
-            "pads"
-        ) {
-
-            relatedProducts =
-                pads
-                .filter(
-                    item =>
-                        item.id !==
-                        product.id
-                )
-                .slice(
-                    0,
-                    4
-                );
-
-        }
-
-
-        /* -----------------------------------------------------
-           RENDER RELATED PRODUCTS
-        ----------------------------------------------------- */
-
-        relatedProducts.forEach(
-            item => {
-
-                const image =
-                    item.image ||
-                    item.images?.[0] ||
-                    "https://placehold.co/800x800/f3f3f3/132438?text=OZZO";
-
-
-                const card =
-                    document.createElement(
-                        "article"
-                    );
-
-
-                card.className =
-                    "related-card";
-
-
-                card.innerHTML = `
-
-                    <a
-                        href="#"
-                        class="related-product-link"
+                    <img
+                        src="${image}"
+                        alt="${item.name}"
+                        loading="lazy"
                     >
 
-                        <div class="related-image">
-
-                            <img
-                                src="${image}"
-                                alt="${item.name}"
-                            >
-
-                            <span class="related-category">
-                                ${item.category}
-                            </span>
-
-                        </div>
-
-
-                        <div class="related-content">
-
-                            <h3>
-                                ${item.name}
-                            </h3>
-
-
-                            <div class="related-rating">
-
-                                ${item.rating}
-
-                                <i
-                                    class="fa-solid fa-star"
-                                    aria-hidden="true"
-                                ></i>
-
-                                (${item.reviews})
-
-                            </div>
-
-
-                            <div>
-
-                                <span class="related-price">
-
-                                    ₹${Number(
-                                        item.price
-                                    ).toLocaleString(
-                                        "en-IN"
-                                    )}
-
-                                </span>
-
-
-                                <del class="related-old-price">
-
-                                    ₹${Number(
-                                        item.mrp
-                                    ).toLocaleString(
-                                        "en-IN"
-                                    )}
-
-                                </del>
-
-                            </div>
-
-                        </div>
-
-                    </a>
-
-                `;
-
-
-                setupImageFallback(
-                    card.querySelector(
-                        "img"
-                    )
-                );
-
-
-                const link =
-                    card.querySelector(
-                        ".related-product-link"
-                    );
-
-
-                link.addEventListener(
-                    "click",
-                    event => {
-
-                        event.preventDefault();
-
-
-                        const selected = {
-
-                            id:
-                                item.id,
-
-                            name:
-                                item.name,
-
-                            price:
-                                Number(
-                                    item.price
-                                ),
-
-                            mrp:
-                                Number(
-                                    item.mrp ||
-                                    item.price
-                                ),
-
-                            image:
-                                image,
-
-                            images:
-                                [
-                                    image
-                                ],
-
-                            category:
-                                item.category,
-
-                            categoryKey:
-                                currentCategory,
-
-                            subcategory:
-                                item.subcategory ||
-                                currentCategory,
-
-                            brand:
-                                item.brand ||
-                                "OZZO",
-
-                            rating:
-                                Number(
-                                    item.rating ||
-                                    5
-                                ),
-
-                            reviews:
-                                Number(
-                                    item.reviews ||
-                                    0
-                                ),
-
-                            bought:
-                                item.bought ||
-                                "80+ bought in past month",
-
-                            description:
-                                item.description ||
-                                [
-
-                                    `${item.name} from the OZZO ${String(
-                                        item.category
-                                    ).toLowerCase()} collection.`,
-
-                                    "Selected for everyday use and practical value.",
-
-                                    `Part of the ${String(
-                                        item.subcategory ||
-                                        currentCategory
-                                    ).toLowerCase()} range.`,
-
-                                    "Designed for a dependable everyday experience."
-
-                                ]
-
-                        };
-
-
-                        try {
-
-                            sessionStorage.setItem(
-                                "ozzoSelectedProduct",
-                                JSON.stringify(
-                                    selected
-                                )
-                            );
-
-                        } catch (error) {
-
-                            console.error(
-                                "Unable to save selected product:",
-                                error
-                            );
-
-                        }
-
-
-                        const detailParams =
-                            new URLSearchParams({
-
-                                id:
-                                    selected.id,
-
-                                name:
-                                    selected.name,
-
-                                price:
-                                    String(
-                                        selected.price
-                                    ),
-
-                                mrp:
-                                    String(
-                                        selected.mrp
-                                    ),
-
-                                image:
-                                    selected.image,
-
-                                category:
-                                    selected.category,
-
-                                subcategory:
-                                    selected.subcategory,
-
-                                rating:
-                                    String(
-                                        selected.rating
-                                    ),
-
-                                reviews:
-                                    String(
-                                        selected.reviews
-                                    )
-
-                            });
-
-
-                        window.location.href =
-                            `ProductDetails.html?${detailParams.toString()}`;
-
-                    }
-                );
-
-
-                relatedContainer.appendChild(
-                    card
-                );
-
-            }
-        );
-
-
-        /* -----------------------------------------------------
-           EMPTY RELATED PRODUCTS
-        ----------------------------------------------------- */
-
-        if (
-            !relatedProducts.length
-        ) {
-
-            relatedContainer.innerHTML = `
-
-                <div class="related-empty">
-
-                    No related products available
-                    in this category.
+                    <span class="related-category">
+                        ${item.category}
+                    </span>
 
                 </div>
 
-            `;
+                <div class="related-content">
 
-        }
+                    <h3>
+                        ${item.name}
+                    </h3>
+
+                    <div class="related-rating">
+
+                        ${item.rating || 5}
+
+                        <i
+                            class="fa-solid fa-star"
+                            aria-hidden="true"
+                        ></i>
+
+                        (${item.reviews || 0})
+
+                    </div>
+
+                    <div>
+
+                        <span class="related-price">
+                            ₹${Number(item.price).toLocaleString("en-IN")}
+                        </span>
+
+                        <del class="related-old-price">
+                            ₹${Number(item.mrp || item.price).toLocaleString("en-IN")}
+                        </del>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+        `;
+
+        setupImageFallback(
+            card.querySelector("img")
+        );
+
+        /* =================================================
+           RELATED PRODUCT CLICK
+        ================================================= */
+
+        const link = card.querySelector(".related-product-link");
+
+        link.addEventListener("click", event => {
+
+            event.preventDefault();
+
+            const selected = {
+
+                id: item.id,
+
+                name: item.name,
+
+                price: Number(item.price),
+
+                mrp: Number(item.mrp || item.price),
+
+                image: image,
+
+                images: [image],
+
+                category: item.category,
+
+                categoryKey: currentCategory,
+
+                subcategory:
+                    item.subcategory || currentCategory,
+
+                brand: item.brand || "OZZO",
+
+                rating: Number(item.rating || 5),
+
+                reviews: Number(item.reviews || 0),
+
+                bought:
+                    item.bought || "80+ bought in past month",
+
+                description:
+                    item.description || [
+
+                        `${item.name} from the OZZO ${String(item.category).toLowerCase()} collection.`,
+
+                        "Selected for everyday use and practical value.",
+
+                        `Part of the ${String(item.subcategory || currentCategory).toLowerCase()} range.`,
+
+                        "Designed for a dependable everyday experience."
+
+                    ]
+
+            };
+
+            try {
+
+                sessionStorage.setItem(
+                    "ozzoSelectedProduct",
+                    JSON.stringify(selected)
+                );
+
+            } catch (error) {
+
+                console.error(
+                    "Unable to save selected product:",
+                    error
+                );
+
+            }
+
+            const detailParams = new URLSearchParams({
+
+                id: selected.id,
+
+                name: selected.name,
+
+                price: String(selected.price),
+
+                mrp: String(selected.mrp),
+
+                image: selected.image,
+
+                category: selected.category,
+
+                subcategory: selected.subcategory,
+
+                rating: String(selected.rating),
+
+                reviews: String(selected.reviews)
+
+            });
+
+            window.location.href =
+                `ProductDetails.html?${detailParams.toString()}`;
+
+        });
+
+        relatedContainer.appendChild(card);
+
+    });
+
+    /* =====================================================
+       EMPTY STATE
+    ===================================================== */
+
+    if (!relatedProducts.length) {
+
+        relatedContainer.innerHTML = `
+
+            <div class="related-empty">
+
+                No related products available
+                in this category.
+
+            </div>
+
+        `;
 
     }
+
+}
 
 
     /* =========================================================

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,17 +8,15 @@
 
     <link rel="icon" type="image/png" href="../OZZO logo.png">
 
-    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
 
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Women's Fashion CSS -->
     <link rel="stylesheet" href="Womens.css">
+
+
 </head>
 
 <body class="ozzo-category-page page-women">
@@ -38,7 +35,7 @@
             <a href="#">Help</a>
             <span>|</span>
             <a href="#" class="login-link">
-                <i class="fa-regular fa-user" aria-hidden="true"></i>
+                <i class="fa-regular fa-user"></i>
                 Login
             </a>
         </div>
@@ -67,19 +64,23 @@
                 data-bs-target="#ozzoNavbar"
                 aria-controls="ozzoNavbar"
                 aria-expanded="false"
-                aria-label="Toggle navigation">
+                aria-label="Toggle navigation"
+                title="Toggle navigation"
+            >
 
                 <i class="fa-solid fa-bars"></i>
+
             </button>
 
             <div class="collapse navbar-collapse" id="ozzoNavbar">
+
                 <ul class="navbar-nav main-nav mx-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="../index.html">Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link " href="/Fashion/Fashion.html">Fashion</a>
+                        <a class="nav-link" href="/Fashion/Fashion.html">Fashion</a>
                     </li>
 
                     <li class="nav-item">
@@ -93,9 +94,14 @@
                     <li class="nav-item">
                         <a class="nav-link" href="../Pads/Pads.html">Pads</a>
                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Gas/Gas.html">Gas</a>
+                    </li>
                 </ul>
 
                 <div class="header-actions">
+
                     <div class="search-box">
                         <input
                             type="text"
@@ -103,27 +109,24 @@
                             placeholder="Search women's fashion..."
                             aria-label="Search women's fashion products">
 
-                        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
 
-                    <a
-                        class="header-icon wishlist-button"
-                        href="../Wishlist/Wishlist.html"
-                        title="Wishlist"
-                        aria-label="Wishlist">
-
-                        <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                    <a class="header-icon wishlist-button"
+                       href="../Wishlist/Wishlist.html"
+                       title="Wishlist"
+                       aria-label="Wishlist">
+                        <i class="fa-regular fa-heart"></i>
                     </a>
 
-                    <a
-                        href="../Cart/Cart.html"
-                        class="header-icon cart-button"
-                        title="Shopping Cart"
-                        aria-label="Shopping Cart">
-
-                        <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+                    <a href="../Cart/Cart.html"
+                       class="header-icon cart-button"
+                       title="Shopping Cart"
+                       aria-label="Shopping Cart">
+                        <i class="fa-solid fa-bag-shopping"></i>
                         <span class="cart-count" id="cartCount">0</span>
                     </a>
+
                 </div>
             </div>
         </div>
@@ -133,6 +136,7 @@
 <!-- HERO -->
 <section class="fashion-hero">
     <div class="container-fluid p-0">
+
         <div class="fashion-hero-content">
 
             <div class="fashion-hero-copy">
@@ -171,6 +175,7 @@
 
 <!-- PRODUCTS AND CATEGORY FILTERS -->
 <main class="fashion-products" id="fashionProducts">
+
     <div class="container-fluid px-4">
 
         <div class="women-shop-layout">
@@ -191,268 +196,188 @@
                         </p>
                     </div>
 
-                    <!-- CATEGORY 01: TOPS AND SHIRTS -->
+                    <!-- CATEGORY 01 -->
                     <div class="women-category-group">
+
                         <div class="women-category-group-heading">
                             <span>01</span>
                             <h3>Tops &amp; Shirts</h3>
                         </div>
 
-                        <div
-                            class="women-category-options"
-                            role="group"
-                            aria-label="Filter tops and shirts">
+                        <div class="women-category-options" role="group" aria-label="Filter tops and shirts">
 
-                            <button
-                                type="button"
-                                class="women-category-btn active"
-                                data-women-filter="all"
-                                aria-pressed="true">
-
+                            <button type="button" class="women-category-btn active"
+                                data-women-filter="all" aria-pressed="true">
                                 <i class="fa-solid fa-border-all"></i>
                                 All Women's Wear
                             </button>
 
-                            <button
-                                type="button"
-                                class="women-category-btn"
-                                data-women-filter="tops"
-                                aria-pressed="false">
+                            <button type="button" class="women-category-btn"
+                                data-women-filter="tops" aria-pressed="false">
                                 All Tops
                             </button>
 
-                            <button
-                                type="button"
-                                class="women-category-btn"
-                                data-women-filter="t-shirts"
-                                aria-pressed="false">
+                            <button type="button" class="women-category-btn"
+                                data-women-filter="t-shirts" aria-pressed="false">
                                 T-Shirts
                             </button>
 
-                            <button
-                                type="button"
-                                class="women-category-btn"
-                                data-women-filter="shirts"
-                                aria-pressed="false">
+                            <button type="button" class="women-category-btn"
+                                data-women-filter="shirts" aria-pressed="false">
                                 Shirts
                             </button>
 
-                            <button
-                                type="button"
-                                class="women-category-btn"
-                                data-women-filter="crop-tops"
-                                aria-pressed="false">
+                            <button type="button" class="women-category-btn"
+                                data-women-filter="crop-tops" aria-pressed="false">
                                 Crop Tops
                             </button>
 
-                            <button
-                                type="button"
-                                class="women-category-btn"
-                                data-women-filter="blouses"
-                                aria-pressed="false">
+                            <button type="button" class="women-category-btn"
+                                data-women-filter="blouses" aria-pressed="false">
                                 Blouses
                             </button>
 
-                            <button
-                                type="button"
-                                class="women-category-btn"
-                                data-women-filter="tunics"
-                                aria-pressed="false">
+                            <button type="button" class="women-category-btn"
+                                data-women-filter="tunics" aria-pressed="false">
                                 Tunics
                             </button>
+
                         </div>
                     </div>
 
-                    <!-- CATEGORY 02: DRESSES AND ETHNIC WEAR -->
+                    <!-- CATEGORY 02 -->
                     <div class="women-category-group">
+
                         <div class="women-category-group-heading">
                             <span>02</span>
                             <h3>Dresses &amp; Ethnic Wear</h3>
                         </div>
 
-                        <div
-                            class="women-category-options"
-                            role="group"
-                            aria-label="Filter dresses and ethnic wear">
+                        <div class="women-category-options" role="group" aria-label="Filter dresses and ethnic wear">
 
-                            <button
-                                type="button"
-                                class="women-category-btn"
-                                data-women-filter="dresses"
-                                aria-pressed="false">
+                            <button type="button" class="women-category-btn"
+                                data-women-filter="dresses" aria-pressed="false">
                                 All Dresses
                             </button>
 
-                            <button
-                                type="button"
-                                class="women-category-btn"
-                                data-women-filter="casual-dresses"
-                                aria-pressed="false">
+                            <button type="button" class="women-category-btn"
+                                data-women-filter="casual-dresses" aria-pressed="false">
                                 Casual Dresses
                             </button>
 
-                            <button
-                                type="button"
-                                class="women-category-btn"
-                                data-women-filter="maxi-dresses"
-                                aria-pressed="false">
+                            <button type="button" class="women-category-btn"
+                                data-women-filter="maxi-dresses" aria-pressed="false">
                                 Maxi Dresses
                             </button>
 
-                            <button
-                                type="button"
-                                class="women-category-btn"
-                                data-women-filter="party-wear"
-                                aria-pressed="false">
+                            <button type="button" class="women-category-btn"
+                                data-women-filter="party-wear" aria-pressed="false">
                                 Party Wear
                             </button>
 
-                            <button
-                                type="button"
-                                class="women-category-btn"
-                                data-women-filter="kurtas"
-                                aria-pressed="false">
+                            <button type="button" class="women-category-btn"
+                                data-women-filter="kurtas" aria-pressed="false">
                                 Kurtas
                             </button>
 
-                            <button
-                                type="button"
-                                class="women-category-btn"
-                                data-women-filter="ethnic-wear"
-                                aria-pressed="false">
+                            <button type="button" class="women-category-btn"
+                                data-women-filter="ethnic-wear" aria-pressed="false">
                                 Ethnic Wear
                             </button>
+
                         </div>
                     </div>
 
-                    <!-- CATEGORY 03: SAREES -->
+                    <!-- CATEGORY 03 -->
                     <div class="women-category-group">
+
                         <div class="women-category-group-heading">
                             <span>03</span>
                             <h3>Sarees</h3>
                         </div>
 
-                        <div
-                            class="women-category-options"
-                            role="group"
-                            aria-label="Filter sarees">
+                        <div class="women-category-options" role="group" aria-label="Filter sarees">
 
-                            <button
-                                type="button"
-                                class="women-category-btn"
-                                data-women-filter="all-sarees"
-                                aria-pressed="false">
-
+                            <button type="button" class="women-category-btn"
+                                data-women-filter="all-sarees" aria-pressed="false">
                                 <i class="fa-solid fa-border-all"></i>
                                 All Sarees
                             </button>
 
-                            <button
-                                type="button"
-                                class="women-category-btn"
-                                data-women-filter="pattu-sarees"
-                                aria-pressed="false">
+                            <button type="button" class="women-category-btn"
+                                data-women-filter="pattu-sarees" aria-pressed="false">
                                 Pattu Sarees
                             </button>
 
-                            <button
-                                type="button"
-                                class="women-category-btn"
-                                data-women-filter="fancy-sarees"
-                                aria-pressed="false">
+                            <button type="button" class="women-category-btn"
+                                data-women-filter="fancy-sarees" aria-pressed="false">
                                 Fancy Sarees
                             </button>
 
-                            <button
-                                type="button"
-                                class="women-category-btn"
-                                data-women-filter="daily-wear-sarees"
-                                aria-pressed="false">
+                            <button type="button" class="women-category-btn"
+                                data-women-filter="daily-wear-sarees" aria-pressed="false">
                                 Daily Wear Sarees
                             </button>
 
-                            <button
-                                type="button"
-                                class="women-category-btn"
-                                data-women-filter="cotton-sarees"
-                                aria-pressed="false">
+                            <button type="button" class="women-category-btn"
+                                data-women-filter="cotton-sarees" aria-pressed="false">
                                 Cotton Sarees
                             </button>
+
                         </div>
                     </div>
 
-                    <!-- CATEGORY 04: PANTS AND BOTTOMS -->
+                    <!-- CATEGORY 04 -->
                     <div class="women-category-group">
+
                         <div class="women-category-group-heading">
                             <span>04</span>
                             <h3>Pants &amp; Bottoms</h3>
                         </div>
 
-                        <div
-                            class="women-category-options"
-                            role="group"
-                            aria-label="Filter pants and bottoms">
+                        <div class="women-category-options" role="group" aria-label="Filter pants and bottoms">
 
-                            <button
-                                type="button"
-                                class="women-category-btn"
-                                data-women-filter="bottoms"
-                                aria-pressed="false">
+                            <button type="button" class="women-category-btn"
+                                data-women-filter="bottoms" aria-pressed="false">
                                 All Bottoms
                             </button>
 
-                            <button
-                                type="button"
-                                class="women-category-btn"
-                                data-women-filter="jeans"
-                                aria-pressed="false">
+                            <button type="button" class="women-category-btn"
+                                data-women-filter="jeans" aria-pressed="false">
                                 Jeans
                             </button>
 
-                            <button
-                                type="button"
-                                class="women-category-btn"
-                                data-women-filter="trousers"
-                                aria-pressed="false">
+                            <button type="button" class="women-category-btn"
+                                data-women-filter="trousers" aria-pressed="false">
                                 Trousers
                             </button>
 
-                            <button
-                                type="button"
-                                class="women-category-btn"
-                                data-women-filter="wide-leg-pants"
-                                aria-pressed="false">
+                            <button type="button" class="women-category-btn"
+                                data-women-filter="wide-leg-pants" aria-pressed="false">
                                 Wide-Leg Pants
                             </button>
 
-                            <button
-                                type="button"
-                                class="women-category-btn"
-                                data-women-filter="leggings"
-                                aria-pressed="false">
+                            <button type="button" class="women-category-btn"
+                                data-women-filter="leggings" aria-pressed="false">
                                 Leggings
                             </button>
 
-                            <button
-                                type="button"
-                                class="women-category-btn"
-                                data-women-filter="skirts"
-                                aria-pressed="false">
+                            <button type="button" class="women-category-btn"
+                                data-women-filter="skirts" aria-pressed="false">
                                 Skirts
                             </button>
 
-                            <button
-                                type="button"
-                                class="women-category-btn"
-                                data-women-filter="shorts"
-                                aria-pressed="false">
+                            <button type="button" class="women-category-btn"
+                                data-women-filter="shorts" aria-pressed="false">
                                 Shorts
                             </button>
+
                         </div>
                     </div>
 
                     <!-- CATEGORY FOOTER -->
                     <div class="women-category-footer">
+
                         <span id="womenCategoryResult" aria-live="polite">
                             Showing all women's clothing
                         </span>
@@ -461,6 +386,7 @@
                             View products
                             <i class="fa-solid fa-arrow-down"></i>
                         </a>
+
                     </div>
 
                 </div>
@@ -470,6 +396,7 @@
             <section class="women-products-area">
 
                 <div class="products-heading">
+
                     <div>
                         <span class="section-label">OZZO COLLECTION</span>
                         <h2>Women's Fashion Collection</h2>
@@ -481,36 +408,42 @@
                             Explore women's styles
                         </span>
                     </div>
+
                 </div>
 
-                <!-- PRODUCTS GENERATED BY JAVASCRIPT -->
-                <div id="productGrid" class="product-grid"></div>
+                <!-- INDEPENDENT PRODUCT SCROLL CONTAINER -->
+                <div class="women-products-scroll">
 
-                <!-- NO PRODUCTS MESSAGE -->
-                <div id="noProducts" class="no-products" hidden>
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <!-- PRODUCTS GENERATED BY JAVASCRIPT -->
+                    <div id="productGrid" class="product-grid"></div>
 
-                    <h3>No products found</h3>
+                    <!-- NO PRODUCTS MESSAGE -->
+                    <div id="noProducts" class="no-products" hidden>
 
-                    <p>
-                        Try another keyword or choose a different category.
-                    </p>
+                        <i class="fa-solid fa-magnifying-glass"></i>
 
-                    <button
-                        type="button"
-                        id="resetFilters"
-                        class="reset-filters">
-                        Show All Products
-                    </button>
+                        <h3>No products found</h3>
+
+                        <p>
+                            Try another keyword or choose a different category.
+                        </p>
+
+                        <button type="button" id="resetFilters" class="reset-filters">
+                            Show All Products
+                        </button>
+
+                    </div>
+
                 </div>
-
             </section>
+
         </div>
     </div>
 </main>
 
 <!-- PROMO SECTION -->
 <section class="women-promo">
+
     <div class="women-promo-inner">
 
         <div>
@@ -533,10 +466,13 @@
 
 <!-- FOOTER -->
 <footer class="footer">
+
     <div class="container-fluid px-lg-5">
+
         <div class="footer-main">
 
             <div class="footer-brand">
+
                 <div class="footer-logo">OZZO</div>
 
                 <div class="footer-categories">
@@ -545,9 +481,11 @@
                     Stationery <span>•</span>
                     Pads
                 </div>
+
             </div>
 
             <div class="footer-column">
+
                 <h4>Quick Links</h4>
 
                 <a href="../index.html">Home</a>
@@ -555,68 +493,59 @@
                 <a href="/About Us/About.html">About Us</a>
                 <a href="/Faq/Faq.html">FAQs</a>
                 <a href="/Contact/Contact.html">Contact</a>
+
             </div>
 
             <div class="footer-column">
+
                 <h4>Categories</h4>
 
                 <a href="/Fashion/Fashion.html">Fashion</a>
                 <a href="/Comming Soon.html">Books</a>
                 <a href="/Comming Soon.html">Stationery</a>
                 <a href="/Pads/Pads.html">Pads</a>
-            </div>
 
-          <!-- SERVICES -->
+            </div>
 
             <div class="footer-column">
 
-                <h4>
-                    Services
-                </h4>
+                <h4>Services</h4>
 
-                <a href="/Comming Soon.html">
-                    Groceries
-                </a>
-
-                <a href="/Comming Soon.html">
-                    Home Cleaning
-                </a>
-
-                <a href="/Comming Soon.html">
-                    Car Rentals
-                </a>
-
-                <a href="/Comming Soon.html">
-                    Computer Services
-                </a>
+                <a href="/Comming Soon.html">Groceries</a>
+                <a href="/Comming Soon.html">Home Cleaning</a>
+                <a href="/Comming Soon.html">Car Rentals</a>
+                <a href="/Comming Soon.html">Computer Services</a>
 
             </div>
 
             <div class="footer-newsletter">
+
                 <h4>Join Our Newsletter</h4>
 
                 <p>Get updates on new arrivals and special offers.</p>
 
                 <form id="newsletterForm">
+
                     <div class="newsletter-input">
+
                         <input
                             type="email"
                             id="newsletterEmail"
                             placeholder="Enter your email address"
                             required>
 
-                        <button
-                            type="submit"
-                            title="Subscribe"
-                            aria-label="Subscribe">
+                        <button type="submit" title="Subscribe" aria-label="Subscribe">
                             →
                         </button>
+
                     </div>
+
                 </form>
 
                 <div class="newsletter-message" id="newsletterMessage"></div>
 
                 <div class="social-icons">
+
                     <a href="#" title="Facebook" aria-label="Facebook">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
@@ -636,6 +565,7 @@
                     <a href="#" title="Twitter" aria-label="Twitter">
                         <i class="fa-brands fa-twitter"></i>
                     </a>
+
                 </div>
             </div>
 
@@ -643,19 +573,21 @@
     </div>
 
     <div class="footer-bottom">
+
         <div class="container-fluid px-lg-5">
+
             <div class="footer-bottom-inner">
                 <span>© 2026 OZZO. All rights reserved.</span>
                 <span>Better Choices. A Brighter You.</span>
             </div>
+
         </div>
     </div>
+
 </footer>
 
-<!-- BOOTSTRAP JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- WOMEN'S FASHION JAVASCRIPT -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -665,18 +597,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const productCount = document.getElementById("productCount");
     const cartCount = document.getElementById("cartCount");
     const categoryResult = document.getElementById("womenCategoryResult");
+    const productScroll = document.querySelector(".women-products-scroll");
 
     const categoryButtons = Array.from(
         document.querySelectorAll("[data-women-filter]")
     );
 
-    /*
-     * Product fields:
-     * id, name, category, price, MRP, rating,
-     * reviews, image path, optional badge.
-     *
-     * Use the actual image filenames from your project folder.
-     */
+    // PRODUCT DATA
     const products = [
 
         ["women-001", "Classic Beige Dress", "dresses", 1299, 1799, 4.4, 86, "../classic Beige Dress.jpg.jpg", "BESTSELLER"],
@@ -740,6 +667,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let selectedFilter = "all";
     let cart = [];
 
+    // LOAD CART
     try {
         cart = JSON.parse(localStorage.getItem("ozzoCart")) || [];
 
@@ -750,7 +678,7 @@ document.addEventListener("DOMContentLoaded", function () {
         cart = [];
     }
 
-    // PRODUCT CATEGORY GROUPS
+    // CATEGORY GROUPS
     const topTypes = [
         "oversized-top",
         "t-shirts",
@@ -802,7 +730,6 @@ document.addEventListener("DOMContentLoaded", function () {
         kurtas: "kurtas",
         "ethnic-wear": "ethnic wear",
         "all-sarees": "all sarees",
-        sarees: "sarees",
         "pattu-sarees": "pattu sarees",
         "fancy-sarees": "fancy sarees",
         "daily-wear-sarees": "daily wear sarees",
@@ -816,7 +743,7 @@ document.addEventListener("DOMContentLoaded", function () {
         shorts: "shorts"
     };
 
-    // SAFELY FORMAT TEXT
+    // ESCAPE HTML
     function escapeHTML(value) {
         return String(value).replace(/[&<>"']/g, function (character) {
             return {
@@ -829,8 +756,9 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // PRODUCT CATEGORY LABEL
+    // DISPLAY CATEGORY
     function getDisplayCategory(category) {
+
         if (sareeTypes.includes(category)) {
             return "Sarees";
         }
@@ -850,8 +778,9 @@ document.addEventListener("DOMContentLoaded", function () {
         return "Women's Wear";
     }
 
-    // RENDER PRODUCT CARDS
+    // RENDER PRODUCTS
     function renderProducts() {
+
         productGrid.innerHTML = products.map(function (product) {
 
             const id = product[0];
@@ -881,6 +810,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <div class="fashion-product-card">
 
                         <div class="product-image">
+
                             <img
                                 src="${escapeHTML(image)}"
                                 alt="${escapeHTML(name)}"
@@ -896,6 +826,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 title="Add to wishlist">
 
                                 <i class="fa-regular fa-heart"></i>
+
                             </button>
                         </div>
 
@@ -929,11 +860,13 @@ document.addEventListener("DOMContentLoaded", function () {
                     </div>
                 </article>
             `;
+
         }).join("");
     }
 
     // CATEGORY MATCHING
     function matchesCategory(product, filter) {
+
         const category = product[2];
 
         if (filter === "all") {
@@ -959,9 +892,11 @@ document.addEventListener("DOMContentLoaded", function () {
         return category === filter;
     }
 
-    // SEARCH AND FILTER PRODUCTS
+    // SEARCH AND FILTER
     function filterProducts() {
+
         const query = searchInput.value.trim().toLowerCase();
+
         let visible = 0;
 
         const productCards = Array.from(
@@ -969,6 +904,7 @@ document.addEventListener("DOMContentLoaded", function () {
         );
 
         productCards.forEach(function (card) {
+
             const name = card.dataset.name.toLowerCase();
             const category = card.dataset.subcategory.toLowerCase();
 
@@ -1005,6 +941,7 @@ document.addEventListener("DOMContentLoaded", function () {
             (query ? " matching '" + query + "'" : "") + ".";
 
         categoryButtons.forEach(function (button) {
+
             const active = button.dataset.womenFilter === selectedFilter;
 
             button.classList.toggle("active", active);
@@ -1013,13 +950,18 @@ document.addEventListener("DOMContentLoaded", function () {
                 "aria-pressed",
                 active ? "true" : "false"
             );
+
         });
 
         noProducts.hidden = visible !== 0;
+
+        // Return product scroll to the top after filtering
+        productScroll.scrollTop = 0;
     }
 
     // UPDATE CART COUNT
     function updateCartCount() {
+
         const total = cart.reduce(function (sum, item) {
             return sum + Number(item.quantity || 0);
         }, 0);
@@ -1029,6 +971,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // SAVE CART
     function saveCart() {
+
         try {
             localStorage.setItem("ozzoCart", JSON.stringify(cart));
         } catch (error) {
@@ -1038,6 +981,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // CREATE PRODUCT OBJECT
     function makeProductObject(card) {
+
         const product = products.find(function (item) {
             return item[0] === card.dataset.productId;
         });
@@ -1063,22 +1007,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // CATEGORY FILTER BUTTONS
     categoryButtons.forEach(function (button) {
+
         button.addEventListener("click", function () {
 
             selectedFilter = button.dataset.womenFilter || "all";
 
             filterProducts();
 
-            if (window.innerWidth < 600) {
-                document.getElementById("fashionProducts").scrollIntoView({
-                    behavior: "smooth",
-                    block: "start"
-                });
-            }
         });
+
     });
 
-    // SEARCH INPUT
+    // SEARCH
     searchInput.addEventListener("input", filterProducts);
 
     // WISHLIST AND CART ACTIONS
@@ -1087,6 +1027,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const wishlistButton = event.target.closest(".wishlist");
 
         if (wishlistButton) {
+
             event.preventDefault();
             event.stopPropagation();
 
@@ -1104,6 +1045,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const addButton = event.target.closest(".add-cart");
 
         if (addButton) {
+
             event.preventDefault();
             event.stopPropagation();
 
@@ -1142,6 +1084,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const productCard = event.target.closest(".fashion-product-card");
 
         if (productCard) {
+
             const card = productCard.closest(".product-item");
             const product = makeProductObject(card);
 
@@ -1150,6 +1093,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             try {
+
                 const fullImageURL = new URL(
                     product.image,
                     window.location.href
@@ -1162,6 +1106,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         image: fullImageURL
                     })
                 );
+
             } catch (error) {
                 console.warn("Product details could not be saved.");
             }
@@ -1173,23 +1118,29 @@ document.addEventListener("DOMContentLoaded", function () {
                 "&mrp=" + encodeURIComponent(product.mrp) +
                 "&image=" + encodeURIComponent(product.image);
         }
+
     });
 
     // RESET FILTERS
     document.getElementById("resetFilters").addEventListener("click", function () {
+
         selectedFilter = "all";
         searchInput.value = "";
+
         filterProducts();
+
     });
 
     // NEWSLETTER
     document.getElementById("newsletterForm").addEventListener("submit", function (event) {
+
         event.preventDefault();
 
         document.getElementById("newsletterMessage").textContent =
             "Thank you for subscribing!";
 
         this.reset();
+
     });
 
     // INITIALIZE PAGE

@@ -927,12 +927,12 @@ img {
     align-items: center;
     gap: 9px;
     padding: 8px 10px;
-    color: #536173;
+    color: #c63f3f;
     background: transparent;
     border: 1px solid transparent;
     border-radius: 5px;
     text-align: left;
-    font-size: 11px;
+    font-size: 17px;
     font-weight: 500;
     transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
 }
@@ -1689,7 +1689,7 @@ line-clamp: 2;
     }
 
     .main-header .navbar-toggler {
-        order: 3;
+       
         margin-left: auto;
     }
 
@@ -1934,7 +1934,7 @@ line-clamp: 2;
     }
 
     .main-header .navbar-toggler {
-        order: 3;
+       
         margin-left: auto;
         padding: 6px 9px;
         font-size: 17px;
@@ -3014,4 +3014,639 @@ input:focus-visible {
 ::-moz-selection {
     background: transparent !important;
     color: inherit !important;
+}
+
+
+
+
+
+/* ===== SHOP LAYOUT ===== */
+
+.men-shop-layout {
+    display: grid !important;
+    grid-template-columns: 260px minmax(0, 1fr) !important;
+    gap: 24px;
+
+    width: 100%;
+    height: auto !important;
+    min-height: 0 !important;
+    align-items: start;
+
+    overflow: visible !important;
+}
+
+/* ===== LEFT CATEGORY CARD ===== */
+
+.men-category-section {
+    position: sticky !important;
+    top: 20px;
+
+    height: calc(100vh - 40px) !important;
+    max-height: calc(100vh - 40px);
+
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+    scrollbar-color: #183b35 transparent;
+}
+
+/* ===== RIGHT PRODUCT SECTION ===== */
+
+.men-products-area {
+    width: 100%;
+    min-width: 0;
+
+    height: auto !important;
+    max-height: none !important;
+
+    overflow: visible !important;
+}
+
+/* No independent product scrollbar */
+.men-products-scroll {
+    height: auto !important;
+    max-height: none !important;
+    min-height: 0 !important;
+
+    overflow: visible !important;
+    padding-bottom: 20px;
+}
+
+/* Product grid */
+.men-products-area #productGrid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 20px;
+    width: 100%;
+}
+
+.men-products-area .product-item {
+    width: 100%;
+    min-width: 0;
+}
+
+/* Category scrollbar appearance */
+.men-category-section::-webkit-scrollbar {
+    width: 5px;
+}
+
+.men-category-section::-webkit-scrollbar-thumb {
+    background: #183b35;
+    border-radius: 20px;
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+    .men-shop-layout {
+        grid-template-columns: 210px minmax(0, 1fr) !important;
+        gap: 15px;
+    }
+
+    .men-products-area #productGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 575px) {
+    .men-shop-layout {
+        grid-template-columns: 95px minmax(0, 1fr) !important;
+        gap: 8px;
+    }
+
+    .men-category-section {
+        top: 10px;
+        height: calc(100vh - 20px) !important;
+        max-height: calc(100vh - 20px);
+    }
+
+    .men-products-area #productGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 8px;
+    }
+}
+
+/* =========================================
+   OZZO NAVBAR - MAIN STYLES
+========================================= */
+
+/* TOP SHIPPING BAR */
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    z-index: 1100;
+    background: #000 !important;
+    color: #fff !important;
+    font-size: 10px;
+}
+
+.top-bar-inner {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shipping-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.shipping-text i {
+    font-size: 12px;
+}
+
+.top-links {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    color: #fff;
+}
+
+.top-links a {
+    color: #fff;
+    transition: opacity .2s ease;
+}
+
+.top-links a:hover {
+    opacity: .72;
+}
+
+.login-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+/* =========================================
+   MAIN NAVBAR
+========================================= */
+
+.main-header {
+    position: fixed;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: 67px;
+    min-height: 67px;
+    z-index: 1000;
+    background: #000 !important;
+    border-bottom: 1px solid #222;
+}
+
+.main-header .navbar {
+    width: 100%;
+    height: 67px;
+    min-height: 67px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background: #000 !important;
+}
+
+.main-header .container-fluid {
+    width: 100%;
+    height: 67px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.ozzo-header-logo-wrap {
+    width: 190px;
+    height: 67px;
+    flex: 0 0 190px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.desktop-logo-link {
+    width: 190px;
+    height: 67px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.desktop-logo {
+    display: block;
+    width: 180px !important;
+    max-width: 180px !important;
+    height: 56px !important;
+    max-height: 56px !important;
+    object-fit: contain !important;
+    object-position: left center !important;
+}
+
+.mobile-logo-link {
+    width: 125px;
+    height: 67px;
+    display: none;
+    align-items: center;
+    overflow: hidden;
+}
+
+.mobile-logo {
+    display: block;
+    width: 112px !important;
+    max-width: 112px !important;
+    height: 56px !important;
+    max-height: 56px !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+}
+
+
+/* =========================================
+   NAVIGATION LINKS
+========================================= */
+
+.main-nav {
+    gap: 8px;
+}
+
+.main-nav .nav-link {
+    position: relative;
+    color: #fff !important;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 25px 10px 23px;
+    transition: color .2s ease, background .2s ease;
+}
+
+.main-nav .nav-link:hover {
+    color: #d8d8d8 !important;
+}
+
+.main-nav .nav-link.active {
+    color: #fff !important;
+}
+
+.main-nav .nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 15px;
+    height: 2px;
+    background: #fff !important;
+}
+
+
+/* =========================================
+   HEADER ACTIONS
+========================================= */
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-actions button,
+.header-actions a,
+.header-actions i {
+    color: #fff !important;
+}
+
+
+/* SEARCH BOX */
+
+.search-box {
+    width: 240px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    background: #111 !important;
+    border: 1px solid #333;
+    border-radius: 22px;
+    transition:
+        background .2s ease,
+        box-shadow .2s ease,
+        border-color .2s ease;
+}
+
+.search-box:focus-within {
+    background: #151515 !important;
+    border-color: #555;
+    box-shadow: 0 0 0 2px rgba(255,255,255,.06);
+}
+
+.search-box input {
+    flex: 1;
+    min-width: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent !important;
+    color: #fff !important;
+    font-size: 10px;
+}
+
+.search-box input::placeholder {
+    color: #aaa !important;
+}
+
+.search-box i {
+    flex: 0 0 auto;
+    color: #fff !important;
+    font-size: 13px;
+}
+
+
+/* WISHLIST AND CART ICONS */
+
+.header-icon {
+    position: relative;
+    width: 27px;
+    height: 36px;
+    padding: 0;
+    border: 0;
+    background: transparent !important;
+    color: #fff !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: color .2s ease, transform .2s ease;
+}
+
+.header-icon:hover {
+    color: #ddd !important;
+    transform: scale(1.07);
+}
+
+.wishlist-button.active {
+    color: #da4251 !important;
+}
+
+.cart-count {
+    position: absolute;
+    top: 1px;
+    right: -5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 8px;
+    line-height: 1;
+}
+
+
+/* MOBILE MENU BUTTON */
+
+.navbar-toggler {
+    flex: 0 0 auto;
+    padding: 6px 9px;
+    border: 1px solid #555 !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    color: #fff !important;
+}
+
+.navbar-toggler i {
+    color: #fff !important;
+}
+
+
+/* =========================================
+   LAPTOP RESPONSIVE
+   MAX WIDTH: 1199px
+========================================= */
+
+@media (max-width: 1199px) {
+
+    .main-nav {
+        gap: 2px;
+    }
+
+    .main-nav .nav-link {
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+
+    .search-box {
+        width: 220px;
+    }
+
+}
+
+
+/* =========================================
+   TABLET RESPONSIVE
+   MAX WIDTH: 991px
+========================================= */
+
+@media (max-width: 991px) {
+
+    .top-links {
+        display: none;
+    }
+
+    .top-bar-inner {
+        justify-content: center;
+    }
+
+    .main-header {
+        height: auto;
+        min-height: 67px;
+    }
+
+    .main-header .navbar {
+        height: auto;
+        min-height: 67px;
+    }
+
+    .main-header .container-fluid {
+        height: auto;
+        min-height: 67px;
+    }
+
+    .ozzo-header-logo-wrap {
+        width: 125px;
+        flex-basis: 125px;
+    }
+
+    .desktop-logo-link {
+        display: none;
+    }
+
+    .mobile-logo-link {
+        display: flex;
+        width: 118px;
+    }
+
+    .mobile-logo {
+        width: 108px !important;
+        max-width: 108px !important;
+        height: 54px !important;
+        max-height: 54px !important;
+        object-fit: contain !important;
+        object-position: center center !important;
+    }
+
+    .main-nav {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .main-nav .nav-link {
+        padding: 10px 8px;
+    }
+
+    .main-nav .nav-link.active::after {
+        left: 8px;
+        right: 8px;
+        bottom: 4px;
+    }
+
+    .header-actions {
+        padding: 10px 0 15px;
+        justify-content: flex-start;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+   MAX WIDTH: 767px
+========================================= */
+
+@media (max-width: 767px) {
+
+    .top-bar {
+        height: 28px;
+    }
+
+    .top-bar-inner {
+        height: 28px;
+        font-size: 9px;
+    }
+
+    .shipping-text {
+        font-size: 9px;
+    }
+
+    .main-header {
+        top: 28px;
+    }
+
+    .main-header .container-fluid {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
+    .ozzo-header-logo-wrap {
+        width: 118px;
+        flex-basis: 118px;
+    }
+
+    .mobile-logo-link {
+        width: 108px;
+    }
+
+    .mobile-logo {
+        width: 100px !important;
+        max-width: 100px !important;
+        height: 54px !important;
+        max-height: 54px !important;
+    }
+
+    .header-actions {
+        flex-wrap: wrap;
+    }
+
+    .search-box {
+        width: 100%;
+        order: 3;
+    }
+
+    body {
+        padding-top: 95px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   MAX WIDTH: 575px
+========================================= */
+
+@media (max-width: 575px) {
+
+    .main-header .container-fluid {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .ozzo-header-logo-wrap {
+        width: 108px;
+        flex-basis: 108px;
+    }
+
+    .mobile-logo-link {
+        width: 100px;
+    }
+
+    .mobile-logo {
+        width: 92px !important;
+        max-width: 92px !important;
+        height: 52px !important;
+        max-height: 52px !important;
+    }
+
+}
+
+
+/* =========================================
+   EXTRA SMALL MOBILE
+   MAX WIDTH: 380px
+========================================= */
+
+@media (max-width: 380px) {
+
+    .ozzo-header-logo-wrap {
+        width: 98px;
+        flex-basis: 98px;
+    }
+
+    .mobile-logo-link {
+        width: 92px;
+    }
+
+    .mobile-logo {
+        width: 84px !important;
+        max-width: 84px !important;
+        height: 50px !important;
+        max-height: 50px !important;
+    }
+
+    .shipping-text {
+        font-size: 8px;
+    }
+
 }
