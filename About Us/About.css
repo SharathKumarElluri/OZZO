@@ -1,2478 +1,1754 @@
+
 /* =========================================================
    OZZO ABOUT US
    PREMIUM RESPONSIVE CORPORATE STYLE
 ========================================================= */
 
-:root{
-    --navy:#132438;
-    --navy-dark:#0d1d2d;
-    --text:#16283b;
-    --muted:#657384;
-    --cream:#eeeae4;
-    --border:#e7ebef;
-    --surface:#f7f8fa;
+/* =========================================================
+   GLOBAL STYLES
+========================================================= */
 
-    --about-blue:#dce8ef;
-    --about-lilac:#e9e1ef;
-    --about-green:#dceee7;
-    --about-peach:#f0e3dc;
+:root {
+    --navy: #132438;
+    --navy-dark: #0d1d2d;
+    --text: #16283b;
+    --muted: #657384;
+    --cream: #eeeae4;
+    --border: #e7ebef;
+    --surface: #f7f8fa;
+
+    --about-blue: #dce8ef;
+    --about-lilac: #e9e1ef;
+    --about-green: #dceee7;
+    --about-peach: #f0e3dc;
 }
 
-*{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-html{
-    scroll-behavior:smooth;
-    width:100%;
-    max-width:100%;
-    overflow-x:hidden;
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
-body{
-    font-family:"DM Sans",sans-serif;
-    color:var(--text);
-    background:#fff;
-    overflow-x:hidden;
-    letter-spacing:.01em;
+body {
+    padding-top: 97px;
+    overflow-x: hidden;
+    background: #fff;
+    color: var(--text);
+    font-family: "DM Sans", sans-serif;
+    letter-spacing: .01em;
 }
 
-img{
-    display:block;
-    width:100%;
+img {
+    display: block;
+    width: 100%;
 }
 
-a{
-    color:inherit;
-    text-decoration:none;
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 button,
-input{
-    font-family:inherit;
+input {
+    font-family: inherit;
 }
-
 
 /* =========================================================
-   TOP BAR
+   TOP SHIPPING BAR
 ========================================================= */
 
-.top-bar{
-    height:30px;
-    background:var(--navy-dark);
-    color:#fff;
-    font-size:10px;
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1100;
+    width: 100%;
+    height: 30px;
+    background: #000;
+    color: #fff;
+    font-size: 10px;
 }
 
-.top-bar-inner{
-    height:30px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+.top-bar-inner {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.shipping-text{
-    display:flex;
-    align-items:center;
-    gap:8px;
-    font-weight:500;
+.shipping-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
 }
 
-.shipping-text i{
-    font-size:12px;
+.shipping-text i {
+    font-size: 12px;
 }
 
-.top-links{
-    display:flex;
-    align-items:center;
-    gap:11px;
+.top-links {
+    display: flex;
+    align-items: center;
+    gap: 11px;
 }
 
-.top-links a{
-    color:#fff;
+.top-links a {
+    color: #fff;
 }
 
-.login-link{
-    display:flex;
-    align-items:center;
-    gap:5px;
+.login-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
-
 
 /* =========================================================
-   HEADER
+   FIXED HEADER
 ========================================================= */
 
-.main-header{
-    height:67px;
-    background:#fff;
-    border-bottom:1px solid #e9e9e9;
-    position:relative;
-    z-index:50;
+.main-header {
+    position: fixed;
+    top: 30px;
+    left: 0;
+    z-index: 1100;
+    width: 100%;
+    height: 67px;
+    background: #000;
+    border-bottom: 1px solid #222;
 }
 
-.navbar{
-    height:67px;
-    padding-top:0;
-    padding-bottom:0;
+.main-header .navbar {
+    width: 100%;
+    height: 67px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
-.ozzo-logo{
-    color:var(--navy);
-    font-size:38px;
-    line-height:1;
-    font-weight:700;
-    letter-spacing:-2px;
+.main-header .navbar > .container-fluid {
+    display: flex;
+    align-items: center;
 }
 
-.main-nav{
-    gap:13px;
-}
-
-.main-nav .nav-link{
-    position:relative;
-    color:#374455;
-    font-size:12px;
-    font-weight:500;
-    padding:25px 11px 23px;
-}
-
-.main-nav .nav-link:hover{
-    color:var(--navy);
-}
-
-.header-actions{
-    display:flex;
-    align-items:center;
-    gap:18px;
-}
-
-.search-box{
-    width:285px;
-    height:36px;
-    background:#f5f6f7;
-    border-radius:22px;
-    display:flex;
-    align-items:center;
-    padding:0 14px;
-}
-
-.search-box input{
-    flex:1;
-    min-width:0;
-    border:none;
-    outline:none;
-    background:transparent;
-    color:var(--text);
-    font-size:10px;
-}
-
-.search-box input::placeholder{
-    color:#7b8692;
-}
-
-.search-box i{
-    color:var(--navy);
-    font-size:13px;
-}
-
-.header-icon{
-    width:25px;
-    height:35px;
-    position:relative;
-    border:none;
-    background:transparent;
-    color:var(--navy);
-    font-size:18px;
-    cursor:pointer;
-}
-
-.cart-count{
-    position:absolute;
-    top:0;
-    right:-4px;
-    width:15px;
-    height:15px;
-    border-radius:50%;
-    background:var(--navy);
-    color:#fff;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    font-size:8px;
-}
-
-.navbar-toggler{
-    border:none;
-    box-shadow:none !important;
-    color:var(--navy);
-}
-
-
-/* =========================================================
-   ABOUT HERO
-   SAME HERO STYLE AS PADS / FASHION / BOOKS
-========================================================= */
-
-.about-hero{
-    width:100%;
-    min-height:440px;
-
-    position:relative;
-    overflow:hidden;
-
-    padding:0;
-
-    background:
-        url("../Careers hero.png")
-        center center / cover no-repeat;
-}
-
-
-/* Remove Bootstrap container spacing only in hero */
-
-.about-hero > .container-fluid{
-    width:100%;
-
-    margin:0 !important;
-
-    padding-left:0 !important;
-    padding-right:0 !important;
-}
-
-
-/* Main hero structure */
-
-.about-hero-content{
-    width:100%;
-    min-height:440px;
-
-    position:relative;
-    z-index:3;
-
-    display:grid;
-    grid-template-columns:42% 58%;
-
-    overflow:hidden;
-}
-
-
-/* =========================================================
-   ABOUT HERO COPY
-========================================================= */
-
-.about-hero-copy{
-    width:100%;
-    min-width:0;
-    min-height:440px;
-
-    padding:42px 30px 40px 8%;
-
-    display:flex;
-    flex-direction:column;
-
-    justify-content:center;
-    align-items:flex-start;
-
-    position:relative;
-    z-index:5;
-}
-
-.hero-label{
-    margin-bottom:10px;
-
-    color:#fff;
-
-    font-size:10px;
-    font-weight:700;
-
-    letter-spacing:1.6px;
-}
-
-.about-hero-copy h1{
-    margin-bottom:15px;
-
-    color:#fff;
-
-    font-size:42px;
-    line-height:1.08;
-
-    font-weight:700;
-
-    letter-spacing:-1.5px;
-}
-
-.about-hero-copy h1 em{
-    font-style:italic;
-    font-weight:500;
-}
-
-.about-hero-copy p{
-    max-width:420px;
-
-    margin-bottom:23px;
-
-    color:rgba(255,255,255,.88);
-
-    font-size:11px;
-    line-height:1.75;
-}
-
-.hero-btn{
-    width:145px;
-    height:40px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    gap:10px;
-
-    border-radius:24px;
-
-    background:var(--navy);
-    color:#fff;
-
-    font-size:10px;
-    font-weight:600;
-
-    transition:.25s ease;
-}
-
-.hero-btn:hover{
-    background:#20364d;
-    color:#fff;
-    transform:translateY(-2px);
-}
-
-.hero-btn span{
-    font-size:15px;
-}
-
-
-/* =========================================================
-   HERO IMAGE AREA
-   Original HTML IMAGE is hidden.
-   Background image fills the entire hero.
-========================================================= */
-
-.about-hero-image{
-    width:100%;
-    min-width:0;
-    min-height:440px;
-    height:440px;
-
-    position:relative;
-
-    background:transparent;
-
-    overflow:hidden;
-
-    z-index:4;
-}
-
-.about-hero-image > img{
-    display:none !important;
-}
-
-
-/* =========================================================
-   HERO OVERLAY
-========================================================= */
-
-.about-hero::after{
-    content:"";
-
-    position:absolute;
-    inset:0;
-
-    z-index:1;
-
-    pointer-events:none;
-
-    background:
-        linear-gradient(
-            90deg,
-            rgba(9,27,42,.84) 0%,
-            rgba(9,27,42,.68) 28%,
-            rgba(9,27,42,.34) 57%,
-            rgba(9,27,42,.09) 82%,
-            rgba(9,27,42,.02) 100%
-        );
-}
-
-
-/* =========================================================
-   OUR STORY
-========================================================= */
-
-.our-story{
-    padding:55px 0 45px;
-}
-
-.story-layout{
-    max-width:1100px;
-    margin:0 auto;
-
-    display:grid;
-    grid-template-columns:1fr 1fr;
-
-    gap:65px;
-
-    align-items:center;
-}
-
-.story-copy > span{
-    color:#7c8996;
-
-    font-size:9px;
-    letter-spacing:1.2px;
-    font-weight:600;
-}
-
-.story-copy h2{
-    margin:6px 0 14px;
-
-    color:var(--navy);
-
-    font-size:31px;
-    line-height:1.12;
-    font-weight:700;
-}
-
-.story-copy h2 em{
-    font-style:italic;
-    font-weight:500;
-}
-
-.story-copy p{
-    max-width:500px;
-
-    margin:0 0 12px;
-
-    color:#6d7b89;
-
-    font-size:10px;
-    line-height:1.8;
-}
-
-.story-highlight{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:12px;
-}
-
-.story-stat{
-    min-height:145px;
-
-    padding:20px;
-
-    border-radius:7px;
-
-    background:#f7f8fa;
-
-    border:1px solid var(--border);
-}
-
-.story-stat:nth-child(2){
-    background:#f3edf5;
-}
-
-.story-stat:nth-child(3){
-    grid-column:1/-1;
-    background:#eef5f2;
-}
-
-.story-stat strong{
-    display:block;
-
-    color:var(--navy);
-
-    font-size:20px;
-
-    margin-bottom:9px;
-}
-
-.story-stat span{
-    display:block;
-
-    margin-bottom:5px;
-
-    color:var(--navy);
-
-    font-size:14px;
-    font-weight:700;
-}
-
-.story-stat p{
-    margin:0;
-
-    color:#71808e;
-
-    font-size:8px;
-    line-height:1.6;
-}
-
-
-/* =========================================================
-   WHAT WE BELIEVE
-========================================================= */
-
-.belief-section{
-    padding:15px 0 45px;
-}
-
-.section-heading{
-    margin-bottom:20px;
-}
-
-.section-heading > span{
-    color:#7c8996;
-
-    font-size:9px;
-    letter-spacing:1.2px;
-    font-weight:600;
-}
-
-.section-heading h2{
-    margin-top:4px;
-
-    color:var(--navy);
-
-    font-size:26px;
-    font-weight:700;
-}
-
-.section-heading p{
-    margin-top:6px;
-
-    color:#71808e;
-
-    font-size:10px;
-}
-
-.belief-card{
-    min-height:165px;
-
-    padding:20px;
-
-    border:1px solid var(--border);
-    border-radius:7px;
-
-    background:#dfe1e4;
-
-    transition:.25s ease;
-}
-
-.belief-card:hover{
-    transform:translateY(-4px);
-
-    border-color:#ccd5dd;
-
-    box-shadow:
-        0 12px 28px rgba(19,36,56,.08);
-}
-
-.belief-icon{
-    width:38px;
-    height:38px;
-
-    margin-bottom:14px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    border-radius:50%;
-
-    background:var(--about-blue);
-    color:var(--navy);
-
-    font-size:14px;
-}
-
-.col-6:nth-child(2) .belief-icon{
-    background:var(--about-lilac);
-}
-
-.col-6:nth-child(3) .belief-icon{
-    background:var(--about-green);
-}
-
-.col-6:nth-child(4) .belief-icon{
-    background:var(--about-peach);
-}
-
-.belief-card h3{
-    margin-bottom:6px;
-
-    color:var(--navy);
-
-    font-size:15px;
-    font-weight:700;
-}
-
-.belief-card p{
-    margin:0;
-
-    color:#748290;
-
-    font-size:9px;
-    line-height:1.6;
-}
-
-
-/* =========================================================
-   OZZO WORLD
-========================================================= */
-
-.category-story{
-    padding:10px 0 45px;
-}
-
-.category-story-header{
-    margin-bottom:20px;
-
-    display:flex;
-    align-items:end;
-    justify-content:space-between;
-
-    gap:30px;
-}
-
-.category-story-header > div > span{
-    color:#7c8996;
-
-    font-size:9px;
-    letter-spacing:1.2px;
-    font-weight:600;
-}
-
-.category-story-header h2{
-    margin-top:4px;
-
-    color:var(--navy);
-
-    font-size:27px;
-    font-weight:700;
-}
-
-.category-story-header p{
-    max-width:360px;
-
-    margin:0;
-
-    color:#71808e;
-
-    font-size:9px;
-    line-height:1.7;
-}
-
-.world-card{
-    min-height:190px;
-
-    position:relative;
-    overflow:hidden;
-
-    display:flex;
-    align-items:flex-end;
-
-    padding:18px;
-
-    border-radius:7px;
-
-    background-size:cover;
-    background-position:center;
-
-    transition:.3s ease;
-}
-
-.world-card:hover{
-    transform:translateY(-4px);
-
-    box-shadow:
-        0 14px 28px rgba(19,36,56,.12);
-}
-
-.world-fashion{
-    background-image:url("/fashion.jpg");
-}
-
-.world-books{
-    background-image:url("/Books.jpg");
-}
-
-.world-stationery{
-    background-image:url("/Stationary.jpg");
-}
-
-.world-pads{
-    background-image:url("/pads\ 2.jpg");
-}
-
-.world-overlay{
-    position:absolute;
-    inset:0;
-
-    background:
-        linear-gradient(
-            to top,
-            rgba(19,36,56,.72),
-            rgba(19,36,56,.08) 75%
-        );
-}
-
-.world-content{
-    position:relative;
-    z-index:2;
-
-    color:#fff;
-}
-
-.world-content span{
-    font-size:8px;
-    opacity:.85;
-}
-
-.world-content h3{
-    margin:3px 0;
-
-    font-size:18px;
-    font-weight:700;
-}
-
-.world-content p{
-    margin:0;
-    font-size:8px;
-}
-
-
-/* =========================================================
-   VALUES
-========================================================= */
-
-.values-section{
-    padding:5px 0 45px;
-}
-
-.values-box{
-    min-height:320px;
-
-    padding:40px 45px;
-
-    display:grid;
-    grid-template-columns:38% 62%;
-
-    gap:45px;
-
-    border-radius:7px;
-
-    background:var(--navy);
-
-    color:#fff;
-}
-
-.values-heading > span{
-    color:#cbd5de;
-
-    font-size:8px;
-    letter-spacing:1.2px;
-    font-weight:600;
-}
-
-.values-heading h2{
-    margin-top:8px;
-
-    font-size:31px;
-    line-height:1.1;
-
-    font-weight:700;
-}
-
-.values-heading h2 em{
-    font-style:italic;
-    font-weight:500;
-}
-
-.values-list{
-    display:flex;
-    flex-direction:column;
-}
-
-.value-row{
-    display:grid;
-    grid-template-columns:35px 1fr;
-
-    gap:14px;
-
-    padding:0 0 17px;
-    margin-bottom:17px;
-
-    border-bottom:1px solid rgba(255,255,255,.15);
-}
-
-.value-row:last-child{
-    margin-bottom:0;
-    border-bottom:none;
-}
-
-.value-row > span{
-    color:#aebbc6;
-
-    font-size:9px;
-    font-weight:600;
-}
-
-.value-row h3{
-    margin-bottom:4px;
-
-    color:#fff;
-
-    font-size:13px;
-    font-weight:700;
-}
-
-.value-row p{
-    margin:0;
-
-    color:#cbd4dc;
-
-    font-size:8px;
-    line-height:1.6;
-}
-
-
-/* =========================================================
-   ABOUT CTA
-========================================================= */
-
-.about-cta{
-    padding:5px 0 45px;
-}
-
-.about-cta-box{
-    min-height:180px;
-
-    padding:35px 45px;
-
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-
-    gap:30px;
-
-    border-radius:7px;
-
-    background:#e8e0ef;
-}
-
-.about-cta-box > div:first-child > span{
-    color:#697787;
-
-    font-size:8px;
-    letter-spacing:1px;
-    font-weight:600;
-}
-
-.about-cta-box h2{
-    margin:5px 0 8px;
-
-    color:var(--navy);
-
-    font-size:28px;
-    line-height:1.1;
-}
-
-.about-cta-box p{
-    max-width:450px;
-
-    margin:0;
-
-    color:#6f7d8b;
-
-    font-size:9px;
-    line-height:1.6;
-}
-
-.cta-actions{
-    display:flex;
-    gap:10px;
-
-    flex:0 0 auto;
-}
-
-.cta-actions a{
-    width:110px;
-    height:35px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    gap:7px;
-
-    border-radius:19px;
-
-    background:var(--navy);
-    color:#fff;
-
-    font-size:8px;
-    font-weight:600;
-
-    transition:.25s ease;
-}
-
-.cta-actions a:hover{
-    background:#20364d;
-    color:#fff;
-    transform:translateY(-2px);
-}
-
-.cta-actions .outline-btn{
-    background:transparent;
-    color:var(--navy);
-
-    border:1px solid var(--navy);
-}
-
-.cta-actions .outline-btn:hover{
-    background:var(--navy);
-    color:#fff;
-}
-
-.cta-actions span{
-    font-size:13px;
-}
-
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
-.footer{
-    background:var(--navy-dark);
-    color:#fff;
-}
-
-.footer-main{
-    min-height:180px;
-
-    display:grid;
-
-    grid-template-columns:
-        1.35fr
-        .8fr
-        .8fr
-        1.1fr
-        1.55fr;
-
-    gap:34px;
-
-    padding:35px 0 30px;
-}
-
-.footer-logo{
-    margin-bottom:5px;
-
-    color:#fff;
-
-    font-size:27px;
-    font-weight:700;
-
-    letter-spacing:-1px;
-}
-
-.footer-categories{
-    display:flex;
-    gap:7px;
-
-    color:#d7dee6;
-
-    font-size:12px;
-}
-
-.footer-categories span{
-    opacity:.6;
-}
-
-.footer-column{
-    display:flex;
-    flex-direction:column;
-}
-
-.footer-column h4,
-.footer-newsletter h4{
-    margin-bottom:14px;
-
-    font-size:16px;
-    font-weight:700;
-}
-
-.footer-column a{
-    margin-bottom:8px;
-
-    color:#ccd4dc;
-
-    font-size:12px;
-
-    transition:color .2s ease;
-}
-
-.footer-column a:hover{
-    color:#fff;
-}
-
-.footer-newsletter p{
-    margin-bottom:6px;
-
-    color:#c4ccd5;
-
-    font-size:8px;
-}
-
-.newsletter-input{
-    width:100%;
-    height:48px;
-
-    display:flex;
-
-    overflow:hidden;
-
-    border:1px solid #8593a0;
-    border-radius:6px;
-}
-
-.newsletter-input input{
-    flex:1;
-    min-width:0;
-
-    padding:0 16px;
-
-    border:none;
-    outline:none;
-
-    background:#fff;
-
-    color:var(--text);
-
-    font-size:12px;
-}
-
-.newsletter-input button{
-    width:65px;
-
-    border:none;
-
-    background:transparent;
-
-    color:#fff;
-
-    font-size:26px;
-
-    cursor:pointer;
-}
-
-.newsletter-input button:hover{
-    background:rgba(255,255,255,.08);
-}
-
-.newsletter-message{
-    min-height:9px;
-
-    margin-top:4px;
-
-    color:#b7ebc3;
-
-    font-size:7px;
-}
-
-.social-icons{
-    display:flex;
-    gap:16px;
-
-    margin-top:8px;
-}
-
-.social-icons a{
-    color:#fff;
-
-    font-size:10px;
-
-    transition:.2s ease;
-}
-
-.social-icons a:hover{
-    opacity:.75;
-
-    transform:translateY(-2px);
-}
-
-.footer-bottom{
-    border-top:1px solid rgba(255,255,255,.14);
-}
-
-.footer-bottom-inner{
-    height:50px;
-
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-
-    color:#bdc7d1;
-
-    font-size:12px;
-}
-
-
-/* =========================================================
-   1199px
-========================================================= */
-
-@media (max-width:1199px){
-
-    .main-nav{
-        gap:2px;
-    }
-
-    .main-nav .nav-link{
-        padding-left:7px;
-        padding-right:7px;
-    }
-
-    .search-box{
-        width:220px;
-    }
-
-    .container-fluid.px-4,
-    .container-fluid.px-lg-5{
-        padding-left:24px !important;
-        padding-right:24px !important;
-    }
-
-
-    /* HERO */
-
-    .about-hero{
-        min-height:430px;
-
-        background:
-            url("../Careers hero.png")
-            center center / cover no-repeat;
-    }
-
-    .about-hero > .container-fluid{
-        padding-left:0 !important;
-        padding-right:0 !important;
-    }
-
-    .about-hero-content{
-        grid-template-columns:45% 55%;
-
-        min-height:430px;
-    }
-
-    .about-hero-copy{
-        min-height:430px;
-
-        padding:42px 28px 42px 7%;
-    }
-
-    .about-hero-copy h1{
-        font-size:36px;
-    }
-
-    .about-hero-image{
-        min-height:430px;
-        height:430px;
-    }
-
-
-    /* OTHER SECTIONS */
-
-    .story-layout{
-        gap:35px;
-    }
-
-    .values-box{
-        gap:30px;
-        padding:35px;
-    }
-
-    .footer-main{
-        grid-template-columns:1fr 1fr;
-        gap:26px;
-    }
-}
-
-
-/* =========================================================
-   991px
-========================================================= */
-
-@media (max-width:991px){
-
-    .top-links{
-        display:none;
-    }
-
-    .top-bar-inner{
-        justify-content:center;
-
-        padding-left:16px !important;
-        padding-right:16px !important;
-    }
-
-
-    /* HEADER */
-
-    .main-header{
-        height:auto;
-    }
-
-    .navbar{
-        min-height:67px;
-        height:auto;
-    }
-
-    .navbar > .container-fluid{
-        align-items:center;
-    }
-
-    .ozzo-logo{
-        font-size:33px;
-    }
-
-    .navbar-collapse{
-        width:100%;
-    }
-
-    .main-nav{
-        width:100%;
-
-        margin:8px 0 4px;
-
-        gap:0;
-    }
-
-    .main-nav .nav-item{
-        width:100%;
-    }
-
-    .main-nav .nav-link{
-        width:100%;
-
-        padding:10px 8px;
-
-        text-align:left;
-    }
-
-    .main-nav .nav-link.active::after{
-        left:8px;
-        right:auto;
-
-        width:45px;
-
-        bottom:4px;
-    }
-
-    .header-actions{
-        width:100%;
-
-        padding:8px 0 15px;
-
-        gap:14px;
-
-        flex-wrap:wrap;
-    }
+/* Hamburger is hidden on desktop */
 
-    .search-box{
-        width:100%;
-        order:3;
-    }
-
-
-    /* =====================================================
-       HERO
-    ===================================================== */
-
-    .about-hero{
-        min-height:430px;
-
-        background:
-            url("../Careers hero.png")
-            center center / cover no-repeat;
-    }
-
-    .about-hero > .container-fluid{
-        padding-left:0 !important;
-        padding-right:0 !important;
-    }
-
-    .about-hero-content{
-        width:100%;
-        min-height:430px;
-
-        display:flex;
-
-        align-items:center;
-        justify-content:flex-start;
-
-        overflow:hidden;
-    }
-
-    .about-hero-copy{
-        width:48%;
-        max-width:520px;
-
-        min-height:auto;
-
-        padding:0 0 0 8%;
-
-        display:flex;
-
-        flex-direction:column;
-
-        justify-content:center;
-        align-items:flex-start;
-
-        position:relative;
-        z-index:5;
-    }
-
-    .about-hero-copy h1{
-        font-size:34px;
-    }
-
-    .about-hero-copy p{
-        max-width:340px;
-    }
-
-    .about-hero-image{
-        width:52%;
-
-        min-height:430px;
-        height:430px;
-
-        background:transparent;
-    }
-
-    .about-hero-image > img{
-        display:none !important;
-    }
-
-
-    /* OTHER SECTIONS */
-
-    .story-layout{
-        grid-template-columns:1fr;
-
-        gap:28px;
-    }
-
-    .category-story-header{
-        align-items:flex-start;
-        flex-direction:column;
-
-        gap:12px;
-    }
-
-    .category-story-header p{
-        max-width:520px;
-    }
-
-    .values-box{
-        grid-template-columns:1fr;
-
-        gap:25px;
-    }
-
-    .about-cta-box{
-        padding:32px 7%;
-    }
-
-    .footer-main{
-        grid-template-columns:repeat(2,minmax(0,1fr));
-    }
-}
-
-
-/* =========================================================
-   767px
-========================================================= */
-
-@media (max-width:767px){
-
-    .top-bar{
-        height:28px;
-    }
-
-    .top-bar-inner{
-        height:28px;
-
-        font-size:9px;
-    }
-
-    .shipping-text{
-        gap:6px;
-
-        text-align:center;
-    }
-
-    .shipping-text span{
-        font-size:8px;
-    }
-
-
-    /* HEADER */
-
-    .navbar{
-        padding-top:4px;
-        padding-bottom:4px;
-    }
-
-    .navbar > .container-fluid{
-        padding-left:15px !important;
-        padding-right:15px !important;
-    }
-
-    .ozzo-logo{
-        font-size:30px;
-    }
-
-    .header-actions{
-        gap:12px;
-    }
-
-    .search-box{
-        height:38px;
-    }
-
-
-    /* =====================================================
-       HERO
-    ===================================================== */
-
-    .about-hero{
-        min-height:420px;
-
-        background:
-            url("../Careers hero.png")
-            center center / cover no-repeat;
-    }
-
-    .about-hero-content{
-        min-height:420px;
-
-        display:flex;
-
-        align-items:center;
-        justify-content:flex-start;
-    }
-
-    .about-hero-copy{
-        width:62%;
-        max-width:none;
-
-        min-height:auto;
-
-        padding:0 5px 0 25px;
-
-        display:flex;
-
-        flex-direction:column;
-
-        justify-content:center;
-        align-items:flex-start;
-    }
-
-    .hero-label{
-        font-size:9px;
-        letter-spacing:1.3px;
-    }
-
-    .about-hero-copy h1{
-        font-size:31px;
-
-        letter-spacing:-1px;
-    }
-
-    .about-hero-copy p{
-        max-width:300px;
-
-        font-size:10px;
-        line-height:1.65;
-    }
-
-    .about-hero-image{
-        width:38%;
-
-        min-height:420px;
-        height:420px;
-
-        background:transparent;
-    }
-
-    .about-hero-image > img{
-        display:none !important;
-    }
-
-
-    /* OUR STORY */
-
-    .our-story{
-        padding:35px 0;
-    }
-
-    .story-copy h2{
-        font-size:25px;
-    }
-
-    .story-copy p{
-        font-size:9px;
-    }
-
-    .story-highlight{
-        gap:10px;
-    }
-
-    .story-stat{
-        min-height:125px;
-        padding:15px;
-    }
-
-
-    /* BELIEFS */
-
-    .belief-section{
-        padding-bottom:35px;
-    }
-
-    .section-heading h2{
-        font-size:22px;
-    }
-
-    .belief-card{
-        min-height:140px;
-        padding:15px;
-    }
-
-    .belief-icon{
-        width:34px;
-        height:34px;
-    }
-
-    .belief-card h3{
-        font-size:13px;
-    }
-
-    .belief-card p{
-        font-size:8px;
-    }
-
-
-    /* WORLD */
-
-    .world-card{
-        min-height:145px;
-        padding:14px;
-    }
-
-    .world-content h3{
-        font-size:15px;
-    }
-
-    .world-content p{
-        font-size:7px;
-    }
-
-
-    /* VALUES */
-
-    .values-box{
-        padding:28px 24px;
-    }
-
-    .values-heading h2{
-        font-size:26px;
-    }
-
-    .value-row h3{
-        font-size:12px;
-    }
-
-    .value-row p{
-        font-size:8px;
-    }
-
-
-    /* CTA */
-
-    .about-cta-box{
-        padding:28px 24px;
-
-        flex-direction:column;
-
-        align-items:flex-start;
-
-        gap:20px;
-    }
-
-    .about-cta-box h2{
-        font-size:24px;
-    }
-
-    .cta-actions{
-        width:100%;
-    }
-
-    .cta-actions a{
-        flex:1;
-    }
-
-
-    /* FOOTER */
-
-    .footer-main{
-        grid-template-columns:1fr 1fr;
-
-        gap:24px;
-    }
-
-    .footer-brand{
-        grid-column:1/-1;
-    }
-}
-
-
-/* =========================================================
-   575px
-========================================================= */
-
-@media (max-width:575px){
-
-    .container-fluid.px-4,
-    .container-fluid.px-lg-5{
-        padding-left:15px !important;
-        padding-right:15px !important;
-    }
-
-
-    /* HERO */
-
-    .about-hero{
-        min-height:400px;
-
-        background:
-            url("../Careers hero.png")
-            center center / cover no-repeat;
-    }
-
-    .about-hero > .container-fluid{
-        padding-left:0 !important;
-        padding-right:0 !important;
-    }
-
-    .about-hero-content{
-        min-height:400px;
-
-        display:flex;
-
-        align-items:center;
-        justify-content:flex-start;
-    }
-
-    .about-hero-copy{
-        width:65%;
-        max-width:none;
-
-        min-height:auto;
-
-        padding:0 4px 0 18px;
-    }
-
-    .about-hero-copy h1{
-        font-size:27px;
-
-        letter-spacing:-1px;
-    }
-
-    .about-hero-copy p{
-        max-width:250px;
-
-        font-size:10px;
-
-        line-height:1.6;
-    }
-
-    .hero-btn{
-        width:135px;
-        height:37px;
-
-        font-size:9px;
-    }
-
-    .about-hero-image{
-        width:35%;
-
-        min-height:400px;
-        height:400px;
-
-        background:transparent;
-    }
-
-    .about-hero-image > img{
-        display:none !important;
-    }
-
-
-    /* STORY */
-
-    .story-layout{
-        gap:22px;
-    }
-
-    .story-copy h2{
-        font-size:22px;
-    }
-
-    .story-highlight{
-        grid-template-columns:1fr;
-    }
-
-    .story-stat:nth-child(3){
-        grid-column:auto;
-    }
-
-
-    /* BELIEFS */
-
-    .belief-card{
-        min-height:130px;
-        padding:13px;
-    }
-
-
-    /* WORLD */
-
-    .world-card{
-        min-height:125px;
-    }
-
-
-    /* VALUES */
-
-    .values-box{
-        padding:25px 18px;
-    }
-
-    .values-heading h2{
-        font-size:23px;
-    }
-
-
-    /* CTA */
-
-    .about-cta-box{
-        padding:25px 18px;
-    }
-
-    .about-cta-box h2{
-        font-size:22px;
-    }
-
-    .cta-actions{
-        flex-direction:column;
-    }
-
-    .cta-actions a{
-        width:100%;
-    }
-
-
-    /* FOOTER */
-
-    .footer-main{
-        grid-template-columns:1fr;
-    }
-
-    .footer-brand{
-        grid-column:auto;
-    }
-
-    .footer-bottom-inner{
-        height:auto;
-
-        min-height:50px;
-
-        padding:10px 0;
-
-        flex-direction:column;
-
-        gap:5px;
-
-        text-align:center;
-    }
-}
-
-
-/* =========================================================
-   380px
-========================================================= */
-
-@media (max-width:380px){
-
-    .about-hero{
-        min-height:390px;
-
-        background-position:center center;
-    }
-
-    .about-hero-content{
-        min-height:390px;
-    }
-
-    .about-hero-copy{
-        width:67%;
-
-        padding-left:16px;
-    }
-
-    .about-hero-copy h1{
-        font-size:25px;
-    }
-
-    .about-hero-copy p{
-        font-size:9px;
-
-        max-width:215px;
-    }
-
-    .about-hero-image{
-        width:33%;
-
-        min-height:390px;
-        height:390px;
-    }
-
-    .value-row{
-        grid-template-columns:30px 1fr;
-
-        gap:9px;
-    }
-
-}
-
-
-/* =========================================================
-   FINAL GAP / WIDTH CLEANUP
-========================================================= */
-
-.about-hero{
-    width:100%;
-    margin:0 !important;
-    padding:0 !important;
-    overflow:hidden;
+.main-header .navbar-toggler {
+    display: none;
+    flex: 0 0 auto;
+    margin-left: auto;
+    padding: 7px 10px;
+    color: #fff !important;
+    background: transparent !important;
+    border: 1px solid #777 !important;
+    box-shadow: none !important;
 }
 
-.about-hero > .container-fluid{
-    width:100%;
-
-    margin:0 !important;
-
-    padding-left:0 !important;
-    padding-right:0 !important;
-}
-
-.about-hero-content{
-    width:100%;
-    margin:0 !important;
-}
-
-
-/* =========================================================
-   FINAL HERO RESPONSIVE POSITIONING
-========================================================= */
-
-@media (max-width:991px){
-
-    .about-hero{
-        background-position:center center;
-    }
-
-    .about-hero-image{
-        width:52%;
-        background:transparent;
-    }
-
-    .about-hero-image > img{
-        display:none !important;
-    }
-}
-
-@media (max-width:767px){
-
-    .about-hero{
-        background-position:center center;
-    }
-
-    .about-hero-image{
-        width:38%;
-
-        min-height:420px;
-        height:420px;
-
-        background:transparent;
-    }
-}
-
-@media (max-width:575px){
-
-    .about-hero{
-        background-position:center center;
-    }
-
-    .about-hero-image{
-        width:35%;
-
-        min-height:400px;
-        height:400px;
-    }
-}
-
-@media (max-width:380px){
-
-    .about-hero-image{
-        width:33%;
-
-        min-height:390px;
-        height:390px;
-    }
-}
-/* =========================
-   BLACK FIXED HEADER
-========================= */
-
-.main-header{
-    height:67px;
-    background:#000 !important;
-    border-bottom:1px solid #222;
-    position:fixed;
-    top:30px;
-    left:0;
-    width:100%;
-    z-index:1000;
-}
-
-/* Logo / Brand */
-.brand,
-.brand span,
-.brand a{
-    color:#fff !important;
-}
-
-/* Navigation */
-.main-nav a{
-    color:#fff !important;
+.main-header .navbar-toggler i {
+    color: #fff !important;
+    font-size: 20px;
 }
-
-.main-nav a:hover,
-.main-nav a.active{
-    color:#ddd !important;
-}
-
-/* Search */
-.search-box{
-    background:#111;
-    border:1px solid #333;
-    color:#fff;
-}
-
-.search-box input{
-    background:transparent;
-    color:#fff;
-}
-
-.search-box input::placeholder{
-    color:#aaa;
-}
-
-/* Header icons */
-.header-actions button,
-.header-actions a,
-.header-actions i{
-    color:#fff !important;
-}
-
-/* Cart count */
-.cart-count{
-    background:#fff;
-    color:#000;
-}
-
-/* Top announcement bar */
-.top-bar{
-    background:#000;
-    color:#fff;
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    z-index:1001;
-}
-
-/* Space for fixed header */
-body{
-    padding-top:97px;
-}
-/* =========================================================
-   BLACK FIXED OZZO HEADER
-========================================================= */
-
-/* TOP SHIPPING BAR */
-.top-bar{
-    width:100%;
-    height:30px;
-
-    background:#000 !important;
-    color:#fff !important;
-
-    position:fixed;
-    top:0;
-    left:0;
-
-    z-index:1100;
-}
-
-
-/* MAIN HEADER */
-.main-header{
-    width:100%;
-    height:67px;
-
-    background:#000 !important;
-
-    border-bottom:1px solid #222;
-
-    position:fixed;
-    top:30px;
-    left:0;
-
-    z-index:1000;
-}
-
-
-/* NAVBAR */
-.main-header .navbar{
-    width:100%;
-    height:67px;
-
-    padding-top:0;
-    padding-bottom:0;
-}
-
 
 /* =========================================================
    OZZO LOGO
 ========================================================= */
 
-.ozzo-header-logo-wrap{
-    width:220px;
-    height:67px;
-
-    display:flex;
-    align-items:center;
-    justify-content:flex-start;
-
-    flex-shrink:0;
-    overflow:hidden;
+.ozzo-header-logo-wrap {
+    width: 190px;
+    height: 67px;
+    flex: 0 0 190px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
 
-.ozzo-header-logo-link{
-    width:220px;
-    height:67px;
-
-    display:flex;
-    align-items:center;
-    justify-content:flex-start;
-
-    overflow:hidden;
+.desktop-logo-link {
+    width: 190px;
+    height: 67px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
 
-.ozzo-header-logo{
-    width:210px !important;
-    max-width:210px !important;
-
-    height:58px !important;
-    max-height:58px !important;
-
-    object-fit:contain !important;
-    object-position:left center !important;
-
-    display:block;
+.desktop-logo {
+    display: block;
+    width: 180px !important;
+    max-width: 180px !important;
+    height: 56px !important;
+    max-height: 56px !important;
+    object-fit: contain !important;
+    object-position: left center !important;
 }
 
+.mobile-logo-link {
+    width: 125px;
+    height: 67px;
+    display: none;
+    align-items: center;
+    overflow: hidden;
+}
+
+.mobile-logo {
+    display: block;
+    width: 112px !important;
+    max-width: 112px !important;
+    height: 56px !important;
+    max-height: 56px !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+}
+
+.ozzo-logo {
+    color: #fff;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -2px;
+}
 
 /* =========================================================
    NAVIGATION
 ========================================================= */
 
-.main-nav{
-    gap:8px;
+.main-nav {
+    display: flex;
+    gap: 8px;
 }
 
-.main-nav .nav-link{
-    color:#fff !important;
-
-    font-size:12px;
-    font-weight:500;
-
-    padding:25px 10px 23px;
-
-    transition:
-        color .2s ease,
-        background .2s ease;
+.main-nav .nav-link {
+    position: relative;
+    padding: 25px 10px 23px;
+    color: #fff !important;
+    font-size: 12px;
+    font-weight: 500;
+    transition: color .2s ease, background .2s ease;
 }
 
-.main-nav .nav-link:hover{
-    color:#d8d8d8 !important;
+.main-nav .nav-link:hover {
+    color: #d8d8d8 !important;
 }
 
-.main-nav .nav-link.active{
-    color:#fff !important;
+.main-nav .nav-link.active {
+    color: #fff !important;
 }
 
-.main-nav .nav-link.active::after{
-    background:#fff !important;
-
-    left:10px;
-    right:10px;
-    bottom:15px;
+.main-nav .nav-link.active::after {
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    left: 10px;
+    height: 2px;
+    background: #fff;
+    content: "";
 }
-
 
 /* =========================================================
-   SEARCH
+   HEADER SEARCH
 ========================================================= */
 
-.search-box{
-    width:240px;
-    height:36px;
-
-    background:#111 !important;
-
-    border:1px solid #333;
-
-    border-radius:22px;
-
-    display:flex;
-    align-items:center;
-
-    padding:0 14px;
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
 }
 
-.search-box input{
-    background:transparent !important;
-
-    color:#fff !important;
-
-    border:none;
-    outline:none;
+.search-box {
+    width: 240px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 22px;
 }
 
-.search-box input::placeholder{
-    color:#aaa !important;
+.search-box input {
+    flex: 1;
+    min-width: 0;
+    background: transparent !important;
+    border: none;
+    outline: none;
+    color: #fff !important;
+    font-size: 10px;
 }
 
-.search-box i{
-    color:#fff !important;
+.search-box input::placeholder {
+    color: #aaa !important;
 }
 
+.search-box i {
+    color: #fff !important;
+    font-size: 13px;
+}
 
 /* =========================================================
-   WISHLIST + CART
+   HEADER ICONS / CART
 ========================================================= */
 
-.header-icon{
-    color:#fff !important;
-
-    background:transparent !important;
+.header-icon {
+    position: relative;
+    width: 25px;
+    height: 35px;
+    background: transparent !important;
+    border: none;
+    color: #fff !important;
+    font-size: 18px;
+    cursor: pointer;
 }
 
-.header-icon:hover{
-    color:#ddd !important;
+.header-icon:hover {
+    color: #ddd !important;
 }
 
 .header-actions button,
 .header-actions a,
-.header-actions i{
-    color:#fff !important;
+.header-actions i {
+    color: #fff !important;
 }
 
-
-/* CART COUNT */
-.cart-count{
-    background:#fff !important;
-    color:#000 !important;
+.cart-count {
+    position: absolute;
+    top: 0;
+    right: -4px;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 8px;
 }
-
 
 /* =========================================================
-   MOBILE MENU BUTTON
+   ABOUT HERO
 ========================================================= */
 
-.navbar-toggler{
-    color:#fff !important;
-
-    background:transparent !important;
-
-    border:1px solid #555 !important;
-
-    box-shadow:none !important;
+.about-hero {
+    position: relative;
+    width: 100%;
+    min-height: 440px;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+    background: url("../Careers hero.png") center center / cover no-repeat;
 }
 
-.navbar-toggler i{
-    color:#fff !important;
+.about-hero > .container-fluid {
+    width: 100%;
+    margin: 0 !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
 }
 
+.about-hero-content {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    min-height: 440px;
+    display: grid;
+    grid-template-columns: 42% 58%;
+    margin: 0 !important;
+    overflow: hidden;
+}
+
+.about-hero-copy {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    min-width: 0;
+    min-height: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 42px 30px 40px 8%;
+}
+
+.hero-label {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+}
+
+.about-hero-copy h1 {
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.08;
+    letter-spacing: -1.5px;
+}
+
+.about-hero-copy h1 em {
+    font-style: italic;
+    font-weight: 500;
+}
+
+.about-hero-copy p {
+    max-width: 420px;
+    margin-bottom: 23px;
+    color: rgba(255, 255, 255, .88);
+    font-size: 11px;
+    line-height: 1.75;
+}
+
+.hero-btn {
+    width: 145px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 24px;
+    background: var(--navy);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    transition: .25s ease;
+}
+
+.hero-btn:hover {
+    transform: translateY(-2px);
+    background: #20364d;
+    color: #fff;
+}
+
+.hero-btn span {
+    font-size: 15px;
+}
+
+.about-hero-image {
+    position: relative;
+    z-index: 4;
+    width: 100%;
+    min-width: 0;
+    min-height: 440px;
+    height: 440px;
+    overflow: hidden;
+    background: transparent;
+}
+
+.about-hero-image > img {
+    display: none !important;
+}
+
+.about-hero::after {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
+        90deg,
+        rgba(9, 27, 42, .84) 0%,
+        rgba(9, 27, 42, .68) 28%,
+        rgba(9, 27, 42, .34) 57%,
+        rgba(9, 27, 42, .09) 82%,
+        rgba(9, 27, 42, .02) 100%
+    );
+    content: "";
+    pointer-events: none;
+}
 
 /* =========================================================
-   BODY OFFSET FOR FIXED HEADER
+   OUR STORY
 ========================================================= */
 
-body{
-    padding-top:97px;
+.our-story {
+    padding: 55px 0 45px;
 }
+
+.story-layout {
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 65px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.story-copy > span {
+    color: #7c8996;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+.story-copy h2 {
+    margin: 6px 0 14px;
+    color: var(--navy);
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 1.12;
+}
+
+.story-copy h2 em {
+    font-style: italic;
+    font-weight: 500;
+}
+
+.story-copy p {
+    max-width: 500px;
+    margin: 0 0 12px;
+    color: #6d7b89;
+    font-size: 10px;
+    line-height: 1.8;
+}
+
+.story-highlight {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.story-stat {
+    min-height: 145px;
+    padding: 20px;
+    background: #f7f8fa;
+    border: 1px solid var(--border);
+    border-radius: 7px;
+}
+
+.story-stat:nth-child(2) {
+    background: #f3edf5;
+}
+
+.story-stat:nth-child(3) {
+    grid-column: 1 / -1;
+    background: #eef5f2;
+}
+
+.story-stat strong {
+    display: block;
+    margin-bottom: 9px;
+    color: var(--navy);
+    font-size: 20px;
+}
+
+.story-stat span {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--navy);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.story-stat p {
+    margin: 0;
+    color: #71808e;
+    font-size: 8px;
+    line-height: 1.6;
+}
+
 /* =========================================================
-   OZZO HEADER LOGO
+   WHAT WE BELIEVE
 ========================================================= */
 
-.ozzo-header-logo-wrap{
-    width:190px;
-    height:67px;
-
-    flex:0 0 190px;
-
-    display:flex;
-    align-items:center;
-
-    overflow:hidden;
+.belief-section {
+    padding: 15px 0 45px;
 }
 
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section-heading > span {
+    color: #7c8996;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+.section-heading h2 {
+    margin-top: 4px;
+    color: var(--navy);
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.section-heading p {
+    margin-top: 6px;
+    color: #71808e;
+    font-size: 10px;
+}
+
+.belief-card {
+    min-height: 165px;
+    padding: 20px;
+    background: #dfe1e4;
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    transition: .25s ease;
+}
+
+.belief-card:hover {
+    transform: translateY(-4px);
+    border-color: #ccd5dd;
+    box-shadow: 0 12px 28px rgba(19, 36, 56, .08);
+}
+
+.belief-icon {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    border-radius: 50%;
+    background: var(--about-blue);
+    color: var(--navy);
+    font-size: 14px;
+}
+
+.col-6:nth-child(2) .belief-icon {
+    background: var(--about-lilac);
+}
+
+.col-6:nth-child(3) .belief-icon {
+    background: var(--about-green);
+}
+
+.col-6:nth-child(4) .belief-icon {
+    background: var(--about-peach);
+}
+
+.belief-card h3 {
+    margin-bottom: 6px;
+    color: var(--navy);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.belief-card p {
+    margin: 0;
+    color: #748290;
+    font-size: 9px;
+    line-height: 1.6;
+}
 
 /* =========================================================
-   DESKTOP LOGO
+   OZZO WORLD
 ========================================================= */
 
-.desktop-logo-link{
-    width:190px;
-    height:67px;
-
-    display:flex;
-    align-items:center;
-
-    overflow:hidden;
-
-    text-decoration:none;
+.category-story {
+    padding: 10px 0 45px;
 }
 
-.desktop-logo{
-    width:180px !important;
-    height:56px !important;
-
-    max-width:180px !important;
-    max-height:56px !important;
-
-    display:block;
-
-    object-fit:contain !important;
-    object-position:left center !important;
+.category-story-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 20px;
 }
 
+.category-story-header > div > span {
+    color: #7c8996;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+.category-story-header h2 {
+    margin-top: 4px;
+    color: var(--navy);
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.category-story-header p {
+    max-width: 360px;
+    margin: 0;
+    color: #71808e;
+    font-size: 9px;
+    line-height: 1.7;
+}
+
+.world-card {
+    position: relative;
+    min-height: 190px;
+    display: flex;
+    align-items: flex-end;
+    padding: 18px;
+    overflow: hidden;
+    border-radius: 7px;
+    background-size: cover;
+    background-position: center;
+    transition: .3s ease;
+}
+
+.world-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px rgba(19, 36, 56, .12);
+}
+
+.world-fashion {
+    background-image: url("/fashion.jpg");
+}
+
+.world-books {
+    background-image: url("/Books.jpg");
+}
+
+.world-stationery {
+    background-image: url("/Stationary.jpg");
+}
+
+.world-pads {
+    background-image: url("/pads 2.jpg");
+}
+
+.world-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(19, 36, 56, .72),
+        rgba(19, 36, 56, .08) 75%
+    );
+}
+
+.world-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.world-content span {
+    font-size: 8px;
+    opacity: .85;
+}
+
+.world-content h3 {
+    margin: 3px 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.world-content p {
+    margin: 0;
+    font-size: 8px;
+}
 
 /* =========================================================
-   MOBILE LOGO
+   VALUES
 ========================================================= */
 
-.mobile-logo-link{
-    display:none;
-
-    width:140px;
-    height:67px;
-
-    align-items:center;
-
-    overflow:hidden;
+.values-section {
+    padding: 5px 0 45px;
 }
 
-.mobile-logo{
-    width:135px !important;
-    height:56px !important;
-
-    max-width:135px !important;
-    max-height:56px !important;
-
-    display:block;
-
-    object-fit:contain !important;
-    object-position:left center !important;
+.values-box {
+    min-height: 320px;
+    display: grid;
+    grid-template-columns: 38% 62%;
+    gap: 45px;
+    padding: 40px 45px;
+    border-radius: 7px;
+    background: var(--navy);
+    color: #fff;
 }
 
+.values-heading > span {
+    color: #cbd5de;
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+.values-heading h2 {
+    margin-top: 8px;
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.values-heading h2 em {
+    font-style: italic;
+    font-weight: 500;
+}
+
+.values-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.value-row {
+    display: grid;
+    grid-template-columns: 35px 1fr;
+    gap: 14px;
+    padding: 0 0 17px;
+    margin-bottom: 17px;
+    border-bottom: 1px solid rgba(255, 255, 255, .15);
+}
+
+.value-row:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.value-row > span {
+    color: #aebbc6;
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.value-row h3 {
+    margin-bottom: 4px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.value-row p {
+    margin: 0;
+    color: #cbd4dc;
+    font-size: 8px;
+    line-height: 1.6;
+}
+
+/* =========================================================
+   ABOUT CTA
+========================================================= */
+
+.about-cta {
+    padding: 5px 0 45px;
+}
+
+.about-cta-box {
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 35px 45px;
+    border-radius: 7px;
+    background: #e8e0ef;
+}
+
+.about-cta-box > div:first-child > span {
+    color: #697787;
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.about-cta-box h2 {
+    margin: 5px 0 8px;
+    color: var(--navy);
+    font-size: 28px;
+    line-height: 1.1;
+}
+
+.about-cta-box p {
+    max-width: 450px;
+    margin: 0;
+    color: #6f7d8b;
+    font-size: 9px;
+    line-height: 1.6;
+}
+
+.cta-actions {
+    display: flex;
+    flex: 0 0 auto;
+    gap: 10px;
+}
+
+.cta-actions a {
+    width: 110px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    border-radius: 19px;
+    background: var(--navy);
+    color: #fff;
+    font-size: 8px;
+    font-weight: 600;
+    transition: .25s ease;
+}
+
+.cta-actions a:hover {
+    transform: translateY(-2px);
+    background: #20364d;
+    color: #fff;
+}
+
+.cta-actions .outline-btn {
+    background: transparent;
+    border: 1px solid var(--navy);
+    color: var(--navy);
+}
+
+.cta-actions .outline-btn:hover {
+    background: var(--navy);
+    color: #fff;
+}
+
+.cta-actions span {
+    font-size: 13px;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+    background: var(--navy-dark);
+    color: #fff;
+}
+
+.footer-main {
+    min-height: 180px;
+    display: grid;
+    grid-template-columns: 1.35fr .8fr .8fr 1.1fr 1.55fr;
+    gap: 34px;
+    padding: 35px 0 30px;
+}
+
+.footer-logo {
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.footer-categories {
+    display: flex;
+    gap: 7px;
+    color: #d7dee6;
+    font-size: 12px;
+}
+
+.footer-categories span {
+    opacity: .6;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column h4,
+.footer-newsletter h4 {
+    margin-bottom: 14px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.footer-column a {
+    margin-bottom: 8px;
+    color: #ccd4dc;
+    font-size: 12px;
+    transition: color .2s ease;
+}
+
+.footer-column a:hover {
+    color: #fff;
+}
+
+.footer-newsletter p {
+    margin-bottom: 6px;
+    color: #c4ccd5;
+    font-size: 8px;
+}
+
+.newsletter-input {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    overflow: hidden;
+    border: 1px solid #8593a0;
+    border-radius: 6px;
+}
+
+.newsletter-input input {
+    flex: 1;
+    min-width: 0;
+    padding: 0 16px;
+    background: #fff;
+    border: none;
+    outline: none;
+    color: var(--text);
+    font-size: 12px;
+}
+
+.newsletter-input button {
+    width: 65px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.newsletter-input button:hover {
+    background: rgba(255, 255, 255, .08);
+}
+
+.newsletter-message {
+    min-height: 9px;
+    margin-top: 4px;
+    color: #b7ebc3;
+    font-size: 7px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 10px;
+    transition: .2s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-2px);
+    opacity: .75;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, .14);
+}
+
+.footer-bottom-inner {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #bdc7d1;
+    font-size: 12px;
+}
+
+/* =========================================================
+   TABLET / SMALL DESKTOP
+   MAX WIDTH: 1199px
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    .main-header,
+    .main-header .navbar {
+        height: auto !important;
+        min-height: 67px;
+    }
+
+    .main-header .navbar > .container-fluid {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        align-items: center !important;
+        height: auto !important;
+    }
+
+    .main-header .ozzo-header-logo-wrap {
+        order: 1;
+        margin-right: auto;
+    }
+
+    .main-header .navbar-toggler {
+        display: inline-flex !important;
+        order: 2;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+    }
+
+    .main-header .navbar-collapse.collapse:not(.show):not(.collapsing) {
+        display: none !important;
+    }
+
+    .main-header .navbar-collapse.show,
+    .main-header .navbar-collapse.collapsing {
+        display: block !important;
+        order: 3;
+        flex: 0 0 100% !important;
+        width: 100% !important;
+        padding: 12px 0 15px;
+        background: #000;
+    }
+
+    .main-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        gap: 0;
+        margin: 0 0 10px !important;
+        padding: 0;
+    }
+
+    .main-nav .nav-item {
+        width: 100%;
+    }
+
+    .main-nav .nav-link {
+        display: block;
+        width: 100%;
+        padding: 11px 8px !important;
+        text-align: left;
+        color: #fff !important;
+    }
+
+    .main-nav .nav-link.active::after {
+        right: auto;
+        bottom: 4px;
+        left: 8px;
+        width: 35px;
+    }
+
+    .header-actions {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        gap: 12px;
+        padding: 10px 0;
+    }
+
+    .search-box {
+        flex: 1 1 220px;
+        width: auto;
+        min-width: 0;
+    }
+
+    .container-fluid.px-4,
+    .container-fluid.px-lg-5 {
+        padding-right: 24px !important;
+        padding-left: 24px !important;
+    }
+
+    /* HERO */
+
+    .about-hero,
+    .about-hero-content {
+        min-height: 430px;
+    }
+
+    .about-hero-content {
+        grid-template-columns: 45% 55%;
+    }
+
+    .about-hero-copy {
+        min-height: 430px;
+        padding: 42px 28px 42px 7%;
+    }
+
+    .about-hero-copy h1 {
+        font-size: 36px;
+    }
+
+    .about-hero-image {
+        min-height: 430px;
+        height: 430px;
+    }
+
+    /* OTHER SECTIONS */
+
+    .story-layout {
+        gap: 35px;
+    }
+
+    .values-box {
+        gap: 30px;
+        padding: 35px;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+        gap: 26px;
+    }
+}
 
 /* =========================================================
    TABLET
+   MAX WIDTH: 991px
 ========================================================= */
 
-@media(max-width:991px){
+@media (max-width: 991px) {
 
-    .ozzo-header-logo-wrap{
-        width:165px;
-        flex:0 0 165px;
+    .top-links {
+        display: none;
     }
 
-    .desktop-logo-link{
-        width:165px;
+    .top-bar-inner {
+        justify-content: center;
+        padding-right: 16px !important;
+        padding-left: 16px !important;
     }
 
-    .desktop-logo{
-        width:155px !important;
-        max-width:155px !important;
+    .ozzo-logo {
+        font-size: 33px;
+    }
 
-        height:52px !important;
-        max-height:52px !important;
+    .ozzo-header-logo-wrap {
+        width: 165px;
+        flex-basis: 165px;
+    }
+
+    .desktop-logo-link {
+        width: 165px;
+    }
+
+    .desktop-logo {
+        width: 155px !important;
+        max-width: 155px !important;
+        height: 52px !important;
+        max-height: 52px !important;
+    }
+
+    /* HERO */
+
+    .about-hero {
+        min-height: 430px;
+        background-position: center center;
+    }
+
+    .about-hero-content {
+        width: 100%;
+        min-height: 430px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        overflow: hidden;
+    }
+
+    .about-hero-copy {
+        position: relative;
+        z-index: 5;
+        width: 48%;
+        max-width: 520px;
+        min-height: auto;
+        padding: 0 0 0 8%;
+    }
+
+    .about-hero-copy h1 {
+        font-size: 34px;
+    }
+
+    .about-hero-copy p {
+        max-width: 340px;
+    }
+
+    .about-hero-image {
+        width: 52%;
+        min-height: 430px;
+        height: 430px;
+        background: transparent;
+    }
+
+    .about-hero-image > img {
+        display: none !important;
+    }
+
+    /* OTHER SECTIONS */
+
+    .story-layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .category-story-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .category-story-header p {
+        max-width: 520px;
+    }
+
+    .values-box {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .about-cta-box {
+        padding: 32px 7%;
+    }
+
+    .footer-main {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
-
 
 /* =========================================================
-   MOBILE
+   MOBILE / SMALL TABLET
+   MAX WIDTH: 767px
 ========================================================= */
 
-@media(max-width:767px){
+@media (max-width: 767px) {
 
-    .ozzo-header-logo-wrap{
-        width:140px;
-        flex:0 0 140px;
+    .top-bar {
+        height: 28px;
     }
 
-    .desktop-logo-link{
-        display:none;
+    .top-bar-inner {
+        height: 28px;
+        font-size: 9px;
     }
 
-    .mobile-logo-link{
-        display:flex;
+    .shipping-text {
+        gap: 6px;
+        text-align: center;
     }
 
-    .mobile-logo{
-        width:125px !important;
-        max-width:125px !important;
+    .shipping-text span {
+        font-size: 8px;
+    }
 
-        height:52px !important;
-        max-height:52px !important;
+    .main-header {
+        top: 28px;
+    }
+
+    body {
+        padding-top: 95px;
+    }
+
+    .navbar {
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+    .navbar > .container-fluid {
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+    }
+
+    .ozzo-logo {
+        font-size: 30px;
+    }
+
+    .ozzo-header-logo-wrap {
+        width: 140px;
+        flex-basis: 140px;
+    }
+
+    .desktop-logo-link {
+        display: none;
+    }
+
+    .mobile-logo-link {
+        display: flex;
+        width: 140px;
+    }
+
+    .mobile-logo {
+        width: 125px !important;
+        max-width: 125px !important;
+        height: 52px !important;
+        max-height: 52px !important;
+    }
+
+    .header-actions {
+        gap: 12px;
+    }
+
+    .search-box {
+        height: 38px;
+    }
+
+    /* HERO */
+
+    .about-hero {
+        min-height: 420px;
+        background-position: center center;
+    }
+
+    .about-hero-content {
+        min-height: 420px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .about-hero-copy {
+        width: 62%;
+        max-width: none;
+        min-height: auto;
+        padding: 0 5px 0 25px;
+    }
+
+    .hero-label {
+        font-size: 9px;
+        letter-spacing: 1.3px;
+    }
+
+    .about-hero-copy h1 {
+        font-size: 31px;
+        letter-spacing: -1px;
+    }
+
+    .about-hero-copy p {
+        max-width: 300px;
+        font-size: 10px;
+        line-height: 1.65;
+    }
+
+    .about-hero-image {
+        width: 38%;
+        min-height: 420px;
+        height: 420px;
+        background: transparent;
+    }
+
+    .about-hero-image > img {
+        display: none !important;
+    }
+
+    /* OUR STORY */
+
+    .our-story {
+        padding: 35px 0;
+    }
+
+    .story-copy h2 {
+        font-size: 25px;
+    }
+
+    .story-copy p {
+        font-size: 9px;
+    }
+
+    .story-highlight {
+        gap: 10px;
+    }
+
+    .story-stat {
+        min-height: 125px;
+        padding: 15px;
+    }
+
+    /* BELIEFS */
+
+    .belief-section {
+        padding-bottom: 35px;
+    }
+
+    .section-heading h2 {
+        font-size: 22px;
+    }
+
+    .belief-card {
+        min-height: 140px;
+        padding: 15px;
+    }
+
+    .belief-icon {
+        width: 34px;
+        height: 34px;
+    }
+
+    .belief-card h3 {
+        font-size: 13px;
+    }
+
+    .belief-card p {
+        font-size: 8px;
+    }
+
+    /* WORLD */
+
+    .world-card {
+        min-height: 145px;
+        padding: 14px;
+    }
+
+    .world-content h3 {
+        font-size: 15px;
+    }
+
+    .world-content p {
+        font-size: 7px;
+    }
+
+    /* VALUES */
+
+    .values-box {
+        padding: 28px 24px;
+    }
+
+    .values-heading h2 {
+        font-size: 26px;
+    }
+
+    .value-row h3 {
+        font-size: 12px;
+    }
+
+    .value-row p {
+        font-size: 8px;
+    }
+
+    /* CTA */
+
+    .about-cta-box {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 28px 24px;
+    }
+
+    .about-cta-box h2 {
+        font-size: 24px;
+    }
+
+    .cta-actions {
+        width: 100%;
+    }
+
+    .cta-actions a {
+        flex: 1;
+    }
+
+    /* FOOTER */
+
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
     }
 }
-
 
 /* =========================================================
    SMALL MOBILE
+   MAX WIDTH: 575px
 ========================================================= */
 
-@media(max-width:575px){
+@media (max-width: 575px) {
 
-    .ozzo-header-logo-wrap{
-        width:135px;
-        flex-basis:135px;
+    .container-fluid.px-4,
+    .container-fluid.px-lg-5 {
+        padding-right: 15px !important;
+        padding-left: 15px !important;
     }
 
-    .mobile-logo-link{
-        width:135px;
+    .main-header .navbar-toggler {
+        padding: 6px 10px;
     }
 
-    .mobile-logo{
-        width:120px !important;
-        max-width:120px !important;
+    .main-header .navbar-collapse.show,
+    .main-header .navbar-collapse.collapsing {
+        padding: 10px 0 14px;
+    }
 
-        height:50px !important;
-        max-height:50px !important;
+    .main-header .header-actions {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 32px 32px;
+        gap: 8px;
+    }
+
+    .main-header .search-box {
+        grid-column: 1 / -1;
+        width: 100%;
+    }
+
+    /* HEADER LOGO */
+
+    .ozzo-header-logo-wrap {
+        width: 135px;
+        flex-basis: 135px;
+    }
+
+    .mobile-logo-link {
+        width: 135px;
+    }
+
+    .mobile-logo {
+        width: 120px !important;
+        max-width: 120px !important;
+        height: 50px !important;
+        max-height: 50px !important;
+    }
+
+    /* HERO */
+
+    .about-hero {
+        min-height: 400px;
+        background-position: center center;
+    }
+
+    .about-hero-content {
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .about-hero-copy {
+        width: 65%;
+        max-width: none;
+        min-height: auto;
+        padding: 0 4px 0 18px;
+    }
+
+    .about-hero-copy h1 {
+        font-size: 27px;
+        letter-spacing: -1px;
+    }
+
+    .about-hero-copy p {
+        max-width: 250px;
+        font-size: 10px;
+        line-height: 1.6;
+    }
+
+    .hero-btn {
+        width: 135px;
+        height: 37px;
+        font-size: 9px;
+    }
+
+    .about-hero-image {
+        width: 35%;
+        min-height: 400px;
+        height: 400px;
+    }
+
+    .about-hero-image > img {
+        display: none !important;
+    }
+
+    /* STORY */
+
+    .story-layout {
+        gap: 22px;
+    }
+
+    .story-copy h2 {
+        font-size: 22px;
+    }
+
+    .story-highlight {
+        grid-template-columns: 1fr;
+    }
+
+    .story-stat:nth-child(3) {
+        grid-column: auto;
+    }
+
+    /* BELIEFS */
+
+    .belief-card {
+        min-height: 130px;
+        padding: 13px;
+    }
+
+    /* WORLD */
+
+    .world-card {
+        min-height: 125px;
+    }
+
+    /* VALUES */
+
+    .values-box {
+        padding: 25px 18px;
+    }
+
+    .values-heading h2 {
+        font-size: 23px;
+    }
+
+    /* CTA */
+
+    .about-cta-box {
+        padding: 25px 18px;
+    }
+
+    .about-cta-box h2 {
+        font-size: 22px;
+    }
+
+    .cta-actions {
+        flex-direction: column;
+    }
+
+    .cta-actions a {
+        width: 100%;
+    }
+
+    /* FOOTER */
+
+    .footer-main {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+
+    .footer-bottom-inner {
+        height: auto;
+        min-height: 50px;
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px 0;
+        text-align: center;
     }
 }
 
 /* =========================================================
-   OZZO LOGO
-   DESKTOP + MOBILE
+   EXTRA SMALL MOBILE
+   MAX WIDTH: 380px
 ========================================================= */
 
-.ozzo-header-logo-wrap{
-    width:190px;
-    height:67px;
+@media (max-width: 380px) {
 
-    flex:0 0 190px;
+    .about-hero {
+        min-height: 390px;
+        background-position: center center;
+    }
 
-    display:flex;
-    align-items:center;
+    .about-hero-content {
+        min-height: 390px;
+    }
 
-    overflow:hidden;
+    .about-hero-copy {
+        width: 67%;
+        padding-left: 16px;
+    }
+
+    .about-hero-copy h1 {
+        font-size: 25px;
+    }
+
+    .about-hero-copy p {
+        max-width: 215px;
+        font-size: 9px;
+    }
+
+    .about-hero-image {
+        width: 33%;
+        min-height: 390px;
+        height: 390px;
+    }
+
+    .value-row {
+        grid-template-columns: 30px 1fr;
+        gap: 9px;
+    }
 }
 
-
-/* DESKTOP LOGO */
-
-.desktop-logo-link{
-    width:190px;
-    height:67px;
-
-    display:flex;
-    align-items:center;
-
-    overflow:hidden;
-}
-
-.desktop-logo{
-    display:block;
-
-    width:180px !important;
-    max-width:180px !important;
-
-    height:56px !important;
-    max-height:56px !important;
-
-    object-fit:contain !important;
-    object-position:left center !important;
-}
-
-
-/* MOBILE LOGO */
-
-.mobile-logo-link{
-    width:125px;
-    height:67px;
-
-    display:none;
-
-    align-items:center;
-
-    overflow:hidden;
-}
-
-.mobile-logo{
-    display:block;
-
-    width:112px !important;
-    max-width:112px !important;
-
-    height:56px !important;
-    max-height:56px !important;
-
-    object-fit:contain !important;
-    object-position:center center !important;
-}
-/* =========================================
-   REMOVE BLUE TEXT-SELECTION HIGHLIGHT
-   ACROSS OZZO PAGES
-========================================= */
+/* =========================================================
+   REMOVE TEXT SELECTION HIGHLIGHT
+========================================================= */
 
 ::selection {
     background: transparent !important;
