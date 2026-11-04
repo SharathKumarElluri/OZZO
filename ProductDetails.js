@@ -1616,36 +1616,53 @@ const gas = [
 
     };
 
+function normalizeCategory(value) {
 
-    /* =========================================================
-       CATEGORY HELPERS
-    ========================================================== */
-
-    function normalizeCategory(value) {
-    const v = String(value || "").toLowerCase();
+    const v = String(value || "").trim().toLowerCase();
 
     if (v.includes("gas")) return "gas";
     if (v.includes("station")) return "stationery";
     if (v.includes("book")) return "books";
     if (v.includes("pad")) return "pads";
-    if (v.includes("fashion")) return "fashion";
+
+    if (
+        v.includes("fashion") ||
+        v === "men" ||
+        v === "women" ||
+        v === "kids" ||
+        v.includes("men's wear") ||
+        v.includes("women's wear") ||
+        v.includes("kids wear")
+    ) {
+        return "fashion";
+    }
 
     return "";
 }
 
+/* =========================================================
+   CATEGORY FROM PRODUCT ID — MEN'S SPORTSWEAR FIX
+========================================================= */
 
-    /* =========================================================
-       CATEGORY FROM PRODUCT ID
-    ========================================================== */
+function categoryFromId(value) {
 
-    function categoryFromId(value) {
-    const v = String(value || "").toLowerCase();
+    const v = String(value || "").trim().toLowerCase();
 
-    if (v.includes("gas")) return "gas";
-    if (v.includes("book")) return "books";
-    if (v.includes("station")) return "stationery";
-    if (v.includes("pad")) return "pads";
-    if (v.includes("fashion")) return "fashion";
+    if (v.startsWith("gas-")) return "gas";
+    if (v.startsWith("book-")) return "books";
+    if (v.startsWith("stationery-")) return "stationery";
+    if (v.startsWith("pads-")) return "pads";
+
+    // Existing and dynamically generated fashion products
+    if (
+        v.startsWith("fashion-") ||
+        v.startsWith("women-") ||
+        v.startsWith("men-") ||
+        v.startsWith("kids-") ||
+        v.startsWith("sports-")
+    ) {
+        return "fashion";
+    }
 
     return "";
 }
@@ -2013,7 +2030,239 @@ const gas = [
 
     }
 
+/* =========================================================
+   DYNAMIC WOMEN'S PRODUCT FALLBACK
+   Supports:
+   - Women's Nighties
+   - Women's Night Pants
+   - Sports T-Shirts
+   - Sports Shorts
+   - All other women-001 to women-088 products
+========================================================= */
 
+function buildDynamicWomenProduct(raw) {
+
+    const source = raw || {};
+
+    const id =
+        url.id ||
+        source.id ||
+        "";
+
+    const name =
+        url.name ||
+        source.name ||
+        "OZZO Women's Product";
+
+
+    const rawPrice =
+        url.price !== null && url.price !== ""
+            ? url.price
+            : source.price;
+
+
+    const rawMrp =
+        url.mrp !== null && url.mrp !== ""
+            ? url.mrp
+            : source.mrp;
+
+
+    const price = Number(rawPrice || 0);
+
+    const mrp = Number(rawMrp || price);
+
+
+    /*
+       IMPORTANT:
+       Prefer the session image because the Women's page
+       saves its complete image URL in sessionStorage.
+    */
+
+    const image =
+        source.image ||
+        source.images?.[0] ||
+        url.image ||
+        "https://placehold.co/800x800/f3f3f3/132438?text=OZZO";
+
+
+    const subcategory =
+        url.subcategory ||
+        source.subcategory ||
+        "Women's Wear";
+
+
+    const rating =
+        Number(
+            url.rating !== null
+                ? url.rating
+                : source.rating || 4.5
+        );
+
+
+    const reviews =
+        Number(
+            url.reviews !== null
+                ? url.reviews
+                : source.reviews || 0
+        );
+
+
+    const description =
+        Array.isArray(source.description)
+            ? source.description
+            : [
+
+                `${name} from the OZZO Women's Fashion collection.`,
+
+                "Designed with comfort and everyday styling in mind.",
+
+                `Part of our ${subcategory.replace(/-/g, " ")} collection.`,
+
+                "A versatile addition to your everyday wardrobe."
+
+            ];
+
+
+    return {
+
+        id: id,
+
+        category: "Women's Wear",
+
+        categoryKey: "fashion",
+
+        subcategory: subcategory,
+
+        name: name,
+
+        brand: source.brand || "OZZO Fashion",
+
+        price: price,
+
+        mrp: mrp,
+
+        rating: rating,
+
+        reviews: reviews,
+
+        bought:
+            source.bought ||
+            `${Math.max(80, reviews * 2)}+ bought in past month`,
+
+        images: [
+            image
+        ],
+
+        description: description
+
+    };
+
+}
+
+
+/* =========================================================
+   DYNAMIC MEN'S FASHION PRODUCT
+   Supports:
+   - Night Pants
+   - Sports T-Shirts
+   - Sports Shorts
+   - Track Pants
+   - All dynamically generated men's products
+========================================================= */
+
+function buildDynamicMenProduct(source) {
+
+    source = source || {};
+
+    const id = url.id || source.id || "";
+
+    const name =
+        url.name ||
+        source.name ||
+        "OZZO Men's Product";
+
+    const price = Number(
+        url.price !== null && url.price !== ""
+            ? url.price
+            : source.price || 0
+    );
+
+    const mrp = Number(
+        url.mrp !== null && url.mrp !== ""
+            ? url.mrp
+            : source.mrp || price
+    );
+
+    const image =
+        source.image ||
+        source.imageUrl ||
+        source.images?.[0] ||
+        url.image ||
+        "https://placehold.co/800x800/f3f3f3/132438?text=OZZO";
+
+    const subcategory =
+        url.subcategory ||
+        source.subcategory ||
+        "Men's Wear";
+
+    const rating = Number(
+        url.rating !== null && url.rating !== ""
+            ? url.rating
+            : source.rating || 4.5
+    );
+
+    const reviews = Number(
+        url.reviews !== null && url.reviews !== ""
+            ? url.reviews
+            : source.reviews || 0
+    );
+
+    return {
+
+        id: id,
+
+        category: "Men's Wear",
+
+        categoryKey: "fashion",
+
+        subcategory: subcategory,
+
+        name: name,
+
+        brand: source.brand || "OZZO Fashion",
+
+        price: price,
+
+        mrp: mrp,
+
+        rating: rating,
+
+        reviews: reviews,
+
+        bought:
+            source.bought ||
+            `${Math.max(80, reviews * 2)}+ bought in past month`,
+
+        images: [image],
+
+        description:
+            Array.isArray(source.description)
+                ? source.description
+                : [
+
+                    `${name} from the OZZO Men's Fashion collection.`,
+
+                    "Designed for comfort, movement and everyday styling.",
+
+                    `Part of our ${subcategory.replace(/-/g, " ")} collection.`,
+
+                    "A versatile addition to your everyday wardrobe."
+
+                ]
+
+    };
+
+}
     /* =========================================================
        FIND CURRENT PRODUCT
     ========================================================== */
@@ -2116,61 +2365,170 @@ const gas = [
         }
 
     }
+    
+/* =========================================================
+   FASHION PRODUCT LOOKUP — FIXED
+   Supports existing fashion database AND dynamic products
+========================================================= */
 
-    else {
+else {
 
-        /*
-         * Fashion uses the generated database.
-         */
+    /*
+       STEP 1: Check the existing fashion database.
+    */
 
-        product =
-            products[url.id] ||
-            Object.values(products).find(
-                item =>
-                    item.name.toLowerCase() ===
-                    url.name.toLowerCase()
-            ) ||
-            null;
+    product =
+        products[url.id] ||
+        Object.values(products).find(
+            item =>
+                item.name.toLowerCase() ===
+                url.name.toLowerCase()
+        ) ||
+        null;
 
 
-        if (
-            product &&
-            url.image
-        ) {
+    /*
+       STEP 2: Check sessionStorage.
+
+       This is essential for dynamically generated
+       Women's products such as women-029 to women-088.
+    */
+
+    const matchingSessionProduct =
+
+        sessionProduct &&
+        (
+            !url.id ||
+            String(sessionProduct.id) === String(url.id)
+        )
+            ? sessionProduct
+            : null;
+
+
+    /*
+       STEP 3: Create the product from sessionStorage
+       when it isn't present in the existing database.
+    */
+
+    if (
+        !product &&
+        matchingSessionProduct
+    ) {
+
+        product = buildDynamicWomenProduct(
+            matchingSessionProduct
+        );
+
+    }
+
+
+    /*
+       STEP 4: URL fallback.
+
+       This also supports opening a product details link
+       when sessionStorage does not contain the product.
+    */
+
+    if (
+        !product &&
+        url.id &&
+        url.name
+    ) {
+
+        product = buildDynamicWomenProduct({
+
+            id: url.id,
+
+            name: url.name,
+
+            category: url.category || "women",
+
+            subcategory: url.subcategory || "Women's Wear",
+
+            price: url.price,
+
+            mrp: url.mrp,
+
+            image: url.image,
+
+            rating: url.rating,
+
+            reviews: url.reviews,
+
+            brand: "OZZO Fashion"
+
+        });
+
+    }
+
+
+    /*
+       STEP 5: Keep the correct product image.
+
+       Prefer the full image URL saved from the
+       Women's Fashion page.
+    */
+
+    if (product) {
+
+        const preferredImage =
+
+            matchingSessionProduct?.image ||
+            matchingSessionProduct?.images?.[0] ||
+            url.image;
+
+
+        if (preferredImage) {
 
             product.images = [
-                url.image
+                preferredImage
             ];
 
         }
 
 
+        /*
+           Update URL price when provided.
+        */
+
         if (
-            product &&
-            url.price !== null
+            url.price !== null &&
+            url.price !== ""
         ) {
 
-            product.price =
-                Number(
-                    url.price
-                );
+            product.price = Number(url.price);
 
         }
 
 
         if (
-            product &&
-            url.mrp !== null
+            url.mrp !== null &&
+            url.mrp !== ""
         ) {
 
-            product.mrp =
-                Number(
-                    url.mrp
-                );
+            product.mrp = Number(url.mrp);
+
+        }
+
+
+        /*
+           Preserve fashion category.
+        */
+
+        product.categoryKey = "fashion";
+
+        if (
+            String(url.id).startsWith("women-") ||
+            String(matchingSessionProduct?.category || "").toLowerCase() === "women"
+        ) {
+
+            product.category = "Women's Wear";
 
         }
 
     }
+
+}
 
 
     /* =========================================================
@@ -2765,7 +3123,20 @@ const gas = [
 
             "Tops",
 
-            "Dresses"
+            "Dresses",
+
+            "women-nighties",
+
+"women-night-pants",
+
+"women-sports-tshirts",
+
+"women-sports-shorts",
+"night-pants",
+"sports-t-shirt",
+"sports-shorts",
+"track-pants",
+"joggers"
 
         ]);
 

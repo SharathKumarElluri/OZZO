@@ -9,21 +9,81 @@
     <link rel="icon" type="image/png" href="../OZZO logo.png">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="Womens.css">
 
+    <style>
+        /* =====================================================
+           OZZO WOMEN'S NIGHTWEAR & SPORTSWEAR ADDITIONS
+        ===================================================== */
 
+        .women-category-options .women-category-btn {
+            width: 100%;
+            text-align: left;
+        }
+
+        .women-category-group-heading h3 {
+            margin-bottom: 0;
+        }
+
+        .women-products-area .product-image {
+            background: #fff;
+            overflow: hidden;
+        }
+
+        .women-products-area .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+            background: #fff;
+        }
+
+        .women-products-area .product-item:hover .product-image img {
+            transform: scale(1.035);
+        }
+
+        .women-products-area .product-image img {
+            transition: transform 0.3s ease;
+        }
+
+        .women-category-group-heading {
+            display: flex;
+            align-items: center;
+        }
+
+        .women-category-group-heading h3 {
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        .women-category-btn i {
+            margin-right: 7px;
+        }
+
+        .product-grid .product-item[style*="display: none"] {
+            display: none !important;
+        }
+
+        @media (max-width: 767.98px) {
+            .women-category-group-heading h3 {
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
 
 <body class="ozzo-category-page page-women">
 
-<!-- TOP SHIPPING BAR -->
+<!-- =====================================================
+     TOP SHIPPING BAR
+===================================================== -->
 <div class="top-bar">
     <div class="container-fluid top-bar-inner px-4">
+
         <div class="shipping-text">
             <i class="fa-solid fa-truck" aria-hidden="true"></i>
             <span>Free shipping on orders above ₹999</span>
@@ -34,20 +94,28 @@
             <span>|</span>
             <a href="#">Help</a>
             <span>|</span>
+
             <a href="#" class="login-link">
                 <i class="fa-regular fa-user"></i>
                 Login
             </a>
         </div>
+
     </div>
 </div>
 
-<!-- HEADER -->
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
 <header class="main-header">
+
     <nav class="navbar navbar-expand-xl">
+
         <div class="container-fluid px-4">
 
             <div class="ozzo-header-logo-wrap">
+
                 <a href="../index.html" class="desktop-logo-link">
                     <img src="../OZZO logo1.jpeg" alt="OZZO" class="desktop-logo">
                 </a>
@@ -55,6 +123,7 @@
                 <a href="../index.html" class="mobile-logo-link">
                     <img src="../OZZO logo1.jpeg" alt="OZZO" class="mobile-logo">
                 </a>
+
             </div>
 
             <button
@@ -65,8 +134,7 @@
                 aria-controls="ozzoNavbar"
                 aria-expanded="false"
                 aria-label="Toggle navigation"
-                title="Toggle navigation"
-            >
+                title="Toggle navigation">
 
                 <i class="fa-solid fa-bars"></i>
 
@@ -75,6 +143,7 @@
             <div class="collapse navbar-collapse" id="ozzoNavbar">
 
                 <ul class="navbar-nav main-nav mx-auto">
+
                     <li class="nav-item">
                         <a class="nav-link" href="../index.html">Home</a>
                     </li>
@@ -98,11 +167,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/Gas/Gas.html">Gas</a>
                     </li>
+
                 </ul>
 
                 <div class="header-actions">
 
                     <div class="search-box">
+
                         <input
                             type="text"
                             id="searchInput"
@@ -110,36 +181,49 @@
                             aria-label="Search women's fashion products">
 
                         <i class="fa-solid fa-magnifying-glass"></i>
+
                     </div>
 
-                    <a class="header-icon wishlist-button"
-                       href="../Wishlist/Wishlist.html"
-                       title="Wishlist"
-                       aria-label="Wishlist">
+                    <a
+                        class="header-icon wishlist-button"
+                        href="../Wishlist/Wishlist.html"
+                        title="Wishlist"
+                        aria-label="Wishlist">
+
                         <i class="fa-regular fa-heart"></i>
+
                     </a>
 
-                    <a href="../Cart/Cart.html"
-                       class="header-icon cart-button"
-                       title="Shopping Cart"
-                       aria-label="Shopping Cart">
+                    <a
+                        href="../Cart/Cart.html"
+                        class="header-icon cart-button"
+                        title="Shopping Cart"
+                        aria-label="Shopping Cart">
+
                         <i class="fa-solid fa-bag-shopping"></i>
                         <span class="cart-count" id="cartCount">0</span>
+
                     </a>
 
                 </div>
+
             </div>
         </div>
     </nav>
 </header>
 
-<!-- HERO -->
+
+<!-- =====================================================
+     HERO
+===================================================== -->
 <section class="fashion-hero">
+
     <div class="container-fluid p-0">
 
         <div class="fashion-hero-content">
 
             <div class="fashion-hero-copy">
+
                 <span class="hero-label">OZZO WOMEN'S FASHION</span>
 
                 <h1>
@@ -157,9 +241,11 @@
                     Shop Collection
                     <span>→</span>
                 </a>
+
             </div>
 
             <div class="fashion-hero-image">
+
                 <img src="../fashion hero.png" alt="OZZO Women's Fashion Collection">
 
                 <div class="hero-offer">
@@ -167,25 +253,33 @@
                     <strong>40%</strong>
                     <span>OFF</span>
                 </div>
+
             </div>
 
         </div>
     </div>
 </section>
 
-<!-- PRODUCTS AND CATEGORY FILTERS -->
+
+<!-- =====================================================
+     PRODUCTS AND CATEGORY FILTERS
+===================================================== -->
 <main class="fashion-products" id="fashionProducts">
 
     <div class="container-fluid px-4">
 
         <div class="women-shop-layout">
 
-            <!-- LEFT CATEGORY SIDEBAR -->
+
+            <!-- =================================================
+                 LEFT CATEGORY SIDEBAR
+            ================================================== -->
             <aside class="women-category-section" id="womenCategories">
 
                 <div class="women-category-container">
 
                     <div class="women-category-heading">
+
                         <span class="women-category-eyebrow">FIND YOUR STYLE</span>
 
                         <h2>Shop Women's Clothing</h2>
@@ -194,9 +288,11 @@
                             Explore elegant outfits, everyday essentials
                             and statement pieces for every occasion.
                         </p>
+
                     </div>
 
-                    <!-- CATEGORY 01 -->
+
+                    <!-- CATEGORY 01: TOPS & SHIRTS -->
                     <div class="women-category-group">
 
                         <div class="women-category-group-heading">
@@ -208,8 +304,10 @@
 
                             <button type="button" class="women-category-btn active"
                                 data-women-filter="all" aria-pressed="true">
+
                                 <i class="fa-solid fa-border-all"></i>
                                 All Women's Wear
+
                             </button>
 
                             <button type="button" class="women-category-btn"
@@ -245,7 +343,8 @@
                         </div>
                     </div>
 
-                    <!-- CATEGORY 02 -->
+
+                    <!-- CATEGORY 02: DRESSES & ETHNIC WEAR -->
                     <div class="women-category-group">
 
                         <div class="women-category-group-heading">
@@ -288,7 +387,8 @@
                         </div>
                     </div>
 
-                    <!-- CATEGORY 03 -->
+
+                    <!-- CATEGORY 03: SAREES -->
                     <div class="women-category-group">
 
                         <div class="women-category-group-heading">
@@ -300,8 +400,10 @@
 
                             <button type="button" class="women-category-btn"
                                 data-women-filter="all-sarees" aria-pressed="false">
+
                                 <i class="fa-solid fa-border-all"></i>
                                 All Sarees
+
                             </button>
 
                             <button type="button" class="women-category-btn"
@@ -327,7 +429,8 @@
                         </div>
                     </div>
 
-                    <!-- CATEGORY 04 -->
+
+                    <!-- CATEGORY 04: PANTS & BOTTOMS -->
                     <div class="women-category-group">
 
                         <div class="women-category-group-heading">
@@ -367,13 +470,61 @@
                                 Skirts
                             </button>
 
-                            <button type="button" class="women-category-btn"
+                            <!--<button type="button" class="women-category-btn"
                                 data-women-filter="shorts" aria-pressed="false">
                                 Shorts
+                            </button>-->
+
+                        </div>
+                    </div>
+
+
+                    <!-- =================================================
+                         CATEGORY 05: NIGHTWEAR & SPORTSWEAR
+                    ================================================== -->
+                    <div class="women-category-group">
+
+                        <div class="women-category-group-heading">
+                            <span>05</span>
+                            <h3>Nightwear &amp; Sportswear</h3>
+                        </div>
+
+                        <div class="women-category-options" role="group" aria-label="Filter nightwear and sportswear">
+
+                            <button type="button" class="women-category-btn"
+                                data-women-filter="women-nighties" aria-pressed="false">
+
+                               
+                                Women's Nighties
+
+                            </button>
+
+                            <button type="button" class="women-category-btn"
+                                data-women-filter="women-night-pants" aria-pressed="false">
+
+                                Women's Night Pants
+
+                            </button>
+
+                            <button type="button" class="women-category-btn"
+                                data-women-filter="women-sports-tshirts" aria-pressed="false">
+
+                            
+                                Sports T-Shirts
+
+                            </button>
+
+                            <button type="button" class="women-category-btn"
+                                data-women-filter="women-sports-shorts" aria-pressed="false">
+
+                              
+                                Sports Shorts
+
                             </button>
 
                         </div>
                     </div>
+
 
                     <!-- CATEGORY FOOTER -->
                     <div class="women-category-footer">
@@ -392,30 +543,40 @@
                 </div>
             </aside>
 
-            <!-- RIGHT PRODUCTS AREA -->
+
+            <!-- =================================================
+                 RIGHT PRODUCTS AREA
+            ================================================== -->
             <section class="women-products-area">
 
                 <div class="products-heading">
 
                     <div>
+
                         <span class="section-label">OZZO COLLECTION</span>
+
                         <h2>Women's Fashion Collection</h2>
+
                         <p>Find your fit. Express your style.</p>
+
                     </div>
 
                     <div class="product-filters">
+
                         <span class="category-product-count" id="productCount">
                             Explore women's styles
                         </span>
+
                     </div>
 
                 </div>
 
-                <!-- INDEPENDENT PRODUCT SCROLL CONTAINER -->
+
+                <!-- PRODUCT SCROLL CONTAINER -->
                 <div class="women-products-scroll">
 
-                    <!-- PRODUCTS GENERATED BY JAVASCRIPT -->
                     <div id="productGrid" class="product-grid"></div>
+
 
                     <!-- NO PRODUCTS MESSAGE -->
                     <div id="noProducts" class="no-products" hidden>
@@ -435,25 +596,32 @@
                     </div>
 
                 </div>
+
             </section>
 
         </div>
     </div>
 </main>
 
-<!-- PROMO SECTION -->
+
+<!-- =====================================================
+     PROMO SECTION
+===================================================== -->
 <section class="women-promo">
 
     <div class="women-promo-inner">
 
         <div>
+
             <span class="promo-eyebrow">THE OZZO EDIT</span>
 
             <h2>Style that works <span>every day.</span></h2>
 
             <p>
-                Discover everyday favourites with comfortable fabrics and considered fits.
+                Discover everyday favourites with comfortable fabrics
+                and considered fits.
             </p>
+
         </div>
 
         <a href="#fashionProducts" class="promo-button">
@@ -464,7 +632,10 @@
     </div>
 </section>
 
-<!-- FOOTER -->
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
 <footer class="footer">
 
     <div class="container-fluid px-lg-5">
@@ -484,6 +655,7 @@
 
             </div>
 
+
             <div class="footer-column">
 
                 <h4>Quick Links</h4>
@@ -496,6 +668,7 @@
 
             </div>
 
+
             <div class="footer-column">
 
                 <h4>Categories</h4>
@@ -507,6 +680,7 @@
 
             </div>
 
+
             <div class="footer-column">
 
                 <h4>Services</h4>
@@ -517,6 +691,7 @@
                 <a href="/Comming Soon.html">Computer Services</a>
 
             </div>
+
 
             <div class="footer-newsletter">
 
@@ -567,18 +742,22 @@
                     </a>
 
                 </div>
+
             </div>
 
         </div>
     </div>
+
 
     <div class="footer-bottom">
 
         <div class="container-fluid px-lg-5">
 
             <div class="footer-bottom-inner">
+
                 <span>© 2026 OZZO. All rights reserved.</span>
                 <span>Better Choices. A Brighter You.</span>
+
             </div>
 
         </div>
@@ -586,10 +765,21 @@
 
 </footer>
 
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
+
+    "use strict";
+
+
+    /* =====================================================
+       1. DOM ELEMENTS
+    ===================================================== */
 
     const productGrid = document.getElementById("productGrid");
     const searchInput = document.getElementById("searchInput");
@@ -603,7 +793,12 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelectorAll("[data-women-filter]")
     );
 
-    // PRODUCT DATA
+
+    /* =====================================================
+       2. EXISTING WOMEN'S PRODUCT DATA
+       Your original 28 products are preserved.
+    ===================================================== */
+
     const products = [
 
         ["women-001", "Classic Beige Dress", "dresses", 1299, 1799, 4.4, 86, "../classic Beige Dress.jpg.jpg", "BESTSELLER"],
@@ -664,21 +859,277 @@ document.addEventListener("DOMContentLoaded", function () {
 
     ];
 
+
+ /* =====================================================
+   3. ONLINE PRODUCT IMAGE COLLECTIONS
+   15 real online images per new category.
+   Images are loaded directly from external image CDNs.
+===================================================== */
+
+const newCollections = [
+
+    /* -------------------------------------------------
+       CATEGORY 1: WOMEN'S NIGHTIES — 15 PRODUCTS
+    ------------------------------------------------- */
+    {
+        category: "women-nighties",
+        basePrice: 499,
+
+        names: [
+            "Rust Floral Cotton Nighty",
+            "Brown Floral Cotton Nighty",
+            "Brown Printed Comfort Nighty",
+            "Purple Floral Nighty",
+            "Maroon Printed Cotton Nighty",
+            "Yellow Floral Cotton Nighty",
+            "Mauve Floral Nighty",
+            "Sea Green Printed Nighty",
+            "Mint Green Cotton Nighty",
+            "Grey Floral Cotton Nighty",
+            "Teal Floral Cotton Nighty",
+            "Rose Pink Printed Nighty",
+            "Black Ethnic Print Nighty",
+            "Brown Ethnic Cotton Nighty",
+            "Yellow Jaipuri Cotton Nighty"
+        ],
+
+        images: [
+            "https://www.vardhana.in/cdn/shop/files/Raj-403-4.jpg?v=1791295929&width=533",
+            "https://www.vardhana.in/cdn/shop/files/DSC00068.jpg?v=1792293762&width=533",
+            "https://www.vardhana.in/cdn/shop/files/Raj-388-4.jpg?v=1792010140&width=533",
+            "https://www.vardhana.in/cdn/shop/files/1776316054949-6a4s04wrelk.jpg?v=1791295844&width=533",
+            "https://www.vardhana.in/cdn/shop/files/DSC07727.jpg?v=1789992840&width=533",
+            "https://www.vardhana.in/cdn/shop/files/IMG_0776_17905051859471.png?v=1791375038&width=533",
+            "https://www.vardhana.in/cdn/shop/files/DSC00058.jpg?v=1789992805&width=533",
+            "https://www.vardhana.in/cdn/shop/files/DSC00078.jpg?v=1791714407&width=533",
+            "https://www.vardhana.in/cdn/shop/files/Raj-386.jpg?v=1792027544&width=533",
+            "https://www.vardhana.in/cdn/shop/files/Raj-387.jpg?v=1792023383&width=533",
+            "https://www.vardhana.in/cdn/shop/files/Raj-385-4.jpg?v=1792009745&width=533",
+            "https://www.vardhana.in/cdn/shop/files/Raj-384.jpg?v=1792027258&width=533",
+            "https://www.vardhana.in/cdn/shop/files/Raj-379.jpg?v=1792027087&width=533",
+            "https://www.vardhana.in/cdn/shop/files/Raj-383.jpg?v=1792026971&width=533",
+            "https://www.9shineslabel.com/cdn/shop/files/Floral_Cotton_Night_dress_1.jpg?v=1758781418&width=1080"
+        ]
+    },
+
+
+    /* -------------------------------------------------
+       CATEGORY 2: WOMEN'S NIGHT PANTS — 15 PRODUCTS
+    ------------------------------------------------- */
+    {
+        category: "women-night-pants",
+        basePrice: 449,
+
+        names: [
+            "Pearl Grey Printed Night Pants",
+            "Navy Blue Printed Pajama Pants",
+            "Grey Ribbed Lounge Pants",
+            "Black Printed Night Pants",
+            "Pink Printed Cotton Night Pants",
+            "Lavender Cotton Lounge Pants",
+            "Black Relaxed Lounge Pants",
+            "Grey Printed Sleep Pants",
+            "Beige Cotton Lounge Pants",
+            "Black Printed Pajama Pants",
+            "Sky Blue Ribbed Night Pants",
+            "Maroon Cotton Lounge Pants",
+            "Teal Blue Relaxed Night Pants",
+            "Black Soft Lounge Pants",
+            "Pastel Stripe Cotton Pajama Pants"
+        ],
+
+        images: [
+            "https://cupidclothings.com/cdn/shop/files/WhatsApp_Image_2026-01-19_at_12.34.30_PM_3.jpg?v=1768896407&width=533",
+            "https://cupidclothings.com/cdn/shop/files/ZHP_0600.jpg?v=1723375912&width=533",
+            "https://cupidclothings.com/cdn/shop/files/greyf1.png?v=1755937917&width=533",
+            "https://cupidclothings.com/cdn/shop/files/10-01-2025-07752.jpg?v=1737350118&width=533",
+            "https://cupidclothings.com/cdn/shop/files/10-01-2025-07846.jpg?v=1737375987&width=533",
+            "https://cupidclothings.com/cdn/shop/files/Cupid_Easy_cotton_pants-Lavender.jpg?v=1748945625&width=533",
+            "https://cupidclothings.com/cdn/shop/files/1_ace660c3-8439-448c-ab4c-89f563d9c5e7.jpg?v=1761556930&width=533",
+            "https://cupidclothings.com/cdn/shop/files/WhatsApp_Image_2025-09-04_at_6.45.55_PM.jpg?v=1757478348&width=533",
+            "https://cupidclothings.com/cdn/shop/files/Cupid_Beige_Cotton_loungepants.jpg?v=1748945854&width=533",
+            "https://cupidclothings.com/cdn/shop/files/copid_26-7-220571.jpg?v=1749306070&width=533",
+            "https://cupidclothings.com/cdn/shop/files/bluef1.png?v=1755940770&width=533",
+            "https://cupidclothings.com/cdn/shop/files/51A2316copy.jpg?v=1749301926&width=533",
+            "https://cupidclothings.com/cdn/shop/files/51A2433copy.jpg?v=1745641378&width=533",
+            "https://cupidclothings.com/cdn/shop/files/ZHP_0295.png?v=1751614309&width=533",
+            "https://www.bedbathandbeyond.co.nz/productimages/magnify/1/28850_67817_70495.jpg"
+        ]
+    },
+
+
+    /* -------------------------------------------------
+       CATEGORY 3: WOMEN'S SPORTS T-SHIRTS — 15 PRODUCTS
+    ------------------------------------------------- */
+    {
+        category: "women-sports-tshirts",
+        basePrice: 599,
+
+        names: [
+            "Black Performance Sports T-Shirt",
+            "Purple AEROREADY Training T-Shirt",
+            "Pink Active Performance T-Shirt",
+            "Grey Athletic Training T-Shirt",
+            "Blue Airflow Sports T-Shirt",
+            "Black Dri-FIT Sports T-Shirt",
+            "Pink Performance Training T-Shirt",
+            "Green Workout T-Shirt",
+            "Black Quick-Dry Gym T-Shirt",
+            "Blue Quick-Dry Sports T-Shirt",
+            "Black Dry-Fit Training T-Shirt",
+            "Purple Dry-Fit Active T-Shirt",
+            "Sky Blue Actifit Sports T-Shirt",
+            "Navy Blue Dry-Fit Sports T-Shirt",
+            "Orange Activewear Sports T-Shirt"
+        ],
+
+        images: [
+            "https://www.oxensports.com/cdn/shop/files/oxperftlb.jpg?crop=center&height=1200&v=1755697543&width=1200",
+            "https://assets.adidas.com/images/h_2000%2Cf_auto%2Cq_auto%2Cfl_lossy%2Cc_fill%2Cg_auto/9cd4867120734fb7957103a47e8f0d96_9366/Solid_AEROREADY_Training_Tee_Purple_JD9140_25_model.jpg",
+            "https://feetures.com/cdn/shop/files/Bloom-Womens_Tee-N25_LG_AAW2924-1.jpg?v=1760710088&width=1200",
+            "https://gymarmour.co/cdn/shop/files/DSC00854_2f556d54-926e-4777-9226-142a1f268b19.jpg?v=1761894523&width=3500",
+            "https://powercutclothing.com/cdn/shop/files/1_516b31ed-64e2-4b4c-96c9-8c8b0ec4987b.jpg?v=1753441321",
+            "https://static.nike.com/a/images/t_default/fc469467-5532-4c4d-8159-6d6d6535799e/dri-fit-t-shirt-8zz24W.png",
+            "https://cultstore.com/cdn/shop/files/706566_D.jpg?v=1763013985&width=963",
+            "https://cultstore.com/cdn/shop/files/706472_A.jpg?v=1764574985",
+            "https://cdn.grofers.com/da/cms-assets/cms/product/27048c00-11e4-479d-8e8e-c680d5a4c205.jpg",
+            "https://m.media-amazon.com/images/I/61nhBcyMrrL._SL1500_.jpg",
+            "https://atacadista.ararasport.com.br/uploads/images/suvcm45850xvocr8csvb3kzflylr/w_1600/1-352.jpg",
+            "https://usealphaco.com.br/cdn/shop/files/Camiseta_Feminina_Dry_Fit_New_Lupus_Roxo_Essential_04abr26_Fc.jpg?v=1776278368&width=1024",
+            "https://fireoxsports.com/cdn/shop/files/7_764fce4d-8b37-455f-944c-db614c5ec11d.jpg?v=1734612396",
+            "https://chkokko.com/cdn/shop/files/01_0048_1_ins.jpg?v=1742623574&width=1946",
+            "https://www.bleualps.com/cdn/shop/products/Orangewomentshirts.jpg?v=1677816735&width=1946"
+        ]
+    },
+
+
+    /* -------------------------------------------------
+       CATEGORY 4: WOMEN'S SPORTS SHORTS — 15 PRODUCTS
+    ------------------------------------------------- */
+    {
+        category: "women-sports-shorts",
+        basePrice: 499,
+
+        names: [
+            "Black M20 Running Shorts",
+            "Black Active Running Shorts",
+            "Light Blue Quick-Dry Sports Shorts",
+            "Black Flex Running Shorts",
+            "Neon Yellow Training Shorts",
+            "Blue Athletic Workout Shorts",
+            "Red Quick-Dry Running Shorts",
+            "Teal Woven Running Shorts",
+            "White High-Waist Sports Shorts",
+            "Black Grey Pink Running Shorts Set",
+            "Higher State Running Shorts Set",
+            "Multi-Colour Double-Layer Sports Shorts",
+            "Performance Running Shorts Set",
+            "Nike Dri-FIT Running Shorts",
+            "Black And Rose Two-in-One Workout Shorts"
+        ],
+
+        images: [
+            "https://www.big5sportinggoods.com/catalogimage/img/product/rwd/zoom/4340_11162_5206_033_zoom_02.jpg",
+            "https://i5.walmartimages.com/seo/Athletic-Works-Women-s-Active-Running-Shorts_6bea32bc-a2f9-4607-9f7c-24c18646da08_1.8fcd079782cffe1fd5865ffff36242e1.jpeg?odnBg=FFFFFF&odnHeight=573&odnWidth=573",
+            "https://image.made-in-china.com/2f0j00qGRbtkEUBauv/Lightweight-100-Polyester-Bottom-with-Side-Zip-Pocket-Gym-Wear-Women-Fitness-Running-Shorts.jpg",
+            "https://cdn.secure-cloud.shop/cdn/366/2024/11/03/main-BALEAF-Womens-3-Running-Athletic-Shorts-Quick-Dry-Gym-Workout-Shorts-with-PocketsBlack-1864470-1620331.jpg",
+            "https://i5.walmartimages.com/seo/Womens-Mid-Waisted-Running-Shorts-Liner-5-Quick-Dry-Athletic-Sport-Workout-Track-Shorts-Zip-Pocket_7af692c6-5624-40a1-b47b-a32c82d071ab.9a6b93b6ad376e0adfd41a55d7237d00.jpeg",
+            "https://i5.walmartimages.com/seo/Lroveb-Athletic-Shorts-for-Women-Casual-Workout-Gym-Shorts-Womens-Running-Elastic-Waist-Pants-Shorts-Pocket-Blue_8e5b4212-f13c-47df-bb72-9f44fc3a4346.07ea45ddb84e94fefc469f13943530f5.jpeg?odnBg=FFFFFF&odnHeight=768&odnWidth=768",
+            "https://i5.walmartimages.com/seo/CRZ-YOGA-Womens-Mid-Waisted-Running-Shorts-Liner-5-Inches-Quick-Dry_c8a88e0f-f4e0-499b-8fe0-605c5f56b739.630e2038fa027ff669e3585f3a197414.jpeg",
+            "https://media.kohlsimg.com/is/image/kohls/7154027_Blue_Crayon?hei=1000&op_sharpen=1&wid=1000",
+            "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lyn84jk6blhx1c",
+            "https://i5.walmartimages.com/seo/Clearance-Women-s-Shorts-Casual-Summer-Comfy-Elastic-High-Waist-Running-Shorts-Running-Shorts-Women-Quick-Dry-Athletic-Sports-Shorts-Lightweight-Acti_01ff5b00-81a4-42aa-ab84-2f5c776bfbcd.00fba656013de6f82ead878050fc1809.jpeg",
+            "https://cdn11.bigcommerce.com/s-21x65e8kfn/images/stencil/original/products/39019/163089/HST1640_1000_1__97673.1720780500.jpg",
+            "https://down-br.img.susercontent.com/file/br-11134207-820lb-mn32exaqq9dt4d",
+            "https://m.media-amazon.com/images/I/81Asf2GXY%2BL.jpg",
+            "https://down-tw.img.susercontent.com/file/tw-11134207-7rasi-m1qnm8p7q3nv7c",
+            "https://img.grouponcdn.com/stores/uFnx51oDu4vGd2KSMfXQuSmnAZQ/storespi30184450-1400x840/v1/t2001x1212.webp"
+        ]
+    }
+
+];
+
+
+/* =====================================================
+   4. GENERATE 60 NEW PRODUCTS FROM ONLINE IMAGES
+===================================================== */
+
+let nextProductNumber = 29;
+
+newCollections.forEach(function (collection) {
+
+    collection.names.forEach(function (name, index) {
+
+        const price = collection.basePrice + (index * 25);
+        const mrp = Math.round(price * 1.35);
+
+        const rating = Number(
+            (4.2 + ((index % 8) * 0.1)).toFixed(1)
+        );
+
+        const reviews = 18 + (index * 7);
+
+        const image = collection.images[index];
+
+        const badge =
+            index === 0
+                ? "NEW"
+                : index === 5
+                    ? "TRENDING"
+                    : "";
+
+        products.push([
+
+            "women-" + String(nextProductNumber).padStart(3, "0"),
+            name,
+            collection.category,
+            price,
+            mrp,
+            rating,
+            reviews,
+            image,
+            badge
+
+        ]);
+
+        nextProductNumber++;
+
+    });
+
+});
+
+
+    /* =====================================================
+       7. INITIAL STATE
+    ===================================================== */
+
     let selectedFilter = "all";
     let cart = [];
 
-    // LOAD CART
+
+    /* =====================================================
+       8. LOAD CART
+    ===================================================== */
+
     try {
+
         cart = JSON.parse(localStorage.getItem("ozzoCart")) || [];
 
         if (!Array.isArray(cart)) {
             cart = [];
         }
+
     } catch (error) {
+
         cart = [];
+
     }
 
-    // CATEGORY GROUPS
+
+    /* =====================================================
+       9. CATEGORY GROUPS
+    ===================================================== */
+
     const topTypes = [
         "oversized-top",
         "t-shirts",
@@ -714,49 +1165,88 @@ document.addEventListener("DOMContentLoaded", function () {
         "cotton-sarees"
     ];
 
-    // CATEGORY LABELS
+    const nightwearTypes = [
+        "women-nighties",
+        "women-night-pants"
+    ];
+
+    const sportswearTypes = [
+        "women-sports-tshirts",
+        "women-sports-shorts"
+    ];
+
+
+    /* =====================================================
+       10. CATEGORY LABELS
+    ===================================================== */
+
     const categoryNames = {
+
         all: "all women's clothing",
+
         tops: "all tops",
         "t-shirts": "T-shirts",
         shirts: "shirts",
         "crop-tops": "crop tops",
         blouses: "blouses",
         tunics: "tunics",
+
         dresses: "all dresses",
         "casual-dresses": "casual dresses",
         "maxi-dresses": "maxi dresses",
         "party-wear": "party wear",
         kurtas: "kurtas",
         "ethnic-wear": "ethnic wear",
+
         "all-sarees": "all sarees",
         "pattu-sarees": "pattu sarees",
         "fancy-sarees": "fancy sarees",
         "daily-wear-sarees": "daily wear sarees",
         "cotton-sarees": "cotton sarees",
+
         bottoms: "all bottoms",
         jeans: "jeans",
         trousers: "trousers",
         "wide-leg-pants": "wide-leg pants",
         leggings: "leggings",
         skirts: "skirts",
-        shorts: "shorts"
+        shorts: "shorts",
+
+        "women-nighties": "women's nighties",
+        "women-night-pants": "women's night pants",
+        "women-sports-tshirts": "women's sports T-shirts",
+        "women-sports-shorts": "women's sports shorts"
+
     };
 
-    // ESCAPE HTML
+
+    /* =====================================================
+       11. HTML ESCAPE
+    ===================================================== */
+
     function escapeHTML(value) {
+
         return String(value).replace(/[&<>"']/g, function (character) {
+
             return {
+
                 "&": "&amp;",
                 "<": "&lt;",
                 ">": "&gt;",
                 '"': "&quot;",
                 "'": "&#39;"
+
             }[character];
+
         });
+
     }
 
-    // DISPLAY CATEGORY
+
+    /* =====================================================
+       12. DISPLAY CATEGORY
+    ===================================================== */
+
     function getDisplayCategory(category) {
 
         if (sareeTypes.includes(category)) {
@@ -775,10 +1265,22 @@ document.addEventListener("DOMContentLoaded", function () {
             return "Bottoms";
         }
 
+        if (nightwearTypes.includes(category)) {
+            return "Nightwear";
+        }
+
+        if (sportswearTypes.includes(category)) {
+            return "Sportswear";
+        }
+
         return "Women's Wear";
     }
 
-    // RENDER PRODUCTS
+
+    /* =====================================================
+       13. RENDER PRODUCTS
+    ===================================================== */
+
     function renderProducts() {
 
         productGrid.innerHTML = products.map(function (product) {
@@ -793,9 +1295,12 @@ document.addEventListener("DOMContentLoaded", function () {
             const image = product[7];
             const badge = product[8];
 
-            const discount = Math.round(((mrp - price) / mrp) * 100);
+            const discount = Math.round(
+                ((mrp - price) / mrp) * 100
+            );
 
             return `
+
                 <article
                     class="product-item"
                     data-product-id="${escapeHTML(id)}"
@@ -811,13 +1316,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
                         <div class="product-image">
 
-                            <img
-                                src="${escapeHTML(image)}"
-                                alt="${escapeHTML(name)}"
-                                loading="lazy"
-                                onerror="this.style.display='none';">
-
-                            ${badge ? `<span class="product-badge">${escapeHTML(badge)}</span>` : ""}
+                           <img
+    src="${escapeHTML(image)}"
+    alt="${escapeHTML(name)}"
+    loading="lazy"
+    referrerpolicy="no-referrer"
+    onerror="this.onerror=null; this.src='https://placehold.co/600x750/F7F8FA/64748B?text=OZZO+Product';">
+                            ${badge ? `
+                                <span class="product-badge">
+                                    ${escapeHTML(badge)}
+                                </span>
+                            ` : ""}
 
                             <button
                                 class="wishlist"
@@ -828,15 +1337,22 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <i class="fa-regular fa-heart"></i>
 
                             </button>
+
                         </div>
+
 
                         <div class="product-info">
 
                             <div class="product-main-row">
 
                                 <div class="product-title-area">
-                                    <span>WOMEN • ${getDisplayCategory(category)}</span>
+
+                                    <span>
+                                        WOMEN • ${escapeHTML(getDisplayCategory(category))}
+                                    </span>
+
                                     <h3>${escapeHTML(name)}</h3>
+
                                 </div>
 
                                 <button class="add-cart" type="button">
@@ -845,26 +1361,47 @@ document.addEventListener("DOMContentLoaded", function () {
 
                             </div>
 
+
                             <div class="rating">
-                                <span aria-label="${rating} out of 5 stars">★★★★★</span>
+
+                                <span aria-label="${rating} out of 5 stars">
+                                    ★★★★★
+                                </span>
+
                                 <small>(${reviews})</small>
+
                             </div>
 
+
                             <div class="price">
+
                                 ₹${price.toLocaleString("en-IN")}
-                                <del>₹${mrp.toLocaleString("en-IN")}</del>
-                                <small class="product-discount">${discount}% OFF</small>
+
+                                <del>
+                                    ₹${mrp.toLocaleString("en-IN")}
+                                </del>
+
+                                <small class="product-discount">
+                                    ${discount}% OFF
+                                </small>
+
                             </div>
 
                         </div>
                     </div>
                 </article>
+
             `;
 
         }).join("");
+
     }
 
-    // CATEGORY MATCHING
+
+    /* =====================================================
+       14. CATEGORY MATCHING
+    ===================================================== */
+
     function matchesCategory(product, filter) {
 
         const category = product[2];
@@ -889,10 +1426,22 @@ document.addEventListener("DOMContentLoaded", function () {
             return sareeTypes.includes(category);
         }
 
+        if (filter === "nightwear") {
+            return nightwearTypes.includes(category);
+        }
+
+        if (filter === "sportswear") {
+            return sportswearTypes.includes(category);
+        }
+
         return category === filter;
     }
 
-    // SEARCH AND FILTER
+
+    /* =====================================================
+       15. SEARCH AND FILTER
+    ===================================================== */
+
     function filterProducts() {
 
         const query = searchInput.value.trim().toLowerCase();
@@ -929,20 +1478,27 @@ document.addEventListener("DOMContentLoaded", function () {
             if (show) {
                 visible++;
             }
+
         });
+
 
         productCount.textContent =
             visible + (visible === 1 ? " style found" : " styles found");
 
+
         categoryResult.textContent =
             "Showing " + visible + " product" +
             (visible === 1 ? "" : "s") +
-            " in " + (categoryNames[selectedFilter] || "this category") +
-            (query ? " matching '" + query + "'" : "") + ".";
+            " in " +
+            (categoryNames[selectedFilter] || "this category") +
+            (query ? " matching '" + query + "'" : "") +
+            ".";
+
 
         categoryButtons.forEach(function (button) {
 
-            const active = button.dataset.womenFilter === selectedFilter;
+            const active =
+                button.dataset.womenFilter === selectedFilter;
 
             button.classList.toggle("active", active);
 
@@ -953,37 +1509,68 @@ document.addEventListener("DOMContentLoaded", function () {
 
         });
 
+
         noProducts.hidden = visible !== 0;
 
-        // Return product scroll to the top after filtering
-        productScroll.scrollTop = 0;
+
+        if (productScroll) {
+            productScroll.scrollTop = 0;
+        }
+
     }
 
-    // UPDATE CART COUNT
+
+    /* =====================================================
+       16. UPDATE CART COUNT
+    ===================================================== */
+
     function updateCartCount() {
 
         const total = cart.reduce(function (sum, item) {
+
             return sum + Number(item.quantity || 0);
+
         }, 0);
 
         cartCount.textContent = total;
+
     }
 
-    // SAVE CART
+
+    /* =====================================================
+       17. SAVE CART
+    ===================================================== */
+
     function saveCart() {
 
         try {
-            localStorage.setItem("ozzoCart", JSON.stringify(cart));
+
+            localStorage.setItem(
+                "ozzoCart",
+                JSON.stringify(cart)
+            );
+
         } catch (error) {
-            console.warn("Cart could not be saved in local storage.");
+
+            console.warn(
+                "Cart could not be saved in local storage."
+            );
+
         }
+
     }
 
-    // CREATE PRODUCT OBJECT
+
+    /* =====================================================
+       18. CREATE PRODUCT OBJECT
+    ===================================================== */
+
     function makeProductObject(card) {
 
         const product = products.find(function (item) {
+
             return item[0] === card.dataset.productId;
+
         });
 
         if (!product) {
@@ -991,6 +1578,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         return {
+
             id: product[0],
             name: product[1],
             subcategory: product[2],
@@ -1002,15 +1590,22 @@ document.addEventListener("DOMContentLoaded", function () {
             image: product[7],
             brand: "OZZO Fashion",
             quantity: 1
+
         };
+
     }
 
-    // CATEGORY FILTER BUTTONS
+
+    /* =====================================================
+       19. CATEGORY FILTER BUTTONS
+    ===================================================== */
+
     categoryButtons.forEach(function (button) {
 
         button.addEventListener("click", function () {
 
-            selectedFilter = button.dataset.womenFilter || "all";
+            selectedFilter =
+                button.dataset.womenFilter || "all";
 
             filterProducts();
 
@@ -1018,135 +1613,227 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
-    // SEARCH
+
+    /* =====================================================
+       20. SEARCH
+    ===================================================== */
+
     searchInput.addEventListener("input", filterProducts);
 
-    // WISHLIST AND CART ACTIONS
-    productGrid.addEventListener("click", function (event) {
 
-        const wishlistButton = event.target.closest(".wishlist");
+    /* =====================================================
+   21. WISHLIST, CART AND PRODUCT DETAILS
+===================================================== */
 
-        if (wishlistButton) {
+productGrid.addEventListener("click", function (event) {
 
-            event.preventDefault();
-            event.stopPropagation();
+    /* WISHLIST */
 
-            wishlistButton.classList.toggle("active");
+    const wishlistButton = event.target.closest(".wishlist");
 
-            const icon = wishlistButton.querySelector("i");
-            const isActive = wishlistButton.classList.contains("active");
-
-            icon.classList.toggle("fa-solid", isActive);
-            icon.classList.toggle("fa-regular", !isActive);
-
-            return;
-        }
-
-        const addButton = event.target.closest(".add-cart");
-
-        if (addButton) {
-
-            event.preventDefault();
-            event.stopPropagation();
-
-            const card = addButton.closest(".product-item");
-            const product = makeProductObject(card);
-
-            if (!product) {
-                return;
-            }
-
-            const existing = cart.find(function (item) {
-                return item.id === product.id;
-            });
-
-            if (existing) {
-                existing.quantity = Number(existing.quantity || 0) + 1;
-            } else {
-                cart.push(product);
-            }
-
-            saveCart();
-            updateCartCount();
-
-            addButton.textContent = "Added ✓";
-            addButton.classList.add("added");
-
-            window.setTimeout(function () {
-                addButton.textContent = "Add to Cart";
-                addButton.classList.remove("added");
-            }, 1200);
-
-            return;
-        }
-
-        // OPEN PRODUCT DETAILS
-        const productCard = event.target.closest(".fashion-product-card");
-
-        if (productCard) {
-
-            const card = productCard.closest(".product-item");
-            const product = makeProductObject(card);
-
-            if (!product) {
-                return;
-            }
-
-            try {
-
-                const fullImageURL = new URL(
-                    product.image,
-                    window.location.href
-                ).href;
-
-                sessionStorage.setItem(
-                    "ozzoSelectedProduct",
-                    JSON.stringify({
-                        ...product,
-                        image: fullImageURL
-                    })
-                );
-
-            } catch (error) {
-                console.warn("Product details could not be saved.");
-            }
-
-            window.location.href =
-                "../ProductDetails.html?id=" + encodeURIComponent(product.id) +
-                "&name=" + encodeURIComponent(product.name) +
-                "&price=" + encodeURIComponent(product.price) +
-                "&mrp=" + encodeURIComponent(product.mrp) +
-                "&image=" + encodeURIComponent(product.image);
-        }
-
-    });
-
-    // RESET FILTERS
-    document.getElementById("resetFilters").addEventListener("click", function () {
-
-        selectedFilter = "all";
-        searchInput.value = "";
-
-        filterProducts();
-
-    });
-
-    // NEWSLETTER
-    document.getElementById("newsletterForm").addEventListener("submit", function (event) {
+    if (wishlistButton) {
 
         event.preventDefault();
+        event.stopPropagation();
 
-        document.getElementById("newsletterMessage").textContent =
-            "Thank you for subscribing!";
+        wishlistButton.classList.toggle("active");
 
-        this.reset();
+        const icon = wishlistButton.querySelector("i");
+        const isActive = wishlistButton.classList.contains("active");
 
-    });
+        icon.classList.toggle("fa-solid", isActive);
+        icon.classList.toggle("fa-regular", !isActive);
 
-    // INITIALIZE PAGE
+        return;
+    }
+
+
+    /* ADD TO CART */
+
+    const addButton = event.target.closest(".add-cart");
+
+    if (addButton) {
+
+        event.preventDefault();
+        event.stopPropagation();
+
+        const card = addButton.closest(".product-item");
+        const product = makeProductObject(card);
+
+        if (!product) {
+            console.error("Product not found.");
+            return;
+        }
+
+        const existing = cart.find(function (item) {
+            return item.id === product.id;
+        });
+
+        if (existing) {
+
+            existing.quantity =
+                Number(existing.quantity || 0) + 1;
+
+        } else {
+
+            cart.push(product);
+
+        }
+
+        saveCart();
+        updateCartCount();
+
+        addButton.textContent = "Added ✓";
+        addButton.classList.add("added");
+
+        window.setTimeout(function () {
+
+            addButton.textContent = "Add to Cart";
+            addButton.classList.remove("added");
+
+        }, 1200);
+
+        return;
+    }
+
+
+    /* PRODUCT DETAILS */
+
+    const productCard = event.target.closest(".fashion-product-card");
+
+    if (!productCard) {
+        return;
+    }
+
+    event.preventDefault();
+
+    const card = productCard.closest(".product-item");
+    const product = makeProductObject(card);
+
+    if (!product) {
+        console.error("Product details not found.");
+        return;
+    }
+
+    try {
+
+        const fullImageURL = new URL(
+            product.image,
+            window.location.href
+        ).href;
+
+        const detailsProduct = {
+            ...product,
+            image: fullImageURL,
+            imageUrl: fullImageURL,
+            category: "women",
+            brand: "OZZO Fashion"
+        };
+
+        sessionStorage.setItem(
+            "ozzoSelectedProduct",
+            JSON.stringify(detailsProduct)
+        );
+
+        localStorage.setItem(
+            "ozzoSelectedProduct",
+            JSON.stringify(detailsProduct)
+        );
+
+        const params = new URLSearchParams({
+
+            id: product.id,
+            name: product.name,
+            price: String(product.price),
+            mrp: String(product.mrp),
+            image: fullImageURL,
+            category: "women",
+            subcategory: product.subcategory,
+            brand: "OZZO Fashion",
+            rating: String(product.rating),
+            reviews: String(product.reviews)
+
+        });
+
+        window.location.href =
+            "../ProductDetails.html?" + params.toString();
+
+    } catch (error) {
+
+        console.error(
+            "Unable to open product details:",
+            error
+        );
+
+    }
+
+});
+
+    /* =====================================================
+       22. RESET FILTERS
+    ===================================================== */
+
+    document.getElementById("resetFilters").addEventListener(
+        "click",
+        function () {
+
+            selectedFilter = "all";
+            searchInput.value = "";
+
+            filterProducts();
+
+        }
+    );
+
+
+    /* =====================================================
+       23. NEWSLETTER
+    ===================================================== */
+
+    document.getElementById("newsletterForm").addEventListener(
+        "submit",
+        function (event) {
+
+            event.preventDefault();
+
+            document.getElementById(
+                "newsletterMessage"
+            ).textContent = "Thank you for subscribing!";
+
+            this.reset();
+
+        }
+    );
+
+
+    /* =====================================================
+       24. INITIALIZE PAGE
+    ===================================================== */
+
     renderProducts();
+
     filterProducts();
+
     updateCartCount();
+
+
+    /* =====================================================
+       25. PRODUCT COUNT CHECK
+    ===================================================== */
+
+    console.log("OZZO Women's Fashion loaded successfully.");
+
+    console.log("Original products: 28");
+
+    console.log("New Nighties: 15");
+
+    console.log("New Night Pants: 15");
+
+    console.log("New Sports T-Shirts: 15");
+
+    console.log("New Sports Shorts: 15");
+
+    console.log("Total products: " + products.length);
 
 });
 </script>

@@ -87,15 +87,15 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="/Fashion/Fashion.html">Fashion</a>
+                        <a class="nav-link" href="../Fashion/Fashion.html">Fashion</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="/Comming Soon.html">Books</a>
+                        <a class="nav-link" href="../Comming Soon.html">Books</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="/Comming Soon.html">Stationery</a>
+                        <a class="nav-link" href="../Comming Soon.html">Stationery</a>
                     </li>
 
                     <li class="nav-item">
@@ -103,7 +103,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="/Gas/Gas.html">Gas</a>
+                        <a class="nav-link" href="../Gas/Gas.html">Gas</a>
                     </li>
                 </ul>
 
@@ -139,6 +139,7 @@
         </div>
     </nav>
 </header>
+
 
 <!-- =========================================================
      HERO
@@ -255,7 +256,7 @@
                             </button>
 
                             <button type="button"
-                                class="men-category-btn "
+                                class="men-category-btn"
                                 data-men-filter="shirts">
                                 All Shirts
                             </button>
@@ -290,11 +291,11 @@
                                 Linen Shirts
                             </button>
 
-                            <button type="button"
+                            <!--<button type="button"
                                 class="men-category-btn"
                                 data-men-filter="t-shirt">
                                 T-Shirts
-                            </button>
+                            </button>-->
 
                             <button type="button"
                                 class="men-category-btn"
@@ -372,7 +373,7 @@
                                 Joggers
                             </button>
 
-                            <button type="button"
+                            <!--<button type="button"
                                 class="men-category-btn"
                                 data-men-filter="track-pants">
                                 Track Pants
@@ -382,7 +383,7 @@
                                 class="men-category-btn"
                                 data-men-filter="shorts">
                                 Shorts
-                            </button>
+                            </button>-->
 
                         </div>
 
@@ -474,6 +475,49 @@
                                 class="men-category-btn"
                                 data-men-filter="pant-polyester">
                                 Polyester
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         05. TRACKS & SPORTSWEAR — NEW CATEGORY
+                    ================================================== -->
+
+                    <div class="men-category-group">
+
+                        <div class="men-category-group-heading">
+                            <span>05</span>
+                            <h3>Tracks & Sportswear</h3>
+                        </div>
+
+                        <div class="men-category-options">
+
+                            <button type="button"
+                                class="men-category-btn"
+                                data-men-filter="tracks-sportswear">
+                                <i class="fa-solid fa-person-running"></i>
+                                All Sportswear
+                            </button>
+
+                            <button type="button"
+                                class="men-category-btn"
+                                data-men-filter="night-pants">
+                                Night Pants
+                            </button>
+
+                            <button type="button"
+                                class="men-category-btn"
+                                data-men-filter="sports-t-shirt">
+                                Sports T-Shirts
+                            </button>
+
+                            <button type="button"
+                                class="men-category-btn"
+                                data-men-filter="sports-shorts">
+                                Sports Shorts
                             </button>
 
                         </div>
@@ -788,7 +832,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     /* =========================================================
        NORMAL CLOTHING FALLBACKS
-       NEVER USED FOR FABRIC PRODUCTS
     ========================================================= */
 
     const fallbackImages = [
@@ -804,17 +847,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     /* =========================================================
        FABRIC IMAGE GENERATOR
-
-       Creates actual IMAGE DATA using SVG.
-       Therefore:
-
-       ✓ No models
-       ✓ No shirts
-       ✓ No trousers
-       ✓ No jeans
-       ✓ No duplicated external photos
-       ✓ Every cloth product has its own visual
-       ✓ Material and color match the product
     ========================================================= */
 
     function fabricImage(material, color, secondary, pattern, seed) {
@@ -1106,9 +1138,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     /* =========================================================
        50 UNIQUE FABRIC IMAGES
-
-       Each product receives a unique seed.
-       No finished clothing is used.
     ========================================================= */
 
     const clothImageMap = {
@@ -1467,6 +1496,608 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     /* =========================================================
+       NEW SPORTSWEAR IMAGE GENERATOR
+       Creates a unique SVG image for every sportswear product.
+    ========================================================= */
+
+    function createSportsImage(type, color, accent, seed) {
+
+        const backgroundColors = [
+            "#edf1f4",
+            "#f2eee9",
+            "#edf2ef",
+            "#f1eff4",
+            "#f3f1eb"
+        ];
+
+        const background = backgroundColors[
+            (seed - 1) % backgroundColors.length
+        ];
+
+        let garment = "";
+        let details = "";
+
+        if (seed % 3 === 0) {
+
+            details = `
+                <path d="M390 300 L390 800"
+                    stroke="${accent}"
+                    stroke-width="12"/>
+
+                <path d="M420 300 L420 800"
+                    stroke="${accent}"
+                    stroke-width="5"/>
+            `;
+
+        } else if (seed % 3 === 1) {
+
+            details = `
+                <path d="M300 420 Q450 470 600 420"
+                    fill="none"
+                    stroke="${accent}"
+                    stroke-width="13"/>
+
+                <path d="M320 450 Q450 490 580 450"
+                    fill="none"
+                    stroke="#ffffff"
+                    stroke-width="4"
+                    opacity=".65"/>
+            `;
+
+        } else {
+
+            details = `
+                <path d="M300 340 L600 340"
+                    stroke="${accent}"
+                    stroke-width="12"/>
+
+                <path d="M300 360 L600 360"
+                    stroke="#ffffff"
+                    stroke-width="5"
+                    opacity=".7"/>
+            `;
+
+        }
+
+
+        /* SPORTS T-SHIRT */
+
+        if (type === "sports-t-shirt") {
+
+            garment = `
+                <path
+                    d="
+                        M340 220
+                        L405 180
+                        Q450 215 495 180
+                        L560 220
+                        L665 350
+                        L585 420
+                        L545 355
+                        L560 850
+                        Q450 890 340 850
+                        L355 355
+                        L315 420
+                        L235 350
+                        Z
+                    "
+                    fill="${color}"
+                    stroke="#202c38"
+                    stroke-opacity=".30"
+                    stroke-width="9"
+                    stroke-linejoin="round"
+                />
+
+                <path
+                    d="M405 180 Q450 265 495 180"
+                    fill="none"
+                    stroke="${accent}"
+                    stroke-width="15"
+                />
+
+                <path
+                    d="M355 355 L340 850"
+                    stroke="#ffffff"
+                    stroke-opacity=".20"
+                    stroke-width="7"
+                />
+
+                <path
+                    d="M545 355 L560 850"
+                    stroke="#ffffff"
+                    stroke-opacity=".20"
+                    stroke-width="7"
+                />
+
+                ${details}
+            `;
+
+        }
+
+
+        /* SPORTS SHORTS */
+
+        else if (type === "sports-shorts") {
+
+            garment = `
+                <path
+                    d="
+                        M300 230
+                        Q450 270 600 230
+                        L625 530
+                        L545 800
+                        L465 800
+                        L450 555
+                        L435 800
+                        L355 800
+                        L275 530
+                        Z
+                    "
+                    fill="${color}"
+                    stroke="#202c38"
+                    stroke-opacity=".30"
+                    stroke-width="9"
+                    stroke-linejoin="round"
+                />
+
+                <path
+                    d="M300 230 Q450 275 600 230
+                       L595 315 Q450 355 305 315 Z"
+                    fill="${accent}"
+                />
+
+                <path
+                    d="M450 340 L450 555"
+                    stroke="#ffffff"
+                    stroke-opacity=".30"
+                    stroke-width="6"
+                />
+
+                <path
+                    d="M285 520 L390 545
+                       M510 545 L615 520"
+                    fill="none"
+                    stroke="${accent}"
+                    stroke-width="9"
+                />
+
+                ${details}
+            `;
+
+        }
+
+
+        /* NIGHT PANTS */
+
+        else {
+
+            garment = `
+                <path
+                    d="
+                        M315 200
+                        Q450 245 585 200
+                        L610 440
+                        L555 885
+                        L465 885
+                        L450 485
+                        L435 885
+                        L345 885
+                        L290 440
+                        Z
+                    "
+                    fill="${color}"
+                    stroke="#202c38"
+                    stroke-opacity=".30"
+                    stroke-width="9"
+                    stroke-linejoin="round"
+                />
+
+                <path
+                    d="M315 200 Q450 250 585 200
+                       L580 295 Q450 335 320 295 Z"
+                    fill="${accent}"
+                />
+
+                <path
+                    d="M450 315 L450 485"
+                    stroke="#ffffff"
+                    stroke-opacity=".22"
+                    stroke-width="6"
+                />
+
+                <path
+                    d="M345 885 L435 885
+                       M465 885 L555 885"
+                    stroke="${accent}"
+                    stroke-width="10"
+                />
+
+                <path
+                    d="M320 440 L385 460
+                       M515 460 L580 440"
+                    fill="none"
+                    stroke="#ffffff"
+                    stroke-opacity=".25"
+                    stroke-width="6"
+                />
+
+                ${details}
+            `;
+
+        }
+
+
+        const svg = `
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="900"
+                height="1100"
+                viewBox="0 0 900 1100"
+            >
+
+                <defs>
+
+                    <linearGradient id="background${seed}"
+                        x1="0" y1="0" x2="1" y2="1">
+
+                        <stop offset="0%"
+                            stop-color="#ffffff"/>
+
+                        <stop offset="100%"
+                            stop-color="${background}"/>
+
+                    </linearGradient>
+
+                    <linearGradient id="fabric${seed}"
+                        x1="0" y1="0" x2="1" y2="1">
+
+                        <stop offset="0%"
+                            stop-color="#ffffff"
+                            stop-opacity=".18"/>
+
+                        <stop offset="50%"
+                            stop-color="#ffffff"
+                            stop-opacity="0"/>
+
+                        <stop offset="100%"
+                            stop-color="#000000"
+                            stop-opacity=".12"/>
+
+                    </linearGradient>
+
+                </defs>
+
+                <rect
+                    width="900"
+                    height="1100"
+                    fill="url(#background${seed})"
+                />
+
+                <ellipse
+                    cx="450"
+                    cy="930"
+                    rx="230"
+                    ry="35"
+                    fill="#142333"
+                    opacity=".12"
+                />
+
+                ${garment}
+
+                <rect
+                    width="900"
+                    height="1100"
+                    fill="url(#fabric${seed})"
+                />
+
+                <text
+                    x="450"
+                    y="1000"
+                    text-anchor="middle"
+                    font-family="Arial, sans-serif"
+                    font-size="25"
+                    font-weight="700"
+                    letter-spacing="4"
+                    fill="#253447"
+                    opacity=".55"
+                >
+                    ${type.replaceAll("-", " ").toUpperCase()}
+                </text>
+
+                <text
+                    x="450"
+                    y="1040"
+                    text-anchor="middle"
+                    font-family="Arial, sans-serif"
+                    font-size="15"
+                    letter-spacing="4"
+                    fill="#526173"
+                >
+                    OZZO ACTIVE
+                </text>
+
+            </svg>
+        `;
+
+        return "data:image/svg+xml;charset=UTF-8," +
+            encodeURIComponent(svg);
+
+    }
+
+
+    /* =========================================================
+       SPORTSWEAR PRODUCT COLORS
+    ========================================================= */
+
+    const sportswearColors = [
+        "#202a36",
+        "#263b50",
+        "#535b63",
+        "#3d5547",
+        "#6b303c",
+        "#244f72",
+        "#6b6255",
+        "#30343b",
+        "#506477",
+        "#7a4c32",
+        "#33443d",
+        "#5b526d",
+        "#9a542d",
+        "#45515b",
+        "#182d45"
+    ];
+
+    const sportswearAccents = [
+        "#d9e0e7",
+        "#83b6d3",
+        "#e1e4e7",
+        "#b5c5a9",
+        "#e4b3bd",
+        "#a8d3ee",
+        "#e4d4b6",
+        "#aeb6c1",
+        "#c1d5df",
+        "#e7c4a4",
+        "#c2d2c1",
+        "#d2c6e6",
+        "#f0c39e",
+        "#d2d9df",
+        "#98b6d6"
+    ];
+
+
+    /* =========================================================
+       SPORTSWEAR PRODUCT COLLECTIONS
+    ========================================================= */
+
+    const sportswearCollections = [
+
+        /* 15 NIGHT PANTS */
+
+        {
+            category: "night-pants",
+            type: "night-pants",
+            basePrice: 699,
+
+            names: [
+                "Core Comfort Night Pants",
+                "Relaxed Fit Lounge Pants",
+                "Soft Cotton Night Pants",
+                "Essential Drawstring Night Pants",
+                "Midnight Comfort Pajama Pants",
+                "Lightweight Sleepwear Pants",
+                "Classic Check Lounge Pants",
+                "Everyday Relaxed Night Pants",
+                "Premium Jersey Night Pants",
+                "Breathe Easy Sleep Pants",
+                "Tapered Lounge Night Pants",
+                "Weekend Comfort Pajama Pants",
+                "Ultra Soft Night Pants",
+                "Minimalist Homewear Pants",
+                "All-Day Relaxed Night Pants"
+            ]
+        },
+
+
+        /* 15 SPORTS T-SHIRTS */
+
+        {
+            category: "sports-t-shirt",
+            type: "sports-t-shirt",
+            basePrice: 599,
+
+            names: [
+                "Dry-Fit Training T-Shirt",
+                "Performance Crew Neck T-Shirt",
+                "Active Move Sports T-Shirt",
+                "Breathable Gym T-Shirt",
+                "Flex Fit Workout T-Shirt",
+                "Quick-Dry Running T-Shirt",
+                "Core Training Sports T-Shirt",
+                "Lightweight Active T-Shirt",
+                "Mesh Panel Gym T-Shirt",
+                "Endurance Running T-Shirt",
+                "Power Train Sports T-Shirt",
+                "Everyday Active Crew T-Shirt",
+                "Aeroflow Performance T-Shirt",
+                "Sprint Series Workout T-Shirt",
+                "Pro Motion Training T-Shirt"
+            ]
+        },
+
+
+        /* 15 SPORTS SHORTS */
+
+        {
+            category: "sports-shorts",
+            type: "sports-shorts",
+            basePrice: 499,
+
+            names: [
+                "Active Flex Sports Shorts",
+                "Quick-Dry Training Shorts",
+                "Everyday Gym Shorts",
+                "Runner Lightweight Shorts",
+                "Core Performance Shorts",
+                "Breathable Mesh Sports Shorts",
+                "Power Move Training Shorts",
+                "Tapered Active Shorts",
+                "Sprint Running Shorts",
+                "Essential Workout Shorts",
+                "Flex Waist Sports Shorts",
+                "Pro Training Gym Shorts",
+                "Aero Motion Running Shorts",
+                "Weekend Active Shorts",
+                "All-Rounder Sports Shorts"
+            ]
+        }
+
+    ];
+
+
+    /* =========================================================
+       ADD 45 SPORTSWEAR PRODUCTS
+    ========================================================= */
+
+    let sportswearImageSeed = 1;
+
+    sportswearCollections.forEach(function (collection, collectionIndex) {
+
+        collection.names.forEach(function (productName, index) {
+
+            const paletteIndex =
+                (index + collectionIndex * 5) % sportswearColors.length;
+
+            const price =
+                collection.basePrice + (index % 5) * 50;
+
+            const mrp = price + 350;
+
+            const productId =
+                "sports-" +
+                collection.category +
+                "-" +
+                String(index + 1).padStart(3, "0");
+
+            const image = createSportsImage(
+                collection.type,
+                sportswearColors[paletteIndex],
+                sportswearAccents[paletteIndex],
+                sportswearImageSeed
+            );
+
+            products.push([
+
+                productId,
+                productName,
+                collection.category,
+                price,
+                mrp,
+                4.3 + (index % 5) / 10,
+                18 + index * 3,
+                image,
+                index === 0 ? "NEW" : ""
+
+            ]);
+
+            sportswearImageSeed++;
+
+        });
+
+    });
+    
+
+    /* =========================================================
+   OZZO MEN'S FASHION — 45 DISTINCT SPORTSWEAR IMAGES
+========================================================= */
+
+const sportswearPhotoLibrary = {
+
+    // 15 NIGHT PANTS
+    "night-pants": [
+        "https://www.consortium.co.uk/media/catalog/product/cache/1/image/040ec09b1e35df139433887a97daa66f/s/u/sunspel-modal-lounge-pant-navy-mtrs5022-buaa-cat_1.jpg",
+        "https://i5.walmartimages.com/asr/330aaa48-0a04-4145-9d00-3247f57f191a.bc70a8f5c0da3b1aded005636a7756c4.jpeg",
+        "https://neiwai.life/cdn/shop/products/NW222ML4102_ccacde20-f85a-483b-9ba2-10e32ecc6929.jpg?v=1684535713&width=1946",
+        "https://i5.walmartimages.com/seo/snilers-Big-and-Tall-Pajama-Pants-Men-Elastic-Waist-Drawstring-Solid-Color-Lounge-Trousers-Straight-Wide-Leg-Loose-Sleep-Pants_46d3d72b-46db-4868-bfcd-cf0cd7dbb050.23f0276adcaeeec1322326ce82955a00.jpeg",
+        "https://cdn.clothbase.com/uploads/93d12203-4c95-4065-b463-7d95bdc170eb/03-01-2023-jd_mtrs5022-burv_1.jpg",
+        "https://www.zimmerli.com/cdn/shop/files/Zimmerli_Essentials_346095304-447_flat_77c32b9b-f644-4751-a87f-f361cc8382c8_1600x.jpg?v=1771251621",
+        "https://i5.walmartimages.com/seo/George-Men-s-Solid-Sleep-Pants-Sizes-S-2XL_16959bd9-1d82-4053-9ada-a8499d14b96a.63b84f6e09647e1b41d5835499f8e4c2.jpeg",
+        "https://i5.walmartimages.com/seo/WORW-Mens-Pajama-Pants-Soft-Cotton-Sleep-Lounge-Pants-Navy-Large_f21ca085-d9e4-4fcd-857f-7edc9dcbdf7c.cfae66414941e131a21c0dc23f17bfa1.jpeg",
+        "https://i5.walmartimages.com/seo/VULCANODON-Mens-Cotton-Pajama-Pants-Soft-Lightweight-Sleep-Pj-Bottoms-Lounge-Pant-with-Pockets-Black-S_a5e5d7c5-06b2-4b3c-a77c-964b3a4663ac.f2a4b14a15552fbc8d421924c1c3965f.jpeg",
+        "https://cdni.llbean.net/is/image/wim/521035_74_41",
+        "https://i5.walmartimages.com/seo/VULCANODON-Mens-Cotton-Pajama-Pants-Soft-Lightweight-Sleep-Pj-Bottoms-Lounge-Pant-with-Pockets-Dark-Grey-Mel-L_f0c98a06-3afb-44cb-ac49-db5464ecf9cd.689eba71a5b30cb85f800d6416089bf0.jpeg",
+        "https://target.scene7.com/is/image/Target/GUEST_a011e314-7a1f-403c-b620-7b0723291521",
+        "https://i5.walmartimages.com/seo/ANLIQI-100-Cotton-Mens-Pajama-Pants-Lightweight-Sleep-Lounge-Bottoms-Elastic-Waistband-Button-Fly-With-Pockets-Navy-Blue-M-new_ed1ae548-63d4-4bc9-9981-72f2785dcf50.b4f3e54008dbde47cca470f6a6a0b664.jpeg",
+        "https://s.alicdn.com/@sc04/kf/Sa162267218c34415b37f074c8987ccf3l/Relaxed-Daily-Wear-Lightweight-Casual-Pajama-Trousers-for-Men-Canvas-Breathable-Eco-Friendly-Gentle-Fit-for-Home-Sleep-Use.jpeg",
+        "https://santandabel.com.au/cdn/shop/files/MMAR3U_1200_1080x.jpg?v=1747079413"
+    ],
+
+    // 15 SPORTS T-SHIRTS
+    "sports-t-shirt": [
+        "https://cdn.shopify.com/s/files/1/0618/9462/3460/products/2-65_a119fbce-24af-48e5-b7fb-4c28540f15d5.jpg?v=1645444693",
+        "https://contents.mediadecathlon.com/p2293248/9e2cafb5f64308051bbbdc13c6a209bb4320005c5870e2ff420e9a4092644937/mens-fitness-t-shirt-essential-100-grey.jpg?format=auto",
+        "https://cultstore.com/cdn/shop/files/WmFu3XqoYHX2qTVJbpSCmM7B.jpg?v=1749452708&width=4186",
+        "https://images.puma.com/image/upload/f_webp%2Cq_auto%2Cb_rgb%3Afafafa%2Cw_706%2Ch_706/global/526710/69/mod01/fnd/ARE/fmt/png/",
+        "https://static.thcdn.com/productimg/original/15495155-1015228680572966.jpg",
+        "https://giordano.ae/cdn/shop/files/giordano-mens-g-motion-raglan-performance-tee-green-3749619.jpg?v=1772701971&width=1024",
+        "https://static.thcdn.com/productimg/original/12761400-1994880644052799.jpg",
+        "https://decathlonpro.vtexassets.com/arquivos/ids/27745012/16751062994352.jpg?v=638114656440800000",
+        "https://i.ebayimg.com/images/g/ddcAAeSwLnBX684n/s-l1600.jpg",
+        "https://i5.walmartimages.com/seo/Dovford-Workout-T-Shirts-for-Men-Short-Sleeve-Quick-Dry-Loose-Fit-UPF50-Athletic-Classic-Tees-Moisture-Wicking-2024_29ae4449-67c9-4814-95f1-795653785a01.7ef084e9c6c19c36cdb5507636134bf8.jpeg",
+        "https://down-br.img.susercontent.com/file/br-11134207-820lb-mmunlfh960as3c",
+        "https://i5.walmartimages.com/seo/Zimjoy-5-Pack-Mesh-Workout-Shirts-for-Men-Dry-Fit-Gym-L-7XL-Big-and-Tall-Shirts-Quick-Dry-Athletic-Short-Sleeve-T-Shirt-Moisture-Wicking-Mix-G-6XL_ad3f81d9-f025-4330-96f8-76ce5a867ff7.d8d6beb60f1347e19174bd9ca03b391a.jpeg?odnBg=FFFFFF&odnHeight=768&odnWidth=768",
+        
+        "https://www.workwearexpress.com/media/catalog/product/cache/32238170a9b1a23b5a892a2df076762b/5/c/5c5c3e3deb9f5b1c75ce9a0d7a1fb6772_6.jpg",
+        "https://i5.walmartimages.com/seo/T-Shirts-Men-Big-Tall-Men-s-Dry-Fit-T-Shirts-Athletic-Running-Gym-Workout-Short-Sleeve-Tee-Shirts-Men-Breathable-Moisture-Wicking-Odor-Control_9a5bf26c-2536-461c-a403-23325bf03b3f.be79de9ad322877840f1e7d8692a2919.jpeg"
+    ],
+
+    // 15 SPORTS SHORTS
+    "sports-shorts": [
+        "https://wornwear.patagonia.com/cdn/shop/files/sszytku3lyacw7vysw9n.png?v=1724162944&width=1445",
+        "https://actuscore.com/cdn/shop/files/AZUL_6_11zon.webp?v=1781466934&width=1080",
+        "https://cdn.shopify.com/s/files/1/0240/0529/files/293640924.png?v=1771691303",
+        "https://contents.mediadecathlon.com/p2600202/b1c8ccc093c8c104ab11b67b6edf4341/p2600202.jpg",
+        "https://i5.walmartimages.ca/images/Enlarge/628/719/6000209628719.jpg",
+        "https://www.miersports.com/cdn/shop/files/2_d164f280-7d0f-43bb-9f7b-344a6ee2f861.jpg?v=1757401112",
+        "https://images.nexusapp.co/assets/b3/d4/d6/7565045.jpg",
+        "https://www.boausa.com/cdn/shop/files/1106B_NAV_1.jpg?v=1686670346&width=1100",
+        "https://i.ebayimg.com/images/g/ZzcAAeSw8ydqGyTg/s-l1600.jpg",
+        "https://target.scene7.com/is/image/Target/GUEST_8bda6fc3-5498-45ab-acf8-38482d6370fd",
+        "https://i5.walmartimages.com/seo/5-Pack-Men-s-Athletic-Gym-Shorts-with-Pockets-Quick-Dry-Activewear-Workout-Running-Shorts-for-Men_beb679df-4e1a-46da-80da-2df1815ee3b6.cd2b4ce34f9c5f3577595e16e9449316.jpeg",
+        "https://cdn.safe-upload.shop/cdn/214/2023/11/NELEUS-Mens-7-inch-Lightweight-Workout-Running-Shorts-with-Pockets-6083-3-PackblackBlueRed-79523.jpg",
+        "https://i5.walmartimages.com/seo/Essential-Elements-Mens-Modern-Fit-Active-Shorts-with-Zipper-Pockets-4-Pack-Moisture-Wicking-Quick-Dry-Running-Shorts_c418033c-07c3-47ed-a543-f235cbb6a16e.758e37b8acc7acaff880532e94235a63.jpeg",
+        "https://img-va.myshopline.com/image/store/1777275907840/sku-4pack-sport-set.png?h=1024&q=90&w=1024",
+        "https://down-br.img.susercontent.com/file/br-11134207-81z1k-merg4z0qlqmbfe"
+    ]
+};
+
+/* Assign the images to your 45 generated sportswear products. */
+const sportswearImageCounters = {
+    "night-pants": 0,
+    "sports-t-shirt": 0,
+    "sports-shorts": 0
+};
+
+products.forEach(function (product) {
+
+    const category = product[2];
+    const photoList = sportswearPhotoLibrary[category];
+
+    if (!photoList) return;
+
+    const photoIndex = sportswearImageCounters[category]++;
+
+    if (photoIndex < photoList.length) {
+        product[7] = photoList[photoIndex];
+    }
+});
+
+console.log(
+    "OZZO Sportswear images assigned:",
+    sportswearImageCounters
+);
+
+    /* =========================================================
        CATEGORY TYPES
     ========================================================= */
 
@@ -1507,6 +2138,14 @@ document.addEventListener("DOMContentLoaded", function () {
         "pant-hemp",
         "pant-silk",
         "pant-polyester"
+    ];
+
+    /* NEW SPORTSWEAR TYPES */
+
+    const sportswearTypes = [
+        "night-pants",
+        "sports-t-shirt",
+        "sports-shorts"
     ];
 
 
@@ -1551,7 +2190,14 @@ document.addEventListener("DOMContentLoaded", function () {
         "pant-wool": "wool pant cloth",
         "pant-hemp": "hemp pant cloth",
         "pant-silk": "silk pant cloth",
-        "pant-polyester": "polyester pant cloth"
+        "pant-polyester": "polyester pant cloth",
+
+        /* NEW SPORTSWEAR CATEGORY NAMES */
+
+        "tracks-sportswear": "tracks and sportswear",
+        "night-pants": "night pants",
+        "sports-t-shirt": "sports T-shirts",
+        "sports-shorts": "sports shorts"
 
     };
 
@@ -1622,6 +2268,20 @@ document.addEventListener("DOMContentLoaded", function () {
     ========================================================= */
 
     function getDisplayCategory(category) {
+
+        /* NEW SPORTSWEAR DISPLAY NAMES */
+
+        if (category === "night-pants") {
+            return "Night Pants";
+        }
+
+        if (category === "sports-t-shirt") {
+            return "Sports T-Shirts";
+        }
+
+        if (category === "sports-shorts") {
+            return "Sports Shorts";
+        }
 
         if (category.startsWith("shirt-")) {
             return "Shirt Cloth";
@@ -1699,11 +2359,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         if (isFabric) {
-
-            /*
-             * Fabric products never fall back
-             * to clothing/model photographs.
-             */
 
             img.src =
                 "https://placehold.co/900x1100/e9e4dc/16283b?text=OZZO+FABRIC";
@@ -1902,6 +2557,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (filter === "pants") {
             return pantsTypes.includes(category);
+        }
+
+        /* NEW TRACKS & SPORTSWEAR FILTER */
+
+        if (filter === "tracks-sportswear") {
+            return sportswearTypes.includes(category);
         }
 
         return category === filter;
@@ -2153,224 +2814,138 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    /* =========================================================
-       PRODUCT CLICK ACTIONS
-    ========================================================= */
+    
 
-    productGrid.addEventListener(
-        "click",
-        function (event) {
 
+/* =========================================================
+   PRODUCT CLICK ACTIONS
+   WISHLIST + CART + PRODUCT DETAILS
+========================================================= */
 
-            /* WISHLIST */
+productGrid.addEventListener("click", function (event) {
 
-            const wishlist =
-                event.target.closest(
-                    ".wishlist"
-                );
+    // WISHLIST
+    const wishlist = event.target.closest(".wishlist");
 
+    if (wishlist) {
 
-            if (wishlist) {
+        event.preventDefault();
+        event.stopPropagation();
 
-                event.preventDefault();
-                event.stopPropagation();
+        wishlist.classList.toggle("active");
 
+        const icon = wishlist.querySelector("i");
+        const active = wishlist.classList.contains("active");
 
-                wishlist.classList.toggle(
-                    "active"
-                );
+        icon.classList.toggle("fa-solid", active);
+        icon.classList.toggle("fa-regular", !active);
 
+        return;
+    }
 
-                const icon =
-                    wishlist.querySelector("i");
 
+    // ADD TO CART
+    const addCart = event.target.closest(".add-cart");
 
-                const active =
-                    wishlist.classList.contains(
-                        "active"
-                    );
+    if (addCart) {
 
+        event.preventDefault();
+        event.stopPropagation();
 
-                icon.classList.toggle(
-                    "fa-solid",
-                    active
-                );
+        const card = addCart.closest(".product-item");
+        const product = makeProductObject(card);
 
+        if (!product) return;
 
-                icon.classList.toggle(
-                    "fa-regular",
-                    !active
-                );
+        const existing = cart.find(
+            item => item.id === product.id
+        );
 
-
-                return;
-
-            }
-
-
-            /* CART */
-
-            const addCart =
-                event.target.closest(
-                    ".add-cart"
-                );
-
-
-            if (addCart) {
-
-                event.preventDefault();
-                event.stopPropagation();
-
-
-                const card =
-                    addCart.closest(
-                        ".product-item"
-                    );
-
-
-                const product =
-                    makeProductObject(card);
-
-
-                if (!product) return;
-
-
-                const existing =
-                    cart.find(
-                        item =>
-                            item.id ===
-                            product.id
-                    );
-
-
-                if (existing) {
-
-                    existing.quantity =
-                        Number(
-                            existing.quantity || 0
-                        ) + 1;
-
-                } else {
-
-                    cart.push(product);
-
-                }
-
-
-                saveCart();
-                updateCartCount();
-
-
-                addCart.textContent =
-                    "Added ✓";
-
-
-                addCart.classList.add(
-                    "added"
-                );
-
-
-                setTimeout(
-                    function () {
-
-                        addCart.textContent =
-                            "Add to Cart";
-
-                        addCart.classList.remove(
-                            "added"
-                        );
-
-                    },
-                    1200
-                );
-
-
-                return;
-
-            }
-
-
-            /* PRODUCT DETAILS */
-
-            const productCard =
-                event.target.closest(
-                    ".fashion-product-card"
-                );
-
-
-            if (!productCard) return;
-
-
-            const card =
-                productCard.closest(
-                    ".product-item"
-                );
-
-
-            const product =
-                makeProductObject(card);
-
-
-            if (!product) return;
-
-
-            try {
-
-                sessionStorage.setItem(
-                    "ozzoSelectedProduct",
-                    JSON.stringify(product)
-                );
-
-            } catch (error) {
-
-                console.warn(error);
-
-            }
-
-
-            window.location.href =
-                "../ProductDetails.html" +
-                "?id=" +
-                encodeURIComponent(product.id) +
-                "&name=" +
-                encodeURIComponent(product.name) +
-                "&price=" +
-                encodeURIComponent(product.price) +
-                "&mrp=" +
-                encodeURIComponent(product.mrp) +
-                "&image=" +
-                encodeURIComponent(product.image);
-
+        if (existing) {
+            existing.quantity = Number(existing.quantity || 0) + 1;
+        } else {
+            cart.push(product);
         }
-    );
+
+        saveCart();
+        updateCartCount();
+
+        addCart.textContent = "Added ✓";
+        addCart.classList.add("added");
+
+        setTimeout(function () {
+            addCart.textContent = "Add to Cart";
+            addCart.classList.remove("added");
+        }, 1200);
+
+        return;
+    }
 
 
-    /* =========================================================
-       RESET
-    ========================================================= */
+    // PRODUCT DETAILS
+    const productCard = event.target.closest(".fashion-product-card");
 
-    const resetFilters =
-        document.getElementById(
-            "resetFilters"
+    if (!productCard) return;
+
+    const card = productCard.closest(".product-item");
+    const product = makeProductObject(card);
+
+    if (!product) {
+        console.error("Product not found:", card?.dataset.productId);
+        return;
+    }
+
+    try {
+
+        const fullImageURL = new URL(
+            product.image,
+            window.location.href
+        ).href;
+
+        const detailsProduct = {
+            ...product,
+            image: fullImageURL,
+            imageUrl: fullImageURL,
+            images: [fullImageURL],
+            category: "men",
+            categoryKey: "fashion",
+            brand: "OZZO Fashion"
+        };
+
+        sessionStorage.setItem(
+            "ozzoSelectedProduct",
+            JSON.stringify(detailsProduct)
         );
 
-
-    if (resetFilters) {
-
-        resetFilters.addEventListener(
-            "click",
-            function () {
-
-                selectedFilter = "all";
-
-                searchInput.value = "";
-
-                filterProducts();
-
-            }
+        localStorage.setItem(
+            "ozzoSelectedProduct",
+            JSON.stringify(detailsProduct)
         );
+
+        const params = new URLSearchParams({
+            id: product.id,
+            name: product.name,
+            price: String(product.price),
+            mrp: String(product.mrp),
+            image: fullImageURL,
+            category: "men",
+            subcategory: product.subcategory,
+            brand: "OZZO Fashion",
+            rating: String(product.rating),
+            reviews: String(product.reviews)
+        });
+
+        window.location.href =
+            "../ProductDetails.html?" + params.toString();
+
+    } catch (error) {
+
+        console.error("Product details navigation failed:", error);
 
     }
+
+});
+
 
 
     /* =========================================================
@@ -2556,9 +3131,11 @@ document.addEventListener("DOMContentLoaded", function () {
     );
 
     console.log(
-        "Duplicate Cloth Images:",
-        clothImageURLs.length -
-        uniqueClothImages.size
+        "Sportswear Products:",
+        products.filter(
+            product =>
+                sportswearTypes.includes(product[2])
+        ).length
     );
 
     console.log(
@@ -2673,6 +3250,8 @@ document
         }
     );
 </script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
