@@ -3,7 +3,6 @@
    Fixed Black Header | Desktop & Mobile Logo
 ========================================================= */
 
-
 /* =========================================================
    1. ROOT VARIABLES & GLOBAL RESET
 ========================================================= */
@@ -66,7 +65,6 @@ button {
     cursor: pointer;
 }
 
-
 /* =========================================================
    2. TOP SHIPPING BAR
 ========================================================= */
@@ -126,7 +124,6 @@ button {
     gap: 5px;
 }
 
-
 /* =========================================================
    3. FIXED BLACK MAIN HEADER
 ========================================================= */
@@ -157,7 +154,6 @@ button {
     display: flex;
     align-items: center;
 }
-
 
 /* =========================================================
    4. OZZO LOGO — DESKTOP & MOBILE
@@ -208,8 +204,6 @@ button {
     object-position: center center !important;
 }
 
-/* Text-based logo compatibility */
-
 .ozzo-logo {
     color: #fff;
     font-size: 38px;
@@ -223,7 +217,6 @@ button {
 .brand a {
     color: #fff !important;
 }
-
 
 /* =========================================================
    5. NAVIGATION
@@ -259,7 +252,6 @@ button {
     height: 2px;
     background: #fff !important;
 }
-
 
 /* =========================================================
    6. HEADER ACTIONS & SEARCH
@@ -311,7 +303,6 @@ button {
     font-size: 13px;
 }
 
-
 /* =========================================================
    7. WISHLIST & CART
 ========================================================= */
@@ -362,7 +353,6 @@ button {
     line-height: 1;
 }
 
-
 /* =========================================================
    8. MOBILE MENU BUTTON
 ========================================================= */
@@ -379,7 +369,6 @@ button {
 .navbar-toggler i {
     color: #fff !important;
 }
-
 
 /* =========================================================
    9. HERO SECTION
@@ -474,7 +463,6 @@ button {
     position: relative;
     min-height: 400px;
 }
-
 
 /* =========================================================
    10. CATEGORY SECTION
@@ -589,7 +577,6 @@ button {
     transform: translateX(4px);
 }
 
-
 /* =========================================================
    11. COMING SOON SECTION
 ========================================================= */
@@ -626,7 +613,6 @@ button {
     font-size: 10px;
     margin-bottom: 0;
 }
-
 
 /* =========================================================
    12. SERVICE CARDS
@@ -767,7 +753,6 @@ button {
 .coming-soon-card:hover .coming-soon-info > span {
     transform: translateX(4px);
 }
-
 
 /* =========================================================
    13. FEATURED PRODUCTS
@@ -2059,7 +2044,6 @@ button {
     }
 }
 
-
 /* =========================================================
    20. SMALL MOBILE — MAX 575px
 ========================================================= */
@@ -2120,100 +2104,10 @@ button {
         font-size: 8px;
     }
 
-    .hero-categories {
-        font-size: 8px;
-        gap: 5px;
-    }
-
-    .primary-btn {
-        width: 116px;
-        height: 35px;
-        font-size: 9px;
-    }
-
-    .hero-image-area {
-        width: 35%;
-        min-height: 400px;
-    }
-
     /* Category */
 
     .category-card {
-        height: 112px;
-        border-radius: 6px;
-    }
-
-    .category-image {
-        width: 56%;
-        height: 100%;
-        padding: 6px;
-    }
-
-    .category-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        object-position: center;
-    }
-
-    .category-info {
-        width: 44%;
-        padding: 12px 9px 12px 0;
-    }
-
-    .category-info h3 {
-        font-size: 12px;
-        margin-bottom: 4px;
-    }
-
-    .category-info p {
-        font-size: 6.8px;
-        line-height: 1.3;
-        max-width: 68px;
-    }
-
-    .category-info .arrow {
-        right: 7px;
-        bottom: 10px;
-        font-size: 12px;
-    }
-
-    /* Services */
-
-    .coming-soon-card {
-        height: 105px;
-    }
-
-    .coming-soon-image {
-        width: 52%;
-    }
-
-    .coming-soon-info {
-        width: 48%;
-        padding: 10px 7px 10px 10px;
-    }
-
-    .coming-soon-info h3 {
-        font-size: 11px;
-        margin-bottom: 3px;
-    }
-
-    .coming-soon-info p {
-        font-size: 7px;
-        line-height: 1.3;
-    }
-
-    .coming-soon-info > span {
-        right: 6px;
-        bottom: 7px;
-        font-size: 11px;
-    }
-
-    .coming-soon-overlay {
-        left: 6px;
-        top: 6px;
-        padding: 3px 5px;
-        font-size: 5px;
+        height: 150px;
     }
 
     /* Featured products */
@@ -2236,10 +2130,26 @@ button {
         font-size: 11px;
     }
 
-    /* Product grid image heights */
+    /* Product grid */
 
     #productGrid .product-image {
         height: 190px;
+    }
+
+    .featured-section .product-main-row {
+        flex-wrap: wrap;
+    }
+
+    .featured-section .product-title-area {
+        flex-basis: 100%;
+    }
+
+    .featured-section .product-title-area h3 {
+        min-height: auto;
+    }
+
+    .featured-section .add-cart {
+        margin-top: 7px;
     }
 
     /* Footer */
@@ -2260,7 +2170,7 @@ button {
         text-align: center;
     }
 
-    /* Promo positioning */
+    /* Promotions */
 
     .promotion-section .promo-card {
         background-position: center, right center !important;
@@ -2300,10 +2210,7 @@ button {
 
     /* Hero */
 
-    .hero-section {
-        min-height: 390px;
-    }
-
+    .hero-section,
     .hero-content {
         min-height: 390px;
     }
@@ -2461,7 +2368,7 @@ button {
         font-size: 11px !important;
     }
 
-    /* Third promo card full width */
+    /* Third promotion card full width */
 
     .promotion-section .row.g-3 > .col-lg-4:nth-child(3) {
         grid-column: 1 / -1 !important;
@@ -2589,7 +2496,7 @@ button {
 
 
 /* =========================================================
-   27. REMOVE TEXT SELECTION HIGHLIGHT
+   27. TEXT SELECTION
 ========================================================= */
 
 ::selection {
@@ -2619,529 +2526,499 @@ button {
     }
 }
 
+
 /* =========================================================
-   OZZO TOP SHIPPING BAR
+   29. FIX TRANSPARENT NAVIGATION BACKGROUND
 ========================================================= */
 
-.top-bar{
-    width:100%;
-    height:30px;
-
-    position:fixed;
-    top:0;
-    left:0;
-
-    z-index:1100;
-
-    background:#000 !important;
-    color:#fff !important;
-
-    font-size:10px;
-    letter-spacing:.2px;
-}
-
-.top-bar-inner{
-    width:100%;
-    height:30px;
-
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-}
-
-.shipping-text{
-    display:flex;
-    align-items:center;
-    gap:8px;
-    
-}
-
-.shipping-text i{
-    font-size:16px;
-}
-
-.top-links{
-    display:flex;
-    align-items:center;
-    gap:10px;
-}
-
-.top-links a{
-    color:#fff;
-}
-
-.login-link{
-    display:flex;
-    align-items:center;
-    gap:5px;
+.main-header,
+.main-header .navbar,
+.main-header .container-fluid,
+.main-header .navbar-collapse,
+.main-header .navbar-collapse.show,
+.main-header .navbar-collapse.collapsing,
+.main-header .main-nav {
+    background: #000 !important;
+    background-color: #000 !important;
+    opacity: 1 !important;
 }
 
 
 /* =========================================================
-   MAIN FIXED BLACK HEADER
+   30. TABLET & MOBILE NAVIGATION BACKGROUND
 ========================================================= */
 
-.main-header{
-    width:100%;
-    height:67px;
-    min-height:67px;
+@media (max-width: 991px) {
 
-    position:fixed;
-    top:30px;
-    left:0;
+    .main-header,
+    .main-header .navbar {
+        background: #000 !important;
+        background-color: #000 !important;
+    }
 
-    z-index:1000;
+    .main-header .navbar {
+        position: relative !important;
+    }
 
-    background:#000 !important;
-    border-bottom:1px solid #222;
+    .main-header .navbar-collapse,
+    .main-header .navbar-collapse.show,
+    .main-header .navbar-collapse.collapsing {
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 12px 16px 18px !important;
+        background: #000 !important;
+        background-color: #000 !important;
+        border-top: 1px solid #222 !important;
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35) !important;
+        z-index: 1101 !important;
+    }
+
+    .main-header .main-nav,
+    .main-header .main-nav .nav-item,
+    .main-header .main-nav .nav-link,
+    .main-header .header-actions {
+        background: #000 !important;
+        background-color: #000 !important;
+    }
+
+    .main-header .main-nav .nav-link {
+        color: #fff !important;
+    }
 }
 
-.main-header .navbar{
-    width:100%;
-    height:67px;
-    min-height:67px;
 
-    padding-top:0;
-    padding-bottom:0;
-}
 
 
 /* =========================================================
-   LOGO
+   OZZO HEADER — ALL PROPERTIES WITH !IMPORTANT
 ========================================================= */
 
-.ozzo-logo{
-    color:#fff;
-    font-size:38px;
-    line-height:1;
-    font-weight:700;
-    letter-spacing:-2px;
+/* BODY SPACE FOR FIXED HEADER */
+
+body {
+    margin: 0 !important;
+    padding-top: 97px !important;
+    overflow-x: hidden !important;
+}
+
+/* TOP SHIPPING BAR */
+
+.top-bar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 1100 !important;
+    width: 100% !important;
+    height: 30px !important;
+    background: #000 !important;
+    color: #fff !important;
+    font-size: 10px !important;
+}
+
+.top-bar-inner {
+    width: 100% !important;
+    height: 30px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+.shipping-text {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+    white-space: nowrap !important;
+}
+
+.shipping-text i {
+    font-size: 12px !important;
+}
+
+.top-links {
+    display: flex !important;
+    align-items: center !important;
+    gap: 11px !important;
+    color: #fff !important;
+}
+
+.top-links a {
+    color: #fff !important;
+    transition: opacity .2s ease !important;
+}
+
+.top-links a:hover {
+    opacity: .72 !important;
+}
+
+.login-link {
+    display: flex !important;
+    align-items: center !important;
+    gap: 5px !important;
+}
+
+/* MAIN HEADER */
+
+.main-header {
+    position: fixed !important;
+    top: 30px !important;
+    left: 0 !important;
+    z-index: 1000 !important;
+    width: 100% !important;
+    height: 67px !important;
+    min-height: 67px !important;
+    background: #000 !important;
+    border-bottom: 1px solid #222 !important;
+}
+
+.main-header .navbar {
+    width: 100% !important;
+    height: 67px !important;
+    min-height: 67px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    background: #000 !important;
+}
+
+.main-header .container-fluid {
+    height: 67px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+/* LOGO */
+
+.ozzo-header-logo-wrap {
+    width: 190px !important;
+    height: 67px !important;
+    flex: 0 0 190px !important;
+    display: flex !important;
+    align-items: center !important;
+    overflow: hidden !important;
+}
+
+.desktop-logo-link {
+    width: 190px !important;
+    height: 67px !important;
+    display: flex !important;
+    align-items: center !important;
+    overflow: hidden !important;
+}
+
+.desktop-logo {
+    display: block !important;
+    width: 180px !important;
+    max-width: 180px !important;
+    height: 56px !important;
+    max-height: 56px !important;
+    object-fit: contain !important;
+    object-position: left center !important;
+}
+
+.mobile-logo-link {
+    width: 125px !important;
+    height: 67px !important;
+    display: none !important;
+    align-items: center !important;
+    overflow: hidden !important;
+}
+
+.mobile-logo {
+    display: block !important;
+    width: 112px !important;
+    max-width: 112px !important;
+    height: 56px !important;
+    max-height: 56px !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+}
+
+.ozzo-logo {
+    color: #fff !important;
+    font-size: 38px !important;
+    line-height: 1 !important;
+    font-weight: 700 !important;
+    letter-spacing: -2px !important;
 }
 
 .brand,
 .brand span,
-.brand a{
-    color:#fff !important;
+.brand a {
+    color: #fff !important;
 }
 
-.ozzo-header-logo-wrap{
-    width:190px;
-    height:67px;
+/* NAVIGATION */
 
-    flex:0 0 190px;
-
-    display:flex;
-    align-items:center;
-
-    overflow:hidden;
+.main-nav {
+    gap: 8px !important;
 }
 
-.desktop-logo-link{
-    width:190px;
-    height:67px;
-
-    display:flex;
-    align-items:center;
-
-    overflow:hidden;
-    text-decoration:none;
+.main-nav .nav-link {
+    position: relative !important;
+    padding: 25px 10px 23px !important;
+    color: #fff !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    transition: color .2s ease, background .2s ease !important;
 }
 
-.desktop-logo{
-    display:block;
-
-    width:180px !important;
-    max-width:180px !important;
-
-    height:56px !important;
-    max-height:56px !important;
-
-    object-fit:contain !important;
-    object-position:left center !important;
+.main-nav .nav-link:hover {
+    color: #d8d8d8 !important;
 }
 
-.mobile-logo-link{
-    display:none;
-
-    width:125px;
-    height:67px;
-
-    align-items:center;
-
-    overflow:hidden;
+.main-nav .nav-link.active {
+    color: #fff !important;
 }
 
-.mobile-logo{
-    display:block;
-
-    width:112px !important;
-    max-width:112px !important;
-
-    height:56px !important;
-    max-height:56px !important;
-
-    object-fit:contain !important;
-    object-position:center center !important;
+.main-nav .nav-link.active::after {
+    content: "" !important;
+    position: absolute !important;
+    left: 10px !important;
+    right: 10px !important;
+    bottom: 15px !important;
+    height: 2px !important;
+    background: #fff !important;
 }
 
+/* SEARCH */
 
-/* =========================================================
-   NAVIGATION
-========================================================= */
-
-.main-nav{
-    display:flex;
-    gap:8px;
+.header-actions {
+    display: flex !important;
+    align-items: center !important;
+    gap: 15px !important;
 }
 
-.main-nav a,
-.main-nav .nav-link{
-    color:#fff !important;
+.search-box {
+    width: 240px !important;
+    height: 36px !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 0 14px !important;
+    background: #111 !important;
+    border: 1px solid #333 !important;
+    border-radius: 22px !important;
+    transition: background .2s ease, box-shadow .2s ease, border-color .2s ease !important;
 }
 
-.main-nav .nav-link{
-    position:relative;
-
-    padding:25px 10px 23px;
-
-    font-size:12px;
-    font-weight:500;
-
-    transition:
-        color .2s ease,
-        background .2s ease;
+.search-box:focus-within {
+    background: #151515 !important;
+    border-color: #555 !important;
+    box-shadow: 0 0 0 2px rgba(255,255,255,.06) !important;
 }
 
-.main-nav .nav-link:hover{
-    color:#d8d8d8 !important;
+.search-box input {
+    flex: 1 !important;
+    min-width: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    border: 0 !important;
+    outline: 0 !important;
+    background: transparent !important;
+    color: #fff !important;
+    font-size: 10px !important;
 }
 
-.main-nav .nav-link.active{
-    color:#fff !important;
+.search-box input::placeholder {
+    color: #aaa !important;
 }
 
-.main-nav .nav-link.active::after{
-    content:"";
-
-    position:absolute;
-
-    left:10px;
-    right:10px;
-    bottom:15px;
-
-    height:2px;
-
-    background:#fff !important;
+.search-box i {
+    flex: 0 0 auto !important;
+    color: #fff !important;
+    font-size: 13px !important;
 }
 
+/* WISHLIST AND CART */
 
-/* =========================================================
-   MOBILE MENU BUTTON
-========================================================= */
-
-.navbar-toggler{
-    color:#fff !important;
-
-    background:transparent !important;
-
-    border:1px solid #555 !important;
-
-    box-shadow:none !important;
+.header-icon {
+    position: relative !important;
+    width: 27px !important;
+    height: 36px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+    color: #fff !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 18px !important;
+    transition: color .2s ease, transform .2s ease !important;
 }
 
-.navbar-toggler i{
-    color:#fff !important;
-}
-
-
-/* =========================================================
-   SEARCH BOX
-========================================================= */
-
-.header-actions{
-    display:flex;
-    align-items:center;
-    gap:18px;
-}
-
-.search-box{
-    width:240px;
-    height:36px;
-
-    display:flex;
-    align-items:center;
-
-    padding:0 14px;
-
-    background:#111 !important;
-
-    border:1px solid #333;
-    border-radius:22px;
-
-    color:#fff;
-}
-
-.search-box input{
-    flex:1;
-
-    min-width:0;
-    height:100%;
-
-    border:none;
-    outline:none;
-
-    background:transparent !important;
-
-    color:#fff !important;
-
-    font-size:10px;
-}
-
-.search-box input::placeholder{
-    color:#aaa !important;
-}
-
-.search-box i{
-    color:#fff !important;
-    font-size:13px;
-}
-
-
-/* =========================================================
-   WISHLIST + CART ICONS
-========================================================= */
-
-.header-icon{
-    width:25px;
-    height:35px;
-
-    position:relative;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    border:none;
-
-    background:transparent !important;
-
-    color:#fff !important;
-
-    font-size:18px;
-    cursor:pointer;
-}
-
-.header-icon:hover{
-    color:#ddd !important;
+.header-icon:hover {
+    color: #ddd !important;
+    transform: scale(1.07) !important;
 }
 
 .header-actions button,
 .header-actions a,
-.header-actions i{
-    color:#fff !important;
+.header-actions i {
+    color: #fff !important;
 }
 
-
-/* =========================================================
-   CART COUNT
-========================================================= */
-
-.cart-count{
-    position:absolute;
-
-    top:0;
-    right:-4px;
-
-    width:15px;
-    height:15px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    background:#fff !important;
-    color:#000 !important;
-
-    border-radius:50%;
-
-    font-size:8px;
+.wishlist-button.active {
+    color: #da4251 !important;
 }
 
-
-/* =========================================================
-   FIXED HEADER CONTENT SPACING
-========================================================= */
-
-body{
-    padding-top:97px !important;
+.cart-count {
+    position: absolute !important;
+    top: 1px !important;
+    right: -5px !important;
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 8px !important;
+    line-height: 1 !important;
 }
 
+/* MOBILE MENU BUTTON */
 
-/* =========================================================
-   RESPONSIVE — BELOW 1199px
-========================================================= */
+.navbar-toggler {
+    flex: 0 0 auto !important;
+    padding: 6px 9px !important;
+    border: 1px solid #555 !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    color: #fff !important;
+}
 
-@media(max-width:1199px){
+.navbar-toggler i {
+    color: #fff !important;
+}
 
-    .top-links{
-        display:none;
+/* TABLET */
+
+@media (max-width: 991px) {
+
+    .main-header {
+        height: auto !important;
+        min-height: 67px !important;
     }
 
-    .top-bar-inner{
-        justify-content:center;
+    .main-header .navbar {
+        height: auto !important;
+        min-height: 67px !important;
     }
 
-    .main-nav{
-        margin-top:10px;
-        margin-bottom:10px;
+    .main-nav {
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
     }
 
-    .main-nav .nav-link{
-        padding:10px 8px;
+    .main-nav .nav-link {
+        padding: 10px 8px !important;
     }
 
-    .header-actions{
-        padding:10px 0 15px;
+    .main-nav .nav-link.active::after {
+        left: 8px !important;
+        right: 8px !important;
+        bottom: 4px !important;
     }
 
-    .search-box{
-        width:220px;
+    .header-actions {
+        padding: 10px 0 15px !important;
+        justify-content: flex-start !important;
+    }
+
+    .ozzo-header-logo-wrap {
+        width: 165px !important;
+        flex: 0 0 165px !important;
+    }
+
+    .desktop-logo-link {
+        width: 165px !important;
+    }
+
+    .desktop-logo {
+        width: 155px !important;
+        max-width: 155px !important;
+        height: 52px !important;
+        max-height: 52px !important;
     }
 }
 
+/* MOBILE */
 
-/* =========================================================
-   RESPONSIVE — TABLET
-========================================================= */
+@media (max-width: 767px) {
 
-@media(max-width:991px){
-    
-    
+    .top-bar {
+        height: 28px !important;
+    }
+
+    .top-bar-inner {
+        height: 28px !important;
+        font-size: 9px !important;
+    }
+
     .shipping-text{
-    font-size: large;
+    font-size: small;
     }
-    .main-header{
-        height:auto;
-        min-height:67px;
-    }
-
-    .main-header .navbar{
-        height:auto;
-        min-height:67px;
+    .main-header {
+        top: 28px !important;
     }
 
-    .main-nav{
-        margin-top:10px;
-        margin-bottom:10px;
+    .main-header .container-fluid {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
     }
 
-    .main-nav .nav-link{
-        padding:10px 8px;
+    .ozzo-header-logo-wrap {
+        width: 140px !important;
+        flex-basis: 0 0 140px !important;
     }
 
-    .main-nav .nav-link.active::after{
-        left:8px;
-        right:8px;
-        bottom:4px;
+    .desktop-logo-link {
+        display: none !important;
     }
 
-    .header-actions{
-        padding:10px 0 15px;
-        justify-content:flex-start;
+    .mobile-logo-link {
+        display: flex !important;
     }
 
-    .ozzo-header-logo-wrap{
-        width:165px;
-        flex:0 0 165px;
+    .mobile-logo {
+        width: 100px !important;
+        max-width: 100px !important;
+        height: 54px !important;
+        max-height: 54px !important;
     }
 
-    .desktop-logo-link{
-        width:165px;
+    .header-actions {
+        flex-wrap: wrap !important;
     }
 
-    .desktop-logo{
-        width:155px !important;
-        max-width:155px !important;
-
-        height:52px !important;
-        max-height:52px !important;
+    .search-box {
+        width: 100% !important;
+        order: 3 !important;
     }
 }
 
+/* SMALL MOBILE */
 
-/* =========================================================
-   RESPONSIVE — MOBILE
-========================================================= */
+@media (max-width: 575px) {
 
-@media(max-width:767px){
-
-    .top-bar{
-        height:28px;
+    .ozzo-header-logo-wrap {
+        width: 135px !important;
+        flex-basis: 135px !important;
     }
 
-    .top-bar-inner{
-        height:28px;
-        font-size:9px;
-    }
-    .shipping-text{
-    font-size: large;
-    }
-    .ozzo-logo{
-        font-size:31px;
+    .mobile-logo-link {
+        width: 135px !important;
     }
 
-    .ozzo-header-logo-wrap{
-        width:140px;
-        flex:0 0 140px;
-    }
-
-    .desktop-logo-link{
-        display:none;
-    }
-
-    .mobile-logo-link{
-        display:flex;
-    }
-
-    .mobile-logo{
-        width:125px !important;
-        max-width:125px !important;
-
-        height:52px !important;
-        max-height:52px !important;
-    }
-
-    .header-actions{
-        flex-wrap:wrap;
-    }
-
-    .search-box{
-        width:100%;
-        order:3;
-    }
-}
-
-
-/* =========================================================
-   RESPONSIVE — SMALL MOBILE
-========================================================= */
-
-@media(max-width:575px){
-
-    .ozzo-header-logo-wrap{
-        width:135px;
-        flex-basis:135px;
-    }
-
-    .mobile-logo-link{
-        width:135px;
-    }
-
-    .mobile-logo{
-        width:120px !important;
-        max-width:120px !important;
-
-        height:50px !important;
-        max-height:50px !important;
+    .mobile-logo {
+        width: 120px !important;
+        max-width: 120px !important;
+        height: 50px !important;
+        max-height: 50px !important;
     }
 }

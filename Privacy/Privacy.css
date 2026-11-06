@@ -1172,7 +1172,7 @@ input{
     }
 
     .shipping-text span{
-        font-size:8px;
+        font-size:13px;
     }
 
 
@@ -2106,4 +2106,511 @@ body{
 ::-moz-selection {
     background: transparent !important;
     color: inherit !important;
+}
+
+
+
+
+
+/* =========================================================
+   OZZO HEADER — ALL PROPERTIES WITH !IMPORTANT
+========================================================= */
+
+/* BODY SPACE FOR FIXED HEADER */
+
+body {
+    margin: 0 !important;
+    padding-top: 97px !important;
+    overflow-x: hidden !important;
+}
+
+/* TOP SHIPPING BAR */
+
+.top-bar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 1100 !important;
+    width: 100% !important;
+    height: 30px !important;
+    background: #000 !important;
+    color: #fff !important;
+    font-size: 10px !important;
+}
+
+.top-bar-inner {
+    width: 100% !important;
+    height: 30px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+.shipping-text {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+    white-space: nowrap !important;
+}
+
+.shipping-text i {
+    font-size: 12px !important;
+}
+
+.top-links {
+    display: flex !important;
+    align-items: center !important;
+    gap: 11px !important;
+    color: #fff !important;
+}
+
+.top-links a {
+    color: #fff !important;
+    transition: opacity .2s ease !important;
+}
+
+.top-links a:hover {
+    opacity: .72 !important;
+}
+
+.login-link {
+    display: flex !important;
+    align-items: center !important;
+    gap: 5px !important;
+}
+
+/* MAIN HEADER */
+
+.main-header {
+    position: fixed !important;
+    top: 30px !important;
+    left: 0 !important;
+    z-index: 1000 !important;
+    width: 100% !important;
+    height: 67px !important;
+    min-height: 67px !important;
+    background: #000 !important;
+    border-bottom: 1px solid #222 !important;
+}
+
+.main-header .navbar {
+    width: 100% !important;
+    height: 67px !important;
+    min-height: 67px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    background: #000 !important;
+}
+
+.main-header .container-fluid {
+    height: 67px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+/* LOGO */
+
+.ozzo-header-logo-wrap {
+    width: 190px !important;
+    height: 67px !important;
+    flex: 0 0 190px !important;
+    display: flex !important;
+    align-items: center !important;
+    overflow: hidden !important;
+}
+
+.desktop-logo-link {
+    width: 190px !important;
+    height: 67px !important;
+    display: flex !important;
+    align-items: center !important;
+    overflow: hidden !important;
+}
+
+.desktop-logo {
+    display: block !important;
+    width: 120px !important;
+    max-width: 120px !important;
+    height: 56px !important;
+    max-height: 56px !important;
+    object-fit: contain !important;
+    object-position: left center !important;
+}
+
+.mobile-logo-link {
+    width: 125px !important;
+    height: 67px !important;
+    display: none !important;
+    align-items: center !important;
+    overflow: hidden !important;
+}
+
+.mobile-logo {
+    display: block !important;
+    width: 112px !important;
+    max-width: 112px !important;
+    height: 56px !important;
+    max-height: 56px !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+}
+
+.ozzo-logo {
+    color: #fff !important;
+    font-size: 38px !important;
+    line-height: 1 !important;
+    font-weight: 700 !important;
+    letter-spacing: -2px !important;
+}
+
+.brand,
+.brand span,
+.brand a {
+    color: #fff !important;
+}
+
+/* NAVIGATION */
+
+.main-nav {
+    gap: 8px !important;
+}
+
+.main-nav .nav-link {
+    position: relative !important;
+    padding: 25px 10px 23px !important;
+    color: #fff !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    transition: color .2s ease, background .2s ease !important;
+}
+
+.main-nav .nav-link:hover {
+    color: #d8d8d8 !important;
+}
+
+.main-nav .nav-link.active {
+    color: #fff !important;
+}
+
+.main-nav .nav-link.active::after {
+    content: "" !important;
+    position: absolute !important;
+    left: 10px !important;
+    right: 10px !important;
+    bottom: 15px !important;
+    height: 2px !important;
+    background: #fff !important;
+}
+
+/* SEARCH */
+
+.header-actions {
+    display: flex !important;
+    align-items: center !important;
+    gap: 15px !important;
+}
+
+.search-box {
+    width: 240px !important;
+    height: 36px !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 0 14px !important;
+    background: #111 !important;
+    border: 1px solid #333 !important;
+    border-radius: 22px !important;
+    transition: background .2s ease, box-shadow .2s ease, border-color .2s ease !important;
+}
+
+.search-box:focus-within {
+    background: #151515 !important;
+    border-color: #555 !important;
+    box-shadow: 0 0 0 2px rgba(255,255,255,.06) !important;
+}
+
+.search-box input {
+    flex: 1 !important;
+    min-width: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    border: 0 !important;
+    outline: 0 !important;
+    background: transparent !important;
+    color: #fff !important;
+    font-size: 10px !important;
+}
+
+.search-box input::placeholder {
+    color: #aaa !important;
+}
+
+.search-box i {
+    flex: 0 0 auto !important;
+    color: #fff !important;
+    font-size: 13px !important;
+}
+
+/* WISHLIST AND CART */
+
+.header-icon {
+    position: relative !important;
+    width: 27px !important;
+    height: 36px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+    color: #fff !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 18px !important;
+    transition: color .2s ease, transform .2s ease !important;
+}
+
+.header-icon:hover {
+    color: #ddd !important;
+    transform: scale(1.07) !important;
+}
+
+.header-actions button,
+.header-actions a,
+.header-actions i {
+    color: #fff !important;
+}
+
+.wishlist-button.active {
+    color: #da4251 !important;
+}
+
+.cart-count {
+    position: absolute !important;
+    top: 1px !important;
+    right: -5px !important;
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 8px !important;
+    line-height: 1 !important;
+}
+
+/* MOBILE MENU BUTTON */
+
+.navbar-toggler {
+    flex: 0 0 auto !important;
+    padding: 6px 9px !important;
+    border: 1px solid #555 !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    color: #fff !important;
+}
+
+.navbar-toggler i {
+    color: #fff !important;
+}
+
+/* TABLET */
+
+@media (max-width: 991px) {
+
+    .main-header {
+        height: auto !important;
+        min-height: 67px !important;
+    }
+
+    .main-header .navbar {
+        height: auto !important;
+        min-height: 67px !important;
+    }
+
+    .main-nav {
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .main-nav .nav-link {
+        padding: 10px 8px !important;
+    }
+
+    .main-nav .nav-link.active::after {
+        left: 8px !important;
+        right: 8px !important;
+        bottom: 4px !important;
+    }
+
+    .header-actions {
+        padding: 10px 0 15px !important;
+        justify-content: flex-start !important;
+    }
+
+    .ozzo-header-logo-wrap {
+        width: 165px !important;
+        flex: 0 0 165px !important;
+    }
+
+    .desktop-logo-link {
+        width: 165px !important;
+    }
+
+    .desktop-logo {
+        width: 155px !important;
+        max-width: 155px !important;
+        height: 52px !important;
+        max-height: 52px !important;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+
+    .top-bar {
+        height: 28px !important;
+    }
+
+    .top-bar-inner {
+        height: 28px !important;
+        font-size: 9px !important;
+    }
+
+    .shipping-text{
+    font-size: small;
+    }
+    .main-header {
+        top: 28px !important;
+    }
+
+    .main-header .container-fluid {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
+    .ozzo-header-logo-wrap {
+        width: 140px !important;
+        flex-basis: 0 0 140px !important;
+    }
+
+    .desktop-logo-link {
+        display: none !important;
+    }
+
+    .mobile-logo-link {
+        display: flex !important;
+    }
+
+    .mobile-logo {
+        width: 100px !important;
+        max-width: 100px !important;
+        height: 54px !important;
+        max-height: 54px !important;
+    }
+
+    .header-actions {
+        flex-wrap: wrap !important;
+    }
+
+    .search-box {
+        width: 100% !important;
+        order: 3 !important;
+    }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 575px) {
+
+    .ozzo-header-logo-wrap {
+        width: 135px !important;
+        flex-basis: 135px !important;
+    }
+
+    .mobile-logo-link {
+        width: 135px !important;
+    }
+
+    .mobile-logo {
+        width: 120px !important;
+        max-width: 120px !important;
+        height: 50px !important;
+        max-height: 50px !important;
+    }
+}
+
+
+/* =========================================================
+   OZZO — FIX TRANSPARENT NAVIGATION BACKGROUND
+========================================================= */
+
+.main-header,
+.main-header .navbar,
+.main-header .container-fluid,
+.main-header .navbar-collapse,
+.main-header .navbar-collapse.show,
+.main-header .navbar-collapse.collapsing,
+.main-header .main-nav {
+    background: #000 !important;
+    background-color: #000 !important;
+    opacity: 1 !important;
+}
+
+/* TABLET AND MOBILE NAVIGATION */
+
+@media (max-width: 991px) {
+
+    .main-header {
+        background: #000 !important;
+        background-color: #000 !important;
+    }
+
+    .main-header .navbar {
+        position: relative !important;
+        background: #000 !important;
+        background-color: #000 !important;
+    }
+
+    .main-header .navbar-collapse {
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 12px 16px 18px !important;
+        background: #000 !important;
+        background-color: #000 !important;
+        border-top: 1px solid #222 !important;
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35) !important;
+        z-index: 1101 !important;
+    }
+
+    .main-header .navbar-collapse.show,
+    .main-header .navbar-collapse.collapsing {
+        background: #000 !important;
+        background-color: #000 !important;
+    }
+
+    .main-header .main-nav {
+        background: #000 !important;
+        background-color: #000 !important;
+        margin: 0 !important;
+    }
+
+    .main-header .main-nav .nav-item {
+        background: #000 !important;
+    }
+
+    .main-header .main-nav .nav-link {
+        color: #fff !important;
+        background: #000 !important;
+    }
+
+    .main-header .header-actions {
+        background: #000 !important;
+    }
 }
