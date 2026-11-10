@@ -1577,8 +1577,8 @@ const gas = [
         subcategory: "Safety",
         name: "Double Safety Gas Device",
         brand: "OZZO Gas",
-        price: 799,
-        mrp: 999,
+        price: 2900,
+        mrp: 4999,
         rating: 5,
         reviews: 624,
         image: "/Gas Safety.jpeg"
