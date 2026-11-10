@@ -3040,3 +3040,47 @@ body {
         background: #000 !important;
     }
 }
+.product-price-area {
+    margin-top: 20px;
+    padding-top: 25px;
+    border-top: 1px solid #e5e9ed;
+}
+
+.product-current-price {
+    display: flex;
+    align-items: baseline;
+    gap: 7px;
+}
+
+.product-current-price .product-discount {
+    color: #cc002b;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.product-current-price .currency {
+    color: #111;
+    font-size: 21px;
+}
+
+.product-current-price .selling-price {
+    color: #111;
+    font-size: 44px;
+    font-weight: 600;
+}
+
+.product-mrp {
+    margin-top: 12px;
+    color: #657384;
+    font-size: 16px;
+}
+
+.product-mrp del {
+    text-decoration: line-through;
+}
+
+.tax-info {
+    margin-top: 7px;
+    color: #334155;
+    font-size: 15px;
+}

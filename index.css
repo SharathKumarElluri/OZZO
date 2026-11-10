@@ -3022,3 +3022,75 @@ body {
         max-height: 50px !important;
     }
 }
+
+@media (max-width:1600px ){
+
+.desktop-logo-link {
+    width: 190px !important;
+    height: 67px !important;
+    display: flex !important;
+    align-items: center !important;
+    overflow: hidden !important;
+}
+
+.desktop-logo {
+    display: block !important;
+    width: 120px !important;
+    max-width: 120px !important;
+    height: 56px !important;
+    max-height: 56px !important;
+    object-fit: contain !important;
+    object-position: left center !important;
+}
+}
+
+
+/* =========================================
+   OZZO LOGO - RESPONSIVE DISPLAY FIX
+========================================= */
+
+/* Desktop view */
+.ozzo-header-logo-wrap {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.desktop-logo-link {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.desktop-logo {
+    display: block !important;
+    width: 150px !important;
+    height: auto !important;
+    object-fit: contain !important;
+}
+
+.mobile-logo-link,
+.mobile-logo {
+    display: none !important;
+}
+
+
+/* Mobile view */
+@media screen and (max-width: 767px) {
+
+    .desktop-logo-link,
+    .desktop-logo {
+        display: none !important;
+    }
+
+    .mobile-logo-link {
+        display: flex !important;
+        align-items: center !important;
+    }
+
+    .mobile-logo {
+        display: block !important;
+        width: 125px !important;
+        height: auto !important;
+        object-fit: contain !important;
+    }
+
+}

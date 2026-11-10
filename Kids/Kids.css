@@ -484,6 +484,7 @@ img {
     text-decoration: none;
     transition: background .25s ease, transform .25s ease;
     animation: btnPulse 2s ease-in-out infinite;
+    
 }
 
 .shop-btn:hover {
@@ -491,6 +492,7 @@ img {
     color: var(--navy);
     transform: scale(1.08);
     animation-play-state: paused;
+  
 }
 
 .shop-btn span {
@@ -2005,6 +2007,7 @@ line-clamp: 2;
         min-height: 39px;
         padding: 0 17px;
         font-size: 10px;
+       
     }
 
     .hero-trust {
@@ -4150,5 +4153,246 @@ body {
 
     .main-header .header-actions {
         background: #000 !important;
+    }
+}
+
+
+/* =========================================================
+   OZZO MEN'S FASHION
+   INDEPENDENT SCROLLABLE CATEGORY SECTION
+========================================================= */
+
+/* MAIN SHOP LAYOUT */
+
+.men-shop-layout {
+    display: grid !important;
+    grid-template-columns: 260px minmax(0, 1fr) !important;
+    align-items: start !important;
+    gap: 24px !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+}
+
+/* LEFT CATEGORY SIDEBAR */
+
+.men-category-section {
+    position: sticky !important;
+    top: 110px !important;
+
+    width: 100% !important;
+    height: calc(100vh - 130px) !important;
+    max-height: calc(100vh - 130px) !important;
+
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+
+    align-self: start !important;
+    overscroll-behavior: contain !important;
+    -webkit-overflow-scrolling: touch !important;
+
+    scrollbar-width: thin !important;
+    scrollbar-color: #132438 #edf0f3 !important;
+}
+
+/* CATEGORY CONTAINER */
+
+.men-category-container {
+    width: 100% !important;
+    min-height: min-content !important;
+    height: auto !important;
+    overflow: visible !important;
+    padding: 21px 17px 16px !important;
+}
+
+/* CATEGORY GROUPS */
+
+.men-category-group {
+    width: 100% !important;
+    flex-shrink: 0 !important;
+}
+
+/* CATEGORY OPTIONS */
+
+.men-category-options {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+}
+
+/* CATEGORY BUTTONS */
+
+.men-category-btn {
+    width: 100% !important;
+    flex-shrink: 0 !important;
+}
+
+/* CUSTOM SCROLLBAR */
+
+.men-category-section::-webkit-scrollbar {
+    width: 6px !important;
+}
+
+.men-category-section::-webkit-scrollbar-track {
+    background: #edf0f3 !important;
+    border-radius: 20px !important;
+}
+
+.men-category-section::-webkit-scrollbar-thumb {
+    background: #132438 !important;
+    border-radius: 20px !important;
+}
+
+.men-category-section::-webkit-scrollbar-thumb:hover {
+    background: #304b65 !important;
+}
+
+/* RIGHT PRODUCT SECTION */
+
+.men-products-area {
+    width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+}
+
+.men-products-scroll {
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+}
+
+/* PRODUCT GRID */
+
+.men-products-area #productGrid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 20px !important;
+    width: 100% !important;
+}
+
+/* =========================================================
+   TABLETS
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .men-shop-layout {
+        grid-template-columns: 210px minmax(0, 1fr) !important;
+        gap: 15px !important;
+    }
+
+    .men-category-section {
+        position: sticky !important;
+        top: 105px !important;
+        height: calc(100vh - 125px) !important;
+        max-height: calc(100vh - 125px) !important;
+    }
+
+    .men-category-container {
+        padding: 15px 10px !important;
+    }
+
+    .men-products-area #productGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 575px) {
+
+    .men-shop-layout {
+        grid-template-columns: 105px minmax(0, 1fr) !important;
+        gap: 9px !important;
+        align-items: start !important;
+    }
+
+    .men-category-section {
+        position: sticky !important;
+        top: 95px !important;
+
+        height: calc(100vh - 110px) !important;
+        max-height: calc(100vh - 110px) !important;
+
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+    }
+
+    .men-category-container {
+        padding: 10px 5px !important;
+    }
+
+    .men-category-heading h2 {
+        font-size: 13px !important;
+    }
+
+    .men-category-heading p {
+        font-size: 9px !important;
+    }
+
+    .men-category-group {
+        padding: 10px 0 !important;
+    }
+
+    .men-category-group-heading {
+        gap: 5px !important;
+    }
+
+    .men-category-group-heading > span {
+        width: 19px !important;
+        height: 19px !important;
+        font-size: 8px !important;
+    }
+
+    .men-category-group-heading h3 {
+        font-size: 9px !important;
+        line-height: 1.4 !important;
+    }
+
+    .men-category-options {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 4px !important;
+    }
+
+    .men-category-btn {
+        min-height: 32px !important;
+        padding: 6px 4px !important;
+        font-size: 9px !important;
+        line-height: 1.35 !important;
+        white-space: normal !important;
+    }
+
+    .men-category-footer {
+        gap: 8px !important;
+    }
+
+    .men-products-area #productGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 9px !important;
+    }
+}
+
+/* EXTRA SMALL MOBILE */
+
+@media (max-width: 360px) {
+
+    .men-shop-layout {
+        grid-template-columns: 92px minmax(0, 1fr) !important;
+        gap: 7px !important;
+    }
+
+    .men-category-container {
+        padding: 8px 4px !important;
+    }
+
+    .men-category-btn {
+        font-size: 8px !important;
+        padding: 5px 3px !important;
     }
 }

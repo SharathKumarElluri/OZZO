@@ -1,0 +1,841 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop OZZO tracks, nightwear and sportswear for men and women.">
+    <title>OZZO | Tracks & Sportswear</title>
+
+    <link rel="icon" type="image/png" href="../OZZO logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Tracks.css">
+</head>
+<body class="ozzo-category-page page-tracks">
+
+    <div class="top-bar">
+        <div class="container-fluid top-bar-inner px-4">
+            <div class="shipping-text">
+                <i class="fa-solid fa-truck"></i>
+                <span>Free shipping on orders above ₹999</span>
+            </div>
+            <div class="top-links">
+                <a href="#"><i class="fa-regular fa-user"></i> Login</a>
+                <span>|</span>
+                <a href="#">Help</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <nav class="navbar navbar-expand-xl">
+            <div class="container-fluid px-4">
+                <div class="ozzo-header-logo-wrap">
+                    <a href="../index.html" class="desktop-logo-link">
+                        <img src="../OZZO logo1.jpeg" alt="OZZO" class="desktop-logo">
+                    </a>
+                    <a href="../index.html" class="mobile-logo-link">
+                        <img src="../OZZO logo1.jpeg" alt="OZZO" class="mobile-logo">
+                    </a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#ozzoNavbar" aria-controls="ozzoNavbar"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="ozzoNavbar">
+                    <ul class="navbar-nav main-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../Fashion/Fashion.html">Fashion</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../Comming Soon.html">Books</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../Comming Soon.html">Stationery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../Pads/Pads.html">Pads</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../Gas/Gas.html">Gas</a></li>
+                    </ul>
+
+                    <div class="header-actions">
+                        <label class="search-box" for="searchInput">
+                            <input type="search" id="searchInput"
+                                placeholder="Search tracks & sportswear...">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </label>
+                        <a class="header-icon" href="../Wishlist/Wishlist.html" aria-label="Wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                        <a href="../Cart/Cart.html" class="header-icon cart-button" aria-label="Cart">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span class="cart-count" id="cartCount">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="fashion-hero">
+        <div class="fashion-hero-content">
+            <div class="fashion-hero-copy">
+                <span class="hero-label">OZZO TRACKS & SPORTSWEAR</span>
+                <h1>Move Freely.<br>Stay <span>Active.</span></h1>
+                <p>Discover comfortable nightwear, stylish T-shirts, shorts and activewear designed for everyday comfort.</p>
+                <a href="#fashionProducts" class="shop-btn">Shop Collection <span>→</span></a>
+            </div>
+            <div class="fashion-hero-image">
+                <div class="hero-offer">
+                    <small>UP TO</small>
+                    <strong>40%</strong>
+                    <span>OFF</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="fashion-products" id="fashionProducts">
+        <div class="container-fluid px-4">
+            <div class="men-shop-layout">
+
+                <aside class="men-category-section" id="tracksCategories">
+                    <div class="men-category-container">
+                        <div class="men-category-heading">
+                            <span class="men-category-eyebrow">OZZO ACTIVEWEAR</span>
+                            <h2>Shop Nightwear & Sportswear</h2>
+                            <p>Explore comfortable styles for everyday wear, relaxation and workouts.</p>
+                        </div>
+
+                        <div class="men-category-options all-category-option">
+                            <button class="men-category-btn active" data-tracks-filter="all" type="button">
+                                <i class="fa-solid fa-layer-group"></i> All Categories
+                            </button>
+                        </div>
+
+                        <div class="men-category-group">
+                            <div class="men-category-group-heading">
+                                <span>01</span><h3>Men's Nightwear & Sportswear</h3>
+                            </div>
+                            <div class="men-category-options">
+                                <button class="men-category-btn" data-tracks-filter="men-night-pants" type="button">Night Pants</button>
+                                <button class="men-category-btn"
+    data-tracks-filter="men-sports-tshirts" type="button">
+    T-Shirts
+</button>
+                                <button class="men-category-btn"
+    data-tracks-filter="men-sports-shorts" type="button">
+    Shorts
+</button>
+                            </div>
+                        </div>
+
+                        <div class="men-category-group">
+                            <div class="men-category-group-heading">
+                                <span>02</span><h3>Women's Nightwear & Sportswear</h3>
+                            </div>
+                            <div class="men-category-options">
+                                <button class="men-category-btn" data-tracks-filter="women-nighties" type="button">Nighties</button>
+                                <button class="men-category-btn" data-tracks-filter="women-night-pants" type="button">Night Pants</button>
+                                <button class="men-category-btn"
+    data-tracks-filter="women-sports-tshirts" type="button">
+    T-Shirts
+</button>
+                                <button class="men-category-btn"
+    data-tracks-filter="women-sports-shorts" type="button">
+    Shorts
+</button>
+                            </div>
+                        </div>
+
+                        <div class="men-category-footer">
+                            <span id="tracksCategoryResult">Showing all categories</span>
+                            <a href="#productGrid">View products <i class="fa-solid fa-arrow-down"></i></a>
+                        </div>
+                    </div>
+                </aside>
+
+                <section class="men-products-area">
+                    <div class="products-heading">
+                        <div>
+                            <span class="section-label">OZZO ACTIVEWEAR COLLECTION</span>
+                            <h2>Tracks & Sportswear</h2>
+                            <p>Performance, comfort and style in every move.</p>
+                        </div>
+                        <span class="category-product-count" id="productCount">Explore sportswear</span>
+                    </div>
+
+                    <div id="productGrid" class="product-grid"></div>
+
+                    <div id="noProducts" class="no-products" hidden>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <h3>No products found</h3>
+                        <p>Try another keyword or choose a different category.</p>
+                        <button type="button" id="resetFilters" class="reset-filters">Show All Products</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <section class="men-promo">
+        <div class="men-promo-inner">
+            <div>
+                <span class="promo-eyebrow">THE OZZO ACTIVE EDIT</span>
+                <h2>Make every move <span>count.</span></h2>
+                <p>Discover comfortable fits, flexible fabrics and sportswear essentials made for workouts, sports and everyday life.</p>
+            </div>
+            <a href="#fashionProducts" class="promo-button">Shop Sportswear <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container-fluid px-lg-5">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="footer-logo">OZZO</div>
+                    <div class="footer-categories">Fashion <span>•</span> Books <span>•</span> Stationery <span>•</span> Pads</div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <a href="../index.html">Home</a>
+                    <a href="../Careers/Careers.html">Careers</a>
+                    <a href="../About Us/About.html">About Us</a>
+                    <a href="../Faq/Faq.html">FAQs</a>
+                    <a href="../Contact/Contact.html">Contact</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Categories</h4>
+                    <a href="../Fashion/Fashion.html">Fashion</a>
+                    <a href="../Comming Soon.html">Books</a>
+                    <a href="../Comming Soon.html">Stationery</a>
+                    <a href="../Pads/Pads.html">Pads</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <a href="../Comming Soon.html">Groceries</a>
+                    <a href="../Comming Soon.html">Home Cleaning</a>
+                    <a href="../Comming Soon.html">Car Rentals</a>
+                    <a href="../Comming Soon.html">Computer Services</a>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Join Our Newsletter</h4>
+                    <p>Get updates on new arrivals and special offers.</p>
+                    <form id="newsletterForm">
+                        <div class="newsletter-input">
+                            <input type="email" id="newsletterEmail" placeholder="Enter your email address" required>
+                            <button type="submit" aria-label="Subscribe">→</button>
+                        </div>
+                    </form>
+                    <div class="newsletter-message" id="newsletterMessage"></div>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container-fluid px-lg-5">
+                <div class="footer-bottom-inner">
+                    <span>© 2026 OZZO. All rights reserved.</span>
+                    <span>Better Choices. A Brighter You.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        "use strict";
+
+        const productGrid = document.getElementById("productGrid");
+        const searchInput = document.getElementById("searchInput");
+        const noProducts = document.getElementById("noProducts");
+        const productCount = document.getElementById("productCount");
+        const cartCount = document.getElementById("cartCount");
+        const categoryResult = document.getElementById("tracksCategoryResult");
+        const categoryButtons = [...document.querySelectorAll("[data-tracks-filter]")];
+        const resetButton = document.getElementById("resetFilters");
+        const newsletterForm = document.getElementById("newsletterForm");
+
+        const categoryData = {
+            "men-night-pants": {
+                label: "Men's Night Pants",
+                names: [
+                    "Classic Black Cotton Night Pants", "Navy Blue Relaxed Night Pants", "Grey Melange Lounge Pants",
+                    "Men's Checked Cotton Pyjama", "Comfort Fit Printed Night Pants", "Everyday Cotton Lounge Pants",
+                    "Men's Relaxed Fit Pyjama", "Navy Printed Nightwear Pants", "Soft Cotton Sleepwear Pants",
+                    "Men's Casual Home Pants", "Premium Woven Pyjama Pants", "Classic Check Night Pants",
+                    "Men's Straight Fit Lounge Pants", "Lightweight Summer Night Pants", "Premium Comfort Night Pants"
+                ]
+            },
+            "men-tshirts": {
+                label: "Men's T-Shirts",
+                names: [
+                    "Classic Black Cotton T-Shirt", "Navy Blue Round Neck T-Shirt", "White Premium T-Shirt",
+                    "Grey Melange Casual T-Shirt", "Men's Active Dry Sports T-Shirt", "Olive Green Oversized T-Shirt",
+                    "Regular Fit Cotton T-Shirt", "Men's Performance Training Tee", "Classic Polo Sports T-Shirt",
+                    "Premium Graphic T-Shirt", "Quick Dry Running T-Shirt", "Men's Slim Fit T-Shirt",
+                    "Everyday Casual T-Shirt", "Breathable Activewear T-Shirt", "Premium Oversized T-Shirt"
+                ]
+            },
+            "men-shorts": {
+                label: "Men's Shorts",
+                names: [
+                    "Black Active Sports Shorts", "Navy Running Shorts", "Grey Training Shorts", "Men's Quick Dry Gym Shorts",
+                    "Lightweight Running Shorts", "Men's Cotton Casual Shorts", "Active Flex Sports Shorts",
+                    "Men's Training Gym Shorts", "Classic Basketball Shorts", "Everyday Lounge Shorts",
+                    "Men's Performance Shorts", "Athletic Running Shorts", "Relaxed Fit Cotton Shorts",
+                    "Men's Sports Mesh Shorts", "Premium Active Shorts"
+                ]
+            },
+            "women-nighties": {
+                label: "Women's Nighties",
+                names: [
+                    "Floral Print Cotton Nighty", "Pink Printed Nighty", "Blue Floral Nightdress", "Women's Premium Cotton Nighty",
+                    "Elegant Printed Nightdress", "Sleeveless Summer Nighty", "Women's Soft Cotton Nighty",
+                    "Classic Floral Nightdress", "Printed Short Sleeve Nighty", "Women's Daily Wear Nighty",
+                    "Comfort Fit Long Nighty", "Pastel Floral Nightdress", "Women's Casual Nighty",
+                    "Premium Printed Nighty", "Everyday Comfort Nightdress"
+                ]
+            },
+            "women-night-pants": {
+                label: "Women's Night Pants",
+                names: [
+                    "Women's Pink Cotton Night Pants", "Floral Printed Pyjama Pants", "Women's Navy Lounge Pants",
+                    "Soft Cotton Sleep Pants", "Women's Relaxed Fit Pyjama", "Printed Summer Night Pants",
+                    "Pastel Cotton Lounge Pants", "Women's Casual Home Pants", "Floral Comfort Night Pants",
+                    "Women's Straight Fit Pyjama", "Premium Cotton Night Pants", "Women's Lightweight Lounge Pants",
+                    "Printed Relaxed Pyjama", "Everyday Sleepwear Pants", "Women's Comfort Fit Night Pants"
+                ]
+            },
+            "women-tshirts": {
+                label: "Women's T-Shirts",
+                names: [
+                    "Women's Classic White T-Shirt", "Pink Active Sports T-Shirt", "Women's Black Round Neck Tee",
+                    "Pastel Blue Casual T-Shirt", "Women's Quick Dry Sports Tee", "Lavender Oversized T-Shirt",
+                    "Women's Cotton Crew Neck Tee", "Performance Training T-Shirt", "Women's Graphic T-Shirt",
+                    "Classic Slim Fit T-Shirt", "Women's Breathable Active Tee", "Everyday Casual T-Shirt",
+                    "Women's Relaxed Fit Tee", "Premium Sports T-Shirt", "Women's Oversized Cotton Tee"
+                ]
+            },
+            "women-shorts": {
+                label: "Women's Shorts",
+                names: [
+                    "Women's Black Sports Shorts", "Pink Running Shorts", "Women's Cotton Casual Shorts",
+                    "High Waist Active Shorts", "Women's Training Gym Shorts", "Printed Summer Shorts",
+                    "Women's Relaxed Fit Shorts", "Lightweight Running Shorts", "Women's Athletic Shorts",
+                    "Everyday Cotton Shorts", "Women's Active Flex Shorts", "Pastel Lounge Shorts",
+                    "Women's Quick Dry Shorts", "Comfort Fit Sports Shorts", "Premium Training Shorts"
+                ]
+            }
+        };
+
+
+/* =========================================================
+   FIX: MAP ALL 105 PRODUCT CATEGORIES
+========================================================= */
+
+categoryData["men-sports-tshirts"] = categoryData["men-tshirts"];
+categoryData["men-sports-shorts"] = categoryData["men-shorts"];
+
+categoryData["women-sports-tshirts"] = categoryData["women-tshirts"];
+categoryData["women-sports-shorts"] = categoryData["women-shorts"];
+
+
+
+        const categoryTags = {
+            "men-night-pants": "men,pyjama,pajama,lounge,pants",
+            "men-tshirts": "men,tshirt,shirt,apparel",
+            "men-shorts": "men,athletic,training,running,shorts",
+            "women-nighties": "women,nightgown,nightdress,nightwear",
+            "women-night-pants": "women,pyjama,pajama,lounge,pants",
+            "women-tshirts": "women,tshirt,shirt,apparel",
+            "women-shorts": "women,athletic,training,running,shorts"
+        };
+
+        
+const categoryNames = {
+    all: "all categories",
+    "men-night-pants": "men's night pants",
+    "men-sports-tshirts": "men's T-shirts",
+    "men-sports-shorts": "men's shorts",
+    "women-nighties": "women's nighties",
+    "women-night-pants": "women's night pants",
+    "women-sports-tshirts": "women's T-shirts",
+    "women-sports-shorts": "women's shorts"
+};
+
+
+        function safeReadCart() {
+            try {
+                const saved = JSON.parse(localStorage.getItem("ozzoCart") || "[]");
+                return Array.isArray(saved) ? saved : [];
+            } catch (error) {
+                console.warn("Could not read saved cart:", error);
+                return [];
+            }
+        }
+        let cart = safeReadCart();
+        let selectedFilter = "all";
+
+        function escapeHTML(value) {
+            return String(value).replace(/[&<>"']/g, character => ({
+                "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+            })[character]);
+        }
+
+        function imageFallback(name) {
+            const safeName = String(name).replace(/[&<>"']/g, "").slice(0, 30);
+            const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="600" height="700" viewBox="0 0 600 700"><rect width="600" height="700" fill="#f1f3f5"/><rect x="190" y="230" width="220" height="270" rx="20" fill="#e1e6eb"/><text x="300" y="330" text-anchor="middle" font-family="Arial" font-size="58" font-weight="700" fill="#132438">OZZO</text><text x="300" y="390" text-anchor="middle" font-family="Arial" font-size="20" fill="#657384">${safeName}</text><text x="300" y="540" text-anchor="middle" font-family="Arial" font-size="16" fill="#8995a1">Product image unavailable</text></svg>`;
+            return "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(svg);
+        }
+
+     const productImages = {
+    // MEN'S NIGHT PANTS
+    "Men's Checked Cotton Pyjama":
+        "https://www.hema.nl/dw/image/v2/BBRK_PRD/on/demandware.static/-/Sites-HEMA-master-catalog/default/dw3ea3f6b4/product/23686110_01_001.jpg?bgcolor=FFFFFF&sfrm=png&sw=1600",
+
+    // MEN'S T-SHIRTS
+    "Men's Active Dry Sports T-Shirt":
+        "https://www.wolfsport.rs/cdn/shop/products/quickdry-majica-hi-tec-doren_2_LG.png?v=1625080624&width=1445",
+
+    // MEN'S SHORTS
+   "Black Active Sports Shorts":
+    "https://i5.walmartimages.ca/images/Enlarge/628/719/6000209628719.jpg",
+
+    // WOMEN'S NIGHTIES
+    "Floral Print Cotton Nighty":
+        "https://monalizaslingerie.com/cdn/shop/files/71_05_E00049_472_092_2048x_461de44d-fc70-45d1-9a8a-dc6b9da2946b.jpg?v=1745434276",
+
+    // WOMEN'S NIGHT PANTS
+    "Women's Pink Cotton Night Pants":
+        "https://i5.walmartimages.com/seo/Womens-Cotton-Pajama-Pants-Spring-Summer-Checkered-Pajama-Pants-for-Women-Breathable-Large-Size-Outwear-Home-Pants-Pink-L_7c1534fe-91e8-4aa7-b959-b521701708b2.10cb341b3eabb69700b74d085f024647.jpeg",
+
+    // WOMEN'S T-SHIRTS
+    "Pink Active Sports T-Shirt":
+        "https://www.aorunning.com/cdn/shop/files/AONIJIE-FW5179-Women-Female-Lightweight-Quick-Drying-Sports-T-shirt-Moisture-Wicking-Workout-Running-Athletic-Tee.webp?v=1757667987",
+
+    // WOMEN'S SHORTS
+    "Women's Black Sports Shorts":
+        "https://www.rei.com/media/4a814c3c-b01d-46d1-875a-9dee2bf4efb9.jpg?size=784x588"
+};
+
+        
+    const products = [
+        ["tracks-001", "Classic Cotton Lounge Pants", "men-night-pants", 399, 600, 4.1, 203, "https://santandabel.com.au/cdn/shop/files/MGINGB36U_Men_NavyGInghamSet_300_1080x.jpg?v=1747079689", "BESTSELLER"],
+        ["tracks-002", "Navy Check Night Pants", "men-night-pants", 449, 610, 4.2, 240, "https://asset.action.com/image/upload/t_digital_product_image/w_1080/3218118_5411504281331-110_01_w6lplz.webp", ""],
+        ["tracks-003", "Grey Relaxed Pyjama Pants", "men-night-pants", 499, 670, 4.3, 277, "https://i5.walmartimages.com/asr/0919ed87-38f7-47b2-b192-946eff8f7c20.94a0799689c2ab26a9185178a1b5d537.jpeg?odnBg=FFFFFF&odnHeight=612&odnWidth=612", ""],
+        ["tracks-004", "Black Drawstring Sleep Pants", "men-night-pants", 429, 640, 4.4, 314, "https://i5.walmartimages.com/asr/7eeef821-8a12-402f-8837-ba86791e9cd3.b943d4b0a059f521b637c2756bb65222.jpeg?odnBg=FFFFFF&odnHeight=612&odnWidth=612", ""],
+        ["tracks-005", "Blue Stripe Cotton Pyjamas", "men-night-pants", 549, 740, 4.5, 351, "https://superzoom.onlinesuperimage.com/fsicache/server?effects=Pad%28CC%2CFFFFFF%29%2CMatte%28FFFFFF%29&format=jpeg&height=700&padding=10%2C10%2C10%2C10&quality=75&source=%2FBABISTA%2F2erPackSchlafhoseLEONIDAS__1149638411.png&type=image&width=700", ""],
+        ["tracks-006", "Soft Jersey Night Joggers", "men-night-pants", 499, 670, 4.1, 388, "https://www.tramasmas.com/cdn/shop/files/273942.jpg?v=1760462011&width=1500", "POPULAR"],
+        ["tracks-007", "Printed Cotton Sleep Pants", "men-night-pants", 459, 690, 4.2, 425, "https://www.schiesser.com/out/pictures/generated/product/5/760_1100_90/hose-lang-webware-multicolor-kariert-mix-relax-2-182192-824-detail2.jpg", ""],
+        ["tracks-008", "Olive Lounge Track Pants", "men-night-pants", 529, 710, 4.3, 42, "https://amogue.com/cdn/shop/products/A2_4_006751c6-beb3-43f1-a967-ae9c099c0443.jpg?v=1654695457&width=720", ""],
+        ["tracks-009", "Charcoal Straight-Fit Pyjamas", "men-night-pants", 599, 810, 4.4, 79, "https://wardrobecrush.com/cdn/shop/files/81wDMQPiKrL.jpg?v=1765636397", ""],
+        ["tracks-010", "Navy Micro-Check Night Pants", "men-night-pants", 479, 720, 4.5, 116, "https://a53e12.a-cdn.akinoncloud.com/products/2022/10/26/494979/912d9beb-29e0-4667-96f1-45e80b0d1f21_size1100x1430_cropCenter.jpg", ""],
+        ["tracks-011", "Lightweight Summer Pyjama Pants", "men-night-pants", 399, 540, 4.1, 153, "https://media.kohlsimg.com/is/image/kohls/6487445_Navy_Floral?hei=1000&op_sharpen=1&wid=1000", "NEW"],
+        ["tracks-012", "Heather Grey Sleep Joggers", "men-night-pants", 499, 670, 4.2, 190, "https://images.unsplash.com/photo-1578681994506-b8f463449011?auto=format&fit=crop&w=900&q=85", ""],
+        ["tracks-013", "Cotton Poplin Night Pants", "men-night-pants", 569, 850, 4.3, 227, "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=900&q=85", ""],
+        ["tracks-014", "Relaxed Fit Lounge Bottoms", "men-night-pants", 449, 610, 4.4, 264, "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=900&q=85", ""],
+        ["tracks-015", "Everyday Comfort Night Pants", "men-night-pants", 529, 710, 4.5, 301, "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=900&q=85", ""],
+
+        ["tracks-016", "Dry-Fit Training T-Shirt", "men-sports-tshirts", 349, 520, 4.1, 236, "https://midwaysports.com/cdn/shop/files/NikeDri-FITMen_sFitnessT-Shirt_3_3fb9837d-fa11-460d-9ef9-4813e5fb55d5.png?v=1762198238", "BESTSELLER"],
+        ["tracks-017", "Navy Performance Crew T-Shirt", "men-sports-tshirts", 399, 540, 4.2, 273, "https://images.tcdn.com.br/img/img_prod/627102/camiseta_gola_careca_corrida_e_dia_a_dia_elite_30031_4_1d01f9f438ea4621fda408aea851896a.jpg", ""],
+        ["tracks-018", "Raglan Running Sports Tee", "men-sports-tshirts", 449, 610, 4.3, 310, "https://home.ripley.com.pe/Attachment/WOP_5/2020320856093/2020320856093_2.jpg", ""],
+        ["tracks-019", "Quick-Dry Gym T-Shirt", "men-sports-tshirts", 299, 450, 4.4, 347, "https://static.wixstatic.com/media/e55b6f_55de6de58e064586a83eb24f2921d9b3~mv2.jpg/v1/fill/w_560%2Ch_560%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/e55b6f_55de6de58e064586a83eb24f2921d9b3~mv2.jpg", ""],
+        ["tracks-020", "Colourblock Active T-Shirt", "men-sports-tshirts", 499, 670, 4.5, 384, "https://decathlonpro.vtexassets.com/arquivos/ids/28930219/16772679860818.jpg?v=638138251071300000", ""],
+        ["tracks-021", "Breathable Mesh Sports Tee", "men-sports-tshirts", 429, 580, 4.1, 421, "https://img6.hkrtcdn.com/37358/prd_3735775-MuscleBlaze-Patterned-DryFit-Active-Tee-Half-Sleeve-Poseidon-Medium_o.jpg", "POPULAR"],
+        ["tracks-022", "Slim-Fit Workout T-Shirt", "men-sports-tshirts", 379, 570, 4.2, 38, "https://e2wear.com/cdn/shop/files/ChatGPTImageApr18_2025_02_32_13PM.png?v=1747858126&width=1445", ""],
+        ["tracks-023", "Heather Grey Running Tee", "men-sports-tshirts", 399, 540, 4.3, 75, "https://www.myntraglobal.com/cdn/shop/files/8c002556-be1c-4954-8265-a402d8fbdef41747986125439-HRX-by-Hrithik-Roshan-Men-Tshirts-8101747986124567-1.jpg?format=webp&v=1755190987&width=720", ""],
+        ["tracks-024", "Printed Training T-Shirt", "men-sports-tshirts", 459, 620, 4.4, 112, "https://www.tacvasen.com/cdn/shop/files/athletic-performance-tee-with-tailored-fit-sleeves-5610469.jpg?v=1776864672", ""],
+        ["tracks-025", "Lightweight Fitness T-Shirt", "men-sports-tshirts", 349, 520, 4.5, 149, "https://snowwhite.in/cdn/shop/products/Graphite.jpg?v=1691864111", ""],
+        ["tracks-026", "Moisture-Wicking Sports Tee", "men-sports-tshirts", 499, 670, 4.1, 186, "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=85", "NEW"],
+        ["tracks-027", "Athletic V-Neck T-Shirt", "men-sports-tshirts", 399, 540, 4.2, 223, "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=900&q=85", ""],
+        ["tracks-028", "Contrast Sleeve Gym Tee", "men-sports-tshirts", 429, 640, 4.3, 260, "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd5?auto=format&fit=crop&w=900&q=85", ""],
+        ["tracks-029", "Everyday Active Crew Tee", "men-sports-tshirts", 329, 440, 4.4, 297, "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=900&q=85", ""],
+        ["tracks-030", "Rapid-Dry Sports T-Shirt", "men-sports-tshirts", 479, 650, 4.5, 334, "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=85", ""],
+
+        ["tracks-031", "Quick-Dry Running Shorts", "men-sports-shorts", 299, 450, 4.1, 225, "https://wornwear.patagonia.com/cdn/shop/files/sszytku3lyacw7vysw9n.png?v=1724162944&width=1445", "BESTSELLER"],
+        ["tracks-032", "Black Mesh Gym Shorts", "men-sports-shorts", 399, 540, 4.2, 262, "https://image.hm.com/assets/hm/07/9e/079e804b056dad50d9daacedd94adfec1d9dd6ac_xxl-1.jpg?imwidth=1260", ""],
+        ["tracks-033", "Navy Training Shorts", "men-sports-shorts", 349, 470, 4.3, 299, "https://cdn.shopify.com/s/files/1/1367/5207/files/images-MovementShort_sportlift_GSBlackA4C7C_BB2J_0841_V2_3840x.jpg?v=1773432228", ""],
+        ["tracks-034", "Lightweight Athletic Shorts", "men-sports-shorts", 329, 490, 4.4, 336, "https://www.ggradual.com/cdn/shop/files/3_b7c15022-0d95-46b5-87a0-4b3218164867.jpg?v=1776310304&width=980", ""],
+        ["tracks-035", "Two-Pocket Workout Shorts", "men-sports-shorts", 499, 670, 4.5, 373, "https://www.miersports.com/cdn/shop/files/2_d164f280-7d0f-43bb-9f7b-344a6ee2f861.jpg?v=1757401112", ""],
+        ["tracks-036", "Active Flex Sports Shorts", "men-sports-shorts", 449, 610, 4.1, 410, "https://cdn.shopify.com/s/files/1/0618/9462/3460/products/1-36_607f8715-11eb-402b-af65-b6c345753d9a.jpg?v=1645427396", "POPULAR"],
+        ["tracks-037", "Grey Performance Shorts", "men-sports-shorts", 379, 570, 4.2, 447, "https://cdn.shopify.com/s/files/1/0618/9462/3460/products/1-37_6977be6a-3f72-4de1-856a-be7d93a69c6b.jpg?crop=center&format=webp&height=1000&v=1645427413&width=1000", ""],
+        ["tracks-038", "Compression-Lined Running Shorts", "men-sports-shorts", 549, 740, 4.3, 64, "https://www.miersports.com/cdn/shop/files/2_726b2145-6e93-4548-b597-f3808906d2ef.jpg?v=1762335218", ""],
+        ["tracks-039", "Side-Stripe Training Shorts", "men-sports-shorts", 399, 540, 4.4, 101, "https://cdn.gogradualand.com/cdn/10321/2025/12/31/main-G-Gradual-Mens-Running-Shorts-with-Zipper-Pockets-Quick-Dry-Gym-Athletic-Workout-5quot-Shorts-for-MenBlack-9933773-7.jpg", ""],
+        ["tracks-040", "Breathable Mesh Fitness Shorts", "men-sports-shorts", 429, 640, 4.5, 138, "https://www.miersports.com/cdn/shop/files/1_76345bd5-4c2d-4c02-a0da-fd14b61844fd.jpg?v=1761650967", ""],
+        ["tracks-041", "Stretch-Woven Sports Shorts", "men-sports-shorts", 499, 670, 4.1, 175, "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=900&q=85", "NEW"],
+        ["tracks-042", "Zip-Pocket Running Shorts", "men-sports-shorts", 479, 650, 4.2, 212, "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=900&q=85", ""],
+        ["tracks-043", "Colourblock Gym Shorts", "men-sports-shorts", 399, 600, 4.3, 249, "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=900&q=85", ""],
+        ["tracks-044", "Rapid-Dry Training Shorts", "men-sports-shorts", 349, 470, 4.4, 286, "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=85", ""],
+        ["tracks-045", "Everyday Workout Shorts", "men-sports-shorts", 299, 400, 4.5, 323, "https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=900&q=85", ""],
+
+        ["tracks-046", "Floral Cotton Nightie", "women-nighties", 499, 750, 4.1, 192, "https://www.matildajane.com.au/cdn/shop/files/ArabellaNightie-MD701H-Front.jpg?v=1726729064&width=1946", "BESTSELLER"],
+        ["tracks-047", "Pink Printed Sleep Nighty", "women-nighties", 549, 740, 4.2, 229, "https://www.9shineslabel.com/cdn/shop/files/batik_print_night_dress_2.jpg?v=1768896790&width=1080", ""],
+        ["tracks-048", "Blue Button-Front Nightdress", "women-nighties", 599, 810, 4.3, 266, "https://www.9shineslabel.com/cdn/shop/files/Rose_Cream_Feeding_Cotton_Nighty_3.jpg?v=1772783040&width=720", ""],
+        ["tracks-049", "Soft Modal Night Gown", "women-nighties", 699, 1050, 4.4, 303, "https://www.9shineslabel.com/cdn/shop/files/Mint_Green_Cotton_Nighty_5.jpg?v=1772715120&width=1080", ""],
+        ["tracks-050", "Sleeveless Summer Nightie", "women-nighties", 449, 610, 4.5, 340, "https://www.9shineslabel.com/cdn/shop/files/Floral_Cotton_Night_dress_1.jpg?v=1758781418&width=1080", ""],
+        ["tracks-051", "Pastel Floral Nightdress", "women-nighties", 579, 780, 4.1, 377, "https://image.clovia.com/media/clovia-images/images/400x600/clovia-picture-floral-print-long-nighty-in-white-cotton-840193.jpg", "POPULAR"],
+        ["tracks-052", "Printed V-Neck Nighty", "women-nighties", 529, 790, 4.2, 414, "https://www.jiomart.com/images/product/original/rvewwmgyfn/dp-women-s-cotton-printed-nighty-ankle-length-round-neck-short-sleeve-nightwear-with-floral-design-soft-and-comfortable-sleepwear-for-daily-home-use-night-dress-for-women-product-images-rvewwmgyfn-0-202509011859.jpg?im=Resize%3D%28500%2C630%29", ""],
+        ["tracks-053", "Cotton Maxi Night Gown", "women-nighties", 649, 880, 4.3, 451, "https://www.9shineslabel.com/cdn/shop/files/Coral_Pink_Cotton_Night_Dress_7.jpg?v=1772715073&width=720", ""],
+        ["tracks-054", "Lace-Trim Nightdress", "women-nighties", 749, 1010, 4.4, 68, "https://img3.exportersindia.com/product_images/bc-full/2025/1/8007559/1000422317-1736495083_7792266_2328211.jpg", ""],
+        ["tracks-055", "Short Sleeve Printed Nightie", "women-nighties", 499, 750, 4.5, 105, "https://img3.exportersindia.com/product_images/bc-full/2025/1/8007559/1000422256-1736495085_7792266_2328214.jpg", ""],
+        ["tracks-056", "Comfort Fit Housecoat Nighty", "women-nighties", 699, 940, 4.1, 142, "https://img3.exportersindia.com/product_images/bc-full/2025/1/8007559/1000422266-1736495084_7792266_2328212.jpg", "NEW"],
+        ["tracks-057", "Blue Floral Cotton Nightie", "women-nighties", 599, 810, 4.2, 179, "https://img3.exportersindia.com/product_images/bc-full/2025/1/8007559/1000422280-1736495084_7792266_2328213.jpg", ""],
+        ["tracks-058", "Lightweight Daily Wear Nighty", "women-nighties", 449, 670, 4.3, 216, "https://images-static.nykaa.com/media/catalog/product/7/7/778a3e2MJKSS24232B_1.jpg", ""],
+        ["tracks-059", "Satin-Feel Sleep Dress", "women-nighties", 799, 1080, 4.4, 253, "https://cdn.shopify.com/s/files/1/0588/1030/2617/files/Floral_Pink_Pure_Cotton_Night_dress_4.jpg?v=1771412941", ""],
+        ["tracks-060", "Classic Everyday Night Gown", "women-nighties", 549, 740, 4.5, 290, "https://images-static.nykaa.com/media/catalog/product/9/0/90179acNTPNKJSM411_1.jpg", ""],
+
+        ["tracks-061", "Floral Cotton Pyjama Pants", "women-night-pants", 399, 600, 4.1, 225, "https://i5.walmartimages.ca/images/Enlarge/574/476/6000209574476.jpg", "BESTSELLER"],
+        ["tracks-062", "Pink Printed Lounge Pants", "women-night-pants", 449, 610, 4.2, 262, "https://media.kohlsimg.com/is/image/kohls/6487445_Navy_Floral?hei=1000&op_sharpen=1&wid=1000", ""],
+        ["tracks-063", "Navy Check Sleep Pants", "women-night-pants", 499, 670, 4.3, 299, "https://gocolors.com/cdn/shop/products/3_e93a28ad-15b0-4077-a314-3216eb3f8314_1024x1024.jpg?v=1668671943", ""],
+        ["tracks-064", "Soft Modal Night Joggers", "women-night-pants", 549, 820, 4.4, 336, "https://i5.walmartimages.com/seo/UAMVSH-Pajama-Pants-for-Women-Soft-Cotton-Lounge-Trouser-Comfy-Casual-Pjs-Bottoms-2024-Fall-Loungewear_873a73d9-5dcd-47d8-ad24-7f7fc455f796.036835ffae07b086ced746c9a575ed73.jpeg", ""],
+        ["tracks-065", "Grey Relaxed Night Pants", "women-night-pants", 429, 580, 4.5, 373, "https://www.zillajee.com/cdn/shop/files/SMP08902_copy_1.jpg?v=1773853572&width=4000", ""],
+        ["tracks-066", "Pastel Print Pajama Bottoms", "women-night-pants", 479, 650, 4.1, 410, "https://bfasset.costco-static.com/U447IH35/as/tcffxgqmcg7b6xz8sht43n4/4000290322-847_blue_8?auto=webp&canvas=727%2C727&fit=bounds&format=jpg&height=727&width=727", "POPULAR"],
+        ["tracks-067", "Cotton Drawstring Sleep Pants", "women-night-pants", 399, 600, 4.2, 447, "https://www.papinelle.co.nz/cdn/shop/files/24084-6_JadaOrganicCottonWideLegPant_Grey_0017_99da0e7a-519f-4c61-bf64-efadabdd28b7.jpg?v=1755742941&width=1544", ""],
+        ["tracks-068", "Lilac Lounge Pyjamas", "women-night-pants", 529, 710, 4.3, 64, "https://www.latuza.com/cdn/shop/products/navy_66bdc3a4-cfb8-49b9-8759-32a3c3a970d7.jpg?v=1646218423", ""],
+        ["tracks-069", "Wide-Leg Night Pants", "women-night-pants", 599, 810, 4.4, 101, "https://images-static.nykaa.com/media/catalog/product/1/5/1556d2esc-py-024-126-1.jpg?tr=w-500", ""],
+        ["tracks-070", "Striped Cotton Sleep Pants", "women-night-pants", 459, 690, 4.5, 138, "https://www.vishalmegamart.com/on/demandware.static/-/Sites-vmm-apparel-master-catalog/default/dw13bbae9c/images/large/1120093679002.jpg", ""],
+        ["tracks-071", "Lightweight Summer Pyjama", "women-night-pants", 399, 540, 4.1, 175, "https://oldnavy.gap.com/webcontent/0018/425/215/cn18425215.jpg", "NEW"],
+        ["tracks-072", "Soft Jersey Lounge Pants", "women-night-pants", 499, 670, 4.2, 212, "https://i5.walmartimages.com/asr/42870dc6-eec9-48fc-a28c-995a4707ce37.a1226ccfd86b9681f05a5f2d0e16c848.jpeg", ""],
+        ["tracks-073", "Blue Floral Night Bottoms", "women-night-pants", 549, 820, 4.3, 249, "https://meandmine.zohoecommerce.in/product-images/Jockey%2BRX%2B88%2BWoman%2BPajama%2Bfront%2B1.jpg/3304904000000112095/1100x1100", ""],
+        ["tracks-074", "Relaxed Fit Sleep Joggers", "women-night-pants", 479, 650, 4.4, 286, "https://www.privatelives.in/cdn/shop/files/PHOTO-2026-06-08-15-04-243_2000x.jpg?v=1780913337", ""],
+        ["tracks-075", "Everyday Cotton Night Pants", "women-night-pants", 449, 610, 4.5, 323, "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=900&q=85", ""],
+
+        ["tracks-076", "Pink Quick-Dry Sports Tee", "women-sports-tshirts", 349, 520, 4.1, 258, "https://www.aorunning.com/cdn/shop/files/AONIJIE-FW5179-Women-Female-Lightweight-Quick-Drying-Sports-T-shirt-Moisture-Wicking-Workout-Running-Athletic-Tee.webp?v=1757667987", "BESTSELLER"],
+        ["tracks-077", "Black Training T-Shirt", "women-sports-tshirts", 399, 540, 4.2, 295, "https://feetures.com/cdn/shop/files/Bloom-Womens_Tee-N25_LG_AAW2924-1.jpg?v=1760710088&width=1200", ""],
+        ["tracks-078", "Blue Running Performance Tee", "women-sports-tshirts", 449, 610, 4.3, 332, "https://cdn11.bigcommerce.com/s-21x65e8kfn/images/stencil/original/products/67394/322309/RON3900_1000_9__02152.1710231082.jpg", ""],
+        ["tracks-079", "Lilac Activewear T-Shirt", "women-sports-tshirts", 379, 570, 4.4, 369, "https://m.media-amazon.com/images/I/61nhBcyMrrL._SL1500_.jpg", ""],
+        ["tracks-080", "Breathable Gym Crew Tee", "women-sports-tshirts", 329, 440, 4.5, 406, "https://www.enamor.co.in/cdn/shop/files/1_6b10ae5f-8b37-455f-944c-db614c56037f.jpg?v=1747139669", ""],
+        ["tracks-081", "Slim-Fit Workout T-Shirt", "women-sports-tshirts", 429, 580, 4.1, 443, "https://cultstore.com/cdn/shop/files/706566_D.jpg?v=1763013985&width=963", "POPULAR"],
+        ["tracks-082", "Colourblock Sports Tee", "women-sports-tshirts", 499, 750, 4.2, 60, "https://atacadista.ararasport.com.br/uploads/images/suvcm45850xvocr8csvb3kzflylr/w_1600/1-352.jpg", ""],
+        ["tracks-083", "Moisture-Wicking Fitness Top", "women-sports-tshirts", 449, 610, 4.3, 97, "https://usealphaco.com.br/cdn/shop/files/Camiseta_Feminina_Dry_Fit_Light_Lupus_Azul_Ceu_Essential_04abr26_Fc.jpg?v=1776284745&width=1024", ""],
+        ["tracks-084", "Raglan Sleeve Running Tee", "women-sports-tshirts", 399, 540, 4.4, 134, "https://cdn.shopify.com/s/files/1/0618/9462/3460/products/5-12_16377af0-f0d0-4e7e-9573-eb04a420e53d.jpg?v=1645436430", ""],
+        ["tracks-085", "Lightweight Training T-Shirt", "women-sports-tshirts", 349, 520, 4.5, 171, "https://i.ebayimg.com/images/g/PFYAAOSw~VBcKZGw/s-l1600.jpg", ""],
+        ["tracks-086", "Printed Active T-Shirt", "women-sports-tshirts", 479, 650, 4.1, 208, "https://cdn.sanity.io/images/2ahps9jc/production/3060da1eb64cef25b820b8f7f3661d52471dc6d8-1024x1024.png?auto=format&fit=min&q=75&w=3840", "NEW"],
+        ["tracks-087", "Heather Grey Sports Tee", "women-sports-tshirts", 399, 540, 4.2, 245, "https://images.unsplash.com/photo-1627225924765-552d49cf47ad?auto=format&fit=crop&w=900&q=85", ""],
+        ["tracks-088", "Rapid-Dry Gym T-Shirt", "women-sports-tshirts", 449, 670, 4.3, 282, "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=900&q=85", ""],
+        ["tracks-089", "Everyday Active Crew Tee", "women-sports-tshirts", 329, 440, 4.4, 319, "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=85", ""],
+        ["tracks-090", "Stretch Performance Sports Tee", "women-sports-tshirts", 499, 670, 4.5, 356, "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=85", ""],
+
+        ["tracks-091", "Black Quick-Dry Running Shorts", "women-sports-shorts", 299, 450, 4.1, 247, "https://startfitness.co.uk/cdn/shop/files/Under-Armour-Fly-By-3-Inch-Shorts-1382438-003.jpg?v=1727708630", "BESTSELLER"],
+        ["tracks-092", "Navy Training Shorts", "women-sports-shorts", 349, 470, 4.2, 284, "https://www.rei.com/media/4a814c3c-b01d-46d1-875a-9dee2bf4efb9.jpg?size=784x588", ""],
+        ["tracks-093", "Pink Active Gym Shorts", "women-sports-shorts", 399, 540, 4.3, 321, "https://cdn.shopify.com/s/files/1/2048/7185/files/424560_INDIE_TRAINING_SHORT_COLLECTION.jpg?v=1589278203", ""],
+        ["tracks-094", "2-in-1 Running Shorts", "women-sports-shorts", 499, 750, 4.4, 358, "https://cdn.secure-cloud.shop/cdn/366/2024/11/03/main-BALEAF-Womens-3-Running-Athletic-Shorts-Quick-Dry-Gym-Workout-Shorts-with-PocketsBlack-1864470-1620331.jpg", ""],
+        ["tracks-095", "Grey Fitness Shorts", "women-sports-shorts", 329, 440, 4.5, 395, "https://image.made-in-china.com/2f0j00qGRbtkEUBauv/Lightweight-100-Polyester-Bottom-with-Side-Zip-Pocket-Gym-Wear-Women-Fitness-Running-Shorts.jpg", ""],
+        ["tracks-096", "High-Rise Workout Shorts", "women-sports-shorts", 449, 610, 4.1, 432, "https://ca.crzyoga.com/cdn/shop/files/FFS-RS209_1024x1024.jpg?v=1783999721", "POPULAR"],
+        ["tracks-097", "Lightweight Sports Shorts", "women-sports-shorts", 379, 570, 4.2, 49, "https://m.media-amazon.com/images/I/61srYlVGmNL._AC_SL1500_.jpg", ""],
+        ["tracks-098", "Stretch Yoga Training Shorts", "women-sports-shorts", 429, 580, 4.3, 86, "https://valtik.mx/cdn/shop/files/FENIX_AzulPetroleo1-Photoroom_7c2447e2-8a0a-4f22-a086-32b1970c4a5e.jpg?v=1761677553", ""],
+        ["tracks-099", "Side-Slit Running Shorts", "women-sports-shorts", 399, 540, 4.4, 123, "https://www.craftsportswear.com/_next/image?q=70&url=https%3A%2F%2Fcraftsportswear.centracdn.net%2Fclient%2Fdynamic%2Fimages%2F688_72ed834c51-1908706-999000-1-1350x0.jpg&w=3840", ""],
+        ["tracks-100", "Breathable Mesh Gym Shorts", "women-sports-shorts", 449, 670, 4.5, 160, "https://images.ctfassets.net/hnk2vsx53n6l/GY5AFqp6u38nGjJq5tU0r/d03d91b1e7685c7c6b9713f16543b6fc/8b209ea6defecc746205a9c2e119b47327e58807.png?fm=webp", ""],
+        ["tracks-101", "Zip-Pocket Active Shorts", "women-sports-shorts", 499, 670, 4.1, 197, "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/483294/feature/ingoods_483294_feature1.jpg", "NEW"],
+        ["tracks-102", "Colourblock Training Shorts", "women-sports-shorts", 429, 580, 4.2, 234, "https://rogelli.com/cdn/shop/files/ROG351372-20250819223501_01_ESSENTIAL_2in1short_black.jpg?v=1756671428&width=2048", ""],
+        ["tracks-103", "Everyday Fitness Shorts", "women-sports-shorts", 349, 520, 4.3, 271, "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=900&q=85", ""],
+        ["tracks-104", "Rapid-Dry Running Shorts", "women-sports-shorts", 399, 540, 4.4, 308, "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=900&q=85", ""],
+        ["tracks-105", "Flex-Fit Sports Shorts", "women-sports-shorts", 479, 650, 4.5, 345, "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=900&q=85", ""]
+    ];
+ 
+
+
+/* =========================================================
+   FIX: CONVERT PRODUCT ARRAYS INTO PRODUCT OBJECTS
+========================================================= */
+
+const productList = products.map(item => ({
+    id: item[0],
+    name: item[1],
+    category: item[2],
+    price: Number(item[3]),
+    mrp: Number(item[4]),
+    rating: Number(item[5]),
+    reviews: Number(item[6]),
+    image: item[7],
+    badge: item[8] || ""
+}));
+
+
+        
+function renderProducts() {
+    productGrid.innerHTML = productList.map(product => {
+        const discount = Math.round(
+            ((product.mrp - product.price) / product.mrp) * 100
+        );
+
+        const fallback = imageFallback(product.name);
+
+        return `
+            <article class="product-item"
+                data-product-id="${escapeHTML(product.id)}">
+
+                <div class="fashion-product-card">
+
+                    <div class="product-image"
+                        role="button"
+                        tabindex="0"
+                        aria-label="View ${escapeHTML(product.name)} details">
+
+                        <img
+                            src="${escapeHTML(product.image)}"
+                            data-fallback="${escapeHTML(fallback)}"
+                            alt="${escapeHTML(product.name)}"
+                            loading="lazy"
+                            decoding="async"
+                            onerror="this.onerror=null;this.src=this.dataset.fallback;this.classList.add('image-fallback');">
+
+                        ${product.badge ? `
+                            <span class="product-badge">
+                                ${escapeHTML(product.badge)}
+                            </span>` : ""}
+
+                        <button class="wishlist" type="button"
+                            aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-main-row">
+                            <div class="product-title-area">
+                                <span>OZZO · ${escapeHTML(categoryData[product.category].label)}</span>
+                                <h3>${escapeHTML(product.name)}</h3>
+                            </div>
+
+                            <button class="add-cart" type="button">
+                                Add to Cart
+                            </button>
+                        </div>
+
+                        <div class="rating">
+                            <span>★★★★★</span>
+                            <small>(${product.reviews})</small>
+                        </div>
+
+                        <div class="price">
+                            <span>₹${product.price.toLocaleString("en-IN")}</span>
+                            <del>₹${product.mrp.toLocaleString("en-IN")}</del>
+                            <small class="product-discount">${discount}% OFF</small>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+        `;
+    }).join("");
+}
+
+
+        
+function filterProducts() {
+    const query = searchInput.value.trim().toLowerCase();
+    let visible = 0;
+
+    productGrid.querySelectorAll(".product-item").forEach(card => {
+        const product = productList.find(
+            item => item.id === card.dataset.productId
+        );
+
+        if (!product) return;
+
+        const categoryMatch =
+            selectedFilter === "all" ||
+            product.category === selectedFilter;
+
+        const searchMatch =
+            !query ||
+            product.name.toLowerCase().includes(query) ||
+            categoryData[product.category].label.toLowerCase().includes(query);
+
+        const show = categoryMatch && searchMatch;
+
+        card.hidden = !show;
+
+        if (show) visible++;
+    });
+
+    productCount.textContent =
+        `${visible} ${visible === 1 ? "product" : "products"} found`;
+
+    categoryResult.textContent =
+        `Showing ${visible} products in ${categoryNames[selectedFilter] || "this category"}` +
+        (query ? ` matching “${query}”` : "");
+
+    categoryButtons.forEach(button => {
+        const active =
+            button.dataset.tracksFilter === selectedFilter;
+
+        button.classList.toggle("active", active);
+        button.setAttribute("aria-pressed", active ? "true" : "false");
+    });
+
+    noProducts.hidden = visible !== 0;
+}
+
+
+        function updateCartCount() {
+            cartCount.textContent = String(
+                cart.reduce((sum, item) => sum + Number(item.quantity || 0), 0)
+            );
+        }
+
+        function saveCart() {
+            try {
+                localStorage.setItem("ozzoCart", JSON.stringify(cart));
+            } catch (error) {
+                console.warn("Cart could not be saved:", error);
+            }
+        }
+
+       
+function getProductObject(productId) {
+    const product = productList.find(
+        item => item.id === productId
+    );
+
+    if (!product) return null;
+
+    return {
+        id: product.id,
+        name: product.name,
+        subcategory: product.category,
+        category: "tracks",
+        price: product.price,
+        mrp: product.mrp,
+        rating: product.rating,
+        reviews: product.reviews,
+        image: product.image,
+        brand: "OZZO Sportswear",
+        quantity: 1
+    };
+}
+
+
+        function openProductDetails(product) {
+            try {
+                sessionStorage.setItem("ozzoSelectedProduct", JSON.stringify(product));
+            } catch (error) {
+                console.warn("Could not save selected product:", error);
+            }
+
+            const params = new URLSearchParams({
+                id: product.id,
+                name: product.name,
+                price: String(product.price),
+                mrp: String(product.mrp),
+                image: product.image
+            });
+
+            window.location.href = `../ProductDetails.html?${params.toString()}`;
+        }
+
+        categoryButtons.forEach(button => {
+            button.addEventListener("click", function () {
+                selectedFilter = button.dataset.tracksFilter || "all";
+                filterProducts();
+
+                if (window.innerWidth < 600) {
+                    document.getElementById("fashionProducts").scrollIntoView({
+                        behavior: "smooth", block: "start"
+                    });
+                }
+            });
+        });
+
+        searchInput.addEventListener("input", filterProducts);
+
+        productGrid.addEventListener("click", function (event) {
+            const wishlistButton = event.target.closest(".wishlist");
+
+            if (wishlistButton) {
+                wishlistButton.classList.toggle("active");
+                const icon = wishlistButton.querySelector("i");
+                const active = wishlistButton.classList.contains("active");
+                icon.classList.toggle("fa-solid", active);
+                icon.classList.toggle("fa-regular", !active);
+                return;
+            }
+
+            const addButton = event.target.closest(".add-cart");
+
+            if (addButton) {
+                const productItem = addButton.closest(".product-item");
+                const product = getProductObject(productItem.dataset.productId);
+                if (!product) return;
+
+                const existing = cart.find(item => item.id === product.id);
+                if (existing) {
+                    existing.quantity = Number(existing.quantity || 0) + 1;
+                } else {
+                    cart.push(product);
+                }
+
+                saveCart();
+                updateCartCount();
+                addButton.textContent = "Added ✓";
+                addButton.classList.add("added");
+
+                setTimeout(() => {
+                    addButton.textContent = "Add to Cart";
+                    addButton.classList.remove("added");
+                }, 1200);
+
+                return;
+            }
+
+            const imageArea = event.target.closest(".product-image");
+            if (imageArea) {
+                const productItem = imageArea.closest(".product-item");
+                const product = getProductObject(productItem.dataset.productId);
+                if (product) openProductDetails(product);
+            }
+        });
+
+        productGrid.addEventListener("keydown", function (event) {
+            const imageArea = event.target.closest(".product-image");
+
+            if (imageArea && (event.key === "Enter" || event.key === " ")) {
+                event.preventDefault();
+                const productItem = imageArea.closest(".product-item");
+                const product = getProductObject(productItem.dataset.productId);
+                if (product) openProductDetails(product);
+            }
+        });
+
+       
+if (resetButton) {
+    resetButton.addEventListener("click", function () {
+        selectedFilter = "all";
+        searchInput.value = "";
+
+        filterProducts();
+
+        productGrid.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    });
+}
+
+
+        newsletterForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+            document.getElementById("newsletterMessage").textContent =
+                "Thank you for subscribing!";
+            newsletterForm.reset();
+        });
+
+        renderProducts();
+        filterProducts();
+        updateCartCount();
+
+       console.info(`OZZO Tracks initialized: ${productList.length} products`);
+    });
+    </script>
+</body>
+</html>

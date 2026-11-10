@@ -1595,7 +1595,33 @@ const gas = [
         rating: 5,
         reviews: 1200,
         image: "/Heavy duty lpg regulator"
-    }
+    },
+
+    {
+    id: "gas-009",
+    category: "Gas",
+    subcategory: "Safety",
+    name: "Double Safety Gas Device",
+    brand: "OZZO Gas",
+    price: 3499,
+    mrp: 4999,
+    rating: 5,
+    reviews: 624,
+    image: "/Gas Safety.jpeg"
+},
+
+  {
+    id: "gas-010",
+    category: "Gas",
+    subcategory: "Safety",
+    name: "Double Safety Gas Device",
+    brand: "OZZO Gas",
+    price: 3499,
+    mrp: 4999,
+    rating: 5,
+    reviews: 624,
+    image: "/Gas Safety.jpeg"
+},
 
 ];
 
@@ -1843,20 +1869,28 @@ function categoryFromId(value) {
             raw || {};
 
 
-        const price =
-            Number(
-                url.price ??
-                source.price ??
-                0
-            );
+        
+const gasCatalogProduct =
+    categoryKey === "gas"
+        ? (catalogs.gas || []).find(
+            item => item.id === (url.id || source.id)
+        )
+        : null;
 
+const price =
+    Number(
+        gasCatalogProduct
+            ? gasCatalogProduct.price
+            : (url.price ?? source.price ?? 0)
+    );
 
-        const mrp =
-            Number(
-                url.mrp ??
-                source.mrp ??
-                price
-            );
+const mrp =
+    Number(
+        gasCatalogProduct
+            ? gasCatalogProduct.mrp
+            : (url.mrp ?? source.mrp ?? price)
+    );
+
 
 
         const image =
@@ -4001,3 +4035,52 @@ if (relatedContainer) {
     );
 
 });
+
+
+
+function getProductPriceHTML(productItem) {
+    const sellingPrice = Number(productItem.dataset.price);
+    const mrp = Number(productItem.dataset.mrp);
+
+    if (
+        !Number.isFinite(sellingPrice) ||
+        !Number.isFinite(mrp) ||
+        sellingPrice <= 0 ||
+        mrp <= 0
+    ) {
+        return "";
+    }
+
+    const discount = Math.round(
+        ((mrp - sellingPrice) / mrp) * 100
+    );
+
+    const formatPrice = value =>
+        value.toLocaleString("en-IN");
+
+    return `
+        <div class="product-price-area">
+
+            <div class="product-current-price">
+                <span class="product-discount">
+                    -${discount}%
+                </span>
+
+                <span class="currency">₹</span>
+
+                <span class="selling-price">
+                    ${formatPrice(sellingPrice)}
+                </span>
+            </div>
+
+            <div class="product-mrp">
+                M.R.P.: <del>₹${formatPrice(mrp)}</del>
+            </div>
+
+            <p class="tax-info">
+                Inclusive of all taxes
+            </p>
+
+        </div>
+    `;
+}
