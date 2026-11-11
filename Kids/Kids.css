@@ -4396,3 +4396,540 @@ body {
         padding: 5px 3px !important;
     }
 }
+
+
+
+/* =========================================================
+   OZZO KIDS — FINAL CATEGORY SIDEBAR LAYOUT FIX
+
+   REQUIRED BEHAVIOUR:
+   1. Category panel always stays on the LEFT.
+   2. Products stay on the RIGHT.
+   3. Page scroll moves products vertically.
+   4. Category panel stays sticky until the last product.
+   5. Category content scrolls independently.
+   6. No empty visual gap below the category content.
+========================================================= */
+
+
+/* =========================================================
+   1. FIX STICKY SCROLLING
+========================================================= */
+
+/* Hidden horizontal overflow can interfere with sticky positioning. */
+
+html,
+body {
+    overflow-x: clip !important;
+    overflow-y: visible !important;
+}
+
+
+/* =========================================================
+   2. MAIN PRODUCT LAYOUT
+========================================================= */
+
+.ozzo-category-page.page-kids .fashion-products,
+.ozzo-category-page.page-kids .fashion-products > .container-fluid,
+.ozzo-category-page.page-kids .men-shop-layout {
+    overflow: visible !important;
+}
+
+.ozzo-category-page.page-kids .men-shop-layout {
+    display: grid !important;
+
+    grid-template-columns: 245px minmax(0, 1fr) !important;
+
+    align-items: start !important;
+
+    gap: 24px !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* =========================================================
+   3. LEFT CATEGORY SIDEBAR
+========================================================= */
+
+.ozzo-category-page.page-kids .men-category-section {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+
+    top: 110px !important;
+
+    display: block !important;
+
+    align-self: start !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+
+    height: calc(100vh - 130px) !important;
+    max-height: calc(100vh - 130px) !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    /* Full-height visible category panel */
+    background: #ffffff !important;
+
+    border: 1px solid #e5e9ed !important;
+    border-radius: 9px !important;
+
+    box-shadow: 0 5px 22px rgba(19, 36, 56, 0.05) !important;
+
+    /* Independent category scrolling */
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+
+    overscroll-behavior-y: contain !important;
+
+    -webkit-overflow-scrolling: touch !important;
+
+    scrollbar-width: thin !important;
+    scrollbar-color: #132438 #edf0f3 !important;
+}
+
+
+/* =========================================================
+   4. CATEGORY CONTENT — FILL THE SIDEBAR
+========================================================= */
+
+.ozzo-category-page.page-kids .men-category-container {
+    display: flex !important;
+    flex-direction: column !important;
+
+    width: 100% !important;
+
+    min-height: 100% !important;
+    height: auto !important;
+
+    margin: 0 !important;
+
+    padding: 21px 17px 16px !important;
+
+    background: transparent !important;
+
+    border: none !important;
+    border-radius: 0 !important;
+
+    box-shadow: none !important;
+
+    box-sizing: border-box !important;
+
+    overflow: visible !important;
+}
+
+
+/* CATEGORY HEADING */
+
+.ozzo-category-page.page-kids .men-category-heading {
+    flex-shrink: 0 !important;
+}
+
+
+/* CATEGORY GROUPS */
+
+.ozzo-category-page.page-kids .men-category-group {
+    display: block !important;
+
+    width: 100% !important;
+
+    flex-shrink: 0 !important;
+}
+
+
+/* CATEGORY BUTTON CONTAINERS */
+
+.ozzo-category-page.page-kids .men-category-options {
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    width: 100% !important;
+
+    gap: 4px !important;
+}
+
+
+/* CATEGORY BUTTONS */
+
+.ozzo-category-page.page-kids .men-category-btn {
+    display: flex !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+
+    flex-shrink: 0 !important;
+
+    white-space: normal !important;
+
+    overflow-wrap: anywhere !important;
+}
+
+
+/* CATEGORY FOOTER */
+
+.ozzo-category-page.page-kids .men-category-footer {
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    gap: 12px !important;
+
+    margin-top: auto !important;
+
+    padding-top: 18px !important;
+}
+
+
+/* =========================================================
+   5. RIGHT PRODUCT SECTION
+========================================================= */
+
+.ozzo-category-page.page-kids .men-products-area {
+    display: block !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    overflow: visible !important;
+}
+
+
+/* PRODUCT GRID */
+
+.ozzo-category-page.page-kids .men-products-area #productGrid {
+    display: grid !important;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+
+    align-items: stretch !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+
+    height: auto !important;
+    max-height: none !important;
+
+    gap: 18px !important;
+
+    margin: 0 !important;
+
+    overflow: visible !important;
+}
+
+
+/* PRODUCT ITEMS */
+
+.ozzo-category-page.page-kids #productGrid > .product-item {
+    display: block !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+
+    margin: 0 !important;
+}
+
+
+/* =========================================================
+   6. TABLETS
+========================================================= */
+
+@media (min-width: 576px) and (max-width: 991px) {
+
+    .ozzo-category-page.page-kids .men-shop-layout {
+        grid-template-columns: 185px minmax(0, 1fr) !important;
+
+        gap: 14px !important;
+
+        align-items: start !important;
+    }
+
+    .ozzo-category-page.page-kids .men-category-section {
+        position: sticky !important;
+
+        top: 105px !important;
+
+        height: calc(100vh - 125px) !important;
+        max-height: calc(100vh - 125px) !important;
+    }
+
+    .ozzo-category-page.page-kids .men-category-container {
+        padding: 15px 9px !important;
+    }
+
+    .ozzo-category-page.page-kids .men-category-heading h2 {
+        font-size: 17px !important;
+    }
+
+    .ozzo-category-page.page-kids .men-category-heading p {
+        font-size: 10px !important;
+    }
+
+    .ozzo-category-page.page-kids .men-category-group-heading h3 {
+        font-size: 10px !important;
+    }
+
+    .ozzo-category-page.page-kids .men-category-btn {
+        min-height: 35px !important;
+
+        padding: 7px 5px !important;
+
+        font-size: 10px !important;
+    }
+
+    .ozzo-category-page.page-kids .men-products-area #productGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+        gap: 13px !important;
+    }
+}
+
+
+/* =========================================================
+   7. MOBILE
+========================================================= */
+
+@media (max-width: 575px) {
+
+    .ozzo-category-page.page-kids .fashion-products {
+        padding: 25px 0 45px !important;
+    }
+
+    .ozzo-category-page.page-kids .fashion-products > .container-fluid {
+        width: 100% !important;
+
+        max-width: 100% !important;
+
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+
+    .ozzo-category-page.page-kids .men-shop-layout {
+        display: grid !important;
+
+        grid-template-columns: 100px minmax(0, 1fr) !important;
+
+        align-items: start !important;
+
+        gap: 8px !important;
+
+        width: 100% !important;
+
+        margin: 0 !important;
+    }
+
+    .ozzo-category-page.page-kids .men-category-section {
+        position: sticky !important;
+
+        top: 95px !important;
+
+        width: 100% !important;
+
+        height: calc(100vh - 115px) !important;
+        max-height: calc(100vh - 115px) !important;
+
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+    }
+
+    .ozzo-category-page.page-kids .men-category-container {
+        min-height: 100% !important;
+
+        padding: 10px 5px !important;
+    }
+
+    .ozzo-category-page.page-kids .men-category-heading {
+        padding: 0 2px 12px !important;
+    }
+
+    .ozzo-category-page.page-kids .men-category-heading h2 {
+        font-size: 13px !important;
+        line-height: 1.4 !important;
+
+        overflow-wrap: anywhere !important;
+    }
+
+    .ozzo-category-page.page-kids .men-category-heading p {
+        font-size: 9px !important;
+        line-height: 1.5 !important;
+    }
+
+    .ozzo-category-page.page-kids .men-category-eyebrow {
+        font-size: 8px !important;
+        letter-spacing: 1px !important;
+    }
+
+    .ozzo-category-page.page-kids .men-category-group {
+        padding: 11px 0 !important;
+    }
+
+    .ozzo-category-page.page-kids .men-category-group-heading {
+        gap: 5px !important;
+
+        margin-bottom: 8px !important;
+    }
+
+    .ozzo-category-page.page-kids .men-category-group-heading > span {
+        width: 19px !important;
+        height: 19px !important;
+
+        font-size: 8px !important;
+    }
+
+    .ozzo-category-page.page-kids .men-category-group-heading h3 {
+        font-size: 9px !important;
+        line-height: 1.35 !important;
+    }
+
+    .ozzo-category-page.page-kids .men-category-options {
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        gap: 4px !important;
+    }
+
+    .ozzo-category-page.page-kids .men-category-btn {
+        display: block !important;
+
+        width: 100% !important;
+
+        min-height: 32px !important;
+
+        padding: 6px 4px !important;
+
+        font-size: 9px !important;
+        line-height: 1.4 !important;
+
+        text-align: left !important;
+
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+    }
+
+    .ozzo-category-page.page-kids .men-category-footer {
+        flex-direction: column !important;
+
+        align-items: flex-start !important;
+
+        gap: 8px !important;
+
+        padding-top: 14px !important;
+    }
+
+    .ozzo-category-page.page-kids .men-category-footer span,
+    .ozzo-category-page.page-kids .men-category-footer a {
+        font-size: 8px !important;
+        line-height: 1.5 !important;
+    }
+
+    .ozzo-category-page.page-kids .products-heading {
+        display: block !important;
+
+        margin-bottom: 13px !important;
+    }
+
+    .ozzo-category-page.page-kids .products-heading h2 {
+        font-size: 19px !important;
+    }
+
+    .ozzo-category-page.page-kids .products-heading p {
+        font-size: 9px !important;
+    }
+
+    .ozzo-category-page.page-kids .category-product-count {
+        display: inline-block !important;
+
+        margin-top: 9px !important;
+
+        white-space: normal !important;
+
+        font-size: 8px !important;
+    }
+
+    .ozzo-category-page.page-kids .men-products-area #productGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+        gap: 10px 7px !important;
+    }
+
+    .ozzo-category-page.page-kids #productGrid > .product-item {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+}
+
+
+/* =========================================================
+   8. EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .ozzo-category-page.page-kids .men-shop-layout {
+        grid-template-columns: 90px minmax(0, 1fr) !important;
+
+        gap: 6px !important;
+    }
+
+    .ozzo-category-page.page-kids .men-category-container {
+        padding: 8px 4px !important;
+    }
+
+    .ozzo-category-page.page-kids .men-category-heading h2 {
+        font-size: 12px !important;
+    }
+
+    .ozzo-category-page.page-kids .men-category-btn {
+        padding: 5px 3px !important;
+
+        font-size: 8px !important;
+    }
+
+    .ozzo-category-page.page-kids .men-products-area #productGrid {
+        gap: 8px 5px !important;
+    }
+}
+
+
+/* =========================================================
+   9. MODERN MOBILE VIEWPORT HEIGHT
+========================================================= */
+
+@supports (height: 100dvh) {
+
+    @media (max-width: 575px) {
+
+        .ozzo-category-page.page-kids .men-category-section {
+            height: calc(100dvh - 115px) !important;
+
+            max-height: calc(100dvh - 115px) !important;
+        }
+    }
+
+    @media (min-width: 576px) {
+
+        .ozzo-category-page.page-kids .men-category-section {
+            height: calc(100dvh - 130px) !important;
+
+            max-height: calc(100dvh - 130px) !important;
+        }
+    }
+}
